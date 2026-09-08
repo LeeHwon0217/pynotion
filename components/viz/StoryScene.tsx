@@ -104,7 +104,7 @@ export function buildStory(story: Story): { script: Script; render: (t: number) 
   const allIds: string[] = [];
   for (const st of states) for (const id of st.order) if (!allIds.includes(id)) allIds.push(id);
   const objMeta: Record<string, StoryObj> = {};
-  for (const st of states) for (const id of st.order) objMeta[id] = st.objs[id]; // 최종 형태 기준 크기
+  for (const st of states) for (const id of st.order) if (st.objs[id]) objMeta[id] = st.objs[id]; // 마지막으로 존재한 형태 기준 크기
   const slot: Record<string, { x: number; y: number }> = {};
   const GAP = 18;
   {
@@ -121,7 +121,7 @@ export function buildStory(story: Story): { script: Script; render: (t: number) 
     for (const st of states) {
       if (st.cleared) cursor = Array(cols).fill(64);
       for (const id of st.order) {
-        if (id in slot) continue;
+        if (id in slot || !objMeta[id]) continue;
         // 이 객체를 refs 로 가리키는 부모가 이미 배치되어 있으면 부모 옆 열에
         const parent = Object.entries(objMeta).find(([pid, o]) => o.refs?.includes(id) && pid in slot);
         let mine: { x: number; y: number };
