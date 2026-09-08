@@ -37,14 +37,14 @@
      "line": 2,
      "locals": {
       "cart": {
-       "ref": "0x13f4b991340"
+       "ref": "0x21efe311340"
       }
      }
     }
    ],
    "heap": {
-    "0x13f4b991340": {
-     "id": "0x13f4b991340",
+    "0x21efe311340": {
+     "id": "0x21efe311340",
      "type": "list",
      "repr": "[]",
      "items": []
@@ -62,14 +62,14 @@
      "line": 5,
      "locals": {
       "cart": {
-       "ref": "0x13f4b991340"
+       "ref": "0x21efe311340"
       }
      }
     }
    ],
    "heap": {
-    "0x13f4b991340": {
-     "id": "0x13f4b991340",
+    "0x21efe311340": {
+     "id": "0x21efe311340",
      "type": "list",
      "repr": "[]",
      "items": []
@@ -86,14 +86,14 @@
      "line": 6,
      "locals": {
       "cart": {
-       "ref": "0x13f4b991340"
+       "ref": "0x21efe311340"
       }
      }
     }
    ],
    "heap": {
-    "0x13f4b991340": {
-     "id": "0x13f4b991340",
+    "0x21efe311340": {
+     "id": "0x21efe311340",
      "type": "list",
      "repr": "[]",
      "items": []
@@ -110,23 +110,23 @@
      "line": 7,
      "locals": {
       "cart": {
-       "ref": "0x13f4b991340"
+       "ref": "0x21efe311340"
       },
       "name": {
-       "ref": "0x7ffd75a19ca0"
+       "ref": "0x7ffd7f2b9ca0"
       }
      }
     }
    ],
    "heap": {
-    "0x13f4b991340": {
-     "id": "0x13f4b991340",
+    "0x21efe311340": {
+     "id": "0x21efe311340",
      "type": "list",
      "repr": "[]",
      "items": []
     },
-    "0x7ffd75a19ca0": {
-     "id": "0x7ffd75a19ca0",
+    "0x7ffd7f2b9ca0": {
+     "id": "0x7ffd7f2b9ca0",
      "type": "str",
      "repr": "''"
     }
@@ -143,23 +143,23 @@
      "line": 8,
      "locals": {
       "cart": {
-       "ref": "0x13f4b991340"
+       "ref": "0x21efe311340"
       },
       "name": {
-       "ref": "0x7ffd75a19ca0"
+       "ref": "0x7ffd7f2b9ca0"
       }
      }
     }
    ],
    "heap": {
-    "0x13f4b991340": {
-     "id": "0x13f4b991340",
+    "0x21efe311340": {
+     "id": "0x21efe311340",
      "type": "list",
      "repr": "[]",
      "items": []
     },
-    "0x7ffd75a19ca0": {
-     "id": "0x7ffd75a19ca0",
+    "0x7ffd7f2b9ca0": {
+     "id": "0x7ffd7f2b9ca0",
      "type": "str",
      "repr": "''"
     }
@@ -175,23 +175,23 @@
      "line": 9,
      "locals": {
       "cart": {
-       "ref": "0x13f4b991340"
+       "ref": "0x21efe311340"
       },
       "name": {
-       "ref": "0x13f4bbe60b0"
+       "ref": "0x21efe5660b0"
       }
      }
     }
    ],
    "heap": {
-    "0x13f4b991340": {
-     "id": "0x13f4b991340",
+    "0x21efe311340": {
+     "id": "0x21efe311340",
      "type": "list",
      "repr": "[]",
      "items": []
     },
-    "0x13f4bbe60b0": {
-     "id": "0x13f4bbe60b0",
+    "0x21efe5660b0": {
+     "id": "0x21efe5660b0",
      "type": "str",
      "repr": "'손님'"
     }
@@ -207,23 +207,23 @@
      "line": 10,
      "locals": {
       "cart": {
-       "ref": "0x13f4b991340"
+       "ref": "0x21efe311340"
       },
       "name": {
-       "ref": "0x13f4bbe60b0"
+       "ref": "0x21efe5660b0"
       }
      }
     }
    ],
    "heap": {
-    "0x13f4b991340": {
-     "id": "0x13f4b991340",
+    "0x21efe311340": {
+     "id": "0x21efe311340",
      "type": "list",
      "repr": "[]",
      "items": []
     },
-    "0x13f4bbe60b0": {
-     "id": "0x13f4bbe60b0",
+    "0x21efe5660b0": {
+     "id": "0x21efe5660b0",
      "type": "str",
      "repr": "'손님'"
     }
@@ -239,31 +239,31 @@
      "line": 11,
      "locals": {
       "cart": {
-       "ref": "0x13f4b991340"
+       "ref": "0x21efe311340"
       },
       "name": {
-       "ref": "0x13f4bbe60b0"
+       "ref": "0x21efe5660b0"
       },
       "count": {
-       "ref": "0x7ffd75a14998"
+       "ref": "0x7ffd7f2b4998"
       }
      }
     }
    ],
    "heap": {
-    "0x13f4b991340": {
-     "id": "0x13f4b991340",
+    "0x21efe311340": {
+     "id": "0x21efe311340",
      "type": "list",
      "repr": "[]",
      "items": []
     },
-    "0x13f4bbe60b0": {
-     "id": "0x13f4bbe60b0",
+    "0x21efe5660b0": {
+     "id": "0x21efe5660b0",
      "type": "str",
      "repr": "'손님'"
     },
-    "0x7ffd75a14998": {
-     "id": "0x7ffd75a14998",
+    "0x7ffd7f2b4998": {
+     "id": "0x7ffd7f2b4998",
      "type": "int",
      "repr": "0"
     }
@@ -280,31 +280,31 @@
      "line": 11,
      "locals": {
       "cart": {
-       "ref": "0x13f4b991340"
+       "ref": "0x21efe311340"
       },
       "name": {
-       "ref": "0x13f4bbe60b0"
+       "ref": "0x21efe5660b0"
       },
       "count": {
-       "ref": "0x7ffd75a14998"
+       "ref": "0x7ffd7f2b4998"
       }
      }
     }
    ],
    "heap": {
-    "0x13f4b991340": {
-     "id": "0x13f4b991340",
+    "0x21efe311340": {
+     "id": "0x21efe311340",
      "type": "list",
      "repr": "[]",
      "items": []
     },
-    "0x13f4bbe60b0": {
-     "id": "0x13f4bbe60b0",
+    "0x21efe5660b0": {
+     "id": "0x21efe5660b0",
      "type": "str",
      "repr": "'손님'"
     },
-    "0x7ffd75a14998": {
-     "id": "0x7ffd75a14998",
+    "0x7ffd7f2b4998": {
+     "id": "0x7ffd7f2b4998",
      "type": "int",
      "repr": "0"
     }

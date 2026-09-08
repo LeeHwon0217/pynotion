@@ -37,14 +37,14 @@
      "line": 2,
      "locals": {
       "text": {
-       "ref": "0x2b367cfcf90"
+       "ref": "0x25fc75fcf90"
       }
      }
     }
    ],
    "heap": {
-    "0x2b367cfcf90": {
-     "id": "0x2b367cfcf90",
+    "0x25fc75fcf90": {
+     "id": "0x25fc75fcf90",
      "type": "str",
      "repr": "'42'"
     }
@@ -61,22 +61,22 @@
      "line": 3,
      "locals": {
       "text": {
-       "ref": "0x2b367cfcf90"
+       "ref": "0x25fc75fcf90"
       },
       "n": {
-       "ref": "0x7ffd75a14ed8"
+       "ref": "0x7ffd7f2b4ed8"
       }
      }
     }
    ],
    "heap": {
-    "0x2b367cfcf90": {
-     "id": "0x2b367cfcf90",
+    "0x25fc75fcf90": {
+     "id": "0x25fc75fcf90",
      "type": "str",
      "repr": "'42'"
     },
-    "0x7ffd75a14ed8": {
-     "id": "0x7ffd75a14ed8",
+    "0x7ffd7f2b4ed8": {
+     "id": "0x7ffd7f2b4ed8",
      "type": "int",
      "repr": "42"
     }
@@ -92,22 +92,22 @@
      "line": 4,
      "locals": {
       "text": {
-       "ref": "0x2b367cfcf90"
+       "ref": "0x25fc75fcf90"
       },
       "n": {
-       "ref": "0x7ffd75a14ed8"
+       "ref": "0x7ffd7f2b4ed8"
       }
      }
     }
    ],
    "heap": {
-    "0x2b367cfcf90": {
-     "id": "0x2b367cfcf90",
+    "0x25fc75fcf90": {
+     "id": "0x25fc75fcf90",
      "type": "str",
      "repr": "'42'"
     },
-    "0x7ffd75a14ed8": {
-     "id": "0x7ffd75a14ed8",
+    "0x7ffd7f2b4ed8": {
+     "id": "0x7ffd7f2b4ed8",
      "type": "int",
      "repr": "42"
     }
@@ -124,22 +124,22 @@
      "line": 5,
      "locals": {
       "text": {
-       "ref": "0x2b367cfcf90"
+       "ref": "0x25fc75fcf90"
       },
       "n": {
-       "ref": "0x7ffd75a14ed8"
+       "ref": "0x7ffd7f2b4ed8"
       }
      }
     }
    ],
    "heap": {
-    "0x2b367cfcf90": {
-     "id": "0x2b367cfcf90",
+    "0x25fc75fcf90": {
+     "id": "0x25fc75fcf90",
      "type": "str",
      "repr": "'42'"
     },
-    "0x7ffd75a14ed8": {
-     "id": "0x7ffd75a14ed8",
+    "0x7ffd7f2b4ed8": {
+     "id": "0x7ffd7f2b4ed8",
      "type": "int",
      "repr": "42"
     }
@@ -156,22 +156,22 @@
      "line": 6,
      "locals": {
       "text": {
-       "ref": "0x2b367cfcf90"
+       "ref": "0x25fc75fcf90"
       },
       "n": {
-       "ref": "0x7ffd75a14ed8"
+       "ref": "0x7ffd7f2b4ed8"
       }
      }
     }
    ],
    "heap": {
-    "0x2b367cfcf90": {
-     "id": "0x2b367cfcf90",
+    "0x25fc75fcf90": {
+     "id": "0x25fc75fcf90",
      "type": "str",
      "repr": "'42'"
     },
-    "0x7ffd75a14ed8": {
-     "id": "0x7ffd75a14ed8",
+    "0x7ffd7f2b4ed8": {
+     "id": "0x7ffd7f2b4ed8",
      "type": "int",
      "repr": "42"
     }
@@ -188,22 +188,22 @@
      "line": 6,
      "locals": {
       "text": {
-       "ref": "0x2b367cfcf90"
+       "ref": "0x25fc75fcf90"
       },
       "n": {
-       "ref": "0x7ffd75a14ed8"
+       "ref": "0x7ffd7f2b4ed8"
       }
      }
     }
    ],
    "heap": {
-    "0x2b367cfcf90": {
-     "id": "0x2b367cfcf90",
+    "0x25fc75fcf90": {
+     "id": "0x25fc75fcf90",
      "type": "str",
      "repr": "'42'"
     },
-    "0x7ffd75a14ed8": {
-     "id": "0x7ffd75a14ed8",
+    "0x7ffd7f2b4ed8": {
+     "id": "0x7ffd7f2b4ed8",
      "type": "int",
      "repr": "42"
     }
@@ -220,22 +220,22 @@
      "line": 6,
      "locals": {
       "text": {
-       "ref": "0x2b367cfcf90"
+       "ref": "0x25fc75fcf90"
       },
       "n": {
-       "ref": "0x7ffd75a14ed8"
+       "ref": "0x7ffd7f2b4ed8"
       }
      }
     }
    ],
    "heap": {
-    "0x2b367cfcf90": {
-     "id": "0x2b367cfcf90",
+    "0x25fc75fcf90": {
+     "id": "0x25fc75fcf90",
      "type": "str",
      "repr": "'42'"
     },
-    "0x7ffd75a14ed8": {
-     "id": "0x7ffd75a14ed8",
+    "0x7ffd7f2b4ed8": {
+     "id": "0x7ffd7f2b4ed8",
      "type": "int",
      "repr": "42"
     }
@@ -251,22 +251,22 @@
      "line": 6,
      "locals": {
       "text": {
-       "ref": "0x2b367cfcf90"
+       "ref": "0x25fc75fcf90"
       },
       "n": {
-       "ref": "0x7ffd75a14ed8"
+       "ref": "0x7ffd7f2b4ed8"
       }
      }
     }
    ],
    "heap": {
-    "0x2b367cfcf90": {
-     "id": "0x2b367cfcf90",
+    "0x25fc75fcf90": {
+     "id": "0x25fc75fcf90",
      "type": "str",
      "repr": "'42'"
     },
-    "0x7ffd75a14ed8": {
-     "id": "0x7ffd75a14ed8",
+    "0x7ffd7f2b4ed8": {
+     "id": "0x7ffd7f2b4ed8",
      "type": "int",
      "repr": "42"
     }

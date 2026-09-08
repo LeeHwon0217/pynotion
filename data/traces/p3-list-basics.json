@@ -1,0 +1,436 @@
+{
+ "id": "p3-list-basics",
+ "code": "nums = [10, 20, 30]\nprint(nums[0], nums[2])\nnums[1] = 25\nprint(nums, len(nums))\nmixed = [1, \"둘\", 3.0, [4]]\nprint(mixed[3][0])",
+ "steps": [
+  {
+   "line": 0,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 0,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": "",
+   "note": "리스트 객체 하나 — 칸 3개에 각각 정수 객체를 가리키는 참조가 든다"
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 2,
+     "locals": {
+      "nums": {
+       "ref": "0x1fa90171340"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1fa90171340": {
+     "id": "0x1fa90171340",
+     "type": "list",
+     "repr": "[10, 20, 30]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4ad8"
+      },
+      {
+       "ref": "0x7ffd7f2b4c18"
+      },
+      {
+       "ref": "0x7ffd7f2b4d58"
+      }
+     ]
+    },
+    "0x7ffd7f2b4ad8": {
+     "id": "0x7ffd7f2b4ad8",
+     "type": "int",
+     "repr": "10"
+    },
+    "0x7ffd7f2b4c18": {
+     "id": "0x7ffd7f2b4c18",
+     "type": "int",
+     "repr": "20"
+    },
+    "0x7ffd7f2b4d58": {
+     "id": "0x7ffd7f2b4d58",
+     "type": "int",
+     "repr": "30"
+    }
+   },
+   "stdout": "",
+   "note": "인덱스는 0 부터. nums[2] 가 마지막"
+  },
+  {
+   "line": 3,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 3,
+     "locals": {
+      "nums": {
+       "ref": "0x1fa90171340"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1fa90171340": {
+     "id": "0x1fa90171340",
+     "type": "list",
+     "repr": "[10, 20, 30]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4ad8"
+      },
+      {
+       "ref": "0x7ffd7f2b4c18"
+      },
+      {
+       "ref": "0x7ffd7f2b4d58"
+      }
+     ]
+    },
+    "0x7ffd7f2b4ad8": {
+     "id": "0x7ffd7f2b4ad8",
+     "type": "int",
+     "repr": "10"
+    },
+    "0x7ffd7f2b4c18": {
+     "id": "0x7ffd7f2b4c18",
+     "type": "int",
+     "repr": "20"
+    },
+    "0x7ffd7f2b4d58": {
+     "id": "0x7ffd7f2b4d58",
+     "type": "int",
+     "repr": "30"
+    }
+   },
+   "stdout": "10 30\n",
+   "note": "1번 칸의 참조를 새 객체로 바꾼다 — 리스트 자체가 바뀐다 (mutation)"
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "nums": {
+       "ref": "0x1fa90171340"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1fa90171340": {
+     "id": "0x1fa90171340",
+     "type": "list",
+     "repr": "[10, 25, 30]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4ad8"
+      },
+      {
+       "ref": "0x7ffd7f2b4cb8"
+      },
+      {
+       "ref": "0x7ffd7f2b4d58"
+      }
+     ]
+    },
+    "0x7ffd7f2b4ad8": {
+     "id": "0x7ffd7f2b4ad8",
+     "type": "int",
+     "repr": "10"
+    },
+    "0x7ffd7f2b4cb8": {
+     "id": "0x7ffd7f2b4cb8",
+     "type": "int",
+     "repr": "25"
+    },
+    "0x7ffd7f2b4d58": {
+     "id": "0x7ffd7f2b4d58",
+     "type": "int",
+     "repr": "30"
+    }
+   },
+   "stdout": "10 30\n"
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "nums": {
+       "ref": "0x1fa90171340"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1fa90171340": {
+     "id": "0x1fa90171340",
+     "type": "list",
+     "repr": "[10, 25, 30]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4ad8"
+      },
+      {
+       "ref": "0x7ffd7f2b4cb8"
+      },
+      {
+       "ref": "0x7ffd7f2b4d58"
+      }
+     ]
+    },
+    "0x7ffd7f2b4ad8": {
+     "id": "0x7ffd7f2b4ad8",
+     "type": "int",
+     "repr": "10"
+    },
+    "0x7ffd7f2b4cb8": {
+     "id": "0x7ffd7f2b4cb8",
+     "type": "int",
+     "repr": "25"
+    },
+    "0x7ffd7f2b4d58": {
+     "id": "0x7ffd7f2b4d58",
+     "type": "int",
+     "repr": "30"
+    }
+   },
+   "stdout": "10 30\n[10, 25, 30] 3\n",
+   "note": "타입이 섞여도 된다 — 칸은 그냥 참조를 담을 뿐"
+  },
+  {
+   "line": 6,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "nums": {
+       "ref": "0x1fa90171340"
+      },
+      "mixed": {
+       "ref": "0x1fa9018f4c0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1fa90171340": {
+     "id": "0x1fa90171340",
+     "type": "list",
+     "repr": "[10, 25, 30]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4ad8"
+      },
+      {
+       "ref": "0x7ffd7f2b4cb8"
+      },
+      {
+       "ref": "0x7ffd7f2b4d58"
+      }
+     ]
+    },
+    "0x7ffd7f2b4ad8": {
+     "id": "0x7ffd7f2b4ad8",
+     "type": "int",
+     "repr": "10"
+    },
+    "0x7ffd7f2b4cb8": {
+     "id": "0x7ffd7f2b4cb8",
+     "type": "int",
+     "repr": "25"
+    },
+    "0x7ffd7f2b4d58": {
+     "id": "0x7ffd7f2b4d58",
+     "type": "int",
+     "repr": "30"
+    },
+    "0x1fa9018f4c0": {
+     "id": "0x1fa9018f4c0",
+     "type": "list",
+     "repr": "[1, '둘', 3.0, [4]]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x1fa903d2af0"
+      },
+      {
+       "ref": "0x1fa900c61d0"
+      },
+      {
+       "ref": "0x1fa9019d700"
+      }
+     ]
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x1fa903d2af0": {
+     "id": "0x1fa903d2af0",
+     "type": "str",
+     "repr": "'둘'"
+    },
+    "0x1fa900c61d0": {
+     "id": "0x1fa900c61d0",
+     "type": "float",
+     "repr": "3.0"
+    },
+    "0x1fa9019d700": {
+     "id": "0x1fa9019d700",
+     "type": "list",
+     "repr": "[4]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     ]
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    }
+   },
+   "stdout": "10 30\n[10, 25, 30] 3\n",
+   "note": "안쪽 리스트의 0번 칸"
+  },
+  {
+   "line": 6,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "nums": {
+       "ref": "0x1fa90171340"
+      },
+      "mixed": {
+       "ref": "0x1fa9018f4c0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1fa90171340": {
+     "id": "0x1fa90171340",
+     "type": "list",
+     "repr": "[10, 25, 30]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4ad8"
+      },
+      {
+       "ref": "0x7ffd7f2b4cb8"
+      },
+      {
+       "ref": "0x7ffd7f2b4d58"
+      }
+     ]
+    },
+    "0x7ffd7f2b4ad8": {
+     "id": "0x7ffd7f2b4ad8",
+     "type": "int",
+     "repr": "10"
+    },
+    "0x7ffd7f2b4cb8": {
+     "id": "0x7ffd7f2b4cb8",
+     "type": "int",
+     "repr": "25"
+    },
+    "0x7ffd7f2b4d58": {
+     "id": "0x7ffd7f2b4d58",
+     "type": "int",
+     "repr": "30"
+    },
+    "0x1fa9018f4c0": {
+     "id": "0x1fa9018f4c0",
+     "type": "list",
+     "repr": "[1, '둘', 3.0, [4]]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x1fa903d2af0"
+      },
+      {
+       "ref": "0x1fa900c61d0"
+      },
+      {
+       "ref": "0x1fa9019d700"
+      }
+     ]
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x1fa903d2af0": {
+     "id": "0x1fa903d2af0",
+     "type": "str",
+     "repr": "'둘'"
+    },
+    "0x1fa900c61d0": {
+     "id": "0x1fa900c61d0",
+     "type": "float",
+     "repr": "3.0"
+    },
+    "0x1fa9019d700": {
+     "id": "0x1fa9019d700",
+     "type": "list",
+     "repr": "[4]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     ]
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    }
+   },
+   "stdout": "10 30\n[10, 25, 30] 3\n4\n"
+  }
+ ],
+ "v": 1
+}

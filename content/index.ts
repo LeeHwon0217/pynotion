@@ -23,11 +23,28 @@ import { rangeLesson } from "./part-02/range";
 import { breakContinue } from "./part-02/break-continue";
 import { nestedLoops } from "./part-02/nested-loops";
 import { matchLesson } from "./part-02/match";
+import { listBasics } from "./part-03/list-basics";
+import { indexing } from "./part-03/indexing";
+import { slicing } from "./part-03/slicing";
+import { listMethods } from "./part-03/list-methods";
+import { dynamicArray } from "./part-03/dynamic-array";
+import { tupleLesson } from "./part-03/tuple";
+import { stringMethods } from "./part-03/string-methods";
+import { stringImmutable } from "./part-03/string-immutable";
+import { dictBasics } from "./part-03/dict-basics";
+import { hashTable } from "./part-03/hash-table";
+import { dictMethods } from "./part-03/dict-methods";
+import { setLesson } from "./part-03/set";
+import { comprehension } from "./part-03/comprehension";
+import { nestedComprehension } from "./part-03/nested-comprehension";
+import { copyLesson } from "./part-03/copy";
+import { sorting } from "./part-03/sorting";
 
 const ALL: Lesson[] = [
   whatIsPython, setup, howCodeRuns, firstProgram, readingErrors,
   variables, intLesson, floatLesson, boolNone, stringBasics, arithmetic, comparisonLogic, typeConversion, isVsEq, inputFormat,
   ifLesson, truthiness, whileLesson, forLesson, rangeLesson, breakContinue, nestedLoops, matchLesson,
+  listBasics, indexing, slicing, listMethods, dynamicArray, tupleLesson, stringMethods, stringImmutable, dictBasics, hashTable, dictMethods, setLesson, comprehension, nestedComprehension, copyLesson, sorting,
 ];
 
 const partSlug = (id: number) => PARTS.find((p) => p.id === id)!.slug;

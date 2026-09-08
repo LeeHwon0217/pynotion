@@ -28,6 +28,22 @@ import t24 from "./p2-nested.json";
 import t25 from "./p2-range.json";
 import t26 from "./p2-truthy.json";
 import t27 from "./p2-while.json";
+import t28 from "./p3-comp.json";
+import t29 from "./p3-copy.json";
+import t30 from "./p3-dict-methods.json";
+import t31 from "./p3-dict.json";
+import t32 from "./p3-getsizeof.json";
+import t33 from "./p3-hash.json";
+import t34 from "./p3-index.json";
+import t35 from "./p3-join.json";
+import t36 from "./p3-list-basics.json";
+import t37 from "./p3-list-methods.json";
+import t38 from "./p3-nested-comp.json";
+import t39 from "./p3-set.json";
+import t40 from "./p3-slice.json";
+import t41 from "./p3-sort.json";
+import t42 from "./p3-str-methods.json";
+import t43 from "./p3-tuple.json";
 
 export const TRACES: Record<string, Trace> = {
   "p0-indent-error": t0 as unknown as Trace,
@@ -58,4 +74,20 @@ export const TRACES: Record<string, Trace> = {
   "p2-range": t25 as unknown as Trace,
   "p2-truthy": t26 as unknown as Trace,
   "p2-while": t27 as unknown as Trace,
+  "p3-comp": t28 as unknown as Trace,
+  "p3-copy": t29 as unknown as Trace,
+  "p3-dict-methods": t30 as unknown as Trace,
+  "p3-dict": t31 as unknown as Trace,
+  "p3-getsizeof": t32 as unknown as Trace,
+  "p3-hash": t33 as unknown as Trace,
+  "p3-index": t34 as unknown as Trace,
+  "p3-join": t35 as unknown as Trace,
+  "p3-list-basics": t36 as unknown as Trace,
+  "p3-list-methods": t37 as unknown as Trace,
+  "p3-nested-comp": t38 as unknown as Trace,
+  "p3-set": t39 as unknown as Trace,
+  "p3-slice": t40 as unknown as Trace,
+  "p3-sort": t41 as unknown as Trace,
+  "p3-str-methods": t42 as unknown as Trace,
+  "p3-tuple": t43 as unknown as Trace,
 };

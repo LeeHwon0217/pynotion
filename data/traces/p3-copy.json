@@ -1,0 +1,1138 @@
+{
+ "id": "p3-copy",
+ "code": "import copy\na = [[1, 2], [3, 4]]\nb = a\nc = a[:]\nd = copy.deepcopy(a)\na[0].append(99)\nprint(b[0], c[0], d[0])\na.append([5])\nprint(len(b), len(c), len(d))",
+ "steps": [
+  {
+   "line": 0,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 0,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 2,
+     "locals": {
+      "copy": {
+       "ref": "0x2232d9b7290"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2232d9b7290": {
+     "id": "0x2232d9b7290",
+     "type": "module",
+     "repr": "copy"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 3,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 3,
+     "locals": {
+      "copy": {
+       "ref": "0x2232d9b7290"
+      },
+      "a": {
+       "ref": "0x2232d77f580"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2232d9b7290": {
+     "id": "0x2232d9b7290",
+     "type": "module",
+     "repr": "copy"
+    },
+    "0x2232d77f580": {
+     "id": "0x2232d77f580",
+     "type": "list",
+     "repr": "[[1, 2], [3, 4]]",
+     "items": [
+      {
+       "ref": "0x2232d6f4a00"
+      },
+      {
+       "ref": "0x2232d78d680"
+      }
+     ]
+    },
+    "0x2232d6f4a00": {
+     "id": "0x2232d6f4a00",
+     "type": "list",
+     "repr": "[1, 2]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     ]
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x2232d78d680": {
+     "id": "0x2232d78d680",
+     "type": "list",
+     "repr": "[3, 4]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     ]
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    }
+   },
+   "stdout": "",
+   "note": "복사가 아니다 — 같은 객체"
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "copy": {
+       "ref": "0x2232d9b7290"
+      },
+      "a": {
+       "ref": "0x2232d77f580"
+      },
+      "b": {
+       "ref": "0x2232d77f580"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2232d9b7290": {
+     "id": "0x2232d9b7290",
+     "type": "module",
+     "repr": "copy"
+    },
+    "0x2232d77f580": {
+     "id": "0x2232d77f580",
+     "type": "list",
+     "repr": "[[1, 2], [3, 4]]",
+     "items": [
+      {
+       "ref": "0x2232d6f4a00"
+      },
+      {
+       "ref": "0x2232d78d680"
+      }
+     ]
+    },
+    "0x2232d6f4a00": {
+     "id": "0x2232d6f4a00",
+     "type": "list",
+     "repr": "[1, 2]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     ]
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x2232d78d680": {
+     "id": "0x2232d78d680",
+     "type": "list",
+     "repr": "[3, 4]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     ]
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    }
+   },
+   "stdout": "",
+   "note": "얕은 복사 — 바깥 리스트만 새로. 안쪽 리스트는 같은 것을 가리킨다"
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "copy": {
+       "ref": "0x2232d9b7290"
+      },
+      "a": {
+       "ref": "0x2232d77f580"
+      },
+      "b": {
+       "ref": "0x2232d77f580"
+      },
+      "c": {
+       "ref": "0x2232d77f940"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2232d9b7290": {
+     "id": "0x2232d9b7290",
+     "type": "module",
+     "repr": "copy"
+    },
+    "0x2232d77f580": {
+     "id": "0x2232d77f580",
+     "type": "list",
+     "repr": "[[1, 2], [3, 4]]",
+     "items": [
+      {
+       "ref": "0x2232d6f4a00"
+      },
+      {
+       "ref": "0x2232d78d680"
+      }
+     ]
+    },
+    "0x2232d6f4a00": {
+     "id": "0x2232d6f4a00",
+     "type": "list",
+     "repr": "[1, 2]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     ]
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x2232d78d680": {
+     "id": "0x2232d78d680",
+     "type": "list",
+     "repr": "[3, 4]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     ]
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x2232d77f940": {
+     "id": "0x2232d77f940",
+     "type": "list",
+     "repr": "[[1, 2], [3, 4]]",
+     "items": [
+      {
+       "ref": "0x2232d6f4a00"
+      },
+      {
+       "ref": "0x2232d78d680"
+      }
+     ]
+    }
+   },
+   "stdout": "",
+   "note": "깊은 복사 — 안쪽까지 전부 새 객체"
+  },
+  {
+   "line": 6,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "copy": {
+       "ref": "0x2232d9b7290"
+      },
+      "a": {
+       "ref": "0x2232d77f580"
+      },
+      "b": {
+       "ref": "0x2232d77f580"
+      },
+      "c": {
+       "ref": "0x2232d77f940"
+      },
+      "d": {
+       "ref": "0x2232d77f840"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2232d9b7290": {
+     "id": "0x2232d9b7290",
+     "type": "module",
+     "repr": "copy"
+    },
+    "0x2232d77f580": {
+     "id": "0x2232d77f580",
+     "type": "list",
+     "repr": "[[1, 2], [3, 4]]",
+     "items": [
+      {
+       "ref": "0x2232d6f4a00"
+      },
+      {
+       "ref": "0x2232d78d680"
+      }
+     ]
+    },
+    "0x2232d6f4a00": {
+     "id": "0x2232d6f4a00",
+     "type": "list",
+     "repr": "[1, 2]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     ]
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x2232d78d680": {
+     "id": "0x2232d78d680",
+     "type": "list",
+     "repr": "[3, 4]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     ]
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x2232d77f940": {
+     "id": "0x2232d77f940",
+     "type": "list",
+     "repr": "[[1, 2], [3, 4]]",
+     "items": [
+      {
+       "ref": "0x2232d6f4a00"
+      },
+      {
+       "ref": "0x2232d78d680"
+      }
+     ]
+    },
+    "0x2232d77f840": {
+     "id": "0x2232d77f840",
+     "type": "list",
+     "repr": "[[1, 2], [3, 4]]",
+     "items": [
+      {
+       "ref": "0x2232d77fd00"
+      },
+      {
+       "ref": "0x2232d77f600"
+      }
+     ]
+    },
+    "0x2232d77fd00": {
+     "id": "0x2232d77fd00",
+     "type": "list",
+     "repr": "[1, 2]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     ]
+    },
+    "0x2232d77f600": {
+     "id": "0x2232d77f600",
+     "type": "list",
+     "repr": "[3, 4]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     ]
+    }
+   },
+   "stdout": "",
+   "note": "안쪽 리스트를 바꾼다"
+  },
+  {
+   "line": 7,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 7,
+     "locals": {
+      "copy": {
+       "ref": "0x2232d9b7290"
+      },
+      "a": {
+       "ref": "0x2232d77f580"
+      },
+      "b": {
+       "ref": "0x2232d77f580"
+      },
+      "c": {
+       "ref": "0x2232d77f940"
+      },
+      "d": {
+       "ref": "0x2232d77f840"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2232d9b7290": {
+     "id": "0x2232d9b7290",
+     "type": "module",
+     "repr": "copy"
+    },
+    "0x2232d77f580": {
+     "id": "0x2232d77f580",
+     "type": "list",
+     "repr": "[[1, 2, 99], [3, 4]]",
+     "items": [
+      {
+       "ref": "0x2232d6f4a00"
+      },
+      {
+       "ref": "0x2232d78d680"
+      }
+     ]
+    },
+    "0x2232d6f4a00": {
+     "id": "0x2232d6f4a00",
+     "type": "list",
+     "repr": "[1, 2, 99]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b55f8"
+      }
+     ]
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b55f8": {
+     "id": "0x7ffd7f2b55f8",
+     "type": "int",
+     "repr": "99"
+    },
+    "0x2232d78d680": {
+     "id": "0x2232d78d680",
+     "type": "list",
+     "repr": "[3, 4]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     ]
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x2232d77f940": {
+     "id": "0x2232d77f940",
+     "type": "list",
+     "repr": "[[1, 2, 99], [3, 4]]",
+     "items": [
+      {
+       "ref": "0x2232d6f4a00"
+      },
+      {
+       "ref": "0x2232d78d680"
+      }
+     ]
+    },
+    "0x2232d77f840": {
+     "id": "0x2232d77f840",
+     "type": "list",
+     "repr": "[[1, 2], [3, 4]]",
+     "items": [
+      {
+       "ref": "0x2232d77fd00"
+      },
+      {
+       "ref": "0x2232d77f600"
+      }
+     ]
+    },
+    "0x2232d77fd00": {
+     "id": "0x2232d77fd00",
+     "type": "list",
+     "repr": "[1, 2]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     ]
+    },
+    "0x2232d77f600": {
+     "id": "0x2232d77f600",
+     "type": "list",
+     "repr": "[3, 4]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     ]
+    }
+   },
+   "stdout": "",
+   "note": "b 와 c 는 같이 바뀌고(안쪽 공유), d 만 안 바뀐다"
+  },
+  {
+   "line": 8,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 8,
+     "locals": {
+      "copy": {
+       "ref": "0x2232d9b7290"
+      },
+      "a": {
+       "ref": "0x2232d77f580"
+      },
+      "b": {
+       "ref": "0x2232d77f580"
+      },
+      "c": {
+       "ref": "0x2232d77f940"
+      },
+      "d": {
+       "ref": "0x2232d77f840"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2232d9b7290": {
+     "id": "0x2232d9b7290",
+     "type": "module",
+     "repr": "copy"
+    },
+    "0x2232d77f580": {
+     "id": "0x2232d77f580",
+     "type": "list",
+     "repr": "[[1, 2, 99], [3, 4]]",
+     "items": [
+      {
+       "ref": "0x2232d6f4a00"
+      },
+      {
+       "ref": "0x2232d78d680"
+      }
+     ]
+    },
+    "0x2232d6f4a00": {
+     "id": "0x2232d6f4a00",
+     "type": "list",
+     "repr": "[1, 2, 99]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b55f8"
+      }
+     ]
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b55f8": {
+     "id": "0x7ffd7f2b55f8",
+     "type": "int",
+     "repr": "99"
+    },
+    "0x2232d78d680": {
+     "id": "0x2232d78d680",
+     "type": "list",
+     "repr": "[3, 4]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     ]
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x2232d77f940": {
+     "id": "0x2232d77f940",
+     "type": "list",
+     "repr": "[[1, 2, 99], [3, 4]]",
+     "items": [
+      {
+       "ref": "0x2232d6f4a00"
+      },
+      {
+       "ref": "0x2232d78d680"
+      }
+     ]
+    },
+    "0x2232d77f840": {
+     "id": "0x2232d77f840",
+     "type": "list",
+     "repr": "[[1, 2], [3, 4]]",
+     "items": [
+      {
+       "ref": "0x2232d77fd00"
+      },
+      {
+       "ref": "0x2232d77f600"
+      }
+     ]
+    },
+    "0x2232d77fd00": {
+     "id": "0x2232d77fd00",
+     "type": "list",
+     "repr": "[1, 2]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     ]
+    },
+    "0x2232d77f600": {
+     "id": "0x2232d77f600",
+     "type": "list",
+     "repr": "[3, 4]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     ]
+    }
+   },
+   "stdout": "[1, 2, 99] [1, 2, 99] [1, 2]\n",
+   "note": "바깥 리스트를 바꾼다"
+  },
+  {
+   "line": 9,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 9,
+     "locals": {
+      "copy": {
+       "ref": "0x2232d9b7290"
+      },
+      "a": {
+       "ref": "0x2232d77f580"
+      },
+      "b": {
+       "ref": "0x2232d77f580"
+      },
+      "c": {
+       "ref": "0x2232d77f940"
+      },
+      "d": {
+       "ref": "0x2232d77f840"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2232d9b7290": {
+     "id": "0x2232d9b7290",
+     "type": "module",
+     "repr": "copy"
+    },
+    "0x2232d77f580": {
+     "id": "0x2232d77f580",
+     "type": "list",
+     "repr": "[[1, 2, 99], [3, 4], [5]]",
+     "items": [
+      {
+       "ref": "0x2232d6f4a00"
+      },
+      {
+       "ref": "0x2232d78d680"
+      },
+      {
+       "ref": "0x2232d77fec0"
+      }
+     ]
+    },
+    "0x2232d6f4a00": {
+     "id": "0x2232d6f4a00",
+     "type": "list",
+     "repr": "[1, 2, 99]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b55f8"
+      }
+     ]
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b55f8": {
+     "id": "0x7ffd7f2b55f8",
+     "type": "int",
+     "repr": "99"
+    },
+    "0x2232d78d680": {
+     "id": "0x2232d78d680",
+     "type": "list",
+     "repr": "[3, 4]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     ]
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x2232d77fec0": {
+     "id": "0x2232d77fec0",
+     "type": "list",
+     "repr": "[5]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4a38"
+      }
+     ]
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    },
+    "0x2232d77f940": {
+     "id": "0x2232d77f940",
+     "type": "list",
+     "repr": "[[1, 2, 99], [3, 4]]",
+     "items": [
+      {
+       "ref": "0x2232d6f4a00"
+      },
+      {
+       "ref": "0x2232d78d680"
+      }
+     ]
+    },
+    "0x2232d77f840": {
+     "id": "0x2232d77f840",
+     "type": "list",
+     "repr": "[[1, 2], [3, 4]]",
+     "items": [
+      {
+       "ref": "0x2232d77fd00"
+      },
+      {
+       "ref": "0x2232d77f600"
+      }
+     ]
+    },
+    "0x2232d77fd00": {
+     "id": "0x2232d77fd00",
+     "type": "list",
+     "repr": "[1, 2]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     ]
+    },
+    "0x2232d77f600": {
+     "id": "0x2232d77f600",
+     "type": "list",
+     "repr": "[3, 4]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     ]
+    }
+   },
+   "stdout": "[1, 2, 99] [1, 2, 99] [1, 2]\n",
+   "note": "b 만 같이 바뀐다 — c 의 바깥은 별개니까"
+  },
+  {
+   "line": 9,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 9,
+     "locals": {
+      "copy": {
+       "ref": "0x2232d9b7290"
+      },
+      "a": {
+       "ref": "0x2232d77f580"
+      },
+      "b": {
+       "ref": "0x2232d77f580"
+      },
+      "c": {
+       "ref": "0x2232d77f940"
+      },
+      "d": {
+       "ref": "0x2232d77f840"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2232d9b7290": {
+     "id": "0x2232d9b7290",
+     "type": "module",
+     "repr": "copy"
+    },
+    "0x2232d77f580": {
+     "id": "0x2232d77f580",
+     "type": "list",
+     "repr": "[[1, 2, 99], [3, 4], [5]]",
+     "items": [
+      {
+       "ref": "0x2232d6f4a00"
+      },
+      {
+       "ref": "0x2232d78d680"
+      },
+      {
+       "ref": "0x2232d77fec0"
+      }
+     ]
+    },
+    "0x2232d6f4a00": {
+     "id": "0x2232d6f4a00",
+     "type": "list",
+     "repr": "[1, 2, 99]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b55f8"
+      }
+     ]
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b55f8": {
+     "id": "0x7ffd7f2b55f8",
+     "type": "int",
+     "repr": "99"
+    },
+    "0x2232d78d680": {
+     "id": "0x2232d78d680",
+     "type": "list",
+     "repr": "[3, 4]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     ]
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x2232d77fec0": {
+     "id": "0x2232d77fec0",
+     "type": "list",
+     "repr": "[5]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4a38"
+      }
+     ]
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    },
+    "0x2232d77f940": {
+     "id": "0x2232d77f940",
+     "type": "list",
+     "repr": "[[1, 2, 99], [3, 4]]",
+     "items": [
+      {
+       "ref": "0x2232d6f4a00"
+      },
+      {
+       "ref": "0x2232d78d680"
+      }
+     ]
+    },
+    "0x2232d77f840": {
+     "id": "0x2232d77f840",
+     "type": "list",
+     "repr": "[[1, 2], [3, 4]]",
+     "items": [
+      {
+       "ref": "0x2232d77fd00"
+      },
+      {
+       "ref": "0x2232d77f600"
+      }
+     ]
+    },
+    "0x2232d77fd00": {
+     "id": "0x2232d77fd00",
+     "type": "list",
+     "repr": "[1, 2]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     ]
+    },
+    "0x2232d77f600": {
+     "id": "0x2232d77f600",
+     "type": "list",
+     "repr": "[3, 4]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     ]
+    }
+   },
+   "stdout": "[1, 2, 99] [1, 2, 99] [1, 2]\n3 2 2\n"
+  }
+ ],
+ "v": 1
+}

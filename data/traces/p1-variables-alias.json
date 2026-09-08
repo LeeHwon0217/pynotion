@@ -38,32 +38,32 @@
      "line": 2,
      "locals": {
       "nums": {
-       "ref": "0x24067271340"
+       "ref": "0x269c6a01340"
       }
      }
     }
    ],
    "heap": {
-    "0x24067271340": {
-     "id": "0x24067271340",
+    "0x269c6a01340": {
+     "id": "0x269c6a01340",
      "type": "list",
      "repr": "[1, 2]",
      "items": [
       {
-       "ref": "0x7ffd75a149b8"
+       "ref": "0x7ffd7f2b49b8"
       },
       {
-       "ref": "0x7ffd75a149d8"
+       "ref": "0x7ffd7f2b49d8"
       }
      ]
     },
-    "0x7ffd75a149b8": {
-     "id": "0x7ffd75a149b8",
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
      "type": "int",
      "repr": "1"
     },
-    "0x7ffd75a149d8": {
-     "id": "0x7ffd75a149d8",
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
      "type": "int",
      "repr": "2"
     }
@@ -80,35 +80,35 @@
      "line": 3,
      "locals": {
       "nums": {
-       "ref": "0x24067271340"
+       "ref": "0x269c6a01340"
       },
       "other": {
-       "ref": "0x24067271340"
+       "ref": "0x269c6a01340"
       }
      }
     }
    ],
    "heap": {
-    "0x24067271340": {
-     "id": "0x24067271340",
+    "0x269c6a01340": {
+     "id": "0x269c6a01340",
      "type": "list",
      "repr": "[1, 2]",
      "items": [
       {
-       "ref": "0x7ffd75a149b8"
+       "ref": "0x7ffd7f2b49b8"
       },
       {
-       "ref": "0x7ffd75a149d8"
+       "ref": "0x7ffd7f2b49d8"
       }
      ]
     },
-    "0x7ffd75a149b8": {
-     "id": "0x7ffd75a149b8",
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
      "type": "int",
      "repr": "1"
     },
-    "0x7ffd75a149d8": {
-     "id": "0x7ffd75a149d8",
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
      "type": "int",
      "repr": "2"
     }
@@ -125,43 +125,43 @@
      "line": 4,
      "locals": {
       "nums": {
-       "ref": "0x24067271340"
+       "ref": "0x269c6a01340"
       },
       "other": {
-       "ref": "0x24067271340"
+       "ref": "0x269c6a01340"
       }
      }
     }
    ],
    "heap": {
-    "0x24067271340": {
-     "id": "0x24067271340",
+    "0x269c6a01340": {
+     "id": "0x269c6a01340",
      "type": "list",
      "repr": "[1, 2, 3]",
      "items": [
       {
-       "ref": "0x7ffd75a149b8"
+       "ref": "0x7ffd7f2b49b8"
       },
       {
-       "ref": "0x7ffd75a149d8"
+       "ref": "0x7ffd7f2b49d8"
       },
       {
-       "ref": "0x7ffd75a149f8"
+       "ref": "0x7ffd7f2b49f8"
       }
      ]
     },
-    "0x7ffd75a149b8": {
-     "id": "0x7ffd75a149b8",
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
      "type": "int",
      "repr": "1"
     },
-    "0x7ffd75a149d8": {
-     "id": "0x7ffd75a149d8",
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
      "type": "int",
      "repr": "2"
     },
-    "0x7ffd75a149f8": {
-     "id": "0x7ffd75a149f8",
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
      "type": "int",
      "repr": "3"
     }
@@ -178,43 +178,43 @@
      "line": 5,
      "locals": {
       "nums": {
-       "ref": "0x24067271340"
+       "ref": "0x269c6a01340"
       },
       "other": {
-       "ref": "0x24067271340"
+       "ref": "0x269c6a01340"
       }
      }
     }
    ],
    "heap": {
-    "0x24067271340": {
-     "id": "0x24067271340",
+    "0x269c6a01340": {
+     "id": "0x269c6a01340",
      "type": "list",
      "repr": "[1, 2, 3]",
      "items": [
       {
-       "ref": "0x7ffd75a149b8"
+       "ref": "0x7ffd7f2b49b8"
       },
       {
-       "ref": "0x7ffd75a149d8"
+       "ref": "0x7ffd7f2b49d8"
       },
       {
-       "ref": "0x7ffd75a149f8"
+       "ref": "0x7ffd7f2b49f8"
       }
      ]
     },
-    "0x7ffd75a149b8": {
-     "id": "0x7ffd75a149b8",
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
      "type": "int",
      "repr": "1"
     },
-    "0x7ffd75a149d8": {
-     "id": "0x7ffd75a149d8",
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
      "type": "int",
      "repr": "2"
     },
-    "0x7ffd75a149f8": {
-     "id": "0x7ffd75a149f8",
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
      "type": "int",
      "repr": "3"
     }
@@ -231,62 +231,62 @@
      "line": 6,
      "locals": {
       "nums": {
-       "ref": "0x24067271340"
+       "ref": "0x269c6a01340"
       },
       "other": {
-       "ref": "0x24067271340"
+       "ref": "0x269c6a01340"
       },
       "copy": {
-       "ref": "0x240674d3100"
+       "ref": "0x269c6c63100"
       }
      }
     }
    ],
    "heap": {
-    "0x24067271340": {
-     "id": "0x24067271340",
+    "0x269c6a01340": {
+     "id": "0x269c6a01340",
      "type": "list",
      "repr": "[1, 2, 3]",
      "items": [
       {
-       "ref": "0x7ffd75a149b8"
+       "ref": "0x7ffd7f2b49b8"
       },
       {
-       "ref": "0x7ffd75a149d8"
+       "ref": "0x7ffd7f2b49d8"
       },
       {
-       "ref": "0x7ffd75a149f8"
+       "ref": "0x7ffd7f2b49f8"
       }
      ]
     },
-    "0x7ffd75a149b8": {
-     "id": "0x7ffd75a149b8",
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
      "type": "int",
      "repr": "1"
     },
-    "0x7ffd75a149d8": {
-     "id": "0x7ffd75a149d8",
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
      "type": "int",
      "repr": "2"
     },
-    "0x7ffd75a149f8": {
-     "id": "0x7ffd75a149f8",
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
      "type": "int",
      "repr": "3"
     },
-    "0x240674d3100": {
-     "id": "0x240674d3100",
+    "0x269c6c63100": {
+     "id": "0x269c6c63100",
      "type": "list",
      "repr": "[1, 2, 3]",
      "items": [
       {
-       "ref": "0x7ffd75a149b8"
+       "ref": "0x7ffd7f2b49b8"
       },
       {
-       "ref": "0x7ffd75a149d8"
+       "ref": "0x7ffd7f2b49d8"
       },
       {
-       "ref": "0x7ffd75a149f8"
+       "ref": "0x7ffd7f2b49f8"
       }
      ]
     }
@@ -303,70 +303,70 @@
      "line": 7,
      "locals": {
       "nums": {
-       "ref": "0x24067271340"
+       "ref": "0x269c6a01340"
       },
       "other": {
-       "ref": "0x24067271340"
+       "ref": "0x269c6a01340"
       },
       "copy": {
-       "ref": "0x240674d3100"
+       "ref": "0x269c6c63100"
       }
      }
     }
    ],
    "heap": {
-    "0x24067271340": {
-     "id": "0x24067271340",
+    "0x269c6a01340": {
+     "id": "0x269c6a01340",
      "type": "list",
      "repr": "[1, 2, 3]",
      "items": [
       {
-       "ref": "0x7ffd75a149b8"
+       "ref": "0x7ffd7f2b49b8"
       },
       {
-       "ref": "0x7ffd75a149d8"
+       "ref": "0x7ffd7f2b49d8"
       },
       {
-       "ref": "0x7ffd75a149f8"
+       "ref": "0x7ffd7f2b49f8"
       }
      ]
     },
-    "0x7ffd75a149b8": {
-     "id": "0x7ffd75a149b8",
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
      "type": "int",
      "repr": "1"
     },
-    "0x7ffd75a149d8": {
-     "id": "0x7ffd75a149d8",
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
      "type": "int",
      "repr": "2"
     },
-    "0x7ffd75a149f8": {
-     "id": "0x7ffd75a149f8",
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
      "type": "int",
      "repr": "3"
     },
-    "0x240674d3100": {
-     "id": "0x240674d3100",
+    "0x269c6c63100": {
+     "id": "0x269c6c63100",
      "type": "list",
      "repr": "[1, 2, 3, 4]",
      "items": [
       {
-       "ref": "0x7ffd75a149b8"
+       "ref": "0x7ffd7f2b49b8"
       },
       {
-       "ref": "0x7ffd75a149d8"
+       "ref": "0x7ffd7f2b49d8"
       },
       {
-       "ref": "0x7ffd75a149f8"
+       "ref": "0x7ffd7f2b49f8"
       },
       {
-       "ref": "0x7ffd75a14a18"
+       "ref": "0x7ffd7f2b4a18"
       }
      ]
     },
-    "0x7ffd75a14a18": {
-     "id": "0x7ffd75a14a18",
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
      "type": "int",
      "repr": "4"
     }
@@ -382,70 +382,70 @@
      "line": 7,
      "locals": {
       "nums": {
-       "ref": "0x24067271340"
+       "ref": "0x269c6a01340"
       },
       "other": {
-       "ref": "0x24067271340"
+       "ref": "0x269c6a01340"
       },
       "copy": {
-       "ref": "0x240674d3100"
+       "ref": "0x269c6c63100"
       }
      }
     }
    ],
    "heap": {
-    "0x24067271340": {
-     "id": "0x24067271340",
+    "0x269c6a01340": {
+     "id": "0x269c6a01340",
      "type": "list",
      "repr": "[1, 2, 3]",
      "items": [
       {
-       "ref": "0x7ffd75a149b8"
+       "ref": "0x7ffd7f2b49b8"
       },
       {
-       "ref": "0x7ffd75a149d8"
+       "ref": "0x7ffd7f2b49d8"
       },
       {
-       "ref": "0x7ffd75a149f8"
+       "ref": "0x7ffd7f2b49f8"
       }
      ]
     },
-    "0x7ffd75a149b8": {
-     "id": "0x7ffd75a149b8",
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
      "type": "int",
      "repr": "1"
     },
-    "0x7ffd75a149d8": {
-     "id": "0x7ffd75a149d8",
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
      "type": "int",
      "repr": "2"
     },
-    "0x7ffd75a149f8": {
-     "id": "0x7ffd75a149f8",
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
      "type": "int",
      "repr": "3"
     },
-    "0x240674d3100": {
-     "id": "0x240674d3100",
+    "0x269c6c63100": {
+     "id": "0x269c6c63100",
      "type": "list",
      "repr": "[1, 2, 3, 4]",
      "items": [
       {
-       "ref": "0x7ffd75a149b8"
+       "ref": "0x7ffd7f2b49b8"
       },
       {
-       "ref": "0x7ffd75a149d8"
+       "ref": "0x7ffd7f2b49d8"
       },
       {
-       "ref": "0x7ffd75a149f8"
+       "ref": "0x7ffd7f2b49f8"
       },
       {
-       "ref": "0x7ffd75a14a18"
+       "ref": "0x7ffd7f2b4a18"
       }
      ]
     },
-    "0x7ffd75a14a18": {
-     "id": "0x7ffd75a14a18",
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
      "type": "int",
      "repr": "4"
     }

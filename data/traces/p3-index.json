@@ -1,0 +1,493 @@
+{
+ "id": "p3-index",
+ "code": "s = [\"a\", \"b\", \"c\", \"d\", \"e\"]\nprint(s[0], s[4])\nprint(s[-1], s[-5])\nprint(s[len(s) - 1])\nprint(s[5])",
+ "steps": [
+  {
+   "line": 0,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 0,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 2,
+     "locals": {
+      "s": {
+       "ref": "0x1ee1b4b1340"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ee1b4b1340": {
+     "id": "0x1ee1b4b1340",
+     "type": "list",
+     "repr": "['a', 'b', 'c', 'd', 'e']",
+     "items": [
+      {
+       "ref": "0x7ffd7f2c3e40"
+      },
+      {
+       "ref": "0x7ffd7f2c3e70"
+      },
+      {
+       "ref": "0x7ffd7f2c3ea0"
+      },
+      {
+       "ref": "0x7ffd7f2c3ed0"
+      },
+      {
+       "ref": "0x7ffd7f2c3f00"
+      }
+     ]
+    },
+    "0x7ffd7f2c3e40": {
+     "id": "0x7ffd7f2c3e40",
+     "type": "str",
+     "repr": "'a'"
+    },
+    "0x7ffd7f2c3e70": {
+     "id": "0x7ffd7f2c3e70",
+     "type": "str",
+     "repr": "'b'"
+    },
+    "0x7ffd7f2c3ea0": {
+     "id": "0x7ffd7f2c3ea0",
+     "type": "str",
+     "repr": "'c'"
+    },
+    "0x7ffd7f2c3ed0": {
+     "id": "0x7ffd7f2c3ed0",
+     "type": "str",
+     "repr": "'d'"
+    },
+    "0x7ffd7f2c3f00": {
+     "id": "0x7ffd7f2c3f00",
+     "type": "str",
+     "repr": "'e'"
+    }
+   },
+   "stdout": "",
+   "note": "앞에서 0, 1, 2, 3, 4"
+  },
+  {
+   "line": 3,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 3,
+     "locals": {
+      "s": {
+       "ref": "0x1ee1b4b1340"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ee1b4b1340": {
+     "id": "0x1ee1b4b1340",
+     "type": "list",
+     "repr": "['a', 'b', 'c', 'd', 'e']",
+     "items": [
+      {
+       "ref": "0x7ffd7f2c3e40"
+      },
+      {
+       "ref": "0x7ffd7f2c3e70"
+      },
+      {
+       "ref": "0x7ffd7f2c3ea0"
+      },
+      {
+       "ref": "0x7ffd7f2c3ed0"
+      },
+      {
+       "ref": "0x7ffd7f2c3f00"
+      }
+     ]
+    },
+    "0x7ffd7f2c3e40": {
+     "id": "0x7ffd7f2c3e40",
+     "type": "str",
+     "repr": "'a'"
+    },
+    "0x7ffd7f2c3e70": {
+     "id": "0x7ffd7f2c3e70",
+     "type": "str",
+     "repr": "'b'"
+    },
+    "0x7ffd7f2c3ea0": {
+     "id": "0x7ffd7f2c3ea0",
+     "type": "str",
+     "repr": "'c'"
+    },
+    "0x7ffd7f2c3ed0": {
+     "id": "0x7ffd7f2c3ed0",
+     "type": "str",
+     "repr": "'d'"
+    },
+    "0x7ffd7f2c3f00": {
+     "id": "0x7ffd7f2c3f00",
+     "type": "str",
+     "repr": "'e'"
+    }
+   },
+   "stdout": "a e\n",
+   "note": "뒤에서 -1, -2, … -5. s[-1] 은 s[len(s) - 1] 과 같다"
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "s": {
+       "ref": "0x1ee1b4b1340"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ee1b4b1340": {
+     "id": "0x1ee1b4b1340",
+     "type": "list",
+     "repr": "['a', 'b', 'c', 'd', 'e']",
+     "items": [
+      {
+       "ref": "0x7ffd7f2c3e40"
+      },
+      {
+       "ref": "0x7ffd7f2c3e70"
+      },
+      {
+       "ref": "0x7ffd7f2c3ea0"
+      },
+      {
+       "ref": "0x7ffd7f2c3ed0"
+      },
+      {
+       "ref": "0x7ffd7f2c3f00"
+      }
+     ]
+    },
+    "0x7ffd7f2c3e40": {
+     "id": "0x7ffd7f2c3e40",
+     "type": "str",
+     "repr": "'a'"
+    },
+    "0x7ffd7f2c3e70": {
+     "id": "0x7ffd7f2c3e70",
+     "type": "str",
+     "repr": "'b'"
+    },
+    "0x7ffd7f2c3ea0": {
+     "id": "0x7ffd7f2c3ea0",
+     "type": "str",
+     "repr": "'c'"
+    },
+    "0x7ffd7f2c3ed0": {
+     "id": "0x7ffd7f2c3ed0",
+     "type": "str",
+     "repr": "'d'"
+    },
+    "0x7ffd7f2c3f00": {
+     "id": "0x7ffd7f2c3f00",
+     "type": "str",
+     "repr": "'e'"
+    }
+   },
+   "stdout": "a e\ne a\n"
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "s": {
+       "ref": "0x1ee1b4b1340"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ee1b4b1340": {
+     "id": "0x1ee1b4b1340",
+     "type": "list",
+     "repr": "['a', 'b', 'c', 'd', 'e']",
+     "items": [
+      {
+       "ref": "0x7ffd7f2c3e40"
+      },
+      {
+       "ref": "0x7ffd7f2c3e70"
+      },
+      {
+       "ref": "0x7ffd7f2c3ea0"
+      },
+      {
+       "ref": "0x7ffd7f2c3ed0"
+      },
+      {
+       "ref": "0x7ffd7f2c3f00"
+      }
+     ]
+    },
+    "0x7ffd7f2c3e40": {
+     "id": "0x7ffd7f2c3e40",
+     "type": "str",
+     "repr": "'a'"
+    },
+    "0x7ffd7f2c3e70": {
+     "id": "0x7ffd7f2c3e70",
+     "type": "str",
+     "repr": "'b'"
+    },
+    "0x7ffd7f2c3ea0": {
+     "id": "0x7ffd7f2c3ea0",
+     "type": "str",
+     "repr": "'c'"
+    },
+    "0x7ffd7f2c3ed0": {
+     "id": "0x7ffd7f2c3ed0",
+     "type": "str",
+     "repr": "'d'"
+    },
+    "0x7ffd7f2c3f00": {
+     "id": "0x7ffd7f2c3f00",
+     "type": "str",
+     "repr": "'e'"
+    }
+   },
+   "stdout": "a e\ne a\ne\n",
+   "note": "5 번은 없다 → IndexError. 마지막은 4 (길이 - 1)"
+  },
+  {
+   "line": 5,
+   "event": "exception",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "s": {
+       "ref": "0x1ee1b4b1340"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ee1b4b1340": {
+     "id": "0x1ee1b4b1340",
+     "type": "list",
+     "repr": "['a', 'b', 'c', 'd', 'e']",
+     "items": [
+      {
+       "ref": "0x7ffd7f2c3e40"
+      },
+      {
+       "ref": "0x7ffd7f2c3e70"
+      },
+      {
+       "ref": "0x7ffd7f2c3ea0"
+      },
+      {
+       "ref": "0x7ffd7f2c3ed0"
+      },
+      {
+       "ref": "0x7ffd7f2c3f00"
+      }
+     ]
+    },
+    "0x7ffd7f2c3e40": {
+     "id": "0x7ffd7f2c3e40",
+     "type": "str",
+     "repr": "'a'"
+    },
+    "0x7ffd7f2c3e70": {
+     "id": "0x7ffd7f2c3e70",
+     "type": "str",
+     "repr": "'b'"
+    },
+    "0x7ffd7f2c3ea0": {
+     "id": "0x7ffd7f2c3ea0",
+     "type": "str",
+     "repr": "'c'"
+    },
+    "0x7ffd7f2c3ed0": {
+     "id": "0x7ffd7f2c3ed0",
+     "type": "str",
+     "repr": "'d'"
+    },
+    "0x7ffd7f2c3f00": {
+     "id": "0x7ffd7f2c3f00",
+     "type": "str",
+     "repr": "'e'"
+    }
+   },
+   "stdout": "a e\ne a\ne\n",
+   "exc": "IndexError: list index out of range"
+  },
+  {
+   "line": 5,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "s": {
+       "ref": "0x1ee1b4b1340"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ee1b4b1340": {
+     "id": "0x1ee1b4b1340",
+     "type": "list",
+     "repr": "['a', 'b', 'c', 'd', 'e']",
+     "items": [
+      {
+       "ref": "0x7ffd7f2c3e40"
+      },
+      {
+       "ref": "0x7ffd7f2c3e70"
+      },
+      {
+       "ref": "0x7ffd7f2c3ea0"
+      },
+      {
+       "ref": "0x7ffd7f2c3ed0"
+      },
+      {
+       "ref": "0x7ffd7f2c3f00"
+      }
+     ]
+    },
+    "0x7ffd7f2c3e40": {
+     "id": "0x7ffd7f2c3e40",
+     "type": "str",
+     "repr": "'a'"
+    },
+    "0x7ffd7f2c3e70": {
+     "id": "0x7ffd7f2c3e70",
+     "type": "str",
+     "repr": "'b'"
+    },
+    "0x7ffd7f2c3ea0": {
+     "id": "0x7ffd7f2c3ea0",
+     "type": "str",
+     "repr": "'c'"
+    },
+    "0x7ffd7f2c3ed0": {
+     "id": "0x7ffd7f2c3ed0",
+     "type": "str",
+     "repr": "'d'"
+    },
+    "0x7ffd7f2c3f00": {
+     "id": "0x7ffd7f2c3f00",
+     "type": "str",
+     "repr": "'e'"
+    }
+   },
+   "stdout": "a e\ne a\ne\n"
+  },
+  {
+   "line": 5,
+   "event": "exception",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "s": {
+       "ref": "0x1ee1b4b1340"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ee1b4b1340": {
+     "id": "0x1ee1b4b1340",
+     "type": "list",
+     "repr": "['a', 'b', 'c', 'd', 'e']",
+     "items": [
+      {
+       "ref": "0x7ffd7f2c3e40"
+      },
+      {
+       "ref": "0x7ffd7f2c3e70"
+      },
+      {
+       "ref": "0x7ffd7f2c3ea0"
+      },
+      {
+       "ref": "0x7ffd7f2c3ed0"
+      },
+      {
+       "ref": "0x7ffd7f2c3f00"
+      }
+     ]
+    },
+    "0x7ffd7f2c3e40": {
+     "id": "0x7ffd7f2c3e40",
+     "type": "str",
+     "repr": "'a'"
+    },
+    "0x7ffd7f2c3e70": {
+     "id": "0x7ffd7f2c3e70",
+     "type": "str",
+     "repr": "'b'"
+    },
+    "0x7ffd7f2c3ea0": {
+     "id": "0x7ffd7f2c3ea0",
+     "type": "str",
+     "repr": "'c'"
+    },
+    "0x7ffd7f2c3ed0": {
+     "id": "0x7ffd7f2c3ed0",
+     "type": "str",
+     "repr": "'d'"
+    },
+    "0x7ffd7f2c3f00": {
+     "id": "0x7ffd7f2c3f00",
+     "type": "str",
+     "repr": "'e'"
+    }
+   },
+   "stdout": "a e\ne a\ne\n",
+   "exc": "IndexError: list index out of range"
+  }
+ ],
+ "v": 1
+}

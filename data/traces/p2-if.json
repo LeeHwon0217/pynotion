@@ -37,14 +37,14 @@
      "line": 2,
      "locals": {
       "score": {
-       "ref": "0x7ffd75a15438"
+       "ref": "0x7ffd7f2b5438"
       }
      }
     }
    ],
    "heap": {
-    "0x7ffd75a15438": {
-     "id": "0x7ffd75a15438",
+    "0x7ffd7f2b5438": {
+     "id": "0x7ffd7f2b5438",
      "type": "int",
      "repr": "85"
     }
@@ -61,14 +61,14 @@
      "line": 4,
      "locals": {
       "score": {
-       "ref": "0x7ffd75a15438"
+       "ref": "0x7ffd7f2b5438"
       }
      }
     }
    ],
    "heap": {
-    "0x7ffd75a15438": {
-     "id": "0x7ffd75a15438",
+    "0x7ffd7f2b5438": {
+     "id": "0x7ffd7f2b5438",
      "type": "int",
      "repr": "85"
     }
@@ -85,14 +85,14 @@
      "line": 5,
      "locals": {
       "score": {
-       "ref": "0x7ffd75a15438"
+       "ref": "0x7ffd7f2b5438"
       }
      }
     }
    ],
    "heap": {
-    "0x7ffd75a15438": {
-     "id": "0x7ffd75a15438",
+    "0x7ffd7f2b5438": {
+     "id": "0x7ffd7f2b5438",
      "type": "int",
      "repr": "85"
     }
@@ -108,22 +108,22 @@
      "line": 8,
      "locals": {
       "score": {
-       "ref": "0x7ffd75a15438"
+       "ref": "0x7ffd7f2b5438"
       },
       "grade": {
-       "ref": "0x7ffd75a23870"
+       "ref": "0x7ffd7f2c3870"
       }
      }
     }
    ],
    "heap": {
-    "0x7ffd75a15438": {
-     "id": "0x7ffd75a15438",
+    "0x7ffd7f2b5438": {
+     "id": "0x7ffd7f2b5438",
      "type": "int",
      "repr": "85"
     },
-    "0x7ffd75a23870": {
-     "id": "0x7ffd75a23870",
+    "0x7ffd7f2c3870": {
+     "id": "0x7ffd7f2c3870",
      "type": "str",
      "repr": "'B'"
     }
@@ -140,22 +140,22 @@
      "line": 8,
      "locals": {
       "score": {
-       "ref": "0x7ffd75a15438"
+       "ref": "0x7ffd7f2b5438"
       },
       "grade": {
-       "ref": "0x7ffd75a23870"
+       "ref": "0x7ffd7f2c3870"
       }
      }
     }
    ],
    "heap": {
-    "0x7ffd75a15438": {
-     "id": "0x7ffd75a15438",
+    "0x7ffd7f2b5438": {
+     "id": "0x7ffd7f2b5438",
      "type": "int",
      "repr": "85"
     },
-    "0x7ffd75a23870": {
-     "id": "0x7ffd75a23870",
+    "0x7ffd7f2c3870": {
+     "id": "0x7ffd7f2c3870",
      "type": "str",
      "repr": "'B'"
     }

@@ -1,0 +1,2262 @@
+{
+ "id": "p3-getsizeof",
+ "code": "import sys\nnums = []\nprint(len(nums), sys.getsizeof(nums))\nfor i in range(9):\n    nums.append(i)\n    print(len(nums), sys.getsizeof(nums))",
+ "steps": [
+  {
+   "line": 0,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 0,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 2,
+     "locals": {
+      "sys": {
+       "ref": "0x21784c0e7a0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x21784c0e7a0": {
+     "id": "0x21784c0e7a0",
+     "type": "module",
+     "repr": "sys"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 3,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 3,
+     "locals": {
+      "sys": {
+       "ref": "0x21784c0e7a0"
+      },
+      "nums": {
+       "ref": "0x21784f5f180"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x21784c0e7a0": {
+     "id": "0x21784c0e7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x21784f5f180": {
+     "id": "0x21784f5f180",
+     "type": "list",
+     "repr": "[]",
+     "items": []
+    }
+   },
+   "stdout": "",
+   "note": "빈 리스트의 기본 크기"
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "sys": {
+       "ref": "0x21784c0e7a0"
+      },
+      "nums": {
+       "ref": "0x21784f5f180"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x21784c0e7a0": {
+     "id": "0x21784c0e7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x21784f5f180": {
+     "id": "0x21784f5f180",
+     "type": "list",
+     "repr": "[]",
+     "items": []
+    }
+   },
+   "stdout": "0 56\n"
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "sys": {
+       "ref": "0x21784c0e7a0"
+      },
+      "nums": {
+       "ref": "0x21784f5f180"
+      },
+      "i": {
+       "ref": "0x7ffd7f2b4998"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x21784c0e7a0": {
+     "id": "0x21784c0e7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x21784f5f180": {
+     "id": "0x21784f5f180",
+     "type": "list",
+     "repr": "[]",
+     "items": []
+    },
+    "0x7ffd7f2b4998": {
+     "id": "0x7ffd7f2b4998",
+     "type": "int",
+     "repr": "0"
+    }
+   },
+   "stdout": "0 56\n"
+  },
+  {
+   "line": 6,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "sys": {
+       "ref": "0x21784c0e7a0"
+      },
+      "nums": {
+       "ref": "0x21784f5f180"
+      },
+      "i": {
+       "ref": "0x7ffd7f2b4998"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x21784c0e7a0": {
+     "id": "0x21784c0e7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x21784f5f180": {
+     "id": "0x21784f5f180",
+     "type": "list",
+     "repr": "[0]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4998"
+      }
+     ]
+    },
+    "0x7ffd7f2b4998": {
+     "id": "0x7ffd7f2b4998",
+     "type": "int",
+     "repr": "0"
+    }
+   },
+   "stdout": "0 56\n",
+   "note": "크기가 매번 늘지 않는다 — 4개, 8개 단위로 껑충 뛴다"
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "sys": {
+       "ref": "0x21784c0e7a0"
+      },
+      "nums": {
+       "ref": "0x21784f5f180"
+      },
+      "i": {
+       "ref": "0x7ffd7f2b4998"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x21784c0e7a0": {
+     "id": "0x21784c0e7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x21784f5f180": {
+     "id": "0x21784f5f180",
+     "type": "list",
+     "repr": "[0]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4998"
+      }
+     ]
+    },
+    "0x7ffd7f2b4998": {
+     "id": "0x7ffd7f2b4998",
+     "type": "int",
+     "repr": "0"
+    }
+   },
+   "stdout": "0 56\n1 88\n"
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "sys": {
+       "ref": "0x21784c0e7a0"
+      },
+      "nums": {
+       "ref": "0x21784f5f180"
+      },
+      "i": {
+       "ref": "0x7ffd7f2b49b8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x21784c0e7a0": {
+     "id": "0x21784c0e7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x21784f5f180": {
+     "id": "0x21784f5f180",
+     "type": "list",
+     "repr": "[0]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4998"
+      }
+     ]
+    },
+    "0x7ffd7f2b4998": {
+     "id": "0x7ffd7f2b4998",
+     "type": "int",
+     "repr": "0"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    }
+   },
+   "stdout": "0 56\n1 88\n"
+  },
+  {
+   "line": 6,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "sys": {
+       "ref": "0x21784c0e7a0"
+      },
+      "nums": {
+       "ref": "0x21784f5f180"
+      },
+      "i": {
+       "ref": "0x7ffd7f2b49b8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x21784c0e7a0": {
+     "id": "0x21784c0e7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x21784f5f180": {
+     "id": "0x21784f5f180",
+     "type": "list",
+     "repr": "[0, 1]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4998"
+      },
+      {
+       "ref": "0x7ffd7f2b49b8"
+      }
+     ]
+    },
+    "0x7ffd7f2b4998": {
+     "id": "0x7ffd7f2b4998",
+     "type": "int",
+     "repr": "0"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    }
+   },
+   "stdout": "0 56\n1 88\n",
+   "note": "크기가 매번 늘지 않는다 — 4개, 8개 단위로 껑충 뛴다"
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "sys": {
+       "ref": "0x21784c0e7a0"
+      },
+      "nums": {
+       "ref": "0x21784f5f180"
+      },
+      "i": {
+       "ref": "0x7ffd7f2b49b8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x21784c0e7a0": {
+     "id": "0x21784c0e7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x21784f5f180": {
+     "id": "0x21784f5f180",
+     "type": "list",
+     "repr": "[0, 1]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4998"
+      },
+      {
+       "ref": "0x7ffd7f2b49b8"
+      }
+     ]
+    },
+    "0x7ffd7f2b4998": {
+     "id": "0x7ffd7f2b4998",
+     "type": "int",
+     "repr": "0"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    }
+   },
+   "stdout": "0 56\n1 88\n2 88\n"
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "sys": {
+       "ref": "0x21784c0e7a0"
+      },
+      "nums": {
+       "ref": "0x21784f5f180"
+      },
+      "i": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x21784c0e7a0": {
+     "id": "0x21784c0e7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x21784f5f180": {
+     "id": "0x21784f5f180",
+     "type": "list",
+     "repr": "[0, 1]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4998"
+      },
+      {
+       "ref": "0x7ffd7f2b49b8"
+      }
+     ]
+    },
+    "0x7ffd7f2b4998": {
+     "id": "0x7ffd7f2b4998",
+     "type": "int",
+     "repr": "0"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    }
+   },
+   "stdout": "0 56\n1 88\n2 88\n"
+  },
+  {
+   "line": 6,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "sys": {
+       "ref": "0x21784c0e7a0"
+      },
+      "nums": {
+       "ref": "0x21784f5f180"
+      },
+      "i": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x21784c0e7a0": {
+     "id": "0x21784c0e7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x21784f5f180": {
+     "id": "0x21784f5f180",
+     "type": "list",
+     "repr": "[0, 1, 2]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4998"
+      },
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     ]
+    },
+    "0x7ffd7f2b4998": {
+     "id": "0x7ffd7f2b4998",
+     "type": "int",
+     "repr": "0"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    }
+   },
+   "stdout": "0 56\n1 88\n2 88\n",
+   "note": "크기가 매번 늘지 않는다 — 4개, 8개 단위로 껑충 뛴다"
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "sys": {
+       "ref": "0x21784c0e7a0"
+      },
+      "nums": {
+       "ref": "0x21784f5f180"
+      },
+      "i": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x21784c0e7a0": {
+     "id": "0x21784c0e7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x21784f5f180": {
+     "id": "0x21784f5f180",
+     "type": "list",
+     "repr": "[0, 1, 2]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4998"
+      },
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     ]
+    },
+    "0x7ffd7f2b4998": {
+     "id": "0x7ffd7f2b4998",
+     "type": "int",
+     "repr": "0"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    }
+   },
+   "stdout": "0 56\n1 88\n2 88\n3 88\n"
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "sys": {
+       "ref": "0x21784c0e7a0"
+      },
+      "nums": {
+       "ref": "0x21784f5f180"
+      },
+      "i": {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x21784c0e7a0": {
+     "id": "0x21784c0e7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x21784f5f180": {
+     "id": "0x21784f5f180",
+     "type": "list",
+     "repr": "[0, 1, 2]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4998"
+      },
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     ]
+    },
+    "0x7ffd7f2b4998": {
+     "id": "0x7ffd7f2b4998",
+     "type": "int",
+     "repr": "0"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    }
+   },
+   "stdout": "0 56\n1 88\n2 88\n3 88\n"
+  },
+  {
+   "line": 6,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "sys": {
+       "ref": "0x21784c0e7a0"
+      },
+      "nums": {
+       "ref": "0x21784f5f180"
+      },
+      "i": {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x21784c0e7a0": {
+     "id": "0x21784c0e7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x21784f5f180": {
+     "id": "0x21784f5f180",
+     "type": "list",
+     "repr": "[0, 1, 2, 3]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4998"
+      },
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     ]
+    },
+    "0x7ffd7f2b4998": {
+     "id": "0x7ffd7f2b4998",
+     "type": "int",
+     "repr": "0"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    }
+   },
+   "stdout": "0 56\n1 88\n2 88\n3 88\n",
+   "note": "크기가 매번 늘지 않는다 — 4개, 8개 단위로 껑충 뛴다"
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "sys": {
+       "ref": "0x21784c0e7a0"
+      },
+      "nums": {
+       "ref": "0x21784f5f180"
+      },
+      "i": {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x21784c0e7a0": {
+     "id": "0x21784c0e7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x21784f5f180": {
+     "id": "0x21784f5f180",
+     "type": "list",
+     "repr": "[0, 1, 2, 3]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4998"
+      },
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     ]
+    },
+    "0x7ffd7f2b4998": {
+     "id": "0x7ffd7f2b4998",
+     "type": "int",
+     "repr": "0"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    }
+   },
+   "stdout": "0 56\n1 88\n2 88\n3 88\n4 88\n"
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "sys": {
+       "ref": "0x21784c0e7a0"
+      },
+      "nums": {
+       "ref": "0x21784f5f180"
+      },
+      "i": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x21784c0e7a0": {
+     "id": "0x21784c0e7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x21784f5f180": {
+     "id": "0x21784f5f180",
+     "type": "list",
+     "repr": "[0, 1, 2, 3]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4998"
+      },
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     ]
+    },
+    "0x7ffd7f2b4998": {
+     "id": "0x7ffd7f2b4998",
+     "type": "int",
+     "repr": "0"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    }
+   },
+   "stdout": "0 56\n1 88\n2 88\n3 88\n4 88\n"
+  },
+  {
+   "line": 6,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "sys": {
+       "ref": "0x21784c0e7a0"
+      },
+      "nums": {
+       "ref": "0x21784f5f180"
+      },
+      "i": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x21784c0e7a0": {
+     "id": "0x21784c0e7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x21784f5f180": {
+     "id": "0x21784f5f180",
+     "type": "list",
+     "repr": "[0, 1, 2, 3, 4]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4998"
+      },
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     ]
+    },
+    "0x7ffd7f2b4998": {
+     "id": "0x7ffd7f2b4998",
+     "type": "int",
+     "repr": "0"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    }
+   },
+   "stdout": "0 56\n1 88\n2 88\n3 88\n4 88\n",
+   "note": "크기가 매번 늘지 않는다 — 4개, 8개 단위로 껑충 뛴다"
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "sys": {
+       "ref": "0x21784c0e7a0"
+      },
+      "nums": {
+       "ref": "0x21784f5f180"
+      },
+      "i": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x21784c0e7a0": {
+     "id": "0x21784c0e7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x21784f5f180": {
+     "id": "0x21784f5f180",
+     "type": "list",
+     "repr": "[0, 1, 2, 3, 4]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4998"
+      },
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     ]
+    },
+    "0x7ffd7f2b4998": {
+     "id": "0x7ffd7f2b4998",
+     "type": "int",
+     "repr": "0"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    }
+   },
+   "stdout": "0 56\n1 88\n2 88\n3 88\n4 88\n5 120\n"
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "sys": {
+       "ref": "0x21784c0e7a0"
+      },
+      "nums": {
+       "ref": "0x21784f5f180"
+      },
+      "i": {
+       "ref": "0x7ffd7f2b4a38"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x21784c0e7a0": {
+     "id": "0x21784c0e7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x21784f5f180": {
+     "id": "0x21784f5f180",
+     "type": "list",
+     "repr": "[0, 1, 2, 3, 4]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4998"
+      },
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     ]
+    },
+    "0x7ffd7f2b4998": {
+     "id": "0x7ffd7f2b4998",
+     "type": "int",
+     "repr": "0"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    }
+   },
+   "stdout": "0 56\n1 88\n2 88\n3 88\n4 88\n5 120\n"
+  },
+  {
+   "line": 6,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "sys": {
+       "ref": "0x21784c0e7a0"
+      },
+      "nums": {
+       "ref": "0x21784f5f180"
+      },
+      "i": {
+       "ref": "0x7ffd7f2b4a38"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x21784c0e7a0": {
+     "id": "0x21784c0e7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x21784f5f180": {
+     "id": "0x21784f5f180",
+     "type": "list",
+     "repr": "[0, 1, 2, 3, 4, 5]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4998"
+      },
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      }
+     ]
+    },
+    "0x7ffd7f2b4998": {
+     "id": "0x7ffd7f2b4998",
+     "type": "int",
+     "repr": "0"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    }
+   },
+   "stdout": "0 56\n1 88\n2 88\n3 88\n4 88\n5 120\n",
+   "note": "크기가 매번 늘지 않는다 — 4개, 8개 단위로 껑충 뛴다"
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "sys": {
+       "ref": "0x21784c0e7a0"
+      },
+      "nums": {
+       "ref": "0x21784f5f180"
+      },
+      "i": {
+       "ref": "0x7ffd7f2b4a38"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x21784c0e7a0": {
+     "id": "0x21784c0e7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x21784f5f180": {
+     "id": "0x21784f5f180",
+     "type": "list",
+     "repr": "[0, 1, 2, 3, 4, 5]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4998"
+      },
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      }
+     ]
+    },
+    "0x7ffd7f2b4998": {
+     "id": "0x7ffd7f2b4998",
+     "type": "int",
+     "repr": "0"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    }
+   },
+   "stdout": "0 56\n1 88\n2 88\n3 88\n4 88\n5 120\n6 120\n"
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "sys": {
+       "ref": "0x21784c0e7a0"
+      },
+      "nums": {
+       "ref": "0x21784f5f180"
+      },
+      "i": {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x21784c0e7a0": {
+     "id": "0x21784c0e7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x21784f5f180": {
+     "id": "0x21784f5f180",
+     "type": "list",
+     "repr": "[0, 1, 2, 3, 4, 5]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4998"
+      },
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      }
+     ]
+    },
+    "0x7ffd7f2b4998": {
+     "id": "0x7ffd7f2b4998",
+     "type": "int",
+     "repr": "0"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    }
+   },
+   "stdout": "0 56\n1 88\n2 88\n3 88\n4 88\n5 120\n6 120\n"
+  },
+  {
+   "line": 6,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "sys": {
+       "ref": "0x21784c0e7a0"
+      },
+      "nums": {
+       "ref": "0x21784f5f180"
+      },
+      "i": {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x21784c0e7a0": {
+     "id": "0x21784c0e7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x21784f5f180": {
+     "id": "0x21784f5f180",
+     "type": "list",
+     "repr": "[0, 1, 2, 3, 4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4998"
+      },
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    },
+    "0x7ffd7f2b4998": {
+     "id": "0x7ffd7f2b4998",
+     "type": "int",
+     "repr": "0"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    }
+   },
+   "stdout": "0 56\n1 88\n2 88\n3 88\n4 88\n5 120\n6 120\n",
+   "note": "크기가 매번 늘지 않는다 — 4개, 8개 단위로 껑충 뛴다"
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "sys": {
+       "ref": "0x21784c0e7a0"
+      },
+      "nums": {
+       "ref": "0x21784f5f180"
+      },
+      "i": {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x21784c0e7a0": {
+     "id": "0x21784c0e7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x21784f5f180": {
+     "id": "0x21784f5f180",
+     "type": "list",
+     "repr": "[0, 1, 2, 3, 4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4998"
+      },
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    },
+    "0x7ffd7f2b4998": {
+     "id": "0x7ffd7f2b4998",
+     "type": "int",
+     "repr": "0"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    }
+   },
+   "stdout": "0 56\n1 88\n2 88\n3 88\n4 88\n5 120\n6 120\n7 120\n"
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "sys": {
+       "ref": "0x21784c0e7a0"
+      },
+      "nums": {
+       "ref": "0x21784f5f180"
+      },
+      "i": {
+       "ref": "0x7ffd7f2b4a78"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x21784c0e7a0": {
+     "id": "0x21784c0e7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x21784f5f180": {
+     "id": "0x21784f5f180",
+     "type": "list",
+     "repr": "[0, 1, 2, 3, 4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4998"
+      },
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    },
+    "0x7ffd7f2b4998": {
+     "id": "0x7ffd7f2b4998",
+     "type": "int",
+     "repr": "0"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    },
+    "0x7ffd7f2b4a78": {
+     "id": "0x7ffd7f2b4a78",
+     "type": "int",
+     "repr": "7"
+    }
+   },
+   "stdout": "0 56\n1 88\n2 88\n3 88\n4 88\n5 120\n6 120\n7 120\n"
+  },
+  {
+   "line": 6,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "sys": {
+       "ref": "0x21784c0e7a0"
+      },
+      "nums": {
+       "ref": "0x21784f5f180"
+      },
+      "i": {
+       "ref": "0x7ffd7f2b4a78"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x21784c0e7a0": {
+     "id": "0x21784c0e7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x21784f5f180": {
+     "id": "0x21784f5f180",
+     "type": "list",
+     "repr": "[0, 1, 2, 3, 4, 5, 6, 7]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4998"
+      },
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      },
+      {
+       "ref": "0x7ffd7f2b4a78"
+      }
+     ]
+    },
+    "0x7ffd7f2b4998": {
+     "id": "0x7ffd7f2b4998",
+     "type": "int",
+     "repr": "0"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    },
+    "0x7ffd7f2b4a78": {
+     "id": "0x7ffd7f2b4a78",
+     "type": "int",
+     "repr": "7"
+    }
+   },
+   "stdout": "0 56\n1 88\n2 88\n3 88\n4 88\n5 120\n6 120\n7 120\n",
+   "note": "크기가 매번 늘지 않는다 — 4개, 8개 단위로 껑충 뛴다"
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "sys": {
+       "ref": "0x21784c0e7a0"
+      },
+      "nums": {
+       "ref": "0x21784f5f180"
+      },
+      "i": {
+       "ref": "0x7ffd7f2b4a78"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x21784c0e7a0": {
+     "id": "0x21784c0e7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x21784f5f180": {
+     "id": "0x21784f5f180",
+     "type": "list",
+     "repr": "[0, 1, 2, 3, 4, 5, 6, 7]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4998"
+      },
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      },
+      {
+       "ref": "0x7ffd7f2b4a78"
+      }
+     ]
+    },
+    "0x7ffd7f2b4998": {
+     "id": "0x7ffd7f2b4998",
+     "type": "int",
+     "repr": "0"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    },
+    "0x7ffd7f2b4a78": {
+     "id": "0x7ffd7f2b4a78",
+     "type": "int",
+     "repr": "7"
+    }
+   },
+   "stdout": "0 56\n1 88\n2 88\n3 88\n4 88\n5 120\n6 120\n7 120\n8 120\n"
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "sys": {
+       "ref": "0x21784c0e7a0"
+      },
+      "nums": {
+       "ref": "0x21784f5f180"
+      },
+      "i": {
+       "ref": "0x7ffd7f2b4a98"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x21784c0e7a0": {
+     "id": "0x21784c0e7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x21784f5f180": {
+     "id": "0x21784f5f180",
+     "type": "list",
+     "repr": "[0, 1, 2, 3, 4, 5, 6, 7]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4998"
+      },
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      },
+      {
+       "ref": "0x7ffd7f2b4a78"
+      }
+     ]
+    },
+    "0x7ffd7f2b4998": {
+     "id": "0x7ffd7f2b4998",
+     "type": "int",
+     "repr": "0"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    },
+    "0x7ffd7f2b4a78": {
+     "id": "0x7ffd7f2b4a78",
+     "type": "int",
+     "repr": "7"
+    },
+    "0x7ffd7f2b4a98": {
+     "id": "0x7ffd7f2b4a98",
+     "type": "int",
+     "repr": "8"
+    }
+   },
+   "stdout": "0 56\n1 88\n2 88\n3 88\n4 88\n5 120\n6 120\n7 120\n8 120\n"
+  },
+  {
+   "line": 6,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "sys": {
+       "ref": "0x21784c0e7a0"
+      },
+      "nums": {
+       "ref": "0x21784f5f180"
+      },
+      "i": {
+       "ref": "0x7ffd7f2b4a98"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x21784c0e7a0": {
+     "id": "0x21784c0e7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x21784f5f180": {
+     "id": "0x21784f5f180",
+     "type": "list",
+     "repr": "[0, 1, 2, 3, 4, 5, 6, 7, 8]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4998"
+      },
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      },
+      {
+       "ref": "0x7ffd7f2b4a78"
+      },
+      {
+       "ref": "0x7ffd7f2b4a98"
+      }
+     ]
+    },
+    "0x7ffd7f2b4998": {
+     "id": "0x7ffd7f2b4998",
+     "type": "int",
+     "repr": "0"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    },
+    "0x7ffd7f2b4a78": {
+     "id": "0x7ffd7f2b4a78",
+     "type": "int",
+     "repr": "7"
+    },
+    "0x7ffd7f2b4a98": {
+     "id": "0x7ffd7f2b4a98",
+     "type": "int",
+     "repr": "8"
+    }
+   },
+   "stdout": "0 56\n1 88\n2 88\n3 88\n4 88\n5 120\n6 120\n7 120\n8 120\n",
+   "note": "크기가 매번 늘지 않는다 — 4개, 8개 단위로 껑충 뛴다"
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "sys": {
+       "ref": "0x21784c0e7a0"
+      },
+      "nums": {
+       "ref": "0x21784f5f180"
+      },
+      "i": {
+       "ref": "0x7ffd7f2b4a98"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x21784c0e7a0": {
+     "id": "0x21784c0e7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x21784f5f180": {
+     "id": "0x21784f5f180",
+     "type": "list",
+     "repr": "[0, 1, 2, 3, 4, 5, 6, 7, 8]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4998"
+      },
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      },
+      {
+       "ref": "0x7ffd7f2b4a78"
+      },
+      {
+       "ref": "0x7ffd7f2b4a98"
+      }
+     ]
+    },
+    "0x7ffd7f2b4998": {
+     "id": "0x7ffd7f2b4998",
+     "type": "int",
+     "repr": "0"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    },
+    "0x7ffd7f2b4a78": {
+     "id": "0x7ffd7f2b4a78",
+     "type": "int",
+     "repr": "7"
+    },
+    "0x7ffd7f2b4a98": {
+     "id": "0x7ffd7f2b4a98",
+     "type": "int",
+     "repr": "8"
+    }
+   },
+   "stdout": "0 56\n1 88\n2 88\n3 88\n4 88\n5 120\n6 120\n7 120\n8 120\n9 184\n"
+  },
+  {
+   "line": 4,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "sys": {
+       "ref": "0x21784c0e7a0"
+      },
+      "nums": {
+       "ref": "0x21784f5f180"
+      },
+      "i": {
+       "ref": "0x7ffd7f2b4a98"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x21784c0e7a0": {
+     "id": "0x21784c0e7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x21784f5f180": {
+     "id": "0x21784f5f180",
+     "type": "list",
+     "repr": "[0, 1, 2, 3, 4, 5, 6, 7, 8]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4998"
+      },
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      },
+      {
+       "ref": "0x7ffd7f2b4a78"
+      },
+      {
+       "ref": "0x7ffd7f2b4a98"
+      }
+     ]
+    },
+    "0x7ffd7f2b4998": {
+     "id": "0x7ffd7f2b4998",
+     "type": "int",
+     "repr": "0"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    },
+    "0x7ffd7f2b4a78": {
+     "id": "0x7ffd7f2b4a78",
+     "type": "int",
+     "repr": "7"
+    },
+    "0x7ffd7f2b4a98": {
+     "id": "0x7ffd7f2b4a98",
+     "type": "int",
+     "repr": "8"
+    }
+   },
+   "stdout": "0 56\n1 88\n2 88\n3 88\n4 88\n5 120\n6 120\n7 120\n8 120\n9 184\n"
+  }
+ ],
+ "v": 1
+}

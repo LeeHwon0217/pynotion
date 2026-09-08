@@ -1,0 +1,4867 @@
+{
+ "id": "p3-nested-comp",
+ "code": "grid = [[1, 2, 3], [4, 5, 6]]\nflat = [x for row in grid for x in row]\nprint(flat)\ntable = [[i * j for j in range(3)] for i in range(3)]\nprint(table)\npairs = [(a, b) for a in \"xy\" for b in \"12\" if b != \"2\"]\nprint(pairs)",
+ "steps": [
+  {
+   "line": 0,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 0,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 2,
+     "locals": {
+      "grid": {
+       "ref": "0x241a83fc840"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x241a83fc840": {
+     "id": "0x241a83fc840",
+     "type": "list",
+     "repr": "[[1, 2, 3], [4, 5, 6]]",
+     "items": [
+      {
+       "ref": "0x241a83ef540"
+      },
+      {
+       "ref": "0x241a83ef440"
+      }
+     ]
+    },
+    "0x241a83ef540": {
+     "id": "0x241a83ef540",
+     "type": "list",
+     "repr": "[1, 2, 3]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     ]
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x241a83ef440": {
+     "id": "0x241a83ef440",
+     "type": "list",
+     "repr": "[4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    }
+   },
+   "stdout": "",
+   "note": "for 가 두 개 — 바깥 for 를 먼저 쓴다 (중첩 반복문과 같은 순서)"
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 2,
+     "locals": {
+      "grid": {
+       "ref": "0x241a83fc840"
+      },
+      "row": {
+       "ref": "0x241a83ef540"
+      },
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x241a83fc840": {
+     "id": "0x241a83fc840",
+     "type": "list",
+     "repr": "[[1, 2, 3], [4, 5, 6]]",
+     "items": [
+      {
+       "ref": "0x241a83ef540"
+      },
+      {
+       "ref": "0x241a83ef440"
+      }
+     ]
+    },
+    "0x241a83ef540": {
+     "id": "0x241a83ef540",
+     "type": "list",
+     "repr": "[1, 2, 3]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     ]
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x241a83ef440": {
+     "id": "0x241a83ef440",
+     "type": "list",
+     "repr": "[4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    }
+   },
+   "stdout": "",
+   "note": "for 가 두 개 — 바깥 for 를 먼저 쓴다 (중첩 반복문과 같은 순서)"
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 2,
+     "locals": {
+      "grid": {
+       "ref": "0x241a83fc840"
+      },
+      "row": {
+       "ref": "0x241a83ef540"
+      },
+      "x": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x241a83fc840": {
+     "id": "0x241a83fc840",
+     "type": "list",
+     "repr": "[[1, 2, 3], [4, 5, 6]]",
+     "items": [
+      {
+       "ref": "0x241a83ef540"
+      },
+      {
+       "ref": "0x241a83ef440"
+      }
+     ]
+    },
+    "0x241a83ef540": {
+     "id": "0x241a83ef540",
+     "type": "list",
+     "repr": "[1, 2, 3]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     ]
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x241a83ef440": {
+     "id": "0x241a83ef440",
+     "type": "list",
+     "repr": "[4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    }
+   },
+   "stdout": "",
+   "note": "for 가 두 개 — 바깥 for 를 먼저 쓴다 (중첩 반복문과 같은 순서)"
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 2,
+     "locals": {
+      "grid": {
+       "ref": "0x241a83fc840"
+      },
+      "row": {
+       "ref": "0x241a83ef540"
+      },
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x241a83fc840": {
+     "id": "0x241a83fc840",
+     "type": "list",
+     "repr": "[[1, 2, 3], [4, 5, 6]]",
+     "items": [
+      {
+       "ref": "0x241a83ef540"
+      },
+      {
+       "ref": "0x241a83ef440"
+      }
+     ]
+    },
+    "0x241a83ef540": {
+     "id": "0x241a83ef540",
+     "type": "list",
+     "repr": "[1, 2, 3]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     ]
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x241a83ef440": {
+     "id": "0x241a83ef440",
+     "type": "list",
+     "repr": "[4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    }
+   },
+   "stdout": "",
+   "note": "for 가 두 개 — 바깥 for 를 먼저 쓴다 (중첩 반복문과 같은 순서)"
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 2,
+     "locals": {
+      "grid": {
+       "ref": "0x241a83fc840"
+      },
+      "row": {
+       "ref": "0x241a83ef540"
+      },
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x241a83fc840": {
+     "id": "0x241a83fc840",
+     "type": "list",
+     "repr": "[[1, 2, 3], [4, 5, 6]]",
+     "items": [
+      {
+       "ref": "0x241a83ef540"
+      },
+      {
+       "ref": "0x241a83ef440"
+      }
+     ]
+    },
+    "0x241a83ef540": {
+     "id": "0x241a83ef540",
+     "type": "list",
+     "repr": "[1, 2, 3]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     ]
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x241a83ef440": {
+     "id": "0x241a83ef440",
+     "type": "list",
+     "repr": "[4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    }
+   },
+   "stdout": "",
+   "note": "for 가 두 개 — 바깥 for 를 먼저 쓴다 (중첩 반복문과 같은 순서)"
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 2,
+     "locals": {
+      "grid": {
+       "ref": "0x241a83fc840"
+      },
+      "row": {
+       "ref": "0x241a83ef440"
+      },
+      "x": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x241a83fc840": {
+     "id": "0x241a83fc840",
+     "type": "list",
+     "repr": "[[1, 2, 3], [4, 5, 6]]",
+     "items": [
+      {
+       "ref": "0x241a83ef540"
+      },
+      {
+       "ref": "0x241a83ef440"
+      }
+     ]
+    },
+    "0x241a83ef540": {
+     "id": "0x241a83ef540",
+     "type": "list",
+     "repr": "[1, 2, 3]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     ]
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x241a83ef440": {
+     "id": "0x241a83ef440",
+     "type": "list",
+     "repr": "[4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    }
+   },
+   "stdout": "",
+   "note": "for 가 두 개 — 바깥 for 를 먼저 쓴다 (중첩 반복문과 같은 순서)"
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 2,
+     "locals": {
+      "grid": {
+       "ref": "0x241a83fc840"
+      },
+      "row": {
+       "ref": "0x241a83ef440"
+      },
+      "x": {
+       "ref": "0x7ffd7f2b4a38"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x241a83fc840": {
+     "id": "0x241a83fc840",
+     "type": "list",
+     "repr": "[[1, 2, 3], [4, 5, 6]]",
+     "items": [
+      {
+       "ref": "0x241a83ef540"
+      },
+      {
+       "ref": "0x241a83ef440"
+      }
+     ]
+    },
+    "0x241a83ef540": {
+     "id": "0x241a83ef540",
+     "type": "list",
+     "repr": "[1, 2, 3]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     ]
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x241a83ef440": {
+     "id": "0x241a83ef440",
+     "type": "list",
+     "repr": "[4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    }
+   },
+   "stdout": "",
+   "note": "for 가 두 개 — 바깥 for 를 먼저 쓴다 (중첩 반복문과 같은 순서)"
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 2,
+     "locals": {
+      "grid": {
+       "ref": "0x241a83fc840"
+      },
+      "row": {
+       "ref": "0x241a83ef440"
+      },
+      "x": {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x241a83fc840": {
+     "id": "0x241a83fc840",
+     "type": "list",
+     "repr": "[[1, 2, 3], [4, 5, 6]]",
+     "items": [
+      {
+       "ref": "0x241a83ef540"
+      },
+      {
+       "ref": "0x241a83ef440"
+      }
+     ]
+    },
+    "0x241a83ef540": {
+     "id": "0x241a83ef540",
+     "type": "list",
+     "repr": "[1, 2, 3]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     ]
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x241a83ef440": {
+     "id": "0x241a83ef440",
+     "type": "list",
+     "repr": "[4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    }
+   },
+   "stdout": "",
+   "note": "for 가 두 개 — 바깥 for 를 먼저 쓴다 (중첩 반복문과 같은 순서)"
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 2,
+     "locals": {
+      "grid": {
+       "ref": "0x241a83fc840"
+      },
+      "row": {
+       "ref": "0x241a83ef440"
+      },
+      "x": {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x241a83fc840": {
+     "id": "0x241a83fc840",
+     "type": "list",
+     "repr": "[[1, 2, 3], [4, 5, 6]]",
+     "items": [
+      {
+       "ref": "0x241a83ef540"
+      },
+      {
+       "ref": "0x241a83ef440"
+      }
+     ]
+    },
+    "0x241a83ef540": {
+     "id": "0x241a83ef540",
+     "type": "list",
+     "repr": "[1, 2, 3]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     ]
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x241a83ef440": {
+     "id": "0x241a83ef440",
+     "type": "list",
+     "repr": "[4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    }
+   },
+   "stdout": "",
+   "note": "for 가 두 개 — 바깥 for 를 먼저 쓴다 (중첩 반복문과 같은 순서)"
+  },
+  {
+   "line": 3,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 3,
+     "locals": {
+      "grid": {
+       "ref": "0x241a83fc840"
+      },
+      "flat": {
+       "ref": "0x241a83fd700"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x241a83fc840": {
+     "id": "0x241a83fc840",
+     "type": "list",
+     "repr": "[[1, 2, 3], [4, 5, 6]]",
+     "items": [
+      {
+       "ref": "0x241a83ef540"
+      },
+      {
+       "ref": "0x241a83ef440"
+      }
+     ]
+    },
+    "0x241a83ef540": {
+     "id": "0x241a83ef540",
+     "type": "list",
+     "repr": "[1, 2, 3]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     ]
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x241a83ef440": {
+     "id": "0x241a83ef440",
+     "type": "list",
+     "repr": "[4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    },
+    "0x241a83fd700": {
+     "id": "0x241a83fd700",
+     "type": "list",
+     "repr": "[1, 2, 3, 4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "grid": {
+       "ref": "0x241a83fc840"
+      },
+      "flat": {
+       "ref": "0x241a83fd700"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x241a83fc840": {
+     "id": "0x241a83fc840",
+     "type": "list",
+     "repr": "[[1, 2, 3], [4, 5, 6]]",
+     "items": [
+      {
+       "ref": "0x241a83ef540"
+      },
+      {
+       "ref": "0x241a83ef440"
+      }
+     ]
+    },
+    "0x241a83ef540": {
+     "id": "0x241a83ef540",
+     "type": "list",
+     "repr": "[1, 2, 3]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     ]
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x241a83ef440": {
+     "id": "0x241a83ef440",
+     "type": "list",
+     "repr": "[4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    },
+    "0x241a83fd700": {
+     "id": "0x241a83fd700",
+     "type": "list",
+     "repr": "[1, 2, 3, 4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    }
+   },
+   "stdout": "[1, 2, 3, 4, 5, 6]\n",
+   "note": "안쪽 [] 가 먼저 하나의 행을 만든다"
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "grid": {
+       "ref": "0x241a83fc840"
+      },
+      "flat": {
+       "ref": "0x241a83fd700"
+      },
+      "i": {
+       "ref": "0x7ffd7f2b4998"
+      },
+      "j": {
+       "ref": "0x7ffd7f2b4998"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x241a83fc840": {
+     "id": "0x241a83fc840",
+     "type": "list",
+     "repr": "[[1, 2, 3], [4, 5, 6]]",
+     "items": [
+      {
+       "ref": "0x241a83ef540"
+      },
+      {
+       "ref": "0x241a83ef440"
+      }
+     ]
+    },
+    "0x241a83ef540": {
+     "id": "0x241a83ef540",
+     "type": "list",
+     "repr": "[1, 2, 3]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     ]
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x241a83ef440": {
+     "id": "0x241a83ef440",
+     "type": "list",
+     "repr": "[4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    },
+    "0x241a83fd700": {
+     "id": "0x241a83fd700",
+     "type": "list",
+     "repr": "[1, 2, 3, 4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    },
+    "0x7ffd7f2b4998": {
+     "id": "0x7ffd7f2b4998",
+     "type": "int",
+     "repr": "0"
+    }
+   },
+   "stdout": "[1, 2, 3, 4, 5, 6]\n",
+   "note": "안쪽 [] 가 먼저 하나의 행을 만든다"
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "grid": {
+       "ref": "0x241a83fc840"
+      },
+      "flat": {
+       "ref": "0x241a83fd700"
+      },
+      "i": {
+       "ref": "0x7ffd7f2b4998"
+      },
+      "j": {
+       "ref": "0x7ffd7f2b49b8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x241a83fc840": {
+     "id": "0x241a83fc840",
+     "type": "list",
+     "repr": "[[1, 2, 3], [4, 5, 6]]",
+     "items": [
+      {
+       "ref": "0x241a83ef540"
+      },
+      {
+       "ref": "0x241a83ef440"
+      }
+     ]
+    },
+    "0x241a83ef540": {
+     "id": "0x241a83ef540",
+     "type": "list",
+     "repr": "[1, 2, 3]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     ]
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x241a83ef440": {
+     "id": "0x241a83ef440",
+     "type": "list",
+     "repr": "[4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    },
+    "0x241a83fd700": {
+     "id": "0x241a83fd700",
+     "type": "list",
+     "repr": "[1, 2, 3, 4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    },
+    "0x7ffd7f2b4998": {
+     "id": "0x7ffd7f2b4998",
+     "type": "int",
+     "repr": "0"
+    }
+   },
+   "stdout": "[1, 2, 3, 4, 5, 6]\n",
+   "note": "안쪽 [] 가 먼저 하나의 행을 만든다"
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "grid": {
+       "ref": "0x241a83fc840"
+      },
+      "flat": {
+       "ref": "0x241a83fd700"
+      },
+      "i": {
+       "ref": "0x7ffd7f2b4998"
+      },
+      "j": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x241a83fc840": {
+     "id": "0x241a83fc840",
+     "type": "list",
+     "repr": "[[1, 2, 3], [4, 5, 6]]",
+     "items": [
+      {
+       "ref": "0x241a83ef540"
+      },
+      {
+       "ref": "0x241a83ef440"
+      }
+     ]
+    },
+    "0x241a83ef540": {
+     "id": "0x241a83ef540",
+     "type": "list",
+     "repr": "[1, 2, 3]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     ]
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x241a83ef440": {
+     "id": "0x241a83ef440",
+     "type": "list",
+     "repr": "[4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    },
+    "0x241a83fd700": {
+     "id": "0x241a83fd700",
+     "type": "list",
+     "repr": "[1, 2, 3, 4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    },
+    "0x7ffd7f2b4998": {
+     "id": "0x7ffd7f2b4998",
+     "type": "int",
+     "repr": "0"
+    }
+   },
+   "stdout": "[1, 2, 3, 4, 5, 6]\n",
+   "note": "안쪽 [] 가 먼저 하나의 행을 만든다"
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "grid": {
+       "ref": "0x241a83fc840"
+      },
+      "flat": {
+       "ref": "0x241a83fd700"
+      },
+      "i": {
+       "ref": "0x7ffd7f2b4998"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x241a83fc840": {
+     "id": "0x241a83fc840",
+     "type": "list",
+     "repr": "[[1, 2, 3], [4, 5, 6]]",
+     "items": [
+      {
+       "ref": "0x241a83ef540"
+      },
+      {
+       "ref": "0x241a83ef440"
+      }
+     ]
+    },
+    "0x241a83ef540": {
+     "id": "0x241a83ef540",
+     "type": "list",
+     "repr": "[1, 2, 3]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     ]
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x241a83ef440": {
+     "id": "0x241a83ef440",
+     "type": "list",
+     "repr": "[4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    },
+    "0x241a83fd700": {
+     "id": "0x241a83fd700",
+     "type": "list",
+     "repr": "[1, 2, 3, 4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    },
+    "0x7ffd7f2b4998": {
+     "id": "0x7ffd7f2b4998",
+     "type": "int",
+     "repr": "0"
+    }
+   },
+   "stdout": "[1, 2, 3, 4, 5, 6]\n",
+   "note": "안쪽 [] 가 먼저 하나의 행을 만든다"
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "grid": {
+       "ref": "0x241a83fc840"
+      },
+      "flat": {
+       "ref": "0x241a83fd700"
+      },
+      "i": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "j": {
+       "ref": "0x7ffd7f2b4998"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x241a83fc840": {
+     "id": "0x241a83fc840",
+     "type": "list",
+     "repr": "[[1, 2, 3], [4, 5, 6]]",
+     "items": [
+      {
+       "ref": "0x241a83ef540"
+      },
+      {
+       "ref": "0x241a83ef440"
+      }
+     ]
+    },
+    "0x241a83ef540": {
+     "id": "0x241a83ef540",
+     "type": "list",
+     "repr": "[1, 2, 3]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     ]
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x241a83ef440": {
+     "id": "0x241a83ef440",
+     "type": "list",
+     "repr": "[4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    },
+    "0x241a83fd700": {
+     "id": "0x241a83fd700",
+     "type": "list",
+     "repr": "[1, 2, 3, 4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    },
+    "0x7ffd7f2b4998": {
+     "id": "0x7ffd7f2b4998",
+     "type": "int",
+     "repr": "0"
+    }
+   },
+   "stdout": "[1, 2, 3, 4, 5, 6]\n",
+   "note": "안쪽 [] 가 먼저 하나의 행을 만든다"
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "grid": {
+       "ref": "0x241a83fc840"
+      },
+      "flat": {
+       "ref": "0x241a83fd700"
+      },
+      "i": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "j": {
+       "ref": "0x7ffd7f2b49b8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x241a83fc840": {
+     "id": "0x241a83fc840",
+     "type": "list",
+     "repr": "[[1, 2, 3], [4, 5, 6]]",
+     "items": [
+      {
+       "ref": "0x241a83ef540"
+      },
+      {
+       "ref": "0x241a83ef440"
+      }
+     ]
+    },
+    "0x241a83ef540": {
+     "id": "0x241a83ef540",
+     "type": "list",
+     "repr": "[1, 2, 3]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     ]
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x241a83ef440": {
+     "id": "0x241a83ef440",
+     "type": "list",
+     "repr": "[4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    },
+    "0x241a83fd700": {
+     "id": "0x241a83fd700",
+     "type": "list",
+     "repr": "[1, 2, 3, 4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    }
+   },
+   "stdout": "[1, 2, 3, 4, 5, 6]\n",
+   "note": "안쪽 [] 가 먼저 하나의 행을 만든다"
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "grid": {
+       "ref": "0x241a83fc840"
+      },
+      "flat": {
+       "ref": "0x241a83fd700"
+      },
+      "i": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "j": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x241a83fc840": {
+     "id": "0x241a83fc840",
+     "type": "list",
+     "repr": "[[1, 2, 3], [4, 5, 6]]",
+     "items": [
+      {
+       "ref": "0x241a83ef540"
+      },
+      {
+       "ref": "0x241a83ef440"
+      }
+     ]
+    },
+    "0x241a83ef540": {
+     "id": "0x241a83ef540",
+     "type": "list",
+     "repr": "[1, 2, 3]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     ]
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x241a83ef440": {
+     "id": "0x241a83ef440",
+     "type": "list",
+     "repr": "[4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    },
+    "0x241a83fd700": {
+     "id": "0x241a83fd700",
+     "type": "list",
+     "repr": "[1, 2, 3, 4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    }
+   },
+   "stdout": "[1, 2, 3, 4, 5, 6]\n",
+   "note": "안쪽 [] 가 먼저 하나의 행을 만든다"
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "grid": {
+       "ref": "0x241a83fc840"
+      },
+      "flat": {
+       "ref": "0x241a83fd700"
+      },
+      "i": {
+       "ref": "0x7ffd7f2b49b8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x241a83fc840": {
+     "id": "0x241a83fc840",
+     "type": "list",
+     "repr": "[[1, 2, 3], [4, 5, 6]]",
+     "items": [
+      {
+       "ref": "0x241a83ef540"
+      },
+      {
+       "ref": "0x241a83ef440"
+      }
+     ]
+    },
+    "0x241a83ef540": {
+     "id": "0x241a83ef540",
+     "type": "list",
+     "repr": "[1, 2, 3]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     ]
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x241a83ef440": {
+     "id": "0x241a83ef440",
+     "type": "list",
+     "repr": "[4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    },
+    "0x241a83fd700": {
+     "id": "0x241a83fd700",
+     "type": "list",
+     "repr": "[1, 2, 3, 4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    }
+   },
+   "stdout": "[1, 2, 3, 4, 5, 6]\n",
+   "note": "안쪽 [] 가 먼저 하나의 행을 만든다"
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "grid": {
+       "ref": "0x241a83fc840"
+      },
+      "flat": {
+       "ref": "0x241a83fd700"
+      },
+      "i": {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      "j": {
+       "ref": "0x7ffd7f2b4998"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x241a83fc840": {
+     "id": "0x241a83fc840",
+     "type": "list",
+     "repr": "[[1, 2, 3], [4, 5, 6]]",
+     "items": [
+      {
+       "ref": "0x241a83ef540"
+      },
+      {
+       "ref": "0x241a83ef440"
+      }
+     ]
+    },
+    "0x241a83ef540": {
+     "id": "0x241a83ef540",
+     "type": "list",
+     "repr": "[1, 2, 3]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     ]
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x241a83ef440": {
+     "id": "0x241a83ef440",
+     "type": "list",
+     "repr": "[4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    },
+    "0x241a83fd700": {
+     "id": "0x241a83fd700",
+     "type": "list",
+     "repr": "[1, 2, 3, 4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    },
+    "0x7ffd7f2b4998": {
+     "id": "0x7ffd7f2b4998",
+     "type": "int",
+     "repr": "0"
+    }
+   },
+   "stdout": "[1, 2, 3, 4, 5, 6]\n",
+   "note": "안쪽 [] 가 먼저 하나의 행을 만든다"
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "grid": {
+       "ref": "0x241a83fc840"
+      },
+      "flat": {
+       "ref": "0x241a83fd700"
+      },
+      "i": {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      "j": {
+       "ref": "0x7ffd7f2b49b8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x241a83fc840": {
+     "id": "0x241a83fc840",
+     "type": "list",
+     "repr": "[[1, 2, 3], [4, 5, 6]]",
+     "items": [
+      {
+       "ref": "0x241a83ef540"
+      },
+      {
+       "ref": "0x241a83ef440"
+      }
+     ]
+    },
+    "0x241a83ef540": {
+     "id": "0x241a83ef540",
+     "type": "list",
+     "repr": "[1, 2, 3]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     ]
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x241a83ef440": {
+     "id": "0x241a83ef440",
+     "type": "list",
+     "repr": "[4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    },
+    "0x241a83fd700": {
+     "id": "0x241a83fd700",
+     "type": "list",
+     "repr": "[1, 2, 3, 4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    }
+   },
+   "stdout": "[1, 2, 3, 4, 5, 6]\n",
+   "note": "안쪽 [] 가 먼저 하나의 행을 만든다"
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "grid": {
+       "ref": "0x241a83fc840"
+      },
+      "flat": {
+       "ref": "0x241a83fd700"
+      },
+      "i": {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      "j": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x241a83fc840": {
+     "id": "0x241a83fc840",
+     "type": "list",
+     "repr": "[[1, 2, 3], [4, 5, 6]]",
+     "items": [
+      {
+       "ref": "0x241a83ef540"
+      },
+      {
+       "ref": "0x241a83ef440"
+      }
+     ]
+    },
+    "0x241a83ef540": {
+     "id": "0x241a83ef540",
+     "type": "list",
+     "repr": "[1, 2, 3]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     ]
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x241a83ef440": {
+     "id": "0x241a83ef440",
+     "type": "list",
+     "repr": "[4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    },
+    "0x241a83fd700": {
+     "id": "0x241a83fd700",
+     "type": "list",
+     "repr": "[1, 2, 3, 4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    }
+   },
+   "stdout": "[1, 2, 3, 4, 5, 6]\n",
+   "note": "안쪽 [] 가 먼저 하나의 행을 만든다"
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "grid": {
+       "ref": "0x241a83fc840"
+      },
+      "flat": {
+       "ref": "0x241a83fd700"
+      },
+      "i": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x241a83fc840": {
+     "id": "0x241a83fc840",
+     "type": "list",
+     "repr": "[[1, 2, 3], [4, 5, 6]]",
+     "items": [
+      {
+       "ref": "0x241a83ef540"
+      },
+      {
+       "ref": "0x241a83ef440"
+      }
+     ]
+    },
+    "0x241a83ef540": {
+     "id": "0x241a83ef540",
+     "type": "list",
+     "repr": "[1, 2, 3]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     ]
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x241a83ef440": {
+     "id": "0x241a83ef440",
+     "type": "list",
+     "repr": "[4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    },
+    "0x241a83fd700": {
+     "id": "0x241a83fd700",
+     "type": "list",
+     "repr": "[1, 2, 3, 4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    }
+   },
+   "stdout": "[1, 2, 3, 4, 5, 6]\n",
+   "note": "안쪽 [] 가 먼저 하나의 행을 만든다"
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "grid": {
+       "ref": "0x241a83fc840"
+      },
+      "flat": {
+       "ref": "0x241a83fd700"
+      },
+      "table": {
+       "ref": "0x241a83ef8c0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x241a83fc840": {
+     "id": "0x241a83fc840",
+     "type": "list",
+     "repr": "[[1, 2, 3], [4, 5, 6]]",
+     "items": [
+      {
+       "ref": "0x241a83ef540"
+      },
+      {
+       "ref": "0x241a83ef440"
+      }
+     ]
+    },
+    "0x241a83ef540": {
+     "id": "0x241a83ef540",
+     "type": "list",
+     "repr": "[1, 2, 3]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     ]
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x241a83ef440": {
+     "id": "0x241a83ef440",
+     "type": "list",
+     "repr": "[4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    },
+    "0x241a83fd700": {
+     "id": "0x241a83fd700",
+     "type": "list",
+     "repr": "[1, 2, 3, 4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    },
+    "0x241a83ef8c0": {
+     "id": "0x241a83ef8c0",
+     "type": "list",
+     "repr": "[[0, 0, 0], [0, 1, 2], [0, 2, 4]]",
+     "items": [
+      {
+       "ref": "0x241a83efd80"
+      },
+      {
+       "ref": "0x241a83eff40"
+      },
+      {
+       "ref": "0x241a83fc300"
+      }
+     ]
+    },
+    "0x241a83efd80": {
+     "id": "0x241a83efd80",
+     "type": "list",
+     "repr": "[0, 0, 0]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4998"
+      },
+      {
+       "ref": "0x7ffd7f2b4998"
+      },
+      {
+       "ref": "0x7ffd7f2b4998"
+      }
+     ]
+    },
+    "0x7ffd7f2b4998": {
+     "id": "0x7ffd7f2b4998",
+     "type": "int",
+     "repr": "0"
+    },
+    "0x241a83eff40": {
+     "id": "0x241a83eff40",
+     "type": "list",
+     "repr": "[0, 1, 2]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4998"
+      },
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     ]
+    },
+    "0x241a83fc300": {
+     "id": "0x241a83fc300",
+     "type": "list",
+     "repr": "[0, 2, 4]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4998"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     ]
+    }
+   },
+   "stdout": "[1, 2, 3, 4, 5, 6]\n"
+  },
+  {
+   "line": 6,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "grid": {
+       "ref": "0x241a83fc840"
+      },
+      "flat": {
+       "ref": "0x241a83fd700"
+      },
+      "table": {
+       "ref": "0x241a83ef8c0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x241a83fc840": {
+     "id": "0x241a83fc840",
+     "type": "list",
+     "repr": "[[1, 2, 3], [4, 5, 6]]",
+     "items": [
+      {
+       "ref": "0x241a83ef540"
+      },
+      {
+       "ref": "0x241a83ef440"
+      }
+     ]
+    },
+    "0x241a83ef540": {
+     "id": "0x241a83ef540",
+     "type": "list",
+     "repr": "[1, 2, 3]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     ]
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x241a83ef440": {
+     "id": "0x241a83ef440",
+     "type": "list",
+     "repr": "[4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    },
+    "0x241a83fd700": {
+     "id": "0x241a83fd700",
+     "type": "list",
+     "repr": "[1, 2, 3, 4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    },
+    "0x241a83ef8c0": {
+     "id": "0x241a83ef8c0",
+     "type": "list",
+     "repr": "[[0, 0, 0], [0, 1, 2], [0, 2, 4]]",
+     "items": [
+      {
+       "ref": "0x241a83efd80"
+      },
+      {
+       "ref": "0x241a83eff40"
+      },
+      {
+       "ref": "0x241a83fc300"
+      }
+     ]
+    },
+    "0x241a83efd80": {
+     "id": "0x241a83efd80",
+     "type": "list",
+     "repr": "[0, 0, 0]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4998"
+      },
+      {
+       "ref": "0x7ffd7f2b4998"
+      },
+      {
+       "ref": "0x7ffd7f2b4998"
+      }
+     ]
+    },
+    "0x7ffd7f2b4998": {
+     "id": "0x7ffd7f2b4998",
+     "type": "int",
+     "repr": "0"
+    },
+    "0x241a83eff40": {
+     "id": "0x241a83eff40",
+     "type": "list",
+     "repr": "[0, 1, 2]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4998"
+      },
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     ]
+    },
+    "0x241a83fc300": {
+     "id": "0x241a83fc300",
+     "type": "list",
+     "repr": "[0, 2, 4]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4998"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     ]
+    }
+   },
+   "stdout": "[1, 2, 3, 4, 5, 6]\n[[0, 0, 0], [0, 1, 2], [0, 2, 4]]\n"
+  },
+  {
+   "line": 6,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "grid": {
+       "ref": "0x241a83fc840"
+      },
+      "flat": {
+       "ref": "0x241a83fd700"
+      },
+      "table": {
+       "ref": "0x241a83ef8c0"
+      },
+      "a": {
+       "ref": "0x7ffd7f2c4290"
+      },
+      "b": {
+       "ref": "0x7ffd7f2c3540"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x241a83fc840": {
+     "id": "0x241a83fc840",
+     "type": "list",
+     "repr": "[[1, 2, 3], [4, 5, 6]]",
+     "items": [
+      {
+       "ref": "0x241a83ef540"
+      },
+      {
+       "ref": "0x241a83ef440"
+      }
+     ]
+    },
+    "0x241a83ef540": {
+     "id": "0x241a83ef540",
+     "type": "list",
+     "repr": "[1, 2, 3]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     ]
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x241a83ef440": {
+     "id": "0x241a83ef440",
+     "type": "list",
+     "repr": "[4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    },
+    "0x241a83fd700": {
+     "id": "0x241a83fd700",
+     "type": "list",
+     "repr": "[1, 2, 3, 4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    },
+    "0x241a83ef8c0": {
+     "id": "0x241a83ef8c0",
+     "type": "list",
+     "repr": "[[0, 0, 0], [0, 1, 2], [0, 2, 4]]",
+     "items": [
+      {
+       "ref": "0x241a83efd80"
+      },
+      {
+       "ref": "0x241a83eff40"
+      },
+      {
+       "ref": "0x241a83fc300"
+      }
+     ]
+    },
+    "0x241a83efd80": {
+     "id": "0x241a83efd80",
+     "type": "list",
+     "repr": "[0, 0, 0]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4998"
+      },
+      {
+       "ref": "0x7ffd7f2b4998"
+      },
+      {
+       "ref": "0x7ffd7f2b4998"
+      }
+     ]
+    },
+    "0x7ffd7f2b4998": {
+     "id": "0x7ffd7f2b4998",
+     "type": "int",
+     "repr": "0"
+    },
+    "0x241a83eff40": {
+     "id": "0x241a83eff40",
+     "type": "list",
+     "repr": "[0, 1, 2]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4998"
+      },
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     ]
+    },
+    "0x241a83fc300": {
+     "id": "0x241a83fc300",
+     "type": "list",
+     "repr": "[0, 2, 4]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4998"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     ]
+    },
+    "0x7ffd7f2c4290": {
+     "id": "0x7ffd7f2c4290",
+     "type": "str",
+     "repr": "'x'"
+    },
+    "0x7ffd7f2c3540": {
+     "id": "0x7ffd7f2c3540",
+     "type": "str",
+     "repr": "'1'"
+    }
+   },
+   "stdout": "[1, 2, 3, 4, 5, 6]\n[[0, 0, 0], [0, 1, 2], [0, 2, 4]]\n"
+  },
+  {
+   "line": 6,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "grid": {
+       "ref": "0x241a83fc840"
+      },
+      "flat": {
+       "ref": "0x241a83fd700"
+      },
+      "table": {
+       "ref": "0x241a83ef8c0"
+      },
+      "a": {
+       "ref": "0x7ffd7f2c4290"
+      },
+      "b": {
+       "ref": "0x7ffd7f2c3570"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x241a83fc840": {
+     "id": "0x241a83fc840",
+     "type": "list",
+     "repr": "[[1, 2, 3], [4, 5, 6]]",
+     "items": [
+      {
+       "ref": "0x241a83ef540"
+      },
+      {
+       "ref": "0x241a83ef440"
+      }
+     ]
+    },
+    "0x241a83ef540": {
+     "id": "0x241a83ef540",
+     "type": "list",
+     "repr": "[1, 2, 3]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     ]
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x241a83ef440": {
+     "id": "0x241a83ef440",
+     "type": "list",
+     "repr": "[4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    },
+    "0x241a83fd700": {
+     "id": "0x241a83fd700",
+     "type": "list",
+     "repr": "[1, 2, 3, 4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    },
+    "0x241a83ef8c0": {
+     "id": "0x241a83ef8c0",
+     "type": "list",
+     "repr": "[[0, 0, 0], [0, 1, 2], [0, 2, 4]]",
+     "items": [
+      {
+       "ref": "0x241a83efd80"
+      },
+      {
+       "ref": "0x241a83eff40"
+      },
+      {
+       "ref": "0x241a83fc300"
+      }
+     ]
+    },
+    "0x241a83efd80": {
+     "id": "0x241a83efd80",
+     "type": "list",
+     "repr": "[0, 0, 0]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4998"
+      },
+      {
+       "ref": "0x7ffd7f2b4998"
+      },
+      {
+       "ref": "0x7ffd7f2b4998"
+      }
+     ]
+    },
+    "0x7ffd7f2b4998": {
+     "id": "0x7ffd7f2b4998",
+     "type": "int",
+     "repr": "0"
+    },
+    "0x241a83eff40": {
+     "id": "0x241a83eff40",
+     "type": "list",
+     "repr": "[0, 1, 2]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4998"
+      },
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     ]
+    },
+    "0x241a83fc300": {
+     "id": "0x241a83fc300",
+     "type": "list",
+     "repr": "[0, 2, 4]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4998"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     ]
+    },
+    "0x7ffd7f2c4290": {
+     "id": "0x7ffd7f2c4290",
+     "type": "str",
+     "repr": "'x'"
+    },
+    "0x7ffd7f2c3570": {
+     "id": "0x7ffd7f2c3570",
+     "type": "str",
+     "repr": "'2'"
+    }
+   },
+   "stdout": "[1, 2, 3, 4, 5, 6]\n[[0, 0, 0], [0, 1, 2], [0, 2, 4]]\n"
+  },
+  {
+   "line": 6,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "grid": {
+       "ref": "0x241a83fc840"
+      },
+      "flat": {
+       "ref": "0x241a83fd700"
+      },
+      "table": {
+       "ref": "0x241a83ef8c0"
+      },
+      "a": {
+       "ref": "0x7ffd7f2c4290"
+      },
+      "b": {
+       "ref": "0x7ffd7f2c3570"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x241a83fc840": {
+     "id": "0x241a83fc840",
+     "type": "list",
+     "repr": "[[1, 2, 3], [4, 5, 6]]",
+     "items": [
+      {
+       "ref": "0x241a83ef540"
+      },
+      {
+       "ref": "0x241a83ef440"
+      }
+     ]
+    },
+    "0x241a83ef540": {
+     "id": "0x241a83ef540",
+     "type": "list",
+     "repr": "[1, 2, 3]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     ]
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x241a83ef440": {
+     "id": "0x241a83ef440",
+     "type": "list",
+     "repr": "[4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    },
+    "0x241a83fd700": {
+     "id": "0x241a83fd700",
+     "type": "list",
+     "repr": "[1, 2, 3, 4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    },
+    "0x241a83ef8c0": {
+     "id": "0x241a83ef8c0",
+     "type": "list",
+     "repr": "[[0, 0, 0], [0, 1, 2], [0, 2, 4]]",
+     "items": [
+      {
+       "ref": "0x241a83efd80"
+      },
+      {
+       "ref": "0x241a83eff40"
+      },
+      {
+       "ref": "0x241a83fc300"
+      }
+     ]
+    },
+    "0x241a83efd80": {
+     "id": "0x241a83efd80",
+     "type": "list",
+     "repr": "[0, 0, 0]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4998"
+      },
+      {
+       "ref": "0x7ffd7f2b4998"
+      },
+      {
+       "ref": "0x7ffd7f2b4998"
+      }
+     ]
+    },
+    "0x7ffd7f2b4998": {
+     "id": "0x7ffd7f2b4998",
+     "type": "int",
+     "repr": "0"
+    },
+    "0x241a83eff40": {
+     "id": "0x241a83eff40",
+     "type": "list",
+     "repr": "[0, 1, 2]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4998"
+      },
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     ]
+    },
+    "0x241a83fc300": {
+     "id": "0x241a83fc300",
+     "type": "list",
+     "repr": "[0, 2, 4]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4998"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     ]
+    },
+    "0x7ffd7f2c4290": {
+     "id": "0x7ffd7f2c4290",
+     "type": "str",
+     "repr": "'x'"
+    },
+    "0x7ffd7f2c3570": {
+     "id": "0x7ffd7f2c3570",
+     "type": "str",
+     "repr": "'2'"
+    }
+   },
+   "stdout": "[1, 2, 3, 4, 5, 6]\n[[0, 0, 0], [0, 1, 2], [0, 2, 4]]\n"
+  },
+  {
+   "line": 6,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "grid": {
+       "ref": "0x241a83fc840"
+      },
+      "flat": {
+       "ref": "0x241a83fd700"
+      },
+      "table": {
+       "ref": "0x241a83ef8c0"
+      },
+      "a": {
+       "ref": "0x7ffd7f2c42c0"
+      },
+      "b": {
+       "ref": "0x7ffd7f2c3540"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x241a83fc840": {
+     "id": "0x241a83fc840",
+     "type": "list",
+     "repr": "[[1, 2, 3], [4, 5, 6]]",
+     "items": [
+      {
+       "ref": "0x241a83ef540"
+      },
+      {
+       "ref": "0x241a83ef440"
+      }
+     ]
+    },
+    "0x241a83ef540": {
+     "id": "0x241a83ef540",
+     "type": "list",
+     "repr": "[1, 2, 3]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     ]
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x241a83ef440": {
+     "id": "0x241a83ef440",
+     "type": "list",
+     "repr": "[4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    },
+    "0x241a83fd700": {
+     "id": "0x241a83fd700",
+     "type": "list",
+     "repr": "[1, 2, 3, 4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    },
+    "0x241a83ef8c0": {
+     "id": "0x241a83ef8c0",
+     "type": "list",
+     "repr": "[[0, 0, 0], [0, 1, 2], [0, 2, 4]]",
+     "items": [
+      {
+       "ref": "0x241a83efd80"
+      },
+      {
+       "ref": "0x241a83eff40"
+      },
+      {
+       "ref": "0x241a83fc300"
+      }
+     ]
+    },
+    "0x241a83efd80": {
+     "id": "0x241a83efd80",
+     "type": "list",
+     "repr": "[0, 0, 0]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4998"
+      },
+      {
+       "ref": "0x7ffd7f2b4998"
+      },
+      {
+       "ref": "0x7ffd7f2b4998"
+      }
+     ]
+    },
+    "0x7ffd7f2b4998": {
+     "id": "0x7ffd7f2b4998",
+     "type": "int",
+     "repr": "0"
+    },
+    "0x241a83eff40": {
+     "id": "0x241a83eff40",
+     "type": "list",
+     "repr": "[0, 1, 2]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4998"
+      },
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     ]
+    },
+    "0x241a83fc300": {
+     "id": "0x241a83fc300",
+     "type": "list",
+     "repr": "[0, 2, 4]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4998"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     ]
+    },
+    "0x7ffd7f2c42c0": {
+     "id": "0x7ffd7f2c42c0",
+     "type": "str",
+     "repr": "'y'"
+    },
+    "0x7ffd7f2c3540": {
+     "id": "0x7ffd7f2c3540",
+     "type": "str",
+     "repr": "'1'"
+    }
+   },
+   "stdout": "[1, 2, 3, 4, 5, 6]\n[[0, 0, 0], [0, 1, 2], [0, 2, 4]]\n"
+  },
+  {
+   "line": 6,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "grid": {
+       "ref": "0x241a83fc840"
+      },
+      "flat": {
+       "ref": "0x241a83fd700"
+      },
+      "table": {
+       "ref": "0x241a83ef8c0"
+      },
+      "a": {
+       "ref": "0x7ffd7f2c42c0"
+      },
+      "b": {
+       "ref": "0x7ffd7f2c3570"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x241a83fc840": {
+     "id": "0x241a83fc840",
+     "type": "list",
+     "repr": "[[1, 2, 3], [4, 5, 6]]",
+     "items": [
+      {
+       "ref": "0x241a83ef540"
+      },
+      {
+       "ref": "0x241a83ef440"
+      }
+     ]
+    },
+    "0x241a83ef540": {
+     "id": "0x241a83ef540",
+     "type": "list",
+     "repr": "[1, 2, 3]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     ]
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x241a83ef440": {
+     "id": "0x241a83ef440",
+     "type": "list",
+     "repr": "[4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    },
+    "0x241a83fd700": {
+     "id": "0x241a83fd700",
+     "type": "list",
+     "repr": "[1, 2, 3, 4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    },
+    "0x241a83ef8c0": {
+     "id": "0x241a83ef8c0",
+     "type": "list",
+     "repr": "[[0, 0, 0], [0, 1, 2], [0, 2, 4]]",
+     "items": [
+      {
+       "ref": "0x241a83efd80"
+      },
+      {
+       "ref": "0x241a83eff40"
+      },
+      {
+       "ref": "0x241a83fc300"
+      }
+     ]
+    },
+    "0x241a83efd80": {
+     "id": "0x241a83efd80",
+     "type": "list",
+     "repr": "[0, 0, 0]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4998"
+      },
+      {
+       "ref": "0x7ffd7f2b4998"
+      },
+      {
+       "ref": "0x7ffd7f2b4998"
+      }
+     ]
+    },
+    "0x7ffd7f2b4998": {
+     "id": "0x7ffd7f2b4998",
+     "type": "int",
+     "repr": "0"
+    },
+    "0x241a83eff40": {
+     "id": "0x241a83eff40",
+     "type": "list",
+     "repr": "[0, 1, 2]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4998"
+      },
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     ]
+    },
+    "0x241a83fc300": {
+     "id": "0x241a83fc300",
+     "type": "list",
+     "repr": "[0, 2, 4]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4998"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     ]
+    },
+    "0x7ffd7f2c42c0": {
+     "id": "0x7ffd7f2c42c0",
+     "type": "str",
+     "repr": "'y'"
+    },
+    "0x7ffd7f2c3570": {
+     "id": "0x7ffd7f2c3570",
+     "type": "str",
+     "repr": "'2'"
+    }
+   },
+   "stdout": "[1, 2, 3, 4, 5, 6]\n[[0, 0, 0], [0, 1, 2], [0, 2, 4]]\n"
+  },
+  {
+   "line": 6,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "grid": {
+       "ref": "0x241a83fc840"
+      },
+      "flat": {
+       "ref": "0x241a83fd700"
+      },
+      "table": {
+       "ref": "0x241a83ef8c0"
+      },
+      "a": {
+       "ref": "0x7ffd7f2c42c0"
+      },
+      "b": {
+       "ref": "0x7ffd7f2c3570"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x241a83fc840": {
+     "id": "0x241a83fc840",
+     "type": "list",
+     "repr": "[[1, 2, 3], [4, 5, 6]]",
+     "items": [
+      {
+       "ref": "0x241a83ef540"
+      },
+      {
+       "ref": "0x241a83ef440"
+      }
+     ]
+    },
+    "0x241a83ef540": {
+     "id": "0x241a83ef540",
+     "type": "list",
+     "repr": "[1, 2, 3]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     ]
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x241a83ef440": {
+     "id": "0x241a83ef440",
+     "type": "list",
+     "repr": "[4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    },
+    "0x241a83fd700": {
+     "id": "0x241a83fd700",
+     "type": "list",
+     "repr": "[1, 2, 3, 4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    },
+    "0x241a83ef8c0": {
+     "id": "0x241a83ef8c0",
+     "type": "list",
+     "repr": "[[0, 0, 0], [0, 1, 2], [0, 2, 4]]",
+     "items": [
+      {
+       "ref": "0x241a83efd80"
+      },
+      {
+       "ref": "0x241a83eff40"
+      },
+      {
+       "ref": "0x241a83fc300"
+      }
+     ]
+    },
+    "0x241a83efd80": {
+     "id": "0x241a83efd80",
+     "type": "list",
+     "repr": "[0, 0, 0]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4998"
+      },
+      {
+       "ref": "0x7ffd7f2b4998"
+      },
+      {
+       "ref": "0x7ffd7f2b4998"
+      }
+     ]
+    },
+    "0x7ffd7f2b4998": {
+     "id": "0x7ffd7f2b4998",
+     "type": "int",
+     "repr": "0"
+    },
+    "0x241a83eff40": {
+     "id": "0x241a83eff40",
+     "type": "list",
+     "repr": "[0, 1, 2]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4998"
+      },
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     ]
+    },
+    "0x241a83fc300": {
+     "id": "0x241a83fc300",
+     "type": "list",
+     "repr": "[0, 2, 4]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4998"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     ]
+    },
+    "0x7ffd7f2c42c0": {
+     "id": "0x7ffd7f2c42c0",
+     "type": "str",
+     "repr": "'y'"
+    },
+    "0x7ffd7f2c3570": {
+     "id": "0x7ffd7f2c3570",
+     "type": "str",
+     "repr": "'2'"
+    }
+   },
+   "stdout": "[1, 2, 3, 4, 5, 6]\n[[0, 0, 0], [0, 1, 2], [0, 2, 4]]\n"
+  },
+  {
+   "line": 7,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 7,
+     "locals": {
+      "grid": {
+       "ref": "0x241a83fc840"
+      },
+      "flat": {
+       "ref": "0x241a83fd700"
+      },
+      "table": {
+       "ref": "0x241a83ef8c0"
+      },
+      "pairs": {
+       "ref": "0x241a8664a00"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x241a83fc840": {
+     "id": "0x241a83fc840",
+     "type": "list",
+     "repr": "[[1, 2, 3], [4, 5, 6]]",
+     "items": [
+      {
+       "ref": "0x241a83ef540"
+      },
+      {
+       "ref": "0x241a83ef440"
+      }
+     ]
+    },
+    "0x241a83ef540": {
+     "id": "0x241a83ef540",
+     "type": "list",
+     "repr": "[1, 2, 3]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     ]
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x241a83ef440": {
+     "id": "0x241a83ef440",
+     "type": "list",
+     "repr": "[4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    },
+    "0x241a83fd700": {
+     "id": "0x241a83fd700",
+     "type": "list",
+     "repr": "[1, 2, 3, 4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    },
+    "0x241a83ef8c0": {
+     "id": "0x241a83ef8c0",
+     "type": "list",
+     "repr": "[[0, 0, 0], [0, 1, 2], [0, 2, 4]]",
+     "items": [
+      {
+       "ref": "0x241a83efd80"
+      },
+      {
+       "ref": "0x241a83eff40"
+      },
+      {
+       "ref": "0x241a83fc300"
+      }
+     ]
+    },
+    "0x241a83efd80": {
+     "id": "0x241a83efd80",
+     "type": "list",
+     "repr": "[0, 0, 0]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4998"
+      },
+      {
+       "ref": "0x7ffd7f2b4998"
+      },
+      {
+       "ref": "0x7ffd7f2b4998"
+      }
+     ]
+    },
+    "0x7ffd7f2b4998": {
+     "id": "0x7ffd7f2b4998",
+     "type": "int",
+     "repr": "0"
+    },
+    "0x241a83eff40": {
+     "id": "0x241a83eff40",
+     "type": "list",
+     "repr": "[0, 1, 2]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4998"
+      },
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     ]
+    },
+    "0x241a83fc300": {
+     "id": "0x241a83fc300",
+     "type": "list",
+     "repr": "[0, 2, 4]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4998"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     ]
+    },
+    "0x241a8664a00": {
+     "id": "0x241a8664a00",
+     "type": "list",
+     "repr": "[('x', '1'), ('y', '1')]",
+     "items": [
+      {
+       "ref": "0x241a8633380"
+      },
+      {
+       "ref": "0x241a86333c0"
+      }
+     ]
+    },
+    "0x241a8633380": {
+     "id": "0x241a8633380",
+     "type": "tuple",
+     "repr": "('x', '1')",
+     "items": [
+      {
+       "ref": "0x7ffd7f2c4290"
+      },
+      {
+       "ref": "0x7ffd7f2c3540"
+      }
+     ]
+    },
+    "0x7ffd7f2c4290": {
+     "id": "0x7ffd7f2c4290",
+     "type": "str",
+     "repr": "'x'"
+    },
+    "0x7ffd7f2c3540": {
+     "id": "0x7ffd7f2c3540",
+     "type": "str",
+     "repr": "'1'"
+    },
+    "0x241a86333c0": {
+     "id": "0x241a86333c0",
+     "type": "tuple",
+     "repr": "('y', '1')",
+     "items": [
+      {
+       "ref": "0x7ffd7f2c42c0"
+      },
+      {
+       "ref": "0x7ffd7f2c3540"
+      }
+     ]
+    },
+    "0x7ffd7f2c42c0": {
+     "id": "0x7ffd7f2c42c0",
+     "type": "str",
+     "repr": "'y'"
+    }
+   },
+   "stdout": "[1, 2, 3, 4, 5, 6]\n[[0, 0, 0], [0, 1, 2], [0, 2, 4]]\n"
+  },
+  {
+   "line": 7,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 7,
+     "locals": {
+      "grid": {
+       "ref": "0x241a83fc840"
+      },
+      "flat": {
+       "ref": "0x241a83fd700"
+      },
+      "table": {
+       "ref": "0x241a83ef8c0"
+      },
+      "pairs": {
+       "ref": "0x241a8664a00"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x241a83fc840": {
+     "id": "0x241a83fc840",
+     "type": "list",
+     "repr": "[[1, 2, 3], [4, 5, 6]]",
+     "items": [
+      {
+       "ref": "0x241a83ef540"
+      },
+      {
+       "ref": "0x241a83ef440"
+      }
+     ]
+    },
+    "0x241a83ef540": {
+     "id": "0x241a83ef540",
+     "type": "list",
+     "repr": "[1, 2, 3]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     ]
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x241a83ef440": {
+     "id": "0x241a83ef440",
+     "type": "list",
+     "repr": "[4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    },
+    "0x241a83fd700": {
+     "id": "0x241a83fd700",
+     "type": "list",
+     "repr": "[1, 2, 3, 4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    },
+    "0x241a83ef8c0": {
+     "id": "0x241a83ef8c0",
+     "type": "list",
+     "repr": "[[0, 0, 0], [0, 1, 2], [0, 2, 4]]",
+     "items": [
+      {
+       "ref": "0x241a83efd80"
+      },
+      {
+       "ref": "0x241a83eff40"
+      },
+      {
+       "ref": "0x241a83fc300"
+      }
+     ]
+    },
+    "0x241a83efd80": {
+     "id": "0x241a83efd80",
+     "type": "list",
+     "repr": "[0, 0, 0]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4998"
+      },
+      {
+       "ref": "0x7ffd7f2b4998"
+      },
+      {
+       "ref": "0x7ffd7f2b4998"
+      }
+     ]
+    },
+    "0x7ffd7f2b4998": {
+     "id": "0x7ffd7f2b4998",
+     "type": "int",
+     "repr": "0"
+    },
+    "0x241a83eff40": {
+     "id": "0x241a83eff40",
+     "type": "list",
+     "repr": "[0, 1, 2]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4998"
+      },
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     ]
+    },
+    "0x241a83fc300": {
+     "id": "0x241a83fc300",
+     "type": "list",
+     "repr": "[0, 2, 4]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4998"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     ]
+    },
+    "0x241a8664a00": {
+     "id": "0x241a8664a00",
+     "type": "list",
+     "repr": "[('x', '1'), ('y', '1')]",
+     "items": [
+      {
+       "ref": "0x241a8633380"
+      },
+      {
+       "ref": "0x241a86333c0"
+      }
+     ]
+    },
+    "0x241a8633380": {
+     "id": "0x241a8633380",
+     "type": "tuple",
+     "repr": "('x', '1')",
+     "items": [
+      {
+       "ref": "0x7ffd7f2c4290"
+      },
+      {
+       "ref": "0x7ffd7f2c3540"
+      }
+     ]
+    },
+    "0x7ffd7f2c4290": {
+     "id": "0x7ffd7f2c4290",
+     "type": "str",
+     "repr": "'x'"
+    },
+    "0x7ffd7f2c3540": {
+     "id": "0x7ffd7f2c3540",
+     "type": "str",
+     "repr": "'1'"
+    },
+    "0x241a86333c0": {
+     "id": "0x241a86333c0",
+     "type": "tuple",
+     "repr": "('y', '1')",
+     "items": [
+      {
+       "ref": "0x7ffd7f2c42c0"
+      },
+      {
+       "ref": "0x7ffd7f2c3540"
+      }
+     ]
+    },
+    "0x7ffd7f2c42c0": {
+     "id": "0x7ffd7f2c42c0",
+     "type": "str",
+     "repr": "'y'"
+    }
+   },
+   "stdout": "[1, 2, 3, 4, 5, 6]\n[[0, 0, 0], [0, 1, 2], [0, 2, 4]]\n[('x', '1'), ('y', '1')]\n"
+  }
+ ],
+ "v": 1
+}

@@ -1,0 +1,1329 @@
+{
+ "id": "p3-tuple",
+ "code": "point = (3, 4)\nx, y = point\nprint(x, y)\na, *rest = [1, 2, 3, 4]\nprint(a, rest)\nsingle = (5,)\nprint(type(single), type((5)))\ninner = ([1, 2], \"고정\")\ninner[0].append(3)\nprint(inner)\npoint[0] = 9",
+ "steps": [
+  {
+   "line": 0,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 0,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": "",
+   "note": "튜플 — 만든 뒤 바꿀 수 없다"
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 2,
+     "locals": {
+      "point": {
+       "ref": "0x19469d93bc0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x19469d93bc0": {
+     "id": "0x19469d93bc0",
+     "type": "tuple",
+     "repr": "(3, 4)",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     ]
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    }
+   },
+   "stdout": "",
+   "note": "언패킹 — 왼쪽 이름 개수와 오른쪽 항목 개수가 같아야"
+  },
+  {
+   "line": 3,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 3,
+     "locals": {
+      "point": {
+       "ref": "0x19469d93bc0"
+      },
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x19469d93bc0": {
+     "id": "0x19469d93bc0",
+     "type": "tuple",
+     "repr": "(3, 4)",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     ]
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "point": {
+       "ref": "0x19469d93bc0"
+      },
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x19469d93bc0": {
+     "id": "0x19469d93bc0",
+     "type": "tuple",
+     "repr": "(3, 4)",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     ]
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    }
+   },
+   "stdout": "3 4\n",
+   "note": "* 로 나머지를 리스트로 받는다"
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "point": {
+       "ref": "0x19469d93bc0"
+      },
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      "a": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "rest": {
+       "ref": "0x19469b4f340"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x19469d93bc0": {
+     "id": "0x19469d93bc0",
+     "type": "tuple",
+     "repr": "(3, 4)",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     ]
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x19469b4f340": {
+     "id": "0x19469b4f340",
+     "type": "list",
+     "repr": "[2, 3, 4]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     ]
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    }
+   },
+   "stdout": "3 4\n"
+  },
+  {
+   "line": 6,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "point": {
+       "ref": "0x19469d93bc0"
+      },
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      "a": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "rest": {
+       "ref": "0x19469b4f340"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x19469d93bc0": {
+     "id": "0x19469d93bc0",
+     "type": "tuple",
+     "repr": "(3, 4)",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     ]
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x19469b4f340": {
+     "id": "0x19469b4f340",
+     "type": "list",
+     "repr": "[2, 3, 4]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     ]
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    }
+   },
+   "stdout": "3 4\n1 [2, 3, 4]\n",
+   "note": "항목 하나짜리 튜플은 쉼표가 필수 — (5) 는 그냥 5"
+  },
+  {
+   "line": 7,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 7,
+     "locals": {
+      "point": {
+       "ref": "0x19469d93bc0"
+      },
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      "a": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "rest": {
+       "ref": "0x19469b4f340"
+      },
+      "single": {
+       "ref": "0x19469d8d2a0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x19469d93bc0": {
+     "id": "0x19469d93bc0",
+     "type": "tuple",
+     "repr": "(3, 4)",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     ]
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x19469b4f340": {
+     "id": "0x19469b4f340",
+     "type": "list",
+     "repr": "[2, 3, 4]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     ]
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x19469d8d2a0": {
+     "id": "0x19469d8d2a0",
+     "type": "tuple",
+     "repr": "(5,)",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4a38"
+      }
+     ]
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    }
+   },
+   "stdout": "3 4\n1 [2, 3, 4]\n"
+  },
+  {
+   "line": 8,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 8,
+     "locals": {
+      "point": {
+       "ref": "0x19469d93bc0"
+      },
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      "a": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "rest": {
+       "ref": "0x19469b4f340"
+      },
+      "single": {
+       "ref": "0x19469d8d2a0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x19469d93bc0": {
+     "id": "0x19469d93bc0",
+     "type": "tuple",
+     "repr": "(3, 4)",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     ]
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x19469b4f340": {
+     "id": "0x19469b4f340",
+     "type": "list",
+     "repr": "[2, 3, 4]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     ]
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x19469d8d2a0": {
+     "id": "0x19469d8d2a0",
+     "type": "tuple",
+     "repr": "(5,)",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4a38"
+      }
+     ]
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    }
+   },
+   "stdout": "3 4\n1 [2, 3, 4]\n<class 'tuple'> <class 'int'>\n",
+   "note": "튜플은 못 바꾸지만, 안의 리스트는 바꿀 수 있다 — 튜플은 참조를 고정할 뿐"
+  },
+  {
+   "line": 9,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 9,
+     "locals": {
+      "point": {
+       "ref": "0x19469d93bc0"
+      },
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      "a": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "rest": {
+       "ref": "0x19469b4f340"
+      },
+      "single": {
+       "ref": "0x19469d8d2a0"
+      },
+      "inner": {
+       "ref": "0x19469d93680"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x19469d93bc0": {
+     "id": "0x19469d93bc0",
+     "type": "tuple",
+     "repr": "(3, 4)",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     ]
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x19469b4f340": {
+     "id": "0x19469b4f340",
+     "type": "list",
+     "repr": "[2, 3, 4]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     ]
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x19469d8d2a0": {
+     "id": "0x19469d8d2a0",
+     "type": "tuple",
+     "repr": "(5,)",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4a38"
+      }
+     ]
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    },
+    "0x19469d93680": {
+     "id": "0x19469d93680",
+     "type": "tuple",
+     "repr": "([1, 2], '고정')",
+     "items": [
+      {
+       "ref": "0x19469b4f440"
+      },
+      {
+       "ref": "0x19469d86060"
+      }
+     ]
+    },
+    "0x19469b4f440": {
+     "id": "0x19469b4f440",
+     "type": "list",
+     "repr": "[1, 2]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     ]
+    },
+    "0x19469d86060": {
+     "id": "0x19469d86060",
+     "type": "str",
+     "repr": "'고정'"
+    }
+   },
+   "stdout": "3 4\n1 [2, 3, 4]\n<class 'tuple'> <class 'int'>\n"
+  },
+  {
+   "line": 10,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 10,
+     "locals": {
+      "point": {
+       "ref": "0x19469d93bc0"
+      },
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      "a": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "rest": {
+       "ref": "0x19469b4f340"
+      },
+      "single": {
+       "ref": "0x19469d8d2a0"
+      },
+      "inner": {
+       "ref": "0x19469d93680"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x19469d93bc0": {
+     "id": "0x19469d93bc0",
+     "type": "tuple",
+     "repr": "(3, 4)",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     ]
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x19469b4f340": {
+     "id": "0x19469b4f340",
+     "type": "list",
+     "repr": "[2, 3, 4]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     ]
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x19469d8d2a0": {
+     "id": "0x19469d8d2a0",
+     "type": "tuple",
+     "repr": "(5,)",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4a38"
+      }
+     ]
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    },
+    "0x19469d93680": {
+     "id": "0x19469d93680",
+     "type": "tuple",
+     "repr": "([1, 2, 3], '고정')",
+     "items": [
+      {
+       "ref": "0x19469b4f440"
+      },
+      {
+       "ref": "0x19469d86060"
+      }
+     ]
+    },
+    "0x19469b4f440": {
+     "id": "0x19469b4f440",
+     "type": "list",
+     "repr": "[1, 2, 3]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     ]
+    },
+    "0x19469d86060": {
+     "id": "0x19469d86060",
+     "type": "str",
+     "repr": "'고정'"
+    }
+   },
+   "stdout": "3 4\n1 [2, 3, 4]\n<class 'tuple'> <class 'int'>\n"
+  },
+  {
+   "line": 11,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 11,
+     "locals": {
+      "point": {
+       "ref": "0x19469d93bc0"
+      },
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      "a": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "rest": {
+       "ref": "0x19469b4f340"
+      },
+      "single": {
+       "ref": "0x19469d8d2a0"
+      },
+      "inner": {
+       "ref": "0x19469d93680"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x19469d93bc0": {
+     "id": "0x19469d93bc0",
+     "type": "tuple",
+     "repr": "(3, 4)",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     ]
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x19469b4f340": {
+     "id": "0x19469b4f340",
+     "type": "list",
+     "repr": "[2, 3, 4]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     ]
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x19469d8d2a0": {
+     "id": "0x19469d8d2a0",
+     "type": "tuple",
+     "repr": "(5,)",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4a38"
+      }
+     ]
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    },
+    "0x19469d93680": {
+     "id": "0x19469d93680",
+     "type": "tuple",
+     "repr": "([1, 2, 3], '고정')",
+     "items": [
+      {
+       "ref": "0x19469b4f440"
+      },
+      {
+       "ref": "0x19469d86060"
+      }
+     ]
+    },
+    "0x19469b4f440": {
+     "id": "0x19469b4f440",
+     "type": "list",
+     "repr": "[1, 2, 3]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     ]
+    },
+    "0x19469d86060": {
+     "id": "0x19469d86060",
+     "type": "str",
+     "repr": "'고정'"
+    }
+   },
+   "stdout": "3 4\n1 [2, 3, 4]\n<class 'tuple'> <class 'int'>\n([1, 2, 3], '고정')\n",
+   "note": "튜플의 칸을 바꾸려 하면 TypeError"
+  },
+  {
+   "line": 11,
+   "event": "exception",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 11,
+     "locals": {
+      "point": {
+       "ref": "0x19469d93bc0"
+      },
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      "a": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "rest": {
+       "ref": "0x19469b4f340"
+      },
+      "single": {
+       "ref": "0x19469d8d2a0"
+      },
+      "inner": {
+       "ref": "0x19469d93680"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x19469d93bc0": {
+     "id": "0x19469d93bc0",
+     "type": "tuple",
+     "repr": "(3, 4)",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     ]
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x19469b4f340": {
+     "id": "0x19469b4f340",
+     "type": "list",
+     "repr": "[2, 3, 4]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     ]
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x19469d8d2a0": {
+     "id": "0x19469d8d2a0",
+     "type": "tuple",
+     "repr": "(5,)",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4a38"
+      }
+     ]
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    },
+    "0x19469d93680": {
+     "id": "0x19469d93680",
+     "type": "tuple",
+     "repr": "([1, 2, 3], '고정')",
+     "items": [
+      {
+       "ref": "0x19469b4f440"
+      },
+      {
+       "ref": "0x19469d86060"
+      }
+     ]
+    },
+    "0x19469b4f440": {
+     "id": "0x19469b4f440",
+     "type": "list",
+     "repr": "[1, 2, 3]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     ]
+    },
+    "0x19469d86060": {
+     "id": "0x19469d86060",
+     "type": "str",
+     "repr": "'고정'"
+    }
+   },
+   "stdout": "3 4\n1 [2, 3, 4]\n<class 'tuple'> <class 'int'>\n([1, 2, 3], '고정')\n",
+   "exc": "TypeError: 'tuple' object does not support item assignment"
+  },
+  {
+   "line": 11,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 11,
+     "locals": {
+      "point": {
+       "ref": "0x19469d93bc0"
+      },
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      "a": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "rest": {
+       "ref": "0x19469b4f340"
+      },
+      "single": {
+       "ref": "0x19469d8d2a0"
+      },
+      "inner": {
+       "ref": "0x19469d93680"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x19469d93bc0": {
+     "id": "0x19469d93bc0",
+     "type": "tuple",
+     "repr": "(3, 4)",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     ]
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x19469b4f340": {
+     "id": "0x19469b4f340",
+     "type": "list",
+     "repr": "[2, 3, 4]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     ]
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x19469d8d2a0": {
+     "id": "0x19469d8d2a0",
+     "type": "tuple",
+     "repr": "(5,)",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4a38"
+      }
+     ]
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    },
+    "0x19469d93680": {
+     "id": "0x19469d93680",
+     "type": "tuple",
+     "repr": "([1, 2, 3], '고정')",
+     "items": [
+      {
+       "ref": "0x19469b4f440"
+      },
+      {
+       "ref": "0x19469d86060"
+      }
+     ]
+    },
+    "0x19469b4f440": {
+     "id": "0x19469b4f440",
+     "type": "list",
+     "repr": "[1, 2, 3]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     ]
+    },
+    "0x19469d86060": {
+     "id": "0x19469d86060",
+     "type": "str",
+     "repr": "'고정'"
+    }
+   },
+   "stdout": "3 4\n1 [2, 3, 4]\n<class 'tuple'> <class 'int'>\n([1, 2, 3], '고정')\n"
+  },
+  {
+   "line": 11,
+   "event": "exception",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 11,
+     "locals": {
+      "point": {
+       "ref": "0x19469d93bc0"
+      },
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      "a": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "rest": {
+       "ref": "0x19469b4f340"
+      },
+      "single": {
+       "ref": "0x19469d8d2a0"
+      },
+      "inner": {
+       "ref": "0x19469d93680"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x19469d93bc0": {
+     "id": "0x19469d93bc0",
+     "type": "tuple",
+     "repr": "(3, 4)",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     ]
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x19469b4f340": {
+     "id": "0x19469b4f340",
+     "type": "list",
+     "repr": "[2, 3, 4]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     ]
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x19469d8d2a0": {
+     "id": "0x19469d8d2a0",
+     "type": "tuple",
+     "repr": "(5,)",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4a38"
+      }
+     ]
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    },
+    "0x19469d93680": {
+     "id": "0x19469d93680",
+     "type": "tuple",
+     "repr": "([1, 2, 3], '고정')",
+     "items": [
+      {
+       "ref": "0x19469b4f440"
+      },
+      {
+       "ref": "0x19469d86060"
+      }
+     ]
+    },
+    "0x19469b4f440": {
+     "id": "0x19469b4f440",
+     "type": "list",
+     "repr": "[1, 2, 3]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     ]
+    },
+    "0x19469d86060": {
+     "id": "0x19469d86060",
+     "type": "str",
+     "repr": "'고정'"
+    }
+   },
+   "stdout": "3 4\n1 [2, 3, 4]\n<class 'tuple'> <class 'int'>\n([1, 2, 3], '고정')\n",
+   "exc": "TypeError: 'tuple' object does not support item assignment"
+  }
+ ],
+ "v": 1
+}

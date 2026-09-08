@@ -38,14 +38,14 @@
      "line": 2,
      "locals": {
       "flag": {
-       "ref": "0x7ffd75921810"
+       "ref": "0x7ffd7f1c1810"
       }
      }
     }
    ],
    "heap": {
-    "0x7ffd75921810": {
-     "id": "0x7ffd75921810",
+    "0x7ffd7f1c1810": {
+     "id": "0x7ffd7f1c1810",
      "type": "bool",
      "repr": "True"
     }
@@ -62,14 +62,14 @@
      "line": 3,
      "locals": {
       "flag": {
-       "ref": "0x7ffd75921810"
+       "ref": "0x7ffd7f1c1810"
       }
      }
     }
    ],
    "heap": {
-    "0x7ffd75921810": {
-     "id": "0x7ffd75921810",
+    "0x7ffd7f1c1810": {
+     "id": "0x7ffd7f1c1810",
      "type": "bool",
      "repr": "True"
     }
@@ -85,14 +85,14 @@
      "line": 4,
      "locals": {
       "flag": {
-       "ref": "0x7ffd75921810"
+       "ref": "0x7ffd7f1c1810"
       }
      }
     }
    ],
    "heap": {
-    "0x7ffd75921810": {
-     "id": "0x7ffd75921810",
+    "0x7ffd7f1c1810": {
+     "id": "0x7ffd7f1c1810",
      "type": "bool",
      "repr": "True"
     }
@@ -109,22 +109,22 @@
      "line": 5,
      "locals": {
       "flag": {
-       "ref": "0x7ffd75921810"
+       "ref": "0x7ffd7f1c1810"
       },
       "result": {
-       "ref": "0x7ffd75921850"
+       "ref": "0x7ffd7f1c1850"
       }
      }
     }
    ],
    "heap": {
-    "0x7ffd75921810": {
-     "id": "0x7ffd75921810",
+    "0x7ffd7f1c1810": {
+     "id": "0x7ffd7f1c1810",
      "type": "bool",
      "repr": "True"
     },
-    "0x7ffd75921850": {
-     "id": "0x7ffd75921850",
+    "0x7ffd7f1c1850": {
+     "id": "0x7ffd7f1c1850",
      "type": "NoneType",
      "repr": "None"
     }
@@ -141,22 +141,22 @@
      "line": 6,
      "locals": {
       "flag": {
-       "ref": "0x7ffd75921810"
+       "ref": "0x7ffd7f1c1810"
       },
       "result": {
-       "ref": "0x7ffd75921850"
+       "ref": "0x7ffd7f1c1850"
       }
      }
     }
    ],
    "heap": {
-    "0x7ffd75921810": {
-     "id": "0x7ffd75921810",
+    "0x7ffd7f1c1810": {
+     "id": "0x7ffd7f1c1810",
      "type": "bool",
      "repr": "True"
     },
-    "0x7ffd75921850": {
-     "id": "0x7ffd75921850",
+    "0x7ffd7f1c1850": {
+     "id": "0x7ffd7f1c1850",
      "type": "NoneType",
      "repr": "None"
     }
@@ -173,22 +173,22 @@
      "line": 7,
      "locals": {
       "flag": {
-       "ref": "0x7ffd75921810"
+       "ref": "0x7ffd7f1c1810"
       },
       "result": {
-       "ref": "0x7ffd75921850"
+       "ref": "0x7ffd7f1c1850"
       }
      }
     }
    ],
    "heap": {
-    "0x7ffd75921810": {
-     "id": "0x7ffd75921810",
+    "0x7ffd7f1c1810": {
+     "id": "0x7ffd7f1c1810",
      "type": "bool",
      "repr": "True"
     },
-    "0x7ffd75921850": {
-     "id": "0x7ffd75921850",
+    "0x7ffd7f1c1850": {
+     "id": "0x7ffd7f1c1850",
      "type": "NoneType",
      "repr": "None"
     }
@@ -205,22 +205,22 @@
      "line": 7,
      "locals": {
       "flag": {
-       "ref": "0x7ffd75921810"
+       "ref": "0x7ffd7f1c1810"
       },
       "result": {
-       "ref": "0x7ffd75921850"
+       "ref": "0x7ffd7f1c1850"
       }
      }
     }
    ],
    "heap": {
-    "0x7ffd75921810": {
-     "id": "0x7ffd75921810",
+    "0x7ffd7f1c1810": {
+     "id": "0x7ffd7f1c1810",
      "type": "bool",
      "repr": "True"
     },
-    "0x7ffd75921850": {
-     "id": "0x7ffd75921850",
+    "0x7ffd7f1c1850": {
+     "id": "0x7ffd7f1c1850",
      "type": "NoneType",
      "repr": "None"
     }

@@ -1,0 +1,394 @@
+{
+ "id": "p3-hash",
+ "code": "print(hash(\"apple\") % 8, hash(\"kiwi\") % 8)\nprint(hash(42), hash(42.0), hash(True))\nd = {}\nd[(1, 2)] = \"튜플 키 OK\"\nprint(d)\nd[[1, 2]] = \"리스트 키?\"",
+ "steps": [
+  {
+   "line": 0,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 0,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": "",
+   "note": "해시값(큰 정수)을 칸 수로 나눈 나머지가 칸 번호"
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 2,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": "2 3\n",
+   "note": "값이 같은 정수·실수·불은 해시도 같다"
+  },
+  {
+   "line": 3,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 3,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": "2 3\n42 42 1\n"
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "d": {
+       "ref": "0x14543273100"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x14543273100": {
+     "id": "0x14543273100",
+     "type": "dict",
+     "repr": "{}",
+     "entries": []
+    }
+   },
+   "stdout": "2 3\n42 42 1\n",
+   "note": "튜플은 바뀌지 않으니 해시할 수 있다"
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "d": {
+       "ref": "0x14543273100"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x14543273100": {
+     "id": "0x14543273100",
+     "type": "dict",
+     "repr": "{(1, 2): '튜플 키 OK'}",
+     "entries": [
+      [
+       {
+        "ref": "0x14543273900"
+       },
+       {
+        "ref": "0x145432660b0"
+       }
+      ]
+     ]
+    },
+    "0x14543273900": {
+     "id": "0x14543273900",
+     "type": "tuple",
+     "repr": "(1, 2)",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     ]
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x145432660b0": {
+     "id": "0x145432660b0",
+     "type": "str",
+     "repr": "'튜플 키 OK'"
+    }
+   },
+   "stdout": "2 3\n42 42 1\n"
+  },
+  {
+   "line": 6,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "d": {
+       "ref": "0x14543273100"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x14543273100": {
+     "id": "0x14543273100",
+     "type": "dict",
+     "repr": "{(1, 2): '튜플 키 OK'}",
+     "entries": [
+      [
+       {
+        "ref": "0x14543273900"
+       },
+       {
+        "ref": "0x145432660b0"
+       }
+      ]
+     ]
+    },
+    "0x14543273900": {
+     "id": "0x14543273900",
+     "type": "tuple",
+     "repr": "(1, 2)",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     ]
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x145432660b0": {
+     "id": "0x145432660b0",
+     "type": "str",
+     "repr": "'튜플 키 OK'"
+    }
+   },
+   "stdout": "2 3\n42 42 1\n{(1, 2): '튜플 키 OK'}\n",
+   "note": "리스트는 바뀔 수 있어 해시 불가 → TypeError: unhashable"
+  },
+  {
+   "line": 6,
+   "event": "exception",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "d": {
+       "ref": "0x14543273100"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x14543273100": {
+     "id": "0x14543273100",
+     "type": "dict",
+     "repr": "{(1, 2): '튜플 키 OK'}",
+     "entries": [
+      [
+       {
+        "ref": "0x14543273900"
+       },
+       {
+        "ref": "0x145432660b0"
+       }
+      ]
+     ]
+    },
+    "0x14543273900": {
+     "id": "0x14543273900",
+     "type": "tuple",
+     "repr": "(1, 2)",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     ]
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x145432660b0": {
+     "id": "0x145432660b0",
+     "type": "str",
+     "repr": "'튜플 키 OK'"
+    }
+   },
+   "stdout": "2 3\n42 42 1\n{(1, 2): '튜플 키 OK'}\n",
+   "exc": "TypeError: unhashable type: 'list'"
+  },
+  {
+   "line": 6,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "d": {
+       "ref": "0x14543273100"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x14543273100": {
+     "id": "0x14543273100",
+     "type": "dict",
+     "repr": "{(1, 2): '튜플 키 OK'}",
+     "entries": [
+      [
+       {
+        "ref": "0x14543273900"
+       },
+       {
+        "ref": "0x145432660b0"
+       }
+      ]
+     ]
+    },
+    "0x14543273900": {
+     "id": "0x14543273900",
+     "type": "tuple",
+     "repr": "(1, 2)",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     ]
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x145432660b0": {
+     "id": "0x145432660b0",
+     "type": "str",
+     "repr": "'튜플 키 OK'"
+    }
+   },
+   "stdout": "2 3\n42 42 1\n{(1, 2): '튜플 키 OK'}\n"
+  },
+  {
+   "line": 6,
+   "event": "exception",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "d": {
+       "ref": "0x14543273100"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x14543273100": {
+     "id": "0x14543273100",
+     "type": "dict",
+     "repr": "{(1, 2): '튜플 키 OK'}",
+     "entries": [
+      [
+       {
+        "ref": "0x14543273900"
+       },
+       {
+        "ref": "0x145432660b0"
+       }
+      ]
+     ]
+    },
+    "0x14543273900": {
+     "id": "0x14543273900",
+     "type": "tuple",
+     "repr": "(1, 2)",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     ]
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x145432660b0": {
+     "id": "0x145432660b0",
+     "type": "str",
+     "repr": "'튜플 키 OK'"
+    }
+   },
+   "stdout": "2 3\n42 42 1\n{(1, 2): '튜플 키 OK'}\n",
+   "exc": "TypeError: unhashable type: 'list'"
+  }
+ ],
+ "v": 1
+}
