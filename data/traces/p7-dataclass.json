@@ -1,0 +1,2738 @@
+{
+ "id": "p7-dataclass",
+ "code": "from dataclasses import dataclass, field\n\n@dataclass\nclass Item:\n    name: str\n    price: int\n    tags: list = field(default_factory=list)\n\na = Item(\"펜\", 1000)\nb = Item(\"펜\", 1000)\nprint(a)\nprint(a == b)\na.tags.append(\"문구\")\nprint(a.tags, b.tags)\n\n@dataclass(frozen=True, order=True)\nclass Ver:\n    major: int\n    minor: int\nv = Ver(1, 2)\nprint(v < Ver(1, 3), {v: \"ok\"})\nv.major = 9",
+ "steps": [
+  {
+   "line": 0,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 0,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 3,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 3,
+     "locals": {
+      "dataclass": {
+       "ref": "0x27f074e5e40"
+      },
+      "field": {
+       "ref": "0x27f074e4720"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x27f074e5e40": {
+     "id": "0x27f074e5e40",
+     "type": "function",
+     "repr": "dataclass"
+    },
+    "0x27f074e4720": {
+     "id": "0x27f074e4720",
+     "type": "function",
+     "repr": "field"
+    }
+   },
+   "stdout": "",
+   "note": "__init__, __repr__, __eq__ 를 필드 선언에서 자동 생성"
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "dataclass": {
+       "ref": "0x27f074e5e40"
+      },
+      "field": {
+       "ref": "0x27f074e4720"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x27f074e5e40": {
+     "id": "0x27f074e5e40",
+     "type": "function",
+     "repr": "dataclass"
+    },
+    "0x27f074e4720": {
+     "id": "0x27f074e4720",
+     "type": "function",
+     "repr": "field"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 3,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "dataclass": {
+       "ref": "0x27f074e5e40"
+      },
+      "field": {
+       "ref": "0x27f074e4720"
+      }
+     }
+    },
+    {
+     "fn": "Item",
+     "line": 3,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x27f074e5e40": {
+     "id": "0x27f074e5e40",
+     "type": "function",
+     "repr": "dataclass"
+    },
+    "0x27f074e4720": {
+     "id": "0x27f074e4720",
+     "type": "function",
+     "repr": "field"
+    }
+   },
+   "stdout": "",
+   "note": "__init__, __repr__, __eq__ 를 필드 선언에서 자동 생성"
+  },
+  {
+   "line": 3,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "dataclass": {
+       "ref": "0x27f074e5e40"
+      },
+      "field": {
+       "ref": "0x27f074e4720"
+      }
+     }
+    },
+    {
+     "fn": "Item",
+     "line": 3,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x27f074e5e40": {
+     "id": "0x27f074e5e40",
+     "type": "function",
+     "repr": "dataclass"
+    },
+    "0x27f074e4720": {
+     "id": "0x27f074e4720",
+     "type": "function",
+     "repr": "field"
+    }
+   },
+   "stdout": "",
+   "note": "__init__, __repr__, __eq__ 를 필드 선언에서 자동 생성"
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "dataclass": {
+       "ref": "0x27f074e5e40"
+      },
+      "field": {
+       "ref": "0x27f074e4720"
+      }
+     }
+    },
+    {
+     "fn": "Item",
+     "line": 5,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x27f074e5e40": {
+     "id": "0x27f074e5e40",
+     "type": "function",
+     "repr": "dataclass"
+    },
+    "0x27f074e4720": {
+     "id": "0x27f074e4720",
+     "type": "function",
+     "repr": "field"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 6,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "dataclass": {
+       "ref": "0x27f074e5e40"
+      },
+      "field": {
+       "ref": "0x27f074e4720"
+      }
+     }
+    },
+    {
+     "fn": "Item",
+     "line": 6,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x27f074e5e40": {
+     "id": "0x27f074e5e40",
+     "type": "function",
+     "repr": "dataclass"
+    },
+    "0x27f074e4720": {
+     "id": "0x27f074e4720",
+     "type": "function",
+     "repr": "field"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 7,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "dataclass": {
+       "ref": "0x27f074e5e40"
+      },
+      "field": {
+       "ref": "0x27f074e4720"
+      }
+     }
+    },
+    {
+     "fn": "Item",
+     "line": 7,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x27f074e5e40": {
+     "id": "0x27f074e5e40",
+     "type": "function",
+     "repr": "dataclass"
+    },
+    "0x27f074e4720": {
+     "id": "0x27f074e4720",
+     "type": "function",
+     "repr": "field"
+    }
+   },
+   "stdout": "",
+   "note": "가변 기본값은 factory 로 — 인스턴스마다 새 리스트"
+  },
+  {
+   "line": 7,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "dataclass": {
+       "ref": "0x27f074e5e40"
+      },
+      "field": {
+       "ref": "0x27f074e4720"
+      }
+     }
+    },
+    {
+     "fn": "Item",
+     "line": 7,
+     "locals": {
+      "tags": {
+       "ref": "0x27f074e8340"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x27f074e5e40": {
+     "id": "0x27f074e5e40",
+     "type": "function",
+     "repr": "dataclass"
+    },
+    "0x27f074e4720": {
+     "id": "0x27f074e4720",
+     "type": "function",
+     "repr": "field"
+    },
+    "0x27f074e8340": {
+     "id": "0x27f074e8340",
+     "type": "Field",
+     "repr": "Field(name=None,type=None,default=<dataclasses.…"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 3,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 3,
+     "locals": {
+      "dataclass": {
+       "ref": "0x27f074e5e40"
+      },
+      "field": {
+       "ref": "0x27f074e4720"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x27f074e5e40": {
+     "id": "0x27f074e5e40",
+     "type": "function",
+     "repr": "dataclass"
+    },
+    "0x27f074e4720": {
+     "id": "0x27f074e4720",
+     "type": "function",
+     "repr": "field"
+    }
+   },
+   "stdout": "",
+   "note": "__init__, __repr__, __eq__ 를 필드 선언에서 자동 생성"
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "dataclass": {
+       "ref": "0x27f074e5e40"
+      },
+      "field": {
+       "ref": "0x27f074e4720"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x27f074e5e40": {
+     "id": "0x27f074e5e40",
+     "type": "function",
+     "repr": "dataclass"
+    },
+    "0x27f074e4720": {
+     "id": "0x27f074e4720",
+     "type": "function",
+     "repr": "field"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 9,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 9,
+     "locals": {
+      "dataclass": {
+       "ref": "0x27f074e5e40"
+      },
+      "field": {
+       "ref": "0x27f074e4720"
+      },
+      "Item": {
+       "ref": "0x27f072b4cd0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x27f074e5e40": {
+     "id": "0x27f074e5e40",
+     "type": "function",
+     "repr": "dataclass"
+    },
+    "0x27f074e4720": {
+     "id": "0x27f074e4720",
+     "type": "function",
+     "repr": "field"
+    },
+    "0x27f072b4cd0": {
+     "id": "0x27f072b4cd0",
+     "type": "type",
+     "repr": "Item"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 10,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 10,
+     "locals": {
+      "dataclass": {
+       "ref": "0x27f074e5e40"
+      },
+      "field": {
+       "ref": "0x27f074e4720"
+      },
+      "Item": {
+       "ref": "0x27f072b4cd0"
+      },
+      "a": {
+       "ref": "0x27f0743b200"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x27f074e5e40": {
+     "id": "0x27f074e5e40",
+     "type": "function",
+     "repr": "dataclass"
+    },
+    "0x27f074e4720": {
+     "id": "0x27f074e4720",
+     "type": "function",
+     "repr": "field"
+    },
+    "0x27f072b4cd0": {
+     "id": "0x27f072b4cd0",
+     "type": "type",
+     "repr": "Item"
+    },
+    "0x27f0743b200": {
+     "id": "0x27f0743b200",
+     "type": "Item",
+     "repr": "Item(name='펜', price=1000, tags=[])",
+     "fields": {
+      "name": {
+       "ref": "0x27f07412d30"
+      },
+      "price": {
+       "ref": "0x27f07107670"
+      },
+      "tags": {
+       "ref": "0x27f074f03c0"
+      }
+     }
+    },
+    "0x27f07412d30": {
+     "id": "0x27f07412d30",
+     "type": "str",
+     "repr": "'펜'"
+    },
+    "0x27f07107670": {
+     "id": "0x27f07107670",
+     "type": "int",
+     "repr": "1000"
+    },
+    "0x27f074f03c0": {
+     "id": "0x27f074f03c0",
+     "type": "list",
+     "repr": "[]",
+     "items": []
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 11,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 11,
+     "locals": {
+      "dataclass": {
+       "ref": "0x27f074e5e40"
+      },
+      "field": {
+       "ref": "0x27f074e4720"
+      },
+      "Item": {
+       "ref": "0x27f072b4cd0"
+      },
+      "a": {
+       "ref": "0x27f0743b200"
+      },
+      "b": {
+       "ref": "0x27f070e5d30"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x27f074e5e40": {
+     "id": "0x27f074e5e40",
+     "type": "function",
+     "repr": "dataclass"
+    },
+    "0x27f074e4720": {
+     "id": "0x27f074e4720",
+     "type": "function",
+     "repr": "field"
+    },
+    "0x27f072b4cd0": {
+     "id": "0x27f072b4cd0",
+     "type": "type",
+     "repr": "Item"
+    },
+    "0x27f0743b200": {
+     "id": "0x27f0743b200",
+     "type": "Item",
+     "repr": "Item(name='펜', price=1000, tags=[])",
+     "fields": {
+      "name": {
+       "ref": "0x27f07412d30"
+      },
+      "price": {
+       "ref": "0x27f07107670"
+      },
+      "tags": {
+       "ref": "0x27f074f03c0"
+      }
+     }
+    },
+    "0x27f07412d30": {
+     "id": "0x27f07412d30",
+     "type": "str",
+     "repr": "'펜'"
+    },
+    "0x27f07107670": {
+     "id": "0x27f07107670",
+     "type": "int",
+     "repr": "1000"
+    },
+    "0x27f074f03c0": {
+     "id": "0x27f074f03c0",
+     "type": "list",
+     "repr": "[]",
+     "items": []
+    },
+    "0x27f070e5d30": {
+     "id": "0x27f070e5d30",
+     "type": "Item",
+     "repr": "Item(name='펜', price=1000, tags=[])",
+     "fields": {
+      "name": {
+       "ref": "0x27f07412d30"
+      },
+      "price": {
+       "ref": "0x27f07107670"
+      },
+      "tags": {
+       "ref": "0x27f074f0b80"
+      }
+     }
+    },
+    "0x27f074f0b80": {
+     "id": "0x27f074f0b80",
+     "type": "list",
+     "repr": "[]",
+     "items": []
+    }
+   },
+   "stdout": "",
+   "note": "자동 __repr__"
+  },
+  {
+   "line": 12,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 12,
+     "locals": {
+      "dataclass": {
+       "ref": "0x27f074e5e40"
+      },
+      "field": {
+       "ref": "0x27f074e4720"
+      },
+      "Item": {
+       "ref": "0x27f072b4cd0"
+      },
+      "a": {
+       "ref": "0x27f0743b200"
+      },
+      "b": {
+       "ref": "0x27f070e5d30"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x27f074e5e40": {
+     "id": "0x27f074e5e40",
+     "type": "function",
+     "repr": "dataclass"
+    },
+    "0x27f074e4720": {
+     "id": "0x27f074e4720",
+     "type": "function",
+     "repr": "field"
+    },
+    "0x27f072b4cd0": {
+     "id": "0x27f072b4cd0",
+     "type": "type",
+     "repr": "Item"
+    },
+    "0x27f0743b200": {
+     "id": "0x27f0743b200",
+     "type": "Item",
+     "repr": "Item(name='펜', price=1000, tags=[])",
+     "fields": {
+      "name": {
+       "ref": "0x27f07412d30"
+      },
+      "price": {
+       "ref": "0x27f07107670"
+      },
+      "tags": {
+       "ref": "0x27f074f03c0"
+      }
+     }
+    },
+    "0x27f07412d30": {
+     "id": "0x27f07412d30",
+     "type": "str",
+     "repr": "'펜'"
+    },
+    "0x27f07107670": {
+     "id": "0x27f07107670",
+     "type": "int",
+     "repr": "1000"
+    },
+    "0x27f074f03c0": {
+     "id": "0x27f074f03c0",
+     "type": "list",
+     "repr": "[]",
+     "items": []
+    },
+    "0x27f070e5d30": {
+     "id": "0x27f070e5d30",
+     "type": "Item",
+     "repr": "Item(name='펜', price=1000, tags=[])",
+     "fields": {
+      "name": {
+       "ref": "0x27f07412d30"
+      },
+      "price": {
+       "ref": "0x27f07107670"
+      },
+      "tags": {
+       "ref": "0x27f074f0b80"
+      }
+     }
+    },
+    "0x27f074f0b80": {
+     "id": "0x27f074f0b80",
+     "type": "list",
+     "repr": "[]",
+     "items": []
+    }
+   },
+   "stdout": "Item(name='펜', price=1000, tags=[])\n",
+   "note": "자동 __eq__ — 필드 값 비교"
+  },
+  {
+   "line": 13,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 13,
+     "locals": {
+      "dataclass": {
+       "ref": "0x27f074e5e40"
+      },
+      "field": {
+       "ref": "0x27f074e4720"
+      },
+      "Item": {
+       "ref": "0x27f072b4cd0"
+      },
+      "a": {
+       "ref": "0x27f0743b200"
+      },
+      "b": {
+       "ref": "0x27f070e5d30"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x27f074e5e40": {
+     "id": "0x27f074e5e40",
+     "type": "function",
+     "repr": "dataclass"
+    },
+    "0x27f074e4720": {
+     "id": "0x27f074e4720",
+     "type": "function",
+     "repr": "field"
+    },
+    "0x27f072b4cd0": {
+     "id": "0x27f072b4cd0",
+     "type": "type",
+     "repr": "Item"
+    },
+    "0x27f0743b200": {
+     "id": "0x27f0743b200",
+     "type": "Item",
+     "repr": "Item(name='펜', price=1000, tags=[])",
+     "fields": {
+      "name": {
+       "ref": "0x27f07412d30"
+      },
+      "price": {
+       "ref": "0x27f07107670"
+      },
+      "tags": {
+       "ref": "0x27f074f03c0"
+      }
+     }
+    },
+    "0x27f07412d30": {
+     "id": "0x27f07412d30",
+     "type": "str",
+     "repr": "'펜'"
+    },
+    "0x27f07107670": {
+     "id": "0x27f07107670",
+     "type": "int",
+     "repr": "1000"
+    },
+    "0x27f074f03c0": {
+     "id": "0x27f074f03c0",
+     "type": "list",
+     "repr": "[]",
+     "items": []
+    },
+    "0x27f070e5d30": {
+     "id": "0x27f070e5d30",
+     "type": "Item",
+     "repr": "Item(name='펜', price=1000, tags=[])",
+     "fields": {
+      "name": {
+       "ref": "0x27f07412d30"
+      },
+      "price": {
+       "ref": "0x27f07107670"
+      },
+      "tags": {
+       "ref": "0x27f074f0b80"
+      }
+     }
+    },
+    "0x27f074f0b80": {
+     "id": "0x27f074f0b80",
+     "type": "list",
+     "repr": "[]",
+     "items": []
+    }
+   },
+   "stdout": "Item(name='펜', price=1000, tags=[])\nTrue\n"
+  },
+  {
+   "line": 14,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 14,
+     "locals": {
+      "dataclass": {
+       "ref": "0x27f074e5e40"
+      },
+      "field": {
+       "ref": "0x27f074e4720"
+      },
+      "Item": {
+       "ref": "0x27f072b4cd0"
+      },
+      "a": {
+       "ref": "0x27f0743b200"
+      },
+      "b": {
+       "ref": "0x27f070e5d30"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x27f074e5e40": {
+     "id": "0x27f074e5e40",
+     "type": "function",
+     "repr": "dataclass"
+    },
+    "0x27f074e4720": {
+     "id": "0x27f074e4720",
+     "type": "function",
+     "repr": "field"
+    },
+    "0x27f072b4cd0": {
+     "id": "0x27f072b4cd0",
+     "type": "type",
+     "repr": "Item"
+    },
+    "0x27f0743b200": {
+     "id": "0x27f0743b200",
+     "type": "Item",
+     "repr": "Item(name='펜', price=1000, tags=['문구'])",
+     "fields": {
+      "name": {
+       "ref": "0x27f07412d30"
+      },
+      "price": {
+       "ref": "0x27f07107670"
+      },
+      "tags": {
+       "ref": "0x27f074f03c0"
+      }
+     }
+    },
+    "0x27f07412d30": {
+     "id": "0x27f07412d30",
+     "type": "str",
+     "repr": "'펜'"
+    },
+    "0x27f07107670": {
+     "id": "0x27f07107670",
+     "type": "int",
+     "repr": "1000"
+    },
+    "0x27f074f03c0": {
+     "id": "0x27f074f03c0",
+     "type": "list",
+     "repr": "['문구']",
+     "items": [
+      {
+       "ref": "0x27f074061f0"
+      }
+     ]
+    },
+    "0x27f074061f0": {
+     "id": "0x27f074061f0",
+     "type": "str",
+     "repr": "'문구'"
+    },
+    "0x27f070e5d30": {
+     "id": "0x27f070e5d30",
+     "type": "Item",
+     "repr": "Item(name='펜', price=1000, tags=[])",
+     "fields": {
+      "name": {
+       "ref": "0x27f07412d30"
+      },
+      "price": {
+       "ref": "0x27f07107670"
+      },
+      "tags": {
+       "ref": "0x27f074f0b80"
+      }
+     }
+    },
+    "0x27f074f0b80": {
+     "id": "0x27f074f0b80",
+     "type": "list",
+     "repr": "[]",
+     "items": []
+    }
+   },
+   "stdout": "Item(name='펜', price=1000, tags=[])\nTrue\n",
+   "note": "각자 리스트"
+  },
+  {
+   "line": 16,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 16,
+     "locals": {
+      "dataclass": {
+       "ref": "0x27f074e5e40"
+      },
+      "field": {
+       "ref": "0x27f074e4720"
+      },
+      "Item": {
+       "ref": "0x27f072b4cd0"
+      },
+      "a": {
+       "ref": "0x27f0743b200"
+      },
+      "b": {
+       "ref": "0x27f070e5d30"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x27f074e5e40": {
+     "id": "0x27f074e5e40",
+     "type": "function",
+     "repr": "dataclass"
+    },
+    "0x27f074e4720": {
+     "id": "0x27f074e4720",
+     "type": "function",
+     "repr": "field"
+    },
+    "0x27f072b4cd0": {
+     "id": "0x27f072b4cd0",
+     "type": "type",
+     "repr": "Item"
+    },
+    "0x27f0743b200": {
+     "id": "0x27f0743b200",
+     "type": "Item",
+     "repr": "Item(name='펜', price=1000, tags=['문구'])",
+     "fields": {
+      "name": {
+       "ref": "0x27f07412d30"
+      },
+      "price": {
+       "ref": "0x27f07107670"
+      },
+      "tags": {
+       "ref": "0x27f074f03c0"
+      }
+     }
+    },
+    "0x27f07412d30": {
+     "id": "0x27f07412d30",
+     "type": "str",
+     "repr": "'펜'"
+    },
+    "0x27f07107670": {
+     "id": "0x27f07107670",
+     "type": "int",
+     "repr": "1000"
+    },
+    "0x27f074f03c0": {
+     "id": "0x27f074f03c0",
+     "type": "list",
+     "repr": "['문구']",
+     "items": [
+      {
+       "ref": "0x27f074061f0"
+      }
+     ]
+    },
+    "0x27f074061f0": {
+     "id": "0x27f074061f0",
+     "type": "str",
+     "repr": "'문구'"
+    },
+    "0x27f070e5d30": {
+     "id": "0x27f070e5d30",
+     "type": "Item",
+     "repr": "Item(name='펜', price=1000, tags=[])",
+     "fields": {
+      "name": {
+       "ref": "0x27f07412d30"
+      },
+      "price": {
+       "ref": "0x27f07107670"
+      },
+      "tags": {
+       "ref": "0x27f074f0b80"
+      }
+     }
+    },
+    "0x27f074f0b80": {
+     "id": "0x27f074f0b80",
+     "type": "list",
+     "repr": "[]",
+     "items": []
+    }
+   },
+   "stdout": "Item(name='펜', price=1000, tags=[])\nTrue\n['문구'] []\n",
+   "note": "frozen = 불변(해시 가능), order = < > 비교 생성"
+  },
+  {
+   "line": 17,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 17,
+     "locals": {
+      "dataclass": {
+       "ref": "0x27f074e5e40"
+      },
+      "field": {
+       "ref": "0x27f074e4720"
+      },
+      "Item": {
+       "ref": "0x27f072b4cd0"
+      },
+      "a": {
+       "ref": "0x27f0743b200"
+      },
+      "b": {
+       "ref": "0x27f070e5d30"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x27f074e5e40": {
+     "id": "0x27f074e5e40",
+     "type": "function",
+     "repr": "dataclass"
+    },
+    "0x27f074e4720": {
+     "id": "0x27f074e4720",
+     "type": "function",
+     "repr": "field"
+    },
+    "0x27f072b4cd0": {
+     "id": "0x27f072b4cd0",
+     "type": "type",
+     "repr": "Item"
+    },
+    "0x27f0743b200": {
+     "id": "0x27f0743b200",
+     "type": "Item",
+     "repr": "Item(name='펜', price=1000, tags=['문구'])",
+     "fields": {
+      "name": {
+       "ref": "0x27f07412d30"
+      },
+      "price": {
+       "ref": "0x27f07107670"
+      },
+      "tags": {
+       "ref": "0x27f074f03c0"
+      }
+     }
+    },
+    "0x27f07412d30": {
+     "id": "0x27f07412d30",
+     "type": "str",
+     "repr": "'펜'"
+    },
+    "0x27f07107670": {
+     "id": "0x27f07107670",
+     "type": "int",
+     "repr": "1000"
+    },
+    "0x27f074f03c0": {
+     "id": "0x27f074f03c0",
+     "type": "list",
+     "repr": "['문구']",
+     "items": [
+      {
+       "ref": "0x27f074061f0"
+      }
+     ]
+    },
+    "0x27f074061f0": {
+     "id": "0x27f074061f0",
+     "type": "str",
+     "repr": "'문구'"
+    },
+    "0x27f070e5d30": {
+     "id": "0x27f070e5d30",
+     "type": "Item",
+     "repr": "Item(name='펜', price=1000, tags=[])",
+     "fields": {
+      "name": {
+       "ref": "0x27f07412d30"
+      },
+      "price": {
+       "ref": "0x27f07107670"
+      },
+      "tags": {
+       "ref": "0x27f074f0b80"
+      }
+     }
+    },
+    "0x27f074f0b80": {
+     "id": "0x27f074f0b80",
+     "type": "list",
+     "repr": "[]",
+     "items": []
+    }
+   },
+   "stdout": "Item(name='펜', price=1000, tags=[])\nTrue\n['문구'] []\n"
+  },
+  {
+   "line": 16,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 17,
+     "locals": {
+      "dataclass": {
+       "ref": "0x27f074e5e40"
+      },
+      "field": {
+       "ref": "0x27f074e4720"
+      },
+      "Item": {
+       "ref": "0x27f072b4cd0"
+      },
+      "a": {
+       "ref": "0x27f0743b200"
+      },
+      "b": {
+       "ref": "0x27f070e5d30"
+      }
+     }
+    },
+    {
+     "fn": "Ver",
+     "line": 16,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x27f074e5e40": {
+     "id": "0x27f074e5e40",
+     "type": "function",
+     "repr": "dataclass"
+    },
+    "0x27f074e4720": {
+     "id": "0x27f074e4720",
+     "type": "function",
+     "repr": "field"
+    },
+    "0x27f072b4cd0": {
+     "id": "0x27f072b4cd0",
+     "type": "type",
+     "repr": "Item"
+    },
+    "0x27f0743b200": {
+     "id": "0x27f0743b200",
+     "type": "Item",
+     "repr": "Item(name='펜', price=1000, tags=['문구'])",
+     "fields": {
+      "name": {
+       "ref": "0x27f07412d30"
+      },
+      "price": {
+       "ref": "0x27f07107670"
+      },
+      "tags": {
+       "ref": "0x27f074f03c0"
+      }
+     }
+    },
+    "0x27f07412d30": {
+     "id": "0x27f07412d30",
+     "type": "str",
+     "repr": "'펜'"
+    },
+    "0x27f07107670": {
+     "id": "0x27f07107670",
+     "type": "int",
+     "repr": "1000"
+    },
+    "0x27f074f03c0": {
+     "id": "0x27f074f03c0",
+     "type": "list",
+     "repr": "['문구']",
+     "items": [
+      {
+       "ref": "0x27f074061f0"
+      }
+     ]
+    },
+    "0x27f074061f0": {
+     "id": "0x27f074061f0",
+     "type": "str",
+     "repr": "'문구'"
+    },
+    "0x27f070e5d30": {
+     "id": "0x27f070e5d30",
+     "type": "Item",
+     "repr": "Item(name='펜', price=1000, tags=[])",
+     "fields": {
+      "name": {
+       "ref": "0x27f07412d30"
+      },
+      "price": {
+       "ref": "0x27f07107670"
+      },
+      "tags": {
+       "ref": "0x27f074f0b80"
+      }
+     }
+    },
+    "0x27f074f0b80": {
+     "id": "0x27f074f0b80",
+     "type": "list",
+     "repr": "[]",
+     "items": []
+    }
+   },
+   "stdout": "Item(name='펜', price=1000, tags=[])\nTrue\n['문구'] []\n",
+   "note": "frozen = 불변(해시 가능), order = < > 비교 생성"
+  },
+  {
+   "line": 16,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 17,
+     "locals": {
+      "dataclass": {
+       "ref": "0x27f074e5e40"
+      },
+      "field": {
+       "ref": "0x27f074e4720"
+      },
+      "Item": {
+       "ref": "0x27f072b4cd0"
+      },
+      "a": {
+       "ref": "0x27f0743b200"
+      },
+      "b": {
+       "ref": "0x27f070e5d30"
+      }
+     }
+    },
+    {
+     "fn": "Ver",
+     "line": 16,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x27f074e5e40": {
+     "id": "0x27f074e5e40",
+     "type": "function",
+     "repr": "dataclass"
+    },
+    "0x27f074e4720": {
+     "id": "0x27f074e4720",
+     "type": "function",
+     "repr": "field"
+    },
+    "0x27f072b4cd0": {
+     "id": "0x27f072b4cd0",
+     "type": "type",
+     "repr": "Item"
+    },
+    "0x27f0743b200": {
+     "id": "0x27f0743b200",
+     "type": "Item",
+     "repr": "Item(name='펜', price=1000, tags=['문구'])",
+     "fields": {
+      "name": {
+       "ref": "0x27f07412d30"
+      },
+      "price": {
+       "ref": "0x27f07107670"
+      },
+      "tags": {
+       "ref": "0x27f074f03c0"
+      }
+     }
+    },
+    "0x27f07412d30": {
+     "id": "0x27f07412d30",
+     "type": "str",
+     "repr": "'펜'"
+    },
+    "0x27f07107670": {
+     "id": "0x27f07107670",
+     "type": "int",
+     "repr": "1000"
+    },
+    "0x27f074f03c0": {
+     "id": "0x27f074f03c0",
+     "type": "list",
+     "repr": "['문구']",
+     "items": [
+      {
+       "ref": "0x27f074061f0"
+      }
+     ]
+    },
+    "0x27f074061f0": {
+     "id": "0x27f074061f0",
+     "type": "str",
+     "repr": "'문구'"
+    },
+    "0x27f070e5d30": {
+     "id": "0x27f070e5d30",
+     "type": "Item",
+     "repr": "Item(name='펜', price=1000, tags=[])",
+     "fields": {
+      "name": {
+       "ref": "0x27f07412d30"
+      },
+      "price": {
+       "ref": "0x27f07107670"
+      },
+      "tags": {
+       "ref": "0x27f074f0b80"
+      }
+     }
+    },
+    "0x27f074f0b80": {
+     "id": "0x27f074f0b80",
+     "type": "list",
+     "repr": "[]",
+     "items": []
+    }
+   },
+   "stdout": "Item(name='펜', price=1000, tags=[])\nTrue\n['문구'] []\n",
+   "note": "frozen = 불변(해시 가능), order = < > 비교 생성"
+  },
+  {
+   "line": 18,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 17,
+     "locals": {
+      "dataclass": {
+       "ref": "0x27f074e5e40"
+      },
+      "field": {
+       "ref": "0x27f074e4720"
+      },
+      "Item": {
+       "ref": "0x27f072b4cd0"
+      },
+      "a": {
+       "ref": "0x27f0743b200"
+      },
+      "b": {
+       "ref": "0x27f070e5d30"
+      }
+     }
+    },
+    {
+     "fn": "Ver",
+     "line": 18,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x27f074e5e40": {
+     "id": "0x27f074e5e40",
+     "type": "function",
+     "repr": "dataclass"
+    },
+    "0x27f074e4720": {
+     "id": "0x27f074e4720",
+     "type": "function",
+     "repr": "field"
+    },
+    "0x27f072b4cd0": {
+     "id": "0x27f072b4cd0",
+     "type": "type",
+     "repr": "Item"
+    },
+    "0x27f0743b200": {
+     "id": "0x27f0743b200",
+     "type": "Item",
+     "repr": "Item(name='펜', price=1000, tags=['문구'])",
+     "fields": {
+      "name": {
+       "ref": "0x27f07412d30"
+      },
+      "price": {
+       "ref": "0x27f07107670"
+      },
+      "tags": {
+       "ref": "0x27f074f03c0"
+      }
+     }
+    },
+    "0x27f07412d30": {
+     "id": "0x27f07412d30",
+     "type": "str",
+     "repr": "'펜'"
+    },
+    "0x27f07107670": {
+     "id": "0x27f07107670",
+     "type": "int",
+     "repr": "1000"
+    },
+    "0x27f074f03c0": {
+     "id": "0x27f074f03c0",
+     "type": "list",
+     "repr": "['문구']",
+     "items": [
+      {
+       "ref": "0x27f074061f0"
+      }
+     ]
+    },
+    "0x27f074061f0": {
+     "id": "0x27f074061f0",
+     "type": "str",
+     "repr": "'문구'"
+    },
+    "0x27f070e5d30": {
+     "id": "0x27f070e5d30",
+     "type": "Item",
+     "repr": "Item(name='펜', price=1000, tags=[])",
+     "fields": {
+      "name": {
+       "ref": "0x27f07412d30"
+      },
+      "price": {
+       "ref": "0x27f07107670"
+      },
+      "tags": {
+       "ref": "0x27f074f0b80"
+      }
+     }
+    },
+    "0x27f074f0b80": {
+     "id": "0x27f074f0b80",
+     "type": "list",
+     "repr": "[]",
+     "items": []
+    }
+   },
+   "stdout": "Item(name='펜', price=1000, tags=[])\nTrue\n['문구'] []\n"
+  },
+  {
+   "line": 19,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 17,
+     "locals": {
+      "dataclass": {
+       "ref": "0x27f074e5e40"
+      },
+      "field": {
+       "ref": "0x27f074e4720"
+      },
+      "Item": {
+       "ref": "0x27f072b4cd0"
+      },
+      "a": {
+       "ref": "0x27f0743b200"
+      },
+      "b": {
+       "ref": "0x27f070e5d30"
+      }
+     }
+    },
+    {
+     "fn": "Ver",
+     "line": 19,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x27f074e5e40": {
+     "id": "0x27f074e5e40",
+     "type": "function",
+     "repr": "dataclass"
+    },
+    "0x27f074e4720": {
+     "id": "0x27f074e4720",
+     "type": "function",
+     "repr": "field"
+    },
+    "0x27f072b4cd0": {
+     "id": "0x27f072b4cd0",
+     "type": "type",
+     "repr": "Item"
+    },
+    "0x27f0743b200": {
+     "id": "0x27f0743b200",
+     "type": "Item",
+     "repr": "Item(name='펜', price=1000, tags=['문구'])",
+     "fields": {
+      "name": {
+       "ref": "0x27f07412d30"
+      },
+      "price": {
+       "ref": "0x27f07107670"
+      },
+      "tags": {
+       "ref": "0x27f074f03c0"
+      }
+     }
+    },
+    "0x27f07412d30": {
+     "id": "0x27f07412d30",
+     "type": "str",
+     "repr": "'펜'"
+    },
+    "0x27f07107670": {
+     "id": "0x27f07107670",
+     "type": "int",
+     "repr": "1000"
+    },
+    "0x27f074f03c0": {
+     "id": "0x27f074f03c0",
+     "type": "list",
+     "repr": "['문구']",
+     "items": [
+      {
+       "ref": "0x27f074061f0"
+      }
+     ]
+    },
+    "0x27f074061f0": {
+     "id": "0x27f074061f0",
+     "type": "str",
+     "repr": "'문구'"
+    },
+    "0x27f070e5d30": {
+     "id": "0x27f070e5d30",
+     "type": "Item",
+     "repr": "Item(name='펜', price=1000, tags=[])",
+     "fields": {
+      "name": {
+       "ref": "0x27f07412d30"
+      },
+      "price": {
+       "ref": "0x27f07107670"
+      },
+      "tags": {
+       "ref": "0x27f074f0b80"
+      }
+     }
+    },
+    "0x27f074f0b80": {
+     "id": "0x27f074f0b80",
+     "type": "list",
+     "repr": "[]",
+     "items": []
+    }
+   },
+   "stdout": "Item(name='펜', price=1000, tags=[])\nTrue\n['문구'] []\n"
+  },
+  {
+   "line": 19,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 17,
+     "locals": {
+      "dataclass": {
+       "ref": "0x27f074e5e40"
+      },
+      "field": {
+       "ref": "0x27f074e4720"
+      },
+      "Item": {
+       "ref": "0x27f072b4cd0"
+      },
+      "a": {
+       "ref": "0x27f0743b200"
+      },
+      "b": {
+       "ref": "0x27f070e5d30"
+      }
+     }
+    },
+    {
+     "fn": "Ver",
+     "line": 19,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x27f074e5e40": {
+     "id": "0x27f074e5e40",
+     "type": "function",
+     "repr": "dataclass"
+    },
+    "0x27f074e4720": {
+     "id": "0x27f074e4720",
+     "type": "function",
+     "repr": "field"
+    },
+    "0x27f072b4cd0": {
+     "id": "0x27f072b4cd0",
+     "type": "type",
+     "repr": "Item"
+    },
+    "0x27f0743b200": {
+     "id": "0x27f0743b200",
+     "type": "Item",
+     "repr": "Item(name='펜', price=1000, tags=['문구'])",
+     "fields": {
+      "name": {
+       "ref": "0x27f07412d30"
+      },
+      "price": {
+       "ref": "0x27f07107670"
+      },
+      "tags": {
+       "ref": "0x27f074f03c0"
+      }
+     }
+    },
+    "0x27f07412d30": {
+     "id": "0x27f07412d30",
+     "type": "str",
+     "repr": "'펜'"
+    },
+    "0x27f07107670": {
+     "id": "0x27f07107670",
+     "type": "int",
+     "repr": "1000"
+    },
+    "0x27f074f03c0": {
+     "id": "0x27f074f03c0",
+     "type": "list",
+     "repr": "['문구']",
+     "items": [
+      {
+       "ref": "0x27f074061f0"
+      }
+     ]
+    },
+    "0x27f074061f0": {
+     "id": "0x27f074061f0",
+     "type": "str",
+     "repr": "'문구'"
+    },
+    "0x27f070e5d30": {
+     "id": "0x27f070e5d30",
+     "type": "Item",
+     "repr": "Item(name='펜', price=1000, tags=[])",
+     "fields": {
+      "name": {
+       "ref": "0x27f07412d30"
+      },
+      "price": {
+       "ref": "0x27f07107670"
+      },
+      "tags": {
+       "ref": "0x27f074f0b80"
+      }
+     }
+    },
+    "0x27f074f0b80": {
+     "id": "0x27f074f0b80",
+     "type": "list",
+     "repr": "[]",
+     "items": []
+    }
+   },
+   "stdout": "Item(name='펜', price=1000, tags=[])\nTrue\n['문구'] []\n"
+  },
+  {
+   "line": 16,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 16,
+     "locals": {
+      "dataclass": {
+       "ref": "0x27f074e5e40"
+      },
+      "field": {
+       "ref": "0x27f074e4720"
+      },
+      "Item": {
+       "ref": "0x27f072b4cd0"
+      },
+      "a": {
+       "ref": "0x27f0743b200"
+      },
+      "b": {
+       "ref": "0x27f070e5d30"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x27f074e5e40": {
+     "id": "0x27f074e5e40",
+     "type": "function",
+     "repr": "dataclass"
+    },
+    "0x27f074e4720": {
+     "id": "0x27f074e4720",
+     "type": "function",
+     "repr": "field"
+    },
+    "0x27f072b4cd0": {
+     "id": "0x27f072b4cd0",
+     "type": "type",
+     "repr": "Item"
+    },
+    "0x27f0743b200": {
+     "id": "0x27f0743b200",
+     "type": "Item",
+     "repr": "Item(name='펜', price=1000, tags=['문구'])",
+     "fields": {
+      "name": {
+       "ref": "0x27f07412d30"
+      },
+      "price": {
+       "ref": "0x27f07107670"
+      },
+      "tags": {
+       "ref": "0x27f074f03c0"
+      }
+     }
+    },
+    "0x27f07412d30": {
+     "id": "0x27f07412d30",
+     "type": "str",
+     "repr": "'펜'"
+    },
+    "0x27f07107670": {
+     "id": "0x27f07107670",
+     "type": "int",
+     "repr": "1000"
+    },
+    "0x27f074f03c0": {
+     "id": "0x27f074f03c0",
+     "type": "list",
+     "repr": "['문구']",
+     "items": [
+      {
+       "ref": "0x27f074061f0"
+      }
+     ]
+    },
+    "0x27f074061f0": {
+     "id": "0x27f074061f0",
+     "type": "str",
+     "repr": "'문구'"
+    },
+    "0x27f070e5d30": {
+     "id": "0x27f070e5d30",
+     "type": "Item",
+     "repr": "Item(name='펜', price=1000, tags=[])",
+     "fields": {
+      "name": {
+       "ref": "0x27f07412d30"
+      },
+      "price": {
+       "ref": "0x27f07107670"
+      },
+      "tags": {
+       "ref": "0x27f074f0b80"
+      }
+     }
+    },
+    "0x27f074f0b80": {
+     "id": "0x27f074f0b80",
+     "type": "list",
+     "repr": "[]",
+     "items": []
+    }
+   },
+   "stdout": "Item(name='펜', price=1000, tags=[])\nTrue\n['문구'] []\n",
+   "note": "frozen = 불변(해시 가능), order = < > 비교 생성"
+  },
+  {
+   "line": 17,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 17,
+     "locals": {
+      "dataclass": {
+       "ref": "0x27f074e5e40"
+      },
+      "field": {
+       "ref": "0x27f074e4720"
+      },
+      "Item": {
+       "ref": "0x27f072b4cd0"
+      },
+      "a": {
+       "ref": "0x27f0743b200"
+      },
+      "b": {
+       "ref": "0x27f070e5d30"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x27f074e5e40": {
+     "id": "0x27f074e5e40",
+     "type": "function",
+     "repr": "dataclass"
+    },
+    "0x27f074e4720": {
+     "id": "0x27f074e4720",
+     "type": "function",
+     "repr": "field"
+    },
+    "0x27f072b4cd0": {
+     "id": "0x27f072b4cd0",
+     "type": "type",
+     "repr": "Item"
+    },
+    "0x27f0743b200": {
+     "id": "0x27f0743b200",
+     "type": "Item",
+     "repr": "Item(name='펜', price=1000, tags=['문구'])",
+     "fields": {
+      "name": {
+       "ref": "0x27f07412d30"
+      },
+      "price": {
+       "ref": "0x27f07107670"
+      },
+      "tags": {
+       "ref": "0x27f074f03c0"
+      }
+     }
+    },
+    "0x27f07412d30": {
+     "id": "0x27f07412d30",
+     "type": "str",
+     "repr": "'펜'"
+    },
+    "0x27f07107670": {
+     "id": "0x27f07107670",
+     "type": "int",
+     "repr": "1000"
+    },
+    "0x27f074f03c0": {
+     "id": "0x27f074f03c0",
+     "type": "list",
+     "repr": "['문구']",
+     "items": [
+      {
+       "ref": "0x27f074061f0"
+      }
+     ]
+    },
+    "0x27f074061f0": {
+     "id": "0x27f074061f0",
+     "type": "str",
+     "repr": "'문구'"
+    },
+    "0x27f070e5d30": {
+     "id": "0x27f070e5d30",
+     "type": "Item",
+     "repr": "Item(name='펜', price=1000, tags=[])",
+     "fields": {
+      "name": {
+       "ref": "0x27f07412d30"
+      },
+      "price": {
+       "ref": "0x27f07107670"
+      },
+      "tags": {
+       "ref": "0x27f074f0b80"
+      }
+     }
+    },
+    "0x27f074f0b80": {
+     "id": "0x27f074f0b80",
+     "type": "list",
+     "repr": "[]",
+     "items": []
+    }
+   },
+   "stdout": "Item(name='펜', price=1000, tags=[])\nTrue\n['문구'] []\n"
+  },
+  {
+   "line": 20,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 20,
+     "locals": {
+      "dataclass": {
+       "ref": "0x27f074e5e40"
+      },
+      "field": {
+       "ref": "0x27f074e4720"
+      },
+      "Item": {
+       "ref": "0x27f072b4cd0"
+      },
+      "a": {
+       "ref": "0x27f0743b200"
+      },
+      "b": {
+       "ref": "0x27f070e5d30"
+      },
+      "Ver": {
+       "ref": "0x27f072b12b0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x27f074e5e40": {
+     "id": "0x27f074e5e40",
+     "type": "function",
+     "repr": "dataclass"
+    },
+    "0x27f074e4720": {
+     "id": "0x27f074e4720",
+     "type": "function",
+     "repr": "field"
+    },
+    "0x27f072b4cd0": {
+     "id": "0x27f072b4cd0",
+     "type": "type",
+     "repr": "Item"
+    },
+    "0x27f0743b200": {
+     "id": "0x27f0743b200",
+     "type": "Item",
+     "repr": "Item(name='펜', price=1000, tags=['문구'])",
+     "fields": {
+      "name": {
+       "ref": "0x27f07412d30"
+      },
+      "price": {
+       "ref": "0x27f07107670"
+      },
+      "tags": {
+       "ref": "0x27f074f03c0"
+      }
+     }
+    },
+    "0x27f07412d30": {
+     "id": "0x27f07412d30",
+     "type": "str",
+     "repr": "'펜'"
+    },
+    "0x27f07107670": {
+     "id": "0x27f07107670",
+     "type": "int",
+     "repr": "1000"
+    },
+    "0x27f074f03c0": {
+     "id": "0x27f074f03c0",
+     "type": "list",
+     "repr": "['문구']",
+     "items": [
+      {
+       "ref": "0x27f074061f0"
+      }
+     ]
+    },
+    "0x27f074061f0": {
+     "id": "0x27f074061f0",
+     "type": "str",
+     "repr": "'문구'"
+    },
+    "0x27f070e5d30": {
+     "id": "0x27f070e5d30",
+     "type": "Item",
+     "repr": "Item(name='펜', price=1000, tags=[])",
+     "fields": {
+      "name": {
+       "ref": "0x27f07412d30"
+      },
+      "price": {
+       "ref": "0x27f07107670"
+      },
+      "tags": {
+       "ref": "0x27f074f0b80"
+      }
+     }
+    },
+    "0x27f074f0b80": {
+     "id": "0x27f074f0b80",
+     "type": "list",
+     "repr": "[]",
+     "items": []
+    },
+    "0x27f072b12b0": {
+     "id": "0x27f072b12b0",
+     "type": "type",
+     "repr": "Ver"
+    }
+   },
+   "stdout": "Item(name='펜', price=1000, tags=[])\nTrue\n['문구'] []\n"
+  },
+  {
+   "line": 21,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 21,
+     "locals": {
+      "dataclass": {
+       "ref": "0x27f074e5e40"
+      },
+      "field": {
+       "ref": "0x27f074e4720"
+      },
+      "Item": {
+       "ref": "0x27f072b4cd0"
+      },
+      "a": {
+       "ref": "0x27f0743b200"
+      },
+      "b": {
+       "ref": "0x27f070e5d30"
+      },
+      "Ver": {
+       "ref": "0x27f072b12b0"
+      },
+      "v": {
+       "ref": "0x27f0740d670"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x27f074e5e40": {
+     "id": "0x27f074e5e40",
+     "type": "function",
+     "repr": "dataclass"
+    },
+    "0x27f074e4720": {
+     "id": "0x27f074e4720",
+     "type": "function",
+     "repr": "field"
+    },
+    "0x27f072b4cd0": {
+     "id": "0x27f072b4cd0",
+     "type": "type",
+     "repr": "Item"
+    },
+    "0x27f0743b200": {
+     "id": "0x27f0743b200",
+     "type": "Item",
+     "repr": "Item(name='펜', price=1000, tags=['문구'])",
+     "fields": {
+      "name": {
+       "ref": "0x27f07412d30"
+      },
+      "price": {
+       "ref": "0x27f07107670"
+      },
+      "tags": {
+       "ref": "0x27f074f03c0"
+      }
+     }
+    },
+    "0x27f07412d30": {
+     "id": "0x27f07412d30",
+     "type": "str",
+     "repr": "'펜'"
+    },
+    "0x27f07107670": {
+     "id": "0x27f07107670",
+     "type": "int",
+     "repr": "1000"
+    },
+    "0x27f074f03c0": {
+     "id": "0x27f074f03c0",
+     "type": "list",
+     "repr": "['문구']",
+     "items": [
+      {
+       "ref": "0x27f074061f0"
+      }
+     ]
+    },
+    "0x27f074061f0": {
+     "id": "0x27f074061f0",
+     "type": "str",
+     "repr": "'문구'"
+    },
+    "0x27f070e5d30": {
+     "id": "0x27f070e5d30",
+     "type": "Item",
+     "repr": "Item(name='펜', price=1000, tags=[])",
+     "fields": {
+      "name": {
+       "ref": "0x27f07412d30"
+      },
+      "price": {
+       "ref": "0x27f07107670"
+      },
+      "tags": {
+       "ref": "0x27f074f0b80"
+      }
+     }
+    },
+    "0x27f074f0b80": {
+     "id": "0x27f074f0b80",
+     "type": "list",
+     "repr": "[]",
+     "items": []
+    },
+    "0x27f072b12b0": {
+     "id": "0x27f072b12b0",
+     "type": "type",
+     "repr": "Ver"
+    },
+    "0x27f0740d670": {
+     "id": "0x27f0740d670",
+     "type": "Ver",
+     "repr": "Ver(major=1, minor=2)",
+     "fields": {
+      "major": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "minor": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    }
+   },
+   "stdout": "Item(name='펜', price=1000, tags=[])\nTrue\n['문구'] []\n"
+  },
+  {
+   "line": 22,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 22,
+     "locals": {
+      "dataclass": {
+       "ref": "0x27f074e5e40"
+      },
+      "field": {
+       "ref": "0x27f074e4720"
+      },
+      "Item": {
+       "ref": "0x27f072b4cd0"
+      },
+      "a": {
+       "ref": "0x27f0743b200"
+      },
+      "b": {
+       "ref": "0x27f070e5d30"
+      },
+      "Ver": {
+       "ref": "0x27f072b12b0"
+      },
+      "v": {
+       "ref": "0x27f0740d670"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x27f074e5e40": {
+     "id": "0x27f074e5e40",
+     "type": "function",
+     "repr": "dataclass"
+    },
+    "0x27f074e4720": {
+     "id": "0x27f074e4720",
+     "type": "function",
+     "repr": "field"
+    },
+    "0x27f072b4cd0": {
+     "id": "0x27f072b4cd0",
+     "type": "type",
+     "repr": "Item"
+    },
+    "0x27f0743b200": {
+     "id": "0x27f0743b200",
+     "type": "Item",
+     "repr": "Item(name='펜', price=1000, tags=['문구'])",
+     "fields": {
+      "name": {
+       "ref": "0x27f07412d30"
+      },
+      "price": {
+       "ref": "0x27f07107670"
+      },
+      "tags": {
+       "ref": "0x27f074f03c0"
+      }
+     }
+    },
+    "0x27f07412d30": {
+     "id": "0x27f07412d30",
+     "type": "str",
+     "repr": "'펜'"
+    },
+    "0x27f07107670": {
+     "id": "0x27f07107670",
+     "type": "int",
+     "repr": "1000"
+    },
+    "0x27f074f03c0": {
+     "id": "0x27f074f03c0",
+     "type": "list",
+     "repr": "['문구']",
+     "items": [
+      {
+       "ref": "0x27f074061f0"
+      }
+     ]
+    },
+    "0x27f074061f0": {
+     "id": "0x27f074061f0",
+     "type": "str",
+     "repr": "'문구'"
+    },
+    "0x27f070e5d30": {
+     "id": "0x27f070e5d30",
+     "type": "Item",
+     "repr": "Item(name='펜', price=1000, tags=[])",
+     "fields": {
+      "name": {
+       "ref": "0x27f07412d30"
+      },
+      "price": {
+       "ref": "0x27f07107670"
+      },
+      "tags": {
+       "ref": "0x27f074f0b80"
+      }
+     }
+    },
+    "0x27f074f0b80": {
+     "id": "0x27f074f0b80",
+     "type": "list",
+     "repr": "[]",
+     "items": []
+    },
+    "0x27f072b12b0": {
+     "id": "0x27f072b12b0",
+     "type": "type",
+     "repr": "Ver"
+    },
+    "0x27f0740d670": {
+     "id": "0x27f0740d670",
+     "type": "Ver",
+     "repr": "Ver(major=1, minor=2)",
+     "fields": {
+      "major": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "minor": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    }
+   },
+   "stdout": "Item(name='펜', price=1000, tags=[])\nTrue\n['문구'] []\nTrue {Ver(major=1, minor=2): 'ok'}\n",
+   "note": "frozen 이라 대입 불가 → FrozenInstanceError"
+  },
+  {
+   "line": 22,
+   "event": "exception",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 22,
+     "locals": {
+      "dataclass": {
+       "ref": "0x27f074e5e40"
+      },
+      "field": {
+       "ref": "0x27f074e4720"
+      },
+      "Item": {
+       "ref": "0x27f072b4cd0"
+      },
+      "a": {
+       "ref": "0x27f0743b200"
+      },
+      "b": {
+       "ref": "0x27f070e5d30"
+      },
+      "Ver": {
+       "ref": "0x27f072b12b0"
+      },
+      "v": {
+       "ref": "0x27f0740d670"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x27f074e5e40": {
+     "id": "0x27f074e5e40",
+     "type": "function",
+     "repr": "dataclass"
+    },
+    "0x27f074e4720": {
+     "id": "0x27f074e4720",
+     "type": "function",
+     "repr": "field"
+    },
+    "0x27f072b4cd0": {
+     "id": "0x27f072b4cd0",
+     "type": "type",
+     "repr": "Item"
+    },
+    "0x27f0743b200": {
+     "id": "0x27f0743b200",
+     "type": "Item",
+     "repr": "Item(name='펜', price=1000, tags=['문구'])",
+     "fields": {
+      "name": {
+       "ref": "0x27f07412d30"
+      },
+      "price": {
+       "ref": "0x27f07107670"
+      },
+      "tags": {
+       "ref": "0x27f074f03c0"
+      }
+     }
+    },
+    "0x27f07412d30": {
+     "id": "0x27f07412d30",
+     "type": "str",
+     "repr": "'펜'"
+    },
+    "0x27f07107670": {
+     "id": "0x27f07107670",
+     "type": "int",
+     "repr": "1000"
+    },
+    "0x27f074f03c0": {
+     "id": "0x27f074f03c0",
+     "type": "list",
+     "repr": "['문구']",
+     "items": [
+      {
+       "ref": "0x27f074061f0"
+      }
+     ]
+    },
+    "0x27f074061f0": {
+     "id": "0x27f074061f0",
+     "type": "str",
+     "repr": "'문구'"
+    },
+    "0x27f070e5d30": {
+     "id": "0x27f070e5d30",
+     "type": "Item",
+     "repr": "Item(name='펜', price=1000, tags=[])",
+     "fields": {
+      "name": {
+       "ref": "0x27f07412d30"
+      },
+      "price": {
+       "ref": "0x27f07107670"
+      },
+      "tags": {
+       "ref": "0x27f074f0b80"
+      }
+     }
+    },
+    "0x27f074f0b80": {
+     "id": "0x27f074f0b80",
+     "type": "list",
+     "repr": "[]",
+     "items": []
+    },
+    "0x27f072b12b0": {
+     "id": "0x27f072b12b0",
+     "type": "type",
+     "repr": "Ver"
+    },
+    "0x27f0740d670": {
+     "id": "0x27f0740d670",
+     "type": "Ver",
+     "repr": "Ver(major=1, minor=2)",
+     "fields": {
+      "major": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "minor": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    }
+   },
+   "stdout": "Item(name='펜', price=1000, tags=[])\nTrue\n['문구'] []\nTrue {Ver(major=1, minor=2): 'ok'}\n",
+   "exc": "FrozenInstanceError: cannot assign to field 'major'"
+  },
+  {
+   "line": 22,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 22,
+     "locals": {
+      "dataclass": {
+       "ref": "0x27f074e5e40"
+      },
+      "field": {
+       "ref": "0x27f074e4720"
+      },
+      "Item": {
+       "ref": "0x27f072b4cd0"
+      },
+      "a": {
+       "ref": "0x27f0743b200"
+      },
+      "b": {
+       "ref": "0x27f070e5d30"
+      },
+      "Ver": {
+       "ref": "0x27f072b12b0"
+      },
+      "v": {
+       "ref": "0x27f0740d670"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x27f074e5e40": {
+     "id": "0x27f074e5e40",
+     "type": "function",
+     "repr": "dataclass"
+    },
+    "0x27f074e4720": {
+     "id": "0x27f074e4720",
+     "type": "function",
+     "repr": "field"
+    },
+    "0x27f072b4cd0": {
+     "id": "0x27f072b4cd0",
+     "type": "type",
+     "repr": "Item"
+    },
+    "0x27f0743b200": {
+     "id": "0x27f0743b200",
+     "type": "Item",
+     "repr": "Item(name='펜', price=1000, tags=['문구'])",
+     "fields": {
+      "name": {
+       "ref": "0x27f07412d30"
+      },
+      "price": {
+       "ref": "0x27f07107670"
+      },
+      "tags": {
+       "ref": "0x27f074f03c0"
+      }
+     }
+    },
+    "0x27f07412d30": {
+     "id": "0x27f07412d30",
+     "type": "str",
+     "repr": "'펜'"
+    },
+    "0x27f07107670": {
+     "id": "0x27f07107670",
+     "type": "int",
+     "repr": "1000"
+    },
+    "0x27f074f03c0": {
+     "id": "0x27f074f03c0",
+     "type": "list",
+     "repr": "['문구']",
+     "items": [
+      {
+       "ref": "0x27f074061f0"
+      }
+     ]
+    },
+    "0x27f074061f0": {
+     "id": "0x27f074061f0",
+     "type": "str",
+     "repr": "'문구'"
+    },
+    "0x27f070e5d30": {
+     "id": "0x27f070e5d30",
+     "type": "Item",
+     "repr": "Item(name='펜', price=1000, tags=[])",
+     "fields": {
+      "name": {
+       "ref": "0x27f07412d30"
+      },
+      "price": {
+       "ref": "0x27f07107670"
+      },
+      "tags": {
+       "ref": "0x27f074f0b80"
+      }
+     }
+    },
+    "0x27f074f0b80": {
+     "id": "0x27f074f0b80",
+     "type": "list",
+     "repr": "[]",
+     "items": []
+    },
+    "0x27f072b12b0": {
+     "id": "0x27f072b12b0",
+     "type": "type",
+     "repr": "Ver"
+    },
+    "0x27f0740d670": {
+     "id": "0x27f0740d670",
+     "type": "Ver",
+     "repr": "Ver(major=1, minor=2)",
+     "fields": {
+      "major": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "minor": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    }
+   },
+   "stdout": "Item(name='펜', price=1000, tags=[])\nTrue\n['문구'] []\nTrue {Ver(major=1, minor=2): 'ok'}\n"
+  },
+  {
+   "line": 22,
+   "event": "exception",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 22,
+     "locals": {
+      "dataclass": {
+       "ref": "0x27f074e5e40"
+      },
+      "field": {
+       "ref": "0x27f074e4720"
+      },
+      "Item": {
+       "ref": "0x27f072b4cd0"
+      },
+      "a": {
+       "ref": "0x27f0743b200"
+      },
+      "b": {
+       "ref": "0x27f070e5d30"
+      },
+      "Ver": {
+       "ref": "0x27f072b12b0"
+      },
+      "v": {
+       "ref": "0x27f0740d670"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x27f074e5e40": {
+     "id": "0x27f074e5e40",
+     "type": "function",
+     "repr": "dataclass"
+    },
+    "0x27f074e4720": {
+     "id": "0x27f074e4720",
+     "type": "function",
+     "repr": "field"
+    },
+    "0x27f072b4cd0": {
+     "id": "0x27f072b4cd0",
+     "type": "type",
+     "repr": "Item"
+    },
+    "0x27f0743b200": {
+     "id": "0x27f0743b200",
+     "type": "Item",
+     "repr": "Item(name='펜', price=1000, tags=['문구'])",
+     "fields": {
+      "name": {
+       "ref": "0x27f07412d30"
+      },
+      "price": {
+       "ref": "0x27f07107670"
+      },
+      "tags": {
+       "ref": "0x27f074f03c0"
+      }
+     }
+    },
+    "0x27f07412d30": {
+     "id": "0x27f07412d30",
+     "type": "str",
+     "repr": "'펜'"
+    },
+    "0x27f07107670": {
+     "id": "0x27f07107670",
+     "type": "int",
+     "repr": "1000"
+    },
+    "0x27f074f03c0": {
+     "id": "0x27f074f03c0",
+     "type": "list",
+     "repr": "['문구']",
+     "items": [
+      {
+       "ref": "0x27f074061f0"
+      }
+     ]
+    },
+    "0x27f074061f0": {
+     "id": "0x27f074061f0",
+     "type": "str",
+     "repr": "'문구'"
+    },
+    "0x27f070e5d30": {
+     "id": "0x27f070e5d30",
+     "type": "Item",
+     "repr": "Item(name='펜', price=1000, tags=[])",
+     "fields": {
+      "name": {
+       "ref": "0x27f07412d30"
+      },
+      "price": {
+       "ref": "0x27f07107670"
+      },
+      "tags": {
+       "ref": "0x27f074f0b80"
+      }
+     }
+    },
+    "0x27f074f0b80": {
+     "id": "0x27f074f0b80",
+     "type": "list",
+     "repr": "[]",
+     "items": []
+    },
+    "0x27f072b12b0": {
+     "id": "0x27f072b12b0",
+     "type": "type",
+     "repr": "Ver"
+    },
+    "0x27f0740d670": {
+     "id": "0x27f0740d670",
+     "type": "Ver",
+     "repr": "Ver(major=1, minor=2)",
+     "fields": {
+      "major": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "minor": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    }
+   },
+   "stdout": "Item(name='펜', price=1000, tags=[])\nTrue\n['문구'] []\nTrue {Ver(major=1, minor=2): 'ok'}\n",
+   "exc": "FrozenInstanceError: cannot assign to field 'major'"
+  }
+ ],
+ "v": 1
+}

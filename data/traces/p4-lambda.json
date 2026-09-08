@@ -37,14 +37,14 @@
      "line": 4,
      "locals": {
       "square": {
-       "ref": "0x24d0ceac9a0"
+       "ref": "0x21642ccc9a0"
       }
      }
     }
    ],
    "heap": {
-    "0x24d0ceac9a0": {
-     "id": "0x24d0ceac9a0",
+    "0x21642ccc9a0": {
+     "id": "0x21642ccc9a0",
      "type": "function",
      "repr": "square"
     }
@@ -61,22 +61,22 @@
      "line": 5,
      "locals": {
       "square": {
-       "ref": "0x24d0ceac9a0"
+       "ref": "0x21642ccc9a0"
       },
       "sq": {
-       "ref": "0x24d0ceacae0"
+       "ref": "0x21642cccae0"
       }
      }
     }
    ],
    "heap": {
-    "0x24d0ceac9a0": {
-     "id": "0x24d0ceac9a0",
+    "0x21642ccc9a0": {
+     "id": "0x21642ccc9a0",
      "type": "function",
      "repr": "square"
     },
-    "0x24d0ceacae0": {
-     "id": "0x24d0ceacae0",
+    "0x21642cccae0": {
+     "id": "0x21642cccae0",
      "type": "function",
      "repr": "<lambda>"
     }
@@ -92,10 +92,10 @@
      "line": 5,
      "locals": {
       "square": {
-       "ref": "0x24d0ceac9a0"
+       "ref": "0x21642ccc9a0"
       },
       "sq": {
-       "ref": "0x24d0ceacae0"
+       "ref": "0x21642cccae0"
       }
      }
     },
@@ -110,13 +110,13 @@
     }
    ],
    "heap": {
-    "0x24d0ceac9a0": {
-     "id": "0x24d0ceac9a0",
+    "0x21642ccc9a0": {
+     "id": "0x21642ccc9a0",
      "type": "function",
      "repr": "square"
     },
-    "0x24d0ceacae0": {
-     "id": "0x24d0ceacae0",
+    "0x21642cccae0": {
+     "id": "0x21642cccae0",
      "type": "function",
      "repr": "<lambda>"
     },
@@ -137,10 +137,10 @@
      "line": 5,
      "locals": {
       "square": {
-       "ref": "0x24d0ceac9a0"
+       "ref": "0x21642ccc9a0"
       },
       "sq": {
-       "ref": "0x24d0ceacae0"
+       "ref": "0x21642cccae0"
       }
      }
     },
@@ -155,13 +155,13 @@
     }
    ],
    "heap": {
-    "0x24d0ceac9a0": {
-     "id": "0x24d0ceac9a0",
+    "0x21642ccc9a0": {
+     "id": "0x21642ccc9a0",
      "type": "function",
      "repr": "square"
     },
-    "0x24d0ceacae0": {
-     "id": "0x24d0ceacae0",
+    "0x21642cccae0": {
+     "id": "0x21642cccae0",
      "type": "function",
      "repr": "<lambda>"
     },
@@ -182,10 +182,10 @@
      "line": 5,
      "locals": {
       "square": {
-       "ref": "0x24d0ceac9a0"
+       "ref": "0x21642ccc9a0"
       },
       "sq": {
-       "ref": "0x24d0ceacae0"
+       "ref": "0x21642cccae0"
       }
      }
     },
@@ -200,13 +200,13 @@
     }
    ],
    "heap": {
-    "0x24d0ceac9a0": {
-     "id": "0x24d0ceac9a0",
+    "0x21642ccc9a0": {
+     "id": "0x21642ccc9a0",
      "type": "function",
      "repr": "square"
     },
-    "0x24d0ceacae0": {
-     "id": "0x24d0ceacae0",
+    "0x21642cccae0": {
+     "id": "0x21642cccae0",
      "type": "function",
      "repr": "<lambda>"
     },
@@ -228,10 +228,10 @@
      "line": 5,
      "locals": {
       "square": {
-       "ref": "0x24d0ceac9a0"
+       "ref": "0x21642ccc9a0"
       },
       "sq": {
-       "ref": "0x24d0ceacae0"
+       "ref": "0x21642cccae0"
       }
      }
     },
@@ -246,13 +246,13 @@
     }
    ],
    "heap": {
-    "0x24d0ceac9a0": {
-     "id": "0x24d0ceac9a0",
+    "0x21642ccc9a0": {
+     "id": "0x21642ccc9a0",
      "type": "function",
      "repr": "square"
     },
-    "0x24d0ceacae0": {
-     "id": "0x24d0ceacae0",
+    "0x21642cccae0": {
+     "id": "0x21642cccae0",
      "type": "function",
      "repr": "<lambda>"
     },
@@ -274,10 +274,10 @@
      "line": 5,
      "locals": {
       "square": {
-       "ref": "0x24d0ceac9a0"
+       "ref": "0x21642ccc9a0"
       },
       "sq": {
-       "ref": "0x24d0ceacae0"
+       "ref": "0x21642cccae0"
       }
      }
     },
@@ -292,13 +292,13 @@
     }
    ],
    "heap": {
-    "0x24d0ceac9a0": {
-     "id": "0x24d0ceac9a0",
+    "0x21642ccc9a0": {
+     "id": "0x21642ccc9a0",
      "type": "function",
      "repr": "square"
     },
-    "0x24d0ceacae0": {
-     "id": "0x24d0ceacae0",
+    "0x21642cccae0": {
+     "id": "0x21642cccae0",
      "type": "function",
      "repr": "<lambda>"
     },
@@ -320,10 +320,10 @@
      "line": 5,
      "locals": {
       "square": {
-       "ref": "0x24d0ceac9a0"
+       "ref": "0x21642ccc9a0"
       },
       "sq": {
-       "ref": "0x24d0ceacae0"
+       "ref": "0x21642cccae0"
       }
      }
     },
@@ -338,13 +338,13 @@
     }
    ],
    "heap": {
-    "0x24d0ceac9a0": {
-     "id": "0x24d0ceac9a0",
+    "0x21642ccc9a0": {
+     "id": "0x21642ccc9a0",
      "type": "function",
      "repr": "square"
     },
-    "0x24d0ceacae0": {
-     "id": "0x24d0ceacae0",
+    "0x21642cccae0": {
+     "id": "0x21642cccae0",
      "type": "function",
      "repr": "<lambda>"
     },
@@ -366,22 +366,22 @@
      "line": 6,
      "locals": {
       "square": {
-       "ref": "0x24d0ceac9a0"
+       "ref": "0x21642ccc9a0"
       },
       "sq": {
-       "ref": "0x24d0ceacae0"
+       "ref": "0x21642cccae0"
       }
      }
     }
    ],
    "heap": {
-    "0x24d0ceac9a0": {
-     "id": "0x24d0ceac9a0",
+    "0x21642ccc9a0": {
+     "id": "0x21642ccc9a0",
      "type": "function",
      "repr": "square"
     },
-    "0x24d0ceacae0": {
-     "id": "0x24d0ceacae0",
+    "0x21642cccae0": {
+     "id": "0x21642cccae0",
      "type": "function",
      "repr": "<lambda>"
     }
@@ -398,25 +398,25 @@
      "line": 7,
      "locals": {
       "square": {
-       "ref": "0x24d0ceac9a0"
+       "ref": "0x21642ccc9a0"
       },
       "sq": {
-       "ref": "0x24d0ceacae0"
+       "ref": "0x21642cccae0"
       },
       "f": {
-       "ref": "0x24d0ceac9a0"
+       "ref": "0x21642ccc9a0"
       }
      }
     }
    ],
    "heap": {
-    "0x24d0ceac9a0": {
-     "id": "0x24d0ceac9a0",
+    "0x21642ccc9a0": {
+     "id": "0x21642ccc9a0",
      "type": "function",
      "repr": "square"
     },
-    "0x24d0ceacae0": {
-     "id": "0x24d0ceacae0",
+    "0x21642cccae0": {
+     "id": "0x21642cccae0",
      "type": "function",
      "repr": "<lambda>"
     }
@@ -432,13 +432,13 @@
      "line": 7,
      "locals": {
       "square": {
-       "ref": "0x24d0ceac9a0"
+       "ref": "0x21642ccc9a0"
       },
       "sq": {
-       "ref": "0x24d0ceacae0"
+       "ref": "0x21642cccae0"
       },
       "f": {
-       "ref": "0x24d0ceac9a0"
+       "ref": "0x21642ccc9a0"
       }
      }
     },
@@ -453,13 +453,13 @@
     }
    ],
    "heap": {
-    "0x24d0ceac9a0": {
-     "id": "0x24d0ceac9a0",
+    "0x21642ccc9a0": {
+     "id": "0x21642ccc9a0",
      "type": "function",
      "repr": "square"
     },
-    "0x24d0ceacae0": {
-     "id": "0x24d0ceacae0",
+    "0x21642cccae0": {
+     "id": "0x21642cccae0",
      "type": "function",
      "repr": "<lambda>"
     },
@@ -480,13 +480,13 @@
      "line": 7,
      "locals": {
       "square": {
-       "ref": "0x24d0ceac9a0"
+       "ref": "0x21642ccc9a0"
       },
       "sq": {
-       "ref": "0x24d0ceacae0"
+       "ref": "0x21642cccae0"
       },
       "f": {
-       "ref": "0x24d0ceac9a0"
+       "ref": "0x21642ccc9a0"
       }
      }
     },
@@ -501,13 +501,13 @@
     }
    ],
    "heap": {
-    "0x24d0ceac9a0": {
-     "id": "0x24d0ceac9a0",
+    "0x21642ccc9a0": {
+     "id": "0x21642ccc9a0",
      "type": "function",
      "repr": "square"
     },
-    "0x24d0ceacae0": {
-     "id": "0x24d0ceacae0",
+    "0x21642cccae0": {
+     "id": "0x21642cccae0",
      "type": "function",
      "repr": "<lambda>"
     },
@@ -528,13 +528,13 @@
      "line": 7,
      "locals": {
       "square": {
-       "ref": "0x24d0ceac9a0"
+       "ref": "0x21642ccc9a0"
       },
       "sq": {
-       "ref": "0x24d0ceacae0"
+       "ref": "0x21642cccae0"
       },
       "f": {
-       "ref": "0x24d0ceac9a0"
+       "ref": "0x21642ccc9a0"
       }
      }
     },
@@ -549,13 +549,13 @@
     }
    ],
    "heap": {
-    "0x24d0ceac9a0": {
-     "id": "0x24d0ceac9a0",
+    "0x21642ccc9a0": {
+     "id": "0x21642ccc9a0",
      "type": "function",
      "repr": "square"
     },
-    "0x24d0ceacae0": {
-     "id": "0x24d0ceacae0",
+    "0x21642cccae0": {
+     "id": "0x21642cccae0",
      "type": "function",
      "repr": "<lambda>"
     },
@@ -577,25 +577,25 @@
      "line": 8,
      "locals": {
       "square": {
-       "ref": "0x24d0ceac9a0"
+       "ref": "0x21642ccc9a0"
       },
       "sq": {
-       "ref": "0x24d0ceacae0"
+       "ref": "0x21642cccae0"
       },
       "f": {
-       "ref": "0x24d0ceac9a0"
+       "ref": "0x21642ccc9a0"
       }
      }
     }
    ],
    "heap": {
-    "0x24d0ceac9a0": {
-     "id": "0x24d0ceac9a0",
+    "0x21642ccc9a0": {
+     "id": "0x21642ccc9a0",
      "type": "function",
      "repr": "square"
     },
-    "0x24d0ceacae0": {
-     "id": "0x24d0ceacae0",
+    "0x21642cccae0": {
+     "id": "0x21642cccae0",
      "type": "function",
      "repr": "<lambda>"
     }
@@ -612,71 +612,71 @@
      "line": 9,
      "locals": {
       "square": {
-       "ref": "0x24d0ceac9a0"
+       "ref": "0x21642ccc9a0"
       },
       "sq": {
-       "ref": "0x24d0ceacae0"
+       "ref": "0x21642cccae0"
       },
       "f": {
-       "ref": "0x24d0ceac9a0"
+       "ref": "0x21642ccc9a0"
       },
       "ops": {
-       "ref": "0x24d0cec9c40"
+       "ref": "0x21642ce9c80"
       }
      }
     }
    ],
    "heap": {
-    "0x24d0ceac9a0": {
-     "id": "0x24d0ceac9a0",
+    "0x21642ccc9a0": {
+     "id": "0x21642ccc9a0",
      "type": "function",
      "repr": "square"
     },
-    "0x24d0ceacae0": {
-     "id": "0x24d0ceacae0",
+    "0x21642cccae0": {
+     "id": "0x21642cccae0",
      "type": "function",
      "repr": "<lambda>"
     },
-    "0x24d0cec9c40": {
-     "id": "0x24d0cec9c40",
+    "0x21642ce9c80": {
+     "id": "0x21642ce9c80",
      "type": "dict",
-     "repr": "{'더하기': <function <lambda> at 0x0000024D0CEACB8…",
+     "repr": "{'더하기': <function <lambda> at 0x0000021642CCCB8…",
      "entries": [
       [
        {
-        "ref": "0x24d0ceb60b0"
+        "ref": "0x21642cd6150"
        },
        {
-        "ref": "0x24d0ceacb80"
+        "ref": "0x21642cccb80"
        }
       ],
       [
        {
-        "ref": "0x24d0ceb6100"
+        "ref": "0x21642cd61a0"
        },
        {
-        "ref": "0x24d0ceacc20"
+        "ref": "0x21642cccc20"
        }
       ]
      ]
     },
-    "0x24d0ceb60b0": {
-     "id": "0x24d0ceb60b0",
+    "0x21642cd6150": {
+     "id": "0x21642cd6150",
      "type": "str",
      "repr": "'더하기'"
     },
-    "0x24d0ceacb80": {
-     "id": "0x24d0ceacb80",
+    "0x21642cccb80": {
+     "id": "0x21642cccb80",
      "type": "function",
      "repr": "<lambda>"
     },
-    "0x24d0ceb6100": {
-     "id": "0x24d0ceb6100",
+    "0x21642cd61a0": {
+     "id": "0x21642cd61a0",
      "type": "str",
      "repr": "'곱하기'"
     },
-    "0x24d0ceacc20": {
-     "id": "0x24d0ceacc20",
+    "0x21642cccc20": {
+     "id": "0x21642cccc20",
      "type": "function",
      "repr": "<lambda>"
     }
@@ -692,16 +692,16 @@
      "line": 9,
      "locals": {
       "square": {
-       "ref": "0x24d0ceac9a0"
+       "ref": "0x21642ccc9a0"
       },
       "sq": {
-       "ref": "0x24d0ceacae0"
+       "ref": "0x21642cccae0"
       },
       "f": {
-       "ref": "0x24d0ceac9a0"
+       "ref": "0x21642ccc9a0"
       },
       "ops": {
-       "ref": "0x24d0cec9c40"
+       "ref": "0x21642ce9c80"
       }
      }
     },
@@ -719,56 +719,56 @@
     }
    ],
    "heap": {
-    "0x24d0ceac9a0": {
-     "id": "0x24d0ceac9a0",
+    "0x21642ccc9a0": {
+     "id": "0x21642ccc9a0",
      "type": "function",
      "repr": "square"
     },
-    "0x24d0ceacae0": {
-     "id": "0x24d0ceacae0",
+    "0x21642cccae0": {
+     "id": "0x21642cccae0",
      "type": "function",
      "repr": "<lambda>"
     },
-    "0x24d0cec9c40": {
-     "id": "0x24d0cec9c40",
+    "0x21642ce9c80": {
+     "id": "0x21642ce9c80",
      "type": "dict",
-     "repr": "{'더하기': <function <lambda> at 0x0000024D0CEACB8…",
+     "repr": "{'더하기': <function <lambda> at 0x0000021642CCCB8…",
      "entries": [
       [
        {
-        "ref": "0x24d0ceb60b0"
+        "ref": "0x21642cd6150"
        },
        {
-        "ref": "0x24d0ceacb80"
+        "ref": "0x21642cccb80"
        }
       ],
       [
        {
-        "ref": "0x24d0ceb6100"
+        "ref": "0x21642cd61a0"
        },
        {
-        "ref": "0x24d0ceacc20"
+        "ref": "0x21642cccc20"
        }
       ]
      ]
     },
-    "0x24d0ceb60b0": {
-     "id": "0x24d0ceb60b0",
+    "0x21642cd6150": {
+     "id": "0x21642cd6150",
      "type": "str",
      "repr": "'더하기'"
     },
-    "0x24d0ceacb80": {
-     "id": "0x24d0ceacb80",
+    "0x21642cccb80": {
+     "id": "0x21642cccb80",
      "type": "function",
      "repr": "<lambda>"
     },
-    "0x24d0ceb6100": {
-     "id": "0x24d0ceb6100",
+    "0x21642cd61a0": {
+     "id": "0x21642cd61a0",
      "type": "str",
      "repr": "'곱하기'"
     },
-    "0x24d0ceacc20": {
-     "id": "0x24d0ceacc20",
+    "0x21642cccc20": {
+     "id": "0x21642cccc20",
      "type": "function",
      "repr": "<lambda>"
     },
@@ -795,16 +795,16 @@
      "line": 9,
      "locals": {
       "square": {
-       "ref": "0x24d0ceac9a0"
+       "ref": "0x21642ccc9a0"
       },
       "sq": {
-       "ref": "0x24d0ceacae0"
+       "ref": "0x21642cccae0"
       },
       "f": {
-       "ref": "0x24d0ceac9a0"
+       "ref": "0x21642ccc9a0"
       },
       "ops": {
-       "ref": "0x24d0cec9c40"
+       "ref": "0x21642ce9c80"
       }
      }
     },
@@ -822,56 +822,56 @@
     }
    ],
    "heap": {
-    "0x24d0ceac9a0": {
-     "id": "0x24d0ceac9a0",
+    "0x21642ccc9a0": {
+     "id": "0x21642ccc9a0",
      "type": "function",
      "repr": "square"
     },
-    "0x24d0ceacae0": {
-     "id": "0x24d0ceacae0",
+    "0x21642cccae0": {
+     "id": "0x21642cccae0",
      "type": "function",
      "repr": "<lambda>"
     },
-    "0x24d0cec9c40": {
-     "id": "0x24d0cec9c40",
+    "0x21642ce9c80": {
+     "id": "0x21642ce9c80",
      "type": "dict",
-     "repr": "{'더하기': <function <lambda> at 0x0000024D0CEACB8…",
+     "repr": "{'더하기': <function <lambda> at 0x0000021642CCCB8…",
      "entries": [
       [
        {
-        "ref": "0x24d0ceb60b0"
+        "ref": "0x21642cd6150"
        },
        {
-        "ref": "0x24d0ceacb80"
+        "ref": "0x21642cccb80"
        }
       ],
       [
        {
-        "ref": "0x24d0ceb6100"
+        "ref": "0x21642cd61a0"
        },
        {
-        "ref": "0x24d0ceacc20"
+        "ref": "0x21642cccc20"
        }
       ]
      ]
     },
-    "0x24d0ceb60b0": {
-     "id": "0x24d0ceb60b0",
+    "0x21642cd6150": {
+     "id": "0x21642cd6150",
      "type": "str",
      "repr": "'더하기'"
     },
-    "0x24d0ceacb80": {
-     "id": "0x24d0ceacb80",
+    "0x21642cccb80": {
+     "id": "0x21642cccb80",
      "type": "function",
      "repr": "<lambda>"
     },
-    "0x24d0ceb6100": {
-     "id": "0x24d0ceb6100",
+    "0x21642cd61a0": {
+     "id": "0x21642cd61a0",
      "type": "str",
      "repr": "'곱하기'"
     },
-    "0x24d0ceacc20": {
-     "id": "0x24d0ceacc20",
+    "0x21642cccc20": {
+     "id": "0x21642cccc20",
      "type": "function",
      "repr": "<lambda>"
     },
@@ -898,16 +898,16 @@
      "line": 9,
      "locals": {
       "square": {
-       "ref": "0x24d0ceac9a0"
+       "ref": "0x21642ccc9a0"
       },
       "sq": {
-       "ref": "0x24d0ceacae0"
+       "ref": "0x21642cccae0"
       },
       "f": {
-       "ref": "0x24d0ceac9a0"
+       "ref": "0x21642ccc9a0"
       },
       "ops": {
-       "ref": "0x24d0cec9c40"
+       "ref": "0x21642ce9c80"
       }
      }
     },
@@ -925,56 +925,56 @@
     }
    ],
    "heap": {
-    "0x24d0ceac9a0": {
-     "id": "0x24d0ceac9a0",
+    "0x21642ccc9a0": {
+     "id": "0x21642ccc9a0",
      "type": "function",
      "repr": "square"
     },
-    "0x24d0ceacae0": {
-     "id": "0x24d0ceacae0",
+    "0x21642cccae0": {
+     "id": "0x21642cccae0",
      "type": "function",
      "repr": "<lambda>"
     },
-    "0x24d0cec9c40": {
-     "id": "0x24d0cec9c40",
+    "0x21642ce9c80": {
+     "id": "0x21642ce9c80",
      "type": "dict",
-     "repr": "{'더하기': <function <lambda> at 0x0000024D0CEACB8…",
+     "repr": "{'더하기': <function <lambda> at 0x0000021642CCCB8…",
      "entries": [
       [
        {
-        "ref": "0x24d0ceb60b0"
+        "ref": "0x21642cd6150"
        },
        {
-        "ref": "0x24d0ceacb80"
+        "ref": "0x21642cccb80"
        }
       ],
       [
        {
-        "ref": "0x24d0ceb6100"
+        "ref": "0x21642cd61a0"
        },
        {
-        "ref": "0x24d0ceacc20"
+        "ref": "0x21642cccc20"
        }
       ]
      ]
     },
-    "0x24d0ceb60b0": {
-     "id": "0x24d0ceb60b0",
+    "0x21642cd6150": {
+     "id": "0x21642cd6150",
      "type": "str",
      "repr": "'더하기'"
     },
-    "0x24d0ceacb80": {
-     "id": "0x24d0ceacb80",
+    "0x21642cccb80": {
+     "id": "0x21642cccb80",
      "type": "function",
      "repr": "<lambda>"
     },
-    "0x24d0ceb6100": {
-     "id": "0x24d0ceb6100",
+    "0x21642cd61a0": {
+     "id": "0x21642cd61a0",
      "type": "str",
      "repr": "'곱하기'"
     },
-    "0x24d0ceacc20": {
-     "id": "0x24d0ceacc20",
+    "0x21642cccc20": {
+     "id": "0x21642cccc20",
      "type": "function",
      "repr": "<lambda>"
     },
@@ -1001,71 +1001,71 @@
      "line": 10,
      "locals": {
       "square": {
-       "ref": "0x24d0ceac9a0"
+       "ref": "0x21642ccc9a0"
       },
       "sq": {
-       "ref": "0x24d0ceacae0"
+       "ref": "0x21642cccae0"
       },
       "f": {
-       "ref": "0x24d0ceac9a0"
+       "ref": "0x21642ccc9a0"
       },
       "ops": {
-       "ref": "0x24d0cec9c40"
+       "ref": "0x21642ce9c80"
       }
      }
     }
    ],
    "heap": {
-    "0x24d0ceac9a0": {
-     "id": "0x24d0ceac9a0",
+    "0x21642ccc9a0": {
+     "id": "0x21642ccc9a0",
      "type": "function",
      "repr": "square"
     },
-    "0x24d0ceacae0": {
-     "id": "0x24d0ceacae0",
+    "0x21642cccae0": {
+     "id": "0x21642cccae0",
      "type": "function",
      "repr": "<lambda>"
     },
-    "0x24d0cec9c40": {
-     "id": "0x24d0cec9c40",
+    "0x21642ce9c80": {
+     "id": "0x21642ce9c80",
      "type": "dict",
-     "repr": "{'더하기': <function <lambda> at 0x0000024D0CEACB8…",
+     "repr": "{'더하기': <function <lambda> at 0x0000021642CCCB8…",
      "entries": [
       [
        {
-        "ref": "0x24d0ceb60b0"
+        "ref": "0x21642cd6150"
        },
        {
-        "ref": "0x24d0ceacb80"
+        "ref": "0x21642cccb80"
        }
       ],
       [
        {
-        "ref": "0x24d0ceb6100"
+        "ref": "0x21642cd61a0"
        },
        {
-        "ref": "0x24d0ceacc20"
+        "ref": "0x21642cccc20"
        }
       ]
      ]
     },
-    "0x24d0ceb60b0": {
-     "id": "0x24d0ceb60b0",
+    "0x21642cd6150": {
+     "id": "0x21642cd6150",
      "type": "str",
      "repr": "'더하기'"
     },
-    "0x24d0ceacb80": {
-     "id": "0x24d0ceacb80",
+    "0x21642cccb80": {
+     "id": "0x21642cccb80",
      "type": "function",
      "repr": "<lambda>"
     },
-    "0x24d0ceb6100": {
-     "id": "0x24d0ceb6100",
+    "0x21642cd61a0": {
+     "id": "0x21642cd61a0",
      "type": "str",
      "repr": "'곱하기'"
     },
-    "0x24d0ceacc20": {
-     "id": "0x24d0ceacc20",
+    "0x21642cccc20": {
+     "id": "0x21642cccc20",
      "type": "function",
      "repr": "<lambda>"
     }
@@ -1081,95 +1081,95 @@
      "line": 11,
      "locals": {
       "square": {
-       "ref": "0x24d0ceac9a0"
+       "ref": "0x21642ccc9a0"
       },
       "sq": {
-       "ref": "0x24d0ceacae0"
+       "ref": "0x21642cccae0"
       },
       "f": {
-       "ref": "0x24d0ceac9a0"
+       "ref": "0x21642ccc9a0"
       },
       "ops": {
-       "ref": "0x24d0cec9c40"
+       "ref": "0x21642ce9c80"
       },
       "words": {
-       "ref": "0x24d0cc8c5c0"
+       "ref": "0x21642aac5c0"
       }
      }
     }
    ],
    "heap": {
-    "0x24d0ceac9a0": {
-     "id": "0x24d0ceac9a0",
+    "0x21642ccc9a0": {
+     "id": "0x21642ccc9a0",
      "type": "function",
      "repr": "square"
     },
-    "0x24d0ceacae0": {
-     "id": "0x24d0ceacae0",
+    "0x21642cccae0": {
+     "id": "0x21642cccae0",
      "type": "function",
      "repr": "<lambda>"
     },
-    "0x24d0cec9c40": {
-     "id": "0x24d0cec9c40",
+    "0x21642ce9c80": {
+     "id": "0x21642ce9c80",
      "type": "dict",
-     "repr": "{'더하기': <function <lambda> at 0x0000024D0CEACB8…",
+     "repr": "{'더하기': <function <lambda> at 0x0000021642CCCB8…",
      "entries": [
       [
        {
-        "ref": "0x24d0ceb60b0"
+        "ref": "0x21642cd6150"
        },
        {
-        "ref": "0x24d0ceacb80"
+        "ref": "0x21642cccb80"
        }
       ],
       [
        {
-        "ref": "0x24d0ceb6100"
+        "ref": "0x21642cd61a0"
        },
        {
-        "ref": "0x24d0ceacc20"
+        "ref": "0x21642cccc20"
        }
       ]
      ]
     },
-    "0x24d0ceb60b0": {
-     "id": "0x24d0ceb60b0",
+    "0x21642cd6150": {
+     "id": "0x21642cd6150",
      "type": "str",
      "repr": "'더하기'"
     },
-    "0x24d0ceacb80": {
-     "id": "0x24d0ceacb80",
+    "0x21642cccb80": {
+     "id": "0x21642cccb80",
      "type": "function",
      "repr": "<lambda>"
     },
-    "0x24d0ceb6100": {
-     "id": "0x24d0ceb6100",
+    "0x21642cd61a0": {
+     "id": "0x21642cd61a0",
      "type": "str",
      "repr": "'곱하기'"
     },
-    "0x24d0ceacc20": {
-     "id": "0x24d0ceacc20",
+    "0x21642cccc20": {
+     "id": "0x21642cccc20",
      "type": "function",
      "repr": "<lambda>"
     },
-    "0x24d0cc8c5c0": {
-     "id": "0x24d0cc8c5c0",
+    "0x21642aac5c0": {
+     "id": "0x21642aac5c0",
      "type": "list",
      "repr": "['bb', 'a', 'ccc']",
      "items": [
       {
-       "ref": "0x24d0cebd380"
+       "ref": "0x21642cdd440"
       },
       {
        "ref": "0x7ffd7f2c3e40"
       },
       {
-       "ref": "0x24d0cebd410"
+       "ref": "0x21642cdd4d0"
       }
      ]
     },
-    "0x24d0cebd380": {
-     "id": "0x24d0cebd380",
+    "0x21642cdd440": {
+     "id": "0x21642cdd440",
      "type": "str",
      "repr": "'bb'"
     },
@@ -1178,8 +1178,8 @@
      "type": "str",
      "repr": "'a'"
     },
-    "0x24d0cebd410": {
-     "id": "0x24d0cebd410",
+    "0x21642cdd4d0": {
+     "id": "0x21642cdd4d0",
      "type": "str",
      "repr": "'ccc'"
     }
@@ -1196,19 +1196,19 @@
      "line": 11,
      "locals": {
       "square": {
-       "ref": "0x24d0ceac9a0"
+       "ref": "0x21642ccc9a0"
       },
       "sq": {
-       "ref": "0x24d0ceacae0"
+       "ref": "0x21642cccae0"
       },
       "f": {
-       "ref": "0x24d0ceac9a0"
+       "ref": "0x21642ccc9a0"
       },
       "ops": {
-       "ref": "0x24d0cec9c40"
+       "ref": "0x21642ce9c80"
       },
       "words": {
-       "ref": "0x24d0cc8c5c0"
+       "ref": "0x21642aac5c0"
       }
      }
     },
@@ -1217,83 +1217,83 @@
      "line": 11,
      "locals": {
       "w": {
-       "ref": "0x24d0cebd380"
+       "ref": "0x21642cdd440"
       }
      }
     }
    ],
    "heap": {
-    "0x24d0ceac9a0": {
-     "id": "0x24d0ceac9a0",
+    "0x21642ccc9a0": {
+     "id": "0x21642ccc9a0",
      "type": "function",
      "repr": "square"
     },
-    "0x24d0ceacae0": {
-     "id": "0x24d0ceacae0",
+    "0x21642cccae0": {
+     "id": "0x21642cccae0",
      "type": "function",
      "repr": "<lambda>"
     },
-    "0x24d0cec9c40": {
-     "id": "0x24d0cec9c40",
+    "0x21642ce9c80": {
+     "id": "0x21642ce9c80",
      "type": "dict",
-     "repr": "{'더하기': <function <lambda> at 0x0000024D0CEACB8…",
+     "repr": "{'더하기': <function <lambda> at 0x0000021642CCCB8…",
      "entries": [
       [
        {
-        "ref": "0x24d0ceb60b0"
+        "ref": "0x21642cd6150"
        },
        {
-        "ref": "0x24d0ceacb80"
+        "ref": "0x21642cccb80"
        }
       ],
       [
        {
-        "ref": "0x24d0ceb6100"
+        "ref": "0x21642cd61a0"
        },
        {
-        "ref": "0x24d0ceacc20"
+        "ref": "0x21642cccc20"
        }
       ]
      ]
     },
-    "0x24d0ceb60b0": {
-     "id": "0x24d0ceb60b0",
+    "0x21642cd6150": {
+     "id": "0x21642cd6150",
      "type": "str",
      "repr": "'더하기'"
     },
-    "0x24d0ceacb80": {
-     "id": "0x24d0ceacb80",
+    "0x21642cccb80": {
+     "id": "0x21642cccb80",
      "type": "function",
      "repr": "<lambda>"
     },
-    "0x24d0ceb6100": {
-     "id": "0x24d0ceb6100",
+    "0x21642cd61a0": {
+     "id": "0x21642cd61a0",
      "type": "str",
      "repr": "'곱하기'"
     },
-    "0x24d0ceacc20": {
-     "id": "0x24d0ceacc20",
+    "0x21642cccc20": {
+     "id": "0x21642cccc20",
      "type": "function",
      "repr": "<lambda>"
     },
-    "0x24d0cc8c5c0": {
-     "id": "0x24d0cc8c5c0",
+    "0x21642aac5c0": {
+     "id": "0x21642aac5c0",
      "type": "list",
      "repr": "['bb', 'a', 'ccc']",
      "items": [
       {
-       "ref": "0x24d0cebd380"
+       "ref": "0x21642cdd440"
       },
       {
        "ref": "0x7ffd7f2c3e40"
       },
       {
-       "ref": "0x24d0cebd410"
+       "ref": "0x21642cdd4d0"
       }
      ]
     },
-    "0x24d0cebd380": {
-     "id": "0x24d0cebd380",
+    "0x21642cdd440": {
+     "id": "0x21642cdd440",
      "type": "str",
      "repr": "'bb'"
     },
@@ -1302,8 +1302,8 @@
      "type": "str",
      "repr": "'a'"
     },
-    "0x24d0cebd410": {
-     "id": "0x24d0cebd410",
+    "0x21642cdd4d0": {
+     "id": "0x21642cdd4d0",
      "type": "str",
      "repr": "'ccc'"
     }
@@ -1320,19 +1320,19 @@
      "line": 11,
      "locals": {
       "square": {
-       "ref": "0x24d0ceac9a0"
+       "ref": "0x21642ccc9a0"
       },
       "sq": {
-       "ref": "0x24d0ceacae0"
+       "ref": "0x21642cccae0"
       },
       "f": {
-       "ref": "0x24d0ceac9a0"
+       "ref": "0x21642ccc9a0"
       },
       "ops": {
-       "ref": "0x24d0cec9c40"
+       "ref": "0x21642ce9c80"
       },
       "words": {
-       "ref": "0x24d0cc8c5c0"
+       "ref": "0x21642aac5c0"
       }
      }
     },
@@ -1341,83 +1341,83 @@
      "line": 11,
      "locals": {
       "w": {
-       "ref": "0x24d0cebd380"
+       "ref": "0x21642cdd440"
       }
      }
     }
    ],
    "heap": {
-    "0x24d0ceac9a0": {
-     "id": "0x24d0ceac9a0",
+    "0x21642ccc9a0": {
+     "id": "0x21642ccc9a0",
      "type": "function",
      "repr": "square"
     },
-    "0x24d0ceacae0": {
-     "id": "0x24d0ceacae0",
+    "0x21642cccae0": {
+     "id": "0x21642cccae0",
      "type": "function",
      "repr": "<lambda>"
     },
-    "0x24d0cec9c40": {
-     "id": "0x24d0cec9c40",
+    "0x21642ce9c80": {
+     "id": "0x21642ce9c80",
      "type": "dict",
-     "repr": "{'더하기': <function <lambda> at 0x0000024D0CEACB8…",
+     "repr": "{'더하기': <function <lambda> at 0x0000021642CCCB8…",
      "entries": [
       [
        {
-        "ref": "0x24d0ceb60b0"
+        "ref": "0x21642cd6150"
        },
        {
-        "ref": "0x24d0ceacb80"
+        "ref": "0x21642cccb80"
        }
       ],
       [
        {
-        "ref": "0x24d0ceb6100"
+        "ref": "0x21642cd61a0"
        },
        {
-        "ref": "0x24d0ceacc20"
+        "ref": "0x21642cccc20"
        }
       ]
      ]
     },
-    "0x24d0ceb60b0": {
-     "id": "0x24d0ceb60b0",
+    "0x21642cd6150": {
+     "id": "0x21642cd6150",
      "type": "str",
      "repr": "'더하기'"
     },
-    "0x24d0ceacb80": {
-     "id": "0x24d0ceacb80",
+    "0x21642cccb80": {
+     "id": "0x21642cccb80",
      "type": "function",
      "repr": "<lambda>"
     },
-    "0x24d0ceb6100": {
-     "id": "0x24d0ceb6100",
+    "0x21642cd61a0": {
+     "id": "0x21642cd61a0",
      "type": "str",
      "repr": "'곱하기'"
     },
-    "0x24d0ceacc20": {
-     "id": "0x24d0ceacc20",
+    "0x21642cccc20": {
+     "id": "0x21642cccc20",
      "type": "function",
      "repr": "<lambda>"
     },
-    "0x24d0cc8c5c0": {
-     "id": "0x24d0cc8c5c0",
+    "0x21642aac5c0": {
+     "id": "0x21642aac5c0",
      "type": "list",
      "repr": "['bb', 'a', 'ccc']",
      "items": [
       {
-       "ref": "0x24d0cebd380"
+       "ref": "0x21642cdd440"
       },
       {
        "ref": "0x7ffd7f2c3e40"
       },
       {
-       "ref": "0x24d0cebd410"
+       "ref": "0x21642cdd4d0"
       }
      ]
     },
-    "0x24d0cebd380": {
-     "id": "0x24d0cebd380",
+    "0x21642cdd440": {
+     "id": "0x21642cdd440",
      "type": "str",
      "repr": "'bb'"
     },
@@ -1426,8 +1426,8 @@
      "type": "str",
      "repr": "'a'"
     },
-    "0x24d0cebd410": {
-     "id": "0x24d0cebd410",
+    "0x21642cdd4d0": {
+     "id": "0x21642cdd4d0",
      "type": "str",
      "repr": "'ccc'"
     }
@@ -1444,19 +1444,19 @@
      "line": 11,
      "locals": {
       "square": {
-       "ref": "0x24d0ceac9a0"
+       "ref": "0x21642ccc9a0"
       },
       "sq": {
-       "ref": "0x24d0ceacae0"
+       "ref": "0x21642cccae0"
       },
       "f": {
-       "ref": "0x24d0ceac9a0"
+       "ref": "0x21642ccc9a0"
       },
       "ops": {
-       "ref": "0x24d0cec9c40"
+       "ref": "0x21642ce9c80"
       },
       "words": {
-       "ref": "0x24d0cc8c5c0"
+       "ref": "0x21642aac5c0"
       }
      }
     },
@@ -1465,83 +1465,83 @@
      "line": 11,
      "locals": {
       "w": {
-       "ref": "0x24d0cebd380"
+       "ref": "0x21642cdd440"
       }
      }
     }
    ],
    "heap": {
-    "0x24d0ceac9a0": {
-     "id": "0x24d0ceac9a0",
+    "0x21642ccc9a0": {
+     "id": "0x21642ccc9a0",
      "type": "function",
      "repr": "square"
     },
-    "0x24d0ceacae0": {
-     "id": "0x24d0ceacae0",
+    "0x21642cccae0": {
+     "id": "0x21642cccae0",
      "type": "function",
      "repr": "<lambda>"
     },
-    "0x24d0cec9c40": {
-     "id": "0x24d0cec9c40",
+    "0x21642ce9c80": {
+     "id": "0x21642ce9c80",
      "type": "dict",
-     "repr": "{'더하기': <function <lambda> at 0x0000024D0CEACB8…",
+     "repr": "{'더하기': <function <lambda> at 0x0000021642CCCB8…",
      "entries": [
       [
        {
-        "ref": "0x24d0ceb60b0"
+        "ref": "0x21642cd6150"
        },
        {
-        "ref": "0x24d0ceacb80"
+        "ref": "0x21642cccb80"
        }
       ],
       [
        {
-        "ref": "0x24d0ceb6100"
+        "ref": "0x21642cd61a0"
        },
        {
-        "ref": "0x24d0ceacc20"
+        "ref": "0x21642cccc20"
        }
       ]
      ]
     },
-    "0x24d0ceb60b0": {
-     "id": "0x24d0ceb60b0",
+    "0x21642cd6150": {
+     "id": "0x21642cd6150",
      "type": "str",
      "repr": "'더하기'"
     },
-    "0x24d0ceacb80": {
-     "id": "0x24d0ceacb80",
+    "0x21642cccb80": {
+     "id": "0x21642cccb80",
      "type": "function",
      "repr": "<lambda>"
     },
-    "0x24d0ceb6100": {
-     "id": "0x24d0ceb6100",
+    "0x21642cd61a0": {
+     "id": "0x21642cd61a0",
      "type": "str",
      "repr": "'곱하기'"
     },
-    "0x24d0ceacc20": {
-     "id": "0x24d0ceacc20",
+    "0x21642cccc20": {
+     "id": "0x21642cccc20",
      "type": "function",
      "repr": "<lambda>"
     },
-    "0x24d0cc8c5c0": {
-     "id": "0x24d0cc8c5c0",
+    "0x21642aac5c0": {
+     "id": "0x21642aac5c0",
      "type": "list",
      "repr": "['bb', 'a', 'ccc']",
      "items": [
       {
-       "ref": "0x24d0cebd380"
+       "ref": "0x21642cdd440"
       },
       {
        "ref": "0x7ffd7f2c3e40"
       },
       {
-       "ref": "0x24d0cebd410"
+       "ref": "0x21642cdd4d0"
       }
      ]
     },
-    "0x24d0cebd380": {
-     "id": "0x24d0cebd380",
+    "0x21642cdd440": {
+     "id": "0x21642cdd440",
      "type": "str",
      "repr": "'bb'"
     },
@@ -1550,8 +1550,8 @@
      "type": "str",
      "repr": "'a'"
     },
-    "0x24d0cebd410": {
-     "id": "0x24d0cebd410",
+    "0x21642cdd4d0": {
+     "id": "0x21642cdd4d0",
      "type": "str",
      "repr": "'ccc'"
     }
@@ -1568,19 +1568,19 @@
      "line": 11,
      "locals": {
       "square": {
-       "ref": "0x24d0ceac9a0"
+       "ref": "0x21642ccc9a0"
       },
       "sq": {
-       "ref": "0x24d0ceacae0"
+       "ref": "0x21642cccae0"
       },
       "f": {
-       "ref": "0x24d0ceac9a0"
+       "ref": "0x21642ccc9a0"
       },
       "ops": {
-       "ref": "0x24d0cec9c40"
+       "ref": "0x21642ce9c80"
       },
       "words": {
-       "ref": "0x24d0cc8c5c0"
+       "ref": "0x21642aac5c0"
       }
      }
     },
@@ -1595,77 +1595,77 @@
     }
    ],
    "heap": {
-    "0x24d0ceac9a0": {
-     "id": "0x24d0ceac9a0",
+    "0x21642ccc9a0": {
+     "id": "0x21642ccc9a0",
      "type": "function",
      "repr": "square"
     },
-    "0x24d0ceacae0": {
-     "id": "0x24d0ceacae0",
+    "0x21642cccae0": {
+     "id": "0x21642cccae0",
      "type": "function",
      "repr": "<lambda>"
     },
-    "0x24d0cec9c40": {
-     "id": "0x24d0cec9c40",
+    "0x21642ce9c80": {
+     "id": "0x21642ce9c80",
      "type": "dict",
-     "repr": "{'더하기': <function <lambda> at 0x0000024D0CEACB8…",
+     "repr": "{'더하기': <function <lambda> at 0x0000021642CCCB8…",
      "entries": [
       [
        {
-        "ref": "0x24d0ceb60b0"
+        "ref": "0x21642cd6150"
        },
        {
-        "ref": "0x24d0ceacb80"
+        "ref": "0x21642cccb80"
        }
       ],
       [
        {
-        "ref": "0x24d0ceb6100"
+        "ref": "0x21642cd61a0"
        },
        {
-        "ref": "0x24d0ceacc20"
+        "ref": "0x21642cccc20"
        }
       ]
      ]
     },
-    "0x24d0ceb60b0": {
-     "id": "0x24d0ceb60b0",
+    "0x21642cd6150": {
+     "id": "0x21642cd6150",
      "type": "str",
      "repr": "'더하기'"
     },
-    "0x24d0ceacb80": {
-     "id": "0x24d0ceacb80",
+    "0x21642cccb80": {
+     "id": "0x21642cccb80",
      "type": "function",
      "repr": "<lambda>"
     },
-    "0x24d0ceb6100": {
-     "id": "0x24d0ceb6100",
+    "0x21642cd61a0": {
+     "id": "0x21642cd61a0",
      "type": "str",
      "repr": "'곱하기'"
     },
-    "0x24d0ceacc20": {
-     "id": "0x24d0ceacc20",
+    "0x21642cccc20": {
+     "id": "0x21642cccc20",
      "type": "function",
      "repr": "<lambda>"
     },
-    "0x24d0cc8c5c0": {
-     "id": "0x24d0cc8c5c0",
+    "0x21642aac5c0": {
+     "id": "0x21642aac5c0",
      "type": "list",
      "repr": "['bb', 'a', 'ccc']",
      "items": [
       {
-       "ref": "0x24d0cebd380"
+       "ref": "0x21642cdd440"
       },
       {
        "ref": "0x7ffd7f2c3e40"
       },
       {
-       "ref": "0x24d0cebd410"
+       "ref": "0x21642cdd4d0"
       }
      ]
     },
-    "0x24d0cebd380": {
-     "id": "0x24d0cebd380",
+    "0x21642cdd440": {
+     "id": "0x21642cdd440",
      "type": "str",
      "repr": "'bb'"
     },
@@ -1674,8 +1674,8 @@
      "type": "str",
      "repr": "'a'"
     },
-    "0x24d0cebd410": {
-     "id": "0x24d0cebd410",
+    "0x21642cdd4d0": {
+     "id": "0x21642cdd4d0",
      "type": "str",
      "repr": "'ccc'"
     }
@@ -1692,19 +1692,19 @@
      "line": 11,
      "locals": {
       "square": {
-       "ref": "0x24d0ceac9a0"
+       "ref": "0x21642ccc9a0"
       },
       "sq": {
-       "ref": "0x24d0ceacae0"
+       "ref": "0x21642cccae0"
       },
       "f": {
-       "ref": "0x24d0ceac9a0"
+       "ref": "0x21642ccc9a0"
       },
       "ops": {
-       "ref": "0x24d0cec9c40"
+       "ref": "0x21642ce9c80"
       },
       "words": {
-       "ref": "0x24d0cc8c5c0"
+       "ref": "0x21642aac5c0"
       }
      }
     },
@@ -1719,77 +1719,77 @@
     }
    ],
    "heap": {
-    "0x24d0ceac9a0": {
-     "id": "0x24d0ceac9a0",
+    "0x21642ccc9a0": {
+     "id": "0x21642ccc9a0",
      "type": "function",
      "repr": "square"
     },
-    "0x24d0ceacae0": {
-     "id": "0x24d0ceacae0",
+    "0x21642cccae0": {
+     "id": "0x21642cccae0",
      "type": "function",
      "repr": "<lambda>"
     },
-    "0x24d0cec9c40": {
-     "id": "0x24d0cec9c40",
+    "0x21642ce9c80": {
+     "id": "0x21642ce9c80",
      "type": "dict",
-     "repr": "{'더하기': <function <lambda> at 0x0000024D0CEACB8…",
+     "repr": "{'더하기': <function <lambda> at 0x0000021642CCCB8…",
      "entries": [
       [
        {
-        "ref": "0x24d0ceb60b0"
+        "ref": "0x21642cd6150"
        },
        {
-        "ref": "0x24d0ceacb80"
+        "ref": "0x21642cccb80"
        }
       ],
       [
        {
-        "ref": "0x24d0ceb6100"
+        "ref": "0x21642cd61a0"
        },
        {
-        "ref": "0x24d0ceacc20"
+        "ref": "0x21642cccc20"
        }
       ]
      ]
     },
-    "0x24d0ceb60b0": {
-     "id": "0x24d0ceb60b0",
+    "0x21642cd6150": {
+     "id": "0x21642cd6150",
      "type": "str",
      "repr": "'더하기'"
     },
-    "0x24d0ceacb80": {
-     "id": "0x24d0ceacb80",
+    "0x21642cccb80": {
+     "id": "0x21642cccb80",
      "type": "function",
      "repr": "<lambda>"
     },
-    "0x24d0ceb6100": {
-     "id": "0x24d0ceb6100",
+    "0x21642cd61a0": {
+     "id": "0x21642cd61a0",
      "type": "str",
      "repr": "'곱하기'"
     },
-    "0x24d0ceacc20": {
-     "id": "0x24d0ceacc20",
+    "0x21642cccc20": {
+     "id": "0x21642cccc20",
      "type": "function",
      "repr": "<lambda>"
     },
-    "0x24d0cc8c5c0": {
-     "id": "0x24d0cc8c5c0",
+    "0x21642aac5c0": {
+     "id": "0x21642aac5c0",
      "type": "list",
      "repr": "['bb', 'a', 'ccc']",
      "items": [
       {
-       "ref": "0x24d0cebd380"
+       "ref": "0x21642cdd440"
       },
       {
        "ref": "0x7ffd7f2c3e40"
       },
       {
-       "ref": "0x24d0cebd410"
+       "ref": "0x21642cdd4d0"
       }
      ]
     },
-    "0x24d0cebd380": {
-     "id": "0x24d0cebd380",
+    "0x21642cdd440": {
+     "id": "0x21642cdd440",
      "type": "str",
      "repr": "'bb'"
     },
@@ -1798,8 +1798,8 @@
      "type": "str",
      "repr": "'a'"
     },
-    "0x24d0cebd410": {
-     "id": "0x24d0cebd410",
+    "0x21642cdd4d0": {
+     "id": "0x21642cdd4d0",
      "type": "str",
      "repr": "'ccc'"
     }
@@ -1816,19 +1816,19 @@
      "line": 11,
      "locals": {
       "square": {
-       "ref": "0x24d0ceac9a0"
+       "ref": "0x21642ccc9a0"
       },
       "sq": {
-       "ref": "0x24d0ceacae0"
+       "ref": "0x21642cccae0"
       },
       "f": {
-       "ref": "0x24d0ceac9a0"
+       "ref": "0x21642ccc9a0"
       },
       "ops": {
-       "ref": "0x24d0cec9c40"
+       "ref": "0x21642ce9c80"
       },
       "words": {
-       "ref": "0x24d0cc8c5c0"
+       "ref": "0x21642aac5c0"
       }
      }
     },
@@ -1843,77 +1843,77 @@
     }
    ],
    "heap": {
-    "0x24d0ceac9a0": {
-     "id": "0x24d0ceac9a0",
+    "0x21642ccc9a0": {
+     "id": "0x21642ccc9a0",
      "type": "function",
      "repr": "square"
     },
-    "0x24d0ceacae0": {
-     "id": "0x24d0ceacae0",
+    "0x21642cccae0": {
+     "id": "0x21642cccae0",
      "type": "function",
      "repr": "<lambda>"
     },
-    "0x24d0cec9c40": {
-     "id": "0x24d0cec9c40",
+    "0x21642ce9c80": {
+     "id": "0x21642ce9c80",
      "type": "dict",
-     "repr": "{'더하기': <function <lambda> at 0x0000024D0CEACB8…",
+     "repr": "{'더하기': <function <lambda> at 0x0000021642CCCB8…",
      "entries": [
       [
        {
-        "ref": "0x24d0ceb60b0"
+        "ref": "0x21642cd6150"
        },
        {
-        "ref": "0x24d0ceacb80"
+        "ref": "0x21642cccb80"
        }
       ],
       [
        {
-        "ref": "0x24d0ceb6100"
+        "ref": "0x21642cd61a0"
        },
        {
-        "ref": "0x24d0ceacc20"
+        "ref": "0x21642cccc20"
        }
       ]
      ]
     },
-    "0x24d0ceb60b0": {
-     "id": "0x24d0ceb60b0",
+    "0x21642cd6150": {
+     "id": "0x21642cd6150",
      "type": "str",
      "repr": "'더하기'"
     },
-    "0x24d0ceacb80": {
-     "id": "0x24d0ceacb80",
+    "0x21642cccb80": {
+     "id": "0x21642cccb80",
      "type": "function",
      "repr": "<lambda>"
     },
-    "0x24d0ceb6100": {
-     "id": "0x24d0ceb6100",
+    "0x21642cd61a0": {
+     "id": "0x21642cd61a0",
      "type": "str",
      "repr": "'곱하기'"
     },
-    "0x24d0ceacc20": {
-     "id": "0x24d0ceacc20",
+    "0x21642cccc20": {
+     "id": "0x21642cccc20",
      "type": "function",
      "repr": "<lambda>"
     },
-    "0x24d0cc8c5c0": {
-     "id": "0x24d0cc8c5c0",
+    "0x21642aac5c0": {
+     "id": "0x21642aac5c0",
      "type": "list",
      "repr": "['bb', 'a', 'ccc']",
      "items": [
       {
-       "ref": "0x24d0cebd380"
+       "ref": "0x21642cdd440"
       },
       {
        "ref": "0x7ffd7f2c3e40"
       },
       {
-       "ref": "0x24d0cebd410"
+       "ref": "0x21642cdd4d0"
       }
      ]
     },
-    "0x24d0cebd380": {
-     "id": "0x24d0cebd380",
+    "0x21642cdd440": {
+     "id": "0x21642cdd440",
      "type": "str",
      "repr": "'bb'"
     },
@@ -1922,8 +1922,8 @@
      "type": "str",
      "repr": "'a'"
     },
-    "0x24d0cebd410": {
-     "id": "0x24d0cebd410",
+    "0x21642cdd4d0": {
+     "id": "0x21642cdd4d0",
      "type": "str",
      "repr": "'ccc'"
     }
@@ -1940,19 +1940,19 @@
      "line": 11,
      "locals": {
       "square": {
-       "ref": "0x24d0ceac9a0"
+       "ref": "0x21642ccc9a0"
       },
       "sq": {
-       "ref": "0x24d0ceacae0"
+       "ref": "0x21642cccae0"
       },
       "f": {
-       "ref": "0x24d0ceac9a0"
+       "ref": "0x21642ccc9a0"
       },
       "ops": {
-       "ref": "0x24d0cec9c40"
+       "ref": "0x21642ce9c80"
       },
       "words": {
-       "ref": "0x24d0cc8c5c0"
+       "ref": "0x21642aac5c0"
       }
      }
     },
@@ -1961,83 +1961,83 @@
      "line": 11,
      "locals": {
       "w": {
-       "ref": "0x24d0cebd410"
+       "ref": "0x21642cdd4d0"
       }
      }
     }
    ],
    "heap": {
-    "0x24d0ceac9a0": {
-     "id": "0x24d0ceac9a0",
+    "0x21642ccc9a0": {
+     "id": "0x21642ccc9a0",
      "type": "function",
      "repr": "square"
     },
-    "0x24d0ceacae0": {
-     "id": "0x24d0ceacae0",
+    "0x21642cccae0": {
+     "id": "0x21642cccae0",
      "type": "function",
      "repr": "<lambda>"
     },
-    "0x24d0cec9c40": {
-     "id": "0x24d0cec9c40",
+    "0x21642ce9c80": {
+     "id": "0x21642ce9c80",
      "type": "dict",
-     "repr": "{'더하기': <function <lambda> at 0x0000024D0CEACB8…",
+     "repr": "{'더하기': <function <lambda> at 0x0000021642CCCB8…",
      "entries": [
       [
        {
-        "ref": "0x24d0ceb60b0"
+        "ref": "0x21642cd6150"
        },
        {
-        "ref": "0x24d0ceacb80"
+        "ref": "0x21642cccb80"
        }
       ],
       [
        {
-        "ref": "0x24d0ceb6100"
+        "ref": "0x21642cd61a0"
        },
        {
-        "ref": "0x24d0ceacc20"
+        "ref": "0x21642cccc20"
        }
       ]
      ]
     },
-    "0x24d0ceb60b0": {
-     "id": "0x24d0ceb60b0",
+    "0x21642cd6150": {
+     "id": "0x21642cd6150",
      "type": "str",
      "repr": "'더하기'"
     },
-    "0x24d0ceacb80": {
-     "id": "0x24d0ceacb80",
+    "0x21642cccb80": {
+     "id": "0x21642cccb80",
      "type": "function",
      "repr": "<lambda>"
     },
-    "0x24d0ceb6100": {
-     "id": "0x24d0ceb6100",
+    "0x21642cd61a0": {
+     "id": "0x21642cd61a0",
      "type": "str",
      "repr": "'곱하기'"
     },
-    "0x24d0ceacc20": {
-     "id": "0x24d0ceacc20",
+    "0x21642cccc20": {
+     "id": "0x21642cccc20",
      "type": "function",
      "repr": "<lambda>"
     },
-    "0x24d0cc8c5c0": {
-     "id": "0x24d0cc8c5c0",
+    "0x21642aac5c0": {
+     "id": "0x21642aac5c0",
      "type": "list",
      "repr": "['bb', 'a', 'ccc']",
      "items": [
       {
-       "ref": "0x24d0cebd380"
+       "ref": "0x21642cdd440"
       },
       {
        "ref": "0x7ffd7f2c3e40"
       },
       {
-       "ref": "0x24d0cebd410"
+       "ref": "0x21642cdd4d0"
       }
      ]
     },
-    "0x24d0cebd380": {
-     "id": "0x24d0cebd380",
+    "0x21642cdd440": {
+     "id": "0x21642cdd440",
      "type": "str",
      "repr": "'bb'"
     },
@@ -2046,8 +2046,8 @@
      "type": "str",
      "repr": "'a'"
     },
-    "0x24d0cebd410": {
-     "id": "0x24d0cebd410",
+    "0x21642cdd4d0": {
+     "id": "0x21642cdd4d0",
      "type": "str",
      "repr": "'ccc'"
     }
@@ -2064,19 +2064,19 @@
      "line": 11,
      "locals": {
       "square": {
-       "ref": "0x24d0ceac9a0"
+       "ref": "0x21642ccc9a0"
       },
       "sq": {
-       "ref": "0x24d0ceacae0"
+       "ref": "0x21642cccae0"
       },
       "f": {
-       "ref": "0x24d0ceac9a0"
+       "ref": "0x21642ccc9a0"
       },
       "ops": {
-       "ref": "0x24d0cec9c40"
+       "ref": "0x21642ce9c80"
       },
       "words": {
-       "ref": "0x24d0cc8c5c0"
+       "ref": "0x21642aac5c0"
       }
      }
     },
@@ -2085,83 +2085,83 @@
      "line": 11,
      "locals": {
       "w": {
-       "ref": "0x24d0cebd410"
+       "ref": "0x21642cdd4d0"
       }
      }
     }
    ],
    "heap": {
-    "0x24d0ceac9a0": {
-     "id": "0x24d0ceac9a0",
+    "0x21642ccc9a0": {
+     "id": "0x21642ccc9a0",
      "type": "function",
      "repr": "square"
     },
-    "0x24d0ceacae0": {
-     "id": "0x24d0ceacae0",
+    "0x21642cccae0": {
+     "id": "0x21642cccae0",
      "type": "function",
      "repr": "<lambda>"
     },
-    "0x24d0cec9c40": {
-     "id": "0x24d0cec9c40",
+    "0x21642ce9c80": {
+     "id": "0x21642ce9c80",
      "type": "dict",
-     "repr": "{'더하기': <function <lambda> at 0x0000024D0CEACB8…",
+     "repr": "{'더하기': <function <lambda> at 0x0000021642CCCB8…",
      "entries": [
       [
        {
-        "ref": "0x24d0ceb60b0"
+        "ref": "0x21642cd6150"
        },
        {
-        "ref": "0x24d0ceacb80"
+        "ref": "0x21642cccb80"
        }
       ],
       [
        {
-        "ref": "0x24d0ceb6100"
+        "ref": "0x21642cd61a0"
        },
        {
-        "ref": "0x24d0ceacc20"
+        "ref": "0x21642cccc20"
        }
       ]
      ]
     },
-    "0x24d0ceb60b0": {
-     "id": "0x24d0ceb60b0",
+    "0x21642cd6150": {
+     "id": "0x21642cd6150",
      "type": "str",
      "repr": "'더하기'"
     },
-    "0x24d0ceacb80": {
-     "id": "0x24d0ceacb80",
+    "0x21642cccb80": {
+     "id": "0x21642cccb80",
      "type": "function",
      "repr": "<lambda>"
     },
-    "0x24d0ceb6100": {
-     "id": "0x24d0ceb6100",
+    "0x21642cd61a0": {
+     "id": "0x21642cd61a0",
      "type": "str",
      "repr": "'곱하기'"
     },
-    "0x24d0ceacc20": {
-     "id": "0x24d0ceacc20",
+    "0x21642cccc20": {
+     "id": "0x21642cccc20",
      "type": "function",
      "repr": "<lambda>"
     },
-    "0x24d0cc8c5c0": {
-     "id": "0x24d0cc8c5c0",
+    "0x21642aac5c0": {
+     "id": "0x21642aac5c0",
      "type": "list",
      "repr": "['bb', 'a', 'ccc']",
      "items": [
       {
-       "ref": "0x24d0cebd380"
+       "ref": "0x21642cdd440"
       },
       {
        "ref": "0x7ffd7f2c3e40"
       },
       {
-       "ref": "0x24d0cebd410"
+       "ref": "0x21642cdd4d0"
       }
      ]
     },
-    "0x24d0cebd380": {
-     "id": "0x24d0cebd380",
+    "0x21642cdd440": {
+     "id": "0x21642cdd440",
      "type": "str",
      "repr": "'bb'"
     },
@@ -2170,8 +2170,8 @@
      "type": "str",
      "repr": "'a'"
     },
-    "0x24d0cebd410": {
-     "id": "0x24d0cebd410",
+    "0x21642cdd4d0": {
+     "id": "0x21642cdd4d0",
      "type": "str",
      "repr": "'ccc'"
     }
@@ -2188,19 +2188,19 @@
      "line": 11,
      "locals": {
       "square": {
-       "ref": "0x24d0ceac9a0"
+       "ref": "0x21642ccc9a0"
       },
       "sq": {
-       "ref": "0x24d0ceacae0"
+       "ref": "0x21642cccae0"
       },
       "f": {
-       "ref": "0x24d0ceac9a0"
+       "ref": "0x21642ccc9a0"
       },
       "ops": {
-       "ref": "0x24d0cec9c40"
+       "ref": "0x21642ce9c80"
       },
       "words": {
-       "ref": "0x24d0cc8c5c0"
+       "ref": "0x21642aac5c0"
       }
      }
     },
@@ -2209,83 +2209,83 @@
      "line": 11,
      "locals": {
       "w": {
-       "ref": "0x24d0cebd410"
+       "ref": "0x21642cdd4d0"
       }
      }
     }
    ],
    "heap": {
-    "0x24d0ceac9a0": {
-     "id": "0x24d0ceac9a0",
+    "0x21642ccc9a0": {
+     "id": "0x21642ccc9a0",
      "type": "function",
      "repr": "square"
     },
-    "0x24d0ceacae0": {
-     "id": "0x24d0ceacae0",
+    "0x21642cccae0": {
+     "id": "0x21642cccae0",
      "type": "function",
      "repr": "<lambda>"
     },
-    "0x24d0cec9c40": {
-     "id": "0x24d0cec9c40",
+    "0x21642ce9c80": {
+     "id": "0x21642ce9c80",
      "type": "dict",
-     "repr": "{'더하기': <function <lambda> at 0x0000024D0CEACB8…",
+     "repr": "{'더하기': <function <lambda> at 0x0000021642CCCB8…",
      "entries": [
       [
        {
-        "ref": "0x24d0ceb60b0"
+        "ref": "0x21642cd6150"
        },
        {
-        "ref": "0x24d0ceacb80"
+        "ref": "0x21642cccb80"
        }
       ],
       [
        {
-        "ref": "0x24d0ceb6100"
+        "ref": "0x21642cd61a0"
        },
        {
-        "ref": "0x24d0ceacc20"
+        "ref": "0x21642cccc20"
        }
       ]
      ]
     },
-    "0x24d0ceb60b0": {
-     "id": "0x24d0ceb60b0",
+    "0x21642cd6150": {
+     "id": "0x21642cd6150",
      "type": "str",
      "repr": "'더하기'"
     },
-    "0x24d0ceacb80": {
-     "id": "0x24d0ceacb80",
+    "0x21642cccb80": {
+     "id": "0x21642cccb80",
      "type": "function",
      "repr": "<lambda>"
     },
-    "0x24d0ceb6100": {
-     "id": "0x24d0ceb6100",
+    "0x21642cd61a0": {
+     "id": "0x21642cd61a0",
      "type": "str",
      "repr": "'곱하기'"
     },
-    "0x24d0ceacc20": {
-     "id": "0x24d0ceacc20",
+    "0x21642cccc20": {
+     "id": "0x21642cccc20",
      "type": "function",
      "repr": "<lambda>"
     },
-    "0x24d0cc8c5c0": {
-     "id": "0x24d0cc8c5c0",
+    "0x21642aac5c0": {
+     "id": "0x21642aac5c0",
      "type": "list",
      "repr": "['bb', 'a', 'ccc']",
      "items": [
       {
-       "ref": "0x24d0cebd380"
+       "ref": "0x21642cdd440"
       },
       {
        "ref": "0x7ffd7f2c3e40"
       },
       {
-       "ref": "0x24d0cebd410"
+       "ref": "0x21642cdd4d0"
       }
      ]
     },
-    "0x24d0cebd380": {
-     "id": "0x24d0cebd380",
+    "0x21642cdd440": {
+     "id": "0x21642cdd440",
      "type": "str",
      "repr": "'bb'"
     },
@@ -2294,8 +2294,8 @@
      "type": "str",
      "repr": "'a'"
     },
-    "0x24d0cebd410": {
-     "id": "0x24d0cebd410",
+    "0x21642cdd4d0": {
+     "id": "0x21642cdd4d0",
      "type": "str",
      "repr": "'ccc'"
     }
@@ -2312,95 +2312,95 @@
      "line": 11,
      "locals": {
       "square": {
-       "ref": "0x24d0ceac9a0"
+       "ref": "0x21642ccc9a0"
       },
       "sq": {
-       "ref": "0x24d0ceacae0"
+       "ref": "0x21642cccae0"
       },
       "f": {
-       "ref": "0x24d0ceac9a0"
+       "ref": "0x21642ccc9a0"
       },
       "ops": {
-       "ref": "0x24d0cec9c40"
+       "ref": "0x21642ce9c80"
       },
       "words": {
-       "ref": "0x24d0cc8c5c0"
+       "ref": "0x21642aac5c0"
       }
      }
     }
    ],
    "heap": {
-    "0x24d0ceac9a0": {
-     "id": "0x24d0ceac9a0",
+    "0x21642ccc9a0": {
+     "id": "0x21642ccc9a0",
      "type": "function",
      "repr": "square"
     },
-    "0x24d0ceacae0": {
-     "id": "0x24d0ceacae0",
+    "0x21642cccae0": {
+     "id": "0x21642cccae0",
      "type": "function",
      "repr": "<lambda>"
     },
-    "0x24d0cec9c40": {
-     "id": "0x24d0cec9c40",
+    "0x21642ce9c80": {
+     "id": "0x21642ce9c80",
      "type": "dict",
-     "repr": "{'더하기': <function <lambda> at 0x0000024D0CEACB8…",
+     "repr": "{'더하기': <function <lambda> at 0x0000021642CCCB8…",
      "entries": [
       [
        {
-        "ref": "0x24d0ceb60b0"
+        "ref": "0x21642cd6150"
        },
        {
-        "ref": "0x24d0ceacb80"
+        "ref": "0x21642cccb80"
        }
       ],
       [
        {
-        "ref": "0x24d0ceb6100"
+        "ref": "0x21642cd61a0"
        },
        {
-        "ref": "0x24d0ceacc20"
+        "ref": "0x21642cccc20"
        }
       ]
      ]
     },
-    "0x24d0ceb60b0": {
-     "id": "0x24d0ceb60b0",
+    "0x21642cd6150": {
+     "id": "0x21642cd6150",
      "type": "str",
      "repr": "'더하기'"
     },
-    "0x24d0ceacb80": {
-     "id": "0x24d0ceacb80",
+    "0x21642cccb80": {
+     "id": "0x21642cccb80",
      "type": "function",
      "repr": "<lambda>"
     },
-    "0x24d0ceb6100": {
-     "id": "0x24d0ceb6100",
+    "0x21642cd61a0": {
+     "id": "0x21642cd61a0",
      "type": "str",
      "repr": "'곱하기'"
     },
-    "0x24d0ceacc20": {
-     "id": "0x24d0ceacc20",
+    "0x21642cccc20": {
+     "id": "0x21642cccc20",
      "type": "function",
      "repr": "<lambda>"
     },
-    "0x24d0cc8c5c0": {
-     "id": "0x24d0cc8c5c0",
+    "0x21642aac5c0": {
+     "id": "0x21642aac5c0",
      "type": "list",
      "repr": "['bb', 'a', 'ccc']",
      "items": [
       {
-       "ref": "0x24d0cebd380"
+       "ref": "0x21642cdd440"
       },
       {
        "ref": "0x7ffd7f2c3e40"
       },
       {
-       "ref": "0x24d0cebd410"
+       "ref": "0x21642cdd4d0"
       }
      ]
     },
-    "0x24d0cebd380": {
-     "id": "0x24d0cebd380",
+    "0x21642cdd440": {
+     "id": "0x21642cdd440",
      "type": "str",
      "repr": "'bb'"
     },
@@ -2409,8 +2409,8 @@
      "type": "str",
      "repr": "'a'"
     },
-    "0x24d0cebd410": {
-     "id": "0x24d0cebd410",
+    "0x21642cdd4d0": {
+     "id": "0x21642cdd4d0",
      "type": "str",
      "repr": "'ccc'"
     }

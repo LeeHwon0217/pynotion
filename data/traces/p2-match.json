@@ -37,14 +37,14 @@
      "line": 2,
      "locals": {
       "command": {
-       "ref": "0x1fe4b5c1bf0"
+       "ref": "0x1780a0c1c30"
       }
      }
     }
    ],
    "heap": {
-    "0x1fe4b5c1bf0": {
-     "id": "0x1fe4b5c1bf0",
+    "0x1780a0c1c30": {
+     "id": "0x1780a0c1c30",
      "type": "str",
      "repr": "'go north'"
     }
@@ -61,14 +61,14 @@
      "line": 3,
      "locals": {
       "command": {
-       "ref": "0x1fe4b5c1bf0"
+       "ref": "0x1780a0c1c30"
       }
      }
     }
    ],
    "heap": {
-    "0x1fe4b5c1bf0": {
-     "id": "0x1fe4b5c1bf0",
+    "0x1780a0c1c30": {
+     "id": "0x1780a0c1c30",
      "type": "str",
      "repr": "'go north'"
     }
@@ -84,14 +84,14 @@
      "line": 5,
      "locals": {
       "command": {
-       "ref": "0x1fe4b5c1bf0"
+       "ref": "0x1780a0c1c30"
       }
      }
     }
    ],
    "heap": {
-    "0x1fe4b5c1bf0": {
-     "id": "0x1fe4b5c1bf0",
+    "0x1780a0c1c30": {
+     "id": "0x1780a0c1c30",
      "type": "str",
      "repr": "'go north'"
     }
@@ -108,22 +108,22 @@
      "line": 6,
      "locals": {
       "command": {
-       "ref": "0x1fe4b5c1bf0"
+       "ref": "0x1780a0c1c30"
       },
       "direction": {
-       "ref": "0x1fe4b5bd020"
+       "ref": "0x1780a0bd0e0"
       }
      }
     }
    ],
    "heap": {
-    "0x1fe4b5c1bf0": {
-     "id": "0x1fe4b5c1bf0",
+    "0x1780a0c1c30": {
+     "id": "0x1780a0c1c30",
      "type": "str",
      "repr": "'go north'"
     },
-    "0x1fe4b5bd020": {
-     "id": "0x1fe4b5bd020",
+    "0x1780a0bd0e0": {
+     "id": "0x1780a0bd0e0",
      "type": "str",
      "repr": "'north'"
     }
@@ -139,22 +139,22 @@
      "line": 6,
      "locals": {
       "command": {
-       "ref": "0x1fe4b5c1bf0"
+       "ref": "0x1780a0c1c30"
       },
       "direction": {
-       "ref": "0x1fe4b5bd020"
+       "ref": "0x1780a0bd0e0"
       }
      }
     }
    ],
    "heap": {
-    "0x1fe4b5c1bf0": {
-     "id": "0x1fe4b5c1bf0",
+    "0x1780a0c1c30": {
+     "id": "0x1780a0c1c30",
      "type": "str",
      "repr": "'go north'"
     },
-    "0x1fe4b5bd020": {
-     "id": "0x1fe4b5bd020",
+    "0x1780a0bd0e0": {
+     "id": "0x1780a0bd0e0",
      "type": "str",
      "repr": "'north'"
     }

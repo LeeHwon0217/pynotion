@@ -1,0 +1,1726 @@
+{
+ "id": "p7-mro",
+ "code": "class A:\n    def who(self): return \"A\"\nclass B(A):\n    def who(self): return \"B→\" + super().who()\nclass C(A):\n    def who(self): return \"C→\" + super().who()\nclass D(B, C):\n    def who(self): return \"D→\" + super().who()\n\nprint(D.__mro__)\nprint(D().who())",
+ "steps": [
+  {
+   "line": 0,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 0,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "A",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "A",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "A",
+     "line": 2,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 2,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "A",
+     "line": 2,
+     "locals": {
+      "who": {
+       "ref": "0x1b07d52ccc0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1b07d52ccc0": {
+     "id": "0x1b07d52ccc0",
+     "type": "function",
+     "repr": "who"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 3,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 3,
+     "locals": {
+      "A": {
+       "ref": "0x1b07d3a46f0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1b07d3a46f0": {
+     "id": "0x1b07d3a46f0",
+     "type": "type",
+     "repr": "A"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 3,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 3,
+     "locals": {
+      "A": {
+       "ref": "0x1b07d3a46f0"
+      }
+     }
+    },
+    {
+     "fn": "B",
+     "line": 3,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x1b07d3a46f0": {
+     "id": "0x1b07d3a46f0",
+     "type": "type",
+     "repr": "A"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 3,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 3,
+     "locals": {
+      "A": {
+       "ref": "0x1b07d3a46f0"
+      }
+     }
+    },
+    {
+     "fn": "B",
+     "line": 3,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x1b07d3a46f0": {
+     "id": "0x1b07d3a46f0",
+     "type": "type",
+     "repr": "A"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 3,
+     "locals": {
+      "A": {
+       "ref": "0x1b07d3a46f0"
+      }
+     }
+    },
+    {
+     "fn": "B",
+     "line": 4,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x1b07d3a46f0": {
+     "id": "0x1b07d3a46f0",
+     "type": "type",
+     "repr": "A"
+    }
+   },
+   "stdout": "",
+   "note": "super() 는 '부모' 가 아니라 'MRO 에서 나 다음' 을 부른다"
+  },
+  {
+   "line": 4,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 3,
+     "locals": {
+      "A": {
+       "ref": "0x1b07d3a46f0"
+      }
+     }
+    },
+    {
+     "fn": "B",
+     "line": 4,
+     "locals": {
+      "who": {
+       "ref": "0x1b07d52cea0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1b07d3a46f0": {
+     "id": "0x1b07d3a46f0",
+     "type": "type",
+     "repr": "A"
+    },
+    "0x1b07d52cea0": {
+     "id": "0x1b07d52cea0",
+     "type": "function",
+     "repr": "who"
+    }
+   },
+   "stdout": "",
+   "retval": "<cell at 0x000001B07D53D1B0: empty>"
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "A": {
+       "ref": "0x1b07d3a46f0"
+      },
+      "B": {
+       "ref": "0x1b07d3a4ad0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1b07d3a46f0": {
+     "id": "0x1b07d3a46f0",
+     "type": "type",
+     "repr": "A"
+    },
+    "0x1b07d3a4ad0": {
+     "id": "0x1b07d3a4ad0",
+     "type": "type",
+     "repr": "B"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 5,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "A": {
+       "ref": "0x1b07d3a46f0"
+      },
+      "B": {
+       "ref": "0x1b07d3a4ad0"
+      }
+     }
+    },
+    {
+     "fn": "C",
+     "line": 5,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x1b07d3a46f0": {
+     "id": "0x1b07d3a46f0",
+     "type": "type",
+     "repr": "A"
+    },
+    "0x1b07d3a4ad0": {
+     "id": "0x1b07d3a4ad0",
+     "type": "type",
+     "repr": "B"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "A": {
+       "ref": "0x1b07d3a46f0"
+      },
+      "B": {
+       "ref": "0x1b07d3a4ad0"
+      }
+     }
+    },
+    {
+     "fn": "C",
+     "line": 5,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x1b07d3a46f0": {
+     "id": "0x1b07d3a46f0",
+     "type": "type",
+     "repr": "A"
+    },
+    "0x1b07d3a4ad0": {
+     "id": "0x1b07d3a4ad0",
+     "type": "type",
+     "repr": "B"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 6,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "A": {
+       "ref": "0x1b07d3a46f0"
+      },
+      "B": {
+       "ref": "0x1b07d3a4ad0"
+      }
+     }
+    },
+    {
+     "fn": "C",
+     "line": 6,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x1b07d3a46f0": {
+     "id": "0x1b07d3a46f0",
+     "type": "type",
+     "repr": "A"
+    },
+    "0x1b07d3a4ad0": {
+     "id": "0x1b07d3a4ad0",
+     "type": "type",
+     "repr": "B"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 6,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "A": {
+       "ref": "0x1b07d3a46f0"
+      },
+      "B": {
+       "ref": "0x1b07d3a4ad0"
+      }
+     }
+    },
+    {
+     "fn": "C",
+     "line": 6,
+     "locals": {
+      "who": {
+       "ref": "0x1b07d52cfe0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1b07d3a46f0": {
+     "id": "0x1b07d3a46f0",
+     "type": "type",
+     "repr": "A"
+    },
+    "0x1b07d3a4ad0": {
+     "id": "0x1b07d3a4ad0",
+     "type": "type",
+     "repr": "B"
+    },
+    "0x1b07d52cfe0": {
+     "id": "0x1b07d52cfe0",
+     "type": "function",
+     "repr": "who"
+    }
+   },
+   "stdout": "",
+   "retval": "<cell at 0x000001B07D53D1E0: empty>"
+  },
+  {
+   "line": 7,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 7,
+     "locals": {
+      "A": {
+       "ref": "0x1b07d3a46f0"
+      },
+      "B": {
+       "ref": "0x1b07d3a4ad0"
+      },
+      "C": {
+       "ref": "0x1b07d3a3390"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1b07d3a46f0": {
+     "id": "0x1b07d3a46f0",
+     "type": "type",
+     "repr": "A"
+    },
+    "0x1b07d3a4ad0": {
+     "id": "0x1b07d3a4ad0",
+     "type": "type",
+     "repr": "B"
+    },
+    "0x1b07d3a3390": {
+     "id": "0x1b07d3a3390",
+     "type": "type",
+     "repr": "C"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 7,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 7,
+     "locals": {
+      "A": {
+       "ref": "0x1b07d3a46f0"
+      },
+      "B": {
+       "ref": "0x1b07d3a4ad0"
+      },
+      "C": {
+       "ref": "0x1b07d3a3390"
+      }
+     }
+    },
+    {
+     "fn": "D",
+     "line": 7,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x1b07d3a46f0": {
+     "id": "0x1b07d3a46f0",
+     "type": "type",
+     "repr": "A"
+    },
+    "0x1b07d3a4ad0": {
+     "id": "0x1b07d3a4ad0",
+     "type": "type",
+     "repr": "B"
+    },
+    "0x1b07d3a3390": {
+     "id": "0x1b07d3a3390",
+     "type": "type",
+     "repr": "C"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 7,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 7,
+     "locals": {
+      "A": {
+       "ref": "0x1b07d3a46f0"
+      },
+      "B": {
+       "ref": "0x1b07d3a4ad0"
+      },
+      "C": {
+       "ref": "0x1b07d3a3390"
+      }
+     }
+    },
+    {
+     "fn": "D",
+     "line": 7,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x1b07d3a46f0": {
+     "id": "0x1b07d3a46f0",
+     "type": "type",
+     "repr": "A"
+    },
+    "0x1b07d3a4ad0": {
+     "id": "0x1b07d3a4ad0",
+     "type": "type",
+     "repr": "B"
+    },
+    "0x1b07d3a3390": {
+     "id": "0x1b07d3a3390",
+     "type": "type",
+     "repr": "C"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 8,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 7,
+     "locals": {
+      "A": {
+       "ref": "0x1b07d3a46f0"
+      },
+      "B": {
+       "ref": "0x1b07d3a4ad0"
+      },
+      "C": {
+       "ref": "0x1b07d3a3390"
+      }
+     }
+    },
+    {
+     "fn": "D",
+     "line": 8,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x1b07d3a46f0": {
+     "id": "0x1b07d3a46f0",
+     "type": "type",
+     "repr": "A"
+    },
+    "0x1b07d3a4ad0": {
+     "id": "0x1b07d3a4ad0",
+     "type": "type",
+     "repr": "B"
+    },
+    "0x1b07d3a3390": {
+     "id": "0x1b07d3a3390",
+     "type": "type",
+     "repr": "C"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 8,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 7,
+     "locals": {
+      "A": {
+       "ref": "0x1b07d3a46f0"
+      },
+      "B": {
+       "ref": "0x1b07d3a4ad0"
+      },
+      "C": {
+       "ref": "0x1b07d3a3390"
+      }
+     }
+    },
+    {
+     "fn": "D",
+     "line": 8,
+     "locals": {
+      "who": {
+       "ref": "0x1b07d52d080"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1b07d3a46f0": {
+     "id": "0x1b07d3a46f0",
+     "type": "type",
+     "repr": "A"
+    },
+    "0x1b07d3a4ad0": {
+     "id": "0x1b07d3a4ad0",
+     "type": "type",
+     "repr": "B"
+    },
+    "0x1b07d3a3390": {
+     "id": "0x1b07d3a3390",
+     "type": "type",
+     "repr": "C"
+    },
+    "0x1b07d52d080": {
+     "id": "0x1b07d52d080",
+     "type": "function",
+     "repr": "who"
+    }
+   },
+   "stdout": "",
+   "retval": "<cell at 0x000001B07D53D3C0: empty>"
+  },
+  {
+   "line": 10,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 10,
+     "locals": {
+      "A": {
+       "ref": "0x1b07d3a46f0"
+      },
+      "B": {
+       "ref": "0x1b07d3a4ad0"
+      },
+      "C": {
+       "ref": "0x1b07d3a3390"
+      },
+      "D": {
+       "ref": "0x1b07d3a5a50"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1b07d3a46f0": {
+     "id": "0x1b07d3a46f0",
+     "type": "type",
+     "repr": "A"
+    },
+    "0x1b07d3a4ad0": {
+     "id": "0x1b07d3a4ad0",
+     "type": "type",
+     "repr": "B"
+    },
+    "0x1b07d3a3390": {
+     "id": "0x1b07d3a3390",
+     "type": "type",
+     "repr": "C"
+    },
+    "0x1b07d3a5a50": {
+     "id": "0x1b07d3a5a50",
+     "type": "type",
+     "repr": "D"
+    }
+   },
+   "stdout": "",
+   "note": "D → B → C → A → object. A 는 한 번만, 맨 뒤에"
+  },
+  {
+   "line": 11,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 11,
+     "locals": {
+      "A": {
+       "ref": "0x1b07d3a46f0"
+      },
+      "B": {
+       "ref": "0x1b07d3a4ad0"
+      },
+      "C": {
+       "ref": "0x1b07d3a3390"
+      },
+      "D": {
+       "ref": "0x1b07d3a5a50"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1b07d3a46f0": {
+     "id": "0x1b07d3a46f0",
+     "type": "type",
+     "repr": "A"
+    },
+    "0x1b07d3a4ad0": {
+     "id": "0x1b07d3a4ad0",
+     "type": "type",
+     "repr": "B"
+    },
+    "0x1b07d3a3390": {
+     "id": "0x1b07d3a3390",
+     "type": "type",
+     "repr": "C"
+    },
+    "0x1b07d3a5a50": {
+     "id": "0x1b07d3a5a50",
+     "type": "type",
+     "repr": "D"
+    }
+   },
+   "stdout": "(<class '__main__.D'>, <class '__main__.B'>, <class '__main__.C'>, <class '__main__.A'>, <class 'object'>)\n",
+   "note": "B 의 super() 가 A 가 아니라 C 를 부른다! MRO 순서를 따라가기 때문"
+  },
+  {
+   "line": 8,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 11,
+     "locals": {
+      "A": {
+       "ref": "0x1b07d3a46f0"
+      },
+      "B": {
+       "ref": "0x1b07d3a4ad0"
+      },
+      "C": {
+       "ref": "0x1b07d3a3390"
+      },
+      "D": {
+       "ref": "0x1b07d3a5a50"
+      }
+     }
+    },
+    {
+     "fn": "who",
+     "line": 8,
+     "locals": {
+      "self": {
+       "ref": "0x1b07d53d640"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1b07d3a46f0": {
+     "id": "0x1b07d3a46f0",
+     "type": "type",
+     "repr": "A"
+    },
+    "0x1b07d3a4ad0": {
+     "id": "0x1b07d3a4ad0",
+     "type": "type",
+     "repr": "B"
+    },
+    "0x1b07d3a3390": {
+     "id": "0x1b07d3a3390",
+     "type": "type",
+     "repr": "C"
+    },
+    "0x1b07d3a5a50": {
+     "id": "0x1b07d3a5a50",
+     "type": "type",
+     "repr": "D"
+    },
+    "0x1b07d53d640": {
+     "id": "0x1b07d53d640",
+     "type": "D",
+     "repr": "<__main__.D object at 0x000001B07D53D640>",
+     "fields": {}
+    }
+   },
+   "stdout": "(<class '__main__.D'>, <class '__main__.B'>, <class '__main__.C'>, <class '__main__.A'>, <class 'object'>)\n"
+  },
+  {
+   "line": 8,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 11,
+     "locals": {
+      "A": {
+       "ref": "0x1b07d3a46f0"
+      },
+      "B": {
+       "ref": "0x1b07d3a4ad0"
+      },
+      "C": {
+       "ref": "0x1b07d3a3390"
+      },
+      "D": {
+       "ref": "0x1b07d3a5a50"
+      }
+     }
+    },
+    {
+     "fn": "who",
+     "line": 8,
+     "locals": {
+      "self": {
+       "ref": "0x1b07d53d640"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1b07d3a46f0": {
+     "id": "0x1b07d3a46f0",
+     "type": "type",
+     "repr": "A"
+    },
+    "0x1b07d3a4ad0": {
+     "id": "0x1b07d3a4ad0",
+     "type": "type",
+     "repr": "B"
+    },
+    "0x1b07d3a3390": {
+     "id": "0x1b07d3a3390",
+     "type": "type",
+     "repr": "C"
+    },
+    "0x1b07d3a5a50": {
+     "id": "0x1b07d3a5a50",
+     "type": "type",
+     "repr": "D"
+    },
+    "0x1b07d53d640": {
+     "id": "0x1b07d53d640",
+     "type": "D",
+     "repr": "<__main__.D object at 0x000001B07D53D640>",
+     "fields": {}
+    }
+   },
+   "stdout": "(<class '__main__.D'>, <class '__main__.B'>, <class '__main__.C'>, <class '__main__.A'>, <class 'object'>)\n"
+  },
+  {
+   "line": 4,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 11,
+     "locals": {
+      "A": {
+       "ref": "0x1b07d3a46f0"
+      },
+      "B": {
+       "ref": "0x1b07d3a4ad0"
+      },
+      "C": {
+       "ref": "0x1b07d3a3390"
+      },
+      "D": {
+       "ref": "0x1b07d3a5a50"
+      }
+     }
+    },
+    {
+     "fn": "who",
+     "line": 8,
+     "locals": {
+      "self": {
+       "ref": "0x1b07d53d640"
+      }
+     }
+    },
+    {
+     "fn": "who",
+     "line": 4,
+     "locals": {
+      "self": {
+       "ref": "0x1b07d53d640"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1b07d3a46f0": {
+     "id": "0x1b07d3a46f0",
+     "type": "type",
+     "repr": "A"
+    },
+    "0x1b07d3a4ad0": {
+     "id": "0x1b07d3a4ad0",
+     "type": "type",
+     "repr": "B"
+    },
+    "0x1b07d3a3390": {
+     "id": "0x1b07d3a3390",
+     "type": "type",
+     "repr": "C"
+    },
+    "0x1b07d3a5a50": {
+     "id": "0x1b07d3a5a50",
+     "type": "type",
+     "repr": "D"
+    },
+    "0x1b07d53d640": {
+     "id": "0x1b07d53d640",
+     "type": "D",
+     "repr": "<__main__.D object at 0x000001B07D53D640>",
+     "fields": {}
+    }
+   },
+   "stdout": "(<class '__main__.D'>, <class '__main__.B'>, <class '__main__.C'>, <class '__main__.A'>, <class 'object'>)\n",
+   "note": "super() 는 '부모' 가 아니라 'MRO 에서 나 다음' 을 부른다"
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 11,
+     "locals": {
+      "A": {
+       "ref": "0x1b07d3a46f0"
+      },
+      "B": {
+       "ref": "0x1b07d3a4ad0"
+      },
+      "C": {
+       "ref": "0x1b07d3a3390"
+      },
+      "D": {
+       "ref": "0x1b07d3a5a50"
+      }
+     }
+    },
+    {
+     "fn": "who",
+     "line": 8,
+     "locals": {
+      "self": {
+       "ref": "0x1b07d53d640"
+      }
+     }
+    },
+    {
+     "fn": "who",
+     "line": 4,
+     "locals": {
+      "self": {
+       "ref": "0x1b07d53d640"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1b07d3a46f0": {
+     "id": "0x1b07d3a46f0",
+     "type": "type",
+     "repr": "A"
+    },
+    "0x1b07d3a4ad0": {
+     "id": "0x1b07d3a4ad0",
+     "type": "type",
+     "repr": "B"
+    },
+    "0x1b07d3a3390": {
+     "id": "0x1b07d3a3390",
+     "type": "type",
+     "repr": "C"
+    },
+    "0x1b07d3a5a50": {
+     "id": "0x1b07d3a5a50",
+     "type": "type",
+     "repr": "D"
+    },
+    "0x1b07d53d640": {
+     "id": "0x1b07d53d640",
+     "type": "D",
+     "repr": "<__main__.D object at 0x000001B07D53D640>",
+     "fields": {}
+    }
+   },
+   "stdout": "(<class '__main__.D'>, <class '__main__.B'>, <class '__main__.C'>, <class '__main__.A'>, <class 'object'>)\n",
+   "note": "super() 는 '부모' 가 아니라 'MRO 에서 나 다음' 을 부른다"
+  },
+  {
+   "line": 6,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 11,
+     "locals": {
+      "A": {
+       "ref": "0x1b07d3a46f0"
+      },
+      "B": {
+       "ref": "0x1b07d3a4ad0"
+      },
+      "C": {
+       "ref": "0x1b07d3a3390"
+      },
+      "D": {
+       "ref": "0x1b07d3a5a50"
+      }
+     }
+    },
+    {
+     "fn": "who",
+     "line": 8,
+     "locals": {
+      "self": {
+       "ref": "0x1b07d53d640"
+      }
+     }
+    },
+    {
+     "fn": "who",
+     "line": 4,
+     "locals": {
+      "self": {
+       "ref": "0x1b07d53d640"
+      }
+     }
+    },
+    {
+     "fn": "who",
+     "line": 6,
+     "locals": {
+      "self": {
+       "ref": "0x1b07d53d640"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1b07d3a46f0": {
+     "id": "0x1b07d3a46f0",
+     "type": "type",
+     "repr": "A"
+    },
+    "0x1b07d3a4ad0": {
+     "id": "0x1b07d3a4ad0",
+     "type": "type",
+     "repr": "B"
+    },
+    "0x1b07d3a3390": {
+     "id": "0x1b07d3a3390",
+     "type": "type",
+     "repr": "C"
+    },
+    "0x1b07d3a5a50": {
+     "id": "0x1b07d3a5a50",
+     "type": "type",
+     "repr": "D"
+    },
+    "0x1b07d53d640": {
+     "id": "0x1b07d53d640",
+     "type": "D",
+     "repr": "<__main__.D object at 0x000001B07D53D640>",
+     "fields": {}
+    }
+   },
+   "stdout": "(<class '__main__.D'>, <class '__main__.B'>, <class '__main__.C'>, <class '__main__.A'>, <class 'object'>)\n"
+  },
+  {
+   "line": 6,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 11,
+     "locals": {
+      "A": {
+       "ref": "0x1b07d3a46f0"
+      },
+      "B": {
+       "ref": "0x1b07d3a4ad0"
+      },
+      "C": {
+       "ref": "0x1b07d3a3390"
+      },
+      "D": {
+       "ref": "0x1b07d3a5a50"
+      }
+     }
+    },
+    {
+     "fn": "who",
+     "line": 8,
+     "locals": {
+      "self": {
+       "ref": "0x1b07d53d640"
+      }
+     }
+    },
+    {
+     "fn": "who",
+     "line": 4,
+     "locals": {
+      "self": {
+       "ref": "0x1b07d53d640"
+      }
+     }
+    },
+    {
+     "fn": "who",
+     "line": 6,
+     "locals": {
+      "self": {
+       "ref": "0x1b07d53d640"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1b07d3a46f0": {
+     "id": "0x1b07d3a46f0",
+     "type": "type",
+     "repr": "A"
+    },
+    "0x1b07d3a4ad0": {
+     "id": "0x1b07d3a4ad0",
+     "type": "type",
+     "repr": "B"
+    },
+    "0x1b07d3a3390": {
+     "id": "0x1b07d3a3390",
+     "type": "type",
+     "repr": "C"
+    },
+    "0x1b07d3a5a50": {
+     "id": "0x1b07d3a5a50",
+     "type": "type",
+     "repr": "D"
+    },
+    "0x1b07d53d640": {
+     "id": "0x1b07d53d640",
+     "type": "D",
+     "repr": "<__main__.D object at 0x000001B07D53D640>",
+     "fields": {}
+    }
+   },
+   "stdout": "(<class '__main__.D'>, <class '__main__.B'>, <class '__main__.C'>, <class '__main__.A'>, <class 'object'>)\n"
+  },
+  {
+   "line": 2,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 11,
+     "locals": {
+      "A": {
+       "ref": "0x1b07d3a46f0"
+      },
+      "B": {
+       "ref": "0x1b07d3a4ad0"
+      },
+      "C": {
+       "ref": "0x1b07d3a3390"
+      },
+      "D": {
+       "ref": "0x1b07d3a5a50"
+      }
+     }
+    },
+    {
+     "fn": "who",
+     "line": 8,
+     "locals": {
+      "self": {
+       "ref": "0x1b07d53d640"
+      }
+     }
+    },
+    {
+     "fn": "who",
+     "line": 4,
+     "locals": {
+      "self": {
+       "ref": "0x1b07d53d640"
+      }
+     }
+    },
+    {
+     "fn": "who",
+     "line": 6,
+     "locals": {
+      "self": {
+       "ref": "0x1b07d53d640"
+      }
+     }
+    },
+    {
+     "fn": "who",
+     "line": 2,
+     "locals": {
+      "self": {
+       "ref": "0x1b07d53d640"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1b07d3a46f0": {
+     "id": "0x1b07d3a46f0",
+     "type": "type",
+     "repr": "A"
+    },
+    "0x1b07d3a4ad0": {
+     "id": "0x1b07d3a4ad0",
+     "type": "type",
+     "repr": "B"
+    },
+    "0x1b07d3a3390": {
+     "id": "0x1b07d3a3390",
+     "type": "type",
+     "repr": "C"
+    },
+    "0x1b07d3a5a50": {
+     "id": "0x1b07d3a5a50",
+     "type": "type",
+     "repr": "D"
+    },
+    "0x1b07d53d640": {
+     "id": "0x1b07d53d640",
+     "type": "D",
+     "repr": "<__main__.D object at 0x000001B07D53D640>",
+     "fields": {}
+    }
+   },
+   "stdout": "(<class '__main__.D'>, <class '__main__.B'>, <class '__main__.C'>, <class '__main__.A'>, <class 'object'>)\n"
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 11,
+     "locals": {
+      "A": {
+       "ref": "0x1b07d3a46f0"
+      },
+      "B": {
+       "ref": "0x1b07d3a4ad0"
+      },
+      "C": {
+       "ref": "0x1b07d3a3390"
+      },
+      "D": {
+       "ref": "0x1b07d3a5a50"
+      }
+     }
+    },
+    {
+     "fn": "who",
+     "line": 8,
+     "locals": {
+      "self": {
+       "ref": "0x1b07d53d640"
+      }
+     }
+    },
+    {
+     "fn": "who",
+     "line": 4,
+     "locals": {
+      "self": {
+       "ref": "0x1b07d53d640"
+      }
+     }
+    },
+    {
+     "fn": "who",
+     "line": 6,
+     "locals": {
+      "self": {
+       "ref": "0x1b07d53d640"
+      }
+     }
+    },
+    {
+     "fn": "who",
+     "line": 2,
+     "locals": {
+      "self": {
+       "ref": "0x1b07d53d640"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1b07d3a46f0": {
+     "id": "0x1b07d3a46f0",
+     "type": "type",
+     "repr": "A"
+    },
+    "0x1b07d3a4ad0": {
+     "id": "0x1b07d3a4ad0",
+     "type": "type",
+     "repr": "B"
+    },
+    "0x1b07d3a3390": {
+     "id": "0x1b07d3a3390",
+     "type": "type",
+     "repr": "C"
+    },
+    "0x1b07d3a5a50": {
+     "id": "0x1b07d3a5a50",
+     "type": "type",
+     "repr": "D"
+    },
+    "0x1b07d53d640": {
+     "id": "0x1b07d53d640",
+     "type": "D",
+     "repr": "<__main__.D object at 0x000001B07D53D640>",
+     "fields": {}
+    }
+   },
+   "stdout": "(<class '__main__.D'>, <class '__main__.B'>, <class '__main__.C'>, <class '__main__.A'>, <class 'object'>)\n"
+  },
+  {
+   "line": 2,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 11,
+     "locals": {
+      "A": {
+       "ref": "0x1b07d3a46f0"
+      },
+      "B": {
+       "ref": "0x1b07d3a4ad0"
+      },
+      "C": {
+       "ref": "0x1b07d3a3390"
+      },
+      "D": {
+       "ref": "0x1b07d3a5a50"
+      }
+     }
+    },
+    {
+     "fn": "who",
+     "line": 8,
+     "locals": {
+      "self": {
+       "ref": "0x1b07d53d640"
+      }
+     }
+    },
+    {
+     "fn": "who",
+     "line": 4,
+     "locals": {
+      "self": {
+       "ref": "0x1b07d53d640"
+      }
+     }
+    },
+    {
+     "fn": "who",
+     "line": 6,
+     "locals": {
+      "self": {
+       "ref": "0x1b07d53d640"
+      }
+     }
+    },
+    {
+     "fn": "who",
+     "line": 2,
+     "locals": {
+      "self": {
+       "ref": "0x1b07d53d640"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1b07d3a46f0": {
+     "id": "0x1b07d3a46f0",
+     "type": "type",
+     "repr": "A"
+    },
+    "0x1b07d3a4ad0": {
+     "id": "0x1b07d3a4ad0",
+     "type": "type",
+     "repr": "B"
+    },
+    "0x1b07d3a3390": {
+     "id": "0x1b07d3a3390",
+     "type": "type",
+     "repr": "C"
+    },
+    "0x1b07d3a5a50": {
+     "id": "0x1b07d3a5a50",
+     "type": "type",
+     "repr": "D"
+    },
+    "0x1b07d53d640": {
+     "id": "0x1b07d53d640",
+     "type": "D",
+     "repr": "<__main__.D object at 0x000001B07D53D640>",
+     "fields": {}
+    }
+   },
+   "stdout": "(<class '__main__.D'>, <class '__main__.B'>, <class '__main__.C'>, <class '__main__.A'>, <class 'object'>)\n",
+   "retval": "'A'"
+  },
+  {
+   "line": 6,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 11,
+     "locals": {
+      "A": {
+       "ref": "0x1b07d3a46f0"
+      },
+      "B": {
+       "ref": "0x1b07d3a4ad0"
+      },
+      "C": {
+       "ref": "0x1b07d3a3390"
+      },
+      "D": {
+       "ref": "0x1b07d3a5a50"
+      }
+     }
+    },
+    {
+     "fn": "who",
+     "line": 8,
+     "locals": {
+      "self": {
+       "ref": "0x1b07d53d640"
+      }
+     }
+    },
+    {
+     "fn": "who",
+     "line": 4,
+     "locals": {
+      "self": {
+       "ref": "0x1b07d53d640"
+      }
+     }
+    },
+    {
+     "fn": "who",
+     "line": 6,
+     "locals": {
+      "self": {
+       "ref": "0x1b07d53d640"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1b07d3a46f0": {
+     "id": "0x1b07d3a46f0",
+     "type": "type",
+     "repr": "A"
+    },
+    "0x1b07d3a4ad0": {
+     "id": "0x1b07d3a4ad0",
+     "type": "type",
+     "repr": "B"
+    },
+    "0x1b07d3a3390": {
+     "id": "0x1b07d3a3390",
+     "type": "type",
+     "repr": "C"
+    },
+    "0x1b07d3a5a50": {
+     "id": "0x1b07d3a5a50",
+     "type": "type",
+     "repr": "D"
+    },
+    "0x1b07d53d640": {
+     "id": "0x1b07d53d640",
+     "type": "D",
+     "repr": "<__main__.D object at 0x000001B07D53D640>",
+     "fields": {}
+    }
+   },
+   "stdout": "(<class '__main__.D'>, <class '__main__.B'>, <class '__main__.C'>, <class '__main__.A'>, <class 'object'>)\n",
+   "retval": "'C→A'"
+  },
+  {
+   "line": 4,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 11,
+     "locals": {
+      "A": {
+       "ref": "0x1b07d3a46f0"
+      },
+      "B": {
+       "ref": "0x1b07d3a4ad0"
+      },
+      "C": {
+       "ref": "0x1b07d3a3390"
+      },
+      "D": {
+       "ref": "0x1b07d3a5a50"
+      }
+     }
+    },
+    {
+     "fn": "who",
+     "line": 8,
+     "locals": {
+      "self": {
+       "ref": "0x1b07d53d640"
+      }
+     }
+    },
+    {
+     "fn": "who",
+     "line": 4,
+     "locals": {
+      "self": {
+       "ref": "0x1b07d53d640"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1b07d3a46f0": {
+     "id": "0x1b07d3a46f0",
+     "type": "type",
+     "repr": "A"
+    },
+    "0x1b07d3a4ad0": {
+     "id": "0x1b07d3a4ad0",
+     "type": "type",
+     "repr": "B"
+    },
+    "0x1b07d3a3390": {
+     "id": "0x1b07d3a3390",
+     "type": "type",
+     "repr": "C"
+    },
+    "0x1b07d3a5a50": {
+     "id": "0x1b07d3a5a50",
+     "type": "type",
+     "repr": "D"
+    },
+    "0x1b07d53d640": {
+     "id": "0x1b07d53d640",
+     "type": "D",
+     "repr": "<__main__.D object at 0x000001B07D53D640>",
+     "fields": {}
+    }
+   },
+   "stdout": "(<class '__main__.D'>, <class '__main__.B'>, <class '__main__.C'>, <class '__main__.A'>, <class 'object'>)\n",
+   "retval": "'B→C→A'"
+  },
+  {
+   "line": 8,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 11,
+     "locals": {
+      "A": {
+       "ref": "0x1b07d3a46f0"
+      },
+      "B": {
+       "ref": "0x1b07d3a4ad0"
+      },
+      "C": {
+       "ref": "0x1b07d3a3390"
+      },
+      "D": {
+       "ref": "0x1b07d3a5a50"
+      }
+     }
+    },
+    {
+     "fn": "who",
+     "line": 8,
+     "locals": {
+      "self": {
+       "ref": "0x1b07d53d640"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1b07d3a46f0": {
+     "id": "0x1b07d3a46f0",
+     "type": "type",
+     "repr": "A"
+    },
+    "0x1b07d3a4ad0": {
+     "id": "0x1b07d3a4ad0",
+     "type": "type",
+     "repr": "B"
+    },
+    "0x1b07d3a3390": {
+     "id": "0x1b07d3a3390",
+     "type": "type",
+     "repr": "C"
+    },
+    "0x1b07d3a5a50": {
+     "id": "0x1b07d3a5a50",
+     "type": "type",
+     "repr": "D"
+    },
+    "0x1b07d53d640": {
+     "id": "0x1b07d53d640",
+     "type": "D",
+     "repr": "<__main__.D object at 0x000001B07D53D640>",
+     "fields": {}
+    }
+   },
+   "stdout": "(<class '__main__.D'>, <class '__main__.B'>, <class '__main__.C'>, <class '__main__.A'>, <class 'object'>)\n",
+   "retval": "'D→B→C→A'"
+  },
+  {
+   "line": 11,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 11,
+     "locals": {
+      "A": {
+       "ref": "0x1b07d3a46f0"
+      },
+      "B": {
+       "ref": "0x1b07d3a4ad0"
+      },
+      "C": {
+       "ref": "0x1b07d3a3390"
+      },
+      "D": {
+       "ref": "0x1b07d3a5a50"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1b07d3a46f0": {
+     "id": "0x1b07d3a46f0",
+     "type": "type",
+     "repr": "A"
+    },
+    "0x1b07d3a4ad0": {
+     "id": "0x1b07d3a4ad0",
+     "type": "type",
+     "repr": "B"
+    },
+    "0x1b07d3a3390": {
+     "id": "0x1b07d3a3390",
+     "type": "type",
+     "repr": "C"
+    },
+    "0x1b07d3a5a50": {
+     "id": "0x1b07d3a5a50",
+     "type": "type",
+     "repr": "D"
+    }
+   },
+   "stdout": "(<class '__main__.D'>, <class '__main__.B'>, <class '__main__.C'>, <class '__main__.A'>, <class 'object'>)\nD→B→C→A\n"
+  }
+ ],
+ "v": 1
+}

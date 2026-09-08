@@ -37,14 +37,14 @@
      "line": 4,
      "locals": {
       "load": {
-       "ref": "0x24005c6cd60"
+       "ref": "0x20a871dcd60"
       }
      }
     }
    ],
    "heap": {
-    "0x24005c6cd60": {
-     "id": "0x24005c6cd60",
+    "0x20a871dcd60": {
+     "id": "0x20a871dcd60",
      "type": "function",
      "repr": "load"
     }
@@ -60,22 +60,22 @@
      "line": 8,
      "locals": {
       "load": {
-       "ref": "0x24005c6cd60"
+       "ref": "0x20a871dcd60"
       },
       "run": {
-       "ref": "0x24005c6cea0"
+       "ref": "0x20a871dcea0"
       }
      }
     }
    ],
    "heap": {
-    "0x24005c6cd60": {
-     "id": "0x24005c6cd60",
+    "0x20a871dcd60": {
+     "id": "0x20a871dcd60",
      "type": "function",
      "repr": "load"
     },
-    "0x24005c6cea0": {
-     "id": "0x24005c6cea0",
+    "0x20a871dcea0": {
+     "id": "0x20a871dcea0",
      "type": "function",
      "repr": "run"
     }
@@ -92,10 +92,10 @@
      "line": 8,
      "locals": {
       "load": {
-       "ref": "0x24005c6cd60"
+       "ref": "0x20a871dcd60"
       },
       "run": {
-       "ref": "0x24005c6cea0"
+       "ref": "0x20a871dcea0"
       }
      }
     },
@@ -106,13 +106,13 @@
     }
    ],
    "heap": {
-    "0x24005c6cd60": {
-     "id": "0x24005c6cd60",
+    "0x20a871dcd60": {
+     "id": "0x20a871dcd60",
      "type": "function",
      "repr": "load"
     },
-    "0x24005c6cea0": {
-     "id": "0x24005c6cea0",
+    "0x20a871dcea0": {
+     "id": "0x20a871dcea0",
      "type": "function",
      "repr": "run"
     }
@@ -128,10 +128,10 @@
      "line": 8,
      "locals": {
       "load": {
-       "ref": "0x24005c6cd60"
+       "ref": "0x20a871dcd60"
       },
       "run": {
-       "ref": "0x24005c6cea0"
+       "ref": "0x20a871dcea0"
       }
      }
     },
@@ -142,13 +142,13 @@
     }
    ],
    "heap": {
-    "0x24005c6cd60": {
-     "id": "0x24005c6cd60",
+    "0x20a871dcd60": {
+     "id": "0x20a871dcd60",
      "type": "function",
      "repr": "load"
     },
-    "0x24005c6cea0": {
-     "id": "0x24005c6cea0",
+    "0x20a871dcea0": {
+     "id": "0x20a871dcea0",
      "type": "function",
      "repr": "run"
     }
@@ -165,10 +165,10 @@
      "line": 8,
      "locals": {
       "load": {
-       "ref": "0x24005c6cd60"
+       "ref": "0x20a871dcd60"
       },
       "run": {
-       "ref": "0x24005c6cea0"
+       "ref": "0x20a871dcea0"
       }
      }
     },
@@ -182,24 +182,24 @@
      "line": 1,
      "locals": {
       "path": {
-       "ref": "0x24005c58e70"
+       "ref": "0x20a871c8e10"
       }
      }
     }
    ],
    "heap": {
-    "0x24005c6cd60": {
-     "id": "0x24005c6cd60",
+    "0x20a871dcd60": {
+     "id": "0x20a871dcd60",
      "type": "function",
      "repr": "load"
     },
-    "0x24005c6cea0": {
-     "id": "0x24005c6cea0",
+    "0x20a871dcea0": {
+     "id": "0x20a871dcea0",
      "type": "function",
      "repr": "run"
     },
-    "0x24005c58e70": {
-     "id": "0x24005c58e70",
+    "0x20a871c8e10": {
+     "id": "0x20a871c8e10",
      "type": "str",
      "repr": "'없는파일.txt'"
     }
@@ -215,10 +215,10 @@
      "line": 8,
      "locals": {
       "load": {
-       "ref": "0x24005c6cd60"
+       "ref": "0x20a871dcd60"
       },
       "run": {
-       "ref": "0x24005c6cea0"
+       "ref": "0x20a871dcea0"
       }
      }
     },
@@ -232,24 +232,24 @@
      "line": 2,
      "locals": {
       "path": {
-       "ref": "0x24005c58e70"
+       "ref": "0x20a871c8e10"
       }
      }
     }
    ],
    "heap": {
-    "0x24005c6cd60": {
-     "id": "0x24005c6cd60",
+    "0x20a871dcd60": {
+     "id": "0x20a871dcd60",
      "type": "function",
      "repr": "load"
     },
-    "0x24005c6cea0": {
-     "id": "0x24005c6cea0",
+    "0x20a871dcea0": {
+     "id": "0x20a871dcea0",
      "type": "function",
      "repr": "run"
     },
-    "0x24005c58e70": {
-     "id": "0x24005c58e70",
+    "0x20a871c8e10": {
+     "id": "0x20a871c8e10",
      "type": "str",
      "repr": "'없는파일.txt'"
     }
@@ -266,10 +266,10 @@
      "line": 8,
      "locals": {
       "load": {
-       "ref": "0x24005c6cd60"
+       "ref": "0x20a871dcd60"
       },
       "run": {
-       "ref": "0x24005c6cea0"
+       "ref": "0x20a871dcea0"
       }
      }
     },
@@ -283,24 +283,24 @@
      "line": 2,
      "locals": {
       "path": {
-       "ref": "0x24005c58e70"
+       "ref": "0x20a871c8e10"
       }
      }
     }
    ],
    "heap": {
-    "0x24005c6cd60": {
-     "id": "0x24005c6cd60",
+    "0x20a871dcd60": {
+     "id": "0x20a871dcd60",
      "type": "function",
      "repr": "load"
     },
-    "0x24005c6cea0": {
-     "id": "0x24005c6cea0",
+    "0x20a871dcea0": {
+     "id": "0x20a871dcea0",
      "type": "function",
      "repr": "run"
     },
-    "0x24005c58e70": {
-     "id": "0x24005c58e70",
+    "0x20a871c8e10": {
+     "id": "0x20a871c8e10",
      "type": "str",
      "repr": "'없는파일.txt'"
     }
@@ -317,10 +317,10 @@
      "line": 8,
      "locals": {
       "load": {
-       "ref": "0x24005c6cd60"
+       "ref": "0x20a871dcd60"
       },
       "run": {
-       "ref": "0x24005c6cea0"
+       "ref": "0x20a871dcea0"
       }
      }
     },
@@ -334,24 +334,24 @@
      "line": 2,
      "locals": {
       "path": {
-       "ref": "0x24005c58e70"
+       "ref": "0x20a871c8e10"
       }
      }
     }
    ],
    "heap": {
-    "0x24005c6cd60": {
-     "id": "0x24005c6cd60",
+    "0x20a871dcd60": {
+     "id": "0x20a871dcd60",
      "type": "function",
      "repr": "load"
     },
-    "0x24005c6cea0": {
-     "id": "0x24005c6cea0",
+    "0x20a871dcea0": {
+     "id": "0x20a871dcea0",
      "type": "function",
      "repr": "run"
     },
-    "0x24005c58e70": {
-     "id": "0x24005c58e70",
+    "0x20a871c8e10": {
+     "id": "0x20a871c8e10",
      "type": "str",
      "repr": "'없는파일.txt'"
     }
@@ -367,10 +367,10 @@
      "line": 8,
      "locals": {
       "load": {
-       "ref": "0x24005c6cd60"
+       "ref": "0x20a871dcd60"
       },
       "run": {
-       "ref": "0x24005c6cea0"
+       "ref": "0x20a871dcea0"
       }
      }
     },
@@ -381,13 +381,13 @@
     }
    ],
    "heap": {
-    "0x24005c6cd60": {
-     "id": "0x24005c6cd60",
+    "0x20a871dcd60": {
+     "id": "0x20a871dcd60",
      "type": "function",
      "repr": "load"
     },
-    "0x24005c6cea0": {
-     "id": "0x24005c6cea0",
+    "0x20a871dcea0": {
+     "id": "0x20a871dcea0",
      "type": "function",
      "repr": "run"
     }
@@ -404,10 +404,10 @@
      "line": 8,
      "locals": {
       "load": {
-       "ref": "0x24005c6cd60"
+       "ref": "0x20a871dcd60"
       },
       "run": {
-       "ref": "0x24005c6cea0"
+       "ref": "0x20a871dcea0"
       }
      }
     },
@@ -418,13 +418,13 @@
     }
    ],
    "heap": {
-    "0x24005c6cd60": {
-     "id": "0x24005c6cd60",
+    "0x20a871dcd60": {
+     "id": "0x20a871dcd60",
      "type": "function",
      "repr": "load"
     },
-    "0x24005c6cea0": {
-     "id": "0x24005c6cea0",
+    "0x20a871dcea0": {
+     "id": "0x20a871dcea0",
      "type": "function",
      "repr": "run"
     }
@@ -440,22 +440,22 @@
      "line": 8,
      "locals": {
       "load": {
-       "ref": "0x24005c6cd60"
+       "ref": "0x20a871dcd60"
       },
       "run": {
-       "ref": "0x24005c6cea0"
+       "ref": "0x20a871dcea0"
       }
      }
     }
    ],
    "heap": {
-    "0x24005c6cd60": {
-     "id": "0x24005c6cd60",
+    "0x20a871dcd60": {
+     "id": "0x20a871dcd60",
      "type": "function",
      "repr": "load"
     },
-    "0x24005c6cea0": {
-     "id": "0x24005c6cea0",
+    "0x20a871dcea0": {
+     "id": "0x20a871dcea0",
      "type": "function",
      "repr": "run"
     }
@@ -472,22 +472,22 @@
      "line": 8,
      "locals": {
       "load": {
-       "ref": "0x24005c6cd60"
+       "ref": "0x20a871dcd60"
       },
       "run": {
-       "ref": "0x24005c6cea0"
+       "ref": "0x20a871dcea0"
       }
      }
     }
    ],
    "heap": {
-    "0x24005c6cd60": {
-     "id": "0x24005c6cd60",
+    "0x20a871dcd60": {
+     "id": "0x20a871dcd60",
      "type": "function",
      "repr": "load"
     },
-    "0x24005c6cea0": {
-     "id": "0x24005c6cea0",
+    "0x20a871dcea0": {
+     "id": "0x20a871dcea0",
      "type": "function",
      "repr": "run"
     }
@@ -503,22 +503,22 @@
      "line": 8,
      "locals": {
       "load": {
-       "ref": "0x24005c6cd60"
+       "ref": "0x20a871dcd60"
       },
       "run": {
-       "ref": "0x24005c6cea0"
+       "ref": "0x20a871dcea0"
       }
      }
     }
    ],
    "heap": {
-    "0x24005c6cd60": {
-     "id": "0x24005c6cd60",
+    "0x20a871dcd60": {
+     "id": "0x20a871dcd60",
      "type": "function",
      "repr": "load"
     },
-    "0x24005c6cea0": {
-     "id": "0x24005c6cea0",
+    "0x20a871dcea0": {
+     "id": "0x20a871dcea0",
      "type": "function",
      "repr": "run"
     }

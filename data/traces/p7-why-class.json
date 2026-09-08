@@ -1,0 +1,2064 @@
+{
+ "id": "p7-why-class",
+ "code": "# 딕셔너리 + 함수로 버티기\nacct = {\"owner\": \"지기\", \"balance\": 100}\ndef deposit(a, amount):\n    a[\"balance\"] += amount\ndeposit(acct, 50)\nprint(acct[\"balance\"])\n\n# 같은 것을 클래스로 — 데이터와 동작이 한 곳에\nclass Account:\n    def __init__(self, owner, balance):\n        self.owner = owner\n        self.balance = balance\n    def deposit(self, amount):\n        self.balance += amount\n\nacc = Account(\"지기\", 100)\nacc.deposit(50)\nprint(acc.balance)",
+ "steps": [
+  {
+   "line": 0,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 0,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 2,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 3,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 3,
+     "locals": {
+      "acct": {
+       "ref": "0x15697573980"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x15697573980": {
+     "id": "0x15697573980",
+     "type": "dict",
+     "repr": "{'owner': '지기', 'balance': 100}",
+     "entries": [
+      [
+       {
+        "ref": "0x7ffd7f2c0cb8"
+       },
+       {
+        "ref": "0x15697566290"
+       }
+      ],
+      [
+       {
+        "ref": "0x1569756d5f0"
+       },
+       {
+        "ref": "0x7ffd7f2b5618"
+       }
+      ]
+     ]
+    },
+    "0x7ffd7f2c0cb8": {
+     "id": "0x7ffd7f2c0cb8",
+     "type": "str",
+     "repr": "'owner'"
+    },
+    "0x15697566290": {
+     "id": "0x15697566290",
+     "type": "str",
+     "repr": "'지기'"
+    },
+    "0x1569756d5f0": {
+     "id": "0x1569756d5f0",
+     "type": "str",
+     "repr": "'balance'"
+    },
+    "0x7ffd7f2b5618": {
+     "id": "0x7ffd7f2b5618",
+     "type": "int",
+     "repr": "100"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "acct": {
+       "ref": "0x15697573980"
+      },
+      "deposit": {
+       "ref": "0x1569755ccc0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x15697573980": {
+     "id": "0x15697573980",
+     "type": "dict",
+     "repr": "{'owner': '지기', 'balance': 100}",
+     "entries": [
+      [
+       {
+        "ref": "0x7ffd7f2c0cb8"
+       },
+       {
+        "ref": "0x15697566290"
+       }
+      ],
+      [
+       {
+        "ref": "0x1569756d5f0"
+       },
+       {
+        "ref": "0x7ffd7f2b5618"
+       }
+      ]
+     ]
+    },
+    "0x7ffd7f2c0cb8": {
+     "id": "0x7ffd7f2c0cb8",
+     "type": "str",
+     "repr": "'owner'"
+    },
+    "0x15697566290": {
+     "id": "0x15697566290",
+     "type": "str",
+     "repr": "'지기'"
+    },
+    "0x1569756d5f0": {
+     "id": "0x1569756d5f0",
+     "type": "str",
+     "repr": "'balance'"
+    },
+    "0x7ffd7f2b5618": {
+     "id": "0x7ffd7f2b5618",
+     "type": "int",
+     "repr": "100"
+    },
+    "0x1569755ccc0": {
+     "id": "0x1569755ccc0",
+     "type": "function",
+     "repr": "deposit"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 3,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "acct": {
+       "ref": "0x15697573980"
+      },
+      "deposit": {
+       "ref": "0x1569755ccc0"
+      }
+     }
+    },
+    {
+     "fn": "deposit",
+     "line": 3,
+     "locals": {
+      "a": {
+       "ref": "0x15697573980"
+      },
+      "amount": {
+       "ref": "0x7ffd7f2b4fd8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x15697573980": {
+     "id": "0x15697573980",
+     "type": "dict",
+     "repr": "{'owner': '지기', 'balance': 100}",
+     "entries": [
+      [
+       {
+        "ref": "0x7ffd7f2c0cb8"
+       },
+       {
+        "ref": "0x15697566290"
+       }
+      ],
+      [
+       {
+        "ref": "0x1569756d5f0"
+       },
+       {
+        "ref": "0x7ffd7f2b5618"
+       }
+      ]
+     ]
+    },
+    "0x7ffd7f2c0cb8": {
+     "id": "0x7ffd7f2c0cb8",
+     "type": "str",
+     "repr": "'owner'"
+    },
+    "0x15697566290": {
+     "id": "0x15697566290",
+     "type": "str",
+     "repr": "'지기'"
+    },
+    "0x1569756d5f0": {
+     "id": "0x1569756d5f0",
+     "type": "str",
+     "repr": "'balance'"
+    },
+    "0x7ffd7f2b5618": {
+     "id": "0x7ffd7f2b5618",
+     "type": "int",
+     "repr": "100"
+    },
+    "0x1569755ccc0": {
+     "id": "0x1569755ccc0",
+     "type": "function",
+     "repr": "deposit"
+    },
+    "0x7ffd7f2b4fd8": {
+     "id": "0x7ffd7f2b4fd8",
+     "type": "int",
+     "repr": "50"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "acct": {
+       "ref": "0x15697573980"
+      },
+      "deposit": {
+       "ref": "0x1569755ccc0"
+      }
+     }
+    },
+    {
+     "fn": "deposit",
+     "line": 4,
+     "locals": {
+      "a": {
+       "ref": "0x15697573980"
+      },
+      "amount": {
+       "ref": "0x7ffd7f2b4fd8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x15697573980": {
+     "id": "0x15697573980",
+     "type": "dict",
+     "repr": "{'owner': '지기', 'balance': 100}",
+     "entries": [
+      [
+       {
+        "ref": "0x7ffd7f2c0cb8"
+       },
+       {
+        "ref": "0x15697566290"
+       }
+      ],
+      [
+       {
+        "ref": "0x1569756d5f0"
+       },
+       {
+        "ref": "0x7ffd7f2b5618"
+       }
+      ]
+     ]
+    },
+    "0x7ffd7f2c0cb8": {
+     "id": "0x7ffd7f2c0cb8",
+     "type": "str",
+     "repr": "'owner'"
+    },
+    "0x15697566290": {
+     "id": "0x15697566290",
+     "type": "str",
+     "repr": "'지기'"
+    },
+    "0x1569756d5f0": {
+     "id": "0x1569756d5f0",
+     "type": "str",
+     "repr": "'balance'"
+    },
+    "0x7ffd7f2b5618": {
+     "id": "0x7ffd7f2b5618",
+     "type": "int",
+     "repr": "100"
+    },
+    "0x1569755ccc0": {
+     "id": "0x1569755ccc0",
+     "type": "function",
+     "repr": "deposit"
+    },
+    "0x7ffd7f2b4fd8": {
+     "id": "0x7ffd7f2b4fd8",
+     "type": "int",
+     "repr": "50"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 4,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "acct": {
+       "ref": "0x15697573980"
+      },
+      "deposit": {
+       "ref": "0x1569755ccc0"
+      }
+     }
+    },
+    {
+     "fn": "deposit",
+     "line": 4,
+     "locals": {
+      "a": {
+       "ref": "0x15697573980"
+      },
+      "amount": {
+       "ref": "0x7ffd7f2b4fd8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x15697573980": {
+     "id": "0x15697573980",
+     "type": "dict",
+     "repr": "{'owner': '지기', 'balance': 150}",
+     "entries": [
+      [
+       {
+        "ref": "0x7ffd7f2c0cb8"
+       },
+       {
+        "ref": "0x15697566290"
+       }
+      ],
+      [
+       {
+        "ref": "0x1569756d5f0"
+       },
+       {
+        "ref": "0x7ffd7f2b5c58"
+       }
+      ]
+     ]
+    },
+    "0x7ffd7f2c0cb8": {
+     "id": "0x7ffd7f2c0cb8",
+     "type": "str",
+     "repr": "'owner'"
+    },
+    "0x15697566290": {
+     "id": "0x15697566290",
+     "type": "str",
+     "repr": "'지기'"
+    },
+    "0x1569756d5f0": {
+     "id": "0x1569756d5f0",
+     "type": "str",
+     "repr": "'balance'"
+    },
+    "0x7ffd7f2b5c58": {
+     "id": "0x7ffd7f2b5c58",
+     "type": "int",
+     "repr": "150"
+    },
+    "0x1569755ccc0": {
+     "id": "0x1569755ccc0",
+     "type": "function",
+     "repr": "deposit"
+    },
+    "0x7ffd7f2b4fd8": {
+     "id": "0x7ffd7f2b4fd8",
+     "type": "int",
+     "repr": "50"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 6,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "acct": {
+       "ref": "0x15697573980"
+      },
+      "deposit": {
+       "ref": "0x1569755ccc0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x15697573980": {
+     "id": "0x15697573980",
+     "type": "dict",
+     "repr": "{'owner': '지기', 'balance': 150}",
+     "entries": [
+      [
+       {
+        "ref": "0x7ffd7f2c0cb8"
+       },
+       {
+        "ref": "0x15697566290"
+       }
+      ],
+      [
+       {
+        "ref": "0x1569756d5f0"
+       },
+       {
+        "ref": "0x7ffd7f2b5c58"
+       }
+      ]
+     ]
+    },
+    "0x7ffd7f2c0cb8": {
+     "id": "0x7ffd7f2c0cb8",
+     "type": "str",
+     "repr": "'owner'"
+    },
+    "0x15697566290": {
+     "id": "0x15697566290",
+     "type": "str",
+     "repr": "'지기'"
+    },
+    "0x1569756d5f0": {
+     "id": "0x1569756d5f0",
+     "type": "str",
+     "repr": "'balance'"
+    },
+    "0x7ffd7f2b5c58": {
+     "id": "0x7ffd7f2b5c58",
+     "type": "int",
+     "repr": "150"
+    },
+    "0x1569755ccc0": {
+     "id": "0x1569755ccc0",
+     "type": "function",
+     "repr": "deposit"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 9,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 9,
+     "locals": {
+      "acct": {
+       "ref": "0x15697573980"
+      },
+      "deposit": {
+       "ref": "0x1569755ccc0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x15697573980": {
+     "id": "0x15697573980",
+     "type": "dict",
+     "repr": "{'owner': '지기', 'balance': 150}",
+     "entries": [
+      [
+       {
+        "ref": "0x7ffd7f2c0cb8"
+       },
+       {
+        "ref": "0x15697566290"
+       }
+      ],
+      [
+       {
+        "ref": "0x1569756d5f0"
+       },
+       {
+        "ref": "0x7ffd7f2b5c58"
+       }
+      ]
+     ]
+    },
+    "0x7ffd7f2c0cb8": {
+     "id": "0x7ffd7f2c0cb8",
+     "type": "str",
+     "repr": "'owner'"
+    },
+    "0x15697566290": {
+     "id": "0x15697566290",
+     "type": "str",
+     "repr": "'지기'"
+    },
+    "0x1569756d5f0": {
+     "id": "0x1569756d5f0",
+     "type": "str",
+     "repr": "'balance'"
+    },
+    "0x7ffd7f2b5c58": {
+     "id": "0x7ffd7f2b5c58",
+     "type": "int",
+     "repr": "150"
+    },
+    "0x1569755ccc0": {
+     "id": "0x1569755ccc0",
+     "type": "function",
+     "repr": "deposit"
+    }
+   },
+   "stdout": "150\n"
+  },
+  {
+   "line": 9,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 9,
+     "locals": {
+      "acct": {
+       "ref": "0x15697573980"
+      },
+      "deposit": {
+       "ref": "0x1569755ccc0"
+      }
+     }
+    },
+    {
+     "fn": "Account",
+     "line": 9,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x15697573980": {
+     "id": "0x15697573980",
+     "type": "dict",
+     "repr": "{'owner': '지기', 'balance': 150}",
+     "entries": [
+      [
+       {
+        "ref": "0x7ffd7f2c0cb8"
+       },
+       {
+        "ref": "0x15697566290"
+       }
+      ],
+      [
+       {
+        "ref": "0x1569756d5f0"
+       },
+       {
+        "ref": "0x7ffd7f2b5c58"
+       }
+      ]
+     ]
+    },
+    "0x7ffd7f2c0cb8": {
+     "id": "0x7ffd7f2c0cb8",
+     "type": "str",
+     "repr": "'owner'"
+    },
+    "0x15697566290": {
+     "id": "0x15697566290",
+     "type": "str",
+     "repr": "'지기'"
+    },
+    "0x1569756d5f0": {
+     "id": "0x1569756d5f0",
+     "type": "str",
+     "repr": "'balance'"
+    },
+    "0x7ffd7f2b5c58": {
+     "id": "0x7ffd7f2b5c58",
+     "type": "int",
+     "repr": "150"
+    },
+    "0x1569755ccc0": {
+     "id": "0x1569755ccc0",
+     "type": "function",
+     "repr": "deposit"
+    }
+   },
+   "stdout": "150\n"
+  },
+  {
+   "line": 9,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 9,
+     "locals": {
+      "acct": {
+       "ref": "0x15697573980"
+      },
+      "deposit": {
+       "ref": "0x1569755ccc0"
+      }
+     }
+    },
+    {
+     "fn": "Account",
+     "line": 9,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x15697573980": {
+     "id": "0x15697573980",
+     "type": "dict",
+     "repr": "{'owner': '지기', 'balance': 150}",
+     "entries": [
+      [
+       {
+        "ref": "0x7ffd7f2c0cb8"
+       },
+       {
+        "ref": "0x15697566290"
+       }
+      ],
+      [
+       {
+        "ref": "0x1569756d5f0"
+       },
+       {
+        "ref": "0x7ffd7f2b5c58"
+       }
+      ]
+     ]
+    },
+    "0x7ffd7f2c0cb8": {
+     "id": "0x7ffd7f2c0cb8",
+     "type": "str",
+     "repr": "'owner'"
+    },
+    "0x15697566290": {
+     "id": "0x15697566290",
+     "type": "str",
+     "repr": "'지기'"
+    },
+    "0x1569756d5f0": {
+     "id": "0x1569756d5f0",
+     "type": "str",
+     "repr": "'balance'"
+    },
+    "0x7ffd7f2b5c58": {
+     "id": "0x7ffd7f2b5c58",
+     "type": "int",
+     "repr": "150"
+    },
+    "0x1569755ccc0": {
+     "id": "0x1569755ccc0",
+     "type": "function",
+     "repr": "deposit"
+    }
+   },
+   "stdout": "150\n"
+  },
+  {
+   "line": 10,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 9,
+     "locals": {
+      "acct": {
+       "ref": "0x15697573980"
+      },
+      "deposit": {
+       "ref": "0x1569755ccc0"
+      }
+     }
+    },
+    {
+     "fn": "Account",
+     "line": 10,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x15697573980": {
+     "id": "0x15697573980",
+     "type": "dict",
+     "repr": "{'owner': '지기', 'balance': 150}",
+     "entries": [
+      [
+       {
+        "ref": "0x7ffd7f2c0cb8"
+       },
+       {
+        "ref": "0x15697566290"
+       }
+      ],
+      [
+       {
+        "ref": "0x1569756d5f0"
+       },
+       {
+        "ref": "0x7ffd7f2b5c58"
+       }
+      ]
+     ]
+    },
+    "0x7ffd7f2c0cb8": {
+     "id": "0x7ffd7f2c0cb8",
+     "type": "str",
+     "repr": "'owner'"
+    },
+    "0x15697566290": {
+     "id": "0x15697566290",
+     "type": "str",
+     "repr": "'지기'"
+    },
+    "0x1569756d5f0": {
+     "id": "0x1569756d5f0",
+     "type": "str",
+     "repr": "'balance'"
+    },
+    "0x7ffd7f2b5c58": {
+     "id": "0x7ffd7f2b5c58",
+     "type": "int",
+     "repr": "150"
+    },
+    "0x1569755ccc0": {
+     "id": "0x1569755ccc0",
+     "type": "function",
+     "repr": "deposit"
+    }
+   },
+   "stdout": "150\n"
+  },
+  {
+   "line": 13,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 9,
+     "locals": {
+      "acct": {
+       "ref": "0x15697573980"
+      },
+      "deposit": {
+       "ref": "0x1569755ccc0"
+      }
+     }
+    },
+    {
+     "fn": "Account",
+     "line": 13,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x15697573980": {
+     "id": "0x15697573980",
+     "type": "dict",
+     "repr": "{'owner': '지기', 'balance': 150}",
+     "entries": [
+      [
+       {
+        "ref": "0x7ffd7f2c0cb8"
+       },
+       {
+        "ref": "0x15697566290"
+       }
+      ],
+      [
+       {
+        "ref": "0x1569756d5f0"
+       },
+       {
+        "ref": "0x7ffd7f2b5c58"
+       }
+      ]
+     ]
+    },
+    "0x7ffd7f2c0cb8": {
+     "id": "0x7ffd7f2c0cb8",
+     "type": "str",
+     "repr": "'owner'"
+    },
+    "0x15697566290": {
+     "id": "0x15697566290",
+     "type": "str",
+     "repr": "'지기'"
+    },
+    "0x1569756d5f0": {
+     "id": "0x1569756d5f0",
+     "type": "str",
+     "repr": "'balance'"
+    },
+    "0x7ffd7f2b5c58": {
+     "id": "0x7ffd7f2b5c58",
+     "type": "int",
+     "repr": "150"
+    },
+    "0x1569755ccc0": {
+     "id": "0x1569755ccc0",
+     "type": "function",
+     "repr": "deposit"
+    }
+   },
+   "stdout": "150\n"
+  },
+  {
+   "line": 13,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 9,
+     "locals": {
+      "acct": {
+       "ref": "0x15697573980"
+      },
+      "deposit": {
+       "ref": "0x1569755ccc0"
+      }
+     }
+    },
+    {
+     "fn": "Account",
+     "line": 13,
+     "locals": {
+      "deposit": {
+       "ref": "0x1569755cea0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x15697573980": {
+     "id": "0x15697573980",
+     "type": "dict",
+     "repr": "{'owner': '지기', 'balance': 150}",
+     "entries": [
+      [
+       {
+        "ref": "0x7ffd7f2c0cb8"
+       },
+       {
+        "ref": "0x15697566290"
+       }
+      ],
+      [
+       {
+        "ref": "0x1569756d5f0"
+       },
+       {
+        "ref": "0x7ffd7f2b5c58"
+       }
+      ]
+     ]
+    },
+    "0x7ffd7f2c0cb8": {
+     "id": "0x7ffd7f2c0cb8",
+     "type": "str",
+     "repr": "'owner'"
+    },
+    "0x15697566290": {
+     "id": "0x15697566290",
+     "type": "str",
+     "repr": "'지기'"
+    },
+    "0x1569756d5f0": {
+     "id": "0x1569756d5f0",
+     "type": "str",
+     "repr": "'balance'"
+    },
+    "0x7ffd7f2b5c58": {
+     "id": "0x7ffd7f2b5c58",
+     "type": "int",
+     "repr": "150"
+    },
+    "0x1569755ccc0": {
+     "id": "0x1569755ccc0",
+     "type": "function",
+     "repr": "deposit"
+    },
+    "0x1569755cea0": {
+     "id": "0x1569755cea0",
+     "type": "function",
+     "repr": "deposit"
+    }
+   },
+   "stdout": "150\n"
+  },
+  {
+   "line": 16,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 16,
+     "locals": {
+      "acct": {
+       "ref": "0x15697573980"
+      },
+      "deposit": {
+       "ref": "0x1569755ccc0"
+      },
+      "Account": {
+       "ref": "0x156973e3c40"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x15697573980": {
+     "id": "0x15697573980",
+     "type": "dict",
+     "repr": "{'owner': '지기', 'balance': 150}",
+     "entries": [
+      [
+       {
+        "ref": "0x7ffd7f2c0cb8"
+       },
+       {
+        "ref": "0x15697566290"
+       }
+      ],
+      [
+       {
+        "ref": "0x1569756d5f0"
+       },
+       {
+        "ref": "0x7ffd7f2b5c58"
+       }
+      ]
+     ]
+    },
+    "0x7ffd7f2c0cb8": {
+     "id": "0x7ffd7f2c0cb8",
+     "type": "str",
+     "repr": "'owner'"
+    },
+    "0x15697566290": {
+     "id": "0x15697566290",
+     "type": "str",
+     "repr": "'지기'"
+    },
+    "0x1569756d5f0": {
+     "id": "0x1569756d5f0",
+     "type": "str",
+     "repr": "'balance'"
+    },
+    "0x7ffd7f2b5c58": {
+     "id": "0x7ffd7f2b5c58",
+     "type": "int",
+     "repr": "150"
+    },
+    "0x1569755ccc0": {
+     "id": "0x1569755ccc0",
+     "type": "function",
+     "repr": "deposit"
+    },
+    "0x156973e3c40": {
+     "id": "0x156973e3c40",
+     "type": "type",
+     "repr": "Account"
+    }
+   },
+   "stdout": "150\n",
+   "note": "인스턴스를 만든다 — __init__ 이 자동 호출된다"
+  },
+  {
+   "line": 10,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 16,
+     "locals": {
+      "acct": {
+       "ref": "0x15697573980"
+      },
+      "deposit": {
+       "ref": "0x1569755ccc0"
+      },
+      "Account": {
+       "ref": "0x156973e3c40"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 10,
+     "locals": {
+      "self": {
+       "ref": "0x1569756d070"
+      },
+      "owner": {
+       "ref": "0x15697566290"
+      },
+      "balance": {
+       "ref": "0x7ffd7f2b5618"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x15697573980": {
+     "id": "0x15697573980",
+     "type": "dict",
+     "repr": "{'owner': '지기', 'balance': 150}",
+     "entries": [
+      [
+       {
+        "ref": "0x7ffd7f2c0cb8"
+       },
+       {
+        "ref": "0x15697566290"
+       }
+      ],
+      [
+       {
+        "ref": "0x1569756d5f0"
+       },
+       {
+        "ref": "0x7ffd7f2b5c58"
+       }
+      ]
+     ]
+    },
+    "0x7ffd7f2c0cb8": {
+     "id": "0x7ffd7f2c0cb8",
+     "type": "str",
+     "repr": "'owner'"
+    },
+    "0x15697566290": {
+     "id": "0x15697566290",
+     "type": "str",
+     "repr": "'지기'"
+    },
+    "0x1569756d5f0": {
+     "id": "0x1569756d5f0",
+     "type": "str",
+     "repr": "'balance'"
+    },
+    "0x7ffd7f2b5c58": {
+     "id": "0x7ffd7f2b5c58",
+     "type": "int",
+     "repr": "150"
+    },
+    "0x1569755ccc0": {
+     "id": "0x1569755ccc0",
+     "type": "function",
+     "repr": "deposit"
+    },
+    "0x156973e3c40": {
+     "id": "0x156973e3c40",
+     "type": "type",
+     "repr": "Account"
+    },
+    "0x1569756d070": {
+     "id": "0x1569756d070",
+     "type": "Account",
+     "repr": "<__main__.Account object at 0x000001569756D070>",
+     "fields": {}
+    },
+    "0x7ffd7f2b5618": {
+     "id": "0x7ffd7f2b5618",
+     "type": "int",
+     "repr": "100"
+    }
+   },
+   "stdout": "150\n"
+  },
+  {
+   "line": 11,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 16,
+     "locals": {
+      "acct": {
+       "ref": "0x15697573980"
+      },
+      "deposit": {
+       "ref": "0x1569755ccc0"
+      },
+      "Account": {
+       "ref": "0x156973e3c40"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 11,
+     "locals": {
+      "self": {
+       "ref": "0x1569756d070"
+      },
+      "owner": {
+       "ref": "0x15697566290"
+      },
+      "balance": {
+       "ref": "0x7ffd7f2b5618"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x15697573980": {
+     "id": "0x15697573980",
+     "type": "dict",
+     "repr": "{'owner': '지기', 'balance': 150}",
+     "entries": [
+      [
+       {
+        "ref": "0x7ffd7f2c0cb8"
+       },
+       {
+        "ref": "0x15697566290"
+       }
+      ],
+      [
+       {
+        "ref": "0x1569756d5f0"
+       },
+       {
+        "ref": "0x7ffd7f2b5c58"
+       }
+      ]
+     ]
+    },
+    "0x7ffd7f2c0cb8": {
+     "id": "0x7ffd7f2c0cb8",
+     "type": "str",
+     "repr": "'owner'"
+    },
+    "0x15697566290": {
+     "id": "0x15697566290",
+     "type": "str",
+     "repr": "'지기'"
+    },
+    "0x1569756d5f0": {
+     "id": "0x1569756d5f0",
+     "type": "str",
+     "repr": "'balance'"
+    },
+    "0x7ffd7f2b5c58": {
+     "id": "0x7ffd7f2b5c58",
+     "type": "int",
+     "repr": "150"
+    },
+    "0x1569755ccc0": {
+     "id": "0x1569755ccc0",
+     "type": "function",
+     "repr": "deposit"
+    },
+    "0x156973e3c40": {
+     "id": "0x156973e3c40",
+     "type": "type",
+     "repr": "Account"
+    },
+    "0x1569756d070": {
+     "id": "0x1569756d070",
+     "type": "Account",
+     "repr": "<__main__.Account object at 0x000001569756D070>",
+     "fields": {}
+    },
+    "0x7ffd7f2b5618": {
+     "id": "0x7ffd7f2b5618",
+     "type": "int",
+     "repr": "100"
+    }
+   },
+   "stdout": "150\n"
+  },
+  {
+   "line": 12,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 16,
+     "locals": {
+      "acct": {
+       "ref": "0x15697573980"
+      },
+      "deposit": {
+       "ref": "0x1569755ccc0"
+      },
+      "Account": {
+       "ref": "0x156973e3c40"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 12,
+     "locals": {
+      "self": {
+       "ref": "0x1569756d070"
+      },
+      "owner": {
+       "ref": "0x15697566290"
+      },
+      "balance": {
+       "ref": "0x7ffd7f2b5618"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x15697573980": {
+     "id": "0x15697573980",
+     "type": "dict",
+     "repr": "{'owner': '지기', 'balance': 150}",
+     "entries": [
+      [
+       {
+        "ref": "0x7ffd7f2c0cb8"
+       },
+       {
+        "ref": "0x15697566290"
+       }
+      ],
+      [
+       {
+        "ref": "0x1569756d5f0"
+       },
+       {
+        "ref": "0x7ffd7f2b5c58"
+       }
+      ]
+     ]
+    },
+    "0x7ffd7f2c0cb8": {
+     "id": "0x7ffd7f2c0cb8",
+     "type": "str",
+     "repr": "'owner'"
+    },
+    "0x15697566290": {
+     "id": "0x15697566290",
+     "type": "str",
+     "repr": "'지기'"
+    },
+    "0x1569756d5f0": {
+     "id": "0x1569756d5f0",
+     "type": "str",
+     "repr": "'balance'"
+    },
+    "0x7ffd7f2b5c58": {
+     "id": "0x7ffd7f2b5c58",
+     "type": "int",
+     "repr": "150"
+    },
+    "0x1569755ccc0": {
+     "id": "0x1569755ccc0",
+     "type": "function",
+     "repr": "deposit"
+    },
+    "0x156973e3c40": {
+     "id": "0x156973e3c40",
+     "type": "type",
+     "repr": "Account"
+    },
+    "0x1569756d070": {
+     "id": "0x1569756d070",
+     "type": "Account",
+     "repr": "<__main__.Account object at 0x000001569756D070>",
+     "fields": {
+      "owner": {
+       "ref": "0x15697566290"
+      }
+     }
+    },
+    "0x7ffd7f2b5618": {
+     "id": "0x7ffd7f2b5618",
+     "type": "int",
+     "repr": "100"
+    }
+   },
+   "stdout": "150\n"
+  },
+  {
+   "line": 12,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 16,
+     "locals": {
+      "acct": {
+       "ref": "0x15697573980"
+      },
+      "deposit": {
+       "ref": "0x1569755ccc0"
+      },
+      "Account": {
+       "ref": "0x156973e3c40"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 12,
+     "locals": {
+      "self": {
+       "ref": "0x1569756d070"
+      },
+      "owner": {
+       "ref": "0x15697566290"
+      },
+      "balance": {
+       "ref": "0x7ffd7f2b5618"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x15697573980": {
+     "id": "0x15697573980",
+     "type": "dict",
+     "repr": "{'owner': '지기', 'balance': 150}",
+     "entries": [
+      [
+       {
+        "ref": "0x7ffd7f2c0cb8"
+       },
+       {
+        "ref": "0x15697566290"
+       }
+      ],
+      [
+       {
+        "ref": "0x1569756d5f0"
+       },
+       {
+        "ref": "0x7ffd7f2b5c58"
+       }
+      ]
+     ]
+    },
+    "0x7ffd7f2c0cb8": {
+     "id": "0x7ffd7f2c0cb8",
+     "type": "str",
+     "repr": "'owner'"
+    },
+    "0x15697566290": {
+     "id": "0x15697566290",
+     "type": "str",
+     "repr": "'지기'"
+    },
+    "0x1569756d5f0": {
+     "id": "0x1569756d5f0",
+     "type": "str",
+     "repr": "'balance'"
+    },
+    "0x7ffd7f2b5c58": {
+     "id": "0x7ffd7f2b5c58",
+     "type": "int",
+     "repr": "150"
+    },
+    "0x1569755ccc0": {
+     "id": "0x1569755ccc0",
+     "type": "function",
+     "repr": "deposit"
+    },
+    "0x156973e3c40": {
+     "id": "0x156973e3c40",
+     "type": "type",
+     "repr": "Account"
+    },
+    "0x1569756d070": {
+     "id": "0x1569756d070",
+     "type": "Account",
+     "repr": "<__main__.Account object at 0x000001569756D070>",
+     "fields": {
+      "owner": {
+       "ref": "0x15697566290"
+      },
+      "balance": {
+       "ref": "0x7ffd7f2b5618"
+      }
+     }
+    },
+    "0x7ffd7f2b5618": {
+     "id": "0x7ffd7f2b5618",
+     "type": "int",
+     "repr": "100"
+    }
+   },
+   "stdout": "150\n"
+  },
+  {
+   "line": 17,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 17,
+     "locals": {
+      "acct": {
+       "ref": "0x15697573980"
+      },
+      "deposit": {
+       "ref": "0x1569755ccc0"
+      },
+      "Account": {
+       "ref": "0x156973e3c40"
+      },
+      "acc": {
+       "ref": "0x1569756d070"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x15697573980": {
+     "id": "0x15697573980",
+     "type": "dict",
+     "repr": "{'owner': '지기', 'balance': 150}",
+     "entries": [
+      [
+       {
+        "ref": "0x7ffd7f2c0cb8"
+       },
+       {
+        "ref": "0x15697566290"
+       }
+      ],
+      [
+       {
+        "ref": "0x1569756d5f0"
+       },
+       {
+        "ref": "0x7ffd7f2b5c58"
+       }
+      ]
+     ]
+    },
+    "0x7ffd7f2c0cb8": {
+     "id": "0x7ffd7f2c0cb8",
+     "type": "str",
+     "repr": "'owner'"
+    },
+    "0x15697566290": {
+     "id": "0x15697566290",
+     "type": "str",
+     "repr": "'지기'"
+    },
+    "0x1569756d5f0": {
+     "id": "0x1569756d5f0",
+     "type": "str",
+     "repr": "'balance'"
+    },
+    "0x7ffd7f2b5c58": {
+     "id": "0x7ffd7f2b5c58",
+     "type": "int",
+     "repr": "150"
+    },
+    "0x1569755ccc0": {
+     "id": "0x1569755ccc0",
+     "type": "function",
+     "repr": "deposit"
+    },
+    "0x156973e3c40": {
+     "id": "0x156973e3c40",
+     "type": "type",
+     "repr": "Account"
+    },
+    "0x1569756d070": {
+     "id": "0x1569756d070",
+     "type": "Account",
+     "repr": "<__main__.Account object at 0x000001569756D070>",
+     "fields": {
+      "owner": {
+       "ref": "0x15697566290"
+      },
+      "balance": {
+       "ref": "0x7ffd7f2b5618"
+      }
+     }
+    },
+    "0x7ffd7f2b5618": {
+     "id": "0x7ffd7f2b5618",
+     "type": "int",
+     "repr": "100"
+    }
+   },
+   "stdout": "150\n",
+   "note": "어떤 데이터에 대한 동작인지 점 하나로 분명하다"
+  },
+  {
+   "line": 13,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 17,
+     "locals": {
+      "acct": {
+       "ref": "0x15697573980"
+      },
+      "deposit": {
+       "ref": "0x1569755ccc0"
+      },
+      "Account": {
+       "ref": "0x156973e3c40"
+      },
+      "acc": {
+       "ref": "0x1569756d070"
+      }
+     }
+    },
+    {
+     "fn": "deposit",
+     "line": 13,
+     "locals": {
+      "self": {
+       "ref": "0x1569756d070"
+      },
+      "amount": {
+       "ref": "0x7ffd7f2b4fd8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x15697573980": {
+     "id": "0x15697573980",
+     "type": "dict",
+     "repr": "{'owner': '지기', 'balance': 150}",
+     "entries": [
+      [
+       {
+        "ref": "0x7ffd7f2c0cb8"
+       },
+       {
+        "ref": "0x15697566290"
+       }
+      ],
+      [
+       {
+        "ref": "0x1569756d5f0"
+       },
+       {
+        "ref": "0x7ffd7f2b5c58"
+       }
+      ]
+     ]
+    },
+    "0x7ffd7f2c0cb8": {
+     "id": "0x7ffd7f2c0cb8",
+     "type": "str",
+     "repr": "'owner'"
+    },
+    "0x15697566290": {
+     "id": "0x15697566290",
+     "type": "str",
+     "repr": "'지기'"
+    },
+    "0x1569756d5f0": {
+     "id": "0x1569756d5f0",
+     "type": "str",
+     "repr": "'balance'"
+    },
+    "0x7ffd7f2b5c58": {
+     "id": "0x7ffd7f2b5c58",
+     "type": "int",
+     "repr": "150"
+    },
+    "0x1569755ccc0": {
+     "id": "0x1569755ccc0",
+     "type": "function",
+     "repr": "deposit"
+    },
+    "0x156973e3c40": {
+     "id": "0x156973e3c40",
+     "type": "type",
+     "repr": "Account"
+    },
+    "0x1569756d070": {
+     "id": "0x1569756d070",
+     "type": "Account",
+     "repr": "<__main__.Account object at 0x000001569756D070>",
+     "fields": {
+      "owner": {
+       "ref": "0x15697566290"
+      },
+      "balance": {
+       "ref": "0x7ffd7f2b5618"
+      }
+     }
+    },
+    "0x7ffd7f2b5618": {
+     "id": "0x7ffd7f2b5618",
+     "type": "int",
+     "repr": "100"
+    },
+    "0x7ffd7f2b4fd8": {
+     "id": "0x7ffd7f2b4fd8",
+     "type": "int",
+     "repr": "50"
+    }
+   },
+   "stdout": "150\n"
+  },
+  {
+   "line": 14,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 17,
+     "locals": {
+      "acct": {
+       "ref": "0x15697573980"
+      },
+      "deposit": {
+       "ref": "0x1569755ccc0"
+      },
+      "Account": {
+       "ref": "0x156973e3c40"
+      },
+      "acc": {
+       "ref": "0x1569756d070"
+      }
+     }
+    },
+    {
+     "fn": "deposit",
+     "line": 14,
+     "locals": {
+      "self": {
+       "ref": "0x1569756d070"
+      },
+      "amount": {
+       "ref": "0x7ffd7f2b4fd8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x15697573980": {
+     "id": "0x15697573980",
+     "type": "dict",
+     "repr": "{'owner': '지기', 'balance': 150}",
+     "entries": [
+      [
+       {
+        "ref": "0x7ffd7f2c0cb8"
+       },
+       {
+        "ref": "0x15697566290"
+       }
+      ],
+      [
+       {
+        "ref": "0x1569756d5f0"
+       },
+       {
+        "ref": "0x7ffd7f2b5c58"
+       }
+      ]
+     ]
+    },
+    "0x7ffd7f2c0cb8": {
+     "id": "0x7ffd7f2c0cb8",
+     "type": "str",
+     "repr": "'owner'"
+    },
+    "0x15697566290": {
+     "id": "0x15697566290",
+     "type": "str",
+     "repr": "'지기'"
+    },
+    "0x1569756d5f0": {
+     "id": "0x1569756d5f0",
+     "type": "str",
+     "repr": "'balance'"
+    },
+    "0x7ffd7f2b5c58": {
+     "id": "0x7ffd7f2b5c58",
+     "type": "int",
+     "repr": "150"
+    },
+    "0x1569755ccc0": {
+     "id": "0x1569755ccc0",
+     "type": "function",
+     "repr": "deposit"
+    },
+    "0x156973e3c40": {
+     "id": "0x156973e3c40",
+     "type": "type",
+     "repr": "Account"
+    },
+    "0x1569756d070": {
+     "id": "0x1569756d070",
+     "type": "Account",
+     "repr": "<__main__.Account object at 0x000001569756D070>",
+     "fields": {
+      "owner": {
+       "ref": "0x15697566290"
+      },
+      "balance": {
+       "ref": "0x7ffd7f2b5618"
+      }
+     }
+    },
+    "0x7ffd7f2b5618": {
+     "id": "0x7ffd7f2b5618",
+     "type": "int",
+     "repr": "100"
+    },
+    "0x7ffd7f2b4fd8": {
+     "id": "0x7ffd7f2b4fd8",
+     "type": "int",
+     "repr": "50"
+    }
+   },
+   "stdout": "150\n"
+  },
+  {
+   "line": 14,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 17,
+     "locals": {
+      "acct": {
+       "ref": "0x15697573980"
+      },
+      "deposit": {
+       "ref": "0x1569755ccc0"
+      },
+      "Account": {
+       "ref": "0x156973e3c40"
+      },
+      "acc": {
+       "ref": "0x1569756d070"
+      }
+     }
+    },
+    {
+     "fn": "deposit",
+     "line": 14,
+     "locals": {
+      "self": {
+       "ref": "0x1569756d070"
+      },
+      "amount": {
+       "ref": "0x7ffd7f2b4fd8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x15697573980": {
+     "id": "0x15697573980",
+     "type": "dict",
+     "repr": "{'owner': '지기', 'balance': 150}",
+     "entries": [
+      [
+       {
+        "ref": "0x7ffd7f2c0cb8"
+       },
+       {
+        "ref": "0x15697566290"
+       }
+      ],
+      [
+       {
+        "ref": "0x1569756d5f0"
+       },
+       {
+        "ref": "0x7ffd7f2b5c58"
+       }
+      ]
+     ]
+    },
+    "0x7ffd7f2c0cb8": {
+     "id": "0x7ffd7f2c0cb8",
+     "type": "str",
+     "repr": "'owner'"
+    },
+    "0x15697566290": {
+     "id": "0x15697566290",
+     "type": "str",
+     "repr": "'지기'"
+    },
+    "0x1569756d5f0": {
+     "id": "0x1569756d5f0",
+     "type": "str",
+     "repr": "'balance'"
+    },
+    "0x7ffd7f2b5c58": {
+     "id": "0x7ffd7f2b5c58",
+     "type": "int",
+     "repr": "150"
+    },
+    "0x1569755ccc0": {
+     "id": "0x1569755ccc0",
+     "type": "function",
+     "repr": "deposit"
+    },
+    "0x156973e3c40": {
+     "id": "0x156973e3c40",
+     "type": "type",
+     "repr": "Account"
+    },
+    "0x1569756d070": {
+     "id": "0x1569756d070",
+     "type": "Account",
+     "repr": "<__main__.Account object at 0x000001569756D070>",
+     "fields": {
+      "owner": {
+       "ref": "0x15697566290"
+      },
+      "balance": {
+       "ref": "0x7ffd7f2b5c58"
+      }
+     }
+    },
+    "0x7ffd7f2b4fd8": {
+     "id": "0x7ffd7f2b4fd8",
+     "type": "int",
+     "repr": "50"
+    }
+   },
+   "stdout": "150\n"
+  },
+  {
+   "line": 18,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 18,
+     "locals": {
+      "acct": {
+       "ref": "0x15697573980"
+      },
+      "deposit": {
+       "ref": "0x1569755ccc0"
+      },
+      "Account": {
+       "ref": "0x156973e3c40"
+      },
+      "acc": {
+       "ref": "0x1569756d070"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x15697573980": {
+     "id": "0x15697573980",
+     "type": "dict",
+     "repr": "{'owner': '지기', 'balance': 150}",
+     "entries": [
+      [
+       {
+        "ref": "0x7ffd7f2c0cb8"
+       },
+       {
+        "ref": "0x15697566290"
+       }
+      ],
+      [
+       {
+        "ref": "0x1569756d5f0"
+       },
+       {
+        "ref": "0x7ffd7f2b5c58"
+       }
+      ]
+     ]
+    },
+    "0x7ffd7f2c0cb8": {
+     "id": "0x7ffd7f2c0cb8",
+     "type": "str",
+     "repr": "'owner'"
+    },
+    "0x15697566290": {
+     "id": "0x15697566290",
+     "type": "str",
+     "repr": "'지기'"
+    },
+    "0x1569756d5f0": {
+     "id": "0x1569756d5f0",
+     "type": "str",
+     "repr": "'balance'"
+    },
+    "0x7ffd7f2b5c58": {
+     "id": "0x7ffd7f2b5c58",
+     "type": "int",
+     "repr": "150"
+    },
+    "0x1569755ccc0": {
+     "id": "0x1569755ccc0",
+     "type": "function",
+     "repr": "deposit"
+    },
+    "0x156973e3c40": {
+     "id": "0x156973e3c40",
+     "type": "type",
+     "repr": "Account"
+    },
+    "0x1569756d070": {
+     "id": "0x1569756d070",
+     "type": "Account",
+     "repr": "<__main__.Account object at 0x000001569756D070>",
+     "fields": {
+      "owner": {
+       "ref": "0x15697566290"
+      },
+      "balance": {
+       "ref": "0x7ffd7f2b5c58"
+      }
+     }
+    }
+   },
+   "stdout": "150\n"
+  },
+  {
+   "line": 18,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 18,
+     "locals": {
+      "acct": {
+       "ref": "0x15697573980"
+      },
+      "deposit": {
+       "ref": "0x1569755ccc0"
+      },
+      "Account": {
+       "ref": "0x156973e3c40"
+      },
+      "acc": {
+       "ref": "0x1569756d070"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x15697573980": {
+     "id": "0x15697573980",
+     "type": "dict",
+     "repr": "{'owner': '지기', 'balance': 150}",
+     "entries": [
+      [
+       {
+        "ref": "0x7ffd7f2c0cb8"
+       },
+       {
+        "ref": "0x15697566290"
+       }
+      ],
+      [
+       {
+        "ref": "0x1569756d5f0"
+       },
+       {
+        "ref": "0x7ffd7f2b5c58"
+       }
+      ]
+     ]
+    },
+    "0x7ffd7f2c0cb8": {
+     "id": "0x7ffd7f2c0cb8",
+     "type": "str",
+     "repr": "'owner'"
+    },
+    "0x15697566290": {
+     "id": "0x15697566290",
+     "type": "str",
+     "repr": "'지기'"
+    },
+    "0x1569756d5f0": {
+     "id": "0x1569756d5f0",
+     "type": "str",
+     "repr": "'balance'"
+    },
+    "0x7ffd7f2b5c58": {
+     "id": "0x7ffd7f2b5c58",
+     "type": "int",
+     "repr": "150"
+    },
+    "0x1569755ccc0": {
+     "id": "0x1569755ccc0",
+     "type": "function",
+     "repr": "deposit"
+    },
+    "0x156973e3c40": {
+     "id": "0x156973e3c40",
+     "type": "type",
+     "repr": "Account"
+    },
+    "0x1569756d070": {
+     "id": "0x1569756d070",
+     "type": "Account",
+     "repr": "<__main__.Account object at 0x000001569756D070>",
+     "fields": {
+      "owner": {
+       "ref": "0x15697566290"
+      },
+      "balance": {
+       "ref": "0x7ffd7f2b5c58"
+      }
+     }
+    }
+   },
+   "stdout": "150\n150\n"
+  }
+ ],
+ "v": 1
+}

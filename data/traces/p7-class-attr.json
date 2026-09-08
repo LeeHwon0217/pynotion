@@ -1,0 +1,920 @@
+{
+ "id": "p7-class-attr",
+ "code": "class Counter:\n    count = 0\n\n    def __init__(self):\n        Counter.count += 1\n        self.id = Counter.count\n\na = Counter()\nb = Counter()\nprint(a.id, b.id, Counter.count)\nprint(a.count, b.count)\na.count = 99\nprint(a.count, b.count, Counter.count)",
+ "steps": [
+  {
+   "line": 0,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 0,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Counter",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Counter",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Counter",
+     "line": 2,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": "",
+   "note": "클래스 속성 — 클래스 객체에 하나. 모든 인스턴스가 공유"
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Counter",
+     "line": 4,
+     "locals": {
+      "count": {
+       "ref": "0x7ffd7f2b4998"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x7ffd7f2b4998": {
+     "id": "0x7ffd7f2b4998",
+     "type": "int",
+     "repr": "0"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 4,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Counter",
+     "line": 4,
+     "locals": {
+      "count": {
+       "ref": "0x7ffd7f2b4998"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x7ffd7f2b4998": {
+     "id": "0x7ffd7f2b4998",
+     "type": "int",
+     "repr": "0"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 8,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 8,
+     "locals": {
+      "Counter": {
+       "ref": "0x1d073a026c0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1d073a026c0": {
+     "id": "0x1d073a026c0",
+     "type": "type",
+     "repr": "Counter"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 4,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 8,
+     "locals": {
+      "Counter": {
+       "ref": "0x1d073a026c0"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 4,
+     "locals": {
+      "self": {
+       "ref": "0x1d073b7d070"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1d073a026c0": {
+     "id": "0x1d073a026c0",
+     "type": "type",
+     "repr": "Counter"
+    },
+    "0x1d073b7d070": {
+     "id": "0x1d073b7d070",
+     "type": "Counter",
+     "repr": "<__main__.Counter object at 0x000001D073B7D070>",
+     "fields": {}
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 8,
+     "locals": {
+      "Counter": {
+       "ref": "0x1d073a026c0"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 5,
+     "locals": {
+      "self": {
+       "ref": "0x1d073b7d070"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1d073a026c0": {
+     "id": "0x1d073a026c0",
+     "type": "type",
+     "repr": "Counter"
+    },
+    "0x1d073b7d070": {
+     "id": "0x1d073b7d070",
+     "type": "Counter",
+     "repr": "<__main__.Counter object at 0x000001D073B7D070>",
+     "fields": {}
+    }
+   },
+   "stdout": "",
+   "note": "클래스 것을 바꾼다 (self.count += 1 이면 인스턴스 속성이 새로 생긴다!)"
+  },
+  {
+   "line": 6,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 8,
+     "locals": {
+      "Counter": {
+       "ref": "0x1d073a026c0"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 6,
+     "locals": {
+      "self": {
+       "ref": "0x1d073b7d070"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1d073a026c0": {
+     "id": "0x1d073a026c0",
+     "type": "type",
+     "repr": "Counter"
+    },
+    "0x1d073b7d070": {
+     "id": "0x1d073b7d070",
+     "type": "Counter",
+     "repr": "<__main__.Counter object at 0x000001D073B7D070>",
+     "fields": {}
+    }
+   },
+   "stdout": "",
+   "note": "인스턴스 속성 — 각자"
+  },
+  {
+   "line": 6,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 8,
+     "locals": {
+      "Counter": {
+       "ref": "0x1d073a026c0"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 6,
+     "locals": {
+      "self": {
+       "ref": "0x1d073b7d070"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1d073a026c0": {
+     "id": "0x1d073a026c0",
+     "type": "type",
+     "repr": "Counter"
+    },
+    "0x1d073b7d070": {
+     "id": "0x1d073b7d070",
+     "type": "Counter",
+     "repr": "<__main__.Counter object at 0x000001D073B7D070>",
+     "fields": {
+      "id": {
+       "ref": "0x7ffd7f2b49b8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 9,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 9,
+     "locals": {
+      "Counter": {
+       "ref": "0x1d073a026c0"
+      },
+      "a": {
+       "ref": "0x1d073b7d070"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1d073a026c0": {
+     "id": "0x1d073a026c0",
+     "type": "type",
+     "repr": "Counter"
+    },
+    "0x1d073b7d070": {
+     "id": "0x1d073b7d070",
+     "type": "Counter",
+     "repr": "<__main__.Counter object at 0x000001D073B7D070>",
+     "fields": {
+      "id": {
+       "ref": "0x7ffd7f2b49b8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 4,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 9,
+     "locals": {
+      "Counter": {
+       "ref": "0x1d073a026c0"
+      },
+      "a": {
+       "ref": "0x1d073b7d070"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 4,
+     "locals": {
+      "self": {
+       "ref": "0x1d073b7d160"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1d073a026c0": {
+     "id": "0x1d073a026c0",
+     "type": "type",
+     "repr": "Counter"
+    },
+    "0x1d073b7d070": {
+     "id": "0x1d073b7d070",
+     "type": "Counter",
+     "repr": "<__main__.Counter object at 0x000001D073B7D070>",
+     "fields": {
+      "id": {
+       "ref": "0x7ffd7f2b49b8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x1d073b7d160": {
+     "id": "0x1d073b7d160",
+     "type": "Counter",
+     "repr": "<__main__.Counter object at 0x000001D073B7D160>",
+     "fields": {}
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 9,
+     "locals": {
+      "Counter": {
+       "ref": "0x1d073a026c0"
+      },
+      "a": {
+       "ref": "0x1d073b7d070"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 5,
+     "locals": {
+      "self": {
+       "ref": "0x1d073b7d160"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1d073a026c0": {
+     "id": "0x1d073a026c0",
+     "type": "type",
+     "repr": "Counter"
+    },
+    "0x1d073b7d070": {
+     "id": "0x1d073b7d070",
+     "type": "Counter",
+     "repr": "<__main__.Counter object at 0x000001D073B7D070>",
+     "fields": {
+      "id": {
+       "ref": "0x7ffd7f2b49b8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x1d073b7d160": {
+     "id": "0x1d073b7d160",
+     "type": "Counter",
+     "repr": "<__main__.Counter object at 0x000001D073B7D160>",
+     "fields": {}
+    }
+   },
+   "stdout": "",
+   "note": "클래스 것을 바꾼다 (self.count += 1 이면 인스턴스 속성이 새로 생긴다!)"
+  },
+  {
+   "line": 6,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 9,
+     "locals": {
+      "Counter": {
+       "ref": "0x1d073a026c0"
+      },
+      "a": {
+       "ref": "0x1d073b7d070"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 6,
+     "locals": {
+      "self": {
+       "ref": "0x1d073b7d160"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1d073a026c0": {
+     "id": "0x1d073a026c0",
+     "type": "type",
+     "repr": "Counter"
+    },
+    "0x1d073b7d070": {
+     "id": "0x1d073b7d070",
+     "type": "Counter",
+     "repr": "<__main__.Counter object at 0x000001D073B7D070>",
+     "fields": {
+      "id": {
+       "ref": "0x7ffd7f2b49b8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x1d073b7d160": {
+     "id": "0x1d073b7d160",
+     "type": "Counter",
+     "repr": "<__main__.Counter object at 0x000001D073B7D160>",
+     "fields": {}
+    }
+   },
+   "stdout": "",
+   "note": "인스턴스 속성 — 각자"
+  },
+  {
+   "line": 6,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 9,
+     "locals": {
+      "Counter": {
+       "ref": "0x1d073a026c0"
+      },
+      "a": {
+       "ref": "0x1d073b7d070"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 6,
+     "locals": {
+      "self": {
+       "ref": "0x1d073b7d160"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1d073a026c0": {
+     "id": "0x1d073a026c0",
+     "type": "type",
+     "repr": "Counter"
+    },
+    "0x1d073b7d070": {
+     "id": "0x1d073b7d070",
+     "type": "Counter",
+     "repr": "<__main__.Counter object at 0x000001D073B7D070>",
+     "fields": {
+      "id": {
+       "ref": "0x7ffd7f2b49b8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x1d073b7d160": {
+     "id": "0x1d073b7d160",
+     "type": "Counter",
+     "repr": "<__main__.Counter object at 0x000001D073B7D160>",
+     "fields": {
+      "id": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 10,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 10,
+     "locals": {
+      "Counter": {
+       "ref": "0x1d073a026c0"
+      },
+      "a": {
+       "ref": "0x1d073b7d070"
+      },
+      "b": {
+       "ref": "0x1d073b7d160"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1d073a026c0": {
+     "id": "0x1d073a026c0",
+     "type": "type",
+     "repr": "Counter"
+    },
+    "0x1d073b7d070": {
+     "id": "0x1d073b7d070",
+     "type": "Counter",
+     "repr": "<__main__.Counter object at 0x000001D073B7D070>",
+     "fields": {
+      "id": {
+       "ref": "0x7ffd7f2b49b8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x1d073b7d160": {
+     "id": "0x1d073b7d160",
+     "type": "Counter",
+     "repr": "<__main__.Counter object at 0x000001D073B7D160>",
+     "fields": {
+      "id": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    }
+   },
+   "stdout": "",
+   "note": "id 는 각자, count 는 공유"
+  },
+  {
+   "line": 11,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 11,
+     "locals": {
+      "Counter": {
+       "ref": "0x1d073a026c0"
+      },
+      "a": {
+       "ref": "0x1d073b7d070"
+      },
+      "b": {
+       "ref": "0x1d073b7d160"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1d073a026c0": {
+     "id": "0x1d073a026c0",
+     "type": "type",
+     "repr": "Counter"
+    },
+    "0x1d073b7d070": {
+     "id": "0x1d073b7d070",
+     "type": "Counter",
+     "repr": "<__main__.Counter object at 0x000001D073B7D070>",
+     "fields": {
+      "id": {
+       "ref": "0x7ffd7f2b49b8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x1d073b7d160": {
+     "id": "0x1d073b7d160",
+     "type": "Counter",
+     "repr": "<__main__.Counter object at 0x000001D073B7D160>",
+     "fields": {
+      "id": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    }
+   },
+   "stdout": "1 2 2\n",
+   "note": "인스턴스에 count 가 없으니 클래스에서 찾는다 → 둘 다 2"
+  },
+  {
+   "line": 12,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 12,
+     "locals": {
+      "Counter": {
+       "ref": "0x1d073a026c0"
+      },
+      "a": {
+       "ref": "0x1d073b7d070"
+      },
+      "b": {
+       "ref": "0x1d073b7d160"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1d073a026c0": {
+     "id": "0x1d073a026c0",
+     "type": "type",
+     "repr": "Counter"
+    },
+    "0x1d073b7d070": {
+     "id": "0x1d073b7d070",
+     "type": "Counter",
+     "repr": "<__main__.Counter object at 0x000001D073B7D070>",
+     "fields": {
+      "id": {
+       "ref": "0x7ffd7f2b49b8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x1d073b7d160": {
+     "id": "0x1d073b7d160",
+     "type": "Counter",
+     "repr": "<__main__.Counter object at 0x000001D073B7D160>",
+     "fields": {
+      "id": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    }
+   },
+   "stdout": "1 2 2\n2 2\n",
+   "note": "인스턴스에 새 속성 count 가 생긴다 — 클래스 것은 그대로"
+  },
+  {
+   "line": 13,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 13,
+     "locals": {
+      "Counter": {
+       "ref": "0x1d073a026c0"
+      },
+      "a": {
+       "ref": "0x1d073b7d070"
+      },
+      "b": {
+       "ref": "0x1d073b7d160"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1d073a026c0": {
+     "id": "0x1d073a026c0",
+     "type": "type",
+     "repr": "Counter"
+    },
+    "0x1d073b7d070": {
+     "id": "0x1d073b7d070",
+     "type": "Counter",
+     "repr": "<__main__.Counter object at 0x000001D073B7D070>",
+     "fields": {
+      "id": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "count": {
+       "ref": "0x7ffd7f2b55f8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b55f8": {
+     "id": "0x7ffd7f2b55f8",
+     "type": "int",
+     "repr": "99"
+    },
+    "0x1d073b7d160": {
+     "id": "0x1d073b7d160",
+     "type": "Counter",
+     "repr": "<__main__.Counter object at 0x000001D073B7D160>",
+     "fields": {
+      "id": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    }
+   },
+   "stdout": "1 2 2\n2 2\n"
+  },
+  {
+   "line": 13,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 13,
+     "locals": {
+      "Counter": {
+       "ref": "0x1d073a026c0"
+      },
+      "a": {
+       "ref": "0x1d073b7d070"
+      },
+      "b": {
+       "ref": "0x1d073b7d160"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1d073a026c0": {
+     "id": "0x1d073a026c0",
+     "type": "type",
+     "repr": "Counter"
+    },
+    "0x1d073b7d070": {
+     "id": "0x1d073b7d070",
+     "type": "Counter",
+     "repr": "<__main__.Counter object at 0x000001D073B7D070>",
+     "fields": {
+      "id": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "count": {
+       "ref": "0x7ffd7f2b55f8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b55f8": {
+     "id": "0x7ffd7f2b55f8",
+     "type": "int",
+     "repr": "99"
+    },
+    "0x1d073b7d160": {
+     "id": "0x1d073b7d160",
+     "type": "Counter",
+     "repr": "<__main__.Counter object at 0x000001D073B7D160>",
+     "fields": {
+      "id": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    }
+   },
+   "stdout": "1 2 2\n2 2\n99 2 2\n"
+  }
+ ],
+ "v": 1
+}

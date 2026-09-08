@@ -37,14 +37,14 @@
      "line": 7,
      "locals": {
       "to_int": {
-       "ref": "0x1e11643cc20"
+       "ref": "0x28cac4ecc20"
       }
      }
     }
    ],
    "heap": {
-    "0x1e11643cc20": {
-     "id": "0x1e11643cc20",
+    "0x28cac4ecc20": {
+     "id": "0x28cac4ecc20",
      "type": "function",
      "repr": "to_int"
     }
@@ -61,7 +61,7 @@
      "line": 7,
      "locals": {
       "to_int": {
-       "ref": "0x1e11643cc20"
+       "ref": "0x28cac4ecc20"
       }
      }
     },
@@ -70,19 +70,19 @@
      "line": 1,
      "locals": {
       "text": {
-       "ref": "0x1e11644d200"
+       "ref": "0x28cac4fd2c0"
       }
      }
     }
    ],
    "heap": {
-    "0x1e11643cc20": {
-     "id": "0x1e11643cc20",
+    "0x28cac4ecc20": {
+     "id": "0x28cac4ecc20",
      "type": "function",
      "repr": "to_int"
     },
-    "0x1e11644d200": {
-     "id": "0x1e11644d200",
+    "0x28cac4fd2c0": {
+     "id": "0x28cac4fd2c0",
      "type": "str",
      "repr": "'42'"
     }
@@ -98,7 +98,7 @@
      "line": 7,
      "locals": {
       "to_int": {
-       "ref": "0x1e11643cc20"
+       "ref": "0x28cac4ecc20"
       }
      }
     },
@@ -107,19 +107,19 @@
      "line": 2,
      "locals": {
       "text": {
-       "ref": "0x1e11644d200"
+       "ref": "0x28cac4fd2c0"
       }
      }
     }
    ],
    "heap": {
-    "0x1e11643cc20": {
-     "id": "0x1e11643cc20",
+    "0x28cac4ecc20": {
+     "id": "0x28cac4ecc20",
      "type": "function",
      "repr": "to_int"
     },
-    "0x1e11644d200": {
-     "id": "0x1e11644d200",
+    "0x28cac4fd2c0": {
+     "id": "0x28cac4fd2c0",
      "type": "str",
      "repr": "'42'"
     }
@@ -135,7 +135,7 @@
      "line": 7,
      "locals": {
       "to_int": {
-       "ref": "0x1e11643cc20"
+       "ref": "0x28cac4ecc20"
       }
      }
     },
@@ -144,19 +144,19 @@
      "line": 3,
      "locals": {
       "text": {
-       "ref": "0x1e11644d200"
+       "ref": "0x28cac4fd2c0"
       }
      }
     }
    ],
    "heap": {
-    "0x1e11643cc20": {
-     "id": "0x1e11643cc20",
+    "0x28cac4ecc20": {
+     "id": "0x28cac4ecc20",
      "type": "function",
      "repr": "to_int"
     },
-    "0x1e11644d200": {
-     "id": "0x1e11644d200",
+    "0x28cac4fd2c0": {
+     "id": "0x28cac4fd2c0",
      "type": "str",
      "repr": "'42'"
     }
@@ -173,7 +173,7 @@
      "line": 7,
      "locals": {
       "to_int": {
-       "ref": "0x1e11643cc20"
+       "ref": "0x28cac4ecc20"
       }
      }
     },
@@ -182,19 +182,19 @@
      "line": 3,
      "locals": {
       "text": {
-       "ref": "0x1e11644d200"
+       "ref": "0x28cac4fd2c0"
       }
      }
     }
    ],
    "heap": {
-    "0x1e11643cc20": {
-     "id": "0x1e11643cc20",
+    "0x28cac4ecc20": {
+     "id": "0x28cac4ecc20",
      "type": "function",
      "repr": "to_int"
     },
-    "0x1e11644d200": {
-     "id": "0x1e11644d200",
+    "0x28cac4fd2c0": {
+     "id": "0x28cac4fd2c0",
      "type": "str",
      "repr": "'42'"
     }
@@ -211,14 +211,14 @@
      "line": 8,
      "locals": {
       "to_int": {
-       "ref": "0x1e11643cc20"
+       "ref": "0x28cac4ecc20"
       }
      }
     }
    ],
    "heap": {
-    "0x1e11643cc20": {
-     "id": "0x1e11643cc20",
+    "0x28cac4ecc20": {
+     "id": "0x28cac4ecc20",
      "type": "function",
      "repr": "to_int"
     }
@@ -235,7 +235,7 @@
      "line": 8,
      "locals": {
       "to_int": {
-       "ref": "0x1e11643cc20"
+       "ref": "0x28cac4ecc20"
       }
      }
     },
@@ -244,19 +244,19 @@
      "line": 1,
      "locals": {
       "text": {
-       "ref": "0x1e116446060"
+       "ref": "0x28cac4f6100"
       }
      }
     }
    ],
    "heap": {
-    "0x1e11643cc20": {
-     "id": "0x1e11643cc20",
+    "0x28cac4ecc20": {
+     "id": "0x28cac4ecc20",
      "type": "function",
      "repr": "to_int"
     },
-    "0x1e116446060": {
-     "id": "0x1e116446060",
+    "0x28cac4f6100": {
+     "id": "0x28cac4f6100",
      "type": "str",
      "repr": "'사십이'"
     }
@@ -272,7 +272,7 @@
      "line": 8,
      "locals": {
       "to_int": {
-       "ref": "0x1e11643cc20"
+       "ref": "0x28cac4ecc20"
       }
      }
     },
@@ -281,19 +281,19 @@
      "line": 2,
      "locals": {
       "text": {
-       "ref": "0x1e116446060"
+       "ref": "0x28cac4f6100"
       }
      }
     }
    ],
    "heap": {
-    "0x1e11643cc20": {
-     "id": "0x1e11643cc20",
+    "0x28cac4ecc20": {
+     "id": "0x28cac4ecc20",
      "type": "function",
      "repr": "to_int"
     },
-    "0x1e116446060": {
-     "id": "0x1e116446060",
+    "0x28cac4f6100": {
+     "id": "0x28cac4f6100",
      "type": "str",
      "repr": "'사십이'"
     }
@@ -309,7 +309,7 @@
      "line": 8,
      "locals": {
       "to_int": {
-       "ref": "0x1e11643cc20"
+       "ref": "0x28cac4ecc20"
       }
      }
     },
@@ -318,19 +318,19 @@
      "line": 3,
      "locals": {
       "text": {
-       "ref": "0x1e116446060"
+       "ref": "0x28cac4f6100"
       }
      }
     }
    ],
    "heap": {
-    "0x1e11643cc20": {
-     "id": "0x1e11643cc20",
+    "0x28cac4ecc20": {
+     "id": "0x28cac4ecc20",
      "type": "function",
      "repr": "to_int"
     },
-    "0x1e116446060": {
-     "id": "0x1e116446060",
+    "0x28cac4f6100": {
+     "id": "0x28cac4f6100",
      "type": "str",
      "repr": "'사십이'"
     }
@@ -347,7 +347,7 @@
      "line": 8,
      "locals": {
       "to_int": {
-       "ref": "0x1e11643cc20"
+       "ref": "0x28cac4ecc20"
       }
      }
     },
@@ -356,19 +356,19 @@
      "line": 3,
      "locals": {
       "text": {
-       "ref": "0x1e116446060"
+       "ref": "0x28cac4f6100"
       }
      }
     }
    ],
    "heap": {
-    "0x1e11643cc20": {
-     "id": "0x1e11643cc20",
+    "0x28cac4ecc20": {
+     "id": "0x28cac4ecc20",
      "type": "function",
      "repr": "to_int"
     },
-    "0x1e116446060": {
-     "id": "0x1e116446060",
+    "0x28cac4f6100": {
+     "id": "0x28cac4f6100",
      "type": "str",
      "repr": "'사십이'"
     }
@@ -385,7 +385,7 @@
      "line": 8,
      "locals": {
       "to_int": {
-       "ref": "0x1e11643cc20"
+       "ref": "0x28cac4ecc20"
       }
      }
     },
@@ -394,19 +394,19 @@
      "line": 4,
      "locals": {
       "text": {
-       "ref": "0x1e116446060"
+       "ref": "0x28cac4f6100"
       }
      }
     }
    ],
    "heap": {
-    "0x1e11643cc20": {
-     "id": "0x1e11643cc20",
+    "0x28cac4ecc20": {
+     "id": "0x28cac4ecc20",
      "type": "function",
      "repr": "to_int"
     },
-    "0x1e116446060": {
-     "id": "0x1e116446060",
+    "0x28cac4f6100": {
+     "id": "0x28cac4f6100",
      "type": "str",
      "repr": "'사십이'"
     }
@@ -423,7 +423,7 @@
      "line": 8,
      "locals": {
       "to_int": {
-       "ref": "0x1e11643cc20"
+       "ref": "0x28cac4ecc20"
       }
      }
     },
@@ -432,19 +432,19 @@
      "line": 5,
      "locals": {
       "text": {
-       "ref": "0x1e116446060"
+       "ref": "0x28cac4f6100"
       }
      }
     }
    ],
    "heap": {
-    "0x1e11643cc20": {
-     "id": "0x1e11643cc20",
+    "0x28cac4ecc20": {
+     "id": "0x28cac4ecc20",
      "type": "function",
      "repr": "to_int"
     },
-    "0x1e116446060": {
-     "id": "0x1e116446060",
+    "0x28cac4f6100": {
+     "id": "0x28cac4f6100",
      "type": "str",
      "repr": "'사십이'"
     }
@@ -460,7 +460,7 @@
      "line": 8,
      "locals": {
       "to_int": {
-       "ref": "0x1e11643cc20"
+       "ref": "0x28cac4ecc20"
       }
      }
     },
@@ -469,19 +469,19 @@
      "line": 5,
      "locals": {
       "text": {
-       "ref": "0x1e116446060"
+       "ref": "0x28cac4f6100"
       }
      }
     }
    ],
    "heap": {
-    "0x1e11643cc20": {
-     "id": "0x1e11643cc20",
+    "0x28cac4ecc20": {
+     "id": "0x28cac4ecc20",
      "type": "function",
      "repr": "to_int"
     },
-    "0x1e116446060": {
-     "id": "0x1e116446060",
+    "0x28cac4f6100": {
+     "id": "0x28cac4f6100",
      "type": "str",
      "repr": "'사십이'"
     }
@@ -497,14 +497,14 @@
      "line": 9,
      "locals": {
       "to_int": {
-       "ref": "0x1e11643cc20"
+       "ref": "0x28cac4ecc20"
       }
      }
     }
    ],
    "heap": {
-    "0x1e11643cc20": {
-     "id": "0x1e11643cc20",
+    "0x28cac4ecc20": {
+     "id": "0x28cac4ecc20",
      "type": "function",
      "repr": "to_int"
     }
@@ -521,7 +521,7 @@
      "line": 9,
      "locals": {
       "to_int": {
-       "ref": "0x1e11643cc20"
+       "ref": "0x28cac4ecc20"
       }
      }
     },
@@ -536,8 +536,8 @@
     }
    ],
    "heap": {
-    "0x1e11643cc20": {
-     "id": "0x1e11643cc20",
+    "0x28cac4ecc20": {
+     "id": "0x28cac4ecc20",
      "type": "function",
      "repr": "to_int"
     },
@@ -558,7 +558,7 @@
      "line": 9,
      "locals": {
       "to_int": {
-       "ref": "0x1e11643cc20"
+       "ref": "0x28cac4ecc20"
       }
      }
     },
@@ -573,8 +573,8 @@
     }
    ],
    "heap": {
-    "0x1e11643cc20": {
-     "id": "0x1e11643cc20",
+    "0x28cac4ecc20": {
+     "id": "0x28cac4ecc20",
      "type": "function",
      "repr": "to_int"
     },
@@ -595,7 +595,7 @@
      "line": 9,
      "locals": {
       "to_int": {
-       "ref": "0x1e11643cc20"
+       "ref": "0x28cac4ecc20"
       }
      }
     },
@@ -610,8 +610,8 @@
     }
    ],
    "heap": {
-    "0x1e11643cc20": {
-     "id": "0x1e11643cc20",
+    "0x28cac4ecc20": {
+     "id": "0x28cac4ecc20",
      "type": "function",
      "repr": "to_int"
     },
@@ -633,7 +633,7 @@
      "line": 9,
      "locals": {
       "to_int": {
-       "ref": "0x1e11643cc20"
+       "ref": "0x28cac4ecc20"
       }
      }
     },
@@ -648,8 +648,8 @@
     }
    ],
    "heap": {
-    "0x1e11643cc20": {
-     "id": "0x1e11643cc20",
+    "0x28cac4ecc20": {
+     "id": "0x28cac4ecc20",
      "type": "function",
      "repr": "to_int"
     },
@@ -671,7 +671,7 @@
      "line": 9,
      "locals": {
       "to_int": {
-       "ref": "0x1e11643cc20"
+       "ref": "0x28cac4ecc20"
       }
      }
     },
@@ -686,8 +686,8 @@
     }
    ],
    "heap": {
-    "0x1e11643cc20": {
-     "id": "0x1e11643cc20",
+    "0x28cac4ecc20": {
+     "id": "0x28cac4ecc20",
      "type": "function",
      "repr": "to_int"
     },
@@ -709,7 +709,7 @@
      "line": 9,
      "locals": {
       "to_int": {
-       "ref": "0x1e11643cc20"
+       "ref": "0x28cac4ecc20"
       }
      }
     },
@@ -724,8 +724,8 @@
     }
    ],
    "heap": {
-    "0x1e11643cc20": {
-     "id": "0x1e11643cc20",
+    "0x28cac4ecc20": {
+     "id": "0x28cac4ecc20",
      "type": "function",
      "repr": "to_int"
     },
@@ -746,14 +746,14 @@
      "line": 9,
      "locals": {
       "to_int": {
-       "ref": "0x1e11643cc20"
+       "ref": "0x28cac4ecc20"
       }
      }
     }
    ],
    "heap": {
-    "0x1e11643cc20": {
-     "id": "0x1e11643cc20",
+    "0x28cac4ecc20": {
+     "id": "0x28cac4ecc20",
      "type": "function",
      "repr": "to_int"
     }
@@ -770,14 +770,14 @@
      "line": 9,
      "locals": {
       "to_int": {
-       "ref": "0x1e11643cc20"
+       "ref": "0x28cac4ecc20"
       }
      }
     }
    ],
    "heap": {
-    "0x1e11643cc20": {
-     "id": "0x1e11643cc20",
+    "0x28cac4ecc20": {
+     "id": "0x28cac4ecc20",
      "type": "function",
      "repr": "to_int"
     }
@@ -793,14 +793,14 @@
      "line": 9,
      "locals": {
       "to_int": {
-       "ref": "0x1e11643cc20"
+       "ref": "0x28cac4ecc20"
       }
      }
     }
    ],
    "heap": {
-    "0x1e11643cc20": {
-     "id": "0x1e11643cc20",
+    "0x28cac4ecc20": {
+     "id": "0x28cac4ecc20",
      "type": "function",
      "repr": "to_int"
     }

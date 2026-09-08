@@ -38,22 +38,22 @@
      "line": 2,
      "locals": {
       "sqrt": {
-       "ref": "0x25db6437ce0"
+       "ref": "0x1f51fc47d80"
       },
       "pi": {
-       "ref": "0x25db6134730"
+       "ref": "0x1f51f944730"
       }
      }
     }
    ],
    "heap": {
-    "0x25db6437ce0": {
-     "id": "0x25db6437ce0",
+    "0x1f51fc47d80": {
+     "id": "0x1f51fc47d80",
      "type": "builtin_function_or_method",
      "repr": "sqrt"
     },
-    "0x25db6134730": {
-     "id": "0x25db6134730",
+    "0x1f51f944730": {
+     "id": "0x1f51f944730",
      "type": "float",
      "repr": "3.141592653589793"
     }
@@ -69,22 +69,22 @@
      "line": 3,
      "locals": {
       "sqrt": {
-       "ref": "0x25db6437ce0"
+       "ref": "0x1f51fc47d80"
       },
       "pi": {
-       "ref": "0x25db6134730"
+       "ref": "0x1f51f944730"
       }
      }
     }
    ],
    "heap": {
-    "0x25db6437ce0": {
-     "id": "0x25db6437ce0",
+    "0x1f51fc47d80": {
+     "id": "0x1f51fc47d80",
      "type": "builtin_function_or_method",
      "repr": "sqrt"
     },
-    "0x25db6134730": {
-     "id": "0x25db6134730",
+    "0x1f51f944730": {
+     "id": "0x1f51f944730",
      "type": "float",
      "repr": "3.141592653589793"
     }
@@ -101,30 +101,30 @@
      "line": 4,
      "locals": {
       "sqrt": {
-       "ref": "0x25db6437ce0"
+       "ref": "0x1f51fc47d80"
       },
       "pi": {
-       "ref": "0x25db6134730"
+       "ref": "0x1f51f944730"
       },
       "fl": {
-       "ref": "0x25db6437510"
+       "ref": "0x1f51fc475b0"
       }
      }
     }
    ],
    "heap": {
-    "0x25db6437ce0": {
-     "id": "0x25db6437ce0",
+    "0x1f51fc47d80": {
+     "id": "0x1f51fc47d80",
      "type": "builtin_function_or_method",
      "repr": "sqrt"
     },
-    "0x25db6134730": {
-     "id": "0x25db6134730",
+    "0x1f51f944730": {
+     "id": "0x1f51f944730",
      "type": "float",
      "repr": "3.141592653589793"
     },
-    "0x25db6437510": {
-     "id": "0x25db6437510",
+    "0x1f51fc475b0": {
+     "id": "0x1f51fc475b0",
      "type": "builtin_function_or_method",
      "repr": "floor"
     }
@@ -140,30 +140,30 @@
      "line": 5,
      "locals": {
       "sqrt": {
-       "ref": "0x25db6437ce0"
+       "ref": "0x1f51fc47d80"
       },
       "pi": {
-       "ref": "0x25db6134730"
+       "ref": "0x1f51f944730"
       },
       "fl": {
-       "ref": "0x25db6437510"
+       "ref": "0x1f51fc475b0"
       }
      }
     }
    ],
    "heap": {
-    "0x25db6437ce0": {
-     "id": "0x25db6437ce0",
+    "0x1f51fc47d80": {
+     "id": "0x1f51fc47d80",
      "type": "builtin_function_or_method",
      "repr": "sqrt"
     },
-    "0x25db6134730": {
-     "id": "0x25db6134730",
+    "0x1f51f944730": {
+     "id": "0x1f51f944730",
      "type": "float",
      "repr": "3.141592653589793"
     },
-    "0x25db6437510": {
-     "id": "0x25db6437510",
+    "0x1f51fc475b0": {
+     "id": "0x1f51fc475b0",
      "type": "builtin_function_or_method",
      "repr": "floor"
     }
@@ -180,38 +180,38 @@
      "line": 6,
      "locals": {
       "sqrt": {
-       "ref": "0x25db6437ce0"
+       "ref": "0x1f51fc47d80"
       },
       "pi": {
-       "ref": "0x25db6134730"
+       "ref": "0x1f51f944730"
       },
       "fl": {
-       "ref": "0x25db6437510"
+       "ref": "0x1f51fc475b0"
       },
       "co": {
-       "ref": "0x25db6143ec0"
+       "ref": "0x1f51f953f10"
       }
      }
     }
    ],
    "heap": {
-    "0x25db6437ce0": {
-     "id": "0x25db6437ce0",
+    "0x1f51fc47d80": {
+     "id": "0x1f51fc47d80",
      "type": "builtin_function_or_method",
      "repr": "sqrt"
     },
-    "0x25db6134730": {
-     "id": "0x25db6134730",
+    "0x1f51f944730": {
+     "id": "0x1f51f944730",
      "type": "float",
      "repr": "3.141592653589793"
     },
-    "0x25db6437510": {
-     "id": "0x25db6437510",
+    "0x1f51fc475b0": {
+     "id": "0x1f51fc475b0",
      "type": "builtin_function_or_method",
      "repr": "floor"
     },
-    "0x25db6143ec0": {
-     "id": "0x25db6143ec0",
+    "0x1f51f953f10": {
+     "id": "0x1f51f953f10",
      "type": "module",
      "repr": "collections"
     }
@@ -227,38 +227,38 @@
      "line": 7,
      "locals": {
       "sqrt": {
-       "ref": "0x25db6437ce0"
+       "ref": "0x1f51fc47d80"
       },
       "pi": {
-       "ref": "0x25db6134730"
+       "ref": "0x1f51f944730"
       },
       "fl": {
-       "ref": "0x25db6437510"
+       "ref": "0x1f51fc475b0"
       },
       "co": {
-       "ref": "0x25db6143ec0"
+       "ref": "0x1f51f953f10"
       }
      }
     }
    ],
    "heap": {
-    "0x25db6437ce0": {
-     "id": "0x25db6437ce0",
+    "0x1f51fc47d80": {
+     "id": "0x1f51fc47d80",
      "type": "builtin_function_or_method",
      "repr": "sqrt"
     },
-    "0x25db6134730": {
-     "id": "0x25db6134730",
+    "0x1f51f944730": {
+     "id": "0x1f51f944730",
      "type": "float",
      "repr": "3.141592653589793"
     },
-    "0x25db6437510": {
-     "id": "0x25db6437510",
+    "0x1f51fc475b0": {
+     "id": "0x1f51fc475b0",
      "type": "builtin_function_or_method",
      "repr": "floor"
     },
-    "0x25db6143ec0": {
-     "id": "0x25db6143ec0",
+    "0x1f51f953f10": {
+     "id": "0x1f51f953f10",
      "type": "module",
      "repr": "collections"
     }
@@ -275,38 +275,38 @@
      "line": 7,
      "locals": {
       "sqrt": {
-       "ref": "0x25db6437ce0"
+       "ref": "0x1f51fc47d80"
       },
       "pi": {
-       "ref": "0x25db6134730"
+       "ref": "0x1f51f944730"
       },
       "fl": {
-       "ref": "0x25db6437510"
+       "ref": "0x1f51fc475b0"
       },
       "co": {
-       "ref": "0x25db6143ec0"
+       "ref": "0x1f51f953f10"
       }
      }
     }
    ],
    "heap": {
-    "0x25db6437ce0": {
-     "id": "0x25db6437ce0",
+    "0x1f51fc47d80": {
+     "id": "0x1f51fc47d80",
      "type": "builtin_function_or_method",
      "repr": "sqrt"
     },
-    "0x25db6134730": {
-     "id": "0x25db6134730",
+    "0x1f51f944730": {
+     "id": "0x1f51f944730",
      "type": "float",
      "repr": "3.141592653589793"
     },
-    "0x25db6437510": {
-     "id": "0x25db6437510",
+    "0x1f51fc475b0": {
+     "id": "0x1f51fc475b0",
      "type": "builtin_function_or_method",
      "repr": "floor"
     },
-    "0x25db6143ec0": {
-     "id": "0x25db6143ec0",
+    "0x1f51f953f10": {
+     "id": "0x1f51f953f10",
      "type": "module",
      "repr": "collections"
     }
@@ -323,38 +323,38 @@
      "line": 7,
      "locals": {
       "sqrt": {
-       "ref": "0x25db6437ce0"
+       "ref": "0x1f51fc47d80"
       },
       "pi": {
-       "ref": "0x25db6134730"
+       "ref": "0x1f51f944730"
       },
       "fl": {
-       "ref": "0x25db6437510"
+       "ref": "0x1f51fc475b0"
       },
       "co": {
-       "ref": "0x25db6143ec0"
+       "ref": "0x1f51f953f10"
       }
      }
     }
    ],
    "heap": {
-    "0x25db6437ce0": {
-     "id": "0x25db6437ce0",
+    "0x1f51fc47d80": {
+     "id": "0x1f51fc47d80",
      "type": "builtin_function_or_method",
      "repr": "sqrt"
     },
-    "0x25db6134730": {
-     "id": "0x25db6134730",
+    "0x1f51f944730": {
+     "id": "0x1f51f944730",
      "type": "float",
      "repr": "3.141592653589793"
     },
-    "0x25db6437510": {
-     "id": "0x25db6437510",
+    "0x1f51fc475b0": {
+     "id": "0x1f51fc475b0",
      "type": "builtin_function_or_method",
      "repr": "floor"
     },
-    "0x25db6143ec0": {
-     "id": "0x25db6143ec0",
+    "0x1f51f953f10": {
+     "id": "0x1f51f953f10",
      "type": "module",
      "repr": "collections"
     }
@@ -370,38 +370,38 @@
      "line": 7,
      "locals": {
       "sqrt": {
-       "ref": "0x25db6437ce0"
+       "ref": "0x1f51fc47d80"
       },
       "pi": {
-       "ref": "0x25db6134730"
+       "ref": "0x1f51f944730"
       },
       "fl": {
-       "ref": "0x25db6437510"
+       "ref": "0x1f51fc475b0"
       },
       "co": {
-       "ref": "0x25db6143ec0"
+       "ref": "0x1f51f953f10"
       }
      }
     }
    ],
    "heap": {
-    "0x25db6437ce0": {
-     "id": "0x25db6437ce0",
+    "0x1f51fc47d80": {
+     "id": "0x1f51fc47d80",
      "type": "builtin_function_or_method",
      "repr": "sqrt"
     },
-    "0x25db6134730": {
-     "id": "0x25db6134730",
+    "0x1f51f944730": {
+     "id": "0x1f51f944730",
      "type": "float",
      "repr": "3.141592653589793"
     },
-    "0x25db6437510": {
-     "id": "0x25db6437510",
+    "0x1f51fc475b0": {
+     "id": "0x1f51fc475b0",
      "type": "builtin_function_or_method",
      "repr": "floor"
     },
-    "0x25db6143ec0": {
-     "id": "0x25db6143ec0",
+    "0x1f51f953f10": {
+     "id": "0x1f51f953f10",
      "type": "module",
      "repr": "collections"
     }

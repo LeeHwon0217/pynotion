@@ -37,48 +37,48 @@
      "line": 2,
      "locals": {
       "words": {
-       "ref": "0x19bd4fcc740"
+       "ref": "0x1195ad8c780"
       }
      }
     }
    ],
    "heap": {
-    "0x19bd4fcc740": {
-     "id": "0x19bd4fcc740",
+    "0x1195ad8c780": {
+     "id": "0x1195ad8c780",
      "type": "list",
      "repr": "['banana', 'kiwi', 'apple', 'fig']",
      "items": [
       {
-       "ref": "0x19bd51fd1d0"
+       "ref": "0x1195afbd200"
       },
       {
-       "ref": "0x19bd51fd230"
+       "ref": "0x1195afbd260"
       },
       {
-       "ref": "0x19bd51fd290"
+       "ref": "0x1195afbd2c0"
       },
       {
-       "ref": "0x19bd51fd2f0"
+       "ref": "0x1195afbd320"
       }
      ]
     },
-    "0x19bd51fd1d0": {
-     "id": "0x19bd51fd1d0",
+    "0x1195afbd200": {
+     "id": "0x1195afbd200",
      "type": "str",
      "repr": "'banana'"
     },
-    "0x19bd51fd230": {
-     "id": "0x19bd51fd230",
+    "0x1195afbd260": {
+     "id": "0x1195afbd260",
      "type": "str",
      "repr": "'kiwi'"
     },
-    "0x19bd51fd290": {
-     "id": "0x19bd51fd290",
+    "0x1195afbd2c0": {
+     "id": "0x1195afbd2c0",
      "type": "str",
      "repr": "'apple'"
     },
-    "0x19bd51fd2f0": {
-     "id": "0x19bd51fd2f0",
+    "0x1195afbd320": {
+     "id": "0x1195afbd320",
      "type": "str",
      "repr": "'fig'"
     }
@@ -95,48 +95,48 @@
      "line": 3,
      "locals": {
       "words": {
-       "ref": "0x19bd4fcc740"
+       "ref": "0x1195ad8c780"
       }
      }
     }
    ],
    "heap": {
-    "0x19bd4fcc740": {
-     "id": "0x19bd4fcc740",
+    "0x1195ad8c780": {
+     "id": "0x1195ad8c780",
      "type": "list",
      "repr": "['banana', 'kiwi', 'apple', 'fig']",
      "items": [
       {
-       "ref": "0x19bd51fd1d0"
+       "ref": "0x1195afbd200"
       },
       {
-       "ref": "0x19bd51fd230"
+       "ref": "0x1195afbd260"
       },
       {
-       "ref": "0x19bd51fd290"
+       "ref": "0x1195afbd2c0"
       },
       {
-       "ref": "0x19bd51fd2f0"
+       "ref": "0x1195afbd320"
       }
      ]
     },
-    "0x19bd51fd1d0": {
-     "id": "0x19bd51fd1d0",
+    "0x1195afbd200": {
+     "id": "0x1195afbd200",
      "type": "str",
      "repr": "'banana'"
     },
-    "0x19bd51fd230": {
-     "id": "0x19bd51fd230",
+    "0x1195afbd260": {
+     "id": "0x1195afbd260",
      "type": "str",
      "repr": "'kiwi'"
     },
-    "0x19bd51fd290": {
-     "id": "0x19bd51fd290",
+    "0x1195afbd2c0": {
+     "id": "0x1195afbd2c0",
      "type": "str",
      "repr": "'apple'"
     },
-    "0x19bd51fd2f0": {
-     "id": "0x19bd51fd2f0",
+    "0x1195afbd320": {
+     "id": "0x1195afbd320",
      "type": "str",
      "repr": "'fig'"
     }
@@ -153,48 +153,48 @@
      "line": 4,
      "locals": {
       "words": {
-       "ref": "0x19bd4fcc740"
+       "ref": "0x1195ad8c780"
       }
      }
     }
    ],
    "heap": {
-    "0x19bd4fcc740": {
-     "id": "0x19bd4fcc740",
+    "0x1195ad8c780": {
+     "id": "0x1195ad8c780",
      "type": "list",
      "repr": "['banana', 'kiwi', 'apple', 'fig']",
      "items": [
       {
-       "ref": "0x19bd51fd1d0"
+       "ref": "0x1195afbd200"
       },
       {
-       "ref": "0x19bd51fd230"
+       "ref": "0x1195afbd260"
       },
       {
-       "ref": "0x19bd51fd290"
+       "ref": "0x1195afbd2c0"
       },
       {
-       "ref": "0x19bd51fd2f0"
+       "ref": "0x1195afbd320"
       }
      ]
     },
-    "0x19bd51fd1d0": {
-     "id": "0x19bd51fd1d0",
+    "0x1195afbd200": {
+     "id": "0x1195afbd200",
      "type": "str",
      "repr": "'banana'"
     },
-    "0x19bd51fd230": {
-     "id": "0x19bd51fd230",
+    "0x1195afbd260": {
+     "id": "0x1195afbd260",
      "type": "str",
      "repr": "'kiwi'"
     },
-    "0x19bd51fd290": {
-     "id": "0x19bd51fd290",
+    "0x1195afbd2c0": {
+     "id": "0x1195afbd2c0",
      "type": "str",
      "repr": "'apple'"
     },
-    "0x19bd51fd2f0": {
-     "id": "0x19bd51fd2f0",
+    "0x1195afbd320": {
+     "id": "0x1195afbd320",
      "type": "str",
      "repr": "'fig'"
     }
@@ -210,48 +210,48 @@
      "line": 5,
      "locals": {
       "words": {
-       "ref": "0x19bd4fcc740"
+       "ref": "0x1195ad8c780"
       }
      }
     }
    ],
    "heap": {
-    "0x19bd4fcc740": {
-     "id": "0x19bd4fcc740",
+    "0x1195ad8c780": {
+     "id": "0x1195ad8c780",
      "type": "list",
      "repr": "['banana', 'kiwi', 'apple', 'fig']",
      "items": [
       {
-       "ref": "0x19bd51fd1d0"
+       "ref": "0x1195afbd200"
       },
       {
-       "ref": "0x19bd51fd230"
+       "ref": "0x1195afbd260"
       },
       {
-       "ref": "0x19bd51fd290"
+       "ref": "0x1195afbd2c0"
       },
       {
-       "ref": "0x19bd51fd2f0"
+       "ref": "0x1195afbd320"
       }
      ]
     },
-    "0x19bd51fd1d0": {
-     "id": "0x19bd51fd1d0",
+    "0x1195afbd200": {
+     "id": "0x1195afbd200",
      "type": "str",
      "repr": "'banana'"
     },
-    "0x19bd51fd230": {
-     "id": "0x19bd51fd230",
+    "0x1195afbd260": {
+     "id": "0x1195afbd260",
      "type": "str",
      "repr": "'kiwi'"
     },
-    "0x19bd51fd290": {
-     "id": "0x19bd51fd290",
+    "0x1195afbd2c0": {
+     "id": "0x1195afbd2c0",
      "type": "str",
      "repr": "'apple'"
     },
-    "0x19bd51fd2f0": {
-     "id": "0x19bd51fd2f0",
+    "0x1195afbd320": {
+     "id": "0x1195afbd320",
      "type": "str",
      "repr": "'fig'"
     }
@@ -267,85 +267,85 @@
      "line": 6,
      "locals": {
       "words": {
-       "ref": "0x19bd4fcc740"
+       "ref": "0x1195ad8c780"
       },
       "people": {
-       "ref": "0x19bd4fcd680"
+       "ref": "0x1195ad8d6c0"
       }
      }
     }
    ],
    "heap": {
-    "0x19bd4fcc740": {
-     "id": "0x19bd4fcc740",
+    "0x1195ad8c780": {
+     "id": "0x1195ad8c780",
      "type": "list",
      "repr": "['banana', 'kiwi', 'apple', 'fig']",
      "items": [
       {
-       "ref": "0x19bd51fd1d0"
+       "ref": "0x1195afbd200"
       },
       {
-       "ref": "0x19bd51fd230"
+       "ref": "0x1195afbd260"
       },
       {
-       "ref": "0x19bd51fd290"
+       "ref": "0x1195afbd2c0"
       },
       {
-       "ref": "0x19bd51fd2f0"
+       "ref": "0x1195afbd320"
       }
      ]
     },
-    "0x19bd51fd1d0": {
-     "id": "0x19bd51fd1d0",
+    "0x1195afbd200": {
+     "id": "0x1195afbd200",
      "type": "str",
      "repr": "'banana'"
     },
-    "0x19bd51fd230": {
-     "id": "0x19bd51fd230",
+    "0x1195afbd260": {
+     "id": "0x1195afbd260",
      "type": "str",
      "repr": "'kiwi'"
     },
-    "0x19bd51fd290": {
-     "id": "0x19bd51fd290",
+    "0x1195afbd2c0": {
+     "id": "0x1195afbd2c0",
      "type": "str",
      "repr": "'apple'"
     },
-    "0x19bd51fd2f0": {
-     "id": "0x19bd51fd2f0",
+    "0x1195afbd320": {
+     "id": "0x1195afbd320",
      "type": "str",
      "repr": "'fig'"
     },
-    "0x19bd4fcd680": {
-     "id": "0x19bd4fcd680",
+    "0x1195ad8d6c0": {
+     "id": "0x1195ad8d6c0",
      "type": "list",
      "repr": "[('지기', 29), ('영희', 25), ('철수', 29)]",
      "items": [
       {
-       "ref": "0x19bd5203940"
+       "ref": "0x1195afc3a80"
       },
       {
-       "ref": "0x19bd5203900"
+       "ref": "0x1195afc3a40"
       },
       {
-       "ref": "0x19bd52038c0"
+       "ref": "0x1195afc3a00"
       }
      ]
     },
-    "0x19bd5203940": {
-     "id": "0x19bd5203940",
+    "0x1195afc3a80": {
+     "id": "0x1195afc3a80",
      "type": "tuple",
      "repr": "('지기', 29)",
      "items": [
       {
-       "ref": "0x19bd51f60b0"
+       "ref": "0x1195afb6100"
       },
       {
        "ref": "0x7ffd7f2b4d38"
       }
      ]
     },
-    "0x19bd51f60b0": {
-     "id": "0x19bd51f60b0",
+    "0x1195afb6100": {
+     "id": "0x1195afb6100",
      "type": "str",
      "repr": "'지기'"
     },
@@ -354,21 +354,21 @@
      "type": "int",
      "repr": "29"
     },
-    "0x19bd5203900": {
-     "id": "0x19bd5203900",
+    "0x1195afc3a40": {
+     "id": "0x1195afc3a40",
      "type": "tuple",
      "repr": "('영희', 25)",
      "items": [
       {
-       "ref": "0x19bd51f6100"
+       "ref": "0x1195afb6150"
       },
       {
        "ref": "0x7ffd7f2b4cb8"
       }
      ]
     },
-    "0x19bd51f6100": {
-     "id": "0x19bd51f6100",
+    "0x1195afb6150": {
+     "id": "0x1195afb6150",
      "type": "str",
      "repr": "'영희'"
     },
@@ -377,21 +377,21 @@
      "type": "int",
      "repr": "25"
     },
-    "0x19bd52038c0": {
-     "id": "0x19bd52038c0",
+    "0x1195afc3a00": {
+     "id": "0x1195afc3a00",
      "type": "tuple",
      "repr": "('철수', 29)",
      "items": [
       {
-       "ref": "0x19bd51f6150"
+       "ref": "0x1195afb61a0"
       },
       {
        "ref": "0x7ffd7f2b4d38"
       }
      ]
     },
-    "0x19bd51f6150": {
-     "id": "0x19bd51f6150",
+    "0x1195afb61a0": {
+     "id": "0x1195afb61a0",
      "type": "str",
      "repr": "'철수'"
     }
@@ -408,10 +408,10 @@
      "line": 6,
      "locals": {
       "words": {
-       "ref": "0x19bd4fcc740"
+       "ref": "0x1195ad8c780"
       },
       "people": {
-       "ref": "0x19bd4fcd680"
+       "ref": "0x1195ad8d6c0"
       }
      }
     },
@@ -420,82 +420,82 @@
      "line": 6,
      "locals": {
       "p": {
-       "ref": "0x19bd5203940"
+       "ref": "0x1195afc3a80"
       }
      }
     }
    ],
    "heap": {
-    "0x19bd4fcc740": {
-     "id": "0x19bd4fcc740",
+    "0x1195ad8c780": {
+     "id": "0x1195ad8c780",
      "type": "list",
      "repr": "['banana', 'kiwi', 'apple', 'fig']",
      "items": [
       {
-       "ref": "0x19bd51fd1d0"
+       "ref": "0x1195afbd200"
       },
       {
-       "ref": "0x19bd51fd230"
+       "ref": "0x1195afbd260"
       },
       {
-       "ref": "0x19bd51fd290"
+       "ref": "0x1195afbd2c0"
       },
       {
-       "ref": "0x19bd51fd2f0"
+       "ref": "0x1195afbd320"
       }
      ]
     },
-    "0x19bd51fd1d0": {
-     "id": "0x19bd51fd1d0",
+    "0x1195afbd200": {
+     "id": "0x1195afbd200",
      "type": "str",
      "repr": "'banana'"
     },
-    "0x19bd51fd230": {
-     "id": "0x19bd51fd230",
+    "0x1195afbd260": {
+     "id": "0x1195afbd260",
      "type": "str",
      "repr": "'kiwi'"
     },
-    "0x19bd51fd290": {
-     "id": "0x19bd51fd290",
+    "0x1195afbd2c0": {
+     "id": "0x1195afbd2c0",
      "type": "str",
      "repr": "'apple'"
     },
-    "0x19bd51fd2f0": {
-     "id": "0x19bd51fd2f0",
+    "0x1195afbd320": {
+     "id": "0x1195afbd320",
      "type": "str",
      "repr": "'fig'"
     },
-    "0x19bd4fcd680": {
-     "id": "0x19bd4fcd680",
+    "0x1195ad8d6c0": {
+     "id": "0x1195ad8d6c0",
      "type": "list",
      "repr": "[('지기', 29), ('영희', 25), ('철수', 29)]",
      "items": [
       {
-       "ref": "0x19bd5203940"
+       "ref": "0x1195afc3a80"
       },
       {
-       "ref": "0x19bd5203900"
+       "ref": "0x1195afc3a40"
       },
       {
-       "ref": "0x19bd52038c0"
+       "ref": "0x1195afc3a00"
       }
      ]
     },
-    "0x19bd5203940": {
-     "id": "0x19bd5203940",
+    "0x1195afc3a80": {
+     "id": "0x1195afc3a80",
      "type": "tuple",
      "repr": "('지기', 29)",
      "items": [
       {
-       "ref": "0x19bd51f60b0"
+       "ref": "0x1195afb6100"
       },
       {
        "ref": "0x7ffd7f2b4d38"
       }
      ]
     },
-    "0x19bd51f60b0": {
-     "id": "0x19bd51f60b0",
+    "0x1195afb6100": {
+     "id": "0x1195afb6100",
      "type": "str",
      "repr": "'지기'"
     },
@@ -504,21 +504,21 @@
      "type": "int",
      "repr": "29"
     },
-    "0x19bd5203900": {
-     "id": "0x19bd5203900",
+    "0x1195afc3a40": {
+     "id": "0x1195afc3a40",
      "type": "tuple",
      "repr": "('영희', 25)",
      "items": [
       {
-       "ref": "0x19bd51f6100"
+       "ref": "0x1195afb6150"
       },
       {
        "ref": "0x7ffd7f2b4cb8"
       }
      ]
     },
-    "0x19bd51f6100": {
-     "id": "0x19bd51f6100",
+    "0x1195afb6150": {
+     "id": "0x1195afb6150",
      "type": "str",
      "repr": "'영희'"
     },
@@ -527,21 +527,21 @@
      "type": "int",
      "repr": "25"
     },
-    "0x19bd52038c0": {
-     "id": "0x19bd52038c0",
+    "0x1195afc3a00": {
+     "id": "0x1195afc3a00",
      "type": "tuple",
      "repr": "('철수', 29)",
      "items": [
       {
-       "ref": "0x19bd51f6150"
+       "ref": "0x1195afb61a0"
       },
       {
        "ref": "0x7ffd7f2b4d38"
       }
      ]
     },
-    "0x19bd51f6150": {
-     "id": "0x19bd51f6150",
+    "0x1195afb61a0": {
+     "id": "0x1195afb61a0",
      "type": "str",
      "repr": "'철수'"
     }
@@ -558,10 +558,10 @@
      "line": 6,
      "locals": {
       "words": {
-       "ref": "0x19bd4fcc740"
+       "ref": "0x1195ad8c780"
       },
       "people": {
-       "ref": "0x19bd4fcd680"
+       "ref": "0x1195ad8d6c0"
       }
      }
     },
@@ -570,82 +570,82 @@
      "line": 6,
      "locals": {
       "p": {
-       "ref": "0x19bd5203940"
+       "ref": "0x1195afc3a80"
       }
      }
     }
    ],
    "heap": {
-    "0x19bd4fcc740": {
-     "id": "0x19bd4fcc740",
+    "0x1195ad8c780": {
+     "id": "0x1195ad8c780",
      "type": "list",
      "repr": "['banana', 'kiwi', 'apple', 'fig']",
      "items": [
       {
-       "ref": "0x19bd51fd1d0"
+       "ref": "0x1195afbd200"
       },
       {
-       "ref": "0x19bd51fd230"
+       "ref": "0x1195afbd260"
       },
       {
-       "ref": "0x19bd51fd290"
+       "ref": "0x1195afbd2c0"
       },
       {
-       "ref": "0x19bd51fd2f0"
+       "ref": "0x1195afbd320"
       }
      ]
     },
-    "0x19bd51fd1d0": {
-     "id": "0x19bd51fd1d0",
+    "0x1195afbd200": {
+     "id": "0x1195afbd200",
      "type": "str",
      "repr": "'banana'"
     },
-    "0x19bd51fd230": {
-     "id": "0x19bd51fd230",
+    "0x1195afbd260": {
+     "id": "0x1195afbd260",
      "type": "str",
      "repr": "'kiwi'"
     },
-    "0x19bd51fd290": {
-     "id": "0x19bd51fd290",
+    "0x1195afbd2c0": {
+     "id": "0x1195afbd2c0",
      "type": "str",
      "repr": "'apple'"
     },
-    "0x19bd51fd2f0": {
-     "id": "0x19bd51fd2f0",
+    "0x1195afbd320": {
+     "id": "0x1195afbd320",
      "type": "str",
      "repr": "'fig'"
     },
-    "0x19bd4fcd680": {
-     "id": "0x19bd4fcd680",
+    "0x1195ad8d6c0": {
+     "id": "0x1195ad8d6c0",
      "type": "list",
      "repr": "[('지기', 29), ('영희', 25), ('철수', 29)]",
      "items": [
       {
-       "ref": "0x19bd5203940"
+       "ref": "0x1195afc3a80"
       },
       {
-       "ref": "0x19bd5203900"
+       "ref": "0x1195afc3a40"
       },
       {
-       "ref": "0x19bd52038c0"
+       "ref": "0x1195afc3a00"
       }
      ]
     },
-    "0x19bd5203940": {
-     "id": "0x19bd5203940",
+    "0x1195afc3a80": {
+     "id": "0x1195afc3a80",
      "type": "tuple",
      "repr": "('지기', 29)",
      "items": [
       {
-       "ref": "0x19bd51f60b0"
+       "ref": "0x1195afb6100"
       },
       {
        "ref": "0x7ffd7f2b4d38"
       }
      ]
     },
-    "0x19bd51f60b0": {
-     "id": "0x19bd51f60b0",
+    "0x1195afb6100": {
+     "id": "0x1195afb6100",
      "type": "str",
      "repr": "'지기'"
     },
@@ -654,21 +654,21 @@
      "type": "int",
      "repr": "29"
     },
-    "0x19bd5203900": {
-     "id": "0x19bd5203900",
+    "0x1195afc3a40": {
+     "id": "0x1195afc3a40",
      "type": "tuple",
      "repr": "('영희', 25)",
      "items": [
       {
-       "ref": "0x19bd51f6100"
+       "ref": "0x1195afb6150"
       },
       {
        "ref": "0x7ffd7f2b4cb8"
       }
      ]
     },
-    "0x19bd51f6100": {
-     "id": "0x19bd51f6100",
+    "0x1195afb6150": {
+     "id": "0x1195afb6150",
      "type": "str",
      "repr": "'영희'"
     },
@@ -677,21 +677,21 @@
      "type": "int",
      "repr": "25"
     },
-    "0x19bd52038c0": {
-     "id": "0x19bd52038c0",
+    "0x1195afc3a00": {
+     "id": "0x1195afc3a00",
      "type": "tuple",
      "repr": "('철수', 29)",
      "items": [
       {
-       "ref": "0x19bd51f6150"
+       "ref": "0x1195afb61a0"
       },
       {
        "ref": "0x7ffd7f2b4d38"
       }
      ]
     },
-    "0x19bd51f6150": {
-     "id": "0x19bd51f6150",
+    "0x1195afb61a0": {
+     "id": "0x1195afb61a0",
      "type": "str",
      "repr": "'철수'"
     }
@@ -708,10 +708,10 @@
      "line": 6,
      "locals": {
       "words": {
-       "ref": "0x19bd4fcc740"
+       "ref": "0x1195ad8c780"
       },
       "people": {
-       "ref": "0x19bd4fcd680"
+       "ref": "0x1195ad8d6c0"
       }
      }
     },
@@ -720,82 +720,82 @@
      "line": 6,
      "locals": {
       "p": {
-       "ref": "0x19bd5203940"
+       "ref": "0x1195afc3a80"
       }
      }
     }
    ],
    "heap": {
-    "0x19bd4fcc740": {
-     "id": "0x19bd4fcc740",
+    "0x1195ad8c780": {
+     "id": "0x1195ad8c780",
      "type": "list",
      "repr": "['banana', 'kiwi', 'apple', 'fig']",
      "items": [
       {
-       "ref": "0x19bd51fd1d0"
+       "ref": "0x1195afbd200"
       },
       {
-       "ref": "0x19bd51fd230"
+       "ref": "0x1195afbd260"
       },
       {
-       "ref": "0x19bd51fd290"
+       "ref": "0x1195afbd2c0"
       },
       {
-       "ref": "0x19bd51fd2f0"
+       "ref": "0x1195afbd320"
       }
      ]
     },
-    "0x19bd51fd1d0": {
-     "id": "0x19bd51fd1d0",
+    "0x1195afbd200": {
+     "id": "0x1195afbd200",
      "type": "str",
      "repr": "'banana'"
     },
-    "0x19bd51fd230": {
-     "id": "0x19bd51fd230",
+    "0x1195afbd260": {
+     "id": "0x1195afbd260",
      "type": "str",
      "repr": "'kiwi'"
     },
-    "0x19bd51fd290": {
-     "id": "0x19bd51fd290",
+    "0x1195afbd2c0": {
+     "id": "0x1195afbd2c0",
      "type": "str",
      "repr": "'apple'"
     },
-    "0x19bd51fd2f0": {
-     "id": "0x19bd51fd2f0",
+    "0x1195afbd320": {
+     "id": "0x1195afbd320",
      "type": "str",
      "repr": "'fig'"
     },
-    "0x19bd4fcd680": {
-     "id": "0x19bd4fcd680",
+    "0x1195ad8d6c0": {
+     "id": "0x1195ad8d6c0",
      "type": "list",
      "repr": "[('지기', 29), ('영희', 25), ('철수', 29)]",
      "items": [
       {
-       "ref": "0x19bd5203940"
+       "ref": "0x1195afc3a80"
       },
       {
-       "ref": "0x19bd5203900"
+       "ref": "0x1195afc3a40"
       },
       {
-       "ref": "0x19bd52038c0"
+       "ref": "0x1195afc3a00"
       }
      ]
     },
-    "0x19bd5203940": {
-     "id": "0x19bd5203940",
+    "0x1195afc3a80": {
+     "id": "0x1195afc3a80",
      "type": "tuple",
      "repr": "('지기', 29)",
      "items": [
       {
-       "ref": "0x19bd51f60b0"
+       "ref": "0x1195afb6100"
       },
       {
        "ref": "0x7ffd7f2b4d38"
       }
      ]
     },
-    "0x19bd51f60b0": {
-     "id": "0x19bd51f60b0",
+    "0x1195afb6100": {
+     "id": "0x1195afb6100",
      "type": "str",
      "repr": "'지기'"
     },
@@ -804,21 +804,21 @@
      "type": "int",
      "repr": "29"
     },
-    "0x19bd5203900": {
-     "id": "0x19bd5203900",
+    "0x1195afc3a40": {
+     "id": "0x1195afc3a40",
      "type": "tuple",
      "repr": "('영희', 25)",
      "items": [
       {
-       "ref": "0x19bd51f6100"
+       "ref": "0x1195afb6150"
       },
       {
        "ref": "0x7ffd7f2b4cb8"
       }
      ]
     },
-    "0x19bd51f6100": {
-     "id": "0x19bd51f6100",
+    "0x1195afb6150": {
+     "id": "0x1195afb6150",
      "type": "str",
      "repr": "'영희'"
     },
@@ -827,21 +827,21 @@
      "type": "int",
      "repr": "25"
     },
-    "0x19bd52038c0": {
-     "id": "0x19bd52038c0",
+    "0x1195afc3a00": {
+     "id": "0x1195afc3a00",
      "type": "tuple",
      "repr": "('철수', 29)",
      "items": [
       {
-       "ref": "0x19bd51f6150"
+       "ref": "0x1195afb61a0"
       },
       {
        "ref": "0x7ffd7f2b4d38"
       }
      ]
     },
-    "0x19bd51f6150": {
-     "id": "0x19bd51f6150",
+    "0x1195afb61a0": {
+     "id": "0x1195afb61a0",
      "type": "str",
      "repr": "'철수'"
     }
@@ -858,10 +858,10 @@
      "line": 6,
      "locals": {
       "words": {
-       "ref": "0x19bd4fcc740"
+       "ref": "0x1195ad8c780"
       },
       "people": {
-       "ref": "0x19bd4fcd680"
+       "ref": "0x1195ad8d6c0"
       }
      }
     },
@@ -870,82 +870,82 @@
      "line": 6,
      "locals": {
       "p": {
-       "ref": "0x19bd5203900"
+       "ref": "0x1195afc3a40"
       }
      }
     }
    ],
    "heap": {
-    "0x19bd4fcc740": {
-     "id": "0x19bd4fcc740",
+    "0x1195ad8c780": {
+     "id": "0x1195ad8c780",
      "type": "list",
      "repr": "['banana', 'kiwi', 'apple', 'fig']",
      "items": [
       {
-       "ref": "0x19bd51fd1d0"
+       "ref": "0x1195afbd200"
       },
       {
-       "ref": "0x19bd51fd230"
+       "ref": "0x1195afbd260"
       },
       {
-       "ref": "0x19bd51fd290"
+       "ref": "0x1195afbd2c0"
       },
       {
-       "ref": "0x19bd51fd2f0"
+       "ref": "0x1195afbd320"
       }
      ]
     },
-    "0x19bd51fd1d0": {
-     "id": "0x19bd51fd1d0",
+    "0x1195afbd200": {
+     "id": "0x1195afbd200",
      "type": "str",
      "repr": "'banana'"
     },
-    "0x19bd51fd230": {
-     "id": "0x19bd51fd230",
+    "0x1195afbd260": {
+     "id": "0x1195afbd260",
      "type": "str",
      "repr": "'kiwi'"
     },
-    "0x19bd51fd290": {
-     "id": "0x19bd51fd290",
+    "0x1195afbd2c0": {
+     "id": "0x1195afbd2c0",
      "type": "str",
      "repr": "'apple'"
     },
-    "0x19bd51fd2f0": {
-     "id": "0x19bd51fd2f0",
+    "0x1195afbd320": {
+     "id": "0x1195afbd320",
      "type": "str",
      "repr": "'fig'"
     },
-    "0x19bd4fcd680": {
-     "id": "0x19bd4fcd680",
+    "0x1195ad8d6c0": {
+     "id": "0x1195ad8d6c0",
      "type": "list",
      "repr": "[('지기', 29), ('영희', 25), ('철수', 29)]",
      "items": [
       {
-       "ref": "0x19bd5203940"
+       "ref": "0x1195afc3a80"
       },
       {
-       "ref": "0x19bd5203900"
+       "ref": "0x1195afc3a40"
       },
       {
-       "ref": "0x19bd52038c0"
+       "ref": "0x1195afc3a00"
       }
      ]
     },
-    "0x19bd5203940": {
-     "id": "0x19bd5203940",
+    "0x1195afc3a80": {
+     "id": "0x1195afc3a80",
      "type": "tuple",
      "repr": "('지기', 29)",
      "items": [
       {
-       "ref": "0x19bd51f60b0"
+       "ref": "0x1195afb6100"
       },
       {
        "ref": "0x7ffd7f2b4d38"
       }
      ]
     },
-    "0x19bd51f60b0": {
-     "id": "0x19bd51f60b0",
+    "0x1195afb6100": {
+     "id": "0x1195afb6100",
      "type": "str",
      "repr": "'지기'"
     },
@@ -954,21 +954,21 @@
      "type": "int",
      "repr": "29"
     },
-    "0x19bd5203900": {
-     "id": "0x19bd5203900",
+    "0x1195afc3a40": {
+     "id": "0x1195afc3a40",
      "type": "tuple",
      "repr": "('영희', 25)",
      "items": [
       {
-       "ref": "0x19bd51f6100"
+       "ref": "0x1195afb6150"
       },
       {
        "ref": "0x7ffd7f2b4cb8"
       }
      ]
     },
-    "0x19bd51f6100": {
-     "id": "0x19bd51f6100",
+    "0x1195afb6150": {
+     "id": "0x1195afb6150",
      "type": "str",
      "repr": "'영희'"
     },
@@ -977,21 +977,21 @@
      "type": "int",
      "repr": "25"
     },
-    "0x19bd52038c0": {
-     "id": "0x19bd52038c0",
+    "0x1195afc3a00": {
+     "id": "0x1195afc3a00",
      "type": "tuple",
      "repr": "('철수', 29)",
      "items": [
       {
-       "ref": "0x19bd51f6150"
+       "ref": "0x1195afb61a0"
       },
       {
        "ref": "0x7ffd7f2b4d38"
       }
      ]
     },
-    "0x19bd51f6150": {
-     "id": "0x19bd51f6150",
+    "0x1195afb61a0": {
+     "id": "0x1195afb61a0",
      "type": "str",
      "repr": "'철수'"
     }
@@ -1008,10 +1008,10 @@
      "line": 6,
      "locals": {
       "words": {
-       "ref": "0x19bd4fcc740"
+       "ref": "0x1195ad8c780"
       },
       "people": {
-       "ref": "0x19bd4fcd680"
+       "ref": "0x1195ad8d6c0"
       }
      }
     },
@@ -1020,82 +1020,82 @@
      "line": 6,
      "locals": {
       "p": {
-       "ref": "0x19bd5203900"
+       "ref": "0x1195afc3a40"
       }
      }
     }
    ],
    "heap": {
-    "0x19bd4fcc740": {
-     "id": "0x19bd4fcc740",
+    "0x1195ad8c780": {
+     "id": "0x1195ad8c780",
      "type": "list",
      "repr": "['banana', 'kiwi', 'apple', 'fig']",
      "items": [
       {
-       "ref": "0x19bd51fd1d0"
+       "ref": "0x1195afbd200"
       },
       {
-       "ref": "0x19bd51fd230"
+       "ref": "0x1195afbd260"
       },
       {
-       "ref": "0x19bd51fd290"
+       "ref": "0x1195afbd2c0"
       },
       {
-       "ref": "0x19bd51fd2f0"
+       "ref": "0x1195afbd320"
       }
      ]
     },
-    "0x19bd51fd1d0": {
-     "id": "0x19bd51fd1d0",
+    "0x1195afbd200": {
+     "id": "0x1195afbd200",
      "type": "str",
      "repr": "'banana'"
     },
-    "0x19bd51fd230": {
-     "id": "0x19bd51fd230",
+    "0x1195afbd260": {
+     "id": "0x1195afbd260",
      "type": "str",
      "repr": "'kiwi'"
     },
-    "0x19bd51fd290": {
-     "id": "0x19bd51fd290",
+    "0x1195afbd2c0": {
+     "id": "0x1195afbd2c0",
      "type": "str",
      "repr": "'apple'"
     },
-    "0x19bd51fd2f0": {
-     "id": "0x19bd51fd2f0",
+    "0x1195afbd320": {
+     "id": "0x1195afbd320",
      "type": "str",
      "repr": "'fig'"
     },
-    "0x19bd4fcd680": {
-     "id": "0x19bd4fcd680",
+    "0x1195ad8d6c0": {
+     "id": "0x1195ad8d6c0",
      "type": "list",
      "repr": "[('지기', 29), ('영희', 25), ('철수', 29)]",
      "items": [
       {
-       "ref": "0x19bd5203940"
+       "ref": "0x1195afc3a80"
       },
       {
-       "ref": "0x19bd5203900"
+       "ref": "0x1195afc3a40"
       },
       {
-       "ref": "0x19bd52038c0"
+       "ref": "0x1195afc3a00"
       }
      ]
     },
-    "0x19bd5203940": {
-     "id": "0x19bd5203940",
+    "0x1195afc3a80": {
+     "id": "0x1195afc3a80",
      "type": "tuple",
      "repr": "('지기', 29)",
      "items": [
       {
-       "ref": "0x19bd51f60b0"
+       "ref": "0x1195afb6100"
       },
       {
        "ref": "0x7ffd7f2b4d38"
       }
      ]
     },
-    "0x19bd51f60b0": {
-     "id": "0x19bd51f60b0",
+    "0x1195afb6100": {
+     "id": "0x1195afb6100",
      "type": "str",
      "repr": "'지기'"
     },
@@ -1104,21 +1104,21 @@
      "type": "int",
      "repr": "29"
     },
-    "0x19bd5203900": {
-     "id": "0x19bd5203900",
+    "0x1195afc3a40": {
+     "id": "0x1195afc3a40",
      "type": "tuple",
      "repr": "('영희', 25)",
      "items": [
       {
-       "ref": "0x19bd51f6100"
+       "ref": "0x1195afb6150"
       },
       {
        "ref": "0x7ffd7f2b4cb8"
       }
      ]
     },
-    "0x19bd51f6100": {
-     "id": "0x19bd51f6100",
+    "0x1195afb6150": {
+     "id": "0x1195afb6150",
      "type": "str",
      "repr": "'영희'"
     },
@@ -1127,21 +1127,21 @@
      "type": "int",
      "repr": "25"
     },
-    "0x19bd52038c0": {
-     "id": "0x19bd52038c0",
+    "0x1195afc3a00": {
+     "id": "0x1195afc3a00",
      "type": "tuple",
      "repr": "('철수', 29)",
      "items": [
       {
-       "ref": "0x19bd51f6150"
+       "ref": "0x1195afb61a0"
       },
       {
        "ref": "0x7ffd7f2b4d38"
       }
      ]
     },
-    "0x19bd51f6150": {
-     "id": "0x19bd51f6150",
+    "0x1195afb61a0": {
+     "id": "0x1195afb61a0",
      "type": "str",
      "repr": "'철수'"
     }
@@ -1158,10 +1158,10 @@
      "line": 6,
      "locals": {
       "words": {
-       "ref": "0x19bd4fcc740"
+       "ref": "0x1195ad8c780"
       },
       "people": {
-       "ref": "0x19bd4fcd680"
+       "ref": "0x1195ad8d6c0"
       }
      }
     },
@@ -1170,82 +1170,82 @@
      "line": 6,
      "locals": {
       "p": {
-       "ref": "0x19bd5203900"
+       "ref": "0x1195afc3a40"
       }
      }
     }
    ],
    "heap": {
-    "0x19bd4fcc740": {
-     "id": "0x19bd4fcc740",
+    "0x1195ad8c780": {
+     "id": "0x1195ad8c780",
      "type": "list",
      "repr": "['banana', 'kiwi', 'apple', 'fig']",
      "items": [
       {
-       "ref": "0x19bd51fd1d0"
+       "ref": "0x1195afbd200"
       },
       {
-       "ref": "0x19bd51fd230"
+       "ref": "0x1195afbd260"
       },
       {
-       "ref": "0x19bd51fd290"
+       "ref": "0x1195afbd2c0"
       },
       {
-       "ref": "0x19bd51fd2f0"
+       "ref": "0x1195afbd320"
       }
      ]
     },
-    "0x19bd51fd1d0": {
-     "id": "0x19bd51fd1d0",
+    "0x1195afbd200": {
+     "id": "0x1195afbd200",
      "type": "str",
      "repr": "'banana'"
     },
-    "0x19bd51fd230": {
-     "id": "0x19bd51fd230",
+    "0x1195afbd260": {
+     "id": "0x1195afbd260",
      "type": "str",
      "repr": "'kiwi'"
     },
-    "0x19bd51fd290": {
-     "id": "0x19bd51fd290",
+    "0x1195afbd2c0": {
+     "id": "0x1195afbd2c0",
      "type": "str",
      "repr": "'apple'"
     },
-    "0x19bd51fd2f0": {
-     "id": "0x19bd51fd2f0",
+    "0x1195afbd320": {
+     "id": "0x1195afbd320",
      "type": "str",
      "repr": "'fig'"
     },
-    "0x19bd4fcd680": {
-     "id": "0x19bd4fcd680",
+    "0x1195ad8d6c0": {
+     "id": "0x1195ad8d6c0",
      "type": "list",
      "repr": "[('지기', 29), ('영희', 25), ('철수', 29)]",
      "items": [
       {
-       "ref": "0x19bd5203940"
+       "ref": "0x1195afc3a80"
       },
       {
-       "ref": "0x19bd5203900"
+       "ref": "0x1195afc3a40"
       },
       {
-       "ref": "0x19bd52038c0"
+       "ref": "0x1195afc3a00"
       }
      ]
     },
-    "0x19bd5203940": {
-     "id": "0x19bd5203940",
+    "0x1195afc3a80": {
+     "id": "0x1195afc3a80",
      "type": "tuple",
      "repr": "('지기', 29)",
      "items": [
       {
-       "ref": "0x19bd51f60b0"
+       "ref": "0x1195afb6100"
       },
       {
        "ref": "0x7ffd7f2b4d38"
       }
      ]
     },
-    "0x19bd51f60b0": {
-     "id": "0x19bd51f60b0",
+    "0x1195afb6100": {
+     "id": "0x1195afb6100",
      "type": "str",
      "repr": "'지기'"
     },
@@ -1254,21 +1254,21 @@
      "type": "int",
      "repr": "29"
     },
-    "0x19bd5203900": {
-     "id": "0x19bd5203900",
+    "0x1195afc3a40": {
+     "id": "0x1195afc3a40",
      "type": "tuple",
      "repr": "('영희', 25)",
      "items": [
       {
-       "ref": "0x19bd51f6100"
+       "ref": "0x1195afb6150"
       },
       {
        "ref": "0x7ffd7f2b4cb8"
       }
      ]
     },
-    "0x19bd51f6100": {
-     "id": "0x19bd51f6100",
+    "0x1195afb6150": {
+     "id": "0x1195afb6150",
      "type": "str",
      "repr": "'영희'"
     },
@@ -1277,21 +1277,21 @@
      "type": "int",
      "repr": "25"
     },
-    "0x19bd52038c0": {
-     "id": "0x19bd52038c0",
+    "0x1195afc3a00": {
+     "id": "0x1195afc3a00",
      "type": "tuple",
      "repr": "('철수', 29)",
      "items": [
       {
-       "ref": "0x19bd51f6150"
+       "ref": "0x1195afb61a0"
       },
       {
        "ref": "0x7ffd7f2b4d38"
       }
      ]
     },
-    "0x19bd51f6150": {
-     "id": "0x19bd51f6150",
+    "0x1195afb61a0": {
+     "id": "0x1195afb61a0",
      "type": "str",
      "repr": "'철수'"
     }
@@ -1308,10 +1308,10 @@
      "line": 6,
      "locals": {
       "words": {
-       "ref": "0x19bd4fcc740"
+       "ref": "0x1195ad8c780"
       },
       "people": {
-       "ref": "0x19bd4fcd680"
+       "ref": "0x1195ad8d6c0"
       }
      }
     },
@@ -1320,82 +1320,82 @@
      "line": 6,
      "locals": {
       "p": {
-       "ref": "0x19bd52038c0"
+       "ref": "0x1195afc3a00"
       }
      }
     }
    ],
    "heap": {
-    "0x19bd4fcc740": {
-     "id": "0x19bd4fcc740",
+    "0x1195ad8c780": {
+     "id": "0x1195ad8c780",
      "type": "list",
      "repr": "['banana', 'kiwi', 'apple', 'fig']",
      "items": [
       {
-       "ref": "0x19bd51fd1d0"
+       "ref": "0x1195afbd200"
       },
       {
-       "ref": "0x19bd51fd230"
+       "ref": "0x1195afbd260"
       },
       {
-       "ref": "0x19bd51fd290"
+       "ref": "0x1195afbd2c0"
       },
       {
-       "ref": "0x19bd51fd2f0"
+       "ref": "0x1195afbd320"
       }
      ]
     },
-    "0x19bd51fd1d0": {
-     "id": "0x19bd51fd1d0",
+    "0x1195afbd200": {
+     "id": "0x1195afbd200",
      "type": "str",
      "repr": "'banana'"
     },
-    "0x19bd51fd230": {
-     "id": "0x19bd51fd230",
+    "0x1195afbd260": {
+     "id": "0x1195afbd260",
      "type": "str",
      "repr": "'kiwi'"
     },
-    "0x19bd51fd290": {
-     "id": "0x19bd51fd290",
+    "0x1195afbd2c0": {
+     "id": "0x1195afbd2c0",
      "type": "str",
      "repr": "'apple'"
     },
-    "0x19bd51fd2f0": {
-     "id": "0x19bd51fd2f0",
+    "0x1195afbd320": {
+     "id": "0x1195afbd320",
      "type": "str",
      "repr": "'fig'"
     },
-    "0x19bd4fcd680": {
-     "id": "0x19bd4fcd680",
+    "0x1195ad8d6c0": {
+     "id": "0x1195ad8d6c0",
      "type": "list",
      "repr": "[('지기', 29), ('영희', 25), ('철수', 29)]",
      "items": [
       {
-       "ref": "0x19bd5203940"
+       "ref": "0x1195afc3a80"
       },
       {
-       "ref": "0x19bd5203900"
+       "ref": "0x1195afc3a40"
       },
       {
-       "ref": "0x19bd52038c0"
+       "ref": "0x1195afc3a00"
       }
      ]
     },
-    "0x19bd5203940": {
-     "id": "0x19bd5203940",
+    "0x1195afc3a80": {
+     "id": "0x1195afc3a80",
      "type": "tuple",
      "repr": "('지기', 29)",
      "items": [
       {
-       "ref": "0x19bd51f60b0"
+       "ref": "0x1195afb6100"
       },
       {
        "ref": "0x7ffd7f2b4d38"
       }
      ]
     },
-    "0x19bd51f60b0": {
-     "id": "0x19bd51f60b0",
+    "0x1195afb6100": {
+     "id": "0x1195afb6100",
      "type": "str",
      "repr": "'지기'"
     },
@@ -1404,21 +1404,21 @@
      "type": "int",
      "repr": "29"
     },
-    "0x19bd5203900": {
-     "id": "0x19bd5203900",
+    "0x1195afc3a40": {
+     "id": "0x1195afc3a40",
      "type": "tuple",
      "repr": "('영희', 25)",
      "items": [
       {
-       "ref": "0x19bd51f6100"
+       "ref": "0x1195afb6150"
       },
       {
        "ref": "0x7ffd7f2b4cb8"
       }
      ]
     },
-    "0x19bd51f6100": {
-     "id": "0x19bd51f6100",
+    "0x1195afb6150": {
+     "id": "0x1195afb6150",
      "type": "str",
      "repr": "'영희'"
     },
@@ -1427,21 +1427,21 @@
      "type": "int",
      "repr": "25"
     },
-    "0x19bd52038c0": {
-     "id": "0x19bd52038c0",
+    "0x1195afc3a00": {
+     "id": "0x1195afc3a00",
      "type": "tuple",
      "repr": "('철수', 29)",
      "items": [
       {
-       "ref": "0x19bd51f6150"
+       "ref": "0x1195afb61a0"
       },
       {
        "ref": "0x7ffd7f2b4d38"
       }
      ]
     },
-    "0x19bd51f6150": {
-     "id": "0x19bd51f6150",
+    "0x1195afb61a0": {
+     "id": "0x1195afb61a0",
      "type": "str",
      "repr": "'철수'"
     }
@@ -1458,10 +1458,10 @@
      "line": 6,
      "locals": {
       "words": {
-       "ref": "0x19bd4fcc740"
+       "ref": "0x1195ad8c780"
       },
       "people": {
-       "ref": "0x19bd4fcd680"
+       "ref": "0x1195ad8d6c0"
       }
      }
     },
@@ -1470,82 +1470,82 @@
      "line": 6,
      "locals": {
       "p": {
-       "ref": "0x19bd52038c0"
+       "ref": "0x1195afc3a00"
       }
      }
     }
    ],
    "heap": {
-    "0x19bd4fcc740": {
-     "id": "0x19bd4fcc740",
+    "0x1195ad8c780": {
+     "id": "0x1195ad8c780",
      "type": "list",
      "repr": "['banana', 'kiwi', 'apple', 'fig']",
      "items": [
       {
-       "ref": "0x19bd51fd1d0"
+       "ref": "0x1195afbd200"
       },
       {
-       "ref": "0x19bd51fd230"
+       "ref": "0x1195afbd260"
       },
       {
-       "ref": "0x19bd51fd290"
+       "ref": "0x1195afbd2c0"
       },
       {
-       "ref": "0x19bd51fd2f0"
+       "ref": "0x1195afbd320"
       }
      ]
     },
-    "0x19bd51fd1d0": {
-     "id": "0x19bd51fd1d0",
+    "0x1195afbd200": {
+     "id": "0x1195afbd200",
      "type": "str",
      "repr": "'banana'"
     },
-    "0x19bd51fd230": {
-     "id": "0x19bd51fd230",
+    "0x1195afbd260": {
+     "id": "0x1195afbd260",
      "type": "str",
      "repr": "'kiwi'"
     },
-    "0x19bd51fd290": {
-     "id": "0x19bd51fd290",
+    "0x1195afbd2c0": {
+     "id": "0x1195afbd2c0",
      "type": "str",
      "repr": "'apple'"
     },
-    "0x19bd51fd2f0": {
-     "id": "0x19bd51fd2f0",
+    "0x1195afbd320": {
+     "id": "0x1195afbd320",
      "type": "str",
      "repr": "'fig'"
     },
-    "0x19bd4fcd680": {
-     "id": "0x19bd4fcd680",
+    "0x1195ad8d6c0": {
+     "id": "0x1195ad8d6c0",
      "type": "list",
      "repr": "[('지기', 29), ('영희', 25), ('철수', 29)]",
      "items": [
       {
-       "ref": "0x19bd5203940"
+       "ref": "0x1195afc3a80"
       },
       {
-       "ref": "0x19bd5203900"
+       "ref": "0x1195afc3a40"
       },
       {
-       "ref": "0x19bd52038c0"
+       "ref": "0x1195afc3a00"
       }
      ]
     },
-    "0x19bd5203940": {
-     "id": "0x19bd5203940",
+    "0x1195afc3a80": {
+     "id": "0x1195afc3a80",
      "type": "tuple",
      "repr": "('지기', 29)",
      "items": [
       {
-       "ref": "0x19bd51f60b0"
+       "ref": "0x1195afb6100"
       },
       {
        "ref": "0x7ffd7f2b4d38"
       }
      ]
     },
-    "0x19bd51f60b0": {
-     "id": "0x19bd51f60b0",
+    "0x1195afb6100": {
+     "id": "0x1195afb6100",
      "type": "str",
      "repr": "'지기'"
     },
@@ -1554,21 +1554,21 @@
      "type": "int",
      "repr": "29"
     },
-    "0x19bd5203900": {
-     "id": "0x19bd5203900",
+    "0x1195afc3a40": {
+     "id": "0x1195afc3a40",
      "type": "tuple",
      "repr": "('영희', 25)",
      "items": [
       {
-       "ref": "0x19bd51f6100"
+       "ref": "0x1195afb6150"
       },
       {
        "ref": "0x7ffd7f2b4cb8"
       }
      ]
     },
-    "0x19bd51f6100": {
-     "id": "0x19bd51f6100",
+    "0x1195afb6150": {
+     "id": "0x1195afb6150",
      "type": "str",
      "repr": "'영희'"
     },
@@ -1577,21 +1577,21 @@
      "type": "int",
      "repr": "25"
     },
-    "0x19bd52038c0": {
-     "id": "0x19bd52038c0",
+    "0x1195afc3a00": {
+     "id": "0x1195afc3a00",
      "type": "tuple",
      "repr": "('철수', 29)",
      "items": [
       {
-       "ref": "0x19bd51f6150"
+       "ref": "0x1195afb61a0"
       },
       {
        "ref": "0x7ffd7f2b4d38"
       }
      ]
     },
-    "0x19bd51f6150": {
-     "id": "0x19bd51f6150",
+    "0x1195afb61a0": {
+     "id": "0x1195afb61a0",
      "type": "str",
      "repr": "'철수'"
     }
@@ -1608,10 +1608,10 @@
      "line": 6,
      "locals": {
       "words": {
-       "ref": "0x19bd4fcc740"
+       "ref": "0x1195ad8c780"
       },
       "people": {
-       "ref": "0x19bd4fcd680"
+       "ref": "0x1195ad8d6c0"
       }
      }
     },
@@ -1620,82 +1620,82 @@
      "line": 6,
      "locals": {
       "p": {
-       "ref": "0x19bd52038c0"
+       "ref": "0x1195afc3a00"
       }
      }
     }
    ],
    "heap": {
-    "0x19bd4fcc740": {
-     "id": "0x19bd4fcc740",
+    "0x1195ad8c780": {
+     "id": "0x1195ad8c780",
      "type": "list",
      "repr": "['banana', 'kiwi', 'apple', 'fig']",
      "items": [
       {
-       "ref": "0x19bd51fd1d0"
+       "ref": "0x1195afbd200"
       },
       {
-       "ref": "0x19bd51fd230"
+       "ref": "0x1195afbd260"
       },
       {
-       "ref": "0x19bd51fd290"
+       "ref": "0x1195afbd2c0"
       },
       {
-       "ref": "0x19bd51fd2f0"
+       "ref": "0x1195afbd320"
       }
      ]
     },
-    "0x19bd51fd1d0": {
-     "id": "0x19bd51fd1d0",
+    "0x1195afbd200": {
+     "id": "0x1195afbd200",
      "type": "str",
      "repr": "'banana'"
     },
-    "0x19bd51fd230": {
-     "id": "0x19bd51fd230",
+    "0x1195afbd260": {
+     "id": "0x1195afbd260",
      "type": "str",
      "repr": "'kiwi'"
     },
-    "0x19bd51fd290": {
-     "id": "0x19bd51fd290",
+    "0x1195afbd2c0": {
+     "id": "0x1195afbd2c0",
      "type": "str",
      "repr": "'apple'"
     },
-    "0x19bd51fd2f0": {
-     "id": "0x19bd51fd2f0",
+    "0x1195afbd320": {
+     "id": "0x1195afbd320",
      "type": "str",
      "repr": "'fig'"
     },
-    "0x19bd4fcd680": {
-     "id": "0x19bd4fcd680",
+    "0x1195ad8d6c0": {
+     "id": "0x1195ad8d6c0",
      "type": "list",
      "repr": "[('지기', 29), ('영희', 25), ('철수', 29)]",
      "items": [
       {
-       "ref": "0x19bd5203940"
+       "ref": "0x1195afc3a80"
       },
       {
-       "ref": "0x19bd5203900"
+       "ref": "0x1195afc3a40"
       },
       {
-       "ref": "0x19bd52038c0"
+       "ref": "0x1195afc3a00"
       }
      ]
     },
-    "0x19bd5203940": {
-     "id": "0x19bd5203940",
+    "0x1195afc3a80": {
+     "id": "0x1195afc3a80",
      "type": "tuple",
      "repr": "('지기', 29)",
      "items": [
       {
-       "ref": "0x19bd51f60b0"
+       "ref": "0x1195afb6100"
       },
       {
        "ref": "0x7ffd7f2b4d38"
       }
      ]
     },
-    "0x19bd51f60b0": {
-     "id": "0x19bd51f60b0",
+    "0x1195afb6100": {
+     "id": "0x1195afb6100",
      "type": "str",
      "repr": "'지기'"
     },
@@ -1704,21 +1704,21 @@
      "type": "int",
      "repr": "29"
     },
-    "0x19bd5203900": {
-     "id": "0x19bd5203900",
+    "0x1195afc3a40": {
+     "id": "0x1195afc3a40",
      "type": "tuple",
      "repr": "('영희', 25)",
      "items": [
       {
-       "ref": "0x19bd51f6100"
+       "ref": "0x1195afb6150"
       },
       {
        "ref": "0x7ffd7f2b4cb8"
       }
      ]
     },
-    "0x19bd51f6100": {
-     "id": "0x19bd51f6100",
+    "0x1195afb6150": {
+     "id": "0x1195afb6150",
      "type": "str",
      "repr": "'영희'"
     },
@@ -1727,21 +1727,21 @@
      "type": "int",
      "repr": "25"
     },
-    "0x19bd52038c0": {
-     "id": "0x19bd52038c0",
+    "0x1195afc3a00": {
+     "id": "0x1195afc3a00",
      "type": "tuple",
      "repr": "('철수', 29)",
      "items": [
       {
-       "ref": "0x19bd51f6150"
+       "ref": "0x1195afb61a0"
       },
       {
        "ref": "0x7ffd7f2b4d38"
       }
      ]
     },
-    "0x19bd51f6150": {
-     "id": "0x19bd51f6150",
+    "0x1195afb61a0": {
+     "id": "0x1195afb61a0",
      "type": "str",
      "repr": "'철수'"
     }
@@ -1758,85 +1758,85 @@
      "line": 7,
      "locals": {
       "words": {
-       "ref": "0x19bd4fcc740"
+       "ref": "0x1195ad8c780"
       },
       "people": {
-       "ref": "0x19bd4fcd680"
+       "ref": "0x1195ad8d6c0"
       }
      }
     }
    ],
    "heap": {
-    "0x19bd4fcc740": {
-     "id": "0x19bd4fcc740",
+    "0x1195ad8c780": {
+     "id": "0x1195ad8c780",
      "type": "list",
      "repr": "['banana', 'kiwi', 'apple', 'fig']",
      "items": [
       {
-       "ref": "0x19bd51fd1d0"
+       "ref": "0x1195afbd200"
       },
       {
-       "ref": "0x19bd51fd230"
+       "ref": "0x1195afbd260"
       },
       {
-       "ref": "0x19bd51fd290"
+       "ref": "0x1195afbd2c0"
       },
       {
-       "ref": "0x19bd51fd2f0"
+       "ref": "0x1195afbd320"
       }
      ]
     },
-    "0x19bd51fd1d0": {
-     "id": "0x19bd51fd1d0",
+    "0x1195afbd200": {
+     "id": "0x1195afbd200",
      "type": "str",
      "repr": "'banana'"
     },
-    "0x19bd51fd230": {
-     "id": "0x19bd51fd230",
+    "0x1195afbd260": {
+     "id": "0x1195afbd260",
      "type": "str",
      "repr": "'kiwi'"
     },
-    "0x19bd51fd290": {
-     "id": "0x19bd51fd290",
+    "0x1195afbd2c0": {
+     "id": "0x1195afbd2c0",
      "type": "str",
      "repr": "'apple'"
     },
-    "0x19bd51fd2f0": {
-     "id": "0x19bd51fd2f0",
+    "0x1195afbd320": {
+     "id": "0x1195afbd320",
      "type": "str",
      "repr": "'fig'"
     },
-    "0x19bd4fcd680": {
-     "id": "0x19bd4fcd680",
+    "0x1195ad8d6c0": {
+     "id": "0x1195ad8d6c0",
      "type": "list",
      "repr": "[('지기', 29), ('영희', 25), ('철수', 29)]",
      "items": [
       {
-       "ref": "0x19bd5203940"
+       "ref": "0x1195afc3a80"
       },
       {
-       "ref": "0x19bd5203900"
+       "ref": "0x1195afc3a40"
       },
       {
-       "ref": "0x19bd52038c0"
+       "ref": "0x1195afc3a00"
       }
      ]
     },
-    "0x19bd5203940": {
-     "id": "0x19bd5203940",
+    "0x1195afc3a80": {
+     "id": "0x1195afc3a80",
      "type": "tuple",
      "repr": "('지기', 29)",
      "items": [
       {
-       "ref": "0x19bd51f60b0"
+       "ref": "0x1195afb6100"
       },
       {
        "ref": "0x7ffd7f2b4d38"
       }
      ]
     },
-    "0x19bd51f60b0": {
-     "id": "0x19bd51f60b0",
+    "0x1195afb6100": {
+     "id": "0x1195afb6100",
      "type": "str",
      "repr": "'지기'"
     },
@@ -1845,21 +1845,21 @@
      "type": "int",
      "repr": "29"
     },
-    "0x19bd5203900": {
-     "id": "0x19bd5203900",
+    "0x1195afc3a40": {
+     "id": "0x1195afc3a40",
      "type": "tuple",
      "repr": "('영희', 25)",
      "items": [
       {
-       "ref": "0x19bd51f6100"
+       "ref": "0x1195afb6150"
       },
       {
        "ref": "0x7ffd7f2b4cb8"
       }
      ]
     },
-    "0x19bd51f6100": {
-     "id": "0x19bd51f6100",
+    "0x1195afb6150": {
+     "id": "0x1195afb6150",
      "type": "str",
      "repr": "'영희'"
     },
@@ -1868,21 +1868,21 @@
      "type": "int",
      "repr": "25"
     },
-    "0x19bd52038c0": {
-     "id": "0x19bd52038c0",
+    "0x1195afc3a00": {
+     "id": "0x1195afc3a00",
      "type": "tuple",
      "repr": "('철수', 29)",
      "items": [
       {
-       "ref": "0x19bd51f6150"
+       "ref": "0x1195afb61a0"
       },
       {
        "ref": "0x7ffd7f2b4d38"
       }
      ]
     },
-    "0x19bd51f6150": {
-     "id": "0x19bd51f6150",
+    "0x1195afb61a0": {
+     "id": "0x1195afb61a0",
      "type": "str",
      "repr": "'철수'"
     }
@@ -1899,85 +1899,85 @@
      "line": 8,
      "locals": {
       "words": {
-       "ref": "0x19bd4fcc740"
+       "ref": "0x1195ad8c780"
       },
       "people": {
-       "ref": "0x19bd4fcd680"
+       "ref": "0x1195ad8d6c0"
       }
      }
     }
    ],
    "heap": {
-    "0x19bd4fcc740": {
-     "id": "0x19bd4fcc740",
+    "0x1195ad8c780": {
+     "id": "0x1195ad8c780",
      "type": "list",
      "repr": "['apple', 'banana', 'fig', 'kiwi']",
      "items": [
       {
-       "ref": "0x19bd51fd290"
+       "ref": "0x1195afbd2c0"
       },
       {
-       "ref": "0x19bd51fd1d0"
+       "ref": "0x1195afbd200"
       },
       {
-       "ref": "0x19bd51fd2f0"
+       "ref": "0x1195afbd320"
       },
       {
-       "ref": "0x19bd51fd230"
+       "ref": "0x1195afbd260"
       }
      ]
     },
-    "0x19bd51fd290": {
-     "id": "0x19bd51fd290",
+    "0x1195afbd2c0": {
+     "id": "0x1195afbd2c0",
      "type": "str",
      "repr": "'apple'"
     },
-    "0x19bd51fd1d0": {
-     "id": "0x19bd51fd1d0",
+    "0x1195afbd200": {
+     "id": "0x1195afbd200",
      "type": "str",
      "repr": "'banana'"
     },
-    "0x19bd51fd2f0": {
-     "id": "0x19bd51fd2f0",
+    "0x1195afbd320": {
+     "id": "0x1195afbd320",
      "type": "str",
      "repr": "'fig'"
     },
-    "0x19bd51fd230": {
-     "id": "0x19bd51fd230",
+    "0x1195afbd260": {
+     "id": "0x1195afbd260",
      "type": "str",
      "repr": "'kiwi'"
     },
-    "0x19bd4fcd680": {
-     "id": "0x19bd4fcd680",
+    "0x1195ad8d6c0": {
+     "id": "0x1195ad8d6c0",
      "type": "list",
      "repr": "[('지기', 29), ('영희', 25), ('철수', 29)]",
      "items": [
       {
-       "ref": "0x19bd5203940"
+       "ref": "0x1195afc3a80"
       },
       {
-       "ref": "0x19bd5203900"
+       "ref": "0x1195afc3a40"
       },
       {
-       "ref": "0x19bd52038c0"
+       "ref": "0x1195afc3a00"
       }
      ]
     },
-    "0x19bd5203940": {
-     "id": "0x19bd5203940",
+    "0x1195afc3a80": {
+     "id": "0x1195afc3a80",
      "type": "tuple",
      "repr": "('지기', 29)",
      "items": [
       {
-       "ref": "0x19bd51f60b0"
+       "ref": "0x1195afb6100"
       },
       {
        "ref": "0x7ffd7f2b4d38"
       }
      ]
     },
-    "0x19bd51f60b0": {
-     "id": "0x19bd51f60b0",
+    "0x1195afb6100": {
+     "id": "0x1195afb6100",
      "type": "str",
      "repr": "'지기'"
     },
@@ -1986,21 +1986,21 @@
      "type": "int",
      "repr": "29"
     },
-    "0x19bd5203900": {
-     "id": "0x19bd5203900",
+    "0x1195afc3a40": {
+     "id": "0x1195afc3a40",
      "type": "tuple",
      "repr": "('영희', 25)",
      "items": [
       {
-       "ref": "0x19bd51f6100"
+       "ref": "0x1195afb6150"
       },
       {
        "ref": "0x7ffd7f2b4cb8"
       }
      ]
     },
-    "0x19bd51f6100": {
-     "id": "0x19bd51f6100",
+    "0x1195afb6150": {
+     "id": "0x1195afb6150",
      "type": "str",
      "repr": "'영희'"
     },
@@ -2009,21 +2009,21 @@
      "type": "int",
      "repr": "25"
     },
-    "0x19bd52038c0": {
-     "id": "0x19bd52038c0",
+    "0x1195afc3a00": {
+     "id": "0x1195afc3a00",
      "type": "tuple",
      "repr": "('철수', 29)",
      "items": [
       {
-       "ref": "0x19bd51f6150"
+       "ref": "0x1195afb61a0"
       },
       {
        "ref": "0x7ffd7f2b4d38"
       }
      ]
     },
-    "0x19bd51f6150": {
-     "id": "0x19bd51f6150",
+    "0x1195afb61a0": {
+     "id": "0x1195afb61a0",
      "type": "str",
      "repr": "'철수'"
     }
@@ -2039,85 +2039,85 @@
      "line": 8,
      "locals": {
       "words": {
-       "ref": "0x19bd4fcc740"
+       "ref": "0x1195ad8c780"
       },
       "people": {
-       "ref": "0x19bd4fcd680"
+       "ref": "0x1195ad8d6c0"
       }
      }
     }
    ],
    "heap": {
-    "0x19bd4fcc740": {
-     "id": "0x19bd4fcc740",
+    "0x1195ad8c780": {
+     "id": "0x1195ad8c780",
      "type": "list",
      "repr": "['apple', 'banana', 'fig', 'kiwi']",
      "items": [
       {
-       "ref": "0x19bd51fd290"
+       "ref": "0x1195afbd2c0"
       },
       {
-       "ref": "0x19bd51fd1d0"
+       "ref": "0x1195afbd200"
       },
       {
-       "ref": "0x19bd51fd2f0"
+       "ref": "0x1195afbd320"
       },
       {
-       "ref": "0x19bd51fd230"
+       "ref": "0x1195afbd260"
       }
      ]
     },
-    "0x19bd51fd290": {
-     "id": "0x19bd51fd290",
+    "0x1195afbd2c0": {
+     "id": "0x1195afbd2c0",
      "type": "str",
      "repr": "'apple'"
     },
-    "0x19bd51fd1d0": {
-     "id": "0x19bd51fd1d0",
+    "0x1195afbd200": {
+     "id": "0x1195afbd200",
      "type": "str",
      "repr": "'banana'"
     },
-    "0x19bd51fd2f0": {
-     "id": "0x19bd51fd2f0",
+    "0x1195afbd320": {
+     "id": "0x1195afbd320",
      "type": "str",
      "repr": "'fig'"
     },
-    "0x19bd51fd230": {
-     "id": "0x19bd51fd230",
+    "0x1195afbd260": {
+     "id": "0x1195afbd260",
      "type": "str",
      "repr": "'kiwi'"
     },
-    "0x19bd4fcd680": {
-     "id": "0x19bd4fcd680",
+    "0x1195ad8d6c0": {
+     "id": "0x1195ad8d6c0",
      "type": "list",
      "repr": "[('지기', 29), ('영희', 25), ('철수', 29)]",
      "items": [
       {
-       "ref": "0x19bd5203940"
+       "ref": "0x1195afc3a80"
       },
       {
-       "ref": "0x19bd5203900"
+       "ref": "0x1195afc3a40"
       },
       {
-       "ref": "0x19bd52038c0"
+       "ref": "0x1195afc3a00"
       }
      ]
     },
-    "0x19bd5203940": {
-     "id": "0x19bd5203940",
+    "0x1195afc3a80": {
+     "id": "0x1195afc3a80",
      "type": "tuple",
      "repr": "('지기', 29)",
      "items": [
       {
-       "ref": "0x19bd51f60b0"
+       "ref": "0x1195afb6100"
       },
       {
        "ref": "0x7ffd7f2b4d38"
       }
      ]
     },
-    "0x19bd51f60b0": {
-     "id": "0x19bd51f60b0",
+    "0x1195afb6100": {
+     "id": "0x1195afb6100",
      "type": "str",
      "repr": "'지기'"
     },
@@ -2126,21 +2126,21 @@
      "type": "int",
      "repr": "29"
     },
-    "0x19bd5203900": {
-     "id": "0x19bd5203900",
+    "0x1195afc3a40": {
+     "id": "0x1195afc3a40",
      "type": "tuple",
      "repr": "('영희', 25)",
      "items": [
       {
-       "ref": "0x19bd51f6100"
+       "ref": "0x1195afb6150"
       },
       {
        "ref": "0x7ffd7f2b4cb8"
       }
      ]
     },
-    "0x19bd51f6100": {
-     "id": "0x19bd51f6100",
+    "0x1195afb6150": {
+     "id": "0x1195afb6150",
      "type": "str",
      "repr": "'영희'"
     },
@@ -2149,21 +2149,21 @@
      "type": "int",
      "repr": "25"
     },
-    "0x19bd52038c0": {
-     "id": "0x19bd52038c0",
+    "0x1195afc3a00": {
+     "id": "0x1195afc3a00",
      "type": "tuple",
      "repr": "('철수', 29)",
      "items": [
       {
-       "ref": "0x19bd51f6150"
+       "ref": "0x1195afb61a0"
       },
       {
        "ref": "0x7ffd7f2b4d38"
       }
      ]
     },
-    "0x19bd51f6150": {
-     "id": "0x19bd51f6150",
+    "0x1195afb61a0": {
+     "id": "0x1195afb61a0",
      "type": "str",
      "repr": "'철수'"
     }

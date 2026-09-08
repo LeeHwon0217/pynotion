@@ -112,14 +112,14 @@
      "line": 4,
      "locals": {
       "InsufficientFunds": {
-       "ref": "0x1c8bc881800"
+       "ref": "0x27eb424d3f0"
       }
      }
     }
    ],
    "heap": {
-    "0x1c8bc881800": {
-     "id": "0x1c8bc881800",
+    "0x27eb424d3f0": {
+     "id": "0x27eb424d3f0",
      "type": "type",
      "repr": "InsufficientFunds"
     }
@@ -135,22 +135,22 @@
      "line": 9,
      "locals": {
       "InsufficientFunds": {
-       "ref": "0x1c8bc881800"
+       "ref": "0x27eb424d3f0"
       },
       "withdraw": {
-       "ref": "0x1c8bc9fcae0"
+       "ref": "0x27eb43ccae0"
       }
      }
     }
    ],
    "heap": {
-    "0x1c8bc881800": {
-     "id": "0x1c8bc881800",
+    "0x27eb424d3f0": {
+     "id": "0x27eb424d3f0",
      "type": "type",
      "repr": "InsufficientFunds"
     },
-    "0x1c8bc9fcae0": {
-     "id": "0x1c8bc9fcae0",
+    "0x27eb43ccae0": {
+     "id": "0x27eb43ccae0",
      "type": "function",
      "repr": "withdraw"
     }
@@ -166,22 +166,22 @@
      "line": 10,
      "locals": {
       "InsufficientFunds": {
-       "ref": "0x1c8bc881800"
+       "ref": "0x27eb424d3f0"
       },
       "withdraw": {
-       "ref": "0x1c8bc9fcae0"
+       "ref": "0x27eb43ccae0"
       }
      }
     }
    ],
    "heap": {
-    "0x1c8bc881800": {
-     "id": "0x1c8bc881800",
+    "0x27eb424d3f0": {
+     "id": "0x27eb424d3f0",
      "type": "type",
      "repr": "InsufficientFunds"
     },
-    "0x1c8bc9fcae0": {
-     "id": "0x1c8bc9fcae0",
+    "0x27eb43ccae0": {
+     "id": "0x27eb43ccae0",
      "type": "function",
      "repr": "withdraw"
     }
@@ -197,10 +197,10 @@
      "line": 10,
      "locals": {
       "InsufficientFunds": {
-       "ref": "0x1c8bc881800"
+       "ref": "0x27eb424d3f0"
       },
       "withdraw": {
-       "ref": "0x1c8bc9fcae0"
+       "ref": "0x27eb43ccae0"
       }
      }
     },
@@ -218,13 +218,13 @@
     }
    ],
    "heap": {
-    "0x1c8bc881800": {
-     "id": "0x1c8bc881800",
+    "0x27eb424d3f0": {
+     "id": "0x27eb424d3f0",
      "type": "type",
      "repr": "InsufficientFunds"
     },
-    "0x1c8bc9fcae0": {
-     "id": "0x1c8bc9fcae0",
+    "0x27eb43ccae0": {
+     "id": "0x27eb43ccae0",
      "type": "function",
      "repr": "withdraw"
     },
@@ -250,10 +250,10 @@
      "line": 10,
      "locals": {
       "InsufficientFunds": {
-       "ref": "0x1c8bc881800"
+       "ref": "0x27eb424d3f0"
       },
       "withdraw": {
-       "ref": "0x1c8bc9fcae0"
+       "ref": "0x27eb43ccae0"
       }
      }
     },
@@ -271,13 +271,13 @@
     }
    ],
    "heap": {
-    "0x1c8bc881800": {
-     "id": "0x1c8bc881800",
+    "0x27eb424d3f0": {
+     "id": "0x27eb424d3f0",
      "type": "type",
      "repr": "InsufficientFunds"
     },
-    "0x1c8bc9fcae0": {
-     "id": "0x1c8bc9fcae0",
+    "0x27eb43ccae0": {
+     "id": "0x27eb43ccae0",
      "type": "function",
      "repr": "withdraw"
     },
@@ -303,10 +303,10 @@
      "line": 10,
      "locals": {
       "InsufficientFunds": {
-       "ref": "0x1c8bc881800"
+       "ref": "0x27eb424d3f0"
       },
       "withdraw": {
-       "ref": "0x1c8bc9fcae0"
+       "ref": "0x27eb43ccae0"
       }
      }
     },
@@ -324,13 +324,13 @@
     }
    ],
    "heap": {
-    "0x1c8bc881800": {
-     "id": "0x1c8bc881800",
+    "0x27eb424d3f0": {
+     "id": "0x27eb424d3f0",
      "type": "type",
      "repr": "InsufficientFunds"
     },
-    "0x1c8bc9fcae0": {
-     "id": "0x1c8bc9fcae0",
+    "0x27eb43ccae0": {
+     "id": "0x27eb43ccae0",
      "type": "function",
      "repr": "withdraw"
     },
@@ -357,10 +357,10 @@
      "line": 10,
      "locals": {
       "InsufficientFunds": {
-       "ref": "0x1c8bc881800"
+       "ref": "0x27eb424d3f0"
       },
       "withdraw": {
-       "ref": "0x1c8bc9fcae0"
+       "ref": "0x27eb43ccae0"
       }
      }
     },
@@ -378,13 +378,13 @@
     }
    ],
    "heap": {
-    "0x1c8bc881800": {
-     "id": "0x1c8bc881800",
+    "0x27eb424d3f0": {
+     "id": "0x27eb424d3f0",
      "type": "type",
      "repr": "InsufficientFunds"
     },
-    "0x1c8bc9fcae0": {
-     "id": "0x1c8bc9fcae0",
+    "0x27eb43ccae0": {
+     "id": "0x27eb43ccae0",
      "type": "function",
      "repr": "withdraw"
     },
@@ -411,10 +411,10 @@
      "line": 10,
      "locals": {
       "InsufficientFunds": {
-       "ref": "0x1c8bc881800"
+       "ref": "0x27eb424d3f0"
       },
       "withdraw": {
-       "ref": "0x1c8bc9fcae0"
+       "ref": "0x27eb43ccae0"
       }
      }
     },
@@ -432,13 +432,13 @@
     }
    ],
    "heap": {
-    "0x1c8bc881800": {
-     "id": "0x1c8bc881800",
+    "0x27eb424d3f0": {
+     "id": "0x27eb424d3f0",
      "type": "type",
      "repr": "InsufficientFunds"
     },
-    "0x1c8bc9fcae0": {
-     "id": "0x1c8bc9fcae0",
+    "0x27eb43ccae0": {
+     "id": "0x27eb43ccae0",
      "type": "function",
      "repr": "withdraw"
     },
@@ -464,22 +464,22 @@
      "line": 10,
      "locals": {
       "InsufficientFunds": {
-       "ref": "0x1c8bc881800"
+       "ref": "0x27eb424d3f0"
       },
       "withdraw": {
-       "ref": "0x1c8bc9fcae0"
+       "ref": "0x27eb43ccae0"
       }
      }
     }
    ],
    "heap": {
-    "0x1c8bc881800": {
-     "id": "0x1c8bc881800",
+    "0x27eb424d3f0": {
+     "id": "0x27eb424d3f0",
      "type": "type",
      "repr": "InsufficientFunds"
     },
-    "0x1c8bc9fcae0": {
-     "id": "0x1c8bc9fcae0",
+    "0x27eb43ccae0": {
+     "id": "0x27eb43ccae0",
      "type": "function",
      "repr": "withdraw"
     }
@@ -496,22 +496,22 @@
      "line": 11,
      "locals": {
       "InsufficientFunds": {
-       "ref": "0x1c8bc881800"
+       "ref": "0x27eb424d3f0"
       },
       "withdraw": {
-       "ref": "0x1c8bc9fcae0"
+       "ref": "0x27eb43ccae0"
       }
      }
     }
    ],
    "heap": {
-    "0x1c8bc881800": {
-     "id": "0x1c8bc881800",
+    "0x27eb424d3f0": {
+     "id": "0x27eb424d3f0",
      "type": "type",
      "repr": "InsufficientFunds"
     },
-    "0x1c8bc9fcae0": {
-     "id": "0x1c8bc9fcae0",
+    "0x27eb43ccae0": {
+     "id": "0x27eb43ccae0",
      "type": "function",
      "repr": "withdraw"
     }
@@ -528,30 +528,30 @@
      "line": 12,
      "locals": {
       "InsufficientFunds": {
-       "ref": "0x1c8bc881800"
+       "ref": "0x27eb424d3f0"
       },
       "withdraw": {
-       "ref": "0x1c8bc9fcae0"
+       "ref": "0x27eb43ccae0"
       },
       "e": {
-       "ref": "0x1c8bc753ee0"
+       "ref": "0x27eb4123ee0"
       }
      }
     }
    ],
    "heap": {
-    "0x1c8bc881800": {
-     "id": "0x1c8bc881800",
+    "0x27eb424d3f0": {
+     "id": "0x27eb424d3f0",
      "type": "type",
      "repr": "InsufficientFunds"
     },
-    "0x1c8bc9fcae0": {
-     "id": "0x1c8bc9fcae0",
+    "0x27eb43ccae0": {
+     "id": "0x27eb43ccae0",
      "type": "function",
      "repr": "withdraw"
     },
-    "0x1c8bc753ee0": {
-     "id": "0x1c8bc753ee0",
+    "0x27eb4123ee0": {
+     "id": "0x27eb4123ee0",
      "type": "InsufficientFunds",
      "repr": "InsufficientFunds('잔액 100, 요청 150')",
      "fields": {}
@@ -568,22 +568,22 @@
      "line": 14,
      "locals": {
       "InsufficientFunds": {
-       "ref": "0x1c8bc881800"
+       "ref": "0x27eb424d3f0"
       },
       "withdraw": {
-       "ref": "0x1c8bc9fcae0"
+       "ref": "0x27eb43ccae0"
       }
      }
     }
    ],
    "heap": {
-    "0x1c8bc881800": {
-     "id": "0x1c8bc881800",
+    "0x27eb424d3f0": {
+     "id": "0x27eb424d3f0",
      "type": "type",
      "repr": "InsufficientFunds"
     },
-    "0x1c8bc9fcae0": {
-     "id": "0x1c8bc9fcae0",
+    "0x27eb43ccae0": {
+     "id": "0x27eb43ccae0",
      "type": "function",
      "repr": "withdraw"
     }
@@ -599,22 +599,22 @@
      "line": 15,
      "locals": {
       "InsufficientFunds": {
-       "ref": "0x1c8bc881800"
+       "ref": "0x27eb424d3f0"
       },
       "withdraw": {
-       "ref": "0x1c8bc9fcae0"
+       "ref": "0x27eb43ccae0"
       }
      }
     }
    ],
    "heap": {
-    "0x1c8bc881800": {
-     "id": "0x1c8bc881800",
+    "0x27eb424d3f0": {
+     "id": "0x27eb424d3f0",
      "type": "type",
      "repr": "InsufficientFunds"
     },
-    "0x1c8bc9fcae0": {
-     "id": "0x1c8bc9fcae0",
+    "0x27eb43ccae0": {
+     "id": "0x27eb43ccae0",
      "type": "function",
      "repr": "withdraw"
     }
@@ -630,22 +630,22 @@
      "line": 16,
      "locals": {
       "InsufficientFunds": {
-       "ref": "0x1c8bc881800"
+       "ref": "0x27eb424d3f0"
       },
       "withdraw": {
-       "ref": "0x1c8bc9fcae0"
+       "ref": "0x27eb43ccae0"
       }
      }
     }
    ],
    "heap": {
-    "0x1c8bc881800": {
-     "id": "0x1c8bc881800",
+    "0x27eb424d3f0": {
+     "id": "0x27eb424d3f0",
      "type": "type",
      "repr": "InsufficientFunds"
     },
-    "0x1c8bc9fcae0": {
-     "id": "0x1c8bc9fcae0",
+    "0x27eb43ccae0": {
+     "id": "0x27eb43ccae0",
      "type": "function",
      "repr": "withdraw"
     }
@@ -661,22 +661,22 @@
      "line": 16,
      "locals": {
       "InsufficientFunds": {
-       "ref": "0x1c8bc881800"
+       "ref": "0x27eb424d3f0"
       },
       "withdraw": {
-       "ref": "0x1c8bc9fcae0"
+       "ref": "0x27eb43ccae0"
       }
      }
     }
    ],
    "heap": {
-    "0x1c8bc881800": {
-     "id": "0x1c8bc881800",
+    "0x27eb424d3f0": {
+     "id": "0x27eb424d3f0",
      "type": "type",
      "repr": "InsufficientFunds"
     },
-    "0x1c8bc9fcae0": {
-     "id": "0x1c8bc9fcae0",
+    "0x27eb43ccae0": {
+     "id": "0x27eb43ccae0",
      "type": "function",
      "repr": "withdraw"
     }
@@ -693,22 +693,22 @@
      "line": 17,
      "locals": {
       "InsufficientFunds": {
-       "ref": "0x1c8bc881800"
+       "ref": "0x27eb424d3f0"
       },
       "withdraw": {
-       "ref": "0x1c8bc9fcae0"
+       "ref": "0x27eb43ccae0"
       }
      }
     }
    ],
    "heap": {
-    "0x1c8bc881800": {
-     "id": "0x1c8bc881800",
+    "0x27eb424d3f0": {
+     "id": "0x27eb424d3f0",
      "type": "type",
      "repr": "InsufficientFunds"
     },
-    "0x1c8bc9fcae0": {
-     "id": "0x1c8bc9fcae0",
+    "0x27eb43ccae0": {
+     "id": "0x27eb43ccae0",
      "type": "function",
      "repr": "withdraw"
     }
@@ -724,30 +724,30 @@
      "line": 18,
      "locals": {
       "InsufficientFunds": {
-       "ref": "0x1c8bc881800"
+       "ref": "0x27eb424d3f0"
       },
       "withdraw": {
-       "ref": "0x1c8bc9fcae0"
+       "ref": "0x27eb43ccae0"
       },
       "e": {
-       "ref": "0x1c8bc9e9000"
+       "ref": "0x27eb43b8fa0"
       }
      }
     }
    ],
    "heap": {
-    "0x1c8bc881800": {
-     "id": "0x1c8bc881800",
+    "0x27eb424d3f0": {
+     "id": "0x27eb424d3f0",
      "type": "type",
      "repr": "InsufficientFunds"
     },
-    "0x1c8bc9fcae0": {
-     "id": "0x1c8bc9fcae0",
+    "0x27eb43ccae0": {
+     "id": "0x27eb43ccae0",
      "type": "function",
      "repr": "withdraw"
     },
-    "0x1c8bc9e9000": {
-     "id": "0x1c8bc9e9000",
+    "0x27eb43b8fa0": {
+     "id": "0x27eb43b8fa0",
      "type": "ValueError",
      "repr": "ValueError(\"invalid literal for int() with base…",
      "fields": {}
@@ -765,30 +765,30 @@
      "line": 18,
      "locals": {
       "InsufficientFunds": {
-       "ref": "0x1c8bc881800"
+       "ref": "0x27eb424d3f0"
       },
       "withdraw": {
-       "ref": "0x1c8bc9fcae0"
+       "ref": "0x27eb43ccae0"
       },
       "e": {
-       "ref": "0x1c8bc9e9000"
+       "ref": "0x27eb43b8fa0"
       }
      }
     }
    ],
    "heap": {
-    "0x1c8bc881800": {
-     "id": "0x1c8bc881800",
+    "0x27eb424d3f0": {
+     "id": "0x27eb424d3f0",
      "type": "type",
      "repr": "InsufficientFunds"
     },
-    "0x1c8bc9fcae0": {
-     "id": "0x1c8bc9fcae0",
+    "0x27eb43ccae0": {
+     "id": "0x27eb43ccae0",
      "type": "function",
      "repr": "withdraw"
     },
-    "0x1c8bc9e9000": {
-     "id": "0x1c8bc9e9000",
+    "0x27eb43b8fa0": {
+     "id": "0x27eb43b8fa0",
      "type": "ValueError",
      "repr": "ValueError(\"invalid literal for int() with base…",
      "fields": {}
@@ -806,22 +806,22 @@
      "line": 19,
      "locals": {
       "InsufficientFunds": {
-       "ref": "0x1c8bc881800"
+       "ref": "0x27eb424d3f0"
       },
       "withdraw": {
-       "ref": "0x1c8bc9fcae0"
+       "ref": "0x27eb43ccae0"
       }
      }
     }
    ],
    "heap": {
-    "0x1c8bc881800": {
-     "id": "0x1c8bc881800",
+    "0x27eb424d3f0": {
+     "id": "0x27eb424d3f0",
      "type": "type",
      "repr": "InsufficientFunds"
     },
-    "0x1c8bc9fcae0": {
-     "id": "0x1c8bc9fcae0",
+    "0x27eb43ccae0": {
+     "id": "0x27eb43ccae0",
      "type": "function",
      "repr": "withdraw"
     }
@@ -837,30 +837,30 @@
      "line": 20,
      "locals": {
       "InsufficientFunds": {
-       "ref": "0x1c8bc881800"
+       "ref": "0x27eb424d3f0"
       },
       "withdraw": {
-       "ref": "0x1c8bc9fcae0"
+       "ref": "0x27eb43ccae0"
       },
       "e": {
-       "ref": "0x1c8bc9e9300"
+       "ref": "0x27eb43b92a0"
       }
      }
     }
    ],
    "heap": {
-    "0x1c8bc881800": {
-     "id": "0x1c8bc881800",
+    "0x27eb424d3f0": {
+     "id": "0x27eb424d3f0",
      "type": "type",
      "repr": "InsufficientFunds"
     },
-    "0x1c8bc9fcae0": {
-     "id": "0x1c8bc9fcae0",
+    "0x27eb43ccae0": {
+     "id": "0x27eb43ccae0",
      "type": "function",
      "repr": "withdraw"
     },
-    "0x1c8bc9e9300": {
-     "id": "0x1c8bc9e9300",
+    "0x27eb43b92a0": {
+     "id": "0x27eb43b92a0",
      "type": "RuntimeError",
      "repr": "RuntimeError('설정 파싱 실패')",
      "fields": {}
@@ -877,22 +877,22 @@
      "line": 20,
      "locals": {
       "InsufficientFunds": {
-       "ref": "0x1c8bc881800"
+       "ref": "0x27eb424d3f0"
       },
       "withdraw": {
-       "ref": "0x1c8bc9fcae0"
+       "ref": "0x27eb43ccae0"
       }
      }
     }
    ],
    "heap": {
-    "0x1c8bc881800": {
-     "id": "0x1c8bc881800",
+    "0x27eb424d3f0": {
+     "id": "0x27eb424d3f0",
      "type": "type",
      "repr": "InsufficientFunds"
     },
-    "0x1c8bc9fcae0": {
-     "id": "0x1c8bc9fcae0",
+    "0x27eb43ccae0": {
+     "id": "0x27eb43ccae0",
      "type": "function",
      "repr": "withdraw"
     }

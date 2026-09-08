@@ -1,0 +1,2156 @@
+{
+ "id": "p7-poly",
+ "code": "class Duck:\n    def speak(self): return \"꽥\"\nclass Robot:\n    def speak(self): return \"삐빅\"\nclass Rock:\n    pass\n\ndef talk(thing):\n    return thing.speak()\n\nfor x in [Duck(), Robot()]:\n    print(talk(x))\nprint(len(\"abc\"), len([1, 2]))\nprint(talk(Rock()))",
+ "steps": [
+  {
+   "line": 0,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 0,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Duck",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Duck",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Duck",
+     "line": 2,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 2,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Duck",
+     "line": 2,
+     "locals": {
+      "speak": {
+       "ref": "0x28d2d3cca40"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x28d2d3cca40": {
+     "id": "0x28d2d3cca40",
+     "type": "function",
+     "repr": "speak"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 3,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 3,
+     "locals": {
+      "Duck": {
+       "ref": "0x28d2d268ac0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x28d2d268ac0": {
+     "id": "0x28d2d268ac0",
+     "type": "type",
+     "repr": "Duck"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 3,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 3,
+     "locals": {
+      "Duck": {
+       "ref": "0x28d2d268ac0"
+      }
+     }
+    },
+    {
+     "fn": "Robot",
+     "line": 3,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x28d2d268ac0": {
+     "id": "0x28d2d268ac0",
+     "type": "type",
+     "repr": "Duck"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 3,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 3,
+     "locals": {
+      "Duck": {
+       "ref": "0x28d2d268ac0"
+      }
+     }
+    },
+    {
+     "fn": "Robot",
+     "line": 3,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x28d2d268ac0": {
+     "id": "0x28d2d268ac0",
+     "type": "type",
+     "repr": "Duck"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 3,
+     "locals": {
+      "Duck": {
+       "ref": "0x28d2d268ac0"
+      }
+     }
+    },
+    {
+     "fn": "Robot",
+     "line": 4,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x28d2d268ac0": {
+     "id": "0x28d2d268ac0",
+     "type": "type",
+     "repr": "Duck"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 4,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 3,
+     "locals": {
+      "Duck": {
+       "ref": "0x28d2d268ac0"
+      }
+     }
+    },
+    {
+     "fn": "Robot",
+     "line": 4,
+     "locals": {
+      "speak": {
+       "ref": "0x28d2d3ccb80"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x28d2d268ac0": {
+     "id": "0x28d2d268ac0",
+     "type": "type",
+     "repr": "Duck"
+    },
+    "0x28d2d3ccb80": {
+     "id": "0x28d2d3ccb80",
+     "type": "function",
+     "repr": "speak"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "Duck": {
+       "ref": "0x28d2d268ac0"
+      },
+      "Robot": {
+       "ref": "0x28d2d26b560"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x28d2d268ac0": {
+     "id": "0x28d2d268ac0",
+     "type": "type",
+     "repr": "Duck"
+    },
+    "0x28d2d26b560": {
+     "id": "0x28d2d26b560",
+     "type": "type",
+     "repr": "Robot"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 5,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "Duck": {
+       "ref": "0x28d2d268ac0"
+      },
+      "Robot": {
+       "ref": "0x28d2d26b560"
+      }
+     }
+    },
+    {
+     "fn": "Rock",
+     "line": 5,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x28d2d268ac0": {
+     "id": "0x28d2d268ac0",
+     "type": "type",
+     "repr": "Duck"
+    },
+    "0x28d2d26b560": {
+     "id": "0x28d2d26b560",
+     "type": "type",
+     "repr": "Robot"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "Duck": {
+       "ref": "0x28d2d268ac0"
+      },
+      "Robot": {
+       "ref": "0x28d2d26b560"
+      }
+     }
+    },
+    {
+     "fn": "Rock",
+     "line": 5,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x28d2d268ac0": {
+     "id": "0x28d2d268ac0",
+     "type": "type",
+     "repr": "Duck"
+    },
+    "0x28d2d26b560": {
+     "id": "0x28d2d26b560",
+     "type": "type",
+     "repr": "Robot"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 6,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "Duck": {
+       "ref": "0x28d2d268ac0"
+      },
+      "Robot": {
+       "ref": "0x28d2d26b560"
+      }
+     }
+    },
+    {
+     "fn": "Rock",
+     "line": 6,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x28d2d268ac0": {
+     "id": "0x28d2d268ac0",
+     "type": "type",
+     "repr": "Duck"
+    },
+    "0x28d2d26b560": {
+     "id": "0x28d2d26b560",
+     "type": "type",
+     "repr": "Robot"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 6,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "Duck": {
+       "ref": "0x28d2d268ac0"
+      },
+      "Robot": {
+       "ref": "0x28d2d26b560"
+      }
+     }
+    },
+    {
+     "fn": "Rock",
+     "line": 6,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x28d2d268ac0": {
+     "id": "0x28d2d268ac0",
+     "type": "type",
+     "repr": "Duck"
+    },
+    "0x28d2d26b560": {
+     "id": "0x28d2d26b560",
+     "type": "type",
+     "repr": "Robot"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 8,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 8,
+     "locals": {
+      "Duck": {
+       "ref": "0x28d2d268ac0"
+      },
+      "Robot": {
+       "ref": "0x28d2d26b560"
+      },
+      "Rock": {
+       "ref": "0x28d2d26ada0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x28d2d268ac0": {
+     "id": "0x28d2d268ac0",
+     "type": "type",
+     "repr": "Duck"
+    },
+    "0x28d2d26b560": {
+     "id": "0x28d2d26b560",
+     "type": "type",
+     "repr": "Robot"
+    },
+    "0x28d2d26ada0": {
+     "id": "0x28d2d26ada0",
+     "type": "type",
+     "repr": "Rock"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 11,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 11,
+     "locals": {
+      "Duck": {
+       "ref": "0x28d2d268ac0"
+      },
+      "Robot": {
+       "ref": "0x28d2d26b560"
+      },
+      "Rock": {
+       "ref": "0x28d2d26ada0"
+      },
+      "talk": {
+       "ref": "0x28d2d3cc9a0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x28d2d268ac0": {
+     "id": "0x28d2d268ac0",
+     "type": "type",
+     "repr": "Duck"
+    },
+    "0x28d2d26b560": {
+     "id": "0x28d2d26b560",
+     "type": "type",
+     "repr": "Robot"
+    },
+    "0x28d2d26ada0": {
+     "id": "0x28d2d26ada0",
+     "type": "type",
+     "repr": "Rock"
+    },
+    "0x28d2d3cc9a0": {
+     "id": "0x28d2d3cc9a0",
+     "type": "function",
+     "repr": "talk"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 12,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 12,
+     "locals": {
+      "Duck": {
+       "ref": "0x28d2d268ac0"
+      },
+      "Robot": {
+       "ref": "0x28d2d26b560"
+      },
+      "Rock": {
+       "ref": "0x28d2d26ada0"
+      },
+      "talk": {
+       "ref": "0x28d2d3cc9a0"
+      },
+      "x": {
+       "ref": "0x28d2d3dd1c0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x28d2d268ac0": {
+     "id": "0x28d2d268ac0",
+     "type": "type",
+     "repr": "Duck"
+    },
+    "0x28d2d26b560": {
+     "id": "0x28d2d26b560",
+     "type": "type",
+     "repr": "Robot"
+    },
+    "0x28d2d26ada0": {
+     "id": "0x28d2d26ada0",
+     "type": "type",
+     "repr": "Rock"
+    },
+    "0x28d2d3cc9a0": {
+     "id": "0x28d2d3cc9a0",
+     "type": "function",
+     "repr": "talk"
+    },
+    "0x28d2d3dd1c0": {
+     "id": "0x28d2d3dd1c0",
+     "type": "Duck",
+     "repr": "<__main__.Duck object at 0x0000028D2D3DD1C0>",
+     "fields": {}
+    }
+   },
+   "stdout": "",
+   "note": "서로 상속 관계가 없어도 같은 인터페이스면 같은 함수로"
+  },
+  {
+   "line": 8,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 12,
+     "locals": {
+      "Duck": {
+       "ref": "0x28d2d268ac0"
+      },
+      "Robot": {
+       "ref": "0x28d2d26b560"
+      },
+      "Rock": {
+       "ref": "0x28d2d26ada0"
+      },
+      "talk": {
+       "ref": "0x28d2d3cc9a0"
+      },
+      "x": {
+       "ref": "0x28d2d3dd1c0"
+      }
+     }
+    },
+    {
+     "fn": "talk",
+     "line": 8,
+     "locals": {
+      "thing": {
+       "ref": "0x28d2d3dd1c0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x28d2d268ac0": {
+     "id": "0x28d2d268ac0",
+     "type": "type",
+     "repr": "Duck"
+    },
+    "0x28d2d26b560": {
+     "id": "0x28d2d26b560",
+     "type": "type",
+     "repr": "Robot"
+    },
+    "0x28d2d26ada0": {
+     "id": "0x28d2d26ada0",
+     "type": "type",
+     "repr": "Rock"
+    },
+    "0x28d2d3cc9a0": {
+     "id": "0x28d2d3cc9a0",
+     "type": "function",
+     "repr": "talk"
+    },
+    "0x28d2d3dd1c0": {
+     "id": "0x28d2d3dd1c0",
+     "type": "Duck",
+     "repr": "<__main__.Duck object at 0x0000028D2D3DD1C0>",
+     "fields": {}
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 9,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 12,
+     "locals": {
+      "Duck": {
+       "ref": "0x28d2d268ac0"
+      },
+      "Robot": {
+       "ref": "0x28d2d26b560"
+      },
+      "Rock": {
+       "ref": "0x28d2d26ada0"
+      },
+      "talk": {
+       "ref": "0x28d2d3cc9a0"
+      },
+      "x": {
+       "ref": "0x28d2d3dd1c0"
+      }
+     }
+    },
+    {
+     "fn": "talk",
+     "line": 9,
+     "locals": {
+      "thing": {
+       "ref": "0x28d2d3dd1c0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x28d2d268ac0": {
+     "id": "0x28d2d268ac0",
+     "type": "type",
+     "repr": "Duck"
+    },
+    "0x28d2d26b560": {
+     "id": "0x28d2d26b560",
+     "type": "type",
+     "repr": "Robot"
+    },
+    "0x28d2d26ada0": {
+     "id": "0x28d2d26ada0",
+     "type": "type",
+     "repr": "Rock"
+    },
+    "0x28d2d3cc9a0": {
+     "id": "0x28d2d3cc9a0",
+     "type": "function",
+     "repr": "talk"
+    },
+    "0x28d2d3dd1c0": {
+     "id": "0x28d2d3dd1c0",
+     "type": "Duck",
+     "repr": "<__main__.Duck object at 0x0000028D2D3DD1C0>",
+     "fields": {}
+    }
+   },
+   "stdout": "",
+   "note": "타입을 검사하지 않는다 — speak 가 있으면 된다 (덕 타이핑)"
+  },
+  {
+   "line": 2,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 12,
+     "locals": {
+      "Duck": {
+       "ref": "0x28d2d268ac0"
+      },
+      "Robot": {
+       "ref": "0x28d2d26b560"
+      },
+      "Rock": {
+       "ref": "0x28d2d26ada0"
+      },
+      "talk": {
+       "ref": "0x28d2d3cc9a0"
+      },
+      "x": {
+       "ref": "0x28d2d3dd1c0"
+      }
+     }
+    },
+    {
+     "fn": "talk",
+     "line": 9,
+     "locals": {
+      "thing": {
+       "ref": "0x28d2d3dd1c0"
+      }
+     }
+    },
+    {
+     "fn": "speak",
+     "line": 2,
+     "locals": {
+      "self": {
+       "ref": "0x28d2d3dd1c0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x28d2d268ac0": {
+     "id": "0x28d2d268ac0",
+     "type": "type",
+     "repr": "Duck"
+    },
+    "0x28d2d26b560": {
+     "id": "0x28d2d26b560",
+     "type": "type",
+     "repr": "Robot"
+    },
+    "0x28d2d26ada0": {
+     "id": "0x28d2d26ada0",
+     "type": "type",
+     "repr": "Rock"
+    },
+    "0x28d2d3cc9a0": {
+     "id": "0x28d2d3cc9a0",
+     "type": "function",
+     "repr": "talk"
+    },
+    "0x28d2d3dd1c0": {
+     "id": "0x28d2d3dd1c0",
+     "type": "Duck",
+     "repr": "<__main__.Duck object at 0x0000028D2D3DD1C0>",
+     "fields": {}
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 12,
+     "locals": {
+      "Duck": {
+       "ref": "0x28d2d268ac0"
+      },
+      "Robot": {
+       "ref": "0x28d2d26b560"
+      },
+      "Rock": {
+       "ref": "0x28d2d26ada0"
+      },
+      "talk": {
+       "ref": "0x28d2d3cc9a0"
+      },
+      "x": {
+       "ref": "0x28d2d3dd1c0"
+      }
+     }
+    },
+    {
+     "fn": "talk",
+     "line": 9,
+     "locals": {
+      "thing": {
+       "ref": "0x28d2d3dd1c0"
+      }
+     }
+    },
+    {
+     "fn": "speak",
+     "line": 2,
+     "locals": {
+      "self": {
+       "ref": "0x28d2d3dd1c0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x28d2d268ac0": {
+     "id": "0x28d2d268ac0",
+     "type": "type",
+     "repr": "Duck"
+    },
+    "0x28d2d26b560": {
+     "id": "0x28d2d26b560",
+     "type": "type",
+     "repr": "Robot"
+    },
+    "0x28d2d26ada0": {
+     "id": "0x28d2d26ada0",
+     "type": "type",
+     "repr": "Rock"
+    },
+    "0x28d2d3cc9a0": {
+     "id": "0x28d2d3cc9a0",
+     "type": "function",
+     "repr": "talk"
+    },
+    "0x28d2d3dd1c0": {
+     "id": "0x28d2d3dd1c0",
+     "type": "Duck",
+     "repr": "<__main__.Duck object at 0x0000028D2D3DD1C0>",
+     "fields": {}
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 2,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 12,
+     "locals": {
+      "Duck": {
+       "ref": "0x28d2d268ac0"
+      },
+      "Robot": {
+       "ref": "0x28d2d26b560"
+      },
+      "Rock": {
+       "ref": "0x28d2d26ada0"
+      },
+      "talk": {
+       "ref": "0x28d2d3cc9a0"
+      },
+      "x": {
+       "ref": "0x28d2d3dd1c0"
+      }
+     }
+    },
+    {
+     "fn": "talk",
+     "line": 9,
+     "locals": {
+      "thing": {
+       "ref": "0x28d2d3dd1c0"
+      }
+     }
+    },
+    {
+     "fn": "speak",
+     "line": 2,
+     "locals": {
+      "self": {
+       "ref": "0x28d2d3dd1c0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x28d2d268ac0": {
+     "id": "0x28d2d268ac0",
+     "type": "type",
+     "repr": "Duck"
+    },
+    "0x28d2d26b560": {
+     "id": "0x28d2d26b560",
+     "type": "type",
+     "repr": "Robot"
+    },
+    "0x28d2d26ada0": {
+     "id": "0x28d2d26ada0",
+     "type": "type",
+     "repr": "Rock"
+    },
+    "0x28d2d3cc9a0": {
+     "id": "0x28d2d3cc9a0",
+     "type": "function",
+     "repr": "talk"
+    },
+    "0x28d2d3dd1c0": {
+     "id": "0x28d2d3dd1c0",
+     "type": "Duck",
+     "repr": "<__main__.Duck object at 0x0000028D2D3DD1C0>",
+     "fields": {}
+    }
+   },
+   "stdout": "",
+   "retval": "'꽥'"
+  },
+  {
+   "line": 9,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 12,
+     "locals": {
+      "Duck": {
+       "ref": "0x28d2d268ac0"
+      },
+      "Robot": {
+       "ref": "0x28d2d26b560"
+      },
+      "Rock": {
+       "ref": "0x28d2d26ada0"
+      },
+      "talk": {
+       "ref": "0x28d2d3cc9a0"
+      },
+      "x": {
+       "ref": "0x28d2d3dd1c0"
+      }
+     }
+    },
+    {
+     "fn": "talk",
+     "line": 9,
+     "locals": {
+      "thing": {
+       "ref": "0x28d2d3dd1c0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x28d2d268ac0": {
+     "id": "0x28d2d268ac0",
+     "type": "type",
+     "repr": "Duck"
+    },
+    "0x28d2d26b560": {
+     "id": "0x28d2d26b560",
+     "type": "type",
+     "repr": "Robot"
+    },
+    "0x28d2d26ada0": {
+     "id": "0x28d2d26ada0",
+     "type": "type",
+     "repr": "Rock"
+    },
+    "0x28d2d3cc9a0": {
+     "id": "0x28d2d3cc9a0",
+     "type": "function",
+     "repr": "talk"
+    },
+    "0x28d2d3dd1c0": {
+     "id": "0x28d2d3dd1c0",
+     "type": "Duck",
+     "repr": "<__main__.Duck object at 0x0000028D2D3DD1C0>",
+     "fields": {}
+    }
+   },
+   "stdout": "",
+   "retval": "'꽥'"
+  },
+  {
+   "line": 11,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 11,
+     "locals": {
+      "Duck": {
+       "ref": "0x28d2d268ac0"
+      },
+      "Robot": {
+       "ref": "0x28d2d26b560"
+      },
+      "Rock": {
+       "ref": "0x28d2d26ada0"
+      },
+      "talk": {
+       "ref": "0x28d2d3cc9a0"
+      },
+      "x": {
+       "ref": "0x28d2d3dd1c0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x28d2d268ac0": {
+     "id": "0x28d2d268ac0",
+     "type": "type",
+     "repr": "Duck"
+    },
+    "0x28d2d26b560": {
+     "id": "0x28d2d26b560",
+     "type": "type",
+     "repr": "Robot"
+    },
+    "0x28d2d26ada0": {
+     "id": "0x28d2d26ada0",
+     "type": "type",
+     "repr": "Rock"
+    },
+    "0x28d2d3cc9a0": {
+     "id": "0x28d2d3cc9a0",
+     "type": "function",
+     "repr": "talk"
+    },
+    "0x28d2d3dd1c0": {
+     "id": "0x28d2d3dd1c0",
+     "type": "Duck",
+     "repr": "<__main__.Duck object at 0x0000028D2D3DD1C0>",
+     "fields": {}
+    }
+   },
+   "stdout": "꽥\n"
+  },
+  {
+   "line": 12,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 12,
+     "locals": {
+      "Duck": {
+       "ref": "0x28d2d268ac0"
+      },
+      "Robot": {
+       "ref": "0x28d2d26b560"
+      },
+      "Rock": {
+       "ref": "0x28d2d26ada0"
+      },
+      "talk": {
+       "ref": "0x28d2d3cc9a0"
+      },
+      "x": {
+       "ref": "0x28d2d3dd220"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x28d2d268ac0": {
+     "id": "0x28d2d268ac0",
+     "type": "type",
+     "repr": "Duck"
+    },
+    "0x28d2d26b560": {
+     "id": "0x28d2d26b560",
+     "type": "type",
+     "repr": "Robot"
+    },
+    "0x28d2d26ada0": {
+     "id": "0x28d2d26ada0",
+     "type": "type",
+     "repr": "Rock"
+    },
+    "0x28d2d3cc9a0": {
+     "id": "0x28d2d3cc9a0",
+     "type": "function",
+     "repr": "talk"
+    },
+    "0x28d2d3dd220": {
+     "id": "0x28d2d3dd220",
+     "type": "Robot",
+     "repr": "<__main__.Robot object at 0x0000028D2D3DD220>",
+     "fields": {}
+    }
+   },
+   "stdout": "꽥\n",
+   "note": "서로 상속 관계가 없어도 같은 인터페이스면 같은 함수로"
+  },
+  {
+   "line": 8,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 12,
+     "locals": {
+      "Duck": {
+       "ref": "0x28d2d268ac0"
+      },
+      "Robot": {
+       "ref": "0x28d2d26b560"
+      },
+      "Rock": {
+       "ref": "0x28d2d26ada0"
+      },
+      "talk": {
+       "ref": "0x28d2d3cc9a0"
+      },
+      "x": {
+       "ref": "0x28d2d3dd220"
+      }
+     }
+    },
+    {
+     "fn": "talk",
+     "line": 8,
+     "locals": {
+      "thing": {
+       "ref": "0x28d2d3dd220"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x28d2d268ac0": {
+     "id": "0x28d2d268ac0",
+     "type": "type",
+     "repr": "Duck"
+    },
+    "0x28d2d26b560": {
+     "id": "0x28d2d26b560",
+     "type": "type",
+     "repr": "Robot"
+    },
+    "0x28d2d26ada0": {
+     "id": "0x28d2d26ada0",
+     "type": "type",
+     "repr": "Rock"
+    },
+    "0x28d2d3cc9a0": {
+     "id": "0x28d2d3cc9a0",
+     "type": "function",
+     "repr": "talk"
+    },
+    "0x28d2d3dd220": {
+     "id": "0x28d2d3dd220",
+     "type": "Robot",
+     "repr": "<__main__.Robot object at 0x0000028D2D3DD220>",
+     "fields": {}
+    }
+   },
+   "stdout": "꽥\n"
+  },
+  {
+   "line": 9,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 12,
+     "locals": {
+      "Duck": {
+       "ref": "0x28d2d268ac0"
+      },
+      "Robot": {
+       "ref": "0x28d2d26b560"
+      },
+      "Rock": {
+       "ref": "0x28d2d26ada0"
+      },
+      "talk": {
+       "ref": "0x28d2d3cc9a0"
+      },
+      "x": {
+       "ref": "0x28d2d3dd220"
+      }
+     }
+    },
+    {
+     "fn": "talk",
+     "line": 9,
+     "locals": {
+      "thing": {
+       "ref": "0x28d2d3dd220"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x28d2d268ac0": {
+     "id": "0x28d2d268ac0",
+     "type": "type",
+     "repr": "Duck"
+    },
+    "0x28d2d26b560": {
+     "id": "0x28d2d26b560",
+     "type": "type",
+     "repr": "Robot"
+    },
+    "0x28d2d26ada0": {
+     "id": "0x28d2d26ada0",
+     "type": "type",
+     "repr": "Rock"
+    },
+    "0x28d2d3cc9a0": {
+     "id": "0x28d2d3cc9a0",
+     "type": "function",
+     "repr": "talk"
+    },
+    "0x28d2d3dd220": {
+     "id": "0x28d2d3dd220",
+     "type": "Robot",
+     "repr": "<__main__.Robot object at 0x0000028D2D3DD220>",
+     "fields": {}
+    }
+   },
+   "stdout": "꽥\n",
+   "note": "타입을 검사하지 않는다 — speak 가 있으면 된다 (덕 타이핑)"
+  },
+  {
+   "line": 4,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 12,
+     "locals": {
+      "Duck": {
+       "ref": "0x28d2d268ac0"
+      },
+      "Robot": {
+       "ref": "0x28d2d26b560"
+      },
+      "Rock": {
+       "ref": "0x28d2d26ada0"
+      },
+      "talk": {
+       "ref": "0x28d2d3cc9a0"
+      },
+      "x": {
+       "ref": "0x28d2d3dd220"
+      }
+     }
+    },
+    {
+     "fn": "talk",
+     "line": 9,
+     "locals": {
+      "thing": {
+       "ref": "0x28d2d3dd220"
+      }
+     }
+    },
+    {
+     "fn": "speak",
+     "line": 4,
+     "locals": {
+      "self": {
+       "ref": "0x28d2d3dd220"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x28d2d268ac0": {
+     "id": "0x28d2d268ac0",
+     "type": "type",
+     "repr": "Duck"
+    },
+    "0x28d2d26b560": {
+     "id": "0x28d2d26b560",
+     "type": "type",
+     "repr": "Robot"
+    },
+    "0x28d2d26ada0": {
+     "id": "0x28d2d26ada0",
+     "type": "type",
+     "repr": "Rock"
+    },
+    "0x28d2d3cc9a0": {
+     "id": "0x28d2d3cc9a0",
+     "type": "function",
+     "repr": "talk"
+    },
+    "0x28d2d3dd220": {
+     "id": "0x28d2d3dd220",
+     "type": "Robot",
+     "repr": "<__main__.Robot object at 0x0000028D2D3DD220>",
+     "fields": {}
+    }
+   },
+   "stdout": "꽥\n"
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 12,
+     "locals": {
+      "Duck": {
+       "ref": "0x28d2d268ac0"
+      },
+      "Robot": {
+       "ref": "0x28d2d26b560"
+      },
+      "Rock": {
+       "ref": "0x28d2d26ada0"
+      },
+      "talk": {
+       "ref": "0x28d2d3cc9a0"
+      },
+      "x": {
+       "ref": "0x28d2d3dd220"
+      }
+     }
+    },
+    {
+     "fn": "talk",
+     "line": 9,
+     "locals": {
+      "thing": {
+       "ref": "0x28d2d3dd220"
+      }
+     }
+    },
+    {
+     "fn": "speak",
+     "line": 4,
+     "locals": {
+      "self": {
+       "ref": "0x28d2d3dd220"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x28d2d268ac0": {
+     "id": "0x28d2d268ac0",
+     "type": "type",
+     "repr": "Duck"
+    },
+    "0x28d2d26b560": {
+     "id": "0x28d2d26b560",
+     "type": "type",
+     "repr": "Robot"
+    },
+    "0x28d2d26ada0": {
+     "id": "0x28d2d26ada0",
+     "type": "type",
+     "repr": "Rock"
+    },
+    "0x28d2d3cc9a0": {
+     "id": "0x28d2d3cc9a0",
+     "type": "function",
+     "repr": "talk"
+    },
+    "0x28d2d3dd220": {
+     "id": "0x28d2d3dd220",
+     "type": "Robot",
+     "repr": "<__main__.Robot object at 0x0000028D2D3DD220>",
+     "fields": {}
+    }
+   },
+   "stdout": "꽥\n"
+  },
+  {
+   "line": 4,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 12,
+     "locals": {
+      "Duck": {
+       "ref": "0x28d2d268ac0"
+      },
+      "Robot": {
+       "ref": "0x28d2d26b560"
+      },
+      "Rock": {
+       "ref": "0x28d2d26ada0"
+      },
+      "talk": {
+       "ref": "0x28d2d3cc9a0"
+      },
+      "x": {
+       "ref": "0x28d2d3dd220"
+      }
+     }
+    },
+    {
+     "fn": "talk",
+     "line": 9,
+     "locals": {
+      "thing": {
+       "ref": "0x28d2d3dd220"
+      }
+     }
+    },
+    {
+     "fn": "speak",
+     "line": 4,
+     "locals": {
+      "self": {
+       "ref": "0x28d2d3dd220"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x28d2d268ac0": {
+     "id": "0x28d2d268ac0",
+     "type": "type",
+     "repr": "Duck"
+    },
+    "0x28d2d26b560": {
+     "id": "0x28d2d26b560",
+     "type": "type",
+     "repr": "Robot"
+    },
+    "0x28d2d26ada0": {
+     "id": "0x28d2d26ada0",
+     "type": "type",
+     "repr": "Rock"
+    },
+    "0x28d2d3cc9a0": {
+     "id": "0x28d2d3cc9a0",
+     "type": "function",
+     "repr": "talk"
+    },
+    "0x28d2d3dd220": {
+     "id": "0x28d2d3dd220",
+     "type": "Robot",
+     "repr": "<__main__.Robot object at 0x0000028D2D3DD220>",
+     "fields": {}
+    }
+   },
+   "stdout": "꽥\n",
+   "retval": "'삐빅'"
+  },
+  {
+   "line": 9,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 12,
+     "locals": {
+      "Duck": {
+       "ref": "0x28d2d268ac0"
+      },
+      "Robot": {
+       "ref": "0x28d2d26b560"
+      },
+      "Rock": {
+       "ref": "0x28d2d26ada0"
+      },
+      "talk": {
+       "ref": "0x28d2d3cc9a0"
+      },
+      "x": {
+       "ref": "0x28d2d3dd220"
+      }
+     }
+    },
+    {
+     "fn": "talk",
+     "line": 9,
+     "locals": {
+      "thing": {
+       "ref": "0x28d2d3dd220"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x28d2d268ac0": {
+     "id": "0x28d2d268ac0",
+     "type": "type",
+     "repr": "Duck"
+    },
+    "0x28d2d26b560": {
+     "id": "0x28d2d26b560",
+     "type": "type",
+     "repr": "Robot"
+    },
+    "0x28d2d26ada0": {
+     "id": "0x28d2d26ada0",
+     "type": "type",
+     "repr": "Rock"
+    },
+    "0x28d2d3cc9a0": {
+     "id": "0x28d2d3cc9a0",
+     "type": "function",
+     "repr": "talk"
+    },
+    "0x28d2d3dd220": {
+     "id": "0x28d2d3dd220",
+     "type": "Robot",
+     "repr": "<__main__.Robot object at 0x0000028D2D3DD220>",
+     "fields": {}
+    }
+   },
+   "stdout": "꽥\n",
+   "retval": "'삐빅'"
+  },
+  {
+   "line": 11,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 11,
+     "locals": {
+      "Duck": {
+       "ref": "0x28d2d268ac0"
+      },
+      "Robot": {
+       "ref": "0x28d2d26b560"
+      },
+      "Rock": {
+       "ref": "0x28d2d26ada0"
+      },
+      "talk": {
+       "ref": "0x28d2d3cc9a0"
+      },
+      "x": {
+       "ref": "0x28d2d3dd220"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x28d2d268ac0": {
+     "id": "0x28d2d268ac0",
+     "type": "type",
+     "repr": "Duck"
+    },
+    "0x28d2d26b560": {
+     "id": "0x28d2d26b560",
+     "type": "type",
+     "repr": "Robot"
+    },
+    "0x28d2d26ada0": {
+     "id": "0x28d2d26ada0",
+     "type": "type",
+     "repr": "Rock"
+    },
+    "0x28d2d3cc9a0": {
+     "id": "0x28d2d3cc9a0",
+     "type": "function",
+     "repr": "talk"
+    },
+    "0x28d2d3dd220": {
+     "id": "0x28d2d3dd220",
+     "type": "Robot",
+     "repr": "<__main__.Robot object at 0x0000028D2D3DD220>",
+     "fields": {}
+    }
+   },
+   "stdout": "꽥\n삐빅\n"
+  },
+  {
+   "line": 13,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 13,
+     "locals": {
+      "Duck": {
+       "ref": "0x28d2d268ac0"
+      },
+      "Robot": {
+       "ref": "0x28d2d26b560"
+      },
+      "Rock": {
+       "ref": "0x28d2d26ada0"
+      },
+      "talk": {
+       "ref": "0x28d2d3cc9a0"
+      },
+      "x": {
+       "ref": "0x28d2d3dd220"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x28d2d268ac0": {
+     "id": "0x28d2d268ac0",
+     "type": "type",
+     "repr": "Duck"
+    },
+    "0x28d2d26b560": {
+     "id": "0x28d2d26b560",
+     "type": "type",
+     "repr": "Robot"
+    },
+    "0x28d2d26ada0": {
+     "id": "0x28d2d26ada0",
+     "type": "type",
+     "repr": "Rock"
+    },
+    "0x28d2d3cc9a0": {
+     "id": "0x28d2d3cc9a0",
+     "type": "function",
+     "repr": "talk"
+    },
+    "0x28d2d3dd220": {
+     "id": "0x28d2d3dd220",
+     "type": "Robot",
+     "repr": "<__main__.Robot object at 0x0000028D2D3DD220>",
+     "fields": {}
+    }
+   },
+   "stdout": "꽥\n삐빅\n",
+   "note": "len 도 다형성 — __len__ 만 있으면 뭐든"
+  },
+  {
+   "line": 14,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 14,
+     "locals": {
+      "Duck": {
+       "ref": "0x28d2d268ac0"
+      },
+      "Robot": {
+       "ref": "0x28d2d26b560"
+      },
+      "Rock": {
+       "ref": "0x28d2d26ada0"
+      },
+      "talk": {
+       "ref": "0x28d2d3cc9a0"
+      },
+      "x": {
+       "ref": "0x28d2d3dd220"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x28d2d268ac0": {
+     "id": "0x28d2d268ac0",
+     "type": "type",
+     "repr": "Duck"
+    },
+    "0x28d2d26b560": {
+     "id": "0x28d2d26b560",
+     "type": "type",
+     "repr": "Robot"
+    },
+    "0x28d2d26ada0": {
+     "id": "0x28d2d26ada0",
+     "type": "type",
+     "repr": "Rock"
+    },
+    "0x28d2d3cc9a0": {
+     "id": "0x28d2d3cc9a0",
+     "type": "function",
+     "repr": "talk"
+    },
+    "0x28d2d3dd220": {
+     "id": "0x28d2d3dd220",
+     "type": "Robot",
+     "repr": "<__main__.Robot object at 0x0000028D2D3DD220>",
+     "fields": {}
+    }
+   },
+   "stdout": "꽥\n삐빅\n3 2\n",
+   "note": "speak 가 없으면 그때 AttributeError"
+  },
+  {
+   "line": 8,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 14,
+     "locals": {
+      "Duck": {
+       "ref": "0x28d2d268ac0"
+      },
+      "Robot": {
+       "ref": "0x28d2d26b560"
+      },
+      "Rock": {
+       "ref": "0x28d2d26ada0"
+      },
+      "talk": {
+       "ref": "0x28d2d3cc9a0"
+      },
+      "x": {
+       "ref": "0x28d2d3dd220"
+      }
+     }
+    },
+    {
+     "fn": "talk",
+     "line": 8,
+     "locals": {
+      "thing": {
+       "ref": "0x28d2d3dd700"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x28d2d268ac0": {
+     "id": "0x28d2d268ac0",
+     "type": "type",
+     "repr": "Duck"
+    },
+    "0x28d2d26b560": {
+     "id": "0x28d2d26b560",
+     "type": "type",
+     "repr": "Robot"
+    },
+    "0x28d2d26ada0": {
+     "id": "0x28d2d26ada0",
+     "type": "type",
+     "repr": "Rock"
+    },
+    "0x28d2d3cc9a0": {
+     "id": "0x28d2d3cc9a0",
+     "type": "function",
+     "repr": "talk"
+    },
+    "0x28d2d3dd220": {
+     "id": "0x28d2d3dd220",
+     "type": "Robot",
+     "repr": "<__main__.Robot object at 0x0000028D2D3DD220>",
+     "fields": {}
+    },
+    "0x28d2d3dd700": {
+     "id": "0x28d2d3dd700",
+     "type": "Rock",
+     "repr": "<__main__.Rock object at 0x0000028D2D3DD700>",
+     "fields": {}
+    }
+   },
+   "stdout": "꽥\n삐빅\n3 2\n"
+  },
+  {
+   "line": 9,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 14,
+     "locals": {
+      "Duck": {
+       "ref": "0x28d2d268ac0"
+      },
+      "Robot": {
+       "ref": "0x28d2d26b560"
+      },
+      "Rock": {
+       "ref": "0x28d2d26ada0"
+      },
+      "talk": {
+       "ref": "0x28d2d3cc9a0"
+      },
+      "x": {
+       "ref": "0x28d2d3dd220"
+      }
+     }
+    },
+    {
+     "fn": "talk",
+     "line": 9,
+     "locals": {
+      "thing": {
+       "ref": "0x28d2d3dd700"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x28d2d268ac0": {
+     "id": "0x28d2d268ac0",
+     "type": "type",
+     "repr": "Duck"
+    },
+    "0x28d2d26b560": {
+     "id": "0x28d2d26b560",
+     "type": "type",
+     "repr": "Robot"
+    },
+    "0x28d2d26ada0": {
+     "id": "0x28d2d26ada0",
+     "type": "type",
+     "repr": "Rock"
+    },
+    "0x28d2d3cc9a0": {
+     "id": "0x28d2d3cc9a0",
+     "type": "function",
+     "repr": "talk"
+    },
+    "0x28d2d3dd220": {
+     "id": "0x28d2d3dd220",
+     "type": "Robot",
+     "repr": "<__main__.Robot object at 0x0000028D2D3DD220>",
+     "fields": {}
+    },
+    "0x28d2d3dd700": {
+     "id": "0x28d2d3dd700",
+     "type": "Rock",
+     "repr": "<__main__.Rock object at 0x0000028D2D3DD700>",
+     "fields": {}
+    }
+   },
+   "stdout": "꽥\n삐빅\n3 2\n",
+   "note": "타입을 검사하지 않는다 — speak 가 있으면 된다 (덕 타이핑)"
+  },
+  {
+   "line": 9,
+   "event": "exception",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 14,
+     "locals": {
+      "Duck": {
+       "ref": "0x28d2d268ac0"
+      },
+      "Robot": {
+       "ref": "0x28d2d26b560"
+      },
+      "Rock": {
+       "ref": "0x28d2d26ada0"
+      },
+      "talk": {
+       "ref": "0x28d2d3cc9a0"
+      },
+      "x": {
+       "ref": "0x28d2d3dd220"
+      }
+     }
+    },
+    {
+     "fn": "talk",
+     "line": 9,
+     "locals": {
+      "thing": {
+       "ref": "0x28d2d3dd700"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x28d2d268ac0": {
+     "id": "0x28d2d268ac0",
+     "type": "type",
+     "repr": "Duck"
+    },
+    "0x28d2d26b560": {
+     "id": "0x28d2d26b560",
+     "type": "type",
+     "repr": "Robot"
+    },
+    "0x28d2d26ada0": {
+     "id": "0x28d2d26ada0",
+     "type": "type",
+     "repr": "Rock"
+    },
+    "0x28d2d3cc9a0": {
+     "id": "0x28d2d3cc9a0",
+     "type": "function",
+     "repr": "talk"
+    },
+    "0x28d2d3dd220": {
+     "id": "0x28d2d3dd220",
+     "type": "Robot",
+     "repr": "<__main__.Robot object at 0x0000028D2D3DD220>",
+     "fields": {}
+    },
+    "0x28d2d3dd700": {
+     "id": "0x28d2d3dd700",
+     "type": "Rock",
+     "repr": "<__main__.Rock object at 0x0000028D2D3DD700>",
+     "fields": {}
+    }
+   },
+   "stdout": "꽥\n삐빅\n3 2\n",
+   "exc": "AttributeError: 'Rock' object has no attribute 'speak'"
+  },
+  {
+   "line": 9,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 14,
+     "locals": {
+      "Duck": {
+       "ref": "0x28d2d268ac0"
+      },
+      "Robot": {
+       "ref": "0x28d2d26b560"
+      },
+      "Rock": {
+       "ref": "0x28d2d26ada0"
+      },
+      "talk": {
+       "ref": "0x28d2d3cc9a0"
+      },
+      "x": {
+       "ref": "0x28d2d3dd220"
+      }
+     }
+    },
+    {
+     "fn": "talk",
+     "line": 9,
+     "locals": {
+      "thing": {
+       "ref": "0x28d2d3dd700"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x28d2d268ac0": {
+     "id": "0x28d2d268ac0",
+     "type": "type",
+     "repr": "Duck"
+    },
+    "0x28d2d26b560": {
+     "id": "0x28d2d26b560",
+     "type": "type",
+     "repr": "Robot"
+    },
+    "0x28d2d26ada0": {
+     "id": "0x28d2d26ada0",
+     "type": "type",
+     "repr": "Rock"
+    },
+    "0x28d2d3cc9a0": {
+     "id": "0x28d2d3cc9a0",
+     "type": "function",
+     "repr": "talk"
+    },
+    "0x28d2d3dd220": {
+     "id": "0x28d2d3dd220",
+     "type": "Robot",
+     "repr": "<__main__.Robot object at 0x0000028D2D3DD220>",
+     "fields": {}
+    },
+    "0x28d2d3dd700": {
+     "id": "0x28d2d3dd700",
+     "type": "Rock",
+     "repr": "<__main__.Rock object at 0x0000028D2D3DD700>",
+     "fields": {}
+    }
+   },
+   "stdout": "꽥\n삐빅\n3 2\n"
+  },
+  {
+   "line": 14,
+   "event": "exception",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 14,
+     "locals": {
+      "Duck": {
+       "ref": "0x28d2d268ac0"
+      },
+      "Robot": {
+       "ref": "0x28d2d26b560"
+      },
+      "Rock": {
+       "ref": "0x28d2d26ada0"
+      },
+      "talk": {
+       "ref": "0x28d2d3cc9a0"
+      },
+      "x": {
+       "ref": "0x28d2d3dd220"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x28d2d268ac0": {
+     "id": "0x28d2d268ac0",
+     "type": "type",
+     "repr": "Duck"
+    },
+    "0x28d2d26b560": {
+     "id": "0x28d2d26b560",
+     "type": "type",
+     "repr": "Robot"
+    },
+    "0x28d2d26ada0": {
+     "id": "0x28d2d26ada0",
+     "type": "type",
+     "repr": "Rock"
+    },
+    "0x28d2d3cc9a0": {
+     "id": "0x28d2d3cc9a0",
+     "type": "function",
+     "repr": "talk"
+    },
+    "0x28d2d3dd220": {
+     "id": "0x28d2d3dd220",
+     "type": "Robot",
+     "repr": "<__main__.Robot object at 0x0000028D2D3DD220>",
+     "fields": {}
+    }
+   },
+   "stdout": "꽥\n삐빅\n3 2\n",
+   "exc": "AttributeError: 'Rock' object has no attribute 'speak'"
+  },
+  {
+   "line": 14,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 14,
+     "locals": {
+      "Duck": {
+       "ref": "0x28d2d268ac0"
+      },
+      "Robot": {
+       "ref": "0x28d2d26b560"
+      },
+      "Rock": {
+       "ref": "0x28d2d26ada0"
+      },
+      "talk": {
+       "ref": "0x28d2d3cc9a0"
+      },
+      "x": {
+       "ref": "0x28d2d3dd220"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x28d2d268ac0": {
+     "id": "0x28d2d268ac0",
+     "type": "type",
+     "repr": "Duck"
+    },
+    "0x28d2d26b560": {
+     "id": "0x28d2d26b560",
+     "type": "type",
+     "repr": "Robot"
+    },
+    "0x28d2d26ada0": {
+     "id": "0x28d2d26ada0",
+     "type": "type",
+     "repr": "Rock"
+    },
+    "0x28d2d3cc9a0": {
+     "id": "0x28d2d3cc9a0",
+     "type": "function",
+     "repr": "talk"
+    },
+    "0x28d2d3dd220": {
+     "id": "0x28d2d3dd220",
+     "type": "Robot",
+     "repr": "<__main__.Robot object at 0x0000028D2D3DD220>",
+     "fields": {}
+    }
+   },
+   "stdout": "꽥\n삐빅\n3 2\n"
+  },
+  {
+   "line": 14,
+   "event": "exception",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 14,
+     "locals": {
+      "Duck": {
+       "ref": "0x28d2d268ac0"
+      },
+      "Robot": {
+       "ref": "0x28d2d26b560"
+      },
+      "Rock": {
+       "ref": "0x28d2d26ada0"
+      },
+      "talk": {
+       "ref": "0x28d2d3cc9a0"
+      },
+      "x": {
+       "ref": "0x28d2d3dd220"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x28d2d268ac0": {
+     "id": "0x28d2d268ac0",
+     "type": "type",
+     "repr": "Duck"
+    },
+    "0x28d2d26b560": {
+     "id": "0x28d2d26b560",
+     "type": "type",
+     "repr": "Robot"
+    },
+    "0x28d2d26ada0": {
+     "id": "0x28d2d26ada0",
+     "type": "type",
+     "repr": "Rock"
+    },
+    "0x28d2d3cc9a0": {
+     "id": "0x28d2d3cc9a0",
+     "type": "function",
+     "repr": "talk"
+    },
+    "0x28d2d3dd220": {
+     "id": "0x28d2d3dd220",
+     "type": "Robot",
+     "repr": "<__main__.Robot object at 0x0000028D2D3DD220>",
+     "fields": {}
+    }
+   },
+   "stdout": "꽥\n삐빅\n3 2\n",
+   "exc": "AttributeError: 'Rock' object has no attribute 'speak'"
+  }
+ ],
+ "v": 1
+}

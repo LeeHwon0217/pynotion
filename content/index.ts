@@ -68,6 +68,17 @@ import { withLesson } from "./part-06/with";
 import { encoding } from "./part-06/encoding";
 import { csvJson } from "./part-06/csv-json";
 import { pathlibLesson } from "./part-06/pathlib";
+import { whyClass } from "./part-07/why-class";
+import { classInit } from "./part-07/class-init";
+import { instanceVsClassAttr } from "./part-07/instance-vs-class-attr";
+import { attributeLookup } from "./part-07/attribute-lookup";
+import { selfLesson } from "./part-07/self";
+import { inheritance } from "./part-07/inheritance";
+import { mroLesson } from "./part-07/mro";
+import { polymorphism } from "./part-07/polymorphism";
+import { encapsulation } from "./part-07/encapsulation";
+import { propertyLesson } from "./part-07/property";
+import { classmethodStaticmethod } from "./part-07/classmethod-staticmethod";
 
 const ALL: Lesson[] = [
   whatIsPython, setup, howCodeRuns, firstProgram, readingErrors,
@@ -77,6 +88,7 @@ const ALL: Lesson[] = [
   callStack, returnLesson, argsLesson, mutableDefault, starArgs, positionalOnly, scopeLesson, globalNonlocal, recursion, lambdaLesson, docstringHints, passBy,
   importLesson, fromAs, mainLesson, packages, stdlib, venvLesson, pipLesson,
   exceptionFlow, tryExcept, elseFinally, exceptionHierarchy, raiseLesson, fileModes, withLesson, encoding, csvJson, pathlibLesson,
+  whyClass, classInit, instanceVsClassAttr, attributeLookup, selfLesson, inheritance, mroLesson, polymorphism, encapsulation, propertyLesson, classmethodStaticmethod,
 ];
 
 const partSlug = (id: number) => PARTS.find((p) => p.id === id)!.slug;

@@ -37,14 +37,14 @@
      "line": 2,
      "locals": {
       "s": {
-       "ref": "0x215f8206100"
+       "ref": "0x2216def61a0"
       }
      }
     }
    ],
    "heap": {
-    "0x215f8206100": {
-     "id": "0x215f8206100",
+    "0x2216def61a0": {
+     "id": "0x2216def61a0",
      "type": "str",
      "repr": "'가나'"
     }
@@ -61,22 +61,22 @@
      "line": 3,
      "locals": {
       "s": {
-       "ref": "0x215f8206100"
+       "ref": "0x2216def61a0"
       },
       "b": {
-       "ref": "0x215f820cf90"
+       "ref": "0x2216defd050"
       }
      }
     }
    ],
    "heap": {
-    "0x215f8206100": {
-     "id": "0x215f8206100",
+    "0x2216def61a0": {
+     "id": "0x2216def61a0",
      "type": "str",
      "repr": "'가나'"
     },
-    "0x215f820cf90": {
-     "id": "0x215f820cf90",
+    "0x2216defd050": {
+     "id": "0x2216defd050",
      "type": "bytes",
      "repr": "b'\\xea\\xb0\\x80\\xeb\\x82\\x98'"
     }
@@ -92,22 +92,22 @@
      "line": 4,
      "locals": {
       "s": {
-       "ref": "0x215f8206100"
+       "ref": "0x2216def61a0"
       },
       "b": {
-       "ref": "0x215f820cf90"
+       "ref": "0x2216defd050"
       }
      }
     }
    ],
    "heap": {
-    "0x215f8206100": {
-     "id": "0x215f8206100",
+    "0x2216def61a0": {
+     "id": "0x2216def61a0",
      "type": "str",
      "repr": "'가나'"
     },
-    "0x215f820cf90": {
-     "id": "0x215f820cf90",
+    "0x2216defd050": {
+     "id": "0x2216defd050",
      "type": "bytes",
      "repr": "b'\\xea\\xb0\\x80\\xeb\\x82\\x98'"
     }
@@ -124,22 +124,22 @@
      "line": 5,
      "locals": {
       "s": {
-       "ref": "0x215f8206100"
+       "ref": "0x2216def61a0"
       },
       "b": {
-       "ref": "0x215f820cf90"
+       "ref": "0x2216defd050"
       }
      }
     }
    ],
    "heap": {
-    "0x215f8206100": {
-     "id": "0x215f8206100",
+    "0x2216def61a0": {
+     "id": "0x2216def61a0",
      "type": "str",
      "repr": "'가나'"
     },
-    "0x215f820cf90": {
-     "id": "0x215f820cf90",
+    "0x2216defd050": {
+     "id": "0x2216defd050",
      "type": "bytes",
      "repr": "b'\\xea\\xb0\\x80\\xeb\\x82\\x98'"
     }
@@ -156,22 +156,22 @@
      "line": 6,
      "locals": {
       "s": {
-       "ref": "0x215f8206100"
+       "ref": "0x2216def61a0"
       },
       "b": {
-       "ref": "0x215f820cf90"
+       "ref": "0x2216defd050"
       }
      }
     }
    ],
    "heap": {
-    "0x215f8206100": {
-     "id": "0x215f8206100",
+    "0x2216def61a0": {
+     "id": "0x2216def61a0",
      "type": "str",
      "repr": "'가나'"
     },
-    "0x215f820cf90": {
-     "id": "0x215f820cf90",
+    "0x2216defd050": {
+     "id": "0x2216defd050",
      "type": "bytes",
      "repr": "b'\\xea\\xb0\\x80\\xeb\\x82\\x98'"
     }
@@ -188,22 +188,22 @@
      "line": 6,
      "locals": {
       "s": {
-       "ref": "0x215f8206100"
+       "ref": "0x2216def61a0"
       },
       "b": {
-       "ref": "0x215f820cf90"
+       "ref": "0x2216defd050"
       }
      }
     }
    ],
    "heap": {
-    "0x215f8206100": {
-     "id": "0x215f8206100",
+    "0x2216def61a0": {
+     "id": "0x2216def61a0",
      "type": "str",
      "repr": "'가나'"
     },
-    "0x215f820cf90": {
-     "id": "0x215f820cf90",
+    "0x2216defd050": {
+     "id": "0x2216defd050",
      "type": "bytes",
      "repr": "b'\\xea\\xb0\\x80\\xeb\\x82\\x98'"
     }
@@ -220,22 +220,22 @@
      "line": 6,
      "locals": {
       "s": {
-       "ref": "0x215f8206100"
+       "ref": "0x2216def61a0"
       },
       "b": {
-       "ref": "0x215f820cf90"
+       "ref": "0x2216defd050"
       }
      }
     }
    ],
    "heap": {
-    "0x215f8206100": {
-     "id": "0x215f8206100",
+    "0x2216def61a0": {
+     "id": "0x2216def61a0",
      "type": "str",
      "repr": "'가나'"
     },
-    "0x215f820cf90": {
-     "id": "0x215f820cf90",
+    "0x2216defd050": {
+     "id": "0x2216defd050",
      "type": "bytes",
      "repr": "b'\\xea\\xb0\\x80\\xeb\\x82\\x98'"
     }
@@ -251,22 +251,22 @@
      "line": 6,
      "locals": {
       "s": {
-       "ref": "0x215f8206100"
+       "ref": "0x2216def61a0"
       },
       "b": {
-       "ref": "0x215f820cf90"
+       "ref": "0x2216defd050"
       }
      }
     }
    ],
    "heap": {
-    "0x215f8206100": {
-     "id": "0x215f8206100",
+    "0x2216def61a0": {
+     "id": "0x2216def61a0",
      "type": "str",
      "repr": "'가나'"
     },
-    "0x215f820cf90": {
-     "id": "0x215f820cf90",
+    "0x2216defd050": {
+     "id": "0x2216defd050",
      "type": "bytes",
      "repr": "b'\\xea\\xb0\\x80\\xeb\\x82\\x98'"
     }

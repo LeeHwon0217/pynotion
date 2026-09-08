@@ -38,14 +38,14 @@
      "line": 2,
      "locals": {
       "a": {
-       "ref": "0x18de75d7690"
+       "ref": "0x22f439f7690"
       }
      }
     }
    ],
    "heap": {
-    "0x18de75d7690": {
-     "id": "0x18de75d7690",
+    "0x22f439f7690": {
+     "id": "0x22f439f7690",
      "type": "float",
      "repr": "0.30000000000000004"
     }
@@ -62,14 +62,14 @@
      "line": 3,
      "locals": {
       "a": {
-       "ref": "0x18de75d7690"
+       "ref": "0x22f439f7690"
       }
      }
     }
    ],
    "heap": {
-    "0x18de75d7690": {
-     "id": "0x18de75d7690",
+    "0x22f439f7690": {
+     "id": "0x22f439f7690",
      "type": "float",
      "repr": "0.30000000000000004"
     }
@@ -86,14 +86,14 @@
      "line": 4,
      "locals": {
       "a": {
-       "ref": "0x18de75d7690"
+       "ref": "0x22f439f7690"
       }
      }
     }
    ],
    "heap": {
-    "0x18de75d7690": {
-     "id": "0x18de75d7690",
+    "0x22f439f7690": {
+     "id": "0x22f439f7690",
      "type": "float",
      "repr": "0.30000000000000004"
     }
@@ -109,22 +109,22 @@
      "line": 5,
      "locals": {
       "a": {
-       "ref": "0x18de75d7690"
+       "ref": "0x22f439f7690"
       },
       "math": {
-       "ref": "0x18de78d6ed0"
+       "ref": "0x22f43cf6f70"
       }
      }
     }
    ],
    "heap": {
-    "0x18de75d7690": {
-     "id": "0x18de75d7690",
+    "0x22f439f7690": {
+     "id": "0x22f439f7690",
      "type": "float",
      "repr": "0.30000000000000004"
     },
-    "0x18de78d6ed0": {
-     "id": "0x18de78d6ed0",
+    "0x22f43cf6f70": {
+     "id": "0x22f43cf6f70",
      "type": "module",
      "repr": "math"
     }
@@ -141,22 +141,22 @@
      "line": 6,
      "locals": {
       "a": {
-       "ref": "0x18de75d7690"
+       "ref": "0x22f439f7690"
       },
       "math": {
-       "ref": "0x18de78d6ed0"
+       "ref": "0x22f43cf6f70"
       }
      }
     }
    ],
    "heap": {
-    "0x18de75d7690": {
-     "id": "0x18de75d7690",
+    "0x22f439f7690": {
+     "id": "0x22f439f7690",
      "type": "float",
      "repr": "0.30000000000000004"
     },
-    "0x18de78d6ed0": {
-     "id": "0x18de78d6ed0",
+    "0x22f43cf6f70": {
+     "id": "0x22f43cf6f70",
      "type": "module",
      "repr": "math"
     }
@@ -173,22 +173,22 @@
      "line": 6,
      "locals": {
       "a": {
-       "ref": "0x18de75d7690"
+       "ref": "0x22f439f7690"
       },
       "math": {
-       "ref": "0x18de78d6ed0"
+       "ref": "0x22f43cf6f70"
       }
      }
     }
    ],
    "heap": {
-    "0x18de75d7690": {
-     "id": "0x18de75d7690",
+    "0x22f439f7690": {
+     "id": "0x22f439f7690",
      "type": "float",
      "repr": "0.30000000000000004"
     },
-    "0x18de78d6ed0": {
-     "id": "0x18de78d6ed0",
+    "0x22f43cf6f70": {
+     "id": "0x22f43cf6f70",
      "type": "module",
      "repr": "math"
     }

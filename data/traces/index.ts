@@ -73,6 +73,23 @@ import t69 from "./p6-propagate.json";
 import t70 from "./p6-raise.json";
 import t71 from "./p6-try-except.json";
 import t72 from "./p6-with.json";
+import t73 from "./p7-abc-slots.json";
+import t74 from "./p7-class-attr-trap.json";
+import t75 from "./p7-class-attr.json";
+import t76 from "./p7-class-init.json";
+import t77 from "./p7-classmethod.json";
+import t78 from "./p7-dataclass.json";
+import t79 from "./p7-encap.json";
+import t80 from "./p7-hash.json";
+import t81 from "./p7-inherit.json";
+import t82 from "./p7-lookup.json";
+import t83 from "./p7-mro.json";
+import t84 from "./p7-operators.json";
+import t85 from "./p7-poly.json";
+import t86 from "./p7-property.json";
+import t87 from "./p7-repr.json";
+import t88 from "./p7-self.json";
+import t89 from "./p7-why-class.json";
 
 export const TRACES: Record<string, Trace> = {
   "p0-indent-error": t0 as unknown as Trace,
@@ -148,4 +165,21 @@ export const TRACES: Record<string, Trace> = {
   "p6-raise": t70 as unknown as Trace,
   "p6-try-except": t71 as unknown as Trace,
   "p6-with": t72 as unknown as Trace,
+  "p7-abc-slots": t73 as unknown as Trace,
+  "p7-class-attr-trap": t74 as unknown as Trace,
+  "p7-class-attr": t75 as unknown as Trace,
+  "p7-class-init": t76 as unknown as Trace,
+  "p7-classmethod": t77 as unknown as Trace,
+  "p7-dataclass": t78 as unknown as Trace,
+  "p7-encap": t79 as unknown as Trace,
+  "p7-hash": t80 as unknown as Trace,
+  "p7-inherit": t81 as unknown as Trace,
+  "p7-lookup": t82 as unknown as Trace,
+  "p7-mro": t83 as unknown as Trace,
+  "p7-operators": t84 as unknown as Trace,
+  "p7-poly": t85 as unknown as Trace,
+  "p7-property": t86 as unknown as Trace,
+  "p7-repr": t87 as unknown as Trace,
+  "p7-self": t88 as unknown as Trace,
+  "p7-why-class": t89 as unknown as Trace,
 };

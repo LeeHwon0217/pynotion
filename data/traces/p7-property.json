@@ -1,0 +1,1856 @@
+{
+ "id": "p7-property",
+ "code": "class Temp:\n    def __init__(self, c):\n        self._c = c\n\n    @property\n    def celsius(self):\n        return self._c\n\n    @celsius.setter\n    def celsius(self, value):\n        if value < -273.15:\n            raise ValueError(\"절대영도 이하\")\n        self._c = value\n\n    @property\n    def fahrenheit(self):\n        return self._c * 9 / 5 + 32\n\nt = Temp(25)\nprint(t.celsius, t.fahrenheit)\nt.celsius = 30\nprint(t.fahrenheit)\nt.celsius = -300",
+ "steps": [
+  {
+   "line": 0,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 0,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Temp",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Temp",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Temp",
+     "line": 2,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Temp",
+     "line": 5,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": "",
+   "note": "메서드를 '속성처럼' 읽게 만든다 — 괄호 없이"
+  },
+  {
+   "line": 6,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Temp",
+     "line": 6,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Temp",
+     "line": 5,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": "",
+   "note": "메서드를 '속성처럼' 읽게 만든다 — 괄호 없이"
+  },
+  {
+   "line": 6,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Temp",
+     "line": 6,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 9,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Temp",
+     "line": 9,
+     "locals": {
+      "celsius": {
+       "ref": "0x281688e66b0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x281688e66b0": {
+     "id": "0x281688e66b0",
+     "type": "property",
+     "repr": "<property object at 0x00000281688E66B0>"
+    }
+   },
+   "stdout": "",
+   "note": "대입할 때 호출되는 쪽 — 검증을 넣을 수 있다"
+  },
+  {
+   "line": 10,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Temp",
+     "line": 10,
+     "locals": {
+      "celsius": {
+       "ref": "0x281688e66b0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x281688e66b0": {
+     "id": "0x281688e66b0",
+     "type": "property",
+     "repr": "<property object at 0x00000281688E66B0>"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 9,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Temp",
+     "line": 9,
+     "locals": {
+      "celsius": {
+       "ref": "0x281688e66b0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x281688e66b0": {
+     "id": "0x281688e66b0",
+     "type": "property",
+     "repr": "<property object at 0x00000281688E66B0>"
+    }
+   },
+   "stdout": "",
+   "note": "대입할 때 호출되는 쪽 — 검증을 넣을 수 있다"
+  },
+  {
+   "line": 10,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Temp",
+     "line": 10,
+     "locals": {
+      "celsius": {
+       "ref": "0x281688e66b0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x281688e66b0": {
+     "id": "0x281688e66b0",
+     "type": "property",
+     "repr": "<property object at 0x00000281688E66B0>"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 15,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Temp",
+     "line": 15,
+     "locals": {
+      "celsius": {
+       "ref": "0x281688e6840"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x281688e6840": {
+     "id": "0x281688e6840",
+     "type": "property",
+     "repr": "<property object at 0x00000281688E6840>"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 16,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Temp",
+     "line": 16,
+     "locals": {
+      "celsius": {
+       "ref": "0x281688e6840"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x281688e6840": {
+     "id": "0x281688e6840",
+     "type": "property",
+     "repr": "<property object at 0x00000281688E6840>"
+    }
+   },
+   "stdout": "",
+   "note": "저장하지 않고 계산해서 돌려주는 속성"
+  },
+  {
+   "line": 15,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Temp",
+     "line": 15,
+     "locals": {
+      "celsius": {
+       "ref": "0x281688e6840"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x281688e6840": {
+     "id": "0x281688e6840",
+     "type": "property",
+     "repr": "<property object at 0x00000281688E6840>"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 16,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Temp",
+     "line": 16,
+     "locals": {
+      "celsius": {
+       "ref": "0x281688e6840"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x281688e6840": {
+     "id": "0x281688e6840",
+     "type": "property",
+     "repr": "<property object at 0x00000281688E6840>"
+    }
+   },
+   "stdout": "",
+   "note": "저장하지 않고 계산해서 돌려주는 속성"
+  },
+  {
+   "line": 16,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Temp",
+     "line": 16,
+     "locals": {
+      "celsius": {
+       "ref": "0x281688e6840"
+      },
+      "fahrenheit": {
+       "ref": "0x281688e66b0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x281688e6840": {
+     "id": "0x281688e6840",
+     "type": "property",
+     "repr": "<property object at 0x00000281688E6840>"
+    },
+    "0x281688e66b0": {
+     "id": "0x281688e66b0",
+     "type": "property",
+     "repr": "<property object at 0x00000281688E66B0>"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 19,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 19,
+     "locals": {
+      "Temp": {
+       "ref": "0x281687872f0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x281687872f0": {
+     "id": "0x281687872f0",
+     "type": "type",
+     "repr": "Temp"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 2,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 19,
+     "locals": {
+      "Temp": {
+       "ref": "0x281687872f0"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 2,
+     "locals": {
+      "self": {
+       "ref": "0x281688ed040"
+      },
+      "c": {
+       "ref": "0x7ffd7f2b4cb8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x281687872f0": {
+     "id": "0x281687872f0",
+     "type": "type",
+     "repr": "Temp"
+    },
+    "0x281688ed040": {
+     "id": "0x281688ed040",
+     "type": "Temp",
+     "repr": "<__main__.Temp object at 0x00000281688ED040>",
+     "fields": {}
+    },
+    "0x7ffd7f2b4cb8": {
+     "id": "0x7ffd7f2b4cb8",
+     "type": "int",
+     "repr": "25"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 3,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 19,
+     "locals": {
+      "Temp": {
+       "ref": "0x281687872f0"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 3,
+     "locals": {
+      "self": {
+       "ref": "0x281688ed040"
+      },
+      "c": {
+       "ref": "0x7ffd7f2b4cb8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x281687872f0": {
+     "id": "0x281687872f0",
+     "type": "type",
+     "repr": "Temp"
+    },
+    "0x281688ed040": {
+     "id": "0x281688ed040",
+     "type": "Temp",
+     "repr": "<__main__.Temp object at 0x00000281688ED040>",
+     "fields": {}
+    },
+    "0x7ffd7f2b4cb8": {
+     "id": "0x7ffd7f2b4cb8",
+     "type": "int",
+     "repr": "25"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 3,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 19,
+     "locals": {
+      "Temp": {
+       "ref": "0x281687872f0"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 3,
+     "locals": {
+      "self": {
+       "ref": "0x281688ed040"
+      },
+      "c": {
+       "ref": "0x7ffd7f2b4cb8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x281687872f0": {
+     "id": "0x281687872f0",
+     "type": "type",
+     "repr": "Temp"
+    },
+    "0x281688ed040": {
+     "id": "0x281688ed040",
+     "type": "Temp",
+     "repr": "<__main__.Temp object at 0x00000281688ED040>",
+     "fields": {
+      "_c": {
+       "ref": "0x7ffd7f2b4cb8"
+      }
+     }
+    },
+    "0x7ffd7f2b4cb8": {
+     "id": "0x7ffd7f2b4cb8",
+     "type": "int",
+     "repr": "25"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 20,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 20,
+     "locals": {
+      "Temp": {
+       "ref": "0x281687872f0"
+      },
+      "t": {
+       "ref": "0x281688ed040"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x281687872f0": {
+     "id": "0x281687872f0",
+     "type": "type",
+     "repr": "Temp"
+    },
+    "0x281688ed040": {
+     "id": "0x281688ed040",
+     "type": "Temp",
+     "repr": "<__main__.Temp object at 0x00000281688ED040>",
+     "fields": {
+      "_c": {
+       "ref": "0x7ffd7f2b4cb8"
+      }
+     }
+    },
+    "0x7ffd7f2b4cb8": {
+     "id": "0x7ffd7f2b4cb8",
+     "type": "int",
+     "repr": "25"
+    }
+   },
+   "stdout": "",
+   "note": "괄호 없이 — 호출자는 메서드인지 모른다"
+  },
+  {
+   "line": 5,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 20,
+     "locals": {
+      "Temp": {
+       "ref": "0x281687872f0"
+      },
+      "t": {
+       "ref": "0x281688ed040"
+      }
+     }
+    },
+    {
+     "fn": "celsius",
+     "line": 5,
+     "locals": {
+      "self": {
+       "ref": "0x281688ed040"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x281687872f0": {
+     "id": "0x281687872f0",
+     "type": "type",
+     "repr": "Temp"
+    },
+    "0x281688ed040": {
+     "id": "0x281688ed040",
+     "type": "Temp",
+     "repr": "<__main__.Temp object at 0x00000281688ED040>",
+     "fields": {
+      "_c": {
+       "ref": "0x7ffd7f2b4cb8"
+      }
+     }
+    },
+    "0x7ffd7f2b4cb8": {
+     "id": "0x7ffd7f2b4cb8",
+     "type": "int",
+     "repr": "25"
+    }
+   },
+   "stdout": "",
+   "note": "메서드를 '속성처럼' 읽게 만든다 — 괄호 없이"
+  },
+  {
+   "line": 7,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 20,
+     "locals": {
+      "Temp": {
+       "ref": "0x281687872f0"
+      },
+      "t": {
+       "ref": "0x281688ed040"
+      }
+     }
+    },
+    {
+     "fn": "celsius",
+     "line": 7,
+     "locals": {
+      "self": {
+       "ref": "0x281688ed040"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x281687872f0": {
+     "id": "0x281687872f0",
+     "type": "type",
+     "repr": "Temp"
+    },
+    "0x281688ed040": {
+     "id": "0x281688ed040",
+     "type": "Temp",
+     "repr": "<__main__.Temp object at 0x00000281688ED040>",
+     "fields": {
+      "_c": {
+       "ref": "0x7ffd7f2b4cb8"
+      }
+     }
+    },
+    "0x7ffd7f2b4cb8": {
+     "id": "0x7ffd7f2b4cb8",
+     "type": "int",
+     "repr": "25"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 7,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 20,
+     "locals": {
+      "Temp": {
+       "ref": "0x281687872f0"
+      },
+      "t": {
+       "ref": "0x281688ed040"
+      }
+     }
+    },
+    {
+     "fn": "celsius",
+     "line": 7,
+     "locals": {
+      "self": {
+       "ref": "0x281688ed040"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x281687872f0": {
+     "id": "0x281687872f0",
+     "type": "type",
+     "repr": "Temp"
+    },
+    "0x281688ed040": {
+     "id": "0x281688ed040",
+     "type": "Temp",
+     "repr": "<__main__.Temp object at 0x00000281688ED040>",
+     "fields": {
+      "_c": {
+       "ref": "0x7ffd7f2b4cb8"
+      }
+     }
+    },
+    "0x7ffd7f2b4cb8": {
+     "id": "0x7ffd7f2b4cb8",
+     "type": "int",
+     "repr": "25"
+    }
+   },
+   "stdout": "",
+   "retval": "25"
+  },
+  {
+   "line": 15,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 20,
+     "locals": {
+      "Temp": {
+       "ref": "0x281687872f0"
+      },
+      "t": {
+       "ref": "0x281688ed040"
+      }
+     }
+    },
+    {
+     "fn": "fahrenheit",
+     "line": 15,
+     "locals": {
+      "self": {
+       "ref": "0x281688ed040"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x281687872f0": {
+     "id": "0x281687872f0",
+     "type": "type",
+     "repr": "Temp"
+    },
+    "0x281688ed040": {
+     "id": "0x281688ed040",
+     "type": "Temp",
+     "repr": "<__main__.Temp object at 0x00000281688ED040>",
+     "fields": {
+      "_c": {
+       "ref": "0x7ffd7f2b4cb8"
+      }
+     }
+    },
+    "0x7ffd7f2b4cb8": {
+     "id": "0x7ffd7f2b4cb8",
+     "type": "int",
+     "repr": "25"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 17,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 20,
+     "locals": {
+      "Temp": {
+       "ref": "0x281687872f0"
+      },
+      "t": {
+       "ref": "0x281688ed040"
+      }
+     }
+    },
+    {
+     "fn": "fahrenheit",
+     "line": 17,
+     "locals": {
+      "self": {
+       "ref": "0x281688ed040"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x281687872f0": {
+     "id": "0x281687872f0",
+     "type": "type",
+     "repr": "Temp"
+    },
+    "0x281688ed040": {
+     "id": "0x281688ed040",
+     "type": "Temp",
+     "repr": "<__main__.Temp object at 0x00000281688ED040>",
+     "fields": {
+      "_c": {
+       "ref": "0x7ffd7f2b4cb8"
+      }
+     }
+    },
+    "0x7ffd7f2b4cb8": {
+     "id": "0x7ffd7f2b4cb8",
+     "type": "int",
+     "repr": "25"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 17,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 20,
+     "locals": {
+      "Temp": {
+       "ref": "0x281687872f0"
+      },
+      "t": {
+       "ref": "0x281688ed040"
+      }
+     }
+    },
+    {
+     "fn": "fahrenheit",
+     "line": 17,
+     "locals": {
+      "self": {
+       "ref": "0x281688ed040"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x281687872f0": {
+     "id": "0x281687872f0",
+     "type": "type",
+     "repr": "Temp"
+    },
+    "0x281688ed040": {
+     "id": "0x281688ed040",
+     "type": "Temp",
+     "repr": "<__main__.Temp object at 0x00000281688ED040>",
+     "fields": {
+      "_c": {
+       "ref": "0x7ffd7f2b4cb8"
+      }
+     }
+    },
+    "0x7ffd7f2b4cb8": {
+     "id": "0x7ffd7f2b4cb8",
+     "type": "int",
+     "repr": "25"
+    }
+   },
+   "stdout": "",
+   "retval": "77.0"
+  },
+  {
+   "line": 21,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 21,
+     "locals": {
+      "Temp": {
+       "ref": "0x281687872f0"
+      },
+      "t": {
+       "ref": "0x281688ed040"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x281687872f0": {
+     "id": "0x281687872f0",
+     "type": "type",
+     "repr": "Temp"
+    },
+    "0x281688ed040": {
+     "id": "0x281688ed040",
+     "type": "Temp",
+     "repr": "<__main__.Temp object at 0x00000281688ED040>",
+     "fields": {
+      "_c": {
+       "ref": "0x7ffd7f2b4cb8"
+      }
+     }
+    },
+    "0x7ffd7f2b4cb8": {
+     "id": "0x7ffd7f2b4cb8",
+     "type": "int",
+     "repr": "25"
+    }
+   },
+   "stdout": "25 77.0\n",
+   "note": "setter 가 호출된다"
+  },
+  {
+   "line": 9,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 21,
+     "locals": {
+      "Temp": {
+       "ref": "0x281687872f0"
+      },
+      "t": {
+       "ref": "0x281688ed040"
+      }
+     }
+    },
+    {
+     "fn": "celsius",
+     "line": 9,
+     "locals": {
+      "self": {
+       "ref": "0x281688ed040"
+      },
+      "value": {
+       "ref": "0x7ffd7f2b4d58"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x281687872f0": {
+     "id": "0x281687872f0",
+     "type": "type",
+     "repr": "Temp"
+    },
+    "0x281688ed040": {
+     "id": "0x281688ed040",
+     "type": "Temp",
+     "repr": "<__main__.Temp object at 0x00000281688ED040>",
+     "fields": {
+      "_c": {
+       "ref": "0x7ffd7f2b4cb8"
+      }
+     }
+    },
+    "0x7ffd7f2b4cb8": {
+     "id": "0x7ffd7f2b4cb8",
+     "type": "int",
+     "repr": "25"
+    },
+    "0x7ffd7f2b4d58": {
+     "id": "0x7ffd7f2b4d58",
+     "type": "int",
+     "repr": "30"
+    }
+   },
+   "stdout": "25 77.0\n",
+   "note": "대입할 때 호출되는 쪽 — 검증을 넣을 수 있다"
+  },
+  {
+   "line": 11,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 21,
+     "locals": {
+      "Temp": {
+       "ref": "0x281687872f0"
+      },
+      "t": {
+       "ref": "0x281688ed040"
+      }
+     }
+    },
+    {
+     "fn": "celsius",
+     "line": 11,
+     "locals": {
+      "self": {
+       "ref": "0x281688ed040"
+      },
+      "value": {
+       "ref": "0x7ffd7f2b4d58"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x281687872f0": {
+     "id": "0x281687872f0",
+     "type": "type",
+     "repr": "Temp"
+    },
+    "0x281688ed040": {
+     "id": "0x281688ed040",
+     "type": "Temp",
+     "repr": "<__main__.Temp object at 0x00000281688ED040>",
+     "fields": {
+      "_c": {
+       "ref": "0x7ffd7f2b4cb8"
+      }
+     }
+    },
+    "0x7ffd7f2b4cb8": {
+     "id": "0x7ffd7f2b4cb8",
+     "type": "int",
+     "repr": "25"
+    },
+    "0x7ffd7f2b4d58": {
+     "id": "0x7ffd7f2b4d58",
+     "type": "int",
+     "repr": "30"
+    }
+   },
+   "stdout": "25 77.0\n"
+  },
+  {
+   "line": 13,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 21,
+     "locals": {
+      "Temp": {
+       "ref": "0x281687872f0"
+      },
+      "t": {
+       "ref": "0x281688ed040"
+      }
+     }
+    },
+    {
+     "fn": "celsius",
+     "line": 13,
+     "locals": {
+      "self": {
+       "ref": "0x281688ed040"
+      },
+      "value": {
+       "ref": "0x7ffd7f2b4d58"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x281687872f0": {
+     "id": "0x281687872f0",
+     "type": "type",
+     "repr": "Temp"
+    },
+    "0x281688ed040": {
+     "id": "0x281688ed040",
+     "type": "Temp",
+     "repr": "<__main__.Temp object at 0x00000281688ED040>",
+     "fields": {
+      "_c": {
+       "ref": "0x7ffd7f2b4cb8"
+      }
+     }
+    },
+    "0x7ffd7f2b4cb8": {
+     "id": "0x7ffd7f2b4cb8",
+     "type": "int",
+     "repr": "25"
+    },
+    "0x7ffd7f2b4d58": {
+     "id": "0x7ffd7f2b4d58",
+     "type": "int",
+     "repr": "30"
+    }
+   },
+   "stdout": "25 77.0\n"
+  },
+  {
+   "line": 13,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 21,
+     "locals": {
+      "Temp": {
+       "ref": "0x281687872f0"
+      },
+      "t": {
+       "ref": "0x281688ed040"
+      }
+     }
+    },
+    {
+     "fn": "celsius",
+     "line": 13,
+     "locals": {
+      "self": {
+       "ref": "0x281688ed040"
+      },
+      "value": {
+       "ref": "0x7ffd7f2b4d58"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x281687872f0": {
+     "id": "0x281687872f0",
+     "type": "type",
+     "repr": "Temp"
+    },
+    "0x281688ed040": {
+     "id": "0x281688ed040",
+     "type": "Temp",
+     "repr": "<__main__.Temp object at 0x00000281688ED040>",
+     "fields": {
+      "_c": {
+       "ref": "0x7ffd7f2b4d58"
+      }
+     }
+    },
+    "0x7ffd7f2b4d58": {
+     "id": "0x7ffd7f2b4d58",
+     "type": "int",
+     "repr": "30"
+    }
+   },
+   "stdout": "25 77.0\n"
+  },
+  {
+   "line": 22,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 22,
+     "locals": {
+      "Temp": {
+       "ref": "0x281687872f0"
+      },
+      "t": {
+       "ref": "0x281688ed040"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x281687872f0": {
+     "id": "0x281687872f0",
+     "type": "type",
+     "repr": "Temp"
+    },
+    "0x281688ed040": {
+     "id": "0x281688ed040",
+     "type": "Temp",
+     "repr": "<__main__.Temp object at 0x00000281688ED040>",
+     "fields": {
+      "_c": {
+       "ref": "0x7ffd7f2b4d58"
+      }
+     }
+    },
+    "0x7ffd7f2b4d58": {
+     "id": "0x7ffd7f2b4d58",
+     "type": "int",
+     "repr": "30"
+    }
+   },
+   "stdout": "25 77.0\n"
+  },
+  {
+   "line": 15,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 22,
+     "locals": {
+      "Temp": {
+       "ref": "0x281687872f0"
+      },
+      "t": {
+       "ref": "0x281688ed040"
+      }
+     }
+    },
+    {
+     "fn": "fahrenheit",
+     "line": 15,
+     "locals": {
+      "self": {
+       "ref": "0x281688ed040"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x281687872f0": {
+     "id": "0x281687872f0",
+     "type": "type",
+     "repr": "Temp"
+    },
+    "0x281688ed040": {
+     "id": "0x281688ed040",
+     "type": "Temp",
+     "repr": "<__main__.Temp object at 0x00000281688ED040>",
+     "fields": {
+      "_c": {
+       "ref": "0x7ffd7f2b4d58"
+      }
+     }
+    },
+    "0x7ffd7f2b4d58": {
+     "id": "0x7ffd7f2b4d58",
+     "type": "int",
+     "repr": "30"
+    }
+   },
+   "stdout": "25 77.0\n"
+  },
+  {
+   "line": 17,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 22,
+     "locals": {
+      "Temp": {
+       "ref": "0x281687872f0"
+      },
+      "t": {
+       "ref": "0x281688ed040"
+      }
+     }
+    },
+    {
+     "fn": "fahrenheit",
+     "line": 17,
+     "locals": {
+      "self": {
+       "ref": "0x281688ed040"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x281687872f0": {
+     "id": "0x281687872f0",
+     "type": "type",
+     "repr": "Temp"
+    },
+    "0x281688ed040": {
+     "id": "0x281688ed040",
+     "type": "Temp",
+     "repr": "<__main__.Temp object at 0x00000281688ED040>",
+     "fields": {
+      "_c": {
+       "ref": "0x7ffd7f2b4d58"
+      }
+     }
+    },
+    "0x7ffd7f2b4d58": {
+     "id": "0x7ffd7f2b4d58",
+     "type": "int",
+     "repr": "30"
+    }
+   },
+   "stdout": "25 77.0\n"
+  },
+  {
+   "line": 17,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 22,
+     "locals": {
+      "Temp": {
+       "ref": "0x281687872f0"
+      },
+      "t": {
+       "ref": "0x281688ed040"
+      }
+     }
+    },
+    {
+     "fn": "fahrenheit",
+     "line": 17,
+     "locals": {
+      "self": {
+       "ref": "0x281688ed040"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x281687872f0": {
+     "id": "0x281687872f0",
+     "type": "type",
+     "repr": "Temp"
+    },
+    "0x281688ed040": {
+     "id": "0x281688ed040",
+     "type": "Temp",
+     "repr": "<__main__.Temp object at 0x00000281688ED040>",
+     "fields": {
+      "_c": {
+       "ref": "0x7ffd7f2b4d58"
+      }
+     }
+    },
+    "0x7ffd7f2b4d58": {
+     "id": "0x7ffd7f2b4d58",
+     "type": "int",
+     "repr": "30"
+    }
+   },
+   "stdout": "25 77.0\n",
+   "retval": "86.0"
+  },
+  {
+   "line": 23,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 23,
+     "locals": {
+      "Temp": {
+       "ref": "0x281687872f0"
+      },
+      "t": {
+       "ref": "0x281688ed040"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x281687872f0": {
+     "id": "0x281687872f0",
+     "type": "type",
+     "repr": "Temp"
+    },
+    "0x281688ed040": {
+     "id": "0x281688ed040",
+     "type": "Temp",
+     "repr": "<__main__.Temp object at 0x00000281688ED040>",
+     "fields": {
+      "_c": {
+       "ref": "0x7ffd7f2b4d58"
+      }
+     }
+    },
+    "0x7ffd7f2b4d58": {
+     "id": "0x7ffd7f2b4d58",
+     "type": "int",
+     "repr": "30"
+    }
+   },
+   "stdout": "25 77.0\n86.0\n",
+   "note": "검증 실패 → ValueError"
+  },
+  {
+   "line": 9,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 23,
+     "locals": {
+      "Temp": {
+       "ref": "0x281687872f0"
+      },
+      "t": {
+       "ref": "0x281688ed040"
+      }
+     }
+    },
+    {
+     "fn": "celsius",
+     "line": 9,
+     "locals": {
+      "self": {
+       "ref": "0x281688ed040"
+      },
+      "value": {
+       "ref": "0x281685e7690"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x281687872f0": {
+     "id": "0x281687872f0",
+     "type": "type",
+     "repr": "Temp"
+    },
+    "0x281688ed040": {
+     "id": "0x281688ed040",
+     "type": "Temp",
+     "repr": "<__main__.Temp object at 0x00000281688ED040>",
+     "fields": {
+      "_c": {
+       "ref": "0x7ffd7f2b4d58"
+      }
+     }
+    },
+    "0x7ffd7f2b4d58": {
+     "id": "0x7ffd7f2b4d58",
+     "type": "int",
+     "repr": "30"
+    },
+    "0x281685e7690": {
+     "id": "0x281685e7690",
+     "type": "int",
+     "repr": "-300"
+    }
+   },
+   "stdout": "25 77.0\n86.0\n",
+   "note": "대입할 때 호출되는 쪽 — 검증을 넣을 수 있다"
+  },
+  {
+   "line": 11,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 23,
+     "locals": {
+      "Temp": {
+       "ref": "0x281687872f0"
+      },
+      "t": {
+       "ref": "0x281688ed040"
+      }
+     }
+    },
+    {
+     "fn": "celsius",
+     "line": 11,
+     "locals": {
+      "self": {
+       "ref": "0x281688ed040"
+      },
+      "value": {
+       "ref": "0x281685e7690"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x281687872f0": {
+     "id": "0x281687872f0",
+     "type": "type",
+     "repr": "Temp"
+    },
+    "0x281688ed040": {
+     "id": "0x281688ed040",
+     "type": "Temp",
+     "repr": "<__main__.Temp object at 0x00000281688ED040>",
+     "fields": {
+      "_c": {
+       "ref": "0x7ffd7f2b4d58"
+      }
+     }
+    },
+    "0x7ffd7f2b4d58": {
+     "id": "0x7ffd7f2b4d58",
+     "type": "int",
+     "repr": "30"
+    },
+    "0x281685e7690": {
+     "id": "0x281685e7690",
+     "type": "int",
+     "repr": "-300"
+    }
+   },
+   "stdout": "25 77.0\n86.0\n"
+  },
+  {
+   "line": 12,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 23,
+     "locals": {
+      "Temp": {
+       "ref": "0x281687872f0"
+      },
+      "t": {
+       "ref": "0x281688ed040"
+      }
+     }
+    },
+    {
+     "fn": "celsius",
+     "line": 12,
+     "locals": {
+      "self": {
+       "ref": "0x281688ed040"
+      },
+      "value": {
+       "ref": "0x281685e7690"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x281687872f0": {
+     "id": "0x281687872f0",
+     "type": "type",
+     "repr": "Temp"
+    },
+    "0x281688ed040": {
+     "id": "0x281688ed040",
+     "type": "Temp",
+     "repr": "<__main__.Temp object at 0x00000281688ED040>",
+     "fields": {
+      "_c": {
+       "ref": "0x7ffd7f2b4d58"
+      }
+     }
+    },
+    "0x7ffd7f2b4d58": {
+     "id": "0x7ffd7f2b4d58",
+     "type": "int",
+     "repr": "30"
+    },
+    "0x281685e7690": {
+     "id": "0x281685e7690",
+     "type": "int",
+     "repr": "-300"
+    }
+   },
+   "stdout": "25 77.0\n86.0\n"
+  },
+  {
+   "line": 12,
+   "event": "exception",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 23,
+     "locals": {
+      "Temp": {
+       "ref": "0x281687872f0"
+      },
+      "t": {
+       "ref": "0x281688ed040"
+      }
+     }
+    },
+    {
+     "fn": "celsius",
+     "line": 12,
+     "locals": {
+      "self": {
+       "ref": "0x281688ed040"
+      },
+      "value": {
+       "ref": "0x281685e7690"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x281687872f0": {
+     "id": "0x281687872f0",
+     "type": "type",
+     "repr": "Temp"
+    },
+    "0x281688ed040": {
+     "id": "0x281688ed040",
+     "type": "Temp",
+     "repr": "<__main__.Temp object at 0x00000281688ED040>",
+     "fields": {
+      "_c": {
+       "ref": "0x7ffd7f2b4d58"
+      }
+     }
+    },
+    "0x7ffd7f2b4d58": {
+     "id": "0x7ffd7f2b4d58",
+     "type": "int",
+     "repr": "30"
+    },
+    "0x281685e7690": {
+     "id": "0x281685e7690",
+     "type": "int",
+     "repr": "-300"
+    }
+   },
+   "stdout": "25 77.0\n86.0\n",
+   "exc": "ValueError: 절대영도 이하"
+  },
+  {
+   "line": 12,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 23,
+     "locals": {
+      "Temp": {
+       "ref": "0x281687872f0"
+      },
+      "t": {
+       "ref": "0x281688ed040"
+      }
+     }
+    },
+    {
+     "fn": "celsius",
+     "line": 12,
+     "locals": {
+      "self": {
+       "ref": "0x281688ed040"
+      },
+      "value": {
+       "ref": "0x281685e7690"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x281687872f0": {
+     "id": "0x281687872f0",
+     "type": "type",
+     "repr": "Temp"
+    },
+    "0x281688ed040": {
+     "id": "0x281688ed040",
+     "type": "Temp",
+     "repr": "<__main__.Temp object at 0x00000281688ED040>",
+     "fields": {
+      "_c": {
+       "ref": "0x7ffd7f2b4d58"
+      }
+     }
+    },
+    "0x7ffd7f2b4d58": {
+     "id": "0x7ffd7f2b4d58",
+     "type": "int",
+     "repr": "30"
+    },
+    "0x281685e7690": {
+     "id": "0x281685e7690",
+     "type": "int",
+     "repr": "-300"
+    }
+   },
+   "stdout": "25 77.0\n86.0\n"
+  },
+  {
+   "line": 23,
+   "event": "exception",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 23,
+     "locals": {
+      "Temp": {
+       "ref": "0x281687872f0"
+      },
+      "t": {
+       "ref": "0x281688ed040"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x281687872f0": {
+     "id": "0x281687872f0",
+     "type": "type",
+     "repr": "Temp"
+    },
+    "0x281688ed040": {
+     "id": "0x281688ed040",
+     "type": "Temp",
+     "repr": "<__main__.Temp object at 0x00000281688ED040>",
+     "fields": {
+      "_c": {
+       "ref": "0x7ffd7f2b4d58"
+      }
+     }
+    },
+    "0x7ffd7f2b4d58": {
+     "id": "0x7ffd7f2b4d58",
+     "type": "int",
+     "repr": "30"
+    }
+   },
+   "stdout": "25 77.0\n86.0\n",
+   "exc": "ValueError: 절대영도 이하"
+  },
+  {
+   "line": 23,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 23,
+     "locals": {
+      "Temp": {
+       "ref": "0x281687872f0"
+      },
+      "t": {
+       "ref": "0x281688ed040"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x281687872f0": {
+     "id": "0x281687872f0",
+     "type": "type",
+     "repr": "Temp"
+    },
+    "0x281688ed040": {
+     "id": "0x281688ed040",
+     "type": "Temp",
+     "repr": "<__main__.Temp object at 0x00000281688ED040>",
+     "fields": {
+      "_c": {
+       "ref": "0x7ffd7f2b4d58"
+      }
+     }
+    },
+    "0x7ffd7f2b4d58": {
+     "id": "0x7ffd7f2b4d58",
+     "type": "int",
+     "repr": "30"
+    }
+   },
+   "stdout": "25 77.0\n86.0\n"
+  },
+  {
+   "line": 23,
+   "event": "exception",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 23,
+     "locals": {
+      "Temp": {
+       "ref": "0x281687872f0"
+      },
+      "t": {
+       "ref": "0x281688ed040"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x281687872f0": {
+     "id": "0x281687872f0",
+     "type": "type",
+     "repr": "Temp"
+    },
+    "0x281688ed040": {
+     "id": "0x281688ed040",
+     "type": "Temp",
+     "repr": "<__main__.Temp object at 0x00000281688ED040>",
+     "fields": {
+      "_c": {
+       "ref": "0x7ffd7f2b4d58"
+      }
+     }
+    },
+    "0x7ffd7f2b4d58": {
+     "id": "0x7ffd7f2b4d58",
+     "type": "int",
+     "repr": "30"
+    }
+   },
+   "stdout": "25 77.0\n86.0\n",
+   "exc": "ValueError: 절대영도 이하"
+  }
+ ],
+ "v": 1
+}

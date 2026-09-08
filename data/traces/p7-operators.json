@@ -1,0 +1,4776 @@
+{
+ "id": "p7-operators",
+ "code": "class Vec:\n    def __init__(self, x, y):\n        self.x, self.y = x, y\n    def __repr__(self):\n        return f\"Vec({self.x}, {self.y})\"\n    def __add__(self, other):\n        return Vec(self.x + other.x, self.y + other.y)\n    def __mul__(self, k):\n        return Vec(self.x * k, self.y * k)\n    def __rmul__(self, k):\n        return self * k\n    def __eq__(self, other):\n        return (self.x, self.y) == (other.x, other.y)\n\na, b = Vec(1, 2), Vec(3, 4)\nprint(a + b)\nprint(a * 2, 2 * a)\nprint(a == Vec(1, 2), a is Vec(1, 2))",
+ "steps": [
+  {
+   "line": 0,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 0,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Vec",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Vec",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Vec",
+     "line": 2,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Vec",
+     "line": 4,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 6,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Vec",
+     "line": 6,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": "",
+   "note": "a + b → a.__add__(b)"
+  },
+  {
+   "line": 8,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Vec",
+     "line": 8,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": "",
+   "note": "a * 3 → a.__mul__(3)"
+  },
+  {
+   "line": 10,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Vec",
+     "line": 10,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": "",
+   "note": "3 * a → int 가 못 하면 a.__rmul__(3)"
+  },
+  {
+   "line": 12,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Vec",
+     "line": 12,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": "",
+   "note": "a == b → a.__eq__(b). 없으면 is 비교가 된다"
+  },
+  {
+   "line": 12,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Vec",
+     "line": 12,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 15,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 15,
+     "locals": {
+      "Vec": {
+       "ref": "0x1ec91c062e0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ec91c062e0": {
+     "id": "0x1ec91c062e0",
+     "type": "type",
+     "repr": "Vec"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 2,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 15,
+     "locals": {
+      "Vec": {
+       "ref": "0x1ec91c062e0"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 2,
+     "locals": {
+      "self": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ec91c062e0": {
+     "id": "0x1ec91c062e0",
+     "type": "type",
+     "repr": "Vec"
+    },
+    "0x1ec91d6d0a0": {
+     "id": "0x1ec91d6d0a0",
+     "type": "Vec",
+     "repr": "<Vec>",
+     "fields": {}
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 3,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 15,
+     "locals": {
+      "Vec": {
+       "ref": "0x1ec91c062e0"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 3,
+     "locals": {
+      "self": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ec91c062e0": {
+     "id": "0x1ec91c062e0",
+     "type": "type",
+     "repr": "Vec"
+    },
+    "0x1ec91d6d0a0": {
+     "id": "0x1ec91d6d0a0",
+     "type": "Vec",
+     "repr": "<Vec>",
+     "fields": {}
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 3,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 15,
+     "locals": {
+      "Vec": {
+       "ref": "0x1ec91c062e0"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 3,
+     "locals": {
+      "self": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ec91c062e0": {
+     "id": "0x1ec91c062e0",
+     "type": "type",
+     "repr": "Vec"
+    },
+    "0x1ec91d6d0a0": {
+     "id": "0x1ec91d6d0a0",
+     "type": "Vec",
+     "repr": "Vec(1, 2)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 2,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 15,
+     "locals": {
+      "Vec": {
+       "ref": "0x1ec91c062e0"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 2,
+     "locals": {
+      "self": {
+       "ref": "0x1ec91d6d130"
+      },
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ec91c062e0": {
+     "id": "0x1ec91c062e0",
+     "type": "type",
+     "repr": "Vec"
+    },
+    "0x1ec91d6d130": {
+     "id": "0x1ec91d6d130",
+     "type": "Vec",
+     "repr": "<Vec>",
+     "fields": {}
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 3,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 15,
+     "locals": {
+      "Vec": {
+       "ref": "0x1ec91c062e0"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 3,
+     "locals": {
+      "self": {
+       "ref": "0x1ec91d6d130"
+      },
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ec91c062e0": {
+     "id": "0x1ec91c062e0",
+     "type": "type",
+     "repr": "Vec"
+    },
+    "0x1ec91d6d130": {
+     "id": "0x1ec91d6d130",
+     "type": "Vec",
+     "repr": "<Vec>",
+     "fields": {}
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 3,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 15,
+     "locals": {
+      "Vec": {
+       "ref": "0x1ec91c062e0"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 3,
+     "locals": {
+      "self": {
+       "ref": "0x1ec91d6d130"
+      },
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ec91c062e0": {
+     "id": "0x1ec91c062e0",
+     "type": "type",
+     "repr": "Vec"
+    },
+    "0x1ec91d6d130": {
+     "id": "0x1ec91d6d130",
+     "type": "Vec",
+     "repr": "Vec(3, 4)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 16,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 16,
+     "locals": {
+      "Vec": {
+       "ref": "0x1ec91c062e0"
+      },
+      "a": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "b": {
+       "ref": "0x1ec91d6d130"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ec91c062e0": {
+     "id": "0x1ec91c062e0",
+     "type": "type",
+     "repr": "Vec"
+    },
+    "0x1ec91d6d0a0": {
+     "id": "0x1ec91d6d0a0",
+     "type": "Vec",
+     "repr": "Vec(1, 2)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x1ec91d6d130": {
+     "id": "0x1ec91d6d130",
+     "type": "Vec",
+     "repr": "Vec(3, 4)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    }
+   },
+   "stdout": "",
+   "note": "파이썬이 __add__ 를 대신 불러 준다"
+  },
+  {
+   "line": 6,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 16,
+     "locals": {
+      "Vec": {
+       "ref": "0x1ec91c062e0"
+      },
+      "a": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "b": {
+       "ref": "0x1ec91d6d130"
+      }
+     }
+    },
+    {
+     "fn": "__add__",
+     "line": 6,
+     "locals": {
+      "self": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "other": {
+       "ref": "0x1ec91d6d130"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ec91c062e0": {
+     "id": "0x1ec91c062e0",
+     "type": "type",
+     "repr": "Vec"
+    },
+    "0x1ec91d6d0a0": {
+     "id": "0x1ec91d6d0a0",
+     "type": "Vec",
+     "repr": "Vec(1, 2)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x1ec91d6d130": {
+     "id": "0x1ec91d6d130",
+     "type": "Vec",
+     "repr": "Vec(3, 4)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    }
+   },
+   "stdout": "",
+   "note": "a + b → a.__add__(b)"
+  },
+  {
+   "line": 7,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 16,
+     "locals": {
+      "Vec": {
+       "ref": "0x1ec91c062e0"
+      },
+      "a": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "b": {
+       "ref": "0x1ec91d6d130"
+      }
+     }
+    },
+    {
+     "fn": "__add__",
+     "line": 7,
+     "locals": {
+      "self": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "other": {
+       "ref": "0x1ec91d6d130"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ec91c062e0": {
+     "id": "0x1ec91c062e0",
+     "type": "type",
+     "repr": "Vec"
+    },
+    "0x1ec91d6d0a0": {
+     "id": "0x1ec91d6d0a0",
+     "type": "Vec",
+     "repr": "Vec(1, 2)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x1ec91d6d130": {
+     "id": "0x1ec91d6d130",
+     "type": "Vec",
+     "repr": "Vec(3, 4)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 2,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 16,
+     "locals": {
+      "Vec": {
+       "ref": "0x1ec91c062e0"
+      },
+      "a": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "b": {
+       "ref": "0x1ec91d6d130"
+      }
+     }
+    },
+    {
+     "fn": "__add__",
+     "line": 7,
+     "locals": {
+      "self": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "other": {
+       "ref": "0x1ec91d6d130"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 2,
+     "locals": {
+      "self": {
+       "ref": "0x1ec91d6d160"
+      },
+      "x": {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ec91c062e0": {
+     "id": "0x1ec91c062e0",
+     "type": "type",
+     "repr": "Vec"
+    },
+    "0x1ec91d6d0a0": {
+     "id": "0x1ec91d6d0a0",
+     "type": "Vec",
+     "repr": "Vec(1, 2)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x1ec91d6d130": {
+     "id": "0x1ec91d6d130",
+     "type": "Vec",
+     "repr": "Vec(3, 4)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x1ec91d6d160": {
+     "id": "0x1ec91d6d160",
+     "type": "Vec",
+     "repr": "<Vec>",
+     "fields": {}
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 3,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 16,
+     "locals": {
+      "Vec": {
+       "ref": "0x1ec91c062e0"
+      },
+      "a": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "b": {
+       "ref": "0x1ec91d6d130"
+      }
+     }
+    },
+    {
+     "fn": "__add__",
+     "line": 7,
+     "locals": {
+      "self": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "other": {
+       "ref": "0x1ec91d6d130"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 3,
+     "locals": {
+      "self": {
+       "ref": "0x1ec91d6d160"
+      },
+      "x": {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ec91c062e0": {
+     "id": "0x1ec91c062e0",
+     "type": "type",
+     "repr": "Vec"
+    },
+    "0x1ec91d6d0a0": {
+     "id": "0x1ec91d6d0a0",
+     "type": "Vec",
+     "repr": "Vec(1, 2)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x1ec91d6d130": {
+     "id": "0x1ec91d6d130",
+     "type": "Vec",
+     "repr": "Vec(3, 4)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x1ec91d6d160": {
+     "id": "0x1ec91d6d160",
+     "type": "Vec",
+     "repr": "<Vec>",
+     "fields": {}
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 3,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 16,
+     "locals": {
+      "Vec": {
+       "ref": "0x1ec91c062e0"
+      },
+      "a": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "b": {
+       "ref": "0x1ec91d6d130"
+      }
+     }
+    },
+    {
+     "fn": "__add__",
+     "line": 7,
+     "locals": {
+      "self": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "other": {
+       "ref": "0x1ec91d6d130"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 3,
+     "locals": {
+      "self": {
+       "ref": "0x1ec91d6d160"
+      },
+      "x": {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ec91c062e0": {
+     "id": "0x1ec91c062e0",
+     "type": "type",
+     "repr": "Vec"
+    },
+    "0x1ec91d6d0a0": {
+     "id": "0x1ec91d6d0a0",
+     "type": "Vec",
+     "repr": "Vec(1, 2)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x1ec91d6d130": {
+     "id": "0x1ec91d6d130",
+     "type": "Vec",
+     "repr": "Vec(3, 4)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x1ec91d6d160": {
+     "id": "0x1ec91d6d160",
+     "type": "Vec",
+     "repr": "Vec(4, 6)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     }
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 7,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 16,
+     "locals": {
+      "Vec": {
+       "ref": "0x1ec91c062e0"
+      },
+      "a": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "b": {
+       "ref": "0x1ec91d6d130"
+      }
+     }
+    },
+    {
+     "fn": "__add__",
+     "line": 7,
+     "locals": {
+      "self": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "other": {
+       "ref": "0x1ec91d6d130"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ec91c062e0": {
+     "id": "0x1ec91c062e0",
+     "type": "type",
+     "repr": "Vec"
+    },
+    "0x1ec91d6d0a0": {
+     "id": "0x1ec91d6d0a0",
+     "type": "Vec",
+     "repr": "Vec(1, 2)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x1ec91d6d130": {
+     "id": "0x1ec91d6d130",
+     "type": "Vec",
+     "repr": "Vec(3, 4)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    }
+   },
+   "stdout": "",
+   "retval": "Vec(4, 6)"
+  },
+  {
+   "line": 4,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 16,
+     "locals": {
+      "Vec": {
+       "ref": "0x1ec91c062e0"
+      },
+      "a": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "b": {
+       "ref": "0x1ec91d6d130"
+      }
+     }
+    },
+    {
+     "fn": "__repr__",
+     "line": 4,
+     "locals": {
+      "self": {
+       "ref": "0x1ec91d6d160"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ec91c062e0": {
+     "id": "0x1ec91c062e0",
+     "type": "type",
+     "repr": "Vec"
+    },
+    "0x1ec91d6d0a0": {
+     "id": "0x1ec91d6d0a0",
+     "type": "Vec",
+     "repr": "Vec(1, 2)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x1ec91d6d130": {
+     "id": "0x1ec91d6d130",
+     "type": "Vec",
+     "repr": "Vec(3, 4)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x1ec91d6d160": {
+     "id": "0x1ec91d6d160",
+     "type": "Vec",
+     "repr": "Vec(4, 6)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     }
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 16,
+     "locals": {
+      "Vec": {
+       "ref": "0x1ec91c062e0"
+      },
+      "a": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "b": {
+       "ref": "0x1ec91d6d130"
+      }
+     }
+    },
+    {
+     "fn": "__repr__",
+     "line": 5,
+     "locals": {
+      "self": {
+       "ref": "0x1ec91d6d160"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ec91c062e0": {
+     "id": "0x1ec91c062e0",
+     "type": "type",
+     "repr": "Vec"
+    },
+    "0x1ec91d6d0a0": {
+     "id": "0x1ec91d6d0a0",
+     "type": "Vec",
+     "repr": "Vec(1, 2)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x1ec91d6d130": {
+     "id": "0x1ec91d6d130",
+     "type": "Vec",
+     "repr": "Vec(3, 4)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x1ec91d6d160": {
+     "id": "0x1ec91d6d160",
+     "type": "Vec",
+     "repr": "Vec(4, 6)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     }
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 5,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 16,
+     "locals": {
+      "Vec": {
+       "ref": "0x1ec91c062e0"
+      },
+      "a": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "b": {
+       "ref": "0x1ec91d6d130"
+      }
+     }
+    },
+    {
+     "fn": "__repr__",
+     "line": 5,
+     "locals": {
+      "self": {
+       "ref": "0x1ec91d6d160"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ec91c062e0": {
+     "id": "0x1ec91c062e0",
+     "type": "type",
+     "repr": "Vec"
+    },
+    "0x1ec91d6d0a0": {
+     "id": "0x1ec91d6d0a0",
+     "type": "Vec",
+     "repr": "Vec(1, 2)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x1ec91d6d130": {
+     "id": "0x1ec91d6d130",
+     "type": "Vec",
+     "repr": "Vec(3, 4)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x1ec91d6d160": {
+     "id": "0x1ec91d6d160",
+     "type": "Vec",
+     "repr": "Vec(4, 6)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     }
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    }
+   },
+   "stdout": "",
+   "retval": "'Vec(4, 6)'"
+  },
+  {
+   "line": 17,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 17,
+     "locals": {
+      "Vec": {
+       "ref": "0x1ec91c062e0"
+      },
+      "a": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "b": {
+       "ref": "0x1ec91d6d130"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ec91c062e0": {
+     "id": "0x1ec91c062e0",
+     "type": "type",
+     "repr": "Vec"
+    },
+    "0x1ec91d6d0a0": {
+     "id": "0x1ec91d6d0a0",
+     "type": "Vec",
+     "repr": "Vec(1, 2)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x1ec91d6d130": {
+     "id": "0x1ec91d6d130",
+     "type": "Vec",
+     "repr": "Vec(3, 4)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    }
+   },
+   "stdout": "Vec(4, 6)\n"
+  },
+  {
+   "line": 8,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 17,
+     "locals": {
+      "Vec": {
+       "ref": "0x1ec91c062e0"
+      },
+      "a": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "b": {
+       "ref": "0x1ec91d6d130"
+      }
+     }
+    },
+    {
+     "fn": "__mul__",
+     "line": 8,
+     "locals": {
+      "self": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "k": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ec91c062e0": {
+     "id": "0x1ec91c062e0",
+     "type": "type",
+     "repr": "Vec"
+    },
+    "0x1ec91d6d0a0": {
+     "id": "0x1ec91d6d0a0",
+     "type": "Vec",
+     "repr": "Vec(1, 2)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x1ec91d6d130": {
+     "id": "0x1ec91d6d130",
+     "type": "Vec",
+     "repr": "Vec(3, 4)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    }
+   },
+   "stdout": "Vec(4, 6)\n",
+   "note": "a * 3 → a.__mul__(3)"
+  },
+  {
+   "line": 9,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 17,
+     "locals": {
+      "Vec": {
+       "ref": "0x1ec91c062e0"
+      },
+      "a": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "b": {
+       "ref": "0x1ec91d6d130"
+      }
+     }
+    },
+    {
+     "fn": "__mul__",
+     "line": 9,
+     "locals": {
+      "self": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "k": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ec91c062e0": {
+     "id": "0x1ec91c062e0",
+     "type": "type",
+     "repr": "Vec"
+    },
+    "0x1ec91d6d0a0": {
+     "id": "0x1ec91d6d0a0",
+     "type": "Vec",
+     "repr": "Vec(1, 2)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x1ec91d6d130": {
+     "id": "0x1ec91d6d130",
+     "type": "Vec",
+     "repr": "Vec(3, 4)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    }
+   },
+   "stdout": "Vec(4, 6)\n"
+  },
+  {
+   "line": 2,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 17,
+     "locals": {
+      "Vec": {
+       "ref": "0x1ec91c062e0"
+      },
+      "a": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "b": {
+       "ref": "0x1ec91d6d130"
+      }
+     }
+    },
+    {
+     "fn": "__mul__",
+     "line": 9,
+     "locals": {
+      "self": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "k": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 2,
+     "locals": {
+      "self": {
+       "ref": "0x1ec91d6d160"
+      },
+      "x": {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ec91c062e0": {
+     "id": "0x1ec91c062e0",
+     "type": "type",
+     "repr": "Vec"
+    },
+    "0x1ec91d6d0a0": {
+     "id": "0x1ec91d6d0a0",
+     "type": "Vec",
+     "repr": "Vec(1, 2)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x1ec91d6d130": {
+     "id": "0x1ec91d6d130",
+     "type": "Vec",
+     "repr": "Vec(3, 4)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x1ec91d6d160": {
+     "id": "0x1ec91d6d160",
+     "type": "Vec",
+     "repr": "<Vec>",
+     "fields": {}
+    }
+   },
+   "stdout": "Vec(4, 6)\n"
+  },
+  {
+   "line": 3,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 17,
+     "locals": {
+      "Vec": {
+       "ref": "0x1ec91c062e0"
+      },
+      "a": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "b": {
+       "ref": "0x1ec91d6d130"
+      }
+     }
+    },
+    {
+     "fn": "__mul__",
+     "line": 9,
+     "locals": {
+      "self": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "k": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 3,
+     "locals": {
+      "self": {
+       "ref": "0x1ec91d6d160"
+      },
+      "x": {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ec91c062e0": {
+     "id": "0x1ec91c062e0",
+     "type": "type",
+     "repr": "Vec"
+    },
+    "0x1ec91d6d0a0": {
+     "id": "0x1ec91d6d0a0",
+     "type": "Vec",
+     "repr": "Vec(1, 2)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x1ec91d6d130": {
+     "id": "0x1ec91d6d130",
+     "type": "Vec",
+     "repr": "Vec(3, 4)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x1ec91d6d160": {
+     "id": "0x1ec91d6d160",
+     "type": "Vec",
+     "repr": "<Vec>",
+     "fields": {}
+    }
+   },
+   "stdout": "Vec(4, 6)\n"
+  },
+  {
+   "line": 3,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 17,
+     "locals": {
+      "Vec": {
+       "ref": "0x1ec91c062e0"
+      },
+      "a": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "b": {
+       "ref": "0x1ec91d6d130"
+      }
+     }
+    },
+    {
+     "fn": "__mul__",
+     "line": 9,
+     "locals": {
+      "self": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "k": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 3,
+     "locals": {
+      "self": {
+       "ref": "0x1ec91d6d160"
+      },
+      "x": {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ec91c062e0": {
+     "id": "0x1ec91c062e0",
+     "type": "type",
+     "repr": "Vec"
+    },
+    "0x1ec91d6d0a0": {
+     "id": "0x1ec91d6d0a0",
+     "type": "Vec",
+     "repr": "Vec(1, 2)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x1ec91d6d130": {
+     "id": "0x1ec91d6d130",
+     "type": "Vec",
+     "repr": "Vec(3, 4)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x1ec91d6d160": {
+     "id": "0x1ec91d6d160",
+     "type": "Vec",
+     "repr": "Vec(2, 4)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    }
+   },
+   "stdout": "Vec(4, 6)\n"
+  },
+  {
+   "line": 9,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 17,
+     "locals": {
+      "Vec": {
+       "ref": "0x1ec91c062e0"
+      },
+      "a": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "b": {
+       "ref": "0x1ec91d6d130"
+      }
+     }
+    },
+    {
+     "fn": "__mul__",
+     "line": 9,
+     "locals": {
+      "self": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "k": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ec91c062e0": {
+     "id": "0x1ec91c062e0",
+     "type": "type",
+     "repr": "Vec"
+    },
+    "0x1ec91d6d0a0": {
+     "id": "0x1ec91d6d0a0",
+     "type": "Vec",
+     "repr": "Vec(1, 2)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x1ec91d6d130": {
+     "id": "0x1ec91d6d130",
+     "type": "Vec",
+     "repr": "Vec(3, 4)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    }
+   },
+   "stdout": "Vec(4, 6)\n",
+   "retval": "Vec(2, 4)"
+  },
+  {
+   "line": 10,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 17,
+     "locals": {
+      "Vec": {
+       "ref": "0x1ec91c062e0"
+      },
+      "a": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "b": {
+       "ref": "0x1ec91d6d130"
+      }
+     }
+    },
+    {
+     "fn": "__rmul__",
+     "line": 10,
+     "locals": {
+      "self": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "k": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ec91c062e0": {
+     "id": "0x1ec91c062e0",
+     "type": "type",
+     "repr": "Vec"
+    },
+    "0x1ec91d6d0a0": {
+     "id": "0x1ec91d6d0a0",
+     "type": "Vec",
+     "repr": "Vec(1, 2)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x1ec91d6d130": {
+     "id": "0x1ec91d6d130",
+     "type": "Vec",
+     "repr": "Vec(3, 4)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    }
+   },
+   "stdout": "Vec(4, 6)\n",
+   "note": "3 * a → int 가 못 하면 a.__rmul__(3)"
+  },
+  {
+   "line": 11,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 17,
+     "locals": {
+      "Vec": {
+       "ref": "0x1ec91c062e0"
+      },
+      "a": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "b": {
+       "ref": "0x1ec91d6d130"
+      }
+     }
+    },
+    {
+     "fn": "__rmul__",
+     "line": 11,
+     "locals": {
+      "self": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "k": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ec91c062e0": {
+     "id": "0x1ec91c062e0",
+     "type": "type",
+     "repr": "Vec"
+    },
+    "0x1ec91d6d0a0": {
+     "id": "0x1ec91d6d0a0",
+     "type": "Vec",
+     "repr": "Vec(1, 2)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x1ec91d6d130": {
+     "id": "0x1ec91d6d130",
+     "type": "Vec",
+     "repr": "Vec(3, 4)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    }
+   },
+   "stdout": "Vec(4, 6)\n"
+  },
+  {
+   "line": 8,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 17,
+     "locals": {
+      "Vec": {
+       "ref": "0x1ec91c062e0"
+      },
+      "a": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "b": {
+       "ref": "0x1ec91d6d130"
+      }
+     }
+    },
+    {
+     "fn": "__rmul__",
+     "line": 11,
+     "locals": {
+      "self": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "k": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    {
+     "fn": "__mul__",
+     "line": 8,
+     "locals": {
+      "self": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "k": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ec91c062e0": {
+     "id": "0x1ec91c062e0",
+     "type": "type",
+     "repr": "Vec"
+    },
+    "0x1ec91d6d0a0": {
+     "id": "0x1ec91d6d0a0",
+     "type": "Vec",
+     "repr": "Vec(1, 2)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x1ec91d6d130": {
+     "id": "0x1ec91d6d130",
+     "type": "Vec",
+     "repr": "Vec(3, 4)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    }
+   },
+   "stdout": "Vec(4, 6)\n",
+   "note": "a * 3 → a.__mul__(3)"
+  },
+  {
+   "line": 9,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 17,
+     "locals": {
+      "Vec": {
+       "ref": "0x1ec91c062e0"
+      },
+      "a": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "b": {
+       "ref": "0x1ec91d6d130"
+      }
+     }
+    },
+    {
+     "fn": "__rmul__",
+     "line": 11,
+     "locals": {
+      "self": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "k": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    {
+     "fn": "__mul__",
+     "line": 9,
+     "locals": {
+      "self": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "k": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ec91c062e0": {
+     "id": "0x1ec91c062e0",
+     "type": "type",
+     "repr": "Vec"
+    },
+    "0x1ec91d6d0a0": {
+     "id": "0x1ec91d6d0a0",
+     "type": "Vec",
+     "repr": "Vec(1, 2)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x1ec91d6d130": {
+     "id": "0x1ec91d6d130",
+     "type": "Vec",
+     "repr": "Vec(3, 4)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    }
+   },
+   "stdout": "Vec(4, 6)\n"
+  },
+  {
+   "line": 2,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 17,
+     "locals": {
+      "Vec": {
+       "ref": "0x1ec91c062e0"
+      },
+      "a": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "b": {
+       "ref": "0x1ec91d6d130"
+      }
+     }
+    },
+    {
+     "fn": "__rmul__",
+     "line": 11,
+     "locals": {
+      "self": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "k": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    {
+     "fn": "__mul__",
+     "line": 9,
+     "locals": {
+      "self": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "k": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 2,
+     "locals": {
+      "self": {
+       "ref": "0x1ec91d6d460"
+      },
+      "x": {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ec91c062e0": {
+     "id": "0x1ec91c062e0",
+     "type": "type",
+     "repr": "Vec"
+    },
+    "0x1ec91d6d0a0": {
+     "id": "0x1ec91d6d0a0",
+     "type": "Vec",
+     "repr": "Vec(1, 2)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x1ec91d6d130": {
+     "id": "0x1ec91d6d130",
+     "type": "Vec",
+     "repr": "Vec(3, 4)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x1ec91d6d460": {
+     "id": "0x1ec91d6d460",
+     "type": "Vec",
+     "repr": "<Vec>",
+     "fields": {}
+    }
+   },
+   "stdout": "Vec(4, 6)\n"
+  },
+  {
+   "line": 3,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 17,
+     "locals": {
+      "Vec": {
+       "ref": "0x1ec91c062e0"
+      },
+      "a": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "b": {
+       "ref": "0x1ec91d6d130"
+      }
+     }
+    },
+    {
+     "fn": "__rmul__",
+     "line": 11,
+     "locals": {
+      "self": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "k": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    {
+     "fn": "__mul__",
+     "line": 9,
+     "locals": {
+      "self": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "k": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 3,
+     "locals": {
+      "self": {
+       "ref": "0x1ec91d6d460"
+      },
+      "x": {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ec91c062e0": {
+     "id": "0x1ec91c062e0",
+     "type": "type",
+     "repr": "Vec"
+    },
+    "0x1ec91d6d0a0": {
+     "id": "0x1ec91d6d0a0",
+     "type": "Vec",
+     "repr": "Vec(1, 2)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x1ec91d6d130": {
+     "id": "0x1ec91d6d130",
+     "type": "Vec",
+     "repr": "Vec(3, 4)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x1ec91d6d460": {
+     "id": "0x1ec91d6d460",
+     "type": "Vec",
+     "repr": "<Vec>",
+     "fields": {}
+    }
+   },
+   "stdout": "Vec(4, 6)\n"
+  },
+  {
+   "line": 3,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 17,
+     "locals": {
+      "Vec": {
+       "ref": "0x1ec91c062e0"
+      },
+      "a": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "b": {
+       "ref": "0x1ec91d6d130"
+      }
+     }
+    },
+    {
+     "fn": "__rmul__",
+     "line": 11,
+     "locals": {
+      "self": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "k": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    {
+     "fn": "__mul__",
+     "line": 9,
+     "locals": {
+      "self": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "k": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 3,
+     "locals": {
+      "self": {
+       "ref": "0x1ec91d6d460"
+      },
+      "x": {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ec91c062e0": {
+     "id": "0x1ec91c062e0",
+     "type": "type",
+     "repr": "Vec"
+    },
+    "0x1ec91d6d0a0": {
+     "id": "0x1ec91d6d0a0",
+     "type": "Vec",
+     "repr": "Vec(1, 2)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x1ec91d6d130": {
+     "id": "0x1ec91d6d130",
+     "type": "Vec",
+     "repr": "Vec(3, 4)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x1ec91d6d460": {
+     "id": "0x1ec91d6d460",
+     "type": "Vec",
+     "repr": "Vec(2, 4)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    }
+   },
+   "stdout": "Vec(4, 6)\n"
+  },
+  {
+   "line": 9,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 17,
+     "locals": {
+      "Vec": {
+       "ref": "0x1ec91c062e0"
+      },
+      "a": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "b": {
+       "ref": "0x1ec91d6d130"
+      }
+     }
+    },
+    {
+     "fn": "__rmul__",
+     "line": 11,
+     "locals": {
+      "self": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "k": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    {
+     "fn": "__mul__",
+     "line": 9,
+     "locals": {
+      "self": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "k": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ec91c062e0": {
+     "id": "0x1ec91c062e0",
+     "type": "type",
+     "repr": "Vec"
+    },
+    "0x1ec91d6d0a0": {
+     "id": "0x1ec91d6d0a0",
+     "type": "Vec",
+     "repr": "Vec(1, 2)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x1ec91d6d130": {
+     "id": "0x1ec91d6d130",
+     "type": "Vec",
+     "repr": "Vec(3, 4)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    }
+   },
+   "stdout": "Vec(4, 6)\n",
+   "retval": "Vec(2, 4)"
+  },
+  {
+   "line": 11,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 17,
+     "locals": {
+      "Vec": {
+       "ref": "0x1ec91c062e0"
+      },
+      "a": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "b": {
+       "ref": "0x1ec91d6d130"
+      }
+     }
+    },
+    {
+     "fn": "__rmul__",
+     "line": 11,
+     "locals": {
+      "self": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "k": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ec91c062e0": {
+     "id": "0x1ec91c062e0",
+     "type": "type",
+     "repr": "Vec"
+    },
+    "0x1ec91d6d0a0": {
+     "id": "0x1ec91d6d0a0",
+     "type": "Vec",
+     "repr": "Vec(1, 2)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x1ec91d6d130": {
+     "id": "0x1ec91d6d130",
+     "type": "Vec",
+     "repr": "Vec(3, 4)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    }
+   },
+   "stdout": "Vec(4, 6)\n",
+   "retval": "Vec(2, 4)"
+  },
+  {
+   "line": 4,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 17,
+     "locals": {
+      "Vec": {
+       "ref": "0x1ec91c062e0"
+      },
+      "a": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "b": {
+       "ref": "0x1ec91d6d130"
+      }
+     }
+    },
+    {
+     "fn": "__repr__",
+     "line": 4,
+     "locals": {
+      "self": {
+       "ref": "0x1ec91d6d160"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ec91c062e0": {
+     "id": "0x1ec91c062e0",
+     "type": "type",
+     "repr": "Vec"
+    },
+    "0x1ec91d6d0a0": {
+     "id": "0x1ec91d6d0a0",
+     "type": "Vec",
+     "repr": "Vec(1, 2)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x1ec91d6d130": {
+     "id": "0x1ec91d6d130",
+     "type": "Vec",
+     "repr": "Vec(3, 4)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x1ec91d6d160": {
+     "id": "0x1ec91d6d160",
+     "type": "Vec",
+     "repr": "Vec(2, 4)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    }
+   },
+   "stdout": "Vec(4, 6)\n"
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 17,
+     "locals": {
+      "Vec": {
+       "ref": "0x1ec91c062e0"
+      },
+      "a": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "b": {
+       "ref": "0x1ec91d6d130"
+      }
+     }
+    },
+    {
+     "fn": "__repr__",
+     "line": 5,
+     "locals": {
+      "self": {
+       "ref": "0x1ec91d6d160"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ec91c062e0": {
+     "id": "0x1ec91c062e0",
+     "type": "type",
+     "repr": "Vec"
+    },
+    "0x1ec91d6d0a0": {
+     "id": "0x1ec91d6d0a0",
+     "type": "Vec",
+     "repr": "Vec(1, 2)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x1ec91d6d130": {
+     "id": "0x1ec91d6d130",
+     "type": "Vec",
+     "repr": "Vec(3, 4)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x1ec91d6d160": {
+     "id": "0x1ec91d6d160",
+     "type": "Vec",
+     "repr": "Vec(2, 4)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    }
+   },
+   "stdout": "Vec(4, 6)\n"
+  },
+  {
+   "line": 5,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 17,
+     "locals": {
+      "Vec": {
+       "ref": "0x1ec91c062e0"
+      },
+      "a": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "b": {
+       "ref": "0x1ec91d6d130"
+      }
+     }
+    },
+    {
+     "fn": "__repr__",
+     "line": 5,
+     "locals": {
+      "self": {
+       "ref": "0x1ec91d6d160"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ec91c062e0": {
+     "id": "0x1ec91c062e0",
+     "type": "type",
+     "repr": "Vec"
+    },
+    "0x1ec91d6d0a0": {
+     "id": "0x1ec91d6d0a0",
+     "type": "Vec",
+     "repr": "Vec(1, 2)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x1ec91d6d130": {
+     "id": "0x1ec91d6d130",
+     "type": "Vec",
+     "repr": "Vec(3, 4)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x1ec91d6d160": {
+     "id": "0x1ec91d6d160",
+     "type": "Vec",
+     "repr": "Vec(2, 4)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    }
+   },
+   "stdout": "Vec(4, 6)\n",
+   "retval": "'Vec(2, 4)'"
+  },
+  {
+   "line": 4,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 17,
+     "locals": {
+      "Vec": {
+       "ref": "0x1ec91c062e0"
+      },
+      "a": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "b": {
+       "ref": "0x1ec91d6d130"
+      }
+     }
+    },
+    {
+     "fn": "__repr__",
+     "line": 4,
+     "locals": {
+      "self": {
+       "ref": "0x1ec91d6d460"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ec91c062e0": {
+     "id": "0x1ec91c062e0",
+     "type": "type",
+     "repr": "Vec"
+    },
+    "0x1ec91d6d0a0": {
+     "id": "0x1ec91d6d0a0",
+     "type": "Vec",
+     "repr": "Vec(1, 2)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x1ec91d6d130": {
+     "id": "0x1ec91d6d130",
+     "type": "Vec",
+     "repr": "Vec(3, 4)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x1ec91d6d460": {
+     "id": "0x1ec91d6d460",
+     "type": "Vec",
+     "repr": "Vec(2, 4)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    }
+   },
+   "stdout": "Vec(4, 6)\nVec(2, 4) "
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 17,
+     "locals": {
+      "Vec": {
+       "ref": "0x1ec91c062e0"
+      },
+      "a": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "b": {
+       "ref": "0x1ec91d6d130"
+      }
+     }
+    },
+    {
+     "fn": "__repr__",
+     "line": 5,
+     "locals": {
+      "self": {
+       "ref": "0x1ec91d6d460"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ec91c062e0": {
+     "id": "0x1ec91c062e0",
+     "type": "type",
+     "repr": "Vec"
+    },
+    "0x1ec91d6d0a0": {
+     "id": "0x1ec91d6d0a0",
+     "type": "Vec",
+     "repr": "Vec(1, 2)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x1ec91d6d130": {
+     "id": "0x1ec91d6d130",
+     "type": "Vec",
+     "repr": "Vec(3, 4)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x1ec91d6d460": {
+     "id": "0x1ec91d6d460",
+     "type": "Vec",
+     "repr": "Vec(2, 4)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    }
+   },
+   "stdout": "Vec(4, 6)\nVec(2, 4) "
+  },
+  {
+   "line": 5,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 17,
+     "locals": {
+      "Vec": {
+       "ref": "0x1ec91c062e0"
+      },
+      "a": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "b": {
+       "ref": "0x1ec91d6d130"
+      }
+     }
+    },
+    {
+     "fn": "__repr__",
+     "line": 5,
+     "locals": {
+      "self": {
+       "ref": "0x1ec91d6d460"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ec91c062e0": {
+     "id": "0x1ec91c062e0",
+     "type": "type",
+     "repr": "Vec"
+    },
+    "0x1ec91d6d0a0": {
+     "id": "0x1ec91d6d0a0",
+     "type": "Vec",
+     "repr": "Vec(1, 2)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x1ec91d6d130": {
+     "id": "0x1ec91d6d130",
+     "type": "Vec",
+     "repr": "Vec(3, 4)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x1ec91d6d460": {
+     "id": "0x1ec91d6d460",
+     "type": "Vec",
+     "repr": "Vec(2, 4)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    }
+   },
+   "stdout": "Vec(4, 6)\nVec(2, 4) ",
+   "retval": "'Vec(2, 4)'"
+  },
+  {
+   "line": 18,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 18,
+     "locals": {
+      "Vec": {
+       "ref": "0x1ec91c062e0"
+      },
+      "a": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "b": {
+       "ref": "0x1ec91d6d130"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ec91c062e0": {
+     "id": "0x1ec91c062e0",
+     "type": "type",
+     "repr": "Vec"
+    },
+    "0x1ec91d6d0a0": {
+     "id": "0x1ec91d6d0a0",
+     "type": "Vec",
+     "repr": "Vec(1, 2)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x1ec91d6d130": {
+     "id": "0x1ec91d6d130",
+     "type": "Vec",
+     "repr": "Vec(3, 4)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    }
+   },
+   "stdout": "Vec(4, 6)\nVec(2, 4) Vec(2, 4)\n"
+  },
+  {
+   "line": 2,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 18,
+     "locals": {
+      "Vec": {
+       "ref": "0x1ec91c062e0"
+      },
+      "a": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "b": {
+       "ref": "0x1ec91d6d130"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 2,
+     "locals": {
+      "self": {
+       "ref": "0x1ec91d6d460"
+      },
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ec91c062e0": {
+     "id": "0x1ec91c062e0",
+     "type": "type",
+     "repr": "Vec"
+    },
+    "0x1ec91d6d0a0": {
+     "id": "0x1ec91d6d0a0",
+     "type": "Vec",
+     "repr": "Vec(1, 2)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x1ec91d6d130": {
+     "id": "0x1ec91d6d130",
+     "type": "Vec",
+     "repr": "Vec(3, 4)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x1ec91d6d460": {
+     "id": "0x1ec91d6d460",
+     "type": "Vec",
+     "repr": "<Vec>",
+     "fields": {}
+    }
+   },
+   "stdout": "Vec(4, 6)\nVec(2, 4) Vec(2, 4)\n"
+  },
+  {
+   "line": 3,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 18,
+     "locals": {
+      "Vec": {
+       "ref": "0x1ec91c062e0"
+      },
+      "a": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "b": {
+       "ref": "0x1ec91d6d130"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 3,
+     "locals": {
+      "self": {
+       "ref": "0x1ec91d6d460"
+      },
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ec91c062e0": {
+     "id": "0x1ec91c062e0",
+     "type": "type",
+     "repr": "Vec"
+    },
+    "0x1ec91d6d0a0": {
+     "id": "0x1ec91d6d0a0",
+     "type": "Vec",
+     "repr": "Vec(1, 2)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x1ec91d6d130": {
+     "id": "0x1ec91d6d130",
+     "type": "Vec",
+     "repr": "Vec(3, 4)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x1ec91d6d460": {
+     "id": "0x1ec91d6d460",
+     "type": "Vec",
+     "repr": "<Vec>",
+     "fields": {}
+    }
+   },
+   "stdout": "Vec(4, 6)\nVec(2, 4) Vec(2, 4)\n"
+  },
+  {
+   "line": 3,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 18,
+     "locals": {
+      "Vec": {
+       "ref": "0x1ec91c062e0"
+      },
+      "a": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "b": {
+       "ref": "0x1ec91d6d130"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 3,
+     "locals": {
+      "self": {
+       "ref": "0x1ec91d6d460"
+      },
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ec91c062e0": {
+     "id": "0x1ec91c062e0",
+     "type": "type",
+     "repr": "Vec"
+    },
+    "0x1ec91d6d0a0": {
+     "id": "0x1ec91d6d0a0",
+     "type": "Vec",
+     "repr": "Vec(1, 2)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x1ec91d6d130": {
+     "id": "0x1ec91d6d130",
+     "type": "Vec",
+     "repr": "Vec(3, 4)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x1ec91d6d460": {
+     "id": "0x1ec91d6d460",
+     "type": "Vec",
+     "repr": "Vec(1, 2)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    }
+   },
+   "stdout": "Vec(4, 6)\nVec(2, 4) Vec(2, 4)\n"
+  },
+  {
+   "line": 12,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 18,
+     "locals": {
+      "Vec": {
+       "ref": "0x1ec91c062e0"
+      },
+      "a": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "b": {
+       "ref": "0x1ec91d6d130"
+      }
+     }
+    },
+    {
+     "fn": "__eq__",
+     "line": 12,
+     "locals": {
+      "self": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "other": {
+       "ref": "0x1ec91d6d460"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ec91c062e0": {
+     "id": "0x1ec91c062e0",
+     "type": "type",
+     "repr": "Vec"
+    },
+    "0x1ec91d6d0a0": {
+     "id": "0x1ec91d6d0a0",
+     "type": "Vec",
+     "repr": "Vec(1, 2)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x1ec91d6d130": {
+     "id": "0x1ec91d6d130",
+     "type": "Vec",
+     "repr": "Vec(3, 4)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x1ec91d6d460": {
+     "id": "0x1ec91d6d460",
+     "type": "Vec",
+     "repr": "Vec(1, 2)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    }
+   },
+   "stdout": "Vec(4, 6)\nVec(2, 4) Vec(2, 4)\n",
+   "note": "a == b → a.__eq__(b). 없으면 is 비교가 된다"
+  },
+  {
+   "line": 13,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 18,
+     "locals": {
+      "Vec": {
+       "ref": "0x1ec91c062e0"
+      },
+      "a": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "b": {
+       "ref": "0x1ec91d6d130"
+      }
+     }
+    },
+    {
+     "fn": "__eq__",
+     "line": 13,
+     "locals": {
+      "self": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "other": {
+       "ref": "0x1ec91d6d460"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ec91c062e0": {
+     "id": "0x1ec91c062e0",
+     "type": "type",
+     "repr": "Vec"
+    },
+    "0x1ec91d6d0a0": {
+     "id": "0x1ec91d6d0a0",
+     "type": "Vec",
+     "repr": "Vec(1, 2)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x1ec91d6d130": {
+     "id": "0x1ec91d6d130",
+     "type": "Vec",
+     "repr": "Vec(3, 4)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x1ec91d6d460": {
+     "id": "0x1ec91d6d460",
+     "type": "Vec",
+     "repr": "Vec(1, 2)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    }
+   },
+   "stdout": "Vec(4, 6)\nVec(2, 4) Vec(2, 4)\n"
+  },
+  {
+   "line": 13,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 18,
+     "locals": {
+      "Vec": {
+       "ref": "0x1ec91c062e0"
+      },
+      "a": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "b": {
+       "ref": "0x1ec91d6d130"
+      }
+     }
+    },
+    {
+     "fn": "__eq__",
+     "line": 13,
+     "locals": {
+      "self": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "other": {
+       "ref": "0x1ec91d6d460"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ec91c062e0": {
+     "id": "0x1ec91c062e0",
+     "type": "type",
+     "repr": "Vec"
+    },
+    "0x1ec91d6d0a0": {
+     "id": "0x1ec91d6d0a0",
+     "type": "Vec",
+     "repr": "Vec(1, 2)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x1ec91d6d130": {
+     "id": "0x1ec91d6d130",
+     "type": "Vec",
+     "repr": "Vec(3, 4)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x1ec91d6d460": {
+     "id": "0x1ec91d6d460",
+     "type": "Vec",
+     "repr": "Vec(1, 2)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    }
+   },
+   "stdout": "Vec(4, 6)\nVec(2, 4) Vec(2, 4)\n",
+   "retval": "True"
+  },
+  {
+   "line": 2,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 18,
+     "locals": {
+      "Vec": {
+       "ref": "0x1ec91c062e0"
+      },
+      "a": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "b": {
+       "ref": "0x1ec91d6d130"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 2,
+     "locals": {
+      "self": {
+       "ref": "0x1ec91d6d460"
+      },
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ec91c062e0": {
+     "id": "0x1ec91c062e0",
+     "type": "type",
+     "repr": "Vec"
+    },
+    "0x1ec91d6d0a0": {
+     "id": "0x1ec91d6d0a0",
+     "type": "Vec",
+     "repr": "Vec(1, 2)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x1ec91d6d130": {
+     "id": "0x1ec91d6d130",
+     "type": "Vec",
+     "repr": "Vec(3, 4)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x1ec91d6d460": {
+     "id": "0x1ec91d6d460",
+     "type": "Vec",
+     "repr": "<Vec>",
+     "fields": {}
+    }
+   },
+   "stdout": "Vec(4, 6)\nVec(2, 4) Vec(2, 4)\n"
+  },
+  {
+   "line": 3,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 18,
+     "locals": {
+      "Vec": {
+       "ref": "0x1ec91c062e0"
+      },
+      "a": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "b": {
+       "ref": "0x1ec91d6d130"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 3,
+     "locals": {
+      "self": {
+       "ref": "0x1ec91d6d460"
+      },
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ec91c062e0": {
+     "id": "0x1ec91c062e0",
+     "type": "type",
+     "repr": "Vec"
+    },
+    "0x1ec91d6d0a0": {
+     "id": "0x1ec91d6d0a0",
+     "type": "Vec",
+     "repr": "Vec(1, 2)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x1ec91d6d130": {
+     "id": "0x1ec91d6d130",
+     "type": "Vec",
+     "repr": "Vec(3, 4)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x1ec91d6d460": {
+     "id": "0x1ec91d6d460",
+     "type": "Vec",
+     "repr": "<Vec>",
+     "fields": {}
+    }
+   },
+   "stdout": "Vec(4, 6)\nVec(2, 4) Vec(2, 4)\n"
+  },
+  {
+   "line": 3,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 18,
+     "locals": {
+      "Vec": {
+       "ref": "0x1ec91c062e0"
+      },
+      "a": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "b": {
+       "ref": "0x1ec91d6d130"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 3,
+     "locals": {
+      "self": {
+       "ref": "0x1ec91d6d460"
+      },
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ec91c062e0": {
+     "id": "0x1ec91c062e0",
+     "type": "type",
+     "repr": "Vec"
+    },
+    "0x1ec91d6d0a0": {
+     "id": "0x1ec91d6d0a0",
+     "type": "Vec",
+     "repr": "Vec(1, 2)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x1ec91d6d130": {
+     "id": "0x1ec91d6d130",
+     "type": "Vec",
+     "repr": "Vec(3, 4)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x1ec91d6d460": {
+     "id": "0x1ec91d6d460",
+     "type": "Vec",
+     "repr": "Vec(1, 2)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    }
+   },
+   "stdout": "Vec(4, 6)\nVec(2, 4) Vec(2, 4)\n"
+  },
+  {
+   "line": 18,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 18,
+     "locals": {
+      "Vec": {
+       "ref": "0x1ec91c062e0"
+      },
+      "a": {
+       "ref": "0x1ec91d6d0a0"
+      },
+      "b": {
+       "ref": "0x1ec91d6d130"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ec91c062e0": {
+     "id": "0x1ec91c062e0",
+     "type": "type",
+     "repr": "Vec"
+    },
+    "0x1ec91d6d0a0": {
+     "id": "0x1ec91d6d0a0",
+     "type": "Vec",
+     "repr": "Vec(1, 2)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x1ec91d6d130": {
+     "id": "0x1ec91d6d130",
+     "type": "Vec",
+     "repr": "Vec(3, 4)",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    }
+   },
+   "stdout": "Vec(4, 6)\nVec(2, 4) Vec(2, 4)\nTrue False\n"
+  }
+ ],
+ "v": 1
+}

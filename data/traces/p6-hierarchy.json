@@ -119,14 +119,14 @@
      "line": 7,
      "locals": {
       "e": {
-       "ref": "0x13372848f40"
+       "ref": "0x1d1467f8ee0"
       }
      }
     }
    ],
    "heap": {
-    "0x13372848f40": {
-     "id": "0x13372848f40",
+    "0x1d1467f8ee0": {
+     "id": "0x1d1467f8ee0",
      "type": "KeyError",
      "repr": "KeyError('x')",
      "fields": {}
@@ -197,14 +197,14 @@
      "line": 11,
      "locals": {
       "e": {
-       "ref": "0x13372848f40"
+       "ref": "0x1d1467f8ee0"
       }
      }
     }
    ],
    "heap": {
-    "0x13372848f40": {
-     "id": "0x13372848f40",
+    "0x1d1467f8ee0": {
+     "id": "0x1d1467f8ee0",
      "type": "ZeroDivisionError",
      "repr": "ZeroDivisionError('division by zero')",
      "fields": {}

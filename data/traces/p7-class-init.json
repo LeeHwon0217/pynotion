@@ -1,0 +1,1400 @@
+{
+ "id": "p7-class-init",
+ "code": "class Dog:\n    def __init__(self, name, age):\n        self.name = name\n        self.age = age\n\n    def bark(self):\n        return f\"{self.name}: 멍!\"\n\nd1 = Dog(\"초코\", 3)\nd2 = Dog(\"보리\", 5)\nprint(d1.name, d2.name)\nprint(d1.bark())\nprint(d1.__dict__)\nprint(type(d1), isinstance(d1, Dog))",
+ "steps": [
+  {
+   "line": 0,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 0,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Dog",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Dog",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Dog",
+     "line": 2,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": "",
+   "note": "인스턴스가 만들어진 직후 자동 호출. self 는 그 새 인스턴스"
+  },
+  {
+   "line": 6,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Dog",
+     "line": 6,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 6,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Dog",
+     "line": 6,
+     "locals": {
+      "bark": {
+       "ref": "0x22552eace00"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x22552eace00": {
+     "id": "0x22552eace00",
+     "type": "function",
+     "repr": "bark"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 9,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 9,
+     "locals": {
+      "Dog": {
+       "ref": "0x22552d3fc60"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x22552d3fc60": {
+     "id": "0x22552d3fc60",
+     "type": "type",
+     "repr": "Dog"
+    }
+   },
+   "stdout": "",
+   "note": "Dog(...) → 빈 인스턴스 생성 → __init__(인스턴스, \"초코\", 3)"
+  },
+  {
+   "line": 2,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 9,
+     "locals": {
+      "Dog": {
+       "ref": "0x22552d3fc60"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 2,
+     "locals": {
+      "self": {
+       "ref": "0x22552ebd040"
+      },
+      "name": {
+       "ref": "0x22552eb6240"
+      },
+      "age": {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x22552d3fc60": {
+     "id": "0x22552d3fc60",
+     "type": "type",
+     "repr": "Dog"
+    },
+    "0x22552ebd040": {
+     "id": "0x22552ebd040",
+     "type": "Dog",
+     "repr": "<__main__.Dog object at 0x0000022552EBD040>",
+     "fields": {}
+    },
+    "0x22552eb6240": {
+     "id": "0x22552eb6240",
+     "type": "str",
+     "repr": "'초코'"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    }
+   },
+   "stdout": "",
+   "note": "인스턴스가 만들어진 직후 자동 호출. self 는 그 새 인스턴스"
+  },
+  {
+   "line": 3,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 9,
+     "locals": {
+      "Dog": {
+       "ref": "0x22552d3fc60"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 3,
+     "locals": {
+      "self": {
+       "ref": "0x22552ebd040"
+      },
+      "name": {
+       "ref": "0x22552eb6240"
+      },
+      "age": {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x22552d3fc60": {
+     "id": "0x22552d3fc60",
+     "type": "type",
+     "repr": "Dog"
+    },
+    "0x22552ebd040": {
+     "id": "0x22552ebd040",
+     "type": "Dog",
+     "repr": "<__main__.Dog object at 0x0000022552EBD040>",
+     "fields": {}
+    },
+    "0x22552eb6240": {
+     "id": "0x22552eb6240",
+     "type": "str",
+     "repr": "'초코'"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    }
+   },
+   "stdout": "",
+   "note": "인스턴스에 속성을 붙인다 — self.__dict__[\"name\"] = name 과 같다"
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 9,
+     "locals": {
+      "Dog": {
+       "ref": "0x22552d3fc60"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 4,
+     "locals": {
+      "self": {
+       "ref": "0x22552ebd040"
+      },
+      "name": {
+       "ref": "0x22552eb6240"
+      },
+      "age": {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x22552d3fc60": {
+     "id": "0x22552d3fc60",
+     "type": "type",
+     "repr": "Dog"
+    },
+    "0x22552ebd040": {
+     "id": "0x22552ebd040",
+     "type": "Dog",
+     "repr": "<__main__.Dog object at 0x0000022552EBD040>",
+     "fields": {
+      "name": {
+       "ref": "0x22552eb6240"
+      }
+     }
+    },
+    "0x22552eb6240": {
+     "id": "0x22552eb6240",
+     "type": "str",
+     "repr": "'초코'"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 4,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 9,
+     "locals": {
+      "Dog": {
+       "ref": "0x22552d3fc60"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 4,
+     "locals": {
+      "self": {
+       "ref": "0x22552ebd040"
+      },
+      "name": {
+       "ref": "0x22552eb6240"
+      },
+      "age": {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x22552d3fc60": {
+     "id": "0x22552d3fc60",
+     "type": "type",
+     "repr": "Dog"
+    },
+    "0x22552ebd040": {
+     "id": "0x22552ebd040",
+     "type": "Dog",
+     "repr": "<__main__.Dog object at 0x0000022552EBD040>",
+     "fields": {
+      "name": {
+       "ref": "0x22552eb6240"
+      },
+      "age": {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     }
+    },
+    "0x22552eb6240": {
+     "id": "0x22552eb6240",
+     "type": "str",
+     "repr": "'초코'"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 10,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 10,
+     "locals": {
+      "Dog": {
+       "ref": "0x22552d3fc60"
+      },
+      "d1": {
+       "ref": "0x22552ebd040"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x22552d3fc60": {
+     "id": "0x22552d3fc60",
+     "type": "type",
+     "repr": "Dog"
+    },
+    "0x22552ebd040": {
+     "id": "0x22552ebd040",
+     "type": "Dog",
+     "repr": "<__main__.Dog object at 0x0000022552EBD040>",
+     "fields": {
+      "name": {
+       "ref": "0x22552eb6240"
+      },
+      "age": {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     }
+    },
+    "0x22552eb6240": {
+     "id": "0x22552eb6240",
+     "type": "str",
+     "repr": "'초코'"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    }
+   },
+   "stdout": "",
+   "note": "완전히 별개의 인스턴스 — 자기만의 __dict__"
+  },
+  {
+   "line": 2,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 10,
+     "locals": {
+      "Dog": {
+       "ref": "0x22552d3fc60"
+      },
+      "d1": {
+       "ref": "0x22552ebd040"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 2,
+     "locals": {
+      "self": {
+       "ref": "0x22552ebd0a0"
+      },
+      "name": {
+       "ref": "0x22552eb6290"
+      },
+      "age": {
+       "ref": "0x7ffd7f2b4a38"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x22552d3fc60": {
+     "id": "0x22552d3fc60",
+     "type": "type",
+     "repr": "Dog"
+    },
+    "0x22552ebd040": {
+     "id": "0x22552ebd040",
+     "type": "Dog",
+     "repr": "<__main__.Dog object at 0x0000022552EBD040>",
+     "fields": {
+      "name": {
+       "ref": "0x22552eb6240"
+      },
+      "age": {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     }
+    },
+    "0x22552eb6240": {
+     "id": "0x22552eb6240",
+     "type": "str",
+     "repr": "'초코'"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x22552ebd0a0": {
+     "id": "0x22552ebd0a0",
+     "type": "Dog",
+     "repr": "<__main__.Dog object at 0x0000022552EBD0A0>",
+     "fields": {}
+    },
+    "0x22552eb6290": {
+     "id": "0x22552eb6290",
+     "type": "str",
+     "repr": "'보리'"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    }
+   },
+   "stdout": "",
+   "note": "인스턴스가 만들어진 직후 자동 호출. self 는 그 새 인스턴스"
+  },
+  {
+   "line": 3,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 10,
+     "locals": {
+      "Dog": {
+       "ref": "0x22552d3fc60"
+      },
+      "d1": {
+       "ref": "0x22552ebd040"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 3,
+     "locals": {
+      "self": {
+       "ref": "0x22552ebd0a0"
+      },
+      "name": {
+       "ref": "0x22552eb6290"
+      },
+      "age": {
+       "ref": "0x7ffd7f2b4a38"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x22552d3fc60": {
+     "id": "0x22552d3fc60",
+     "type": "type",
+     "repr": "Dog"
+    },
+    "0x22552ebd040": {
+     "id": "0x22552ebd040",
+     "type": "Dog",
+     "repr": "<__main__.Dog object at 0x0000022552EBD040>",
+     "fields": {
+      "name": {
+       "ref": "0x22552eb6240"
+      },
+      "age": {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     }
+    },
+    "0x22552eb6240": {
+     "id": "0x22552eb6240",
+     "type": "str",
+     "repr": "'초코'"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x22552ebd0a0": {
+     "id": "0x22552ebd0a0",
+     "type": "Dog",
+     "repr": "<__main__.Dog object at 0x0000022552EBD0A0>",
+     "fields": {}
+    },
+    "0x22552eb6290": {
+     "id": "0x22552eb6290",
+     "type": "str",
+     "repr": "'보리'"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    }
+   },
+   "stdout": "",
+   "note": "인스턴스에 속성을 붙인다 — self.__dict__[\"name\"] = name 과 같다"
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 10,
+     "locals": {
+      "Dog": {
+       "ref": "0x22552d3fc60"
+      },
+      "d1": {
+       "ref": "0x22552ebd040"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 4,
+     "locals": {
+      "self": {
+       "ref": "0x22552ebd0a0"
+      },
+      "name": {
+       "ref": "0x22552eb6290"
+      },
+      "age": {
+       "ref": "0x7ffd7f2b4a38"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x22552d3fc60": {
+     "id": "0x22552d3fc60",
+     "type": "type",
+     "repr": "Dog"
+    },
+    "0x22552ebd040": {
+     "id": "0x22552ebd040",
+     "type": "Dog",
+     "repr": "<__main__.Dog object at 0x0000022552EBD040>",
+     "fields": {
+      "name": {
+       "ref": "0x22552eb6240"
+      },
+      "age": {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     }
+    },
+    "0x22552eb6240": {
+     "id": "0x22552eb6240",
+     "type": "str",
+     "repr": "'초코'"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x22552ebd0a0": {
+     "id": "0x22552ebd0a0",
+     "type": "Dog",
+     "repr": "<__main__.Dog object at 0x0000022552EBD0A0>",
+     "fields": {
+      "name": {
+       "ref": "0x22552eb6290"
+      }
+     }
+    },
+    "0x22552eb6290": {
+     "id": "0x22552eb6290",
+     "type": "str",
+     "repr": "'보리'"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 4,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 10,
+     "locals": {
+      "Dog": {
+       "ref": "0x22552d3fc60"
+      },
+      "d1": {
+       "ref": "0x22552ebd040"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 4,
+     "locals": {
+      "self": {
+       "ref": "0x22552ebd0a0"
+      },
+      "name": {
+       "ref": "0x22552eb6290"
+      },
+      "age": {
+       "ref": "0x7ffd7f2b4a38"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x22552d3fc60": {
+     "id": "0x22552d3fc60",
+     "type": "type",
+     "repr": "Dog"
+    },
+    "0x22552ebd040": {
+     "id": "0x22552ebd040",
+     "type": "Dog",
+     "repr": "<__main__.Dog object at 0x0000022552EBD040>",
+     "fields": {
+      "name": {
+       "ref": "0x22552eb6240"
+      },
+      "age": {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     }
+    },
+    "0x22552eb6240": {
+     "id": "0x22552eb6240",
+     "type": "str",
+     "repr": "'초코'"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x22552ebd0a0": {
+     "id": "0x22552ebd0a0",
+     "type": "Dog",
+     "repr": "<__main__.Dog object at 0x0000022552EBD0A0>",
+     "fields": {
+      "name": {
+       "ref": "0x22552eb6290"
+      },
+      "age": {
+       "ref": "0x7ffd7f2b4a38"
+      }
+     }
+    },
+    "0x22552eb6290": {
+     "id": "0x22552eb6290",
+     "type": "str",
+     "repr": "'보리'"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 11,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 11,
+     "locals": {
+      "Dog": {
+       "ref": "0x22552d3fc60"
+      },
+      "d1": {
+       "ref": "0x22552ebd040"
+      },
+      "d2": {
+       "ref": "0x22552ebd0a0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x22552d3fc60": {
+     "id": "0x22552d3fc60",
+     "type": "type",
+     "repr": "Dog"
+    },
+    "0x22552ebd040": {
+     "id": "0x22552ebd040",
+     "type": "Dog",
+     "repr": "<__main__.Dog object at 0x0000022552EBD040>",
+     "fields": {
+      "name": {
+       "ref": "0x22552eb6240"
+      },
+      "age": {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     }
+    },
+    "0x22552eb6240": {
+     "id": "0x22552eb6240",
+     "type": "str",
+     "repr": "'초코'"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x22552ebd0a0": {
+     "id": "0x22552ebd0a0",
+     "type": "Dog",
+     "repr": "<__main__.Dog object at 0x0000022552EBD0A0>",
+     "fields": {
+      "name": {
+       "ref": "0x22552eb6290"
+      },
+      "age": {
+       "ref": "0x7ffd7f2b4a38"
+      }
+     }
+    },
+    "0x22552eb6290": {
+     "id": "0x22552eb6290",
+     "type": "str",
+     "repr": "'보리'"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 12,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 12,
+     "locals": {
+      "Dog": {
+       "ref": "0x22552d3fc60"
+      },
+      "d1": {
+       "ref": "0x22552ebd040"
+      },
+      "d2": {
+       "ref": "0x22552ebd0a0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x22552d3fc60": {
+     "id": "0x22552d3fc60",
+     "type": "type",
+     "repr": "Dog"
+    },
+    "0x22552ebd040": {
+     "id": "0x22552ebd040",
+     "type": "Dog",
+     "repr": "<__main__.Dog object at 0x0000022552EBD040>",
+     "fields": {
+      "name": {
+       "ref": "0x22552eb6240"
+      },
+      "age": {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     }
+    },
+    "0x22552eb6240": {
+     "id": "0x22552eb6240",
+     "type": "str",
+     "repr": "'초코'"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x22552ebd0a0": {
+     "id": "0x22552ebd0a0",
+     "type": "Dog",
+     "repr": "<__main__.Dog object at 0x0000022552EBD0A0>",
+     "fields": {
+      "name": {
+       "ref": "0x22552eb6290"
+      },
+      "age": {
+       "ref": "0x7ffd7f2b4a38"
+      }
+     }
+    },
+    "0x22552eb6290": {
+     "id": "0x22552eb6290",
+     "type": "str",
+     "repr": "'보리'"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    }
+   },
+   "stdout": "초코 보리\n",
+   "note": "d1.bark() 는 Dog.bark(d1) 과 같다"
+  },
+  {
+   "line": 6,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 12,
+     "locals": {
+      "Dog": {
+       "ref": "0x22552d3fc60"
+      },
+      "d1": {
+       "ref": "0x22552ebd040"
+      },
+      "d2": {
+       "ref": "0x22552ebd0a0"
+      }
+     }
+    },
+    {
+     "fn": "bark",
+     "line": 6,
+     "locals": {
+      "self": {
+       "ref": "0x22552ebd040"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x22552d3fc60": {
+     "id": "0x22552d3fc60",
+     "type": "type",
+     "repr": "Dog"
+    },
+    "0x22552ebd040": {
+     "id": "0x22552ebd040",
+     "type": "Dog",
+     "repr": "<__main__.Dog object at 0x0000022552EBD040>",
+     "fields": {
+      "name": {
+       "ref": "0x22552eb6240"
+      },
+      "age": {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     }
+    },
+    "0x22552eb6240": {
+     "id": "0x22552eb6240",
+     "type": "str",
+     "repr": "'초코'"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x22552ebd0a0": {
+     "id": "0x22552ebd0a0",
+     "type": "Dog",
+     "repr": "<__main__.Dog object at 0x0000022552EBD0A0>",
+     "fields": {
+      "name": {
+       "ref": "0x22552eb6290"
+      },
+      "age": {
+       "ref": "0x7ffd7f2b4a38"
+      }
+     }
+    },
+    "0x22552eb6290": {
+     "id": "0x22552eb6290",
+     "type": "str",
+     "repr": "'보리'"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    }
+   },
+   "stdout": "초코 보리\n"
+  },
+  {
+   "line": 7,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 12,
+     "locals": {
+      "Dog": {
+       "ref": "0x22552d3fc60"
+      },
+      "d1": {
+       "ref": "0x22552ebd040"
+      },
+      "d2": {
+       "ref": "0x22552ebd0a0"
+      }
+     }
+    },
+    {
+     "fn": "bark",
+     "line": 7,
+     "locals": {
+      "self": {
+       "ref": "0x22552ebd040"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x22552d3fc60": {
+     "id": "0x22552d3fc60",
+     "type": "type",
+     "repr": "Dog"
+    },
+    "0x22552ebd040": {
+     "id": "0x22552ebd040",
+     "type": "Dog",
+     "repr": "<__main__.Dog object at 0x0000022552EBD040>",
+     "fields": {
+      "name": {
+       "ref": "0x22552eb6240"
+      },
+      "age": {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     }
+    },
+    "0x22552eb6240": {
+     "id": "0x22552eb6240",
+     "type": "str",
+     "repr": "'초코'"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x22552ebd0a0": {
+     "id": "0x22552ebd0a0",
+     "type": "Dog",
+     "repr": "<__main__.Dog object at 0x0000022552EBD0A0>",
+     "fields": {
+      "name": {
+       "ref": "0x22552eb6290"
+      },
+      "age": {
+       "ref": "0x7ffd7f2b4a38"
+      }
+     }
+    },
+    "0x22552eb6290": {
+     "id": "0x22552eb6290",
+     "type": "str",
+     "repr": "'보리'"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    }
+   },
+   "stdout": "초코 보리\n"
+  },
+  {
+   "line": 7,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 12,
+     "locals": {
+      "Dog": {
+       "ref": "0x22552d3fc60"
+      },
+      "d1": {
+       "ref": "0x22552ebd040"
+      },
+      "d2": {
+       "ref": "0x22552ebd0a0"
+      }
+     }
+    },
+    {
+     "fn": "bark",
+     "line": 7,
+     "locals": {
+      "self": {
+       "ref": "0x22552ebd040"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x22552d3fc60": {
+     "id": "0x22552d3fc60",
+     "type": "type",
+     "repr": "Dog"
+    },
+    "0x22552ebd040": {
+     "id": "0x22552ebd040",
+     "type": "Dog",
+     "repr": "<__main__.Dog object at 0x0000022552EBD040>",
+     "fields": {
+      "name": {
+       "ref": "0x22552eb6240"
+      },
+      "age": {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     }
+    },
+    "0x22552eb6240": {
+     "id": "0x22552eb6240",
+     "type": "str",
+     "repr": "'초코'"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x22552ebd0a0": {
+     "id": "0x22552ebd0a0",
+     "type": "Dog",
+     "repr": "<__main__.Dog object at 0x0000022552EBD0A0>",
+     "fields": {
+      "name": {
+       "ref": "0x22552eb6290"
+      },
+      "age": {
+       "ref": "0x7ffd7f2b4a38"
+      }
+     }
+    },
+    "0x22552eb6290": {
+     "id": "0x22552eb6290",
+     "type": "str",
+     "repr": "'보리'"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    }
+   },
+   "stdout": "초코 보리\n",
+   "retval": "'초코: 멍!'"
+  },
+  {
+   "line": 13,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 13,
+     "locals": {
+      "Dog": {
+       "ref": "0x22552d3fc60"
+      },
+      "d1": {
+       "ref": "0x22552ebd040"
+      },
+      "d2": {
+       "ref": "0x22552ebd0a0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x22552d3fc60": {
+     "id": "0x22552d3fc60",
+     "type": "type",
+     "repr": "Dog"
+    },
+    "0x22552ebd040": {
+     "id": "0x22552ebd040",
+     "type": "Dog",
+     "repr": "<__main__.Dog object at 0x0000022552EBD040>",
+     "fields": {
+      "name": {
+       "ref": "0x22552eb6240"
+      },
+      "age": {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     }
+    },
+    "0x22552eb6240": {
+     "id": "0x22552eb6240",
+     "type": "str",
+     "repr": "'초코'"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x22552ebd0a0": {
+     "id": "0x22552ebd0a0",
+     "type": "Dog",
+     "repr": "<__main__.Dog object at 0x0000022552EBD0A0>",
+     "fields": {
+      "name": {
+       "ref": "0x22552eb6290"
+      },
+      "age": {
+       "ref": "0x7ffd7f2b4a38"
+      }
+     }
+    },
+    "0x22552eb6290": {
+     "id": "0x22552eb6290",
+     "type": "str",
+     "repr": "'보리'"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    }
+   },
+   "stdout": "초코 보리\n초코: 멍!\n",
+   "note": "인스턴스 속성은 그냥 딕셔너리다"
+  },
+  {
+   "line": 14,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 14,
+     "locals": {
+      "Dog": {
+       "ref": "0x22552d3fc60"
+      },
+      "d1": {
+       "ref": "0x22552ebd040"
+      },
+      "d2": {
+       "ref": "0x22552ebd0a0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x22552d3fc60": {
+     "id": "0x22552d3fc60",
+     "type": "type",
+     "repr": "Dog"
+    },
+    "0x22552ebd040": {
+     "id": "0x22552ebd040",
+     "type": "Dog",
+     "repr": "<__main__.Dog object at 0x0000022552EBD040>",
+     "fields": {
+      "name": {
+       "ref": "0x22552eb6240"
+      },
+      "age": {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     }
+    },
+    "0x22552eb6240": {
+     "id": "0x22552eb6240",
+     "type": "str",
+     "repr": "'초코'"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x22552ebd0a0": {
+     "id": "0x22552ebd0a0",
+     "type": "Dog",
+     "repr": "<__main__.Dog object at 0x0000022552EBD0A0>",
+     "fields": {
+      "name": {
+       "ref": "0x22552eb6290"
+      },
+      "age": {
+       "ref": "0x7ffd7f2b4a38"
+      }
+     }
+    },
+    "0x22552eb6290": {
+     "id": "0x22552eb6290",
+     "type": "str",
+     "repr": "'보리'"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    }
+   },
+   "stdout": "초코 보리\n초코: 멍!\n{'name': '초코', 'age': 3}\n"
+  },
+  {
+   "line": 14,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 14,
+     "locals": {
+      "Dog": {
+       "ref": "0x22552d3fc60"
+      },
+      "d1": {
+       "ref": "0x22552ebd040"
+      },
+      "d2": {
+       "ref": "0x22552ebd0a0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x22552d3fc60": {
+     "id": "0x22552d3fc60",
+     "type": "type",
+     "repr": "Dog"
+    },
+    "0x22552ebd040": {
+     "id": "0x22552ebd040",
+     "type": "Dog",
+     "repr": "<__main__.Dog object at 0x0000022552EBD040>",
+     "fields": {
+      "name": {
+       "ref": "0x22552eb6240"
+      },
+      "age": {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     }
+    },
+    "0x22552eb6240": {
+     "id": "0x22552eb6240",
+     "type": "str",
+     "repr": "'초코'"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x22552ebd0a0": {
+     "id": "0x22552ebd0a0",
+     "type": "Dog",
+     "repr": "<__main__.Dog object at 0x0000022552EBD0A0>",
+     "fields": {
+      "name": {
+       "ref": "0x22552eb6290"
+      },
+      "age": {
+       "ref": "0x7ffd7f2b4a38"
+      }
+     }
+    },
+    "0x22552eb6290": {
+     "id": "0x22552eb6290",
+     "type": "str",
+     "repr": "'보리'"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    }
+   },
+   "stdout": "초코 보리\n초코: 멍!\n{'name': '초코', 'age': 3}\n<class '__main__.Dog'> True\n"
+  }
+ ],
+ "v": 1
+}

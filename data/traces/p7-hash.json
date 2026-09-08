@@ -1,0 +1,2912 @@
+{
+ "id": "p7-hash",
+ "code": "class Point:\n    def __init__(self, x, y):\n        self.x, self.y = x, y\n    def __eq__(self, o):\n        return (self.x, self.y) == (o.x, o.y)\n    def __hash__(self):\n        return hash((self.x, self.y))\n\np, q = Point(1, 2), Point(1, 2)\nprint(p == q, p is q, hash(p) == hash(q))\nvisited = {p}\nprint(q in visited)\n\nclass Bad:\n    def __eq__(self, o): return True\nprint(hash(Bad()))",
+ "steps": [
+  {
+   "line": 0,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 0,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Point",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Point",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Point",
+     "line": 2,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Point",
+     "line": 4,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 6,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Point",
+     "line": 6,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": "",
+   "note": "__eq__ 를 정의하면 __hash__ 는 사라진다 — 직접 정의해야 딕셔너리 키가 된다"
+  },
+  {
+   "line": 6,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Point",
+     "line": 6,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 9,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 9,
+     "locals": {
+      "Point": {
+       "ref": "0x20d7b360d40"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x20d7b360d40": {
+     "id": "0x20d7b360d40",
+     "type": "type",
+     "repr": "Point"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 2,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 9,
+     "locals": {
+      "Point": {
+       "ref": "0x20d7b360d40"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 2,
+     "locals": {
+      "self": {
+       "ref": "0x20d7b4fd1c0"
+      },
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x20d7b360d40": {
+     "id": "0x20d7b360d40",
+     "type": "type",
+     "repr": "Point"
+    },
+    "0x20d7b4fd1c0": {
+     "id": "0x20d7b4fd1c0",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD1C0>",
+     "fields": {}
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 3,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 9,
+     "locals": {
+      "Point": {
+       "ref": "0x20d7b360d40"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 3,
+     "locals": {
+      "self": {
+       "ref": "0x20d7b4fd1c0"
+      },
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x20d7b360d40": {
+     "id": "0x20d7b360d40",
+     "type": "type",
+     "repr": "Point"
+    },
+    "0x20d7b4fd1c0": {
+     "id": "0x20d7b4fd1c0",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD1C0>",
+     "fields": {}
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 3,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 9,
+     "locals": {
+      "Point": {
+       "ref": "0x20d7b360d40"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 3,
+     "locals": {
+      "self": {
+       "ref": "0x20d7b4fd1c0"
+      },
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x20d7b360d40": {
+     "id": "0x20d7b360d40",
+     "type": "type",
+     "repr": "Point"
+    },
+    "0x20d7b4fd1c0": {
+     "id": "0x20d7b4fd1c0",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD1C0>",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 2,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 9,
+     "locals": {
+      "Point": {
+       "ref": "0x20d7b360d40"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 2,
+     "locals": {
+      "self": {
+       "ref": "0x20d7b4fd280"
+      },
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x20d7b360d40": {
+     "id": "0x20d7b360d40",
+     "type": "type",
+     "repr": "Point"
+    },
+    "0x20d7b4fd280": {
+     "id": "0x20d7b4fd280",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD280>",
+     "fields": {}
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 3,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 9,
+     "locals": {
+      "Point": {
+       "ref": "0x20d7b360d40"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 3,
+     "locals": {
+      "self": {
+       "ref": "0x20d7b4fd280"
+      },
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x20d7b360d40": {
+     "id": "0x20d7b360d40",
+     "type": "type",
+     "repr": "Point"
+    },
+    "0x20d7b4fd280": {
+     "id": "0x20d7b4fd280",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD280>",
+     "fields": {}
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 3,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 9,
+     "locals": {
+      "Point": {
+       "ref": "0x20d7b360d40"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 3,
+     "locals": {
+      "self": {
+       "ref": "0x20d7b4fd280"
+      },
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x20d7b360d40": {
+     "id": "0x20d7b360d40",
+     "type": "type",
+     "repr": "Point"
+    },
+    "0x20d7b4fd280": {
+     "id": "0x20d7b4fd280",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD280>",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 10,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 10,
+     "locals": {
+      "Point": {
+       "ref": "0x20d7b360d40"
+      },
+      "p": {
+       "ref": "0x20d7b4fd1c0"
+      },
+      "q": {
+       "ref": "0x20d7b4fd280"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x20d7b360d40": {
+     "id": "0x20d7b360d40",
+     "type": "type",
+     "repr": "Point"
+    },
+    "0x20d7b4fd1c0": {
+     "id": "0x20d7b4fd1c0",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD1C0>",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x20d7b4fd280": {
+     "id": "0x20d7b4fd280",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD280>",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 4,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 10,
+     "locals": {
+      "Point": {
+       "ref": "0x20d7b360d40"
+      },
+      "p": {
+       "ref": "0x20d7b4fd1c0"
+      },
+      "q": {
+       "ref": "0x20d7b4fd280"
+      }
+     }
+    },
+    {
+     "fn": "__eq__",
+     "line": 4,
+     "locals": {
+      "self": {
+       "ref": "0x20d7b4fd1c0"
+      },
+      "o": {
+       "ref": "0x20d7b4fd280"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x20d7b360d40": {
+     "id": "0x20d7b360d40",
+     "type": "type",
+     "repr": "Point"
+    },
+    "0x20d7b4fd1c0": {
+     "id": "0x20d7b4fd1c0",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD1C0>",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x20d7b4fd280": {
+     "id": "0x20d7b4fd280",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD280>",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 10,
+     "locals": {
+      "Point": {
+       "ref": "0x20d7b360d40"
+      },
+      "p": {
+       "ref": "0x20d7b4fd1c0"
+      },
+      "q": {
+       "ref": "0x20d7b4fd280"
+      }
+     }
+    },
+    {
+     "fn": "__eq__",
+     "line": 5,
+     "locals": {
+      "self": {
+       "ref": "0x20d7b4fd1c0"
+      },
+      "o": {
+       "ref": "0x20d7b4fd280"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x20d7b360d40": {
+     "id": "0x20d7b360d40",
+     "type": "type",
+     "repr": "Point"
+    },
+    "0x20d7b4fd1c0": {
+     "id": "0x20d7b4fd1c0",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD1C0>",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x20d7b4fd280": {
+     "id": "0x20d7b4fd280",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD280>",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 5,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 10,
+     "locals": {
+      "Point": {
+       "ref": "0x20d7b360d40"
+      },
+      "p": {
+       "ref": "0x20d7b4fd1c0"
+      },
+      "q": {
+       "ref": "0x20d7b4fd280"
+      }
+     }
+    },
+    {
+     "fn": "__eq__",
+     "line": 5,
+     "locals": {
+      "self": {
+       "ref": "0x20d7b4fd1c0"
+      },
+      "o": {
+       "ref": "0x20d7b4fd280"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x20d7b360d40": {
+     "id": "0x20d7b360d40",
+     "type": "type",
+     "repr": "Point"
+    },
+    "0x20d7b4fd1c0": {
+     "id": "0x20d7b4fd1c0",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD1C0>",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x20d7b4fd280": {
+     "id": "0x20d7b4fd280",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD280>",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    }
+   },
+   "stdout": "",
+   "retval": "True"
+  },
+  {
+   "line": 6,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 10,
+     "locals": {
+      "Point": {
+       "ref": "0x20d7b360d40"
+      },
+      "p": {
+       "ref": "0x20d7b4fd1c0"
+      },
+      "q": {
+       "ref": "0x20d7b4fd280"
+      }
+     }
+    },
+    {
+     "fn": "__hash__",
+     "line": 6,
+     "locals": {
+      "self": {
+       "ref": "0x20d7b4fd1c0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x20d7b360d40": {
+     "id": "0x20d7b360d40",
+     "type": "type",
+     "repr": "Point"
+    },
+    "0x20d7b4fd1c0": {
+     "id": "0x20d7b4fd1c0",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD1C0>",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x20d7b4fd280": {
+     "id": "0x20d7b4fd280",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD280>",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    }
+   },
+   "stdout": "",
+   "note": "__eq__ 를 정의하면 __hash__ 는 사라진다 — 직접 정의해야 딕셔너리 키가 된다"
+  },
+  {
+   "line": 7,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 10,
+     "locals": {
+      "Point": {
+       "ref": "0x20d7b360d40"
+      },
+      "p": {
+       "ref": "0x20d7b4fd1c0"
+      },
+      "q": {
+       "ref": "0x20d7b4fd280"
+      }
+     }
+    },
+    {
+     "fn": "__hash__",
+     "line": 7,
+     "locals": {
+      "self": {
+       "ref": "0x20d7b4fd1c0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x20d7b360d40": {
+     "id": "0x20d7b360d40",
+     "type": "type",
+     "repr": "Point"
+    },
+    "0x20d7b4fd1c0": {
+     "id": "0x20d7b4fd1c0",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD1C0>",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x20d7b4fd280": {
+     "id": "0x20d7b4fd280",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD280>",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    }
+   },
+   "stdout": "",
+   "note": "같은 값이면 같은 해시 — 튜플 해시를 빌린다"
+  },
+  {
+   "line": 7,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 10,
+     "locals": {
+      "Point": {
+       "ref": "0x20d7b360d40"
+      },
+      "p": {
+       "ref": "0x20d7b4fd1c0"
+      },
+      "q": {
+       "ref": "0x20d7b4fd280"
+      }
+     }
+    },
+    {
+     "fn": "__hash__",
+     "line": 7,
+     "locals": {
+      "self": {
+       "ref": "0x20d7b4fd1c0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x20d7b360d40": {
+     "id": "0x20d7b360d40",
+     "type": "type",
+     "repr": "Point"
+    },
+    "0x20d7b4fd1c0": {
+     "id": "0x20d7b4fd1c0",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD1C0>",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x20d7b4fd280": {
+     "id": "0x20d7b4fd280",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD280>",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    }
+   },
+   "stdout": "",
+   "retval": "-3550055125485641917"
+  },
+  {
+   "line": 6,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 10,
+     "locals": {
+      "Point": {
+       "ref": "0x20d7b360d40"
+      },
+      "p": {
+       "ref": "0x20d7b4fd1c0"
+      },
+      "q": {
+       "ref": "0x20d7b4fd280"
+      }
+     }
+    },
+    {
+     "fn": "__hash__",
+     "line": 6,
+     "locals": {
+      "self": {
+       "ref": "0x20d7b4fd280"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x20d7b360d40": {
+     "id": "0x20d7b360d40",
+     "type": "type",
+     "repr": "Point"
+    },
+    "0x20d7b4fd1c0": {
+     "id": "0x20d7b4fd1c0",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD1C0>",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x20d7b4fd280": {
+     "id": "0x20d7b4fd280",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD280>",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    }
+   },
+   "stdout": "",
+   "note": "__eq__ 를 정의하면 __hash__ 는 사라진다 — 직접 정의해야 딕셔너리 키가 된다"
+  },
+  {
+   "line": 7,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 10,
+     "locals": {
+      "Point": {
+       "ref": "0x20d7b360d40"
+      },
+      "p": {
+       "ref": "0x20d7b4fd1c0"
+      },
+      "q": {
+       "ref": "0x20d7b4fd280"
+      }
+     }
+    },
+    {
+     "fn": "__hash__",
+     "line": 7,
+     "locals": {
+      "self": {
+       "ref": "0x20d7b4fd280"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x20d7b360d40": {
+     "id": "0x20d7b360d40",
+     "type": "type",
+     "repr": "Point"
+    },
+    "0x20d7b4fd1c0": {
+     "id": "0x20d7b4fd1c0",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD1C0>",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x20d7b4fd280": {
+     "id": "0x20d7b4fd280",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD280>",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    }
+   },
+   "stdout": "",
+   "note": "같은 값이면 같은 해시 — 튜플 해시를 빌린다"
+  },
+  {
+   "line": 7,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 10,
+     "locals": {
+      "Point": {
+       "ref": "0x20d7b360d40"
+      },
+      "p": {
+       "ref": "0x20d7b4fd1c0"
+      },
+      "q": {
+       "ref": "0x20d7b4fd280"
+      }
+     }
+    },
+    {
+     "fn": "__hash__",
+     "line": 7,
+     "locals": {
+      "self": {
+       "ref": "0x20d7b4fd280"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x20d7b360d40": {
+     "id": "0x20d7b360d40",
+     "type": "type",
+     "repr": "Point"
+    },
+    "0x20d7b4fd1c0": {
+     "id": "0x20d7b4fd1c0",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD1C0>",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x20d7b4fd280": {
+     "id": "0x20d7b4fd280",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD280>",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    }
+   },
+   "stdout": "",
+   "retval": "-3550055125485641917"
+  },
+  {
+   "line": 11,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 11,
+     "locals": {
+      "Point": {
+       "ref": "0x20d7b360d40"
+      },
+      "p": {
+       "ref": "0x20d7b4fd1c0"
+      },
+      "q": {
+       "ref": "0x20d7b4fd280"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x20d7b360d40": {
+     "id": "0x20d7b360d40",
+     "type": "type",
+     "repr": "Point"
+    },
+    "0x20d7b4fd1c0": {
+     "id": "0x20d7b4fd1c0",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD1C0>",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x20d7b4fd280": {
+     "id": "0x20d7b4fd280",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD280>",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    }
+   },
+   "stdout": "True False True\n"
+  },
+  {
+   "line": 6,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 11,
+     "locals": {
+      "Point": {
+       "ref": "0x20d7b360d40"
+      },
+      "p": {
+       "ref": "0x20d7b4fd1c0"
+      },
+      "q": {
+       "ref": "0x20d7b4fd280"
+      }
+     }
+    },
+    {
+     "fn": "__hash__",
+     "line": 6,
+     "locals": {
+      "self": {
+       "ref": "0x20d7b4fd1c0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x20d7b360d40": {
+     "id": "0x20d7b360d40",
+     "type": "type",
+     "repr": "Point"
+    },
+    "0x20d7b4fd1c0": {
+     "id": "0x20d7b4fd1c0",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD1C0>",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x20d7b4fd280": {
+     "id": "0x20d7b4fd280",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD280>",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    }
+   },
+   "stdout": "True False True\n",
+   "note": "__eq__ 를 정의하면 __hash__ 는 사라진다 — 직접 정의해야 딕셔너리 키가 된다"
+  },
+  {
+   "line": 7,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 11,
+     "locals": {
+      "Point": {
+       "ref": "0x20d7b360d40"
+      },
+      "p": {
+       "ref": "0x20d7b4fd1c0"
+      },
+      "q": {
+       "ref": "0x20d7b4fd280"
+      }
+     }
+    },
+    {
+     "fn": "__hash__",
+     "line": 7,
+     "locals": {
+      "self": {
+       "ref": "0x20d7b4fd1c0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x20d7b360d40": {
+     "id": "0x20d7b360d40",
+     "type": "type",
+     "repr": "Point"
+    },
+    "0x20d7b4fd1c0": {
+     "id": "0x20d7b4fd1c0",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD1C0>",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x20d7b4fd280": {
+     "id": "0x20d7b4fd280",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD280>",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    }
+   },
+   "stdout": "True False True\n",
+   "note": "같은 값이면 같은 해시 — 튜플 해시를 빌린다"
+  },
+  {
+   "line": 7,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 11,
+     "locals": {
+      "Point": {
+       "ref": "0x20d7b360d40"
+      },
+      "p": {
+       "ref": "0x20d7b4fd1c0"
+      },
+      "q": {
+       "ref": "0x20d7b4fd280"
+      }
+     }
+    },
+    {
+     "fn": "__hash__",
+     "line": 7,
+     "locals": {
+      "self": {
+       "ref": "0x20d7b4fd1c0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x20d7b360d40": {
+     "id": "0x20d7b360d40",
+     "type": "type",
+     "repr": "Point"
+    },
+    "0x20d7b4fd1c0": {
+     "id": "0x20d7b4fd1c0",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD1C0>",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x20d7b4fd280": {
+     "id": "0x20d7b4fd280",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD280>",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    }
+   },
+   "stdout": "True False True\n",
+   "retval": "-3550055125485641917"
+  },
+  {
+   "line": 12,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 12,
+     "locals": {
+      "Point": {
+       "ref": "0x20d7b360d40"
+      },
+      "p": {
+       "ref": "0x20d7b4fd1c0"
+      },
+      "q": {
+       "ref": "0x20d7b4fd280"
+      },
+      "visited": {
+       "ref": "0x20d7b24ea40"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x20d7b360d40": {
+     "id": "0x20d7b360d40",
+     "type": "type",
+     "repr": "Point"
+    },
+    "0x20d7b4fd1c0": {
+     "id": "0x20d7b4fd1c0",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD1C0>",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x20d7b4fd280": {
+     "id": "0x20d7b4fd280",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD280>",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x20d7b24ea40": {
+     "id": "0x20d7b24ea40",
+     "type": "set",
+     "repr": "{<__main__.Point object at 0x0000020D7B4FD1C0>}",
+     "items": [
+      {
+       "ref": "0x20d7b4fd1c0"
+      }
+     ]
+    }
+   },
+   "stdout": "True False True\n",
+   "note": "값이 같으면 같은 원소로 취급 — 해시가 같고 == 가 True 니까"
+  },
+  {
+   "line": 6,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 12,
+     "locals": {
+      "Point": {
+       "ref": "0x20d7b360d40"
+      },
+      "p": {
+       "ref": "0x20d7b4fd1c0"
+      },
+      "q": {
+       "ref": "0x20d7b4fd280"
+      },
+      "visited": {
+       "ref": "0x20d7b24ea40"
+      }
+     }
+    },
+    {
+     "fn": "__hash__",
+     "line": 6,
+     "locals": {
+      "self": {
+       "ref": "0x20d7b4fd280"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x20d7b360d40": {
+     "id": "0x20d7b360d40",
+     "type": "type",
+     "repr": "Point"
+    },
+    "0x20d7b4fd1c0": {
+     "id": "0x20d7b4fd1c0",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD1C0>",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x20d7b4fd280": {
+     "id": "0x20d7b4fd280",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD280>",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x20d7b24ea40": {
+     "id": "0x20d7b24ea40",
+     "type": "set",
+     "repr": "{<__main__.Point object at 0x0000020D7B4FD1C0>}",
+     "items": [
+      {
+       "ref": "0x20d7b4fd1c0"
+      }
+     ]
+    }
+   },
+   "stdout": "True False True\n",
+   "note": "__eq__ 를 정의하면 __hash__ 는 사라진다 — 직접 정의해야 딕셔너리 키가 된다"
+  },
+  {
+   "line": 7,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 12,
+     "locals": {
+      "Point": {
+       "ref": "0x20d7b360d40"
+      },
+      "p": {
+       "ref": "0x20d7b4fd1c0"
+      },
+      "q": {
+       "ref": "0x20d7b4fd280"
+      },
+      "visited": {
+       "ref": "0x20d7b24ea40"
+      }
+     }
+    },
+    {
+     "fn": "__hash__",
+     "line": 7,
+     "locals": {
+      "self": {
+       "ref": "0x20d7b4fd280"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x20d7b360d40": {
+     "id": "0x20d7b360d40",
+     "type": "type",
+     "repr": "Point"
+    },
+    "0x20d7b4fd1c0": {
+     "id": "0x20d7b4fd1c0",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD1C0>",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x20d7b4fd280": {
+     "id": "0x20d7b4fd280",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD280>",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x20d7b24ea40": {
+     "id": "0x20d7b24ea40",
+     "type": "set",
+     "repr": "{<__main__.Point object at 0x0000020D7B4FD1C0>}",
+     "items": [
+      {
+       "ref": "0x20d7b4fd1c0"
+      }
+     ]
+    }
+   },
+   "stdout": "True False True\n",
+   "note": "같은 값이면 같은 해시 — 튜플 해시를 빌린다"
+  },
+  {
+   "line": 7,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 12,
+     "locals": {
+      "Point": {
+       "ref": "0x20d7b360d40"
+      },
+      "p": {
+       "ref": "0x20d7b4fd1c0"
+      },
+      "q": {
+       "ref": "0x20d7b4fd280"
+      },
+      "visited": {
+       "ref": "0x20d7b24ea40"
+      }
+     }
+    },
+    {
+     "fn": "__hash__",
+     "line": 7,
+     "locals": {
+      "self": {
+       "ref": "0x20d7b4fd280"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x20d7b360d40": {
+     "id": "0x20d7b360d40",
+     "type": "type",
+     "repr": "Point"
+    },
+    "0x20d7b4fd1c0": {
+     "id": "0x20d7b4fd1c0",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD1C0>",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x20d7b4fd280": {
+     "id": "0x20d7b4fd280",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD280>",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x20d7b24ea40": {
+     "id": "0x20d7b24ea40",
+     "type": "set",
+     "repr": "{<__main__.Point object at 0x0000020D7B4FD1C0>}",
+     "items": [
+      {
+       "ref": "0x20d7b4fd1c0"
+      }
+     ]
+    }
+   },
+   "stdout": "True False True\n",
+   "retval": "-3550055125485641917"
+  },
+  {
+   "line": 4,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 12,
+     "locals": {
+      "Point": {
+       "ref": "0x20d7b360d40"
+      },
+      "p": {
+       "ref": "0x20d7b4fd1c0"
+      },
+      "q": {
+       "ref": "0x20d7b4fd280"
+      },
+      "visited": {
+       "ref": "0x20d7b24ea40"
+      }
+     }
+    },
+    {
+     "fn": "__eq__",
+     "line": 4,
+     "locals": {
+      "self": {
+       "ref": "0x20d7b4fd1c0"
+      },
+      "o": {
+       "ref": "0x20d7b4fd280"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x20d7b360d40": {
+     "id": "0x20d7b360d40",
+     "type": "type",
+     "repr": "Point"
+    },
+    "0x20d7b4fd1c0": {
+     "id": "0x20d7b4fd1c0",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD1C0>",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x20d7b4fd280": {
+     "id": "0x20d7b4fd280",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD280>",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x20d7b24ea40": {
+     "id": "0x20d7b24ea40",
+     "type": "set",
+     "repr": "{<__main__.Point object at 0x0000020D7B4FD1C0>}",
+     "items": [
+      {
+       "ref": "0x20d7b4fd1c0"
+      }
+     ]
+    }
+   },
+   "stdout": "True False True\n"
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 12,
+     "locals": {
+      "Point": {
+       "ref": "0x20d7b360d40"
+      },
+      "p": {
+       "ref": "0x20d7b4fd1c0"
+      },
+      "q": {
+       "ref": "0x20d7b4fd280"
+      },
+      "visited": {
+       "ref": "0x20d7b24ea40"
+      }
+     }
+    },
+    {
+     "fn": "__eq__",
+     "line": 5,
+     "locals": {
+      "self": {
+       "ref": "0x20d7b4fd1c0"
+      },
+      "o": {
+       "ref": "0x20d7b4fd280"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x20d7b360d40": {
+     "id": "0x20d7b360d40",
+     "type": "type",
+     "repr": "Point"
+    },
+    "0x20d7b4fd1c0": {
+     "id": "0x20d7b4fd1c0",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD1C0>",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x20d7b4fd280": {
+     "id": "0x20d7b4fd280",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD280>",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x20d7b24ea40": {
+     "id": "0x20d7b24ea40",
+     "type": "set",
+     "repr": "{<__main__.Point object at 0x0000020D7B4FD1C0>}",
+     "items": [
+      {
+       "ref": "0x20d7b4fd1c0"
+      }
+     ]
+    }
+   },
+   "stdout": "True False True\n"
+  },
+  {
+   "line": 5,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 12,
+     "locals": {
+      "Point": {
+       "ref": "0x20d7b360d40"
+      },
+      "p": {
+       "ref": "0x20d7b4fd1c0"
+      },
+      "q": {
+       "ref": "0x20d7b4fd280"
+      },
+      "visited": {
+       "ref": "0x20d7b24ea40"
+      }
+     }
+    },
+    {
+     "fn": "__eq__",
+     "line": 5,
+     "locals": {
+      "self": {
+       "ref": "0x20d7b4fd1c0"
+      },
+      "o": {
+       "ref": "0x20d7b4fd280"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x20d7b360d40": {
+     "id": "0x20d7b360d40",
+     "type": "type",
+     "repr": "Point"
+    },
+    "0x20d7b4fd1c0": {
+     "id": "0x20d7b4fd1c0",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD1C0>",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x20d7b4fd280": {
+     "id": "0x20d7b4fd280",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD280>",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x20d7b24ea40": {
+     "id": "0x20d7b24ea40",
+     "type": "set",
+     "repr": "{<__main__.Point object at 0x0000020D7B4FD1C0>}",
+     "items": [
+      {
+       "ref": "0x20d7b4fd1c0"
+      }
+     ]
+    }
+   },
+   "stdout": "True False True\n",
+   "retval": "True"
+  },
+  {
+   "line": 14,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 14,
+     "locals": {
+      "Point": {
+       "ref": "0x20d7b360d40"
+      },
+      "p": {
+       "ref": "0x20d7b4fd1c0"
+      },
+      "q": {
+       "ref": "0x20d7b4fd280"
+      },
+      "visited": {
+       "ref": "0x20d7b24ea40"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x20d7b360d40": {
+     "id": "0x20d7b360d40",
+     "type": "type",
+     "repr": "Point"
+    },
+    "0x20d7b4fd1c0": {
+     "id": "0x20d7b4fd1c0",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD1C0>",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x20d7b4fd280": {
+     "id": "0x20d7b4fd280",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD280>",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x20d7b24ea40": {
+     "id": "0x20d7b24ea40",
+     "type": "set",
+     "repr": "{<__main__.Point object at 0x0000020D7B4FD1C0>}",
+     "items": [
+      {
+       "ref": "0x20d7b4fd1c0"
+      }
+     ]
+    }
+   },
+   "stdout": "True False True\nTrue\n"
+  },
+  {
+   "line": 14,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 14,
+     "locals": {
+      "Point": {
+       "ref": "0x20d7b360d40"
+      },
+      "p": {
+       "ref": "0x20d7b4fd1c0"
+      },
+      "q": {
+       "ref": "0x20d7b4fd280"
+      },
+      "visited": {
+       "ref": "0x20d7b24ea40"
+      }
+     }
+    },
+    {
+     "fn": "Bad",
+     "line": 14,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x20d7b360d40": {
+     "id": "0x20d7b360d40",
+     "type": "type",
+     "repr": "Point"
+    },
+    "0x20d7b4fd1c0": {
+     "id": "0x20d7b4fd1c0",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD1C0>",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x20d7b4fd280": {
+     "id": "0x20d7b4fd280",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD280>",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x20d7b24ea40": {
+     "id": "0x20d7b24ea40",
+     "type": "set",
+     "repr": "{<__main__.Point object at 0x0000020D7B4FD1C0>}",
+     "items": [
+      {
+       "ref": "0x20d7b4fd1c0"
+      }
+     ]
+    }
+   },
+   "stdout": "True False True\nTrue\n"
+  },
+  {
+   "line": 14,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 14,
+     "locals": {
+      "Point": {
+       "ref": "0x20d7b360d40"
+      },
+      "p": {
+       "ref": "0x20d7b4fd1c0"
+      },
+      "q": {
+       "ref": "0x20d7b4fd280"
+      },
+      "visited": {
+       "ref": "0x20d7b24ea40"
+      }
+     }
+    },
+    {
+     "fn": "Bad",
+     "line": 14,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x20d7b360d40": {
+     "id": "0x20d7b360d40",
+     "type": "type",
+     "repr": "Point"
+    },
+    "0x20d7b4fd1c0": {
+     "id": "0x20d7b4fd1c0",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD1C0>",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x20d7b4fd280": {
+     "id": "0x20d7b4fd280",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD280>",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x20d7b24ea40": {
+     "id": "0x20d7b24ea40",
+     "type": "set",
+     "repr": "{<__main__.Point object at 0x0000020D7B4FD1C0>}",
+     "items": [
+      {
+       "ref": "0x20d7b4fd1c0"
+      }
+     ]
+    }
+   },
+   "stdout": "True False True\nTrue\n"
+  },
+  {
+   "line": 15,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 14,
+     "locals": {
+      "Point": {
+       "ref": "0x20d7b360d40"
+      },
+      "p": {
+       "ref": "0x20d7b4fd1c0"
+      },
+      "q": {
+       "ref": "0x20d7b4fd280"
+      },
+      "visited": {
+       "ref": "0x20d7b24ea40"
+      }
+     }
+    },
+    {
+     "fn": "Bad",
+     "line": 15,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x20d7b360d40": {
+     "id": "0x20d7b360d40",
+     "type": "type",
+     "repr": "Point"
+    },
+    "0x20d7b4fd1c0": {
+     "id": "0x20d7b4fd1c0",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD1C0>",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x20d7b4fd280": {
+     "id": "0x20d7b4fd280",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD280>",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x20d7b24ea40": {
+     "id": "0x20d7b24ea40",
+     "type": "set",
+     "repr": "{<__main__.Point object at 0x0000020D7B4FD1C0>}",
+     "items": [
+      {
+       "ref": "0x20d7b4fd1c0"
+      }
+     ]
+    }
+   },
+   "stdout": "True False True\nTrue\n",
+   "note": "__eq__ 만 정의"
+  },
+  {
+   "line": 15,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 14,
+     "locals": {
+      "Point": {
+       "ref": "0x20d7b360d40"
+      },
+      "p": {
+       "ref": "0x20d7b4fd1c0"
+      },
+      "q": {
+       "ref": "0x20d7b4fd280"
+      },
+      "visited": {
+       "ref": "0x20d7b24ea40"
+      }
+     }
+    },
+    {
+     "fn": "Bad",
+     "line": 15,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x20d7b360d40": {
+     "id": "0x20d7b360d40",
+     "type": "type",
+     "repr": "Point"
+    },
+    "0x20d7b4fd1c0": {
+     "id": "0x20d7b4fd1c0",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD1C0>",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x20d7b4fd280": {
+     "id": "0x20d7b4fd280",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD280>",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x20d7b24ea40": {
+     "id": "0x20d7b24ea40",
+     "type": "set",
+     "repr": "{<__main__.Point object at 0x0000020D7B4FD1C0>}",
+     "items": [
+      {
+       "ref": "0x20d7b4fd1c0"
+      }
+     ]
+    }
+   },
+   "stdout": "True False True\nTrue\n"
+  },
+  {
+   "line": 16,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 16,
+     "locals": {
+      "Point": {
+       "ref": "0x20d7b360d40"
+      },
+      "p": {
+       "ref": "0x20d7b4fd1c0"
+      },
+      "q": {
+       "ref": "0x20d7b4fd280"
+      },
+      "visited": {
+       "ref": "0x20d7b24ea40"
+      },
+      "Bad": {
+       "ref": "0x20d7b363fa0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x20d7b360d40": {
+     "id": "0x20d7b360d40",
+     "type": "type",
+     "repr": "Point"
+    },
+    "0x20d7b4fd1c0": {
+     "id": "0x20d7b4fd1c0",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD1C0>",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x20d7b4fd280": {
+     "id": "0x20d7b4fd280",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD280>",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x20d7b24ea40": {
+     "id": "0x20d7b24ea40",
+     "type": "set",
+     "repr": "{<__main__.Point object at 0x0000020D7B4FD1C0>}",
+     "items": [
+      {
+       "ref": "0x20d7b4fd1c0"
+      }
+     ]
+    },
+    "0x20d7b363fa0": {
+     "id": "0x20d7b363fa0",
+     "type": "type",
+     "repr": "Bad"
+    }
+   },
+   "stdout": "True False True\nTrue\n",
+   "note": "__hash__ 가 None 이 되어 TypeError: unhashable"
+  },
+  {
+   "line": 16,
+   "event": "exception",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 16,
+     "locals": {
+      "Point": {
+       "ref": "0x20d7b360d40"
+      },
+      "p": {
+       "ref": "0x20d7b4fd1c0"
+      },
+      "q": {
+       "ref": "0x20d7b4fd280"
+      },
+      "visited": {
+       "ref": "0x20d7b24ea40"
+      },
+      "Bad": {
+       "ref": "0x20d7b363fa0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x20d7b360d40": {
+     "id": "0x20d7b360d40",
+     "type": "type",
+     "repr": "Point"
+    },
+    "0x20d7b4fd1c0": {
+     "id": "0x20d7b4fd1c0",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD1C0>",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x20d7b4fd280": {
+     "id": "0x20d7b4fd280",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD280>",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x20d7b24ea40": {
+     "id": "0x20d7b24ea40",
+     "type": "set",
+     "repr": "{<__main__.Point object at 0x0000020D7B4FD1C0>}",
+     "items": [
+      {
+       "ref": "0x20d7b4fd1c0"
+      }
+     ]
+    },
+    "0x20d7b363fa0": {
+     "id": "0x20d7b363fa0",
+     "type": "type",
+     "repr": "Bad"
+    }
+   },
+   "stdout": "True False True\nTrue\n",
+   "exc": "TypeError: unhashable type: 'Bad'"
+  },
+  {
+   "line": 16,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 16,
+     "locals": {
+      "Point": {
+       "ref": "0x20d7b360d40"
+      },
+      "p": {
+       "ref": "0x20d7b4fd1c0"
+      },
+      "q": {
+       "ref": "0x20d7b4fd280"
+      },
+      "visited": {
+       "ref": "0x20d7b24ea40"
+      },
+      "Bad": {
+       "ref": "0x20d7b363fa0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x20d7b360d40": {
+     "id": "0x20d7b360d40",
+     "type": "type",
+     "repr": "Point"
+    },
+    "0x20d7b4fd1c0": {
+     "id": "0x20d7b4fd1c0",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD1C0>",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x20d7b4fd280": {
+     "id": "0x20d7b4fd280",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD280>",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x20d7b24ea40": {
+     "id": "0x20d7b24ea40",
+     "type": "set",
+     "repr": "{<__main__.Point object at 0x0000020D7B4FD1C0>}",
+     "items": [
+      {
+       "ref": "0x20d7b4fd1c0"
+      }
+     ]
+    },
+    "0x20d7b363fa0": {
+     "id": "0x20d7b363fa0",
+     "type": "type",
+     "repr": "Bad"
+    }
+   },
+   "stdout": "True False True\nTrue\n"
+  },
+  {
+   "line": 16,
+   "event": "exception",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 16,
+     "locals": {
+      "Point": {
+       "ref": "0x20d7b360d40"
+      },
+      "p": {
+       "ref": "0x20d7b4fd1c0"
+      },
+      "q": {
+       "ref": "0x20d7b4fd280"
+      },
+      "visited": {
+       "ref": "0x20d7b24ea40"
+      },
+      "Bad": {
+       "ref": "0x20d7b363fa0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x20d7b360d40": {
+     "id": "0x20d7b360d40",
+     "type": "type",
+     "repr": "Point"
+    },
+    "0x20d7b4fd1c0": {
+     "id": "0x20d7b4fd1c0",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD1C0>",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x20d7b4fd280": {
+     "id": "0x20d7b4fd280",
+     "type": "Point",
+     "repr": "<__main__.Point object at 0x0000020D7B4FD280>",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x20d7b24ea40": {
+     "id": "0x20d7b24ea40",
+     "type": "set",
+     "repr": "{<__main__.Point object at 0x0000020D7B4FD1C0>}",
+     "items": [
+      {
+       "ref": "0x20d7b4fd1c0"
+      }
+     ]
+    },
+    "0x20d7b363fa0": {
+     "id": "0x20d7b363fa0",
+     "type": "type",
+     "repr": "Bad"
+    }
+   },
+   "stdout": "True False True\nTrue\n",
+   "exc": "TypeError: unhashable type: 'Bad'"
+  }
+ ],
+ "v": 1
+}

@@ -37,30 +37,30 @@
      "line": 2,
      "locals": {
       "csv": {
-       "ref": "0x1b34c20b1a0"
+       "ref": "0x230fdd2b240"
       },
       "json": {
-       "ref": "0x1b34bf12200"
+       "ref": "0x230fda32250"
       },
       "io": {
-       "ref": "0x1b34bee0630"
+       "ref": "0x230fda00680"
       }
      }
     }
    ],
    "heap": {
-    "0x1b34c20b1a0": {
-     "id": "0x1b34c20b1a0",
+    "0x230fdd2b240": {
+     "id": "0x230fdd2b240",
      "type": "module",
      "repr": "csv"
     },
-    "0x1b34bf12200": {
-     "id": "0x1b34bf12200",
+    "0x230fda32250": {
+     "id": "0x230fda32250",
      "type": "module",
      "repr": "json"
     },
-    "0x1b34bee0630": {
-     "id": "0x1b34bee0630",
+    "0x230fda00680": {
+     "id": "0x230fda00680",
      "type": "module",
      "repr": "io"
     }
@@ -76,38 +76,38 @@
      "line": 3,
      "locals": {
       "csv": {
-       "ref": "0x1b34c20b1a0"
+       "ref": "0x230fdd2b240"
       },
       "json": {
-       "ref": "0x1b34bf12200"
+       "ref": "0x230fda32250"
       },
       "io": {
-       "ref": "0x1b34bee0630"
+       "ref": "0x230fda00680"
       },
       "text": {
-       "ref": "0x1b34bf53f30"
+       "ref": "0x230fda73f30"
       }
      }
     }
    ],
    "heap": {
-    "0x1b34c20b1a0": {
-     "id": "0x1b34c20b1a0",
+    "0x230fdd2b240": {
+     "id": "0x230fdd2b240",
      "type": "module",
      "repr": "csv"
     },
-    "0x1b34bf12200": {
-     "id": "0x1b34bf12200",
+    "0x230fda32250": {
+     "id": "0x230fda32250",
      "type": "module",
      "repr": "json"
     },
-    "0x1b34bee0630": {
-     "id": "0x1b34bee0630",
+    "0x230fda00680": {
+     "id": "0x230fda00680",
      "type": "module",
      "repr": "io"
     },
-    "0x1b34bf53f30": {
-     "id": "0x1b34bf53f30",
+    "0x230fda73f30": {
+     "id": "0x230fda73f30",
      "type": "str",
      "repr": "'name,age\\n지기,29\\n영희,25\\n'"
     }
@@ -124,130 +124,130 @@
      "line": 4,
      "locals": {
       "csv": {
-       "ref": "0x1b34c20b1a0"
+       "ref": "0x230fdd2b240"
       },
       "json": {
-       "ref": "0x1b34bf12200"
+       "ref": "0x230fda32250"
       },
       "io": {
-       "ref": "0x1b34bee0630"
+       "ref": "0x230fda00680"
       },
       "text": {
-       "ref": "0x1b34bf53f30"
+       "ref": "0x230fda73f30"
       },
       "rows": {
-       "ref": "0x1b34c221000"
+       "ref": "0x230fdd41080"
       }
      }
     }
    ],
    "heap": {
-    "0x1b34c20b1a0": {
-     "id": "0x1b34c20b1a0",
+    "0x230fdd2b240": {
+     "id": "0x230fdd2b240",
      "type": "module",
      "repr": "csv"
     },
-    "0x1b34bf12200": {
-     "id": "0x1b34bf12200",
+    "0x230fda32250": {
+     "id": "0x230fda32250",
      "type": "module",
      "repr": "json"
     },
-    "0x1b34bee0630": {
-     "id": "0x1b34bee0630",
+    "0x230fda00680": {
+     "id": "0x230fda00680",
      "type": "module",
      "repr": "io"
     },
-    "0x1b34bf53f30": {
-     "id": "0x1b34bf53f30",
+    "0x230fda73f30": {
+     "id": "0x230fda73f30",
      "type": "str",
      "repr": "'name,age\\n지기,29\\n영희,25\\n'"
     },
-    "0x1b34c221000": {
-     "id": "0x1b34c221000",
+    "0x230fdd41080": {
+     "id": "0x230fdd41080",
      "type": "list",
      "repr": "[{'name': '지기', 'age': '29'}, {'name': '영희', 'a…",
      "items": [
       {
-       "ref": "0x1b34c221180"
+       "ref": "0x230fdd41200"
       },
       {
-       "ref": "0x1b34c221200"
+       "ref": "0x230fdd41280"
       }
      ]
     },
-    "0x1b34c221180": {
-     "id": "0x1b34c221180",
+    "0x230fdd41200": {
+     "id": "0x230fdd41200",
      "type": "dict",
      "repr": "{'name': '지기', 'age': '29'}",
      "entries": [
       [
        {
-        "ref": "0x1b34c210ff0"
+        "ref": "0x230fdd31080"
        },
        {
-        "ref": "0x1b34c221070"
+        "ref": "0x230fdd410f0"
        }
       ],
       [
        {
-        "ref": "0x1b34c2124f0"
+        "ref": "0x230fdd325b0"
        },
        {
-        "ref": "0x1b34c212520"
+        "ref": "0x230fdd325e0"
        }
       ]
      ]
     },
-    "0x1b34c210ff0": {
-     "id": "0x1b34c210ff0",
+    "0x230fdd31080": {
+     "id": "0x230fdd31080",
      "type": "str",
      "repr": "'name'"
     },
-    "0x1b34c221070": {
-     "id": "0x1b34c221070",
+    "0x230fdd410f0": {
+     "id": "0x230fdd410f0",
      "type": "str",
      "repr": "'지기'"
     },
-    "0x1b34c2124f0": {
-     "id": "0x1b34c2124f0",
+    "0x230fdd325b0": {
+     "id": "0x230fdd325b0",
      "type": "str",
      "repr": "'age'"
     },
-    "0x1b34c212520": {
-     "id": "0x1b34c212520",
+    "0x230fdd325e0": {
+     "id": "0x230fdd325e0",
      "type": "str",
      "repr": "'29'"
     },
-    "0x1b34c221200": {
-     "id": "0x1b34c221200",
+    "0x230fdd41280": {
+     "id": "0x230fdd41280",
      "type": "dict",
      "repr": "{'name': '영희', 'age': '25'}",
      "entries": [
       [
        {
-        "ref": "0x1b34c210ff0"
+        "ref": "0x230fdd31080"
        },
        {
-        "ref": "0x1b34c221130"
+        "ref": "0x230fdd411b0"
        }
       ],
       [
        {
-        "ref": "0x1b34c2124f0"
+        "ref": "0x230fdd325b0"
        },
        {
-        "ref": "0x1b34c212550"
+        "ref": "0x230fdd32610"
        }
       ]
      ]
     },
-    "0x1b34c221130": {
-     "id": "0x1b34c221130",
+    "0x230fdd411b0": {
+     "id": "0x230fdd411b0",
      "type": "str",
      "repr": "'영희'"
     },
-    "0x1b34c212550": {
-     "id": "0x1b34c212550",
+    "0x230fdd32610": {
+     "id": "0x230fdd32610",
      "type": "str",
      "repr": "'25'"
     }
@@ -263,130 +263,130 @@
      "line": 5,
      "locals": {
       "csv": {
-       "ref": "0x1b34c20b1a0"
+       "ref": "0x230fdd2b240"
       },
       "json": {
-       "ref": "0x1b34bf12200"
+       "ref": "0x230fda32250"
       },
       "io": {
-       "ref": "0x1b34bee0630"
+       "ref": "0x230fda00680"
       },
       "text": {
-       "ref": "0x1b34bf53f30"
+       "ref": "0x230fda73f30"
       },
       "rows": {
-       "ref": "0x1b34c221000"
+       "ref": "0x230fdd41080"
       }
      }
     }
    ],
    "heap": {
-    "0x1b34c20b1a0": {
-     "id": "0x1b34c20b1a0",
+    "0x230fdd2b240": {
+     "id": "0x230fdd2b240",
      "type": "module",
      "repr": "csv"
     },
-    "0x1b34bf12200": {
-     "id": "0x1b34bf12200",
+    "0x230fda32250": {
+     "id": "0x230fda32250",
      "type": "module",
      "repr": "json"
     },
-    "0x1b34bee0630": {
-     "id": "0x1b34bee0630",
+    "0x230fda00680": {
+     "id": "0x230fda00680",
      "type": "module",
      "repr": "io"
     },
-    "0x1b34bf53f30": {
-     "id": "0x1b34bf53f30",
+    "0x230fda73f30": {
+     "id": "0x230fda73f30",
      "type": "str",
      "repr": "'name,age\\n지기,29\\n영희,25\\n'"
     },
-    "0x1b34c221000": {
-     "id": "0x1b34c221000",
+    "0x230fdd41080": {
+     "id": "0x230fdd41080",
      "type": "list",
      "repr": "[{'name': '지기', 'age': '29'}, {'name': '영희', 'a…",
      "items": [
       {
-       "ref": "0x1b34c221180"
+       "ref": "0x230fdd41200"
       },
       {
-       "ref": "0x1b34c221200"
+       "ref": "0x230fdd41280"
       }
      ]
     },
-    "0x1b34c221180": {
-     "id": "0x1b34c221180",
+    "0x230fdd41200": {
+     "id": "0x230fdd41200",
      "type": "dict",
      "repr": "{'name': '지기', 'age': '29'}",
      "entries": [
       [
        {
-        "ref": "0x1b34c210ff0"
+        "ref": "0x230fdd31080"
        },
        {
-        "ref": "0x1b34c221070"
+        "ref": "0x230fdd410f0"
        }
       ],
       [
        {
-        "ref": "0x1b34c2124f0"
+        "ref": "0x230fdd325b0"
        },
        {
-        "ref": "0x1b34c212520"
+        "ref": "0x230fdd325e0"
        }
       ]
      ]
     },
-    "0x1b34c210ff0": {
-     "id": "0x1b34c210ff0",
+    "0x230fdd31080": {
+     "id": "0x230fdd31080",
      "type": "str",
      "repr": "'name'"
     },
-    "0x1b34c221070": {
-     "id": "0x1b34c221070",
+    "0x230fdd410f0": {
+     "id": "0x230fdd410f0",
      "type": "str",
      "repr": "'지기'"
     },
-    "0x1b34c2124f0": {
-     "id": "0x1b34c2124f0",
+    "0x230fdd325b0": {
+     "id": "0x230fdd325b0",
      "type": "str",
      "repr": "'age'"
     },
-    "0x1b34c212520": {
-     "id": "0x1b34c212520",
+    "0x230fdd325e0": {
+     "id": "0x230fdd325e0",
      "type": "str",
      "repr": "'29'"
     },
-    "0x1b34c221200": {
-     "id": "0x1b34c221200",
+    "0x230fdd41280": {
+     "id": "0x230fdd41280",
      "type": "dict",
      "repr": "{'name': '영희', 'age': '25'}",
      "entries": [
       [
        {
-        "ref": "0x1b34c210ff0"
+        "ref": "0x230fdd31080"
        },
        {
-        "ref": "0x1b34c221130"
+        "ref": "0x230fdd411b0"
        }
       ],
       [
        {
-        "ref": "0x1b34c2124f0"
+        "ref": "0x230fdd325b0"
        },
        {
-        "ref": "0x1b34c212550"
+        "ref": "0x230fdd32610"
        }
       ]
      ]
     },
-    "0x1b34c221130": {
-     "id": "0x1b34c221130",
+    "0x230fdd411b0": {
+     "id": "0x230fdd411b0",
      "type": "str",
      "repr": "'영희'"
     },
-    "0x1b34c212550": {
-     "id": "0x1b34c212550",
+    "0x230fdd32610": {
+     "id": "0x230fdd32610",
      "type": "str",
      "repr": "'25'"
     }
@@ -403,130 +403,130 @@
      "line": 5,
      "locals": {
       "csv": {
-       "ref": "0x1b34c20b1a0"
+       "ref": "0x230fdd2b240"
       },
       "json": {
-       "ref": "0x1b34bf12200"
+       "ref": "0x230fda32250"
       },
       "io": {
-       "ref": "0x1b34bee0630"
+       "ref": "0x230fda00680"
       },
       "text": {
-       "ref": "0x1b34bf53f30"
+       "ref": "0x230fda73f30"
       },
       "rows": {
-       "ref": "0x1b34c221000"
+       "ref": "0x230fdd41080"
       }
      }
     }
    ],
    "heap": {
-    "0x1b34c20b1a0": {
-     "id": "0x1b34c20b1a0",
+    "0x230fdd2b240": {
+     "id": "0x230fdd2b240",
      "type": "module",
      "repr": "csv"
     },
-    "0x1b34bf12200": {
-     "id": "0x1b34bf12200",
+    "0x230fda32250": {
+     "id": "0x230fda32250",
      "type": "module",
      "repr": "json"
     },
-    "0x1b34bee0630": {
-     "id": "0x1b34bee0630",
+    "0x230fda00680": {
+     "id": "0x230fda00680",
      "type": "module",
      "repr": "io"
     },
-    "0x1b34bf53f30": {
-     "id": "0x1b34bf53f30",
+    "0x230fda73f30": {
+     "id": "0x230fda73f30",
      "type": "str",
      "repr": "'name,age\\n지기,29\\n영희,25\\n'"
     },
-    "0x1b34c221000": {
-     "id": "0x1b34c221000",
+    "0x230fdd41080": {
+     "id": "0x230fdd41080",
      "type": "list",
      "repr": "[{'name': '지기', 'age': '29'}, {'name': '영희', 'a…",
      "items": [
       {
-       "ref": "0x1b34c221180"
+       "ref": "0x230fdd41200"
       },
       {
-       "ref": "0x1b34c221200"
+       "ref": "0x230fdd41280"
       }
      ]
     },
-    "0x1b34c221180": {
-     "id": "0x1b34c221180",
+    "0x230fdd41200": {
+     "id": "0x230fdd41200",
      "type": "dict",
      "repr": "{'name': '지기', 'age': '29'}",
      "entries": [
       [
        {
-        "ref": "0x1b34c210ff0"
+        "ref": "0x230fdd31080"
        },
        {
-        "ref": "0x1b34c221070"
+        "ref": "0x230fdd410f0"
        }
       ],
       [
        {
-        "ref": "0x1b34c2124f0"
+        "ref": "0x230fdd325b0"
        },
        {
-        "ref": "0x1b34c212520"
+        "ref": "0x230fdd325e0"
        }
       ]
      ]
     },
-    "0x1b34c210ff0": {
-     "id": "0x1b34c210ff0",
+    "0x230fdd31080": {
+     "id": "0x230fdd31080",
      "type": "str",
      "repr": "'name'"
     },
-    "0x1b34c221070": {
-     "id": "0x1b34c221070",
+    "0x230fdd410f0": {
+     "id": "0x230fdd410f0",
      "type": "str",
      "repr": "'지기'"
     },
-    "0x1b34c2124f0": {
-     "id": "0x1b34c2124f0",
+    "0x230fdd325b0": {
+     "id": "0x230fdd325b0",
      "type": "str",
      "repr": "'age'"
     },
-    "0x1b34c212520": {
-     "id": "0x1b34c212520",
+    "0x230fdd325e0": {
+     "id": "0x230fdd325e0",
      "type": "str",
      "repr": "'29'"
     },
-    "0x1b34c221200": {
-     "id": "0x1b34c221200",
+    "0x230fdd41280": {
+     "id": "0x230fdd41280",
      "type": "dict",
      "repr": "{'name': '영희', 'age': '25'}",
      "entries": [
       [
        {
-        "ref": "0x1b34c210ff0"
+        "ref": "0x230fdd31080"
        },
        {
-        "ref": "0x1b34c221130"
+        "ref": "0x230fdd411b0"
        }
       ],
       [
        {
-        "ref": "0x1b34c2124f0"
+        "ref": "0x230fdd325b0"
        },
        {
-        "ref": "0x1b34c212550"
+        "ref": "0x230fdd32610"
        }
       ]
      ]
     },
-    "0x1b34c221130": {
-     "id": "0x1b34c221130",
+    "0x230fdd411b0": {
+     "id": "0x230fdd411b0",
      "type": "str",
      "repr": "'영희'"
     },
-    "0x1b34c212550": {
-     "id": "0x1b34c212550",
+    "0x230fdd32610": {
+     "id": "0x230fdd32610",
      "type": "str",
      "repr": "'25'"
     }
@@ -543,130 +543,130 @@
      "line": 5,
      "locals": {
       "csv": {
-       "ref": "0x1b34c20b1a0"
+       "ref": "0x230fdd2b240"
       },
       "json": {
-       "ref": "0x1b34bf12200"
+       "ref": "0x230fda32250"
       },
       "io": {
-       "ref": "0x1b34bee0630"
+       "ref": "0x230fda00680"
       },
       "text": {
-       "ref": "0x1b34bf53f30"
+       "ref": "0x230fda73f30"
       },
       "rows": {
-       "ref": "0x1b34c221000"
+       "ref": "0x230fdd41080"
       }
      }
     }
    ],
    "heap": {
-    "0x1b34c20b1a0": {
-     "id": "0x1b34c20b1a0",
+    "0x230fdd2b240": {
+     "id": "0x230fdd2b240",
      "type": "module",
      "repr": "csv"
     },
-    "0x1b34bf12200": {
-     "id": "0x1b34bf12200",
+    "0x230fda32250": {
+     "id": "0x230fda32250",
      "type": "module",
      "repr": "json"
     },
-    "0x1b34bee0630": {
-     "id": "0x1b34bee0630",
+    "0x230fda00680": {
+     "id": "0x230fda00680",
      "type": "module",
      "repr": "io"
     },
-    "0x1b34bf53f30": {
-     "id": "0x1b34bf53f30",
+    "0x230fda73f30": {
+     "id": "0x230fda73f30",
      "type": "str",
      "repr": "'name,age\\n지기,29\\n영희,25\\n'"
     },
-    "0x1b34c221000": {
-     "id": "0x1b34c221000",
+    "0x230fdd41080": {
+     "id": "0x230fdd41080",
      "type": "list",
      "repr": "[{'name': '지기', 'age': '29'}, {'name': '영희', 'a…",
      "items": [
       {
-       "ref": "0x1b34c221180"
+       "ref": "0x230fdd41200"
       },
       {
-       "ref": "0x1b34c221200"
+       "ref": "0x230fdd41280"
       }
      ]
     },
-    "0x1b34c221180": {
-     "id": "0x1b34c221180",
+    "0x230fdd41200": {
+     "id": "0x230fdd41200",
      "type": "dict",
      "repr": "{'name': '지기', 'age': '29'}",
      "entries": [
       [
        {
-        "ref": "0x1b34c210ff0"
+        "ref": "0x230fdd31080"
        },
        {
-        "ref": "0x1b34c221070"
+        "ref": "0x230fdd410f0"
        }
       ],
       [
        {
-        "ref": "0x1b34c2124f0"
+        "ref": "0x230fdd325b0"
        },
        {
-        "ref": "0x1b34c212520"
+        "ref": "0x230fdd325e0"
        }
       ]
      ]
     },
-    "0x1b34c210ff0": {
-     "id": "0x1b34c210ff0",
+    "0x230fdd31080": {
+     "id": "0x230fdd31080",
      "type": "str",
      "repr": "'name'"
     },
-    "0x1b34c221070": {
-     "id": "0x1b34c221070",
+    "0x230fdd410f0": {
+     "id": "0x230fdd410f0",
      "type": "str",
      "repr": "'지기'"
     },
-    "0x1b34c2124f0": {
-     "id": "0x1b34c2124f0",
+    "0x230fdd325b0": {
+     "id": "0x230fdd325b0",
      "type": "str",
      "repr": "'age'"
     },
-    "0x1b34c212520": {
-     "id": "0x1b34c212520",
+    "0x230fdd325e0": {
+     "id": "0x230fdd325e0",
      "type": "str",
      "repr": "'29'"
     },
-    "0x1b34c221200": {
-     "id": "0x1b34c221200",
+    "0x230fdd41280": {
+     "id": "0x230fdd41280",
      "type": "dict",
      "repr": "{'name': '영희', 'age': '25'}",
      "entries": [
       [
        {
-        "ref": "0x1b34c210ff0"
+        "ref": "0x230fdd31080"
        },
        {
-        "ref": "0x1b34c221130"
+        "ref": "0x230fdd411b0"
        }
       ],
       [
        {
-        "ref": "0x1b34c2124f0"
+        "ref": "0x230fdd325b0"
        },
        {
-        "ref": "0x1b34c212550"
+        "ref": "0x230fdd32610"
        }
       ]
      ]
     },
-    "0x1b34c221130": {
-     "id": "0x1b34c221130",
+    "0x230fdd411b0": {
+     "id": "0x230fdd411b0",
      "type": "str",
      "repr": "'영희'"
     },
-    "0x1b34c212550": {
-     "id": "0x1b34c212550",
+    "0x230fdd32610": {
+     "id": "0x230fdd32610",
      "type": "str",
      "repr": "'25'"
     }
@@ -682,130 +682,130 @@
      "line": 5,
      "locals": {
       "csv": {
-       "ref": "0x1b34c20b1a0"
+       "ref": "0x230fdd2b240"
       },
       "json": {
-       "ref": "0x1b34bf12200"
+       "ref": "0x230fda32250"
       },
       "io": {
-       "ref": "0x1b34bee0630"
+       "ref": "0x230fda00680"
       },
       "text": {
-       "ref": "0x1b34bf53f30"
+       "ref": "0x230fda73f30"
       },
       "rows": {
-       "ref": "0x1b34c221000"
+       "ref": "0x230fdd41080"
       }
      }
     }
    ],
    "heap": {
-    "0x1b34c20b1a0": {
-     "id": "0x1b34c20b1a0",
+    "0x230fdd2b240": {
+     "id": "0x230fdd2b240",
      "type": "module",
      "repr": "csv"
     },
-    "0x1b34bf12200": {
-     "id": "0x1b34bf12200",
+    "0x230fda32250": {
+     "id": "0x230fda32250",
      "type": "module",
      "repr": "json"
     },
-    "0x1b34bee0630": {
-     "id": "0x1b34bee0630",
+    "0x230fda00680": {
+     "id": "0x230fda00680",
      "type": "module",
      "repr": "io"
     },
-    "0x1b34bf53f30": {
-     "id": "0x1b34bf53f30",
+    "0x230fda73f30": {
+     "id": "0x230fda73f30",
      "type": "str",
      "repr": "'name,age\\n지기,29\\n영희,25\\n'"
     },
-    "0x1b34c221000": {
-     "id": "0x1b34c221000",
+    "0x230fdd41080": {
+     "id": "0x230fdd41080",
      "type": "list",
      "repr": "[{'name': '지기', 'age': '29'}, {'name': '영희', 'a…",
      "items": [
       {
-       "ref": "0x1b34c221180"
+       "ref": "0x230fdd41200"
       },
       {
-       "ref": "0x1b34c221200"
+       "ref": "0x230fdd41280"
       }
      ]
     },
-    "0x1b34c221180": {
-     "id": "0x1b34c221180",
+    "0x230fdd41200": {
+     "id": "0x230fdd41200",
      "type": "dict",
      "repr": "{'name': '지기', 'age': '29'}",
      "entries": [
       [
        {
-        "ref": "0x1b34c210ff0"
+        "ref": "0x230fdd31080"
        },
        {
-        "ref": "0x1b34c221070"
+        "ref": "0x230fdd410f0"
        }
       ],
       [
        {
-        "ref": "0x1b34c2124f0"
+        "ref": "0x230fdd325b0"
        },
        {
-        "ref": "0x1b34c212520"
+        "ref": "0x230fdd325e0"
        }
       ]
      ]
     },
-    "0x1b34c210ff0": {
-     "id": "0x1b34c210ff0",
+    "0x230fdd31080": {
+     "id": "0x230fdd31080",
      "type": "str",
      "repr": "'name'"
     },
-    "0x1b34c221070": {
-     "id": "0x1b34c221070",
+    "0x230fdd410f0": {
+     "id": "0x230fdd410f0",
      "type": "str",
      "repr": "'지기'"
     },
-    "0x1b34c2124f0": {
-     "id": "0x1b34c2124f0",
+    "0x230fdd325b0": {
+     "id": "0x230fdd325b0",
      "type": "str",
      "repr": "'age'"
     },
-    "0x1b34c212520": {
-     "id": "0x1b34c212520",
+    "0x230fdd325e0": {
+     "id": "0x230fdd325e0",
      "type": "str",
      "repr": "'29'"
     },
-    "0x1b34c221200": {
-     "id": "0x1b34c221200",
+    "0x230fdd41280": {
+     "id": "0x230fdd41280",
      "type": "dict",
      "repr": "{'name': '영희', 'age': '25'}",
      "entries": [
       [
        {
-        "ref": "0x1b34c210ff0"
+        "ref": "0x230fdd31080"
        },
        {
-        "ref": "0x1b34c221130"
+        "ref": "0x230fdd411b0"
        }
       ],
       [
        {
-        "ref": "0x1b34c2124f0"
+        "ref": "0x230fdd325b0"
        },
        {
-        "ref": "0x1b34c212550"
+        "ref": "0x230fdd32610"
        }
       ]
      ]
     },
-    "0x1b34c221130": {
-     "id": "0x1b34c221130",
+    "0x230fdd411b0": {
+     "id": "0x230fdd411b0",
      "type": "str",
      "repr": "'영희'"
     },
-    "0x1b34c212550": {
-     "id": "0x1b34c212550",
+    "0x230fdd32610": {
+     "id": "0x230fdd32610",
      "type": "str",
      "repr": "'25'"
     }

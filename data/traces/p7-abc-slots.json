@@ -1,0 +1,3778 @@
+{
+ "id": "p7-abc-slots",
+ "code": "from abc import ABC, abstractmethod\nimport sys\n\nclass Shape(ABC):\n    @abstractmethod\n    def area(self): ...\n\nclass Sq(Shape):\n    def __init__(self, s): self.s = s\n    def area(self): return self.s ** 2\n\nprint(Sq(3).area())\ntry:\n    Shape()\nexcept TypeError as e:\n    print(\"불가:\", str(e)[:30])\n\nclass P1:\n    def __init__(self): self.x = 1; self.y = 2\nclass P2:\n    __slots__ = (\"x\", \"y\")\n    def __init__(self): self.x = 1; self.y = 2\n\nprint(sys.getsizeof(P1().__dict__) + sys.getsizeof(P1()), sys.getsizeof(P2()))\np = P2()\np.z = 3",
+ "steps": [
+  {
+   "line": 0,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 0,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 2,
+     "locals": {
+      "ABC": {
+       "ref": "0x1ca0f0482a0"
+      },
+      "abstractmethod": {
+       "ref": "0x1ca0ef2eb60"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ca0f0482a0": {
+     "id": "0x1ca0f0482a0",
+     "type": "ABCMeta",
+     "repr": "ABC"
+    },
+    "0x1ca0ef2eb60": {
+     "id": "0x1ca0ef2eb60",
+     "type": "function",
+     "repr": "abstractmethod"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "ABC": {
+       "ref": "0x1ca0f0482a0"
+      },
+      "abstractmethod": {
+       "ref": "0x1ca0ef2eb60"
+      },
+      "sys": {
+       "ref": "0x1ca0eece7a0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ca0f0482a0": {
+     "id": "0x1ca0f0482a0",
+     "type": "ABCMeta",
+     "repr": "ABC"
+    },
+    "0x1ca0ef2eb60": {
+     "id": "0x1ca0ef2eb60",
+     "type": "function",
+     "repr": "abstractmethod"
+    },
+    "0x1ca0eece7a0": {
+     "id": "0x1ca0eece7a0",
+     "type": "module",
+     "repr": "sys"
+    }
+   },
+   "stdout": "",
+   "note": "추상 클래스 — 직접 인스턴스를 만들 수 없다"
+  },
+  {
+   "line": 4,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "ABC": {
+       "ref": "0x1ca0f0482a0"
+      },
+      "abstractmethod": {
+       "ref": "0x1ca0ef2eb60"
+      },
+      "sys": {
+       "ref": "0x1ca0eece7a0"
+      }
+     }
+    },
+    {
+     "fn": "Shape",
+     "line": 4,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x1ca0f0482a0": {
+     "id": "0x1ca0f0482a0",
+     "type": "ABCMeta",
+     "repr": "ABC"
+    },
+    "0x1ca0ef2eb60": {
+     "id": "0x1ca0ef2eb60",
+     "type": "function",
+     "repr": "abstractmethod"
+    },
+    "0x1ca0eece7a0": {
+     "id": "0x1ca0eece7a0",
+     "type": "module",
+     "repr": "sys"
+    }
+   },
+   "stdout": "",
+   "note": "추상 클래스 — 직접 인스턴스를 만들 수 없다"
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "ABC": {
+       "ref": "0x1ca0f0482a0"
+      },
+      "abstractmethod": {
+       "ref": "0x1ca0ef2eb60"
+      },
+      "sys": {
+       "ref": "0x1ca0eece7a0"
+      }
+     }
+    },
+    {
+     "fn": "Shape",
+     "line": 4,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x1ca0f0482a0": {
+     "id": "0x1ca0f0482a0",
+     "type": "ABCMeta",
+     "repr": "ABC"
+    },
+    "0x1ca0ef2eb60": {
+     "id": "0x1ca0ef2eb60",
+     "type": "function",
+     "repr": "abstractmethod"
+    },
+    "0x1ca0eece7a0": {
+     "id": "0x1ca0eece7a0",
+     "type": "module",
+     "repr": "sys"
+    }
+   },
+   "stdout": "",
+   "note": "추상 클래스 — 직접 인스턴스를 만들 수 없다"
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "ABC": {
+       "ref": "0x1ca0f0482a0"
+      },
+      "abstractmethod": {
+       "ref": "0x1ca0ef2eb60"
+      },
+      "sys": {
+       "ref": "0x1ca0eece7a0"
+      }
+     }
+    },
+    {
+     "fn": "Shape",
+     "line": 5,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x1ca0f0482a0": {
+     "id": "0x1ca0f0482a0",
+     "type": "ABCMeta",
+     "repr": "ABC"
+    },
+    "0x1ca0ef2eb60": {
+     "id": "0x1ca0ef2eb60",
+     "type": "function",
+     "repr": "abstractmethod"
+    },
+    "0x1ca0eece7a0": {
+     "id": "0x1ca0eece7a0",
+     "type": "module",
+     "repr": "sys"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 6,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "ABC": {
+       "ref": "0x1ca0f0482a0"
+      },
+      "abstractmethod": {
+       "ref": "0x1ca0ef2eb60"
+      },
+      "sys": {
+       "ref": "0x1ca0eece7a0"
+      }
+     }
+    },
+    {
+     "fn": "Shape",
+     "line": 6,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x1ca0f0482a0": {
+     "id": "0x1ca0f0482a0",
+     "type": "ABCMeta",
+     "repr": "ABC"
+    },
+    "0x1ca0ef2eb60": {
+     "id": "0x1ca0ef2eb60",
+     "type": "function",
+     "repr": "abstractmethod"
+    },
+    "0x1ca0eece7a0": {
+     "id": "0x1ca0eece7a0",
+     "type": "module",
+     "repr": "sys"
+    }
+   },
+   "stdout": "",
+   "note": "자식이 반드시 구현해야 하는 메서드"
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "ABC": {
+       "ref": "0x1ca0f0482a0"
+      },
+      "abstractmethod": {
+       "ref": "0x1ca0ef2eb60"
+      },
+      "sys": {
+       "ref": "0x1ca0eece7a0"
+      }
+     }
+    },
+    {
+     "fn": "Shape",
+     "line": 5,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x1ca0f0482a0": {
+     "id": "0x1ca0f0482a0",
+     "type": "ABCMeta",
+     "repr": "ABC"
+    },
+    "0x1ca0ef2eb60": {
+     "id": "0x1ca0ef2eb60",
+     "type": "function",
+     "repr": "abstractmethod"
+    },
+    "0x1ca0eece7a0": {
+     "id": "0x1ca0eece7a0",
+     "type": "module",
+     "repr": "sys"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 6,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "ABC": {
+       "ref": "0x1ca0f0482a0"
+      },
+      "abstractmethod": {
+       "ref": "0x1ca0ef2eb60"
+      },
+      "sys": {
+       "ref": "0x1ca0eece7a0"
+      }
+     }
+    },
+    {
+     "fn": "Shape",
+     "line": 6,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x1ca0f0482a0": {
+     "id": "0x1ca0f0482a0",
+     "type": "ABCMeta",
+     "repr": "ABC"
+    },
+    "0x1ca0ef2eb60": {
+     "id": "0x1ca0ef2eb60",
+     "type": "function",
+     "repr": "abstractmethod"
+    },
+    "0x1ca0eece7a0": {
+     "id": "0x1ca0eece7a0",
+     "type": "module",
+     "repr": "sys"
+    }
+   },
+   "stdout": "",
+   "note": "자식이 반드시 구현해야 하는 메서드"
+  },
+  {
+   "line": 6,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "ABC": {
+       "ref": "0x1ca0f0482a0"
+      },
+      "abstractmethod": {
+       "ref": "0x1ca0ef2eb60"
+      },
+      "sys": {
+       "ref": "0x1ca0eece7a0"
+      }
+     }
+    },
+    {
+     "fn": "Shape",
+     "line": 6,
+     "locals": {
+      "area": {
+       "ref": "0x1ca0f44ce00"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ca0f0482a0": {
+     "id": "0x1ca0f0482a0",
+     "type": "ABCMeta",
+     "repr": "ABC"
+    },
+    "0x1ca0ef2eb60": {
+     "id": "0x1ca0ef2eb60",
+     "type": "function",
+     "repr": "abstractmethod"
+    },
+    "0x1ca0eece7a0": {
+     "id": "0x1ca0eece7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x1ca0f44ce00": {
+     "id": "0x1ca0f44ce00",
+     "type": "function",
+     "repr": "area"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 8,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 8,
+     "locals": {
+      "ABC": {
+       "ref": "0x1ca0f0482a0"
+      },
+      "abstractmethod": {
+       "ref": "0x1ca0ef2eb60"
+      },
+      "sys": {
+       "ref": "0x1ca0eece7a0"
+      },
+      "Shape": {
+       "ref": "0x1ca0f2d75f0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ca0f0482a0": {
+     "id": "0x1ca0f0482a0",
+     "type": "ABCMeta",
+     "repr": "ABC"
+    },
+    "0x1ca0ef2eb60": {
+     "id": "0x1ca0ef2eb60",
+     "type": "function",
+     "repr": "abstractmethod"
+    },
+    "0x1ca0eece7a0": {
+     "id": "0x1ca0eece7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x1ca0f2d75f0": {
+     "id": "0x1ca0f2d75f0",
+     "type": "ABCMeta",
+     "repr": "Shape"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 8,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 8,
+     "locals": {
+      "ABC": {
+       "ref": "0x1ca0f0482a0"
+      },
+      "abstractmethod": {
+       "ref": "0x1ca0ef2eb60"
+      },
+      "sys": {
+       "ref": "0x1ca0eece7a0"
+      },
+      "Shape": {
+       "ref": "0x1ca0f2d75f0"
+      }
+     }
+    },
+    {
+     "fn": "Sq",
+     "line": 8,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x1ca0f0482a0": {
+     "id": "0x1ca0f0482a0",
+     "type": "ABCMeta",
+     "repr": "ABC"
+    },
+    "0x1ca0ef2eb60": {
+     "id": "0x1ca0ef2eb60",
+     "type": "function",
+     "repr": "abstractmethod"
+    },
+    "0x1ca0eece7a0": {
+     "id": "0x1ca0eece7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x1ca0f2d75f0": {
+     "id": "0x1ca0f2d75f0",
+     "type": "ABCMeta",
+     "repr": "Shape"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 8,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 8,
+     "locals": {
+      "ABC": {
+       "ref": "0x1ca0f0482a0"
+      },
+      "abstractmethod": {
+       "ref": "0x1ca0ef2eb60"
+      },
+      "sys": {
+       "ref": "0x1ca0eece7a0"
+      },
+      "Shape": {
+       "ref": "0x1ca0f2d75f0"
+      }
+     }
+    },
+    {
+     "fn": "Sq",
+     "line": 8,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x1ca0f0482a0": {
+     "id": "0x1ca0f0482a0",
+     "type": "ABCMeta",
+     "repr": "ABC"
+    },
+    "0x1ca0ef2eb60": {
+     "id": "0x1ca0ef2eb60",
+     "type": "function",
+     "repr": "abstractmethod"
+    },
+    "0x1ca0eece7a0": {
+     "id": "0x1ca0eece7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x1ca0f2d75f0": {
+     "id": "0x1ca0f2d75f0",
+     "type": "ABCMeta",
+     "repr": "Shape"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 9,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 8,
+     "locals": {
+      "ABC": {
+       "ref": "0x1ca0f0482a0"
+      },
+      "abstractmethod": {
+       "ref": "0x1ca0ef2eb60"
+      },
+      "sys": {
+       "ref": "0x1ca0eece7a0"
+      },
+      "Shape": {
+       "ref": "0x1ca0f2d75f0"
+      }
+     }
+    },
+    {
+     "fn": "Sq",
+     "line": 9,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x1ca0f0482a0": {
+     "id": "0x1ca0f0482a0",
+     "type": "ABCMeta",
+     "repr": "ABC"
+    },
+    "0x1ca0ef2eb60": {
+     "id": "0x1ca0ef2eb60",
+     "type": "function",
+     "repr": "abstractmethod"
+    },
+    "0x1ca0eece7a0": {
+     "id": "0x1ca0eece7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x1ca0f2d75f0": {
+     "id": "0x1ca0f2d75f0",
+     "type": "ABCMeta",
+     "repr": "Shape"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 10,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 8,
+     "locals": {
+      "ABC": {
+       "ref": "0x1ca0f0482a0"
+      },
+      "abstractmethod": {
+       "ref": "0x1ca0ef2eb60"
+      },
+      "sys": {
+       "ref": "0x1ca0eece7a0"
+      },
+      "Shape": {
+       "ref": "0x1ca0f2d75f0"
+      }
+     }
+    },
+    {
+     "fn": "Sq",
+     "line": 10,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x1ca0f0482a0": {
+     "id": "0x1ca0f0482a0",
+     "type": "ABCMeta",
+     "repr": "ABC"
+    },
+    "0x1ca0ef2eb60": {
+     "id": "0x1ca0ef2eb60",
+     "type": "function",
+     "repr": "abstractmethod"
+    },
+    "0x1ca0eece7a0": {
+     "id": "0x1ca0eece7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x1ca0f2d75f0": {
+     "id": "0x1ca0f2d75f0",
+     "type": "ABCMeta",
+     "repr": "Shape"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 10,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 8,
+     "locals": {
+      "ABC": {
+       "ref": "0x1ca0f0482a0"
+      },
+      "abstractmethod": {
+       "ref": "0x1ca0ef2eb60"
+      },
+      "sys": {
+       "ref": "0x1ca0eece7a0"
+      },
+      "Shape": {
+       "ref": "0x1ca0f2d75f0"
+      }
+     }
+    },
+    {
+     "fn": "Sq",
+     "line": 10,
+     "locals": {
+      "area": {
+       "ref": "0x1ca0f44cea0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ca0f0482a0": {
+     "id": "0x1ca0f0482a0",
+     "type": "ABCMeta",
+     "repr": "ABC"
+    },
+    "0x1ca0ef2eb60": {
+     "id": "0x1ca0ef2eb60",
+     "type": "function",
+     "repr": "abstractmethod"
+    },
+    "0x1ca0eece7a0": {
+     "id": "0x1ca0eece7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x1ca0f2d75f0": {
+     "id": "0x1ca0f2d75f0",
+     "type": "ABCMeta",
+     "repr": "Shape"
+    },
+    "0x1ca0f44cea0": {
+     "id": "0x1ca0f44cea0",
+     "type": "function",
+     "repr": "area"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 12,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 12,
+     "locals": {
+      "ABC": {
+       "ref": "0x1ca0f0482a0"
+      },
+      "abstractmethod": {
+       "ref": "0x1ca0ef2eb60"
+      },
+      "sys": {
+       "ref": "0x1ca0eece7a0"
+      },
+      "Shape": {
+       "ref": "0x1ca0f2d75f0"
+      },
+      "Sq": {
+       "ref": "0x1ca0f2d8950"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ca0f0482a0": {
+     "id": "0x1ca0f0482a0",
+     "type": "ABCMeta",
+     "repr": "ABC"
+    },
+    "0x1ca0ef2eb60": {
+     "id": "0x1ca0ef2eb60",
+     "type": "function",
+     "repr": "abstractmethod"
+    },
+    "0x1ca0eece7a0": {
+     "id": "0x1ca0eece7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x1ca0f2d75f0": {
+     "id": "0x1ca0f2d75f0",
+     "type": "ABCMeta",
+     "repr": "Shape"
+    },
+    "0x1ca0f2d8950": {
+     "id": "0x1ca0f2d8950",
+     "type": "ABCMeta",
+     "repr": "Sq"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 9,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 12,
+     "locals": {
+      "ABC": {
+       "ref": "0x1ca0f0482a0"
+      },
+      "abstractmethod": {
+       "ref": "0x1ca0ef2eb60"
+      },
+      "sys": {
+       "ref": "0x1ca0eece7a0"
+      },
+      "Shape": {
+       "ref": "0x1ca0f2d75f0"
+      },
+      "Sq": {
+       "ref": "0x1ca0f2d8950"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 9,
+     "locals": {
+      "self": {
+       "ref": "0x1ca0f45d0d0"
+      },
+      "s": {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ca0f0482a0": {
+     "id": "0x1ca0f0482a0",
+     "type": "ABCMeta",
+     "repr": "ABC"
+    },
+    "0x1ca0ef2eb60": {
+     "id": "0x1ca0ef2eb60",
+     "type": "function",
+     "repr": "abstractmethod"
+    },
+    "0x1ca0eece7a0": {
+     "id": "0x1ca0eece7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x1ca0f2d75f0": {
+     "id": "0x1ca0f2d75f0",
+     "type": "ABCMeta",
+     "repr": "Shape"
+    },
+    "0x1ca0f2d8950": {
+     "id": "0x1ca0f2d8950",
+     "type": "ABCMeta",
+     "repr": "Sq"
+    },
+    "0x1ca0f45d0d0": {
+     "id": "0x1ca0f45d0d0",
+     "type": "Sq",
+     "repr": "<__main__.Sq object at 0x000001CA0F45D0D0>",
+     "fields": {}
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 9,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 12,
+     "locals": {
+      "ABC": {
+       "ref": "0x1ca0f0482a0"
+      },
+      "abstractmethod": {
+       "ref": "0x1ca0ef2eb60"
+      },
+      "sys": {
+       "ref": "0x1ca0eece7a0"
+      },
+      "Shape": {
+       "ref": "0x1ca0f2d75f0"
+      },
+      "Sq": {
+       "ref": "0x1ca0f2d8950"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 9,
+     "locals": {
+      "self": {
+       "ref": "0x1ca0f45d0d0"
+      },
+      "s": {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ca0f0482a0": {
+     "id": "0x1ca0f0482a0",
+     "type": "ABCMeta",
+     "repr": "ABC"
+    },
+    "0x1ca0ef2eb60": {
+     "id": "0x1ca0ef2eb60",
+     "type": "function",
+     "repr": "abstractmethod"
+    },
+    "0x1ca0eece7a0": {
+     "id": "0x1ca0eece7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x1ca0f2d75f0": {
+     "id": "0x1ca0f2d75f0",
+     "type": "ABCMeta",
+     "repr": "Shape"
+    },
+    "0x1ca0f2d8950": {
+     "id": "0x1ca0f2d8950",
+     "type": "ABCMeta",
+     "repr": "Sq"
+    },
+    "0x1ca0f45d0d0": {
+     "id": "0x1ca0f45d0d0",
+     "type": "Sq",
+     "repr": "<__main__.Sq object at 0x000001CA0F45D0D0>",
+     "fields": {}
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 9,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 12,
+     "locals": {
+      "ABC": {
+       "ref": "0x1ca0f0482a0"
+      },
+      "abstractmethod": {
+       "ref": "0x1ca0ef2eb60"
+      },
+      "sys": {
+       "ref": "0x1ca0eece7a0"
+      },
+      "Shape": {
+       "ref": "0x1ca0f2d75f0"
+      },
+      "Sq": {
+       "ref": "0x1ca0f2d8950"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 9,
+     "locals": {
+      "self": {
+       "ref": "0x1ca0f45d0d0"
+      },
+      "s": {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ca0f0482a0": {
+     "id": "0x1ca0f0482a0",
+     "type": "ABCMeta",
+     "repr": "ABC"
+    },
+    "0x1ca0ef2eb60": {
+     "id": "0x1ca0ef2eb60",
+     "type": "function",
+     "repr": "abstractmethod"
+    },
+    "0x1ca0eece7a0": {
+     "id": "0x1ca0eece7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x1ca0f2d75f0": {
+     "id": "0x1ca0f2d75f0",
+     "type": "ABCMeta",
+     "repr": "Shape"
+    },
+    "0x1ca0f2d8950": {
+     "id": "0x1ca0f2d8950",
+     "type": "ABCMeta",
+     "repr": "Sq"
+    },
+    "0x1ca0f45d0d0": {
+     "id": "0x1ca0f45d0d0",
+     "type": "Sq",
+     "repr": "<__main__.Sq object at 0x000001CA0F45D0D0>",
+     "fields": {
+      "s": {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     }
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 10,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 12,
+     "locals": {
+      "ABC": {
+       "ref": "0x1ca0f0482a0"
+      },
+      "abstractmethod": {
+       "ref": "0x1ca0ef2eb60"
+      },
+      "sys": {
+       "ref": "0x1ca0eece7a0"
+      },
+      "Shape": {
+       "ref": "0x1ca0f2d75f0"
+      },
+      "Sq": {
+       "ref": "0x1ca0f2d8950"
+      }
+     }
+    },
+    {
+     "fn": "area",
+     "line": 10,
+     "locals": {
+      "self": {
+       "ref": "0x1ca0f45d0d0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ca0f0482a0": {
+     "id": "0x1ca0f0482a0",
+     "type": "ABCMeta",
+     "repr": "ABC"
+    },
+    "0x1ca0ef2eb60": {
+     "id": "0x1ca0ef2eb60",
+     "type": "function",
+     "repr": "abstractmethod"
+    },
+    "0x1ca0eece7a0": {
+     "id": "0x1ca0eece7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x1ca0f2d75f0": {
+     "id": "0x1ca0f2d75f0",
+     "type": "ABCMeta",
+     "repr": "Shape"
+    },
+    "0x1ca0f2d8950": {
+     "id": "0x1ca0f2d8950",
+     "type": "ABCMeta",
+     "repr": "Sq"
+    },
+    "0x1ca0f45d0d0": {
+     "id": "0x1ca0f45d0d0",
+     "type": "Sq",
+     "repr": "<__main__.Sq object at 0x000001CA0F45D0D0>",
+     "fields": {
+      "s": {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     }
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 10,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 12,
+     "locals": {
+      "ABC": {
+       "ref": "0x1ca0f0482a0"
+      },
+      "abstractmethod": {
+       "ref": "0x1ca0ef2eb60"
+      },
+      "sys": {
+       "ref": "0x1ca0eece7a0"
+      },
+      "Shape": {
+       "ref": "0x1ca0f2d75f0"
+      },
+      "Sq": {
+       "ref": "0x1ca0f2d8950"
+      }
+     }
+    },
+    {
+     "fn": "area",
+     "line": 10,
+     "locals": {
+      "self": {
+       "ref": "0x1ca0f45d0d0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ca0f0482a0": {
+     "id": "0x1ca0f0482a0",
+     "type": "ABCMeta",
+     "repr": "ABC"
+    },
+    "0x1ca0ef2eb60": {
+     "id": "0x1ca0ef2eb60",
+     "type": "function",
+     "repr": "abstractmethod"
+    },
+    "0x1ca0eece7a0": {
+     "id": "0x1ca0eece7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x1ca0f2d75f0": {
+     "id": "0x1ca0f2d75f0",
+     "type": "ABCMeta",
+     "repr": "Shape"
+    },
+    "0x1ca0f2d8950": {
+     "id": "0x1ca0f2d8950",
+     "type": "ABCMeta",
+     "repr": "Sq"
+    },
+    "0x1ca0f45d0d0": {
+     "id": "0x1ca0f45d0d0",
+     "type": "Sq",
+     "repr": "<__main__.Sq object at 0x000001CA0F45D0D0>",
+     "fields": {
+      "s": {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     }
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 10,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 12,
+     "locals": {
+      "ABC": {
+       "ref": "0x1ca0f0482a0"
+      },
+      "abstractmethod": {
+       "ref": "0x1ca0ef2eb60"
+      },
+      "sys": {
+       "ref": "0x1ca0eece7a0"
+      },
+      "Shape": {
+       "ref": "0x1ca0f2d75f0"
+      },
+      "Sq": {
+       "ref": "0x1ca0f2d8950"
+      }
+     }
+    },
+    {
+     "fn": "area",
+     "line": 10,
+     "locals": {
+      "self": {
+       "ref": "0x1ca0f45d0d0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ca0f0482a0": {
+     "id": "0x1ca0f0482a0",
+     "type": "ABCMeta",
+     "repr": "ABC"
+    },
+    "0x1ca0ef2eb60": {
+     "id": "0x1ca0ef2eb60",
+     "type": "function",
+     "repr": "abstractmethod"
+    },
+    "0x1ca0eece7a0": {
+     "id": "0x1ca0eece7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x1ca0f2d75f0": {
+     "id": "0x1ca0f2d75f0",
+     "type": "ABCMeta",
+     "repr": "Shape"
+    },
+    "0x1ca0f2d8950": {
+     "id": "0x1ca0f2d8950",
+     "type": "ABCMeta",
+     "repr": "Sq"
+    },
+    "0x1ca0f45d0d0": {
+     "id": "0x1ca0f45d0d0",
+     "type": "Sq",
+     "repr": "<__main__.Sq object at 0x000001CA0F45D0D0>",
+     "fields": {
+      "s": {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     }
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    }
+   },
+   "stdout": "",
+   "retval": "9"
+  },
+  {
+   "line": 13,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 13,
+     "locals": {
+      "ABC": {
+       "ref": "0x1ca0f0482a0"
+      },
+      "abstractmethod": {
+       "ref": "0x1ca0ef2eb60"
+      },
+      "sys": {
+       "ref": "0x1ca0eece7a0"
+      },
+      "Shape": {
+       "ref": "0x1ca0f2d75f0"
+      },
+      "Sq": {
+       "ref": "0x1ca0f2d8950"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ca0f0482a0": {
+     "id": "0x1ca0f0482a0",
+     "type": "ABCMeta",
+     "repr": "ABC"
+    },
+    "0x1ca0ef2eb60": {
+     "id": "0x1ca0ef2eb60",
+     "type": "function",
+     "repr": "abstractmethod"
+    },
+    "0x1ca0eece7a0": {
+     "id": "0x1ca0eece7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x1ca0f2d75f0": {
+     "id": "0x1ca0f2d75f0",
+     "type": "ABCMeta",
+     "repr": "Shape"
+    },
+    "0x1ca0f2d8950": {
+     "id": "0x1ca0f2d8950",
+     "type": "ABCMeta",
+     "repr": "Sq"
+    }
+   },
+   "stdout": "9\n"
+  },
+  {
+   "line": 14,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 14,
+     "locals": {
+      "ABC": {
+       "ref": "0x1ca0f0482a0"
+      },
+      "abstractmethod": {
+       "ref": "0x1ca0ef2eb60"
+      },
+      "sys": {
+       "ref": "0x1ca0eece7a0"
+      },
+      "Shape": {
+       "ref": "0x1ca0f2d75f0"
+      },
+      "Sq": {
+       "ref": "0x1ca0f2d8950"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ca0f0482a0": {
+     "id": "0x1ca0f0482a0",
+     "type": "ABCMeta",
+     "repr": "ABC"
+    },
+    "0x1ca0ef2eb60": {
+     "id": "0x1ca0ef2eb60",
+     "type": "function",
+     "repr": "abstractmethod"
+    },
+    "0x1ca0eece7a0": {
+     "id": "0x1ca0eece7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x1ca0f2d75f0": {
+     "id": "0x1ca0f2d75f0",
+     "type": "ABCMeta",
+     "repr": "Shape"
+    },
+    "0x1ca0f2d8950": {
+     "id": "0x1ca0f2d8950",
+     "type": "ABCMeta",
+     "repr": "Sq"
+    }
+   },
+   "stdout": "9\n",
+   "note": "추상 메서드가 남아 있으면 TypeError"
+  },
+  {
+   "line": 14,
+   "event": "exception",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 14,
+     "locals": {
+      "ABC": {
+       "ref": "0x1ca0f0482a0"
+      },
+      "abstractmethod": {
+       "ref": "0x1ca0ef2eb60"
+      },
+      "sys": {
+       "ref": "0x1ca0eece7a0"
+      },
+      "Shape": {
+       "ref": "0x1ca0f2d75f0"
+      },
+      "Sq": {
+       "ref": "0x1ca0f2d8950"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ca0f0482a0": {
+     "id": "0x1ca0f0482a0",
+     "type": "ABCMeta",
+     "repr": "ABC"
+    },
+    "0x1ca0ef2eb60": {
+     "id": "0x1ca0ef2eb60",
+     "type": "function",
+     "repr": "abstractmethod"
+    },
+    "0x1ca0eece7a0": {
+     "id": "0x1ca0eece7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x1ca0f2d75f0": {
+     "id": "0x1ca0f2d75f0",
+     "type": "ABCMeta",
+     "repr": "Shape"
+    },
+    "0x1ca0f2d8950": {
+     "id": "0x1ca0f2d8950",
+     "type": "ABCMeta",
+     "repr": "Sq"
+    }
+   },
+   "stdout": "9\n",
+   "exc": "TypeError: Can't instantiate abstract class Shape without an implementation for abstract method 'area'"
+  },
+  {
+   "line": 15,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 15,
+     "locals": {
+      "ABC": {
+       "ref": "0x1ca0f0482a0"
+      },
+      "abstractmethod": {
+       "ref": "0x1ca0ef2eb60"
+      },
+      "sys": {
+       "ref": "0x1ca0eece7a0"
+      },
+      "Shape": {
+       "ref": "0x1ca0f2d75f0"
+      },
+      "Sq": {
+       "ref": "0x1ca0f2d8950"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ca0f0482a0": {
+     "id": "0x1ca0f0482a0",
+     "type": "ABCMeta",
+     "repr": "ABC"
+    },
+    "0x1ca0ef2eb60": {
+     "id": "0x1ca0ef2eb60",
+     "type": "function",
+     "repr": "abstractmethod"
+    },
+    "0x1ca0eece7a0": {
+     "id": "0x1ca0eece7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x1ca0f2d75f0": {
+     "id": "0x1ca0f2d75f0",
+     "type": "ABCMeta",
+     "repr": "Shape"
+    },
+    "0x1ca0f2d8950": {
+     "id": "0x1ca0f2d8950",
+     "type": "ABCMeta",
+     "repr": "Sq"
+    }
+   },
+   "stdout": "9\n"
+  },
+  {
+   "line": 16,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 16,
+     "locals": {
+      "ABC": {
+       "ref": "0x1ca0f0482a0"
+      },
+      "abstractmethod": {
+       "ref": "0x1ca0ef2eb60"
+      },
+      "sys": {
+       "ref": "0x1ca0eece7a0"
+      },
+      "Shape": {
+       "ref": "0x1ca0f2d75f0"
+      },
+      "Sq": {
+       "ref": "0x1ca0f2d8950"
+      },
+      "e": {
+       "ref": "0x1ca0f439180"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ca0f0482a0": {
+     "id": "0x1ca0f0482a0",
+     "type": "ABCMeta",
+     "repr": "ABC"
+    },
+    "0x1ca0ef2eb60": {
+     "id": "0x1ca0ef2eb60",
+     "type": "function",
+     "repr": "abstractmethod"
+    },
+    "0x1ca0eece7a0": {
+     "id": "0x1ca0eece7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x1ca0f2d75f0": {
+     "id": "0x1ca0f2d75f0",
+     "type": "ABCMeta",
+     "repr": "Shape"
+    },
+    "0x1ca0f2d8950": {
+     "id": "0x1ca0f2d8950",
+     "type": "ABCMeta",
+     "repr": "Sq"
+    },
+    "0x1ca0f439180": {
+     "id": "0x1ca0f439180",
+     "type": "TypeError",
+     "repr": "TypeError(\"Can't instantiate abstract class Sha…",
+     "fields": {}
+    }
+   },
+   "stdout": "9\n"
+  },
+  {
+   "line": 18,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 18,
+     "locals": {
+      "ABC": {
+       "ref": "0x1ca0f0482a0"
+      },
+      "abstractmethod": {
+       "ref": "0x1ca0ef2eb60"
+      },
+      "sys": {
+       "ref": "0x1ca0eece7a0"
+      },
+      "Shape": {
+       "ref": "0x1ca0f2d75f0"
+      },
+      "Sq": {
+       "ref": "0x1ca0f2d8950"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ca0f0482a0": {
+     "id": "0x1ca0f0482a0",
+     "type": "ABCMeta",
+     "repr": "ABC"
+    },
+    "0x1ca0ef2eb60": {
+     "id": "0x1ca0ef2eb60",
+     "type": "function",
+     "repr": "abstractmethod"
+    },
+    "0x1ca0eece7a0": {
+     "id": "0x1ca0eece7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x1ca0f2d75f0": {
+     "id": "0x1ca0f2d75f0",
+     "type": "ABCMeta",
+     "repr": "Shape"
+    },
+    "0x1ca0f2d8950": {
+     "id": "0x1ca0f2d8950",
+     "type": "ABCMeta",
+     "repr": "Sq"
+    }
+   },
+   "stdout": "9\n불가: Can't instantiate abstract cla\n"
+  },
+  {
+   "line": 18,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 18,
+     "locals": {
+      "ABC": {
+       "ref": "0x1ca0f0482a0"
+      },
+      "abstractmethod": {
+       "ref": "0x1ca0ef2eb60"
+      },
+      "sys": {
+       "ref": "0x1ca0eece7a0"
+      },
+      "Shape": {
+       "ref": "0x1ca0f2d75f0"
+      },
+      "Sq": {
+       "ref": "0x1ca0f2d8950"
+      }
+     }
+    },
+    {
+     "fn": "P1",
+     "line": 18,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x1ca0f0482a0": {
+     "id": "0x1ca0f0482a0",
+     "type": "ABCMeta",
+     "repr": "ABC"
+    },
+    "0x1ca0ef2eb60": {
+     "id": "0x1ca0ef2eb60",
+     "type": "function",
+     "repr": "abstractmethod"
+    },
+    "0x1ca0eece7a0": {
+     "id": "0x1ca0eece7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x1ca0f2d75f0": {
+     "id": "0x1ca0f2d75f0",
+     "type": "ABCMeta",
+     "repr": "Shape"
+    },
+    "0x1ca0f2d8950": {
+     "id": "0x1ca0f2d8950",
+     "type": "ABCMeta",
+     "repr": "Sq"
+    }
+   },
+   "stdout": "9\n불가: Can't instantiate abstract cla\n"
+  },
+  {
+   "line": 18,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 18,
+     "locals": {
+      "ABC": {
+       "ref": "0x1ca0f0482a0"
+      },
+      "abstractmethod": {
+       "ref": "0x1ca0ef2eb60"
+      },
+      "sys": {
+       "ref": "0x1ca0eece7a0"
+      },
+      "Shape": {
+       "ref": "0x1ca0f2d75f0"
+      },
+      "Sq": {
+       "ref": "0x1ca0f2d8950"
+      }
+     }
+    },
+    {
+     "fn": "P1",
+     "line": 18,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x1ca0f0482a0": {
+     "id": "0x1ca0f0482a0",
+     "type": "ABCMeta",
+     "repr": "ABC"
+    },
+    "0x1ca0ef2eb60": {
+     "id": "0x1ca0ef2eb60",
+     "type": "function",
+     "repr": "abstractmethod"
+    },
+    "0x1ca0eece7a0": {
+     "id": "0x1ca0eece7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x1ca0f2d75f0": {
+     "id": "0x1ca0f2d75f0",
+     "type": "ABCMeta",
+     "repr": "Shape"
+    },
+    "0x1ca0f2d8950": {
+     "id": "0x1ca0f2d8950",
+     "type": "ABCMeta",
+     "repr": "Sq"
+    }
+   },
+   "stdout": "9\n불가: Can't instantiate abstract cla\n"
+  },
+  {
+   "line": 19,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 18,
+     "locals": {
+      "ABC": {
+       "ref": "0x1ca0f0482a0"
+      },
+      "abstractmethod": {
+       "ref": "0x1ca0ef2eb60"
+      },
+      "sys": {
+       "ref": "0x1ca0eece7a0"
+      },
+      "Shape": {
+       "ref": "0x1ca0f2d75f0"
+      },
+      "Sq": {
+       "ref": "0x1ca0f2d8950"
+      }
+     }
+    },
+    {
+     "fn": "P1",
+     "line": 19,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x1ca0f0482a0": {
+     "id": "0x1ca0f0482a0",
+     "type": "ABCMeta",
+     "repr": "ABC"
+    },
+    "0x1ca0ef2eb60": {
+     "id": "0x1ca0ef2eb60",
+     "type": "function",
+     "repr": "abstractmethod"
+    },
+    "0x1ca0eece7a0": {
+     "id": "0x1ca0eece7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x1ca0f2d75f0": {
+     "id": "0x1ca0f2d75f0",
+     "type": "ABCMeta",
+     "repr": "Shape"
+    },
+    "0x1ca0f2d8950": {
+     "id": "0x1ca0f2d8950",
+     "type": "ABCMeta",
+     "repr": "Sq"
+    }
+   },
+   "stdout": "9\n불가: Can't instantiate abstract cla\n"
+  },
+  {
+   "line": 19,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 18,
+     "locals": {
+      "ABC": {
+       "ref": "0x1ca0f0482a0"
+      },
+      "abstractmethod": {
+       "ref": "0x1ca0ef2eb60"
+      },
+      "sys": {
+       "ref": "0x1ca0eece7a0"
+      },
+      "Shape": {
+       "ref": "0x1ca0f2d75f0"
+      },
+      "Sq": {
+       "ref": "0x1ca0f2d8950"
+      }
+     }
+    },
+    {
+     "fn": "P1",
+     "line": 19,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x1ca0f0482a0": {
+     "id": "0x1ca0f0482a0",
+     "type": "ABCMeta",
+     "repr": "ABC"
+    },
+    "0x1ca0ef2eb60": {
+     "id": "0x1ca0ef2eb60",
+     "type": "function",
+     "repr": "abstractmethod"
+    },
+    "0x1ca0eece7a0": {
+     "id": "0x1ca0eece7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x1ca0f2d75f0": {
+     "id": "0x1ca0f2d75f0",
+     "type": "ABCMeta",
+     "repr": "Shape"
+    },
+    "0x1ca0f2d8950": {
+     "id": "0x1ca0f2d8950",
+     "type": "ABCMeta",
+     "repr": "Sq"
+    }
+   },
+   "stdout": "9\n불가: Can't instantiate abstract cla\n"
+  },
+  {
+   "line": 20,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 20,
+     "locals": {
+      "ABC": {
+       "ref": "0x1ca0f0482a0"
+      },
+      "abstractmethod": {
+       "ref": "0x1ca0ef2eb60"
+      },
+      "sys": {
+       "ref": "0x1ca0eece7a0"
+      },
+      "Shape": {
+       "ref": "0x1ca0f2d75f0"
+      },
+      "Sq": {
+       "ref": "0x1ca0f2d8950"
+      },
+      "P1": {
+       "ref": "0x1ca0f2d8d30"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ca0f0482a0": {
+     "id": "0x1ca0f0482a0",
+     "type": "ABCMeta",
+     "repr": "ABC"
+    },
+    "0x1ca0ef2eb60": {
+     "id": "0x1ca0ef2eb60",
+     "type": "function",
+     "repr": "abstractmethod"
+    },
+    "0x1ca0eece7a0": {
+     "id": "0x1ca0eece7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x1ca0f2d75f0": {
+     "id": "0x1ca0f2d75f0",
+     "type": "ABCMeta",
+     "repr": "Shape"
+    },
+    "0x1ca0f2d8950": {
+     "id": "0x1ca0f2d8950",
+     "type": "ABCMeta",
+     "repr": "Sq"
+    },
+    "0x1ca0f2d8d30": {
+     "id": "0x1ca0f2d8d30",
+     "type": "type",
+     "repr": "P1"
+    }
+   },
+   "stdout": "9\n불가: Can't instantiate abstract cla\n"
+  },
+  {
+   "line": 20,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 20,
+     "locals": {
+      "ABC": {
+       "ref": "0x1ca0f0482a0"
+      },
+      "abstractmethod": {
+       "ref": "0x1ca0ef2eb60"
+      },
+      "sys": {
+       "ref": "0x1ca0eece7a0"
+      },
+      "Shape": {
+       "ref": "0x1ca0f2d75f0"
+      },
+      "Sq": {
+       "ref": "0x1ca0f2d8950"
+      },
+      "P1": {
+       "ref": "0x1ca0f2d8d30"
+      }
+     }
+    },
+    {
+     "fn": "P2",
+     "line": 20,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x1ca0f0482a0": {
+     "id": "0x1ca0f0482a0",
+     "type": "ABCMeta",
+     "repr": "ABC"
+    },
+    "0x1ca0ef2eb60": {
+     "id": "0x1ca0ef2eb60",
+     "type": "function",
+     "repr": "abstractmethod"
+    },
+    "0x1ca0eece7a0": {
+     "id": "0x1ca0eece7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x1ca0f2d75f0": {
+     "id": "0x1ca0f2d75f0",
+     "type": "ABCMeta",
+     "repr": "Shape"
+    },
+    "0x1ca0f2d8950": {
+     "id": "0x1ca0f2d8950",
+     "type": "ABCMeta",
+     "repr": "Sq"
+    },
+    "0x1ca0f2d8d30": {
+     "id": "0x1ca0f2d8d30",
+     "type": "type",
+     "repr": "P1"
+    }
+   },
+   "stdout": "9\n불가: Can't instantiate abstract cla\n"
+  },
+  {
+   "line": 20,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 20,
+     "locals": {
+      "ABC": {
+       "ref": "0x1ca0f0482a0"
+      },
+      "abstractmethod": {
+       "ref": "0x1ca0ef2eb60"
+      },
+      "sys": {
+       "ref": "0x1ca0eece7a0"
+      },
+      "Shape": {
+       "ref": "0x1ca0f2d75f0"
+      },
+      "Sq": {
+       "ref": "0x1ca0f2d8950"
+      },
+      "P1": {
+       "ref": "0x1ca0f2d8d30"
+      }
+     }
+    },
+    {
+     "fn": "P2",
+     "line": 20,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x1ca0f0482a0": {
+     "id": "0x1ca0f0482a0",
+     "type": "ABCMeta",
+     "repr": "ABC"
+    },
+    "0x1ca0ef2eb60": {
+     "id": "0x1ca0ef2eb60",
+     "type": "function",
+     "repr": "abstractmethod"
+    },
+    "0x1ca0eece7a0": {
+     "id": "0x1ca0eece7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x1ca0f2d75f0": {
+     "id": "0x1ca0f2d75f0",
+     "type": "ABCMeta",
+     "repr": "Shape"
+    },
+    "0x1ca0f2d8950": {
+     "id": "0x1ca0f2d8950",
+     "type": "ABCMeta",
+     "repr": "Sq"
+    },
+    "0x1ca0f2d8d30": {
+     "id": "0x1ca0f2d8d30",
+     "type": "type",
+     "repr": "P1"
+    }
+   },
+   "stdout": "9\n불가: Can't instantiate abstract cla\n"
+  },
+  {
+   "line": 21,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 20,
+     "locals": {
+      "ABC": {
+       "ref": "0x1ca0f0482a0"
+      },
+      "abstractmethod": {
+       "ref": "0x1ca0ef2eb60"
+      },
+      "sys": {
+       "ref": "0x1ca0eece7a0"
+      },
+      "Shape": {
+       "ref": "0x1ca0f2d75f0"
+      },
+      "Sq": {
+       "ref": "0x1ca0f2d8950"
+      },
+      "P1": {
+       "ref": "0x1ca0f2d8d30"
+      }
+     }
+    },
+    {
+     "fn": "P2",
+     "line": 21,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x1ca0f0482a0": {
+     "id": "0x1ca0f0482a0",
+     "type": "ABCMeta",
+     "repr": "ABC"
+    },
+    "0x1ca0ef2eb60": {
+     "id": "0x1ca0ef2eb60",
+     "type": "function",
+     "repr": "abstractmethod"
+    },
+    "0x1ca0eece7a0": {
+     "id": "0x1ca0eece7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x1ca0f2d75f0": {
+     "id": "0x1ca0f2d75f0",
+     "type": "ABCMeta",
+     "repr": "Shape"
+    },
+    "0x1ca0f2d8950": {
+     "id": "0x1ca0f2d8950",
+     "type": "ABCMeta",
+     "repr": "Sq"
+    },
+    "0x1ca0f2d8d30": {
+     "id": "0x1ca0f2d8d30",
+     "type": "type",
+     "repr": "P1"
+    }
+   },
+   "stdout": "9\n불가: Can't instantiate abstract cla\n",
+   "note": "속성을 이 둘로 고정 — __dict__ 를 만들지 않아 메모리 절약"
+  },
+  {
+   "line": 22,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 20,
+     "locals": {
+      "ABC": {
+       "ref": "0x1ca0f0482a0"
+      },
+      "abstractmethod": {
+       "ref": "0x1ca0ef2eb60"
+      },
+      "sys": {
+       "ref": "0x1ca0eece7a0"
+      },
+      "Shape": {
+       "ref": "0x1ca0f2d75f0"
+      },
+      "Sq": {
+       "ref": "0x1ca0f2d8950"
+      },
+      "P1": {
+       "ref": "0x1ca0f2d8d30"
+      }
+     }
+    },
+    {
+     "fn": "P2",
+     "line": 22,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x1ca0f0482a0": {
+     "id": "0x1ca0f0482a0",
+     "type": "ABCMeta",
+     "repr": "ABC"
+    },
+    "0x1ca0ef2eb60": {
+     "id": "0x1ca0ef2eb60",
+     "type": "function",
+     "repr": "abstractmethod"
+    },
+    "0x1ca0eece7a0": {
+     "id": "0x1ca0eece7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x1ca0f2d75f0": {
+     "id": "0x1ca0f2d75f0",
+     "type": "ABCMeta",
+     "repr": "Shape"
+    },
+    "0x1ca0f2d8950": {
+     "id": "0x1ca0f2d8950",
+     "type": "ABCMeta",
+     "repr": "Sq"
+    },
+    "0x1ca0f2d8d30": {
+     "id": "0x1ca0f2d8d30",
+     "type": "type",
+     "repr": "P1"
+    }
+   },
+   "stdout": "9\n불가: Can't instantiate abstract cla\n"
+  },
+  {
+   "line": 22,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 20,
+     "locals": {
+      "ABC": {
+       "ref": "0x1ca0f0482a0"
+      },
+      "abstractmethod": {
+       "ref": "0x1ca0ef2eb60"
+      },
+      "sys": {
+       "ref": "0x1ca0eece7a0"
+      },
+      "Shape": {
+       "ref": "0x1ca0f2d75f0"
+      },
+      "Sq": {
+       "ref": "0x1ca0f2d8950"
+      },
+      "P1": {
+       "ref": "0x1ca0f2d8d30"
+      }
+     }
+    },
+    {
+     "fn": "P2",
+     "line": 22,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x1ca0f0482a0": {
+     "id": "0x1ca0f0482a0",
+     "type": "ABCMeta",
+     "repr": "ABC"
+    },
+    "0x1ca0ef2eb60": {
+     "id": "0x1ca0ef2eb60",
+     "type": "function",
+     "repr": "abstractmethod"
+    },
+    "0x1ca0eece7a0": {
+     "id": "0x1ca0eece7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x1ca0f2d75f0": {
+     "id": "0x1ca0f2d75f0",
+     "type": "ABCMeta",
+     "repr": "Shape"
+    },
+    "0x1ca0f2d8950": {
+     "id": "0x1ca0f2d8950",
+     "type": "ABCMeta",
+     "repr": "Sq"
+    },
+    "0x1ca0f2d8d30": {
+     "id": "0x1ca0f2d8d30",
+     "type": "type",
+     "repr": "P1"
+    }
+   },
+   "stdout": "9\n불가: Can't instantiate abstract cla\n"
+  },
+  {
+   "line": 24,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 24,
+     "locals": {
+      "ABC": {
+       "ref": "0x1ca0f0482a0"
+      },
+      "abstractmethod": {
+       "ref": "0x1ca0ef2eb60"
+      },
+      "sys": {
+       "ref": "0x1ca0eece7a0"
+      },
+      "Shape": {
+       "ref": "0x1ca0f2d75f0"
+      },
+      "Sq": {
+       "ref": "0x1ca0f2d8950"
+      },
+      "P1": {
+       "ref": "0x1ca0f2d8d30"
+      },
+      "P2": {
+       "ref": "0x1ca0f29ba70"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ca0f0482a0": {
+     "id": "0x1ca0f0482a0",
+     "type": "ABCMeta",
+     "repr": "ABC"
+    },
+    "0x1ca0ef2eb60": {
+     "id": "0x1ca0ef2eb60",
+     "type": "function",
+     "repr": "abstractmethod"
+    },
+    "0x1ca0eece7a0": {
+     "id": "0x1ca0eece7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x1ca0f2d75f0": {
+     "id": "0x1ca0f2d75f0",
+     "type": "ABCMeta",
+     "repr": "Shape"
+    },
+    "0x1ca0f2d8950": {
+     "id": "0x1ca0f2d8950",
+     "type": "ABCMeta",
+     "repr": "Sq"
+    },
+    "0x1ca0f2d8d30": {
+     "id": "0x1ca0f2d8d30",
+     "type": "type",
+     "repr": "P1"
+    },
+    "0x1ca0f29ba70": {
+     "id": "0x1ca0f29ba70",
+     "type": "type",
+     "repr": "P2"
+    }
+   },
+   "stdout": "9\n불가: Can't instantiate abstract cla\n"
+  },
+  {
+   "line": 19,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 24,
+     "locals": {
+      "ABC": {
+       "ref": "0x1ca0f0482a0"
+      },
+      "abstractmethod": {
+       "ref": "0x1ca0ef2eb60"
+      },
+      "sys": {
+       "ref": "0x1ca0eece7a0"
+      },
+      "Shape": {
+       "ref": "0x1ca0f2d75f0"
+      },
+      "Sq": {
+       "ref": "0x1ca0f2d8950"
+      },
+      "P1": {
+       "ref": "0x1ca0f2d8d30"
+      },
+      "P2": {
+       "ref": "0x1ca0f29ba70"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 19,
+     "locals": {
+      "self": {
+       "ref": "0x1ca0f45d9a0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ca0f0482a0": {
+     "id": "0x1ca0f0482a0",
+     "type": "ABCMeta",
+     "repr": "ABC"
+    },
+    "0x1ca0ef2eb60": {
+     "id": "0x1ca0ef2eb60",
+     "type": "function",
+     "repr": "abstractmethod"
+    },
+    "0x1ca0eece7a0": {
+     "id": "0x1ca0eece7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x1ca0f2d75f0": {
+     "id": "0x1ca0f2d75f0",
+     "type": "ABCMeta",
+     "repr": "Shape"
+    },
+    "0x1ca0f2d8950": {
+     "id": "0x1ca0f2d8950",
+     "type": "ABCMeta",
+     "repr": "Sq"
+    },
+    "0x1ca0f2d8d30": {
+     "id": "0x1ca0f2d8d30",
+     "type": "type",
+     "repr": "P1"
+    },
+    "0x1ca0f29ba70": {
+     "id": "0x1ca0f29ba70",
+     "type": "type",
+     "repr": "P2"
+    },
+    "0x1ca0f45d9a0": {
+     "id": "0x1ca0f45d9a0",
+     "type": "P1",
+     "repr": "<__main__.P1 object at 0x000001CA0F45D9A0>",
+     "fields": {}
+    }
+   },
+   "stdout": "9\n불가: Can't instantiate abstract cla\n"
+  },
+  {
+   "line": 19,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 24,
+     "locals": {
+      "ABC": {
+       "ref": "0x1ca0f0482a0"
+      },
+      "abstractmethod": {
+       "ref": "0x1ca0ef2eb60"
+      },
+      "sys": {
+       "ref": "0x1ca0eece7a0"
+      },
+      "Shape": {
+       "ref": "0x1ca0f2d75f0"
+      },
+      "Sq": {
+       "ref": "0x1ca0f2d8950"
+      },
+      "P1": {
+       "ref": "0x1ca0f2d8d30"
+      },
+      "P2": {
+       "ref": "0x1ca0f29ba70"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 19,
+     "locals": {
+      "self": {
+       "ref": "0x1ca0f45d9a0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ca0f0482a0": {
+     "id": "0x1ca0f0482a0",
+     "type": "ABCMeta",
+     "repr": "ABC"
+    },
+    "0x1ca0ef2eb60": {
+     "id": "0x1ca0ef2eb60",
+     "type": "function",
+     "repr": "abstractmethod"
+    },
+    "0x1ca0eece7a0": {
+     "id": "0x1ca0eece7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x1ca0f2d75f0": {
+     "id": "0x1ca0f2d75f0",
+     "type": "ABCMeta",
+     "repr": "Shape"
+    },
+    "0x1ca0f2d8950": {
+     "id": "0x1ca0f2d8950",
+     "type": "ABCMeta",
+     "repr": "Sq"
+    },
+    "0x1ca0f2d8d30": {
+     "id": "0x1ca0f2d8d30",
+     "type": "type",
+     "repr": "P1"
+    },
+    "0x1ca0f29ba70": {
+     "id": "0x1ca0f29ba70",
+     "type": "type",
+     "repr": "P2"
+    },
+    "0x1ca0f45d9a0": {
+     "id": "0x1ca0f45d9a0",
+     "type": "P1",
+     "repr": "<__main__.P1 object at 0x000001CA0F45D9A0>",
+     "fields": {}
+    }
+   },
+   "stdout": "9\n불가: Can't instantiate abstract cla\n"
+  },
+  {
+   "line": 19,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 24,
+     "locals": {
+      "ABC": {
+       "ref": "0x1ca0f0482a0"
+      },
+      "abstractmethod": {
+       "ref": "0x1ca0ef2eb60"
+      },
+      "sys": {
+       "ref": "0x1ca0eece7a0"
+      },
+      "Shape": {
+       "ref": "0x1ca0f2d75f0"
+      },
+      "Sq": {
+       "ref": "0x1ca0f2d8950"
+      },
+      "P1": {
+       "ref": "0x1ca0f2d8d30"
+      },
+      "P2": {
+       "ref": "0x1ca0f29ba70"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 19,
+     "locals": {
+      "self": {
+       "ref": "0x1ca0f45d9a0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ca0f0482a0": {
+     "id": "0x1ca0f0482a0",
+     "type": "ABCMeta",
+     "repr": "ABC"
+    },
+    "0x1ca0ef2eb60": {
+     "id": "0x1ca0ef2eb60",
+     "type": "function",
+     "repr": "abstractmethod"
+    },
+    "0x1ca0eece7a0": {
+     "id": "0x1ca0eece7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x1ca0f2d75f0": {
+     "id": "0x1ca0f2d75f0",
+     "type": "ABCMeta",
+     "repr": "Shape"
+    },
+    "0x1ca0f2d8950": {
+     "id": "0x1ca0f2d8950",
+     "type": "ABCMeta",
+     "repr": "Sq"
+    },
+    "0x1ca0f2d8d30": {
+     "id": "0x1ca0f2d8d30",
+     "type": "type",
+     "repr": "P1"
+    },
+    "0x1ca0f29ba70": {
+     "id": "0x1ca0f29ba70",
+     "type": "type",
+     "repr": "P2"
+    },
+    "0x1ca0f45d9a0": {
+     "id": "0x1ca0f45d9a0",
+     "type": "P1",
+     "repr": "<__main__.P1 object at 0x000001CA0F45D9A0>",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    }
+   },
+   "stdout": "9\n불가: Can't instantiate abstract cla\n"
+  },
+  {
+   "line": 19,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 24,
+     "locals": {
+      "ABC": {
+       "ref": "0x1ca0f0482a0"
+      },
+      "abstractmethod": {
+       "ref": "0x1ca0ef2eb60"
+      },
+      "sys": {
+       "ref": "0x1ca0eece7a0"
+      },
+      "Shape": {
+       "ref": "0x1ca0f2d75f0"
+      },
+      "Sq": {
+       "ref": "0x1ca0f2d8950"
+      },
+      "P1": {
+       "ref": "0x1ca0f2d8d30"
+      },
+      "P2": {
+       "ref": "0x1ca0f29ba70"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 19,
+     "locals": {
+      "self": {
+       "ref": "0x1ca0f45d9a0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ca0f0482a0": {
+     "id": "0x1ca0f0482a0",
+     "type": "ABCMeta",
+     "repr": "ABC"
+    },
+    "0x1ca0ef2eb60": {
+     "id": "0x1ca0ef2eb60",
+     "type": "function",
+     "repr": "abstractmethod"
+    },
+    "0x1ca0eece7a0": {
+     "id": "0x1ca0eece7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x1ca0f2d75f0": {
+     "id": "0x1ca0f2d75f0",
+     "type": "ABCMeta",
+     "repr": "Shape"
+    },
+    "0x1ca0f2d8950": {
+     "id": "0x1ca0f2d8950",
+     "type": "ABCMeta",
+     "repr": "Sq"
+    },
+    "0x1ca0f2d8d30": {
+     "id": "0x1ca0f2d8d30",
+     "type": "type",
+     "repr": "P1"
+    },
+    "0x1ca0f29ba70": {
+     "id": "0x1ca0f29ba70",
+     "type": "type",
+     "repr": "P2"
+    },
+    "0x1ca0f45d9a0": {
+     "id": "0x1ca0f45d9a0",
+     "type": "P1",
+     "repr": "<__main__.P1 object at 0x000001CA0F45D9A0>",
+     "fields": {}
+    }
+   },
+   "stdout": "9\n불가: Can't instantiate abstract cla\n"
+  },
+  {
+   "line": 19,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 24,
+     "locals": {
+      "ABC": {
+       "ref": "0x1ca0f0482a0"
+      },
+      "abstractmethod": {
+       "ref": "0x1ca0ef2eb60"
+      },
+      "sys": {
+       "ref": "0x1ca0eece7a0"
+      },
+      "Shape": {
+       "ref": "0x1ca0f2d75f0"
+      },
+      "Sq": {
+       "ref": "0x1ca0f2d8950"
+      },
+      "P1": {
+       "ref": "0x1ca0f2d8d30"
+      },
+      "P2": {
+       "ref": "0x1ca0f29ba70"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 19,
+     "locals": {
+      "self": {
+       "ref": "0x1ca0f45d9a0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ca0f0482a0": {
+     "id": "0x1ca0f0482a0",
+     "type": "ABCMeta",
+     "repr": "ABC"
+    },
+    "0x1ca0ef2eb60": {
+     "id": "0x1ca0ef2eb60",
+     "type": "function",
+     "repr": "abstractmethod"
+    },
+    "0x1ca0eece7a0": {
+     "id": "0x1ca0eece7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x1ca0f2d75f0": {
+     "id": "0x1ca0f2d75f0",
+     "type": "ABCMeta",
+     "repr": "Shape"
+    },
+    "0x1ca0f2d8950": {
+     "id": "0x1ca0f2d8950",
+     "type": "ABCMeta",
+     "repr": "Sq"
+    },
+    "0x1ca0f2d8d30": {
+     "id": "0x1ca0f2d8d30",
+     "type": "type",
+     "repr": "P1"
+    },
+    "0x1ca0f29ba70": {
+     "id": "0x1ca0f29ba70",
+     "type": "type",
+     "repr": "P2"
+    },
+    "0x1ca0f45d9a0": {
+     "id": "0x1ca0f45d9a0",
+     "type": "P1",
+     "repr": "<__main__.P1 object at 0x000001CA0F45D9A0>",
+     "fields": {}
+    }
+   },
+   "stdout": "9\n불가: Can't instantiate abstract cla\n"
+  },
+  {
+   "line": 19,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 24,
+     "locals": {
+      "ABC": {
+       "ref": "0x1ca0f0482a0"
+      },
+      "abstractmethod": {
+       "ref": "0x1ca0ef2eb60"
+      },
+      "sys": {
+       "ref": "0x1ca0eece7a0"
+      },
+      "Shape": {
+       "ref": "0x1ca0f2d75f0"
+      },
+      "Sq": {
+       "ref": "0x1ca0f2d8950"
+      },
+      "P1": {
+       "ref": "0x1ca0f2d8d30"
+      },
+      "P2": {
+       "ref": "0x1ca0f29ba70"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 19,
+     "locals": {
+      "self": {
+       "ref": "0x1ca0f45d9a0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ca0f0482a0": {
+     "id": "0x1ca0f0482a0",
+     "type": "ABCMeta",
+     "repr": "ABC"
+    },
+    "0x1ca0ef2eb60": {
+     "id": "0x1ca0ef2eb60",
+     "type": "function",
+     "repr": "abstractmethod"
+    },
+    "0x1ca0eece7a0": {
+     "id": "0x1ca0eece7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x1ca0f2d75f0": {
+     "id": "0x1ca0f2d75f0",
+     "type": "ABCMeta",
+     "repr": "Shape"
+    },
+    "0x1ca0f2d8950": {
+     "id": "0x1ca0f2d8950",
+     "type": "ABCMeta",
+     "repr": "Sq"
+    },
+    "0x1ca0f2d8d30": {
+     "id": "0x1ca0f2d8d30",
+     "type": "type",
+     "repr": "P1"
+    },
+    "0x1ca0f29ba70": {
+     "id": "0x1ca0f29ba70",
+     "type": "type",
+     "repr": "P2"
+    },
+    "0x1ca0f45d9a0": {
+     "id": "0x1ca0f45d9a0",
+     "type": "P1",
+     "repr": "<__main__.P1 object at 0x000001CA0F45D9A0>",
+     "fields": {
+      "x": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    }
+   },
+   "stdout": "9\n불가: Can't instantiate abstract cla\n"
+  },
+  {
+   "line": 22,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 24,
+     "locals": {
+      "ABC": {
+       "ref": "0x1ca0f0482a0"
+      },
+      "abstractmethod": {
+       "ref": "0x1ca0ef2eb60"
+      },
+      "sys": {
+       "ref": "0x1ca0eece7a0"
+      },
+      "Shape": {
+       "ref": "0x1ca0f2d75f0"
+      },
+      "Sq": {
+       "ref": "0x1ca0f2d8950"
+      },
+      "P1": {
+       "ref": "0x1ca0f2d8d30"
+      },
+      "P2": {
+       "ref": "0x1ca0f29ba70"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 22,
+     "locals": {
+      "self": {
+       "ref": "0x1ca0f45d990"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ca0f0482a0": {
+     "id": "0x1ca0f0482a0",
+     "type": "ABCMeta",
+     "repr": "ABC"
+    },
+    "0x1ca0ef2eb60": {
+     "id": "0x1ca0ef2eb60",
+     "type": "function",
+     "repr": "abstractmethod"
+    },
+    "0x1ca0eece7a0": {
+     "id": "0x1ca0eece7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x1ca0f2d75f0": {
+     "id": "0x1ca0f2d75f0",
+     "type": "ABCMeta",
+     "repr": "Shape"
+    },
+    "0x1ca0f2d8950": {
+     "id": "0x1ca0f2d8950",
+     "type": "ABCMeta",
+     "repr": "Sq"
+    },
+    "0x1ca0f2d8d30": {
+     "id": "0x1ca0f2d8d30",
+     "type": "type",
+     "repr": "P1"
+    },
+    "0x1ca0f29ba70": {
+     "id": "0x1ca0f29ba70",
+     "type": "type",
+     "repr": "P2"
+    },
+    "0x1ca0f45d990": {
+     "id": "0x1ca0f45d990",
+     "type": "P2",
+     "repr": "<__main__.P2 object at 0x000001CA0F45D990>"
+    }
+   },
+   "stdout": "9\n불가: Can't instantiate abstract cla\n"
+  },
+  {
+   "line": 22,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 24,
+     "locals": {
+      "ABC": {
+       "ref": "0x1ca0f0482a0"
+      },
+      "abstractmethod": {
+       "ref": "0x1ca0ef2eb60"
+      },
+      "sys": {
+       "ref": "0x1ca0eece7a0"
+      },
+      "Shape": {
+       "ref": "0x1ca0f2d75f0"
+      },
+      "Sq": {
+       "ref": "0x1ca0f2d8950"
+      },
+      "P1": {
+       "ref": "0x1ca0f2d8d30"
+      },
+      "P2": {
+       "ref": "0x1ca0f29ba70"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 22,
+     "locals": {
+      "self": {
+       "ref": "0x1ca0f45d990"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ca0f0482a0": {
+     "id": "0x1ca0f0482a0",
+     "type": "ABCMeta",
+     "repr": "ABC"
+    },
+    "0x1ca0ef2eb60": {
+     "id": "0x1ca0ef2eb60",
+     "type": "function",
+     "repr": "abstractmethod"
+    },
+    "0x1ca0eece7a0": {
+     "id": "0x1ca0eece7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x1ca0f2d75f0": {
+     "id": "0x1ca0f2d75f0",
+     "type": "ABCMeta",
+     "repr": "Shape"
+    },
+    "0x1ca0f2d8950": {
+     "id": "0x1ca0f2d8950",
+     "type": "ABCMeta",
+     "repr": "Sq"
+    },
+    "0x1ca0f2d8d30": {
+     "id": "0x1ca0f2d8d30",
+     "type": "type",
+     "repr": "P1"
+    },
+    "0x1ca0f29ba70": {
+     "id": "0x1ca0f29ba70",
+     "type": "type",
+     "repr": "P2"
+    },
+    "0x1ca0f45d990": {
+     "id": "0x1ca0f45d990",
+     "type": "P2",
+     "repr": "<__main__.P2 object at 0x000001CA0F45D990>"
+    }
+   },
+   "stdout": "9\n불가: Can't instantiate abstract cla\n"
+  },
+  {
+   "line": 22,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 24,
+     "locals": {
+      "ABC": {
+       "ref": "0x1ca0f0482a0"
+      },
+      "abstractmethod": {
+       "ref": "0x1ca0ef2eb60"
+      },
+      "sys": {
+       "ref": "0x1ca0eece7a0"
+      },
+      "Shape": {
+       "ref": "0x1ca0f2d75f0"
+      },
+      "Sq": {
+       "ref": "0x1ca0f2d8950"
+      },
+      "P1": {
+       "ref": "0x1ca0f2d8d30"
+      },
+      "P2": {
+       "ref": "0x1ca0f29ba70"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 22,
+     "locals": {
+      "self": {
+       "ref": "0x1ca0f45d990"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ca0f0482a0": {
+     "id": "0x1ca0f0482a0",
+     "type": "ABCMeta",
+     "repr": "ABC"
+    },
+    "0x1ca0ef2eb60": {
+     "id": "0x1ca0ef2eb60",
+     "type": "function",
+     "repr": "abstractmethod"
+    },
+    "0x1ca0eece7a0": {
+     "id": "0x1ca0eece7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x1ca0f2d75f0": {
+     "id": "0x1ca0f2d75f0",
+     "type": "ABCMeta",
+     "repr": "Shape"
+    },
+    "0x1ca0f2d8950": {
+     "id": "0x1ca0f2d8950",
+     "type": "ABCMeta",
+     "repr": "Sq"
+    },
+    "0x1ca0f2d8d30": {
+     "id": "0x1ca0f2d8d30",
+     "type": "type",
+     "repr": "P1"
+    },
+    "0x1ca0f29ba70": {
+     "id": "0x1ca0f29ba70",
+     "type": "type",
+     "repr": "P2"
+    },
+    "0x1ca0f45d990": {
+     "id": "0x1ca0f45d990",
+     "type": "P2",
+     "repr": "<__main__.P2 object at 0x000001CA0F45D990>"
+    }
+   },
+   "stdout": "9\n불가: Can't instantiate abstract cla\n"
+  },
+  {
+   "line": 25,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 25,
+     "locals": {
+      "ABC": {
+       "ref": "0x1ca0f0482a0"
+      },
+      "abstractmethod": {
+       "ref": "0x1ca0ef2eb60"
+      },
+      "sys": {
+       "ref": "0x1ca0eece7a0"
+      },
+      "Shape": {
+       "ref": "0x1ca0f2d75f0"
+      },
+      "Sq": {
+       "ref": "0x1ca0f2d8950"
+      },
+      "P1": {
+       "ref": "0x1ca0f2d8d30"
+      },
+      "P2": {
+       "ref": "0x1ca0f29ba70"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ca0f0482a0": {
+     "id": "0x1ca0f0482a0",
+     "type": "ABCMeta",
+     "repr": "ABC"
+    },
+    "0x1ca0ef2eb60": {
+     "id": "0x1ca0ef2eb60",
+     "type": "function",
+     "repr": "abstractmethod"
+    },
+    "0x1ca0eece7a0": {
+     "id": "0x1ca0eece7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x1ca0f2d75f0": {
+     "id": "0x1ca0f2d75f0",
+     "type": "ABCMeta",
+     "repr": "Shape"
+    },
+    "0x1ca0f2d8950": {
+     "id": "0x1ca0f2d8950",
+     "type": "ABCMeta",
+     "repr": "Sq"
+    },
+    "0x1ca0f2d8d30": {
+     "id": "0x1ca0f2d8d30",
+     "type": "type",
+     "repr": "P1"
+    },
+    "0x1ca0f29ba70": {
+     "id": "0x1ca0f29ba70",
+     "type": "type",
+     "repr": "P2"
+    }
+   },
+   "stdout": "9\n불가: Can't instantiate abstract cla\n344 48\n"
+  },
+  {
+   "line": 22,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 25,
+     "locals": {
+      "ABC": {
+       "ref": "0x1ca0f0482a0"
+      },
+      "abstractmethod": {
+       "ref": "0x1ca0ef2eb60"
+      },
+      "sys": {
+       "ref": "0x1ca0eece7a0"
+      },
+      "Shape": {
+       "ref": "0x1ca0f2d75f0"
+      },
+      "Sq": {
+       "ref": "0x1ca0f2d8950"
+      },
+      "P1": {
+       "ref": "0x1ca0f2d8d30"
+      },
+      "P2": {
+       "ref": "0x1ca0f29ba70"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 22,
+     "locals": {
+      "self": {
+       "ref": "0x1ca0f45d990"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ca0f0482a0": {
+     "id": "0x1ca0f0482a0",
+     "type": "ABCMeta",
+     "repr": "ABC"
+    },
+    "0x1ca0ef2eb60": {
+     "id": "0x1ca0ef2eb60",
+     "type": "function",
+     "repr": "abstractmethod"
+    },
+    "0x1ca0eece7a0": {
+     "id": "0x1ca0eece7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x1ca0f2d75f0": {
+     "id": "0x1ca0f2d75f0",
+     "type": "ABCMeta",
+     "repr": "Shape"
+    },
+    "0x1ca0f2d8950": {
+     "id": "0x1ca0f2d8950",
+     "type": "ABCMeta",
+     "repr": "Sq"
+    },
+    "0x1ca0f2d8d30": {
+     "id": "0x1ca0f2d8d30",
+     "type": "type",
+     "repr": "P1"
+    },
+    "0x1ca0f29ba70": {
+     "id": "0x1ca0f29ba70",
+     "type": "type",
+     "repr": "P2"
+    },
+    "0x1ca0f45d990": {
+     "id": "0x1ca0f45d990",
+     "type": "P2",
+     "repr": "<__main__.P2 object at 0x000001CA0F45D990>"
+    }
+   },
+   "stdout": "9\n불가: Can't instantiate abstract cla\n344 48\n"
+  },
+  {
+   "line": 22,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 25,
+     "locals": {
+      "ABC": {
+       "ref": "0x1ca0f0482a0"
+      },
+      "abstractmethod": {
+       "ref": "0x1ca0ef2eb60"
+      },
+      "sys": {
+       "ref": "0x1ca0eece7a0"
+      },
+      "Shape": {
+       "ref": "0x1ca0f2d75f0"
+      },
+      "Sq": {
+       "ref": "0x1ca0f2d8950"
+      },
+      "P1": {
+       "ref": "0x1ca0f2d8d30"
+      },
+      "P2": {
+       "ref": "0x1ca0f29ba70"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 22,
+     "locals": {
+      "self": {
+       "ref": "0x1ca0f45d990"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ca0f0482a0": {
+     "id": "0x1ca0f0482a0",
+     "type": "ABCMeta",
+     "repr": "ABC"
+    },
+    "0x1ca0ef2eb60": {
+     "id": "0x1ca0ef2eb60",
+     "type": "function",
+     "repr": "abstractmethod"
+    },
+    "0x1ca0eece7a0": {
+     "id": "0x1ca0eece7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x1ca0f2d75f0": {
+     "id": "0x1ca0f2d75f0",
+     "type": "ABCMeta",
+     "repr": "Shape"
+    },
+    "0x1ca0f2d8950": {
+     "id": "0x1ca0f2d8950",
+     "type": "ABCMeta",
+     "repr": "Sq"
+    },
+    "0x1ca0f2d8d30": {
+     "id": "0x1ca0f2d8d30",
+     "type": "type",
+     "repr": "P1"
+    },
+    "0x1ca0f29ba70": {
+     "id": "0x1ca0f29ba70",
+     "type": "type",
+     "repr": "P2"
+    },
+    "0x1ca0f45d990": {
+     "id": "0x1ca0f45d990",
+     "type": "P2",
+     "repr": "<__main__.P2 object at 0x000001CA0F45D990>"
+    }
+   },
+   "stdout": "9\n불가: Can't instantiate abstract cla\n344 48\n"
+  },
+  {
+   "line": 22,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 25,
+     "locals": {
+      "ABC": {
+       "ref": "0x1ca0f0482a0"
+      },
+      "abstractmethod": {
+       "ref": "0x1ca0ef2eb60"
+      },
+      "sys": {
+       "ref": "0x1ca0eece7a0"
+      },
+      "Shape": {
+       "ref": "0x1ca0f2d75f0"
+      },
+      "Sq": {
+       "ref": "0x1ca0f2d8950"
+      },
+      "P1": {
+       "ref": "0x1ca0f2d8d30"
+      },
+      "P2": {
+       "ref": "0x1ca0f29ba70"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 22,
+     "locals": {
+      "self": {
+       "ref": "0x1ca0f45d990"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ca0f0482a0": {
+     "id": "0x1ca0f0482a0",
+     "type": "ABCMeta",
+     "repr": "ABC"
+    },
+    "0x1ca0ef2eb60": {
+     "id": "0x1ca0ef2eb60",
+     "type": "function",
+     "repr": "abstractmethod"
+    },
+    "0x1ca0eece7a0": {
+     "id": "0x1ca0eece7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x1ca0f2d75f0": {
+     "id": "0x1ca0f2d75f0",
+     "type": "ABCMeta",
+     "repr": "Shape"
+    },
+    "0x1ca0f2d8950": {
+     "id": "0x1ca0f2d8950",
+     "type": "ABCMeta",
+     "repr": "Sq"
+    },
+    "0x1ca0f2d8d30": {
+     "id": "0x1ca0f2d8d30",
+     "type": "type",
+     "repr": "P1"
+    },
+    "0x1ca0f29ba70": {
+     "id": "0x1ca0f29ba70",
+     "type": "type",
+     "repr": "P2"
+    },
+    "0x1ca0f45d990": {
+     "id": "0x1ca0f45d990",
+     "type": "P2",
+     "repr": "<__main__.P2 object at 0x000001CA0F45D990>"
+    }
+   },
+   "stdout": "9\n불가: Can't instantiate abstract cla\n344 48\n"
+  },
+  {
+   "line": 26,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 26,
+     "locals": {
+      "ABC": {
+       "ref": "0x1ca0f0482a0"
+      },
+      "abstractmethod": {
+       "ref": "0x1ca0ef2eb60"
+      },
+      "sys": {
+       "ref": "0x1ca0eece7a0"
+      },
+      "Shape": {
+       "ref": "0x1ca0f2d75f0"
+      },
+      "Sq": {
+       "ref": "0x1ca0f2d8950"
+      },
+      "P1": {
+       "ref": "0x1ca0f2d8d30"
+      },
+      "P2": {
+       "ref": "0x1ca0f29ba70"
+      },
+      "p": {
+       "ref": "0x1ca0f45d990"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ca0f0482a0": {
+     "id": "0x1ca0f0482a0",
+     "type": "ABCMeta",
+     "repr": "ABC"
+    },
+    "0x1ca0ef2eb60": {
+     "id": "0x1ca0ef2eb60",
+     "type": "function",
+     "repr": "abstractmethod"
+    },
+    "0x1ca0eece7a0": {
+     "id": "0x1ca0eece7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x1ca0f2d75f0": {
+     "id": "0x1ca0f2d75f0",
+     "type": "ABCMeta",
+     "repr": "Shape"
+    },
+    "0x1ca0f2d8950": {
+     "id": "0x1ca0f2d8950",
+     "type": "ABCMeta",
+     "repr": "Sq"
+    },
+    "0x1ca0f2d8d30": {
+     "id": "0x1ca0f2d8d30",
+     "type": "type",
+     "repr": "P1"
+    },
+    "0x1ca0f29ba70": {
+     "id": "0x1ca0f29ba70",
+     "type": "type",
+     "repr": "P2"
+    },
+    "0x1ca0f45d990": {
+     "id": "0x1ca0f45d990",
+     "type": "P2",
+     "repr": "<__main__.P2 object at 0x000001CA0F45D990>"
+    }
+   },
+   "stdout": "9\n불가: Can't instantiate abstract cla\n344 48\n",
+   "note": "슬롯에 없는 속성 → AttributeError"
+  },
+  {
+   "line": 26,
+   "event": "exception",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 26,
+     "locals": {
+      "ABC": {
+       "ref": "0x1ca0f0482a0"
+      },
+      "abstractmethod": {
+       "ref": "0x1ca0ef2eb60"
+      },
+      "sys": {
+       "ref": "0x1ca0eece7a0"
+      },
+      "Shape": {
+       "ref": "0x1ca0f2d75f0"
+      },
+      "Sq": {
+       "ref": "0x1ca0f2d8950"
+      },
+      "P1": {
+       "ref": "0x1ca0f2d8d30"
+      },
+      "P2": {
+       "ref": "0x1ca0f29ba70"
+      },
+      "p": {
+       "ref": "0x1ca0f45d990"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ca0f0482a0": {
+     "id": "0x1ca0f0482a0",
+     "type": "ABCMeta",
+     "repr": "ABC"
+    },
+    "0x1ca0ef2eb60": {
+     "id": "0x1ca0ef2eb60",
+     "type": "function",
+     "repr": "abstractmethod"
+    },
+    "0x1ca0eece7a0": {
+     "id": "0x1ca0eece7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x1ca0f2d75f0": {
+     "id": "0x1ca0f2d75f0",
+     "type": "ABCMeta",
+     "repr": "Shape"
+    },
+    "0x1ca0f2d8950": {
+     "id": "0x1ca0f2d8950",
+     "type": "ABCMeta",
+     "repr": "Sq"
+    },
+    "0x1ca0f2d8d30": {
+     "id": "0x1ca0f2d8d30",
+     "type": "type",
+     "repr": "P1"
+    },
+    "0x1ca0f29ba70": {
+     "id": "0x1ca0f29ba70",
+     "type": "type",
+     "repr": "P2"
+    },
+    "0x1ca0f45d990": {
+     "id": "0x1ca0f45d990",
+     "type": "P2",
+     "repr": "<__main__.P2 object at 0x000001CA0F45D990>"
+    }
+   },
+   "stdout": "9\n불가: Can't instantiate abstract cla\n344 48\n",
+   "exc": "AttributeError: 'P2' object has no attribute 'z'"
+  },
+  {
+   "line": 26,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 26,
+     "locals": {
+      "ABC": {
+       "ref": "0x1ca0f0482a0"
+      },
+      "abstractmethod": {
+       "ref": "0x1ca0ef2eb60"
+      },
+      "sys": {
+       "ref": "0x1ca0eece7a0"
+      },
+      "Shape": {
+       "ref": "0x1ca0f2d75f0"
+      },
+      "Sq": {
+       "ref": "0x1ca0f2d8950"
+      },
+      "P1": {
+       "ref": "0x1ca0f2d8d30"
+      },
+      "P2": {
+       "ref": "0x1ca0f29ba70"
+      },
+      "p": {
+       "ref": "0x1ca0f45d990"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ca0f0482a0": {
+     "id": "0x1ca0f0482a0",
+     "type": "ABCMeta",
+     "repr": "ABC"
+    },
+    "0x1ca0ef2eb60": {
+     "id": "0x1ca0ef2eb60",
+     "type": "function",
+     "repr": "abstractmethod"
+    },
+    "0x1ca0eece7a0": {
+     "id": "0x1ca0eece7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x1ca0f2d75f0": {
+     "id": "0x1ca0f2d75f0",
+     "type": "ABCMeta",
+     "repr": "Shape"
+    },
+    "0x1ca0f2d8950": {
+     "id": "0x1ca0f2d8950",
+     "type": "ABCMeta",
+     "repr": "Sq"
+    },
+    "0x1ca0f2d8d30": {
+     "id": "0x1ca0f2d8d30",
+     "type": "type",
+     "repr": "P1"
+    },
+    "0x1ca0f29ba70": {
+     "id": "0x1ca0f29ba70",
+     "type": "type",
+     "repr": "P2"
+    },
+    "0x1ca0f45d990": {
+     "id": "0x1ca0f45d990",
+     "type": "P2",
+     "repr": "<__main__.P2 object at 0x000001CA0F45D990>"
+    }
+   },
+   "stdout": "9\n불가: Can't instantiate abstract cla\n344 48\n"
+  },
+  {
+   "line": 26,
+   "event": "exception",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 26,
+     "locals": {
+      "ABC": {
+       "ref": "0x1ca0f0482a0"
+      },
+      "abstractmethod": {
+       "ref": "0x1ca0ef2eb60"
+      },
+      "sys": {
+       "ref": "0x1ca0eece7a0"
+      },
+      "Shape": {
+       "ref": "0x1ca0f2d75f0"
+      },
+      "Sq": {
+       "ref": "0x1ca0f2d8950"
+      },
+      "P1": {
+       "ref": "0x1ca0f2d8d30"
+      },
+      "P2": {
+       "ref": "0x1ca0f29ba70"
+      },
+      "p": {
+       "ref": "0x1ca0f45d990"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ca0f0482a0": {
+     "id": "0x1ca0f0482a0",
+     "type": "ABCMeta",
+     "repr": "ABC"
+    },
+    "0x1ca0ef2eb60": {
+     "id": "0x1ca0ef2eb60",
+     "type": "function",
+     "repr": "abstractmethod"
+    },
+    "0x1ca0eece7a0": {
+     "id": "0x1ca0eece7a0",
+     "type": "module",
+     "repr": "sys"
+    },
+    "0x1ca0f2d75f0": {
+     "id": "0x1ca0f2d75f0",
+     "type": "ABCMeta",
+     "repr": "Shape"
+    },
+    "0x1ca0f2d8950": {
+     "id": "0x1ca0f2d8950",
+     "type": "ABCMeta",
+     "repr": "Sq"
+    },
+    "0x1ca0f2d8d30": {
+     "id": "0x1ca0f2d8d30",
+     "type": "type",
+     "repr": "P1"
+    },
+    "0x1ca0f29ba70": {
+     "id": "0x1ca0f29ba70",
+     "type": "type",
+     "repr": "P2"
+    },
+    "0x1ca0f45d990": {
+     "id": "0x1ca0f45d990",
+     "type": "P2",
+     "repr": "<__main__.P2 object at 0x000001CA0F45D990>"
+    }
+   },
+   "stdout": "9\n불가: Can't instantiate abstract cla\n344 48\n",
+   "exc": "AttributeError: 'P2' object has no attribute 'z'"
+  }
+ ],
+ "v": 1
+}

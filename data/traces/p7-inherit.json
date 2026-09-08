@@ -1,0 +1,2863 @@
+{
+ "id": "p7-inherit",
+ "code": "class Animal:\n    def __init__(self, name):\n        self.name = name\n    def speak(self):\n        return \"...\"\n    def intro(self):\n        return f\"{self.name}: {self.speak()}\"\n\nclass Dog(Animal):\n    def speak(self):\n        return \"멍\"\n\nclass Puppy(Dog):\n    def __init__(self, name, age):\n        super().__init__(name)\n        self.age = age\n\nd = Dog(\"초코\")\np = Puppy(\"보리\", 1)\nprint(d.intro(), \"|\", p.intro())\nprint(isinstance(p, Animal), issubclass(Puppy, Animal))",
+ "steps": [
+  {
+   "line": 0,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 0,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Animal",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Animal",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Animal",
+     "line": 2,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Animal",
+     "line": 4,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 6,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Animal",
+     "line": 6,
+     "locals": {
+      "speak": {
+       "ref": "0x25eac21ccc0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x25eac21ccc0": {
+     "id": "0x25eac21ccc0",
+     "type": "function",
+     "repr": "speak"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 6,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Animal",
+     "line": 6,
+     "locals": {
+      "speak": {
+       "ref": "0x25eac21ccc0"
+      },
+      "intro": {
+       "ref": "0x25eac21ce00"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x25eac21ccc0": {
+     "id": "0x25eac21ccc0",
+     "type": "function",
+     "repr": "speak"
+    },
+    "0x25eac21ce00": {
+     "id": "0x25eac21ce00",
+     "type": "function",
+     "repr": "intro"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 9,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 9,
+     "locals": {
+      "Animal": {
+       "ref": "0x25eac0a9190"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x25eac0a9190": {
+     "id": "0x25eac0a9190",
+     "type": "type",
+     "repr": "Animal"
+    }
+   },
+   "stdout": "",
+   "note": "Animal 을 상속 — Animal 의 메서드를 물려받는다"
+  },
+  {
+   "line": 9,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 9,
+     "locals": {
+      "Animal": {
+       "ref": "0x25eac0a9190"
+      }
+     }
+    },
+    {
+     "fn": "Dog",
+     "line": 9,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x25eac0a9190": {
+     "id": "0x25eac0a9190",
+     "type": "type",
+     "repr": "Animal"
+    }
+   },
+   "stdout": "",
+   "note": "Animal 을 상속 — Animal 의 메서드를 물려받는다"
+  },
+  {
+   "line": 9,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 9,
+     "locals": {
+      "Animal": {
+       "ref": "0x25eac0a9190"
+      }
+     }
+    },
+    {
+     "fn": "Dog",
+     "line": 9,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x25eac0a9190": {
+     "id": "0x25eac0a9190",
+     "type": "type",
+     "repr": "Animal"
+    }
+   },
+   "stdout": "",
+   "note": "Animal 을 상속 — Animal 의 메서드를 물려받는다"
+  },
+  {
+   "line": 10,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 9,
+     "locals": {
+      "Animal": {
+       "ref": "0x25eac0a9190"
+      }
+     }
+    },
+    {
+     "fn": "Dog",
+     "line": 10,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x25eac0a9190": {
+     "id": "0x25eac0a9190",
+     "type": "type",
+     "repr": "Animal"
+    }
+   },
+   "stdout": "",
+   "note": "재정의(오버라이드) — Dog 에서는 이게 먼저 찾힌다"
+  },
+  {
+   "line": 10,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 9,
+     "locals": {
+      "Animal": {
+       "ref": "0x25eac0a9190"
+      }
+     }
+    },
+    {
+     "fn": "Dog",
+     "line": 10,
+     "locals": {
+      "speak": {
+       "ref": "0x25eac21cea0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x25eac0a9190": {
+     "id": "0x25eac0a9190",
+     "type": "type",
+     "repr": "Animal"
+    },
+    "0x25eac21cea0": {
+     "id": "0x25eac21cea0",
+     "type": "function",
+     "repr": "speak"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 13,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 13,
+     "locals": {
+      "Animal": {
+       "ref": "0x25eac0a9190"
+      },
+      "Dog": {
+       "ref": "0x25eac0a7290"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x25eac0a9190": {
+     "id": "0x25eac0a9190",
+     "type": "type",
+     "repr": "Animal"
+    },
+    "0x25eac0a7290": {
+     "id": "0x25eac0a7290",
+     "type": "type",
+     "repr": "Dog"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 13,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 13,
+     "locals": {
+      "Animal": {
+       "ref": "0x25eac0a9190"
+      },
+      "Dog": {
+       "ref": "0x25eac0a7290"
+      }
+     }
+    },
+    {
+     "fn": "Puppy",
+     "line": 13,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x25eac0a9190": {
+     "id": "0x25eac0a9190",
+     "type": "type",
+     "repr": "Animal"
+    },
+    "0x25eac0a7290": {
+     "id": "0x25eac0a7290",
+     "type": "type",
+     "repr": "Dog"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 13,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 13,
+     "locals": {
+      "Animal": {
+       "ref": "0x25eac0a9190"
+      },
+      "Dog": {
+       "ref": "0x25eac0a7290"
+      }
+     }
+    },
+    {
+     "fn": "Puppy",
+     "line": 13,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x25eac0a9190": {
+     "id": "0x25eac0a9190",
+     "type": "type",
+     "repr": "Animal"
+    },
+    "0x25eac0a7290": {
+     "id": "0x25eac0a7290",
+     "type": "type",
+     "repr": "Dog"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 14,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 13,
+     "locals": {
+      "Animal": {
+       "ref": "0x25eac0a9190"
+      },
+      "Dog": {
+       "ref": "0x25eac0a7290"
+      }
+     }
+    },
+    {
+     "fn": "Puppy",
+     "line": 14,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x25eac0a9190": {
+     "id": "0x25eac0a9190",
+     "type": "type",
+     "repr": "Animal"
+    },
+    "0x25eac0a7290": {
+     "id": "0x25eac0a7290",
+     "type": "type",
+     "repr": "Dog"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 14,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 13,
+     "locals": {
+      "Animal": {
+       "ref": "0x25eac0a9190"
+      },
+      "Dog": {
+       "ref": "0x25eac0a7290"
+      }
+     }
+    },
+    {
+     "fn": "Puppy",
+     "line": 14,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x25eac0a9190": {
+     "id": "0x25eac0a9190",
+     "type": "type",
+     "repr": "Animal"
+    },
+    "0x25eac0a7290": {
+     "id": "0x25eac0a7290",
+     "type": "type",
+     "repr": "Dog"
+    }
+   },
+   "stdout": "",
+   "retval": "<cell at 0x0000025EAC22D030: empty>"
+  },
+  {
+   "line": 18,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 18,
+     "locals": {
+      "Animal": {
+       "ref": "0x25eac0a9190"
+      },
+      "Dog": {
+       "ref": "0x25eac0a7290"
+      },
+      "Puppy": {
+       "ref": "0x25eac0a9570"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x25eac0a9190": {
+     "id": "0x25eac0a9190",
+     "type": "type",
+     "repr": "Animal"
+    },
+    "0x25eac0a7290": {
+     "id": "0x25eac0a7290",
+     "type": "type",
+     "repr": "Dog"
+    },
+    "0x25eac0a9570": {
+     "id": "0x25eac0a9570",
+     "type": "type",
+     "repr": "Puppy"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 2,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 18,
+     "locals": {
+      "Animal": {
+       "ref": "0x25eac0a9190"
+      },
+      "Dog": {
+       "ref": "0x25eac0a7290"
+      },
+      "Puppy": {
+       "ref": "0x25eac0a9570"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 2,
+     "locals": {
+      "self": {
+       "ref": "0x25eac22d220"
+      },
+      "name": {
+       "ref": "0x25eac226240"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x25eac0a9190": {
+     "id": "0x25eac0a9190",
+     "type": "type",
+     "repr": "Animal"
+    },
+    "0x25eac0a7290": {
+     "id": "0x25eac0a7290",
+     "type": "type",
+     "repr": "Dog"
+    },
+    "0x25eac0a9570": {
+     "id": "0x25eac0a9570",
+     "type": "type",
+     "repr": "Puppy"
+    },
+    "0x25eac22d220": {
+     "id": "0x25eac22d220",
+     "type": "Dog",
+     "repr": "<__main__.Dog object at 0x0000025EAC22D220>",
+     "fields": {}
+    },
+    "0x25eac226240": {
+     "id": "0x25eac226240",
+     "type": "str",
+     "repr": "'초코'"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 3,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 18,
+     "locals": {
+      "Animal": {
+       "ref": "0x25eac0a9190"
+      },
+      "Dog": {
+       "ref": "0x25eac0a7290"
+      },
+      "Puppy": {
+       "ref": "0x25eac0a9570"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 3,
+     "locals": {
+      "self": {
+       "ref": "0x25eac22d220"
+      },
+      "name": {
+       "ref": "0x25eac226240"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x25eac0a9190": {
+     "id": "0x25eac0a9190",
+     "type": "type",
+     "repr": "Animal"
+    },
+    "0x25eac0a7290": {
+     "id": "0x25eac0a7290",
+     "type": "type",
+     "repr": "Dog"
+    },
+    "0x25eac0a9570": {
+     "id": "0x25eac0a9570",
+     "type": "type",
+     "repr": "Puppy"
+    },
+    "0x25eac22d220": {
+     "id": "0x25eac22d220",
+     "type": "Dog",
+     "repr": "<__main__.Dog object at 0x0000025EAC22D220>",
+     "fields": {}
+    },
+    "0x25eac226240": {
+     "id": "0x25eac226240",
+     "type": "str",
+     "repr": "'초코'"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 3,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 18,
+     "locals": {
+      "Animal": {
+       "ref": "0x25eac0a9190"
+      },
+      "Dog": {
+       "ref": "0x25eac0a7290"
+      },
+      "Puppy": {
+       "ref": "0x25eac0a9570"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 3,
+     "locals": {
+      "self": {
+       "ref": "0x25eac22d220"
+      },
+      "name": {
+       "ref": "0x25eac226240"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x25eac0a9190": {
+     "id": "0x25eac0a9190",
+     "type": "type",
+     "repr": "Animal"
+    },
+    "0x25eac0a7290": {
+     "id": "0x25eac0a7290",
+     "type": "type",
+     "repr": "Dog"
+    },
+    "0x25eac0a9570": {
+     "id": "0x25eac0a9570",
+     "type": "type",
+     "repr": "Puppy"
+    },
+    "0x25eac22d220": {
+     "id": "0x25eac22d220",
+     "type": "Dog",
+     "repr": "<__main__.Dog object at 0x0000025EAC22D220>",
+     "fields": {
+      "name": {
+       "ref": "0x25eac226240"
+      }
+     }
+    },
+    "0x25eac226240": {
+     "id": "0x25eac226240",
+     "type": "str",
+     "repr": "'초코'"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 19,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 19,
+     "locals": {
+      "Animal": {
+       "ref": "0x25eac0a9190"
+      },
+      "Dog": {
+       "ref": "0x25eac0a7290"
+      },
+      "Puppy": {
+       "ref": "0x25eac0a9570"
+      },
+      "d": {
+       "ref": "0x25eac22d220"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x25eac0a9190": {
+     "id": "0x25eac0a9190",
+     "type": "type",
+     "repr": "Animal"
+    },
+    "0x25eac0a7290": {
+     "id": "0x25eac0a7290",
+     "type": "type",
+     "repr": "Dog"
+    },
+    "0x25eac0a9570": {
+     "id": "0x25eac0a9570",
+     "type": "type",
+     "repr": "Puppy"
+    },
+    "0x25eac22d220": {
+     "id": "0x25eac22d220",
+     "type": "Dog",
+     "repr": "<__main__.Dog object at 0x0000025EAC22D220>",
+     "fields": {
+      "name": {
+       "ref": "0x25eac226240"
+      }
+     }
+    },
+    "0x25eac226240": {
+     "id": "0x25eac226240",
+     "type": "str",
+     "repr": "'초코'"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 14,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 19,
+     "locals": {
+      "Animal": {
+       "ref": "0x25eac0a9190"
+      },
+      "Dog": {
+       "ref": "0x25eac0a7290"
+      },
+      "Puppy": {
+       "ref": "0x25eac0a9570"
+      },
+      "d": {
+       "ref": "0x25eac22d220"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 14,
+     "locals": {
+      "self": {
+       "ref": "0x25eac22d520"
+      },
+      "name": {
+       "ref": "0x25eac226290"
+      },
+      "age": {
+       "ref": "0x7ffd7f2b49b8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x25eac0a9190": {
+     "id": "0x25eac0a9190",
+     "type": "type",
+     "repr": "Animal"
+    },
+    "0x25eac0a7290": {
+     "id": "0x25eac0a7290",
+     "type": "type",
+     "repr": "Dog"
+    },
+    "0x25eac0a9570": {
+     "id": "0x25eac0a9570",
+     "type": "type",
+     "repr": "Puppy"
+    },
+    "0x25eac22d220": {
+     "id": "0x25eac22d220",
+     "type": "Dog",
+     "repr": "<__main__.Dog object at 0x0000025EAC22D220>",
+     "fields": {
+      "name": {
+       "ref": "0x25eac226240"
+      }
+     }
+    },
+    "0x25eac226240": {
+     "id": "0x25eac226240",
+     "type": "str",
+     "repr": "'초코'"
+    },
+    "0x25eac22d520": {
+     "id": "0x25eac22d520",
+     "type": "Puppy",
+     "repr": "<__main__.Puppy object at 0x0000025EAC22D520>",
+     "fields": {}
+    },
+    "0x25eac226290": {
+     "id": "0x25eac226290",
+     "type": "str",
+     "repr": "'보리'"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 15,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 19,
+     "locals": {
+      "Animal": {
+       "ref": "0x25eac0a9190"
+      },
+      "Dog": {
+       "ref": "0x25eac0a7290"
+      },
+      "Puppy": {
+       "ref": "0x25eac0a9570"
+      },
+      "d": {
+       "ref": "0x25eac22d220"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 15,
+     "locals": {
+      "self": {
+       "ref": "0x25eac22d520"
+      },
+      "name": {
+       "ref": "0x25eac226290"
+      },
+      "age": {
+       "ref": "0x7ffd7f2b49b8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x25eac0a9190": {
+     "id": "0x25eac0a9190",
+     "type": "type",
+     "repr": "Animal"
+    },
+    "0x25eac0a7290": {
+     "id": "0x25eac0a7290",
+     "type": "type",
+     "repr": "Dog"
+    },
+    "0x25eac0a9570": {
+     "id": "0x25eac0a9570",
+     "type": "type",
+     "repr": "Puppy"
+    },
+    "0x25eac22d220": {
+     "id": "0x25eac22d220",
+     "type": "Dog",
+     "repr": "<__main__.Dog object at 0x0000025EAC22D220>",
+     "fields": {
+      "name": {
+       "ref": "0x25eac226240"
+      }
+     }
+    },
+    "0x25eac226240": {
+     "id": "0x25eac226240",
+     "type": "str",
+     "repr": "'초코'"
+    },
+    "0x25eac22d520": {
+     "id": "0x25eac22d520",
+     "type": "Puppy",
+     "repr": "<__main__.Puppy object at 0x0000025EAC22D520>",
+     "fields": {}
+    },
+    "0x25eac226290": {
+     "id": "0x25eac226290",
+     "type": "str",
+     "repr": "'보리'"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    }
+   },
+   "stdout": "",
+   "note": "부모의 __init__ 을 호출해 name 을 세팅 — 안 하면 name 이 없다"
+  },
+  {
+   "line": 2,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 19,
+     "locals": {
+      "Animal": {
+       "ref": "0x25eac0a9190"
+      },
+      "Dog": {
+       "ref": "0x25eac0a7290"
+      },
+      "Puppy": {
+       "ref": "0x25eac0a9570"
+      },
+      "d": {
+       "ref": "0x25eac22d220"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 15,
+     "locals": {
+      "self": {
+       "ref": "0x25eac22d520"
+      },
+      "name": {
+       "ref": "0x25eac226290"
+      },
+      "age": {
+       "ref": "0x7ffd7f2b49b8"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 2,
+     "locals": {
+      "self": {
+       "ref": "0x25eac22d520"
+      },
+      "name": {
+       "ref": "0x25eac226290"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x25eac0a9190": {
+     "id": "0x25eac0a9190",
+     "type": "type",
+     "repr": "Animal"
+    },
+    "0x25eac0a7290": {
+     "id": "0x25eac0a7290",
+     "type": "type",
+     "repr": "Dog"
+    },
+    "0x25eac0a9570": {
+     "id": "0x25eac0a9570",
+     "type": "type",
+     "repr": "Puppy"
+    },
+    "0x25eac22d220": {
+     "id": "0x25eac22d220",
+     "type": "Dog",
+     "repr": "<__main__.Dog object at 0x0000025EAC22D220>",
+     "fields": {
+      "name": {
+       "ref": "0x25eac226240"
+      }
+     }
+    },
+    "0x25eac226240": {
+     "id": "0x25eac226240",
+     "type": "str",
+     "repr": "'초코'"
+    },
+    "0x25eac22d520": {
+     "id": "0x25eac22d520",
+     "type": "Puppy",
+     "repr": "<__main__.Puppy object at 0x0000025EAC22D520>",
+     "fields": {}
+    },
+    "0x25eac226290": {
+     "id": "0x25eac226290",
+     "type": "str",
+     "repr": "'보리'"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 3,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 19,
+     "locals": {
+      "Animal": {
+       "ref": "0x25eac0a9190"
+      },
+      "Dog": {
+       "ref": "0x25eac0a7290"
+      },
+      "Puppy": {
+       "ref": "0x25eac0a9570"
+      },
+      "d": {
+       "ref": "0x25eac22d220"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 15,
+     "locals": {
+      "self": {
+       "ref": "0x25eac22d520"
+      },
+      "name": {
+       "ref": "0x25eac226290"
+      },
+      "age": {
+       "ref": "0x7ffd7f2b49b8"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 3,
+     "locals": {
+      "self": {
+       "ref": "0x25eac22d520"
+      },
+      "name": {
+       "ref": "0x25eac226290"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x25eac0a9190": {
+     "id": "0x25eac0a9190",
+     "type": "type",
+     "repr": "Animal"
+    },
+    "0x25eac0a7290": {
+     "id": "0x25eac0a7290",
+     "type": "type",
+     "repr": "Dog"
+    },
+    "0x25eac0a9570": {
+     "id": "0x25eac0a9570",
+     "type": "type",
+     "repr": "Puppy"
+    },
+    "0x25eac22d220": {
+     "id": "0x25eac22d220",
+     "type": "Dog",
+     "repr": "<__main__.Dog object at 0x0000025EAC22D220>",
+     "fields": {
+      "name": {
+       "ref": "0x25eac226240"
+      }
+     }
+    },
+    "0x25eac226240": {
+     "id": "0x25eac226240",
+     "type": "str",
+     "repr": "'초코'"
+    },
+    "0x25eac22d520": {
+     "id": "0x25eac22d520",
+     "type": "Puppy",
+     "repr": "<__main__.Puppy object at 0x0000025EAC22D520>",
+     "fields": {}
+    },
+    "0x25eac226290": {
+     "id": "0x25eac226290",
+     "type": "str",
+     "repr": "'보리'"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 3,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 19,
+     "locals": {
+      "Animal": {
+       "ref": "0x25eac0a9190"
+      },
+      "Dog": {
+       "ref": "0x25eac0a7290"
+      },
+      "Puppy": {
+       "ref": "0x25eac0a9570"
+      },
+      "d": {
+       "ref": "0x25eac22d220"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 15,
+     "locals": {
+      "self": {
+       "ref": "0x25eac22d520"
+      },
+      "name": {
+       "ref": "0x25eac226290"
+      },
+      "age": {
+       "ref": "0x7ffd7f2b49b8"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 3,
+     "locals": {
+      "self": {
+       "ref": "0x25eac22d520"
+      },
+      "name": {
+       "ref": "0x25eac226290"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x25eac0a9190": {
+     "id": "0x25eac0a9190",
+     "type": "type",
+     "repr": "Animal"
+    },
+    "0x25eac0a7290": {
+     "id": "0x25eac0a7290",
+     "type": "type",
+     "repr": "Dog"
+    },
+    "0x25eac0a9570": {
+     "id": "0x25eac0a9570",
+     "type": "type",
+     "repr": "Puppy"
+    },
+    "0x25eac22d220": {
+     "id": "0x25eac22d220",
+     "type": "Dog",
+     "repr": "<__main__.Dog object at 0x0000025EAC22D220>",
+     "fields": {
+      "name": {
+       "ref": "0x25eac226240"
+      }
+     }
+    },
+    "0x25eac226240": {
+     "id": "0x25eac226240",
+     "type": "str",
+     "repr": "'초코'"
+    },
+    "0x25eac22d520": {
+     "id": "0x25eac22d520",
+     "type": "Puppy",
+     "repr": "<__main__.Puppy object at 0x0000025EAC22D520>",
+     "fields": {
+      "name": {
+       "ref": "0x25eac226290"
+      }
+     }
+    },
+    "0x25eac226290": {
+     "id": "0x25eac226290",
+     "type": "str",
+     "repr": "'보리'"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 16,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 19,
+     "locals": {
+      "Animal": {
+       "ref": "0x25eac0a9190"
+      },
+      "Dog": {
+       "ref": "0x25eac0a7290"
+      },
+      "Puppy": {
+       "ref": "0x25eac0a9570"
+      },
+      "d": {
+       "ref": "0x25eac22d220"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 16,
+     "locals": {
+      "self": {
+       "ref": "0x25eac22d520"
+      },
+      "name": {
+       "ref": "0x25eac226290"
+      },
+      "age": {
+       "ref": "0x7ffd7f2b49b8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x25eac0a9190": {
+     "id": "0x25eac0a9190",
+     "type": "type",
+     "repr": "Animal"
+    },
+    "0x25eac0a7290": {
+     "id": "0x25eac0a7290",
+     "type": "type",
+     "repr": "Dog"
+    },
+    "0x25eac0a9570": {
+     "id": "0x25eac0a9570",
+     "type": "type",
+     "repr": "Puppy"
+    },
+    "0x25eac22d220": {
+     "id": "0x25eac22d220",
+     "type": "Dog",
+     "repr": "<__main__.Dog object at 0x0000025EAC22D220>",
+     "fields": {
+      "name": {
+       "ref": "0x25eac226240"
+      }
+     }
+    },
+    "0x25eac226240": {
+     "id": "0x25eac226240",
+     "type": "str",
+     "repr": "'초코'"
+    },
+    "0x25eac22d520": {
+     "id": "0x25eac22d520",
+     "type": "Puppy",
+     "repr": "<__main__.Puppy object at 0x0000025EAC22D520>",
+     "fields": {
+      "name": {
+       "ref": "0x25eac226290"
+      }
+     }
+    },
+    "0x25eac226290": {
+     "id": "0x25eac226290",
+     "type": "str",
+     "repr": "'보리'"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 16,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 19,
+     "locals": {
+      "Animal": {
+       "ref": "0x25eac0a9190"
+      },
+      "Dog": {
+       "ref": "0x25eac0a7290"
+      },
+      "Puppy": {
+       "ref": "0x25eac0a9570"
+      },
+      "d": {
+       "ref": "0x25eac22d220"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 16,
+     "locals": {
+      "self": {
+       "ref": "0x25eac22d520"
+      },
+      "name": {
+       "ref": "0x25eac226290"
+      },
+      "age": {
+       "ref": "0x7ffd7f2b49b8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x25eac0a9190": {
+     "id": "0x25eac0a9190",
+     "type": "type",
+     "repr": "Animal"
+    },
+    "0x25eac0a7290": {
+     "id": "0x25eac0a7290",
+     "type": "type",
+     "repr": "Dog"
+    },
+    "0x25eac0a9570": {
+     "id": "0x25eac0a9570",
+     "type": "type",
+     "repr": "Puppy"
+    },
+    "0x25eac22d220": {
+     "id": "0x25eac22d220",
+     "type": "Dog",
+     "repr": "<__main__.Dog object at 0x0000025EAC22D220>",
+     "fields": {
+      "name": {
+       "ref": "0x25eac226240"
+      }
+     }
+    },
+    "0x25eac226240": {
+     "id": "0x25eac226240",
+     "type": "str",
+     "repr": "'초코'"
+    },
+    "0x25eac22d520": {
+     "id": "0x25eac22d520",
+     "type": "Puppy",
+     "repr": "<__main__.Puppy object at 0x0000025EAC22D520>",
+     "fields": {
+      "name": {
+       "ref": "0x25eac226290"
+      },
+      "age": {
+       "ref": "0x7ffd7f2b49b8"
+      }
+     }
+    },
+    "0x25eac226290": {
+     "id": "0x25eac226290",
+     "type": "str",
+     "repr": "'보리'"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 20,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 20,
+     "locals": {
+      "Animal": {
+       "ref": "0x25eac0a9190"
+      },
+      "Dog": {
+       "ref": "0x25eac0a7290"
+      },
+      "Puppy": {
+       "ref": "0x25eac0a9570"
+      },
+      "d": {
+       "ref": "0x25eac22d220"
+      },
+      "p": {
+       "ref": "0x25eac22d520"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x25eac0a9190": {
+     "id": "0x25eac0a9190",
+     "type": "type",
+     "repr": "Animal"
+    },
+    "0x25eac0a7290": {
+     "id": "0x25eac0a7290",
+     "type": "type",
+     "repr": "Dog"
+    },
+    "0x25eac0a9570": {
+     "id": "0x25eac0a9570",
+     "type": "type",
+     "repr": "Puppy"
+    },
+    "0x25eac22d220": {
+     "id": "0x25eac22d220",
+     "type": "Dog",
+     "repr": "<__main__.Dog object at 0x0000025EAC22D220>",
+     "fields": {
+      "name": {
+       "ref": "0x25eac226240"
+      }
+     }
+    },
+    "0x25eac226240": {
+     "id": "0x25eac226240",
+     "type": "str",
+     "repr": "'초코'"
+    },
+    "0x25eac22d520": {
+     "id": "0x25eac22d520",
+     "type": "Puppy",
+     "repr": "<__main__.Puppy object at 0x0000025EAC22D520>",
+     "fields": {
+      "name": {
+       "ref": "0x25eac226290"
+      },
+      "age": {
+       "ref": "0x7ffd7f2b49b8"
+      }
+     }
+    },
+    "0x25eac226290": {
+     "id": "0x25eac226290",
+     "type": "str",
+     "repr": "'보리'"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    }
+   },
+   "stdout": "",
+   "note": "intro 는 Animal 에 있지만 speak 는 Dog 것이 쓰인다"
+  },
+  {
+   "line": 6,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 20,
+     "locals": {
+      "Animal": {
+       "ref": "0x25eac0a9190"
+      },
+      "Dog": {
+       "ref": "0x25eac0a7290"
+      },
+      "Puppy": {
+       "ref": "0x25eac0a9570"
+      },
+      "d": {
+       "ref": "0x25eac22d220"
+      },
+      "p": {
+       "ref": "0x25eac22d520"
+      }
+     }
+    },
+    {
+     "fn": "intro",
+     "line": 6,
+     "locals": {
+      "self": {
+       "ref": "0x25eac22d220"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x25eac0a9190": {
+     "id": "0x25eac0a9190",
+     "type": "type",
+     "repr": "Animal"
+    },
+    "0x25eac0a7290": {
+     "id": "0x25eac0a7290",
+     "type": "type",
+     "repr": "Dog"
+    },
+    "0x25eac0a9570": {
+     "id": "0x25eac0a9570",
+     "type": "type",
+     "repr": "Puppy"
+    },
+    "0x25eac22d220": {
+     "id": "0x25eac22d220",
+     "type": "Dog",
+     "repr": "<__main__.Dog object at 0x0000025EAC22D220>",
+     "fields": {
+      "name": {
+       "ref": "0x25eac226240"
+      }
+     }
+    },
+    "0x25eac226240": {
+     "id": "0x25eac226240",
+     "type": "str",
+     "repr": "'초코'"
+    },
+    "0x25eac22d520": {
+     "id": "0x25eac22d520",
+     "type": "Puppy",
+     "repr": "<__main__.Puppy object at 0x0000025EAC22D520>",
+     "fields": {
+      "name": {
+       "ref": "0x25eac226290"
+      },
+      "age": {
+       "ref": "0x7ffd7f2b49b8"
+      }
+     }
+    },
+    "0x25eac226290": {
+     "id": "0x25eac226290",
+     "type": "str",
+     "repr": "'보리'"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 7,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 20,
+     "locals": {
+      "Animal": {
+       "ref": "0x25eac0a9190"
+      },
+      "Dog": {
+       "ref": "0x25eac0a7290"
+      },
+      "Puppy": {
+       "ref": "0x25eac0a9570"
+      },
+      "d": {
+       "ref": "0x25eac22d220"
+      },
+      "p": {
+       "ref": "0x25eac22d520"
+      }
+     }
+    },
+    {
+     "fn": "intro",
+     "line": 7,
+     "locals": {
+      "self": {
+       "ref": "0x25eac22d220"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x25eac0a9190": {
+     "id": "0x25eac0a9190",
+     "type": "type",
+     "repr": "Animal"
+    },
+    "0x25eac0a7290": {
+     "id": "0x25eac0a7290",
+     "type": "type",
+     "repr": "Dog"
+    },
+    "0x25eac0a9570": {
+     "id": "0x25eac0a9570",
+     "type": "type",
+     "repr": "Puppy"
+    },
+    "0x25eac22d220": {
+     "id": "0x25eac22d220",
+     "type": "Dog",
+     "repr": "<__main__.Dog object at 0x0000025EAC22D220>",
+     "fields": {
+      "name": {
+       "ref": "0x25eac226240"
+      }
+     }
+    },
+    "0x25eac226240": {
+     "id": "0x25eac226240",
+     "type": "str",
+     "repr": "'초코'"
+    },
+    "0x25eac22d520": {
+     "id": "0x25eac22d520",
+     "type": "Puppy",
+     "repr": "<__main__.Puppy object at 0x0000025EAC22D520>",
+     "fields": {
+      "name": {
+       "ref": "0x25eac226290"
+      },
+      "age": {
+       "ref": "0x7ffd7f2b49b8"
+      }
+     }
+    },
+    "0x25eac226290": {
+     "id": "0x25eac226290",
+     "type": "str",
+     "repr": "'보리'"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    }
+   },
+   "stdout": "",
+   "note": "self.speak() 는 실제 타입의 speak 를 찾는다"
+  },
+  {
+   "line": 10,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 20,
+     "locals": {
+      "Animal": {
+       "ref": "0x25eac0a9190"
+      },
+      "Dog": {
+       "ref": "0x25eac0a7290"
+      },
+      "Puppy": {
+       "ref": "0x25eac0a9570"
+      },
+      "d": {
+       "ref": "0x25eac22d220"
+      },
+      "p": {
+       "ref": "0x25eac22d520"
+      }
+     }
+    },
+    {
+     "fn": "intro",
+     "line": 7,
+     "locals": {
+      "self": {
+       "ref": "0x25eac22d220"
+      }
+     }
+    },
+    {
+     "fn": "speak",
+     "line": 10,
+     "locals": {
+      "self": {
+       "ref": "0x25eac22d220"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x25eac0a9190": {
+     "id": "0x25eac0a9190",
+     "type": "type",
+     "repr": "Animal"
+    },
+    "0x25eac0a7290": {
+     "id": "0x25eac0a7290",
+     "type": "type",
+     "repr": "Dog"
+    },
+    "0x25eac0a9570": {
+     "id": "0x25eac0a9570",
+     "type": "type",
+     "repr": "Puppy"
+    },
+    "0x25eac22d220": {
+     "id": "0x25eac22d220",
+     "type": "Dog",
+     "repr": "<__main__.Dog object at 0x0000025EAC22D220>",
+     "fields": {
+      "name": {
+       "ref": "0x25eac226240"
+      }
+     }
+    },
+    "0x25eac226240": {
+     "id": "0x25eac226240",
+     "type": "str",
+     "repr": "'초코'"
+    },
+    "0x25eac22d520": {
+     "id": "0x25eac22d520",
+     "type": "Puppy",
+     "repr": "<__main__.Puppy object at 0x0000025EAC22D520>",
+     "fields": {
+      "name": {
+       "ref": "0x25eac226290"
+      },
+      "age": {
+       "ref": "0x7ffd7f2b49b8"
+      }
+     }
+    },
+    "0x25eac226290": {
+     "id": "0x25eac226290",
+     "type": "str",
+     "repr": "'보리'"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    }
+   },
+   "stdout": "",
+   "note": "재정의(오버라이드) — Dog 에서는 이게 먼저 찾힌다"
+  },
+  {
+   "line": 11,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 20,
+     "locals": {
+      "Animal": {
+       "ref": "0x25eac0a9190"
+      },
+      "Dog": {
+       "ref": "0x25eac0a7290"
+      },
+      "Puppy": {
+       "ref": "0x25eac0a9570"
+      },
+      "d": {
+       "ref": "0x25eac22d220"
+      },
+      "p": {
+       "ref": "0x25eac22d520"
+      }
+     }
+    },
+    {
+     "fn": "intro",
+     "line": 7,
+     "locals": {
+      "self": {
+       "ref": "0x25eac22d220"
+      }
+     }
+    },
+    {
+     "fn": "speak",
+     "line": 11,
+     "locals": {
+      "self": {
+       "ref": "0x25eac22d220"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x25eac0a9190": {
+     "id": "0x25eac0a9190",
+     "type": "type",
+     "repr": "Animal"
+    },
+    "0x25eac0a7290": {
+     "id": "0x25eac0a7290",
+     "type": "type",
+     "repr": "Dog"
+    },
+    "0x25eac0a9570": {
+     "id": "0x25eac0a9570",
+     "type": "type",
+     "repr": "Puppy"
+    },
+    "0x25eac22d220": {
+     "id": "0x25eac22d220",
+     "type": "Dog",
+     "repr": "<__main__.Dog object at 0x0000025EAC22D220>",
+     "fields": {
+      "name": {
+       "ref": "0x25eac226240"
+      }
+     }
+    },
+    "0x25eac226240": {
+     "id": "0x25eac226240",
+     "type": "str",
+     "repr": "'초코'"
+    },
+    "0x25eac22d520": {
+     "id": "0x25eac22d520",
+     "type": "Puppy",
+     "repr": "<__main__.Puppy object at 0x0000025EAC22D520>",
+     "fields": {
+      "name": {
+       "ref": "0x25eac226290"
+      },
+      "age": {
+       "ref": "0x7ffd7f2b49b8"
+      }
+     }
+    },
+    "0x25eac226290": {
+     "id": "0x25eac226290",
+     "type": "str",
+     "repr": "'보리'"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 11,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 20,
+     "locals": {
+      "Animal": {
+       "ref": "0x25eac0a9190"
+      },
+      "Dog": {
+       "ref": "0x25eac0a7290"
+      },
+      "Puppy": {
+       "ref": "0x25eac0a9570"
+      },
+      "d": {
+       "ref": "0x25eac22d220"
+      },
+      "p": {
+       "ref": "0x25eac22d520"
+      }
+     }
+    },
+    {
+     "fn": "intro",
+     "line": 7,
+     "locals": {
+      "self": {
+       "ref": "0x25eac22d220"
+      }
+     }
+    },
+    {
+     "fn": "speak",
+     "line": 11,
+     "locals": {
+      "self": {
+       "ref": "0x25eac22d220"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x25eac0a9190": {
+     "id": "0x25eac0a9190",
+     "type": "type",
+     "repr": "Animal"
+    },
+    "0x25eac0a7290": {
+     "id": "0x25eac0a7290",
+     "type": "type",
+     "repr": "Dog"
+    },
+    "0x25eac0a9570": {
+     "id": "0x25eac0a9570",
+     "type": "type",
+     "repr": "Puppy"
+    },
+    "0x25eac22d220": {
+     "id": "0x25eac22d220",
+     "type": "Dog",
+     "repr": "<__main__.Dog object at 0x0000025EAC22D220>",
+     "fields": {
+      "name": {
+       "ref": "0x25eac226240"
+      }
+     }
+    },
+    "0x25eac226240": {
+     "id": "0x25eac226240",
+     "type": "str",
+     "repr": "'초코'"
+    },
+    "0x25eac22d520": {
+     "id": "0x25eac22d520",
+     "type": "Puppy",
+     "repr": "<__main__.Puppy object at 0x0000025EAC22D520>",
+     "fields": {
+      "name": {
+       "ref": "0x25eac226290"
+      },
+      "age": {
+       "ref": "0x7ffd7f2b49b8"
+      }
+     }
+    },
+    "0x25eac226290": {
+     "id": "0x25eac226290",
+     "type": "str",
+     "repr": "'보리'"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    }
+   },
+   "stdout": "",
+   "retval": "'멍'"
+  },
+  {
+   "line": 7,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 20,
+     "locals": {
+      "Animal": {
+       "ref": "0x25eac0a9190"
+      },
+      "Dog": {
+       "ref": "0x25eac0a7290"
+      },
+      "Puppy": {
+       "ref": "0x25eac0a9570"
+      },
+      "d": {
+       "ref": "0x25eac22d220"
+      },
+      "p": {
+       "ref": "0x25eac22d520"
+      }
+     }
+    },
+    {
+     "fn": "intro",
+     "line": 7,
+     "locals": {
+      "self": {
+       "ref": "0x25eac22d220"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x25eac0a9190": {
+     "id": "0x25eac0a9190",
+     "type": "type",
+     "repr": "Animal"
+    },
+    "0x25eac0a7290": {
+     "id": "0x25eac0a7290",
+     "type": "type",
+     "repr": "Dog"
+    },
+    "0x25eac0a9570": {
+     "id": "0x25eac0a9570",
+     "type": "type",
+     "repr": "Puppy"
+    },
+    "0x25eac22d220": {
+     "id": "0x25eac22d220",
+     "type": "Dog",
+     "repr": "<__main__.Dog object at 0x0000025EAC22D220>",
+     "fields": {
+      "name": {
+       "ref": "0x25eac226240"
+      }
+     }
+    },
+    "0x25eac226240": {
+     "id": "0x25eac226240",
+     "type": "str",
+     "repr": "'초코'"
+    },
+    "0x25eac22d520": {
+     "id": "0x25eac22d520",
+     "type": "Puppy",
+     "repr": "<__main__.Puppy object at 0x0000025EAC22D520>",
+     "fields": {
+      "name": {
+       "ref": "0x25eac226290"
+      },
+      "age": {
+       "ref": "0x7ffd7f2b49b8"
+      }
+     }
+    },
+    "0x25eac226290": {
+     "id": "0x25eac226290",
+     "type": "str",
+     "repr": "'보리'"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    }
+   },
+   "stdout": "",
+   "retval": "'초코: 멍'"
+  },
+  {
+   "line": 6,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 20,
+     "locals": {
+      "Animal": {
+       "ref": "0x25eac0a9190"
+      },
+      "Dog": {
+       "ref": "0x25eac0a7290"
+      },
+      "Puppy": {
+       "ref": "0x25eac0a9570"
+      },
+      "d": {
+       "ref": "0x25eac22d220"
+      },
+      "p": {
+       "ref": "0x25eac22d520"
+      }
+     }
+    },
+    {
+     "fn": "intro",
+     "line": 6,
+     "locals": {
+      "self": {
+       "ref": "0x25eac22d520"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x25eac0a9190": {
+     "id": "0x25eac0a9190",
+     "type": "type",
+     "repr": "Animal"
+    },
+    "0x25eac0a7290": {
+     "id": "0x25eac0a7290",
+     "type": "type",
+     "repr": "Dog"
+    },
+    "0x25eac0a9570": {
+     "id": "0x25eac0a9570",
+     "type": "type",
+     "repr": "Puppy"
+    },
+    "0x25eac22d220": {
+     "id": "0x25eac22d220",
+     "type": "Dog",
+     "repr": "<__main__.Dog object at 0x0000025EAC22D220>",
+     "fields": {
+      "name": {
+       "ref": "0x25eac226240"
+      }
+     }
+    },
+    "0x25eac226240": {
+     "id": "0x25eac226240",
+     "type": "str",
+     "repr": "'초코'"
+    },
+    "0x25eac22d520": {
+     "id": "0x25eac22d520",
+     "type": "Puppy",
+     "repr": "<__main__.Puppy object at 0x0000025EAC22D520>",
+     "fields": {
+      "name": {
+       "ref": "0x25eac226290"
+      },
+      "age": {
+       "ref": "0x7ffd7f2b49b8"
+      }
+     }
+    },
+    "0x25eac226290": {
+     "id": "0x25eac226290",
+     "type": "str",
+     "repr": "'보리'"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 7,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 20,
+     "locals": {
+      "Animal": {
+       "ref": "0x25eac0a9190"
+      },
+      "Dog": {
+       "ref": "0x25eac0a7290"
+      },
+      "Puppy": {
+       "ref": "0x25eac0a9570"
+      },
+      "d": {
+       "ref": "0x25eac22d220"
+      },
+      "p": {
+       "ref": "0x25eac22d520"
+      }
+     }
+    },
+    {
+     "fn": "intro",
+     "line": 7,
+     "locals": {
+      "self": {
+       "ref": "0x25eac22d520"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x25eac0a9190": {
+     "id": "0x25eac0a9190",
+     "type": "type",
+     "repr": "Animal"
+    },
+    "0x25eac0a7290": {
+     "id": "0x25eac0a7290",
+     "type": "type",
+     "repr": "Dog"
+    },
+    "0x25eac0a9570": {
+     "id": "0x25eac0a9570",
+     "type": "type",
+     "repr": "Puppy"
+    },
+    "0x25eac22d220": {
+     "id": "0x25eac22d220",
+     "type": "Dog",
+     "repr": "<__main__.Dog object at 0x0000025EAC22D220>",
+     "fields": {
+      "name": {
+       "ref": "0x25eac226240"
+      }
+     }
+    },
+    "0x25eac226240": {
+     "id": "0x25eac226240",
+     "type": "str",
+     "repr": "'초코'"
+    },
+    "0x25eac22d520": {
+     "id": "0x25eac22d520",
+     "type": "Puppy",
+     "repr": "<__main__.Puppy object at 0x0000025EAC22D520>",
+     "fields": {
+      "name": {
+       "ref": "0x25eac226290"
+      },
+      "age": {
+       "ref": "0x7ffd7f2b49b8"
+      }
+     }
+    },
+    "0x25eac226290": {
+     "id": "0x25eac226290",
+     "type": "str",
+     "repr": "'보리'"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    }
+   },
+   "stdout": "",
+   "note": "self.speak() 는 실제 타입의 speak 를 찾는다"
+  },
+  {
+   "line": 10,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 20,
+     "locals": {
+      "Animal": {
+       "ref": "0x25eac0a9190"
+      },
+      "Dog": {
+       "ref": "0x25eac0a7290"
+      },
+      "Puppy": {
+       "ref": "0x25eac0a9570"
+      },
+      "d": {
+       "ref": "0x25eac22d220"
+      },
+      "p": {
+       "ref": "0x25eac22d520"
+      }
+     }
+    },
+    {
+     "fn": "intro",
+     "line": 7,
+     "locals": {
+      "self": {
+       "ref": "0x25eac22d520"
+      }
+     }
+    },
+    {
+     "fn": "speak",
+     "line": 10,
+     "locals": {
+      "self": {
+       "ref": "0x25eac22d520"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x25eac0a9190": {
+     "id": "0x25eac0a9190",
+     "type": "type",
+     "repr": "Animal"
+    },
+    "0x25eac0a7290": {
+     "id": "0x25eac0a7290",
+     "type": "type",
+     "repr": "Dog"
+    },
+    "0x25eac0a9570": {
+     "id": "0x25eac0a9570",
+     "type": "type",
+     "repr": "Puppy"
+    },
+    "0x25eac22d220": {
+     "id": "0x25eac22d220",
+     "type": "Dog",
+     "repr": "<__main__.Dog object at 0x0000025EAC22D220>",
+     "fields": {
+      "name": {
+       "ref": "0x25eac226240"
+      }
+     }
+    },
+    "0x25eac226240": {
+     "id": "0x25eac226240",
+     "type": "str",
+     "repr": "'초코'"
+    },
+    "0x25eac22d520": {
+     "id": "0x25eac22d520",
+     "type": "Puppy",
+     "repr": "<__main__.Puppy object at 0x0000025EAC22D520>",
+     "fields": {
+      "name": {
+       "ref": "0x25eac226290"
+      },
+      "age": {
+       "ref": "0x7ffd7f2b49b8"
+      }
+     }
+    },
+    "0x25eac226290": {
+     "id": "0x25eac226290",
+     "type": "str",
+     "repr": "'보리'"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    }
+   },
+   "stdout": "",
+   "note": "재정의(오버라이드) — Dog 에서는 이게 먼저 찾힌다"
+  },
+  {
+   "line": 11,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 20,
+     "locals": {
+      "Animal": {
+       "ref": "0x25eac0a9190"
+      },
+      "Dog": {
+       "ref": "0x25eac0a7290"
+      },
+      "Puppy": {
+       "ref": "0x25eac0a9570"
+      },
+      "d": {
+       "ref": "0x25eac22d220"
+      },
+      "p": {
+       "ref": "0x25eac22d520"
+      }
+     }
+    },
+    {
+     "fn": "intro",
+     "line": 7,
+     "locals": {
+      "self": {
+       "ref": "0x25eac22d520"
+      }
+     }
+    },
+    {
+     "fn": "speak",
+     "line": 11,
+     "locals": {
+      "self": {
+       "ref": "0x25eac22d520"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x25eac0a9190": {
+     "id": "0x25eac0a9190",
+     "type": "type",
+     "repr": "Animal"
+    },
+    "0x25eac0a7290": {
+     "id": "0x25eac0a7290",
+     "type": "type",
+     "repr": "Dog"
+    },
+    "0x25eac0a9570": {
+     "id": "0x25eac0a9570",
+     "type": "type",
+     "repr": "Puppy"
+    },
+    "0x25eac22d220": {
+     "id": "0x25eac22d220",
+     "type": "Dog",
+     "repr": "<__main__.Dog object at 0x0000025EAC22D220>",
+     "fields": {
+      "name": {
+       "ref": "0x25eac226240"
+      }
+     }
+    },
+    "0x25eac226240": {
+     "id": "0x25eac226240",
+     "type": "str",
+     "repr": "'초코'"
+    },
+    "0x25eac22d520": {
+     "id": "0x25eac22d520",
+     "type": "Puppy",
+     "repr": "<__main__.Puppy object at 0x0000025EAC22D520>",
+     "fields": {
+      "name": {
+       "ref": "0x25eac226290"
+      },
+      "age": {
+       "ref": "0x7ffd7f2b49b8"
+      }
+     }
+    },
+    "0x25eac226290": {
+     "id": "0x25eac226290",
+     "type": "str",
+     "repr": "'보리'"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 11,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 20,
+     "locals": {
+      "Animal": {
+       "ref": "0x25eac0a9190"
+      },
+      "Dog": {
+       "ref": "0x25eac0a7290"
+      },
+      "Puppy": {
+       "ref": "0x25eac0a9570"
+      },
+      "d": {
+       "ref": "0x25eac22d220"
+      },
+      "p": {
+       "ref": "0x25eac22d520"
+      }
+     }
+    },
+    {
+     "fn": "intro",
+     "line": 7,
+     "locals": {
+      "self": {
+       "ref": "0x25eac22d520"
+      }
+     }
+    },
+    {
+     "fn": "speak",
+     "line": 11,
+     "locals": {
+      "self": {
+       "ref": "0x25eac22d520"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x25eac0a9190": {
+     "id": "0x25eac0a9190",
+     "type": "type",
+     "repr": "Animal"
+    },
+    "0x25eac0a7290": {
+     "id": "0x25eac0a7290",
+     "type": "type",
+     "repr": "Dog"
+    },
+    "0x25eac0a9570": {
+     "id": "0x25eac0a9570",
+     "type": "type",
+     "repr": "Puppy"
+    },
+    "0x25eac22d220": {
+     "id": "0x25eac22d220",
+     "type": "Dog",
+     "repr": "<__main__.Dog object at 0x0000025EAC22D220>",
+     "fields": {
+      "name": {
+       "ref": "0x25eac226240"
+      }
+     }
+    },
+    "0x25eac226240": {
+     "id": "0x25eac226240",
+     "type": "str",
+     "repr": "'초코'"
+    },
+    "0x25eac22d520": {
+     "id": "0x25eac22d520",
+     "type": "Puppy",
+     "repr": "<__main__.Puppy object at 0x0000025EAC22D520>",
+     "fields": {
+      "name": {
+       "ref": "0x25eac226290"
+      },
+      "age": {
+       "ref": "0x7ffd7f2b49b8"
+      }
+     }
+    },
+    "0x25eac226290": {
+     "id": "0x25eac226290",
+     "type": "str",
+     "repr": "'보리'"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    }
+   },
+   "stdout": "",
+   "retval": "'멍'"
+  },
+  {
+   "line": 7,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 20,
+     "locals": {
+      "Animal": {
+       "ref": "0x25eac0a9190"
+      },
+      "Dog": {
+       "ref": "0x25eac0a7290"
+      },
+      "Puppy": {
+       "ref": "0x25eac0a9570"
+      },
+      "d": {
+       "ref": "0x25eac22d220"
+      },
+      "p": {
+       "ref": "0x25eac22d520"
+      }
+     }
+    },
+    {
+     "fn": "intro",
+     "line": 7,
+     "locals": {
+      "self": {
+       "ref": "0x25eac22d520"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x25eac0a9190": {
+     "id": "0x25eac0a9190",
+     "type": "type",
+     "repr": "Animal"
+    },
+    "0x25eac0a7290": {
+     "id": "0x25eac0a7290",
+     "type": "type",
+     "repr": "Dog"
+    },
+    "0x25eac0a9570": {
+     "id": "0x25eac0a9570",
+     "type": "type",
+     "repr": "Puppy"
+    },
+    "0x25eac22d220": {
+     "id": "0x25eac22d220",
+     "type": "Dog",
+     "repr": "<__main__.Dog object at 0x0000025EAC22D220>",
+     "fields": {
+      "name": {
+       "ref": "0x25eac226240"
+      }
+     }
+    },
+    "0x25eac226240": {
+     "id": "0x25eac226240",
+     "type": "str",
+     "repr": "'초코'"
+    },
+    "0x25eac22d520": {
+     "id": "0x25eac22d520",
+     "type": "Puppy",
+     "repr": "<__main__.Puppy object at 0x0000025EAC22D520>",
+     "fields": {
+      "name": {
+       "ref": "0x25eac226290"
+      },
+      "age": {
+       "ref": "0x7ffd7f2b49b8"
+      }
+     }
+    },
+    "0x25eac226290": {
+     "id": "0x25eac226290",
+     "type": "str",
+     "repr": "'보리'"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    }
+   },
+   "stdout": "",
+   "retval": "'보리: 멍'"
+  },
+  {
+   "line": 21,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 21,
+     "locals": {
+      "Animal": {
+       "ref": "0x25eac0a9190"
+      },
+      "Dog": {
+       "ref": "0x25eac0a7290"
+      },
+      "Puppy": {
+       "ref": "0x25eac0a9570"
+      },
+      "d": {
+       "ref": "0x25eac22d220"
+      },
+      "p": {
+       "ref": "0x25eac22d520"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x25eac0a9190": {
+     "id": "0x25eac0a9190",
+     "type": "type",
+     "repr": "Animal"
+    },
+    "0x25eac0a7290": {
+     "id": "0x25eac0a7290",
+     "type": "type",
+     "repr": "Dog"
+    },
+    "0x25eac0a9570": {
+     "id": "0x25eac0a9570",
+     "type": "type",
+     "repr": "Puppy"
+    },
+    "0x25eac22d220": {
+     "id": "0x25eac22d220",
+     "type": "Dog",
+     "repr": "<__main__.Dog object at 0x0000025EAC22D220>",
+     "fields": {
+      "name": {
+       "ref": "0x25eac226240"
+      }
+     }
+    },
+    "0x25eac226240": {
+     "id": "0x25eac226240",
+     "type": "str",
+     "repr": "'초코'"
+    },
+    "0x25eac22d520": {
+     "id": "0x25eac22d520",
+     "type": "Puppy",
+     "repr": "<__main__.Puppy object at 0x0000025EAC22D520>",
+     "fields": {
+      "name": {
+       "ref": "0x25eac226290"
+      },
+      "age": {
+       "ref": "0x7ffd7f2b49b8"
+      }
+     }
+    },
+    "0x25eac226290": {
+     "id": "0x25eac226290",
+     "type": "str",
+     "repr": "'보리'"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    }
+   },
+   "stdout": "초코: 멍 | 보리: 멍\n"
+  },
+  {
+   "line": 21,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 21,
+     "locals": {
+      "Animal": {
+       "ref": "0x25eac0a9190"
+      },
+      "Dog": {
+       "ref": "0x25eac0a7290"
+      },
+      "Puppy": {
+       "ref": "0x25eac0a9570"
+      },
+      "d": {
+       "ref": "0x25eac22d220"
+      },
+      "p": {
+       "ref": "0x25eac22d520"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x25eac0a9190": {
+     "id": "0x25eac0a9190",
+     "type": "type",
+     "repr": "Animal"
+    },
+    "0x25eac0a7290": {
+     "id": "0x25eac0a7290",
+     "type": "type",
+     "repr": "Dog"
+    },
+    "0x25eac0a9570": {
+     "id": "0x25eac0a9570",
+     "type": "type",
+     "repr": "Puppy"
+    },
+    "0x25eac22d220": {
+     "id": "0x25eac22d220",
+     "type": "Dog",
+     "repr": "<__main__.Dog object at 0x0000025EAC22D220>",
+     "fields": {
+      "name": {
+       "ref": "0x25eac226240"
+      }
+     }
+    },
+    "0x25eac226240": {
+     "id": "0x25eac226240",
+     "type": "str",
+     "repr": "'초코'"
+    },
+    "0x25eac22d520": {
+     "id": "0x25eac22d520",
+     "type": "Puppy",
+     "repr": "<__main__.Puppy object at 0x0000025EAC22D520>",
+     "fields": {
+      "name": {
+       "ref": "0x25eac226290"
+      },
+      "age": {
+       "ref": "0x7ffd7f2b49b8"
+      }
+     }
+    },
+    "0x25eac226290": {
+     "id": "0x25eac226290",
+     "type": "str",
+     "repr": "'보리'"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    }
+   },
+   "stdout": "초코: 멍 | 보리: 멍\nTrue True\n"
+  }
+ ],
+ "v": 1
+}

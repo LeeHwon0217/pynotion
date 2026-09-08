@@ -1,0 +1,745 @@
+{
+ "id": "p7-lookup",
+ "code": "class Animal:\n    sound = \"...\"\n    def speak(self):\n        return self.sound\n\nclass Dog(Animal):\n    sound = \"멍\"\n\nd = Dog()\nprint(d.sound)\nprint(d.speak())\nd.sound = \"왈\"\nprint(d.sound, Dog.sound)\nprint(Dog.__mro__)",
+ "steps": [
+  {
+   "line": 0,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 0,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Animal",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Animal",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Animal",
+     "line": 2,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 3,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Animal",
+     "line": 3,
+     "locals": {
+      "sound": {
+       "ref": "0x2675ecad0e0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2675ecad0e0": {
+     "id": "0x2675ecad0e0",
+     "type": "str",
+     "repr": "'...'"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 3,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Animal",
+     "line": 3,
+     "locals": {
+      "sound": {
+       "ref": "0x2675ecad0e0"
+      },
+      "speak": {
+       "ref": "0x2675ec9cae0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2675ecad0e0": {
+     "id": "0x2675ecad0e0",
+     "type": "str",
+     "repr": "'...'"
+    },
+    "0x2675ec9cae0": {
+     "id": "0x2675ec9cae0",
+     "type": "function",
+     "repr": "speak"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 6,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "Animal": {
+       "ref": "0x2675eb24c10"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2675eb24c10": {
+     "id": "0x2675eb24c10",
+     "type": "type",
+     "repr": "Animal"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 6,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "Animal": {
+       "ref": "0x2675eb24c10"
+      }
+     }
+    },
+    {
+     "fn": "Dog",
+     "line": 6,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x2675eb24c10": {
+     "id": "0x2675eb24c10",
+     "type": "type",
+     "repr": "Animal"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 6,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "Animal": {
+       "ref": "0x2675eb24c10"
+      }
+     }
+    },
+    {
+     "fn": "Dog",
+     "line": 6,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x2675eb24c10": {
+     "id": "0x2675eb24c10",
+     "type": "type",
+     "repr": "Animal"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 7,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "Animal": {
+       "ref": "0x2675eb24c10"
+      }
+     }
+    },
+    {
+     "fn": "Dog",
+     "line": 7,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x2675eb24c10": {
+     "id": "0x2675eb24c10",
+     "type": "type",
+     "repr": "Animal"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 7,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "Animal": {
+       "ref": "0x2675eb24c10"
+      }
+     }
+    },
+    {
+     "fn": "Dog",
+     "line": 7,
+     "locals": {
+      "sound": {
+       "ref": "0x2675ecb2bb0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2675eb24c10": {
+     "id": "0x2675eb24c10",
+     "type": "type",
+     "repr": "Animal"
+    },
+    "0x2675ecb2bb0": {
+     "id": "0x2675ecb2bb0",
+     "type": "str",
+     "repr": "'멍'"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 9,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 9,
+     "locals": {
+      "Animal": {
+       "ref": "0x2675eb24c10"
+      },
+      "Dog": {
+       "ref": "0x2675eb24ff0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2675eb24c10": {
+     "id": "0x2675eb24c10",
+     "type": "type",
+     "repr": "Animal"
+    },
+    "0x2675eb24ff0": {
+     "id": "0x2675eb24ff0",
+     "type": "type",
+     "repr": "Dog"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 10,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 10,
+     "locals": {
+      "Animal": {
+       "ref": "0x2675eb24c10"
+      },
+      "Dog": {
+       "ref": "0x2675eb24ff0"
+      },
+      "d": {
+       "ref": "0x2675ecad040"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2675eb24c10": {
+     "id": "0x2675eb24c10",
+     "type": "type",
+     "repr": "Animal"
+    },
+    "0x2675eb24ff0": {
+     "id": "0x2675eb24ff0",
+     "type": "type",
+     "repr": "Dog"
+    },
+    "0x2675ecad040": {
+     "id": "0x2675ecad040",
+     "type": "Dog",
+     "repr": "<__main__.Dog object at 0x000002675ECAD040>",
+     "fields": {}
+    }
+   },
+   "stdout": "",
+   "note": "d.__dict__ 에 없음 → Dog 에 있음 → \"멍\""
+  },
+  {
+   "line": 11,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 11,
+     "locals": {
+      "Animal": {
+       "ref": "0x2675eb24c10"
+      },
+      "Dog": {
+       "ref": "0x2675eb24ff0"
+      },
+      "d": {
+       "ref": "0x2675ecad040"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2675eb24c10": {
+     "id": "0x2675eb24c10",
+     "type": "type",
+     "repr": "Animal"
+    },
+    "0x2675eb24ff0": {
+     "id": "0x2675eb24ff0",
+     "type": "type",
+     "repr": "Dog"
+    },
+    "0x2675ecad040": {
+     "id": "0x2675ecad040",
+     "type": "Dog",
+     "repr": "<__main__.Dog object at 0x000002675ECAD040>",
+     "fields": {}
+    }
+   },
+   "stdout": "멍\n",
+   "note": "speak 는 Dog 에 없음 → Animal 에서 찾음. 안에서 self.sound 는 다시 d 부터 → \"멍\""
+  },
+  {
+   "line": 3,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 11,
+     "locals": {
+      "Animal": {
+       "ref": "0x2675eb24c10"
+      },
+      "Dog": {
+       "ref": "0x2675eb24ff0"
+      },
+      "d": {
+       "ref": "0x2675ecad040"
+      }
+     }
+    },
+    {
+     "fn": "speak",
+     "line": 3,
+     "locals": {
+      "self": {
+       "ref": "0x2675ecad040"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2675eb24c10": {
+     "id": "0x2675eb24c10",
+     "type": "type",
+     "repr": "Animal"
+    },
+    "0x2675eb24ff0": {
+     "id": "0x2675eb24ff0",
+     "type": "type",
+     "repr": "Dog"
+    },
+    "0x2675ecad040": {
+     "id": "0x2675ecad040",
+     "type": "Dog",
+     "repr": "<__main__.Dog object at 0x000002675ECAD040>",
+     "fields": {}
+    }
+   },
+   "stdout": "멍\n"
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 11,
+     "locals": {
+      "Animal": {
+       "ref": "0x2675eb24c10"
+      },
+      "Dog": {
+       "ref": "0x2675eb24ff0"
+      },
+      "d": {
+       "ref": "0x2675ecad040"
+      }
+     }
+    },
+    {
+     "fn": "speak",
+     "line": 4,
+     "locals": {
+      "self": {
+       "ref": "0x2675ecad040"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2675eb24c10": {
+     "id": "0x2675eb24c10",
+     "type": "type",
+     "repr": "Animal"
+    },
+    "0x2675eb24ff0": {
+     "id": "0x2675eb24ff0",
+     "type": "type",
+     "repr": "Dog"
+    },
+    "0x2675ecad040": {
+     "id": "0x2675ecad040",
+     "type": "Dog",
+     "repr": "<__main__.Dog object at 0x000002675ECAD040>",
+     "fields": {}
+    }
+   },
+   "stdout": "멍\n"
+  },
+  {
+   "line": 4,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 11,
+     "locals": {
+      "Animal": {
+       "ref": "0x2675eb24c10"
+      },
+      "Dog": {
+       "ref": "0x2675eb24ff0"
+      },
+      "d": {
+       "ref": "0x2675ecad040"
+      }
+     }
+    },
+    {
+     "fn": "speak",
+     "line": 4,
+     "locals": {
+      "self": {
+       "ref": "0x2675ecad040"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2675eb24c10": {
+     "id": "0x2675eb24c10",
+     "type": "type",
+     "repr": "Animal"
+    },
+    "0x2675eb24ff0": {
+     "id": "0x2675eb24ff0",
+     "type": "type",
+     "repr": "Dog"
+    },
+    "0x2675ecad040": {
+     "id": "0x2675ecad040",
+     "type": "Dog",
+     "repr": "<__main__.Dog object at 0x000002675ECAD040>",
+     "fields": {}
+    }
+   },
+   "stdout": "멍\n",
+   "retval": "'멍'"
+  },
+  {
+   "line": 12,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 12,
+     "locals": {
+      "Animal": {
+       "ref": "0x2675eb24c10"
+      },
+      "Dog": {
+       "ref": "0x2675eb24ff0"
+      },
+      "d": {
+       "ref": "0x2675ecad040"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2675eb24c10": {
+     "id": "0x2675eb24c10",
+     "type": "type",
+     "repr": "Animal"
+    },
+    "0x2675eb24ff0": {
+     "id": "0x2675eb24ff0",
+     "type": "type",
+     "repr": "Dog"
+    },
+    "0x2675ecad040": {
+     "id": "0x2675ecad040",
+     "type": "Dog",
+     "repr": "<__main__.Dog object at 0x000002675ECAD040>",
+     "fields": {}
+    }
+   },
+   "stdout": "멍\n멍\n",
+   "note": "인스턴스에 붙이면 가장 먼저 찾힌다"
+  },
+  {
+   "line": 13,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 13,
+     "locals": {
+      "Animal": {
+       "ref": "0x2675eb24c10"
+      },
+      "Dog": {
+       "ref": "0x2675eb24ff0"
+      },
+      "d": {
+       "ref": "0x2675ecad040"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2675eb24c10": {
+     "id": "0x2675eb24c10",
+     "type": "type",
+     "repr": "Animal"
+    },
+    "0x2675eb24ff0": {
+     "id": "0x2675eb24ff0",
+     "type": "type",
+     "repr": "Dog"
+    },
+    "0x2675ecad040": {
+     "id": "0x2675ecad040",
+     "type": "Dog",
+     "repr": "<__main__.Dog object at 0x000002675ECAD040>",
+     "fields": {
+      "sound": {
+       "ref": "0x2675ecb2c30"
+      }
+     }
+    },
+    "0x2675ecb2c30": {
+     "id": "0x2675ecb2c30",
+     "type": "str",
+     "repr": "'왈'"
+    }
+   },
+   "stdout": "멍\n멍\n"
+  },
+  {
+   "line": 14,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 14,
+     "locals": {
+      "Animal": {
+       "ref": "0x2675eb24c10"
+      },
+      "Dog": {
+       "ref": "0x2675eb24ff0"
+      },
+      "d": {
+       "ref": "0x2675ecad040"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2675eb24c10": {
+     "id": "0x2675eb24c10",
+     "type": "type",
+     "repr": "Animal"
+    },
+    "0x2675eb24ff0": {
+     "id": "0x2675eb24ff0",
+     "type": "type",
+     "repr": "Dog"
+    },
+    "0x2675ecad040": {
+     "id": "0x2675ecad040",
+     "type": "Dog",
+     "repr": "<__main__.Dog object at 0x000002675ECAD040>",
+     "fields": {
+      "sound": {
+       "ref": "0x2675ecb2c30"
+      }
+     }
+    },
+    "0x2675ecb2c30": {
+     "id": "0x2675ecb2c30",
+     "type": "str",
+     "repr": "'왈'"
+    }
+   },
+   "stdout": "멍\n멍\n왈 멍\n",
+   "note": "찾는 순서표 — Dog → Animal → object"
+  },
+  {
+   "line": 14,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 14,
+     "locals": {
+      "Animal": {
+       "ref": "0x2675eb24c10"
+      },
+      "Dog": {
+       "ref": "0x2675eb24ff0"
+      },
+      "d": {
+       "ref": "0x2675ecad040"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2675eb24c10": {
+     "id": "0x2675eb24c10",
+     "type": "type",
+     "repr": "Animal"
+    },
+    "0x2675eb24ff0": {
+     "id": "0x2675eb24ff0",
+     "type": "type",
+     "repr": "Dog"
+    },
+    "0x2675ecad040": {
+     "id": "0x2675ecad040",
+     "type": "Dog",
+     "repr": "<__main__.Dog object at 0x000002675ECAD040>",
+     "fields": {
+      "sound": {
+       "ref": "0x2675ecb2c30"
+      }
+     }
+    },
+    "0x2675ecb2c30": {
+     "id": "0x2675ecb2c30",
+     "type": "str",
+     "repr": "'왈'"
+    }
+   },
+   "stdout": "멍\n멍\n왈 멍\n(<class '__main__.Dog'>, <class '__main__.Animal'>, <class 'object'>)\n"
+  }
+ ],
+ "v": 1
+}

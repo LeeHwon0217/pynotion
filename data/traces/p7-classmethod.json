@@ -1,0 +1,1667 @@
+{
+ "id": "p7-classmethod",
+ "code": "class Date:\n    def __init__(self, y, m, d):\n        self.y, self.m, self.d = y, m, d\n\n    @classmethod\n    def from_str(cls, text):\n        y, m, d = map(int, text.split(\"-\"))\n        return cls(y, m, d)\n\n    @staticmethod\n    def is_leap(y):\n        return y % 4 == 0 and (y % 100 != 0 or y % 400 == 0)\n\nd = Date.from_str(\"2026-09-08\")\nprint(d.y, d.m, d.d)\nprint(Date.is_leap(2024), d.is_leap(2026))",
+ "steps": [
+  {
+   "line": 0,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 0,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Date",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Date",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Date",
+     "line": 2,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Date",
+     "line": 5,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 6,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Date",
+     "line": 6,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": "",
+   "note": "첫 인자가 인스턴스가 아니라 클래스(cls) — 대안 생성자"
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Date",
+     "line": 5,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 6,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Date",
+     "line": 6,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": "",
+   "note": "첫 인자가 인스턴스가 아니라 클래스(cls) — 대안 생성자"
+  },
+  {
+   "line": 10,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Date",
+     "line": 10,
+     "locals": {
+      "from_str": {
+       "ref": "0x2546cc2d030"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2546cc2d030": {
+     "id": "0x2546cc2d030",
+     "type": "classmethod",
+     "repr": "<classmethod(<function Date.from_str at 0x00000…",
+     "fields": {
+      "__module__": {
+       "ref": "0x7ffd7f2bb3c0"
+      },
+      "__name__": {
+       "ref": "0x2546cc32af0"
+      },
+      "__qualname__": {
+       "ref": "0x2546cc33770"
+      },
+      "__doc__": {
+       "ref": "0x7ffd7f1c1850"
+      },
+      "__annotations__": {
+       "ref": "0x2546cc32b80"
+      }
+     }
+    },
+    "0x7ffd7f2bb3c0": {
+     "id": "0x7ffd7f2bb3c0",
+     "type": "str",
+     "repr": "'__main__'"
+    },
+    "0x2546cc32af0": {
+     "id": "0x2546cc32af0",
+     "type": "str",
+     "repr": "'from_str'"
+    },
+    "0x2546cc33770": {
+     "id": "0x2546cc33770",
+     "type": "str",
+     "repr": "'Date.from_str'"
+    },
+    "0x7ffd7f1c1850": {
+     "id": "0x7ffd7f1c1850",
+     "type": "NoneType",
+     "repr": "None"
+    },
+    "0x2546cc32b80": {
+     "id": "0x2546cc32b80",
+     "type": "dict",
+     "repr": "{}",
+     "entries": []
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 11,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Date",
+     "line": 11,
+     "locals": {
+      "from_str": {
+       "ref": "0x2546cc2d030"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2546cc2d030": {
+     "id": "0x2546cc2d030",
+     "type": "classmethod",
+     "repr": "<classmethod(<function Date.from_str at 0x00000…",
+     "fields": {
+      "__module__": {
+       "ref": "0x7ffd7f2bb3c0"
+      },
+      "__name__": {
+       "ref": "0x2546cc32af0"
+      },
+      "__qualname__": {
+       "ref": "0x2546cc33770"
+      },
+      "__doc__": {
+       "ref": "0x7ffd7f1c1850"
+      },
+      "__annotations__": {
+       "ref": "0x2546cc32b80"
+      }
+     }
+    },
+    "0x7ffd7f2bb3c0": {
+     "id": "0x7ffd7f2bb3c0",
+     "type": "str",
+     "repr": "'__main__'"
+    },
+    "0x2546cc32af0": {
+     "id": "0x2546cc32af0",
+     "type": "str",
+     "repr": "'from_str'"
+    },
+    "0x2546cc33770": {
+     "id": "0x2546cc33770",
+     "type": "str",
+     "repr": "'Date.from_str'"
+    },
+    "0x7ffd7f1c1850": {
+     "id": "0x7ffd7f1c1850",
+     "type": "NoneType",
+     "repr": "None"
+    },
+    "0x2546cc32b80": {
+     "id": "0x2546cc32b80",
+     "type": "dict",
+     "repr": "{}",
+     "entries": []
+    }
+   },
+   "stdout": "",
+   "note": "self 도 cls 도 없다 — 클래스 안에 둔 그냥 함수"
+  },
+  {
+   "line": 10,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Date",
+     "line": 10,
+     "locals": {
+      "from_str": {
+       "ref": "0x2546cc2d030"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2546cc2d030": {
+     "id": "0x2546cc2d030",
+     "type": "classmethod",
+     "repr": "<classmethod(<function Date.from_str at 0x00000…",
+     "fields": {
+      "__module__": {
+       "ref": "0x7ffd7f2bb3c0"
+      },
+      "__name__": {
+       "ref": "0x2546cc32af0"
+      },
+      "__qualname__": {
+       "ref": "0x2546cc33770"
+      },
+      "__doc__": {
+       "ref": "0x7ffd7f1c1850"
+      },
+      "__annotations__": {
+       "ref": "0x2546cc32b80"
+      }
+     }
+    },
+    "0x7ffd7f2bb3c0": {
+     "id": "0x7ffd7f2bb3c0",
+     "type": "str",
+     "repr": "'__main__'"
+    },
+    "0x2546cc32af0": {
+     "id": "0x2546cc32af0",
+     "type": "str",
+     "repr": "'from_str'"
+    },
+    "0x2546cc33770": {
+     "id": "0x2546cc33770",
+     "type": "str",
+     "repr": "'Date.from_str'"
+    },
+    "0x7ffd7f1c1850": {
+     "id": "0x7ffd7f1c1850",
+     "type": "NoneType",
+     "repr": "None"
+    },
+    "0x2546cc32b80": {
+     "id": "0x2546cc32b80",
+     "type": "dict",
+     "repr": "{}",
+     "entries": []
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 11,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Date",
+     "line": 11,
+     "locals": {
+      "from_str": {
+       "ref": "0x2546cc2d030"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2546cc2d030": {
+     "id": "0x2546cc2d030",
+     "type": "classmethod",
+     "repr": "<classmethod(<function Date.from_str at 0x00000…",
+     "fields": {
+      "__module__": {
+       "ref": "0x7ffd7f2bb3c0"
+      },
+      "__name__": {
+       "ref": "0x2546cc32af0"
+      },
+      "__qualname__": {
+       "ref": "0x2546cc33770"
+      },
+      "__doc__": {
+       "ref": "0x7ffd7f1c1850"
+      },
+      "__annotations__": {
+       "ref": "0x2546cc32b80"
+      }
+     }
+    },
+    "0x7ffd7f2bb3c0": {
+     "id": "0x7ffd7f2bb3c0",
+     "type": "str",
+     "repr": "'__main__'"
+    },
+    "0x2546cc32af0": {
+     "id": "0x2546cc32af0",
+     "type": "str",
+     "repr": "'from_str'"
+    },
+    "0x2546cc33770": {
+     "id": "0x2546cc33770",
+     "type": "str",
+     "repr": "'Date.from_str'"
+    },
+    "0x7ffd7f1c1850": {
+     "id": "0x7ffd7f1c1850",
+     "type": "NoneType",
+     "repr": "None"
+    },
+    "0x2546cc32b80": {
+     "id": "0x2546cc32b80",
+     "type": "dict",
+     "repr": "{}",
+     "entries": []
+    }
+   },
+   "stdout": "",
+   "note": "self 도 cls 도 없다 — 클래스 안에 둔 그냥 함수"
+  },
+  {
+   "line": 11,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "Date",
+     "line": 11,
+     "locals": {
+      "from_str": {
+       "ref": "0x2546cc2d030"
+      },
+      "is_leap": {
+       "ref": "0x2546cc2d090"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2546cc2d030": {
+     "id": "0x2546cc2d030",
+     "type": "classmethod",
+     "repr": "<classmethod(<function Date.from_str at 0x00000…",
+     "fields": {
+      "__module__": {
+       "ref": "0x7ffd7f2bb3c0"
+      },
+      "__name__": {
+       "ref": "0x2546cc32af0"
+      },
+      "__qualname__": {
+       "ref": "0x2546cc33770"
+      },
+      "__doc__": {
+       "ref": "0x7ffd7f1c1850"
+      },
+      "__annotations__": {
+       "ref": "0x2546cc32b80"
+      }
+     }
+    },
+    "0x7ffd7f2bb3c0": {
+     "id": "0x7ffd7f2bb3c0",
+     "type": "str",
+     "repr": "'__main__'"
+    },
+    "0x2546cc32af0": {
+     "id": "0x2546cc32af0",
+     "type": "str",
+     "repr": "'from_str'"
+    },
+    "0x2546cc33770": {
+     "id": "0x2546cc33770",
+     "type": "str",
+     "repr": "'Date.from_str'"
+    },
+    "0x7ffd7f1c1850": {
+     "id": "0x7ffd7f1c1850",
+     "type": "NoneType",
+     "repr": "None"
+    },
+    "0x2546cc32b80": {
+     "id": "0x2546cc32b80",
+     "type": "dict",
+     "repr": "{}",
+     "entries": []
+    },
+    "0x2546cc2d090": {
+     "id": "0x2546cc2d090",
+     "type": "staticmethod",
+     "repr": "<staticmethod(<function Date.is_leap at 0x00000…",
+     "fields": {
+      "__module__": {
+       "ref": "0x7ffd7f2bb3c0"
+      },
+      "__name__": {
+       "ref": "0x2546cc2d470"
+      },
+      "__qualname__": {
+       "ref": "0x2546cc334f0"
+      },
+      "__doc__": {
+       "ref": "0x7ffd7f1c1850"
+      },
+      "__annotations__": {
+       "ref": "0x2546cc38980"
+      }
+     }
+    },
+    "0x2546cc2d470": {
+     "id": "0x2546cc2d470",
+     "type": "str",
+     "repr": "'is_leap'"
+    },
+    "0x2546cc334f0": {
+     "id": "0x2546cc334f0",
+     "type": "str",
+     "repr": "'Date.is_leap'"
+    },
+    "0x2546cc38980": {
+     "id": "0x2546cc38980",
+     "type": "dict",
+     "repr": "{}",
+     "entries": []
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 14,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 14,
+     "locals": {
+      "Date": {
+       "ref": "0x2546cab8770"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2546cab8770": {
+     "id": "0x2546cab8770",
+     "type": "type",
+     "repr": "Date"
+    }
+   },
+   "stdout": "",
+   "note": "인스턴스 없이 클래스에서 바로"
+  },
+  {
+   "line": 5,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 14,
+     "locals": {
+      "Date": {
+       "ref": "0x2546cab8770"
+      }
+     }
+    },
+    {
+     "fn": "from_str",
+     "line": 5,
+     "locals": {
+      "cls": {
+       "ref": "0x2546cab8770"
+      },
+      "text": {
+       "ref": "0x2546cc33b30"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2546cab8770": {
+     "id": "0x2546cab8770",
+     "type": "type",
+     "repr": "Date"
+    },
+    "0x2546cc33b30": {
+     "id": "0x2546cc33b30",
+     "type": "str",
+     "repr": "'2026-09-08'"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 7,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 14,
+     "locals": {
+      "Date": {
+       "ref": "0x2546cab8770"
+      }
+     }
+    },
+    {
+     "fn": "from_str",
+     "line": 7,
+     "locals": {
+      "cls": {
+       "ref": "0x2546cab8770"
+      },
+      "text": {
+       "ref": "0x2546cc33b30"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2546cab8770": {
+     "id": "0x2546cab8770",
+     "type": "type",
+     "repr": "Date"
+    },
+    "0x2546cc33b30": {
+     "id": "0x2546cc33b30",
+     "type": "str",
+     "repr": "'2026-09-08'"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 8,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 14,
+     "locals": {
+      "Date": {
+       "ref": "0x2546cab8770"
+      }
+     }
+    },
+    {
+     "fn": "from_str",
+     "line": 8,
+     "locals": {
+      "cls": {
+       "ref": "0x2546cab8770"
+      },
+      "text": {
+       "ref": "0x2546cc33b30"
+      },
+      "y": {
+       "ref": "0x2546c927a90"
+      },
+      "m": {
+       "ref": "0x7ffd7f2b4ab8"
+      },
+      "d": {
+       "ref": "0x7ffd7f2b4a98"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2546cab8770": {
+     "id": "0x2546cab8770",
+     "type": "type",
+     "repr": "Date"
+    },
+    "0x2546cc33b30": {
+     "id": "0x2546cc33b30",
+     "type": "str",
+     "repr": "'2026-09-08'"
+    },
+    "0x2546c927a90": {
+     "id": "0x2546c927a90",
+     "type": "int",
+     "repr": "2026"
+    },
+    "0x7ffd7f2b4ab8": {
+     "id": "0x7ffd7f2b4ab8",
+     "type": "int",
+     "repr": "9"
+    },
+    "0x7ffd7f2b4a98": {
+     "id": "0x7ffd7f2b4a98",
+     "type": "int",
+     "repr": "8"
+    }
+   },
+   "stdout": "",
+   "note": "cls() 로 만들면 자식 클래스에서 불러도 자식 인스턴스가 된다"
+  },
+  {
+   "line": 2,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 14,
+     "locals": {
+      "Date": {
+       "ref": "0x2546cab8770"
+      }
+     }
+    },
+    {
+     "fn": "from_str",
+     "line": 8,
+     "locals": {
+      "cls": {
+       "ref": "0x2546cab8770"
+      },
+      "text": {
+       "ref": "0x2546cc33b30"
+      },
+      "y": {
+       "ref": "0x2546c927a90"
+      },
+      "m": {
+       "ref": "0x7ffd7f2b4ab8"
+      },
+      "d": {
+       "ref": "0x7ffd7f2b4a98"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 2,
+     "locals": {
+      "self": {
+       "ref": "0x2546cc2da60"
+      },
+      "y": {
+       "ref": "0x2546c927a90"
+      },
+      "m": {
+       "ref": "0x7ffd7f2b4ab8"
+      },
+      "d": {
+       "ref": "0x7ffd7f2b4a98"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2546cab8770": {
+     "id": "0x2546cab8770",
+     "type": "type",
+     "repr": "Date"
+    },
+    "0x2546cc33b30": {
+     "id": "0x2546cc33b30",
+     "type": "str",
+     "repr": "'2026-09-08'"
+    },
+    "0x2546c927a90": {
+     "id": "0x2546c927a90",
+     "type": "int",
+     "repr": "2026"
+    },
+    "0x7ffd7f2b4ab8": {
+     "id": "0x7ffd7f2b4ab8",
+     "type": "int",
+     "repr": "9"
+    },
+    "0x7ffd7f2b4a98": {
+     "id": "0x7ffd7f2b4a98",
+     "type": "int",
+     "repr": "8"
+    },
+    "0x2546cc2da60": {
+     "id": "0x2546cc2da60",
+     "type": "Date",
+     "repr": "<__main__.Date object at 0x000002546CC2DA60>",
+     "fields": {}
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 3,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 14,
+     "locals": {
+      "Date": {
+       "ref": "0x2546cab8770"
+      }
+     }
+    },
+    {
+     "fn": "from_str",
+     "line": 8,
+     "locals": {
+      "cls": {
+       "ref": "0x2546cab8770"
+      },
+      "text": {
+       "ref": "0x2546cc33b30"
+      },
+      "y": {
+       "ref": "0x2546c927a90"
+      },
+      "m": {
+       "ref": "0x7ffd7f2b4ab8"
+      },
+      "d": {
+       "ref": "0x7ffd7f2b4a98"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 3,
+     "locals": {
+      "self": {
+       "ref": "0x2546cc2da60"
+      },
+      "y": {
+       "ref": "0x2546c927a90"
+      },
+      "m": {
+       "ref": "0x7ffd7f2b4ab8"
+      },
+      "d": {
+       "ref": "0x7ffd7f2b4a98"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2546cab8770": {
+     "id": "0x2546cab8770",
+     "type": "type",
+     "repr": "Date"
+    },
+    "0x2546cc33b30": {
+     "id": "0x2546cc33b30",
+     "type": "str",
+     "repr": "'2026-09-08'"
+    },
+    "0x2546c927a90": {
+     "id": "0x2546c927a90",
+     "type": "int",
+     "repr": "2026"
+    },
+    "0x7ffd7f2b4ab8": {
+     "id": "0x7ffd7f2b4ab8",
+     "type": "int",
+     "repr": "9"
+    },
+    "0x7ffd7f2b4a98": {
+     "id": "0x7ffd7f2b4a98",
+     "type": "int",
+     "repr": "8"
+    },
+    "0x2546cc2da60": {
+     "id": "0x2546cc2da60",
+     "type": "Date",
+     "repr": "<__main__.Date object at 0x000002546CC2DA60>",
+     "fields": {}
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 3,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 14,
+     "locals": {
+      "Date": {
+       "ref": "0x2546cab8770"
+      }
+     }
+    },
+    {
+     "fn": "from_str",
+     "line": 8,
+     "locals": {
+      "cls": {
+       "ref": "0x2546cab8770"
+      },
+      "text": {
+       "ref": "0x2546cc33b30"
+      },
+      "y": {
+       "ref": "0x2546c927a90"
+      },
+      "m": {
+       "ref": "0x7ffd7f2b4ab8"
+      },
+      "d": {
+       "ref": "0x7ffd7f2b4a98"
+      }
+     }
+    },
+    {
+     "fn": "__init__",
+     "line": 3,
+     "locals": {
+      "self": {
+       "ref": "0x2546cc2da60"
+      },
+      "y": {
+       "ref": "0x2546c927a90"
+      },
+      "m": {
+       "ref": "0x7ffd7f2b4ab8"
+      },
+      "d": {
+       "ref": "0x7ffd7f2b4a98"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2546cab8770": {
+     "id": "0x2546cab8770",
+     "type": "type",
+     "repr": "Date"
+    },
+    "0x2546cc33b30": {
+     "id": "0x2546cc33b30",
+     "type": "str",
+     "repr": "'2026-09-08'"
+    },
+    "0x2546c927a90": {
+     "id": "0x2546c927a90",
+     "type": "int",
+     "repr": "2026"
+    },
+    "0x7ffd7f2b4ab8": {
+     "id": "0x7ffd7f2b4ab8",
+     "type": "int",
+     "repr": "9"
+    },
+    "0x7ffd7f2b4a98": {
+     "id": "0x7ffd7f2b4a98",
+     "type": "int",
+     "repr": "8"
+    },
+    "0x2546cc2da60": {
+     "id": "0x2546cc2da60",
+     "type": "Date",
+     "repr": "<__main__.Date object at 0x000002546CC2DA60>",
+     "fields": {
+      "y": {
+       "ref": "0x2546c927a90"
+      },
+      "m": {
+       "ref": "0x7ffd7f2b4ab8"
+      },
+      "d": {
+       "ref": "0x7ffd7f2b4a98"
+      }
+     }
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 8,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 14,
+     "locals": {
+      "Date": {
+       "ref": "0x2546cab8770"
+      }
+     }
+    },
+    {
+     "fn": "from_str",
+     "line": 8,
+     "locals": {
+      "cls": {
+       "ref": "0x2546cab8770"
+      },
+      "text": {
+       "ref": "0x2546cc33b30"
+      },
+      "y": {
+       "ref": "0x2546c927a90"
+      },
+      "m": {
+       "ref": "0x7ffd7f2b4ab8"
+      },
+      "d": {
+       "ref": "0x7ffd7f2b4a98"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2546cab8770": {
+     "id": "0x2546cab8770",
+     "type": "type",
+     "repr": "Date"
+    },
+    "0x2546cc33b30": {
+     "id": "0x2546cc33b30",
+     "type": "str",
+     "repr": "'2026-09-08'"
+    },
+    "0x2546c927a90": {
+     "id": "0x2546c927a90",
+     "type": "int",
+     "repr": "2026"
+    },
+    "0x7ffd7f2b4ab8": {
+     "id": "0x7ffd7f2b4ab8",
+     "type": "int",
+     "repr": "9"
+    },
+    "0x7ffd7f2b4a98": {
+     "id": "0x7ffd7f2b4a98",
+     "type": "int",
+     "repr": "8"
+    }
+   },
+   "stdout": "",
+   "retval": "<__main__.Date object at 0x000002546CC2DA60>"
+  },
+  {
+   "line": 15,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 15,
+     "locals": {
+      "Date": {
+       "ref": "0x2546cab8770"
+      },
+      "d": {
+       "ref": "0x2546cc2da60"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2546cab8770": {
+     "id": "0x2546cab8770",
+     "type": "type",
+     "repr": "Date"
+    },
+    "0x2546cc2da60": {
+     "id": "0x2546cc2da60",
+     "type": "Date",
+     "repr": "<__main__.Date object at 0x000002546CC2DA60>",
+     "fields": {
+      "y": {
+       "ref": "0x2546c927a90"
+      },
+      "m": {
+       "ref": "0x7ffd7f2b4ab8"
+      },
+      "d": {
+       "ref": "0x7ffd7f2b4a98"
+      }
+     }
+    },
+    "0x2546c927a90": {
+     "id": "0x2546c927a90",
+     "type": "int",
+     "repr": "2026"
+    },
+    "0x7ffd7f2b4ab8": {
+     "id": "0x7ffd7f2b4ab8",
+     "type": "int",
+     "repr": "9"
+    },
+    "0x7ffd7f2b4a98": {
+     "id": "0x7ffd7f2b4a98",
+     "type": "int",
+     "repr": "8"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 16,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 16,
+     "locals": {
+      "Date": {
+       "ref": "0x2546cab8770"
+      },
+      "d": {
+       "ref": "0x2546cc2da60"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2546cab8770": {
+     "id": "0x2546cab8770",
+     "type": "type",
+     "repr": "Date"
+    },
+    "0x2546cc2da60": {
+     "id": "0x2546cc2da60",
+     "type": "Date",
+     "repr": "<__main__.Date object at 0x000002546CC2DA60>",
+     "fields": {
+      "y": {
+       "ref": "0x2546c927a90"
+      },
+      "m": {
+       "ref": "0x7ffd7f2b4ab8"
+      },
+      "d": {
+       "ref": "0x7ffd7f2b4a98"
+      }
+     }
+    },
+    "0x2546c927a90": {
+     "id": "0x2546c927a90",
+     "type": "int",
+     "repr": "2026"
+    },
+    "0x7ffd7f2b4ab8": {
+     "id": "0x7ffd7f2b4ab8",
+     "type": "int",
+     "repr": "9"
+    },
+    "0x7ffd7f2b4a98": {
+     "id": "0x7ffd7f2b4a98",
+     "type": "int",
+     "repr": "8"
+    }
+   },
+   "stdout": "2026 9 8\n",
+   "note": "클래스로도 인스턴스로도 부를 수 있다"
+  },
+  {
+   "line": 10,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 16,
+     "locals": {
+      "Date": {
+       "ref": "0x2546cab8770"
+      },
+      "d": {
+       "ref": "0x2546cc2da60"
+      }
+     }
+    },
+    {
+     "fn": "is_leap",
+     "line": 10,
+     "locals": {
+      "y": {
+       "ref": "0x2546c9276b0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2546cab8770": {
+     "id": "0x2546cab8770",
+     "type": "type",
+     "repr": "Date"
+    },
+    "0x2546cc2da60": {
+     "id": "0x2546cc2da60",
+     "type": "Date",
+     "repr": "<__main__.Date object at 0x000002546CC2DA60>",
+     "fields": {
+      "y": {
+       "ref": "0x2546c927a90"
+      },
+      "m": {
+       "ref": "0x7ffd7f2b4ab8"
+      },
+      "d": {
+       "ref": "0x7ffd7f2b4a98"
+      }
+     }
+    },
+    "0x2546c927a90": {
+     "id": "0x2546c927a90",
+     "type": "int",
+     "repr": "2026"
+    },
+    "0x7ffd7f2b4ab8": {
+     "id": "0x7ffd7f2b4ab8",
+     "type": "int",
+     "repr": "9"
+    },
+    "0x7ffd7f2b4a98": {
+     "id": "0x7ffd7f2b4a98",
+     "type": "int",
+     "repr": "8"
+    },
+    "0x2546c9276b0": {
+     "id": "0x2546c9276b0",
+     "type": "int",
+     "repr": "2024"
+    }
+   },
+   "stdout": "2026 9 8\n"
+  },
+  {
+   "line": 12,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 16,
+     "locals": {
+      "Date": {
+       "ref": "0x2546cab8770"
+      },
+      "d": {
+       "ref": "0x2546cc2da60"
+      }
+     }
+    },
+    {
+     "fn": "is_leap",
+     "line": 12,
+     "locals": {
+      "y": {
+       "ref": "0x2546c9276b0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2546cab8770": {
+     "id": "0x2546cab8770",
+     "type": "type",
+     "repr": "Date"
+    },
+    "0x2546cc2da60": {
+     "id": "0x2546cc2da60",
+     "type": "Date",
+     "repr": "<__main__.Date object at 0x000002546CC2DA60>",
+     "fields": {
+      "y": {
+       "ref": "0x2546c927a90"
+      },
+      "m": {
+       "ref": "0x7ffd7f2b4ab8"
+      },
+      "d": {
+       "ref": "0x7ffd7f2b4a98"
+      }
+     }
+    },
+    "0x2546c927a90": {
+     "id": "0x2546c927a90",
+     "type": "int",
+     "repr": "2026"
+    },
+    "0x7ffd7f2b4ab8": {
+     "id": "0x7ffd7f2b4ab8",
+     "type": "int",
+     "repr": "9"
+    },
+    "0x7ffd7f2b4a98": {
+     "id": "0x7ffd7f2b4a98",
+     "type": "int",
+     "repr": "8"
+    },
+    "0x2546c9276b0": {
+     "id": "0x2546c9276b0",
+     "type": "int",
+     "repr": "2024"
+    }
+   },
+   "stdout": "2026 9 8\n"
+  },
+  {
+   "line": 12,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 16,
+     "locals": {
+      "Date": {
+       "ref": "0x2546cab8770"
+      },
+      "d": {
+       "ref": "0x2546cc2da60"
+      }
+     }
+    },
+    {
+     "fn": "is_leap",
+     "line": 12,
+     "locals": {
+      "y": {
+       "ref": "0x2546c9276b0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2546cab8770": {
+     "id": "0x2546cab8770",
+     "type": "type",
+     "repr": "Date"
+    },
+    "0x2546cc2da60": {
+     "id": "0x2546cc2da60",
+     "type": "Date",
+     "repr": "<__main__.Date object at 0x000002546CC2DA60>",
+     "fields": {
+      "y": {
+       "ref": "0x2546c927a90"
+      },
+      "m": {
+       "ref": "0x7ffd7f2b4ab8"
+      },
+      "d": {
+       "ref": "0x7ffd7f2b4a98"
+      }
+     }
+    },
+    "0x2546c927a90": {
+     "id": "0x2546c927a90",
+     "type": "int",
+     "repr": "2026"
+    },
+    "0x7ffd7f2b4ab8": {
+     "id": "0x7ffd7f2b4ab8",
+     "type": "int",
+     "repr": "9"
+    },
+    "0x7ffd7f2b4a98": {
+     "id": "0x7ffd7f2b4a98",
+     "type": "int",
+     "repr": "8"
+    },
+    "0x2546c9276b0": {
+     "id": "0x2546c9276b0",
+     "type": "int",
+     "repr": "2024"
+    }
+   },
+   "stdout": "2026 9 8\n",
+   "retval": "True"
+  },
+  {
+   "line": 10,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 16,
+     "locals": {
+      "Date": {
+       "ref": "0x2546cab8770"
+      },
+      "d": {
+       "ref": "0x2546cc2da60"
+      }
+     }
+    },
+    {
+     "fn": "is_leap",
+     "line": 10,
+     "locals": {
+      "y": {
+       "ref": "0x2546c9276f0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2546cab8770": {
+     "id": "0x2546cab8770",
+     "type": "type",
+     "repr": "Date"
+    },
+    "0x2546cc2da60": {
+     "id": "0x2546cc2da60",
+     "type": "Date",
+     "repr": "<__main__.Date object at 0x000002546CC2DA60>",
+     "fields": {
+      "y": {
+       "ref": "0x2546c927a90"
+      },
+      "m": {
+       "ref": "0x7ffd7f2b4ab8"
+      },
+      "d": {
+       "ref": "0x7ffd7f2b4a98"
+      }
+     }
+    },
+    "0x2546c927a90": {
+     "id": "0x2546c927a90",
+     "type": "int",
+     "repr": "2026"
+    },
+    "0x7ffd7f2b4ab8": {
+     "id": "0x7ffd7f2b4ab8",
+     "type": "int",
+     "repr": "9"
+    },
+    "0x7ffd7f2b4a98": {
+     "id": "0x7ffd7f2b4a98",
+     "type": "int",
+     "repr": "8"
+    },
+    "0x2546c9276f0": {
+     "id": "0x2546c9276f0",
+     "type": "int",
+     "repr": "2026"
+    }
+   },
+   "stdout": "2026 9 8\n"
+  },
+  {
+   "line": 12,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 16,
+     "locals": {
+      "Date": {
+       "ref": "0x2546cab8770"
+      },
+      "d": {
+       "ref": "0x2546cc2da60"
+      }
+     }
+    },
+    {
+     "fn": "is_leap",
+     "line": 12,
+     "locals": {
+      "y": {
+       "ref": "0x2546c9276f0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2546cab8770": {
+     "id": "0x2546cab8770",
+     "type": "type",
+     "repr": "Date"
+    },
+    "0x2546cc2da60": {
+     "id": "0x2546cc2da60",
+     "type": "Date",
+     "repr": "<__main__.Date object at 0x000002546CC2DA60>",
+     "fields": {
+      "y": {
+       "ref": "0x2546c927a90"
+      },
+      "m": {
+       "ref": "0x7ffd7f2b4ab8"
+      },
+      "d": {
+       "ref": "0x7ffd7f2b4a98"
+      }
+     }
+    },
+    "0x2546c927a90": {
+     "id": "0x2546c927a90",
+     "type": "int",
+     "repr": "2026"
+    },
+    "0x7ffd7f2b4ab8": {
+     "id": "0x7ffd7f2b4ab8",
+     "type": "int",
+     "repr": "9"
+    },
+    "0x7ffd7f2b4a98": {
+     "id": "0x7ffd7f2b4a98",
+     "type": "int",
+     "repr": "8"
+    },
+    "0x2546c9276f0": {
+     "id": "0x2546c9276f0",
+     "type": "int",
+     "repr": "2026"
+    }
+   },
+   "stdout": "2026 9 8\n"
+  },
+  {
+   "line": 12,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 16,
+     "locals": {
+      "Date": {
+       "ref": "0x2546cab8770"
+      },
+      "d": {
+       "ref": "0x2546cc2da60"
+      }
+     }
+    },
+    {
+     "fn": "is_leap",
+     "line": 12,
+     "locals": {
+      "y": {
+       "ref": "0x2546c9276f0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2546cab8770": {
+     "id": "0x2546cab8770",
+     "type": "type",
+     "repr": "Date"
+    },
+    "0x2546cc2da60": {
+     "id": "0x2546cc2da60",
+     "type": "Date",
+     "repr": "<__main__.Date object at 0x000002546CC2DA60>",
+     "fields": {
+      "y": {
+       "ref": "0x2546c927a90"
+      },
+      "m": {
+       "ref": "0x7ffd7f2b4ab8"
+      },
+      "d": {
+       "ref": "0x7ffd7f2b4a98"
+      }
+     }
+    },
+    "0x2546c927a90": {
+     "id": "0x2546c927a90",
+     "type": "int",
+     "repr": "2026"
+    },
+    "0x7ffd7f2b4ab8": {
+     "id": "0x7ffd7f2b4ab8",
+     "type": "int",
+     "repr": "9"
+    },
+    "0x7ffd7f2b4a98": {
+     "id": "0x7ffd7f2b4a98",
+     "type": "int",
+     "repr": "8"
+    },
+    "0x2546c9276f0": {
+     "id": "0x2546c9276f0",
+     "type": "int",
+     "repr": "2026"
+    }
+   },
+   "stdout": "2026 9 8\n",
+   "retval": "False"
+  },
+  {
+   "line": 16,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 16,
+     "locals": {
+      "Date": {
+       "ref": "0x2546cab8770"
+      },
+      "d": {
+       "ref": "0x2546cc2da60"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2546cab8770": {
+     "id": "0x2546cab8770",
+     "type": "type",
+     "repr": "Date"
+    },
+    "0x2546cc2da60": {
+     "id": "0x2546cc2da60",
+     "type": "Date",
+     "repr": "<__main__.Date object at 0x000002546CC2DA60>",
+     "fields": {
+      "y": {
+       "ref": "0x2546c927a90"
+      },
+      "m": {
+       "ref": "0x7ffd7f2b4ab8"
+      },
+      "d": {
+       "ref": "0x7ffd7f2b4a98"
+      }
+     }
+    },
+    "0x2546c927a90": {
+     "id": "0x2546c927a90",
+     "type": "int",
+     "repr": "2026"
+    },
+    "0x7ffd7f2b4ab8": {
+     "id": "0x7ffd7f2b4ab8",
+     "type": "int",
+     "repr": "9"
+    },
+    "0x7ffd7f2b4a98": {
+     "id": "0x7ffd7f2b4a98",
+     "type": "int",
+     "repr": "8"
+    }
+   },
+   "stdout": "2026 9 8\nTrue False\n"
+  }
+ ],
+ "v": 1
+}
