@@ -8,7 +8,7 @@ import { ease, lerp, seg } from "@/lib/anim";
 import type { HeapObj, Prim, Ref, Trace, TraceStep } from "@/lib/types";
 import { Arrow, C, NameTag, ObjBox, Pop } from "@/components/viz/prims";
 
-const STEP_MS = 2600;
+const stepMsFor = (n: number) => Math.max(1100, Math.min(2600, Math.round(34000 / Math.max(1, n))));
 const PRIM = new Set(["int", "float", "str", "bool", "NoneType", "complex"]);
 
 type Binding = { name: string; frame: number; target: string | null; prim?: string };
@@ -192,8 +192,9 @@ function HeapPanel({ trace, stepIdx, prevIdx, local, order }: { trace: Trace; st
    표시 스텝 k  ⇔  trace.steps[k+1] 이 "지금 실행되는 줄".
    화면에는 그 줄이 실행된 **뒤**의 상태(steps[k+2])를, 실행 전 상태에서 애니메이션으로 보여준다.
    ("이 줄이 실행되면 → 이렇게 된다")                                                     */
-export function TracePlayer({ trace, title, autoplay = true, initialT }: { trace: Trace; title?: string; autoplay?: boolean; initialT?: number }) {
+export function TracePlayer({ trace, title, autoplay = false, initialT }: { trace: Trace; title?: string; autoplay?: boolean; initialT?: number }) {
   const n = Math.max(1, trace.steps.length - 1);
+  const STEP_MS = stepMsFor(n);
   const total = n * STEP_MS;
   const tl = useTimeline(total);
   const wrap = useRef<HTMLDivElement>(null);
@@ -209,7 +210,7 @@ export function TracePlayer({ trace, title, autoplay = true, initialT }: { trace
   const afterIdx = Math.min(trace.steps.length - 1, k + 2);
   const after = trace.steps[afterIdx];
   const before = trace.steps[beforeIdx];
-  const marks = useMemo(() => Array.from({ length: n }, (_, i) => i * STEP_MS), [n]);
+  const marks = useMemo(() => Array.from({ length: n }, (_, i) => i * STEP_MS), [n, STEP_MS]);
 
   const finished = lineStep.event === "return" && lineStep.frames.length <= 1 && k === n - 1;
   const errored = lineStep.event === "exception" || !!after.exc;

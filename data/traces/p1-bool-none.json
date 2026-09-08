@@ -1,0 +1,232 @@
+{
+ "id": "p1-bool-none",
+ "code": "flag = True\nprint(flag + flag)\nprint(type(flag))\nresult = None\nprint(result is None)\nprint(bool(0), bool(\"\"), bool([]))\nprint(bool(7), bool(\"a\"), bool([0]))",
+ "steps": [
+  {
+   "line": 0,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 0,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": "",
+   "note": "True 는 파이썬 전체에 딱 하나 있는 객체 — 모든 True 가 같은 곳을 가리킨다"
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 2,
+     "locals": {
+      "flag": {
+       "ref": "0x7ffd7f1c1810"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x7ffd7f1c1810": {
+     "id": "0x7ffd7f1c1810",
+     "type": "bool",
+     "repr": "True"
+    }
+   },
+   "stdout": "",
+   "note": "bool 은 int 의 자식 — True 는 1 처럼 계산된다"
+  },
+  {
+   "line": 3,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 3,
+     "locals": {
+      "flag": {
+       "ref": "0x7ffd7f1c1810"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x7ffd7f1c1810": {
+     "id": "0x7ffd7f1c1810",
+     "type": "bool",
+     "repr": "True"
+    }
+   },
+   "stdout": "2\n"
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "flag": {
+       "ref": "0x7ffd7f1c1810"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x7ffd7f1c1810": {
+     "id": "0x7ffd7f1c1810",
+     "type": "bool",
+     "repr": "True"
+    }
+   },
+   "stdout": "2\n<class 'bool'>\n",
+   "note": "None 도 단 하나뿐인 객체. '값이 없음' 을 뜻한다"
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "flag": {
+       "ref": "0x7ffd7f1c1810"
+      },
+      "result": {
+       "ref": "0x7ffd7f1c1850"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x7ffd7f1c1810": {
+     "id": "0x7ffd7f1c1810",
+     "type": "bool",
+     "repr": "True"
+    },
+    "0x7ffd7f1c1850": {
+     "id": "0x7ffd7f1c1850",
+     "type": "NoneType",
+     "repr": "None"
+    }
+   },
+   "stdout": "2\n<class 'bool'>\n",
+   "note": "None 비교는 == 가 아니라 is 로 한다"
+  },
+  {
+   "line": 6,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "flag": {
+       "ref": "0x7ffd7f1c1810"
+      },
+      "result": {
+       "ref": "0x7ffd7f1c1850"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x7ffd7f1c1810": {
+     "id": "0x7ffd7f1c1810",
+     "type": "bool",
+     "repr": "True"
+    },
+    "0x7ffd7f1c1850": {
+     "id": "0x7ffd7f1c1850",
+     "type": "NoneType",
+     "repr": "None"
+    }
+   },
+   "stdout": "2\n<class 'bool'>\nTrue\n",
+   "note": "0, 빈 문자열, 빈 리스트는 거짓"
+  },
+  {
+   "line": 7,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 7,
+     "locals": {
+      "flag": {
+       "ref": "0x7ffd7f1c1810"
+      },
+      "result": {
+       "ref": "0x7ffd7f1c1850"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x7ffd7f1c1810": {
+     "id": "0x7ffd7f1c1810",
+     "type": "bool",
+     "repr": "True"
+    },
+    "0x7ffd7f1c1850": {
+     "id": "0x7ffd7f1c1850",
+     "type": "NoneType",
+     "repr": "None"
+    }
+   },
+   "stdout": "2\n<class 'bool'>\nTrue\nFalse False False\n",
+   "note": "그 외는 참 — [0] 도 '비어 있지 않은' 리스트다"
+  },
+  {
+   "line": 7,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 7,
+     "locals": {
+      "flag": {
+       "ref": "0x7ffd7f1c1810"
+      },
+      "result": {
+       "ref": "0x7ffd7f1c1850"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x7ffd7f1c1810": {
+     "id": "0x7ffd7f1c1810",
+     "type": "bool",
+     "repr": "True"
+    },
+    "0x7ffd7f1c1850": {
+     "id": "0x7ffd7f1c1850",
+     "type": "NoneType",
+     "repr": "None"
+    }
+   },
+   "stdout": "2\n<class 'bool'>\nTrue\nFalse False False\nTrue True True\n"
+  }
+ ],
+ "v": 1
+}

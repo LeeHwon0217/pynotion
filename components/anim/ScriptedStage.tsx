@@ -19,7 +19,7 @@ export function richSub(text: string): ReactNode {
  * 화면에 들어오면 자동 재생.
  */
 export function ScriptedStage({
-  script, render, title, kicker, tall, autoplay = true, viewBox = "0 0 1200 520", initialT,
+  script, render, title, kicker, tall, autoplay = false, viewBox = "0 0 1200 520", initialT,
 }: {
   script: Script;
   render: (t: number) => ReactNode;

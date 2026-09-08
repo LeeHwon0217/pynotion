@@ -450,103 +450,144 @@ table.tbl td code { font-size: .88em; background: var(--wash-2); padding: 2px 6p
 .wip b { display: block; color: var(--text-secondary); font-size: 16px; margin-bottom: 6px; }
 
 /* =====================================================================
-   Stage — 시각화 무대
+   Stage — 시각화 무대 (영상 플레이어)
    ===================================================================== */
 .stage {
   position: relative; width: 100%;
   height: clamp(480px, 72vh, 700px);
-  border-radius: 22px; overflow: hidden;
+  border-radius: 20px; overflow: hidden;
   background:
-    radial-gradient(70% 90% at 50% 100%, rgba(91,140,255,.10), transparent 60%),
-    linear-gradient(180deg, var(--stage-bg-2), var(--stage-bg));
-  border: 1px solid rgba(255,255,255,.08);
-  box-shadow: 0 30px 80px -30px rgba(0,0,0,.55), inset 0 1px 0 rgba(255,255,255,.06);
+    radial-gradient(120% 90% at 50% 110%, rgba(91,140,255,.09), transparent 55%),
+    radial-gradient(80% 60% at 50% -10%, rgba(255,255,255,.04), transparent 60%),
+    linear-gradient(180deg, #0f1526, #0a0e19);
+  border: 1px solid rgba(255,255,255,.07);
+  box-shadow: 0 40px 90px -40px rgba(0,0,0,.7), inset 0 1px 0 rgba(255,255,255,.05);
   color: var(--stage-text);
   display: flex; flex-direction: column;
   isolation: isolate;
 }
 .stage.tall { height: clamp(560px, 80vh, 780px); }
-.stage.fullscreen {
-  position: fixed; inset: 0; z-index: 100; border-radius: 0; height: 100vh; border: none;
-}
+.stage.fullscreen { position: fixed; inset: 0; z-index: 100; border-radius: 0; height: 100vh; border: none; }
 .stage-grid {
   position: absolute; inset: 0; z-index: 0; pointer-events: none;
   background-image:
-    linear-gradient(var(--stage-grid) 1px, transparent 1px),
-    linear-gradient(90deg, var(--stage-grid) 1px, transparent 1px);
-  background-size: 40px 40px;
-  mask-image: radial-gradient(80% 80% at 50% 45%, #000 40%, transparent 100%);
-  -webkit-mask-image: radial-gradient(80% 80% at 50% 45%, #000 40%, transparent 100%);
+    linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(75% 75% at 50% 45%, #000 30%, transparent 100%);
+  -webkit-mask-image: radial-gradient(75% 75% at 50% 45%, #000 30%, transparent 100%);
 }
-.stage-head {
-  position: relative; z-index: 2; display: flex; align-items: center; gap: 12px;
-  padding: 12px 16px 0 18px; font-size: 12.5px; color: var(--stage-muted);
-}
-.stage-head b { color: var(--stage-text); font-weight: 650; }
-.stage-head .sp { flex: 1; }
-.stage-chapters { display: flex; gap: 4px; flex-wrap: wrap; }
-.stage-chapters button {
-  border: 1px solid rgba(255,255,255,.1); background: rgba(255,255,255,.04); color: var(--stage-muted);
-  border-radius: 999px; padding: 3px 10px; font-size: 11.5px; cursor: pointer; transition: background .15s, color .15s;
-}
-.stage-chapters button:hover { background: rgba(255,255,255,.09); color: var(--stage-text); }
-.stage-chapters button[data-on="true"] { background: var(--stage-hi); color: #fff; border-color: transparent; }
-.stage-ibtn {
-  width: 30px; height: 30px; border-radius: 8px; border: 1px solid rgba(255,255,255,.1);
-  background: rgba(255,255,255,.05); color: var(--stage-text); cursor: pointer; display: grid; place-items: center;
-  transition: background .15s;
-}
-.stage-ibtn:hover { background: rgba(255,255,255,.12); }
-.stage-canvas { position: relative; z-index: 1; flex: 1; min-height: 0; }
-.stage-canvas svg { width: 100%; height: 100%; display: block; }
 
-/* 자막 — 캔버스 아래 고정 띠 (그림을 가리지 않는다) */
+/* 헤더 */
+.stage-head {
+  position: relative; z-index: 2; display: flex; align-items: center; gap: 14px;
+  padding: 14px 16px 0 20px; min-height: 44px;
+}
+.stage-title { display: flex; flex-direction: column; gap: 1px; min-width: 0; }
+.stage-kicker { font-size: 10.5px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--stage-muted); }
+.stage-title b { font-size: 14.5px; font-weight: 650; letter-spacing: -.01em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.stage-head .sp, .stage-ctrl .sp { flex: 1; }
+.stage-chapters { display: flex; gap: 2px; margin: 0; padding: 0; list-style: none; flex-wrap: wrap; justify-content: flex-end; }
+.stage-chapters button {
+  display: inline-flex; align-items: center; gap: 6px;
+  border: none; background: transparent; color: var(--stage-muted);
+  padding: 5px 8px; border-radius: 7px; font-size: 12px; font-weight: 550; cursor: pointer;
+  transition: color .15s, background .15s;
+}
+.stage-chapters button i {
+  font-style: normal; width: 17px; height: 17px; border-radius: 50%; display: grid; place-items: center;
+  font-size: 10px; font-weight: 700; background: rgba(255,255,255,.08); color: var(--stage-muted);
+}
+.stage-chapters button:hover { color: var(--stage-text); background: rgba(255,255,255,.05); }
+.stage-chapters button[data-on="true"] { color: #fff; }
+.stage-chapters button[data-on="true"] i { background: #fff; color: #0b0f1a; }
+.stage-ibtn {
+  width: 32px; height: 32px; border-radius: 8px; border: none; flex: none;
+  background: transparent; color: var(--stage-muted); cursor: pointer; display: grid; place-items: center;
+  transition: background .15s, color .15s;
+}
+.stage-ibtn:hover { background: rgba(255,255,255,.08); color: #fff; }
+.stage-ibtn svg { width: 16px; height: 16px; }
+
+/* 캔버스 */
+.stage-canvas { position: relative; z-index: 1; flex: 1; min-height: 0; display: flex; flex-direction: column; }
+.stage-canvas > svg { width: 100%; flex: 1; min-height: 0; display: block; transition: opacity .4s, filter .4s; }
+.stage.poster .stage-canvas > svg { opacity: .28; filter: blur(1.5px) saturate(.6); }
+.stage-canvas .tp { transition: opacity .4s, filter .4s; }
+.stage.poster .stage-canvas .tp { opacity: .28; filter: blur(1.5px) saturate(.6); }
+
+/* 포스터 / 종료 오버레이 */
+.stage-poster {
+  position: absolute; inset: 0; z-index: 4; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 18px;
+  cursor: pointer; animation: fadeIn .35s ease-out both;
+}
+.stage-bigplay {
+  width: 84px; height: 84px; border-radius: 50%; border: none; cursor: pointer;
+  background: #fff; color: #0b0f1a; display: grid; place-items: center;
+  box-shadow: 0 16px 40px -10px rgba(0,0,0,.7), 0 0 0 10px rgba(255,255,255,.06);
+  transition: transform .18s cubic-bezier(.22,.61,.36,1), box-shadow .18s;
+}
+.stage-bigplay:hover { transform: scale(1.06); box-shadow: 0 20px 48px -10px rgba(0,0,0,.75), 0 0 0 14px rgba(255,255,255,.08); }
+.stage-bigplay svg { width: 34px; height: 34px; fill: currentColor; margin-left: 3px; }
+.stage-poster.ended .stage-bigplay { width: 64px; height: 64px; }
+.stage-poster.ended .stage-bigplay svg { width: 26px; height: 26px; margin-left: 0; }
+.stage-poster-meta { display: flex; flex-direction: column; align-items: center; gap: 4px; text-align: center; padding: 0 24px; }
+.stage-poster-meta b { font-size: clamp(18px, 2.2vw, 24px); font-weight: 750; letter-spacing: -.02em; text-shadow: 0 2px 12px rgba(0,0,0,.6); }
+.stage-poster-meta span { font-size: 13px; color: var(--stage-muted); font-variant-numeric: tabular-nums; }
+
+/* 자막 띠 */
 .stage-sub {
-  position: relative; z-index: 3; flex: none; min-height: 66px;
-  display: flex; justify-content: center; align-items: center; padding: 4px 24px 0;
+  position: relative; z-index: 3; flex: none; min-height: 68px;
+  display: flex; justify-content: center; align-items: center; padding: 6px 28px 2px;
 }
-.stage-sub div {
-  max-width: 900px; text-align: center; font-size: clamp(15px, 1.4vw, 19px); font-weight: 560; line-height: 1.5;
-  color: var(--stage-text); background: rgba(6,9,18,.6);
-  border: 1px solid rgba(255,255,255,.08); border-radius: 12px; padding: 9px 18px;
-  animation: subIn .32s cubic-bezier(.22,.61,.36,1) both;
-  word-break: keep-all;
+.stage-sub p {
+  margin: 0; max-width: 920px; text-align: center;
+  font-size: clamp(15px, 1.35vw, 19px); font-weight: 500; line-height: 1.55; letter-spacing: -.005em;
+  color: #eef1f8; text-shadow: 0 1px 2px rgba(0,0,0,.6), 0 0 24px rgba(0,0,0,.5);
+  word-break: keep-all; animation: subIn .3s cubic-bezier(.22,.61,.36,1) both;
 }
-.stage-sub code { font-size: .92em; color: var(--stage-name); background: rgba(255,255,255,.07); padding: 1px 6px; border-radius: 5px; }
-.stage-sub b { color: var(--stage-hi); }
-@keyframes subIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+.stage-sub code { font-size: .9em; color: var(--stage-name); background: rgba(247,193,75,.1); padding: 1px 6px; border-radius: 5px; font-weight: 500; }
+.stage-sub b { color: #fff; font-weight: 750; }
+@keyframes subIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
 
 /* 트랜스포트 */
-.stage-bar {
-  position: relative; z-index: 3; display: flex; align-items: center; gap: 10px;
-  padding: 10px 14px 12px; background: linear-gradient(180deg, transparent, rgba(0,0,0,.35));
+.stage-bar { position: relative; z-index: 3; padding: 6px 12px 8px; background: linear-gradient(180deg, transparent, rgba(0,0,0,.28)); }
+.stage-scrub { position: relative; height: 18px; display: flex; align-items: center; cursor: pointer; margin: 0 6px; touch-action: none; }
+.stage-scrub .seg { position: absolute; height: 3px; border-radius: 2px; background: rgba(255,255,255,.18); overflow: hidden; transition: height .12s; }
+.stage-scrub .seg i { display: block; height: 100%; background: #fff; }
+.stage-scrub:hover .seg { height: 5px; }
+.stage-scrub .mark { position: absolute; top: 50%; width: 2px; height: 3px; background: rgba(0,0,0,.5); transform: translate(-50%, -50%); pointer-events: none; }
+.stage-scrub .knob { position: absolute; width: 13px; height: 13px; border-radius: 50%; background: #fff; transform: translateX(-50%) scale(0); box-shadow: 0 1px 6px rgba(0,0,0,.6); transition: transform .12s; pointer-events: none; }
+.stage-scrub:hover .knob { transform: translateX(-50%) scale(1); }
+.stage-tip {
+  position: absolute; bottom: 20px; transform: translateX(-50%); pointer-events: none; white-space: nowrap;
+  background: rgba(8,11,20,.92); border: 1px solid rgba(255,255,255,.1); border-radius: 8px; padding: 5px 9px;
+  font-size: 11.5px; display: flex; flex-direction: column; align-items: center; gap: 1px;
 }
-.stage-play {
-  width: 40px; height: 40px; border-radius: 50%; border: none; cursor: pointer;
-  background: var(--stage-hi); color: #fff; display: grid; place-items: center;
-  box-shadow: 0 6px 18px -6px var(--stage-hi); transition: transform .12s, background .15s;
+.stage-tip b { color: #fff; font-weight: 650; }
+.stage-tip span { color: var(--stage-muted); font-variant-numeric: tabular-nums; }
+.stage-ctrl { display: flex; align-items: center; gap: 2px; margin-top: 2px; }
+.stage-btn {
+  height: 36px; min-width: 36px; padding: 0; border: none; border-radius: 8px; background: transparent;
+  color: #fff; cursor: pointer; display: grid; place-items: center; transition: background .15s, transform .1s;
 }
-.stage-play:hover { transform: scale(1.06); }
-.stage-play svg { width: 16px; height: 16px; fill: currentColor; }
-.stage-step { width: 32px; height: 32px; border-radius: 8px; border: 1px solid rgba(255,255,255,.1); background: rgba(255,255,255,.05); color: var(--stage-text); cursor: pointer; display: grid; place-items: center; }
-.stage-step:hover { background: rgba(255,255,255,.12); }
-.stage-step svg { width: 14px; height: 14px; fill: currentColor; }
-.stage-scrub { flex: 1; position: relative; height: 28px; display: flex; align-items: center; cursor: pointer; }
-.stage-scrub .rail { position: absolute; left: 0; right: 0; height: 5px; border-radius: 99px; background: rgba(255,255,255,.12); }
-.stage-scrub .fill { position: absolute; left: 0; height: 5px; border-radius: 99px; background: linear-gradient(90deg, var(--stage-hi), #9db8ff); }
-.stage-scrub .knob { position: absolute; width: 14px; height: 14px; border-radius: 50%; background: #fff; box-shadow: 0 1px 6px rgba(0,0,0,.5); transform: translateX(-50%); }
-.stage-scrub .mark { position: absolute; top: 50%; width: 2px; height: 9px; background: rgba(255,255,255,.35); transform: translate(-50%, -50%); border-radius: 2px; }
-.stage-time { font-size: 12px; color: var(--stage-muted); font-variant-numeric: tabular-nums; min-width: 62px; text-align: right; }
-.stage-speed { display: inline-flex; gap: 2px; padding: 2px; background: rgba(255,255,255,.06); border-radius: 8px; border: 1px solid rgba(255,255,255,.08); }
-.stage-speed button { border: none; background: transparent; color: var(--stage-muted); font-size: 11.5px; font-weight: 600; padding: 4px 8px; border-radius: 6px; cursor: pointer; }
-.stage-speed button[data-on="true"] { background: rgba(255,255,255,.14); color: var(--stage-text); }
+.stage-btn:hover { background: rgba(255,255,255,.1); }
+.stage-btn:active { transform: scale(.94); }
+.stage-btn svg { width: 20px; height: 20px; fill: currentColor; }
+.stage-btn.play svg { width: 26px; height: 26px; }
+.stage-btn.text { font-size: 12.5px; font-weight: 650; padding: 0 10px; font-variant-numeric: tabular-nums; color: rgba(255,255,255,.85); }
+.stage-time { margin-left: 8px; font-size: 12.5px; color: rgba(255,255,255,.85); font-variant-numeric: tabular-nums; font-family: "JetBrains Mono", ui-monospace, monospace; }
+.stage-now { margin-left: 12px; font-size: 12.5px; color: var(--stage-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 40%; }
+.stage-now::before { content: "\2022"; margin-right: 8px; opacity: .5; }
+
 @media (max-width: 720px) {
   .stage { height: clamp(380px, 64vh, 500px); border-radius: 16px; }
   .stage.tall { height: clamp(520px, 78vh, 640px); }
   .stage-sub { padding: 4px 12px 0; min-height: 60px; }
-  .stage-sub div { font-size: 13.5px; padding: 8px 12px; }
-  .stage-time, .stage-speed { display: none; }
-  .stage-chapters { display: none; }
+  .stage-sub p { font-size: 13.5px; }
+  .stage-now, .stage-chapters { display: none; }
+  .stage-bigplay { width: 64px; height: 64px; }
+  .stage-bigplay svg { width: 26px; height: 26px; }
   /* 좁은 화면: 그림을 줄이지 말고 가로로 밀어서 본다 */
   .stage-canvas { overflow-x: auto; overflow-y: hidden; -webkit-overflow-scrolling: touch; }
   .stage-canvas > svg { min-width: 860px; }

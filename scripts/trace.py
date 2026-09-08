@@ -119,15 +119,23 @@ def run(trace_id, code, inline_small=False):
         return tracer
 
     g = {"__name__": "__main__"}
-    compiled = compile(clean, "<lesson>", "exec")
+    try:
+        compiled = compile(clean, "<lesson>", "exec")
+    except SyntaxError as e:
+        return {"id": trace_id, "code": clean, "v": V, "steps": [
+            {"line": 0, "event": "call", "frames": [{"fn": "<module>", "line": 0, "locals": {}}], "heap": {}, "stdout": ""},
+            {"line": e.lineno or 1, "event": "exception", "frames": [{"fn": "<module>", "line": e.lineno or 1, "locals": {}}], "heap": {}, "stdout": "",
+             "exc": f"{type(e).__name__}: {e.msg}", "note": "실행되기 전, 문법 검사 단계에서 멈췄다 — 한 줄도 실행되지 않았다"},
+        ]}
     sys.settrace(tracer)
     try:
         with redirect_stdout(out):
             exec(compiled, g)
     except Exception as e:  # 예외로 끝나는 예제도 허용
+        last = steps[-1] if steps else {"line": 1, "frames": [], "heap": {}}
         steps.append({
-            "line": steps[-1]["line"] if steps else 1, "event": "exception", "frames": [],
-            "heap": {}, "stdout": out.getvalue(), "exc": f"{type(e).__name__}: {e}",
+            "line": last["line"], "event": "exception", "frames": last["frames"],
+            "heap": last["heap"], "stdout": out.getvalue(), "exc": f"{type(e).__name__}: {e}",
         })
     finally:
         sys.settrace(None)

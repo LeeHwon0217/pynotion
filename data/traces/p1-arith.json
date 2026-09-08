@@ -1,0 +1,239 @@
+{
+ "id": "p1-arith",
+ "code": "x = 2 + 3 * 4 ** 2\nprint(x)\ny = (2 + 3) * 4 ** 2\nprint(y)\nprint(7 / 2, 7 // 2)\nprint(2 ** 10, 10 % 3)\nprint(-2 ** 2, (-2) ** 2)",
+ "steps": [
+  {
+   "line": 0,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 0,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": "",
+   "note": "** 먼저(16), 그다음 *(48), 마지막 +(50)"
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 2,
+     "locals": {
+      "x": {
+       "ref": "0x7ffd7f2b4fd8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x7ffd7f2b4fd8": {
+     "id": "0x7ffd7f2b4fd8",
+     "type": "int",
+     "repr": "50"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 3,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 3,
+     "locals": {
+      "x": {
+       "ref": "0x7ffd7f2b4fd8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x7ffd7f2b4fd8": {
+     "id": "0x7ffd7f2b4fd8",
+     "type": "int",
+     "repr": "50"
+    }
+   },
+   "stdout": "50\n",
+   "note": "괄호가 순서를 바꾼다 — 5 * 16"
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "x": {
+       "ref": "0x7ffd7f2b4fd8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b5398"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x7ffd7f2b4fd8": {
+     "id": "0x7ffd7f2b4fd8",
+     "type": "int",
+     "repr": "50"
+    },
+    "0x7ffd7f2b5398": {
+     "id": "0x7ffd7f2b5398",
+     "type": "int",
+     "repr": "80"
+    }
+   },
+   "stdout": "50\n"
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "x": {
+       "ref": "0x7ffd7f2b4fd8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b5398"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x7ffd7f2b4fd8": {
+     "id": "0x7ffd7f2b4fd8",
+     "type": "int",
+     "repr": "50"
+    },
+    "0x7ffd7f2b5398": {
+     "id": "0x7ffd7f2b5398",
+     "type": "int",
+     "repr": "80"
+    }
+   },
+   "stdout": "50\n80\n",
+   "note": "/ 는 항상 float(3.5), // 는 정수 나눗셈(3)"
+  },
+  {
+   "line": 6,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "x": {
+       "ref": "0x7ffd7f2b4fd8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b5398"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x7ffd7f2b4fd8": {
+     "id": "0x7ffd7f2b4fd8",
+     "type": "int",
+     "repr": "50"
+    },
+    "0x7ffd7f2b5398": {
+     "id": "0x7ffd7f2b5398",
+     "type": "int",
+     "repr": "80"
+    }
+   },
+   "stdout": "50\n80\n3.5 3\n",
+   "note": "거듭제곱과 나머지"
+  },
+  {
+   "line": 7,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 7,
+     "locals": {
+      "x": {
+       "ref": "0x7ffd7f2b4fd8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b5398"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x7ffd7f2b4fd8": {
+     "id": "0x7ffd7f2b4fd8",
+     "type": "int",
+     "repr": "50"
+    },
+    "0x7ffd7f2b5398": {
+     "id": "0x7ffd7f2b5398",
+     "type": "int",
+     "repr": "80"
+    }
+   },
+   "stdout": "50\n80\n3.5 3\n1024 1\n",
+   "note": "** 가 - 보다 먼저: -(2**2) = -4. 괄호를 치면 4"
+  },
+  {
+   "line": 7,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 7,
+     "locals": {
+      "x": {
+       "ref": "0x7ffd7f2b4fd8"
+      },
+      "y": {
+       "ref": "0x7ffd7f2b5398"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x7ffd7f2b4fd8": {
+     "id": "0x7ffd7f2b4fd8",
+     "type": "int",
+     "repr": "50"
+    },
+    "0x7ffd7f2b5398": {
+     "id": "0x7ffd7f2b5398",
+     "type": "int",
+     "repr": "80"
+    }
+   },
+   "stdout": "50\n80\n3.5 3\n1024 1\n-4 4\n"
+  }
+ ],
+ "v": 1
+}

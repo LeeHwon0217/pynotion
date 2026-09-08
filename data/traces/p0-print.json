@@ -1,0 +1,103 @@
+{
+ "id": "p0-print",
+ "code": "print(\"안녕\")\nprint(\"이름:\", \"지기\", 29)\nprint(\"2026\", \"09\", \"08\", sep=\"-\")\nprint(\"끝\", end=\"\")\nprint(\"!\")",
+ "steps": [
+  {
+   "line": 0,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 0,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": "",
+   "note": "문자열 하나를 그대로 출력하고 줄을 바꾼다"
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 2,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": "안녕\n",
+   "note": "여러 개를 넘기면 공백 하나로 이어 붙인다 — 숫자도 문자열로 바뀐다"
+  },
+  {
+   "line": 3,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 3,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": "안녕\n이름: 지기 29\n",
+   "note": "sep 은 항목 사이에 들어갈 문자열"
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": "안녕\n이름: 지기 29\n2026-09-08\n",
+   "note": "end=\"\" 이면 줄을 바꾸지 않는다"
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": "안녕\n이름: 지기 29\n2026-09-08\n끝",
+   "note": "그래서 앞 출력 바로 뒤에 이어진다"
+  },
+  {
+   "line": 5,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": "안녕\n이름: 지기 29\n2026-09-08\n끝!\n"
+  }
+ ],
+ "v": 1
+}

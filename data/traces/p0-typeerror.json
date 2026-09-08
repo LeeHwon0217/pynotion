@@ -1,0 +1,129 @@
+{
+ "id": "p0-typeerror",
+ "code": "age = 29\nlabel = \"나이: \" + age\nprint(label)",
+ "steps": [
+  {
+   "line": 0,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 0,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": "",
+   "note": "정수 객체"
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 2,
+     "locals": {
+      "age": {
+       "ref": "0x7ffd7f2b4d38"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x7ffd7f2b4d38": {
+     "id": "0x7ffd7f2b4d38",
+     "type": "int",
+     "repr": "29"
+    }
+   },
+   "stdout": "",
+   "note": "str + int — 파이썬은 이 조합을 정의하지 않는다 → TypeError"
+  },
+  {
+   "line": 2,
+   "event": "exception",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 2,
+     "locals": {
+      "age": {
+       "ref": "0x7ffd7f2b4d38"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x7ffd7f2b4d38": {
+     "id": "0x7ffd7f2b4d38",
+     "type": "int",
+     "repr": "29"
+    }
+   },
+   "stdout": "",
+   "exc": "TypeError: can only concatenate str (not \"int\") to str"
+  },
+  {
+   "line": 2,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 2,
+     "locals": {
+      "age": {
+       "ref": "0x7ffd7f2b4d38"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x7ffd7f2b4d38": {
+     "id": "0x7ffd7f2b4d38",
+     "type": "int",
+     "repr": "29"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 2,
+   "event": "exception",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 2,
+     "locals": {
+      "age": {
+       "ref": "0x7ffd7f2b4d38"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x7ffd7f2b4d38": {
+     "id": "0x7ffd7f2b4d38",
+     "type": "int",
+     "repr": "29"
+    }
+   },
+   "stdout": "",
+   "exc": "TypeError: can only concatenate str (not \"int\") to str"
+  }
+ ],
+ "v": 1
+}

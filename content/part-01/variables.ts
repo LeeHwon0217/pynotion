@@ -6,7 +6,7 @@ export const variables: Lesson = {
   blocks: [
     {
       kind: "viz", component: "VariablesScene", title: "변수는 이름표다",
-      caption: "재생 버튼을 누르거나 스크롤하면 자동으로 시작됩니다. 자막을 따라가며 보세요. 챕터 버튼으로 원하는 장면부터 다시 볼 수 있고, F 키로 전체화면이 됩니다.",
+      caption: "재생 버튼을 누르면 시작됩니다. 자막을 따라가며 보세요. 장면 목록에서 원하는 장면부터 다시 볼 수 있고, F 키로 전체화면이 됩니다.",
     },
     {
       kind: "text",

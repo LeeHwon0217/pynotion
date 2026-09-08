@@ -1,0 +1,35 @@
+{
+ "id": "p0-indent-error",
+ "code": "score = 85\nif score >= 80:\nprint(\"합격\")",
+ "v": 1,
+ "steps": [
+  {
+   "line": 0,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 0,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 3,
+   "event": "exception",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 3,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": "",
+   "exc": "IndentationError: expected an indented block after 'if' statement on line 2",
+   "note": "실행되기 전, 문법 검사 단계에서 멈췄다 — 한 줄도 실행되지 않았다"
+  }
+ ]
+}

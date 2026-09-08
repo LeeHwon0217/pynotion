@@ -1,0 +1,200 @@
+{
+ "id": "p1-float-sum",
+ "code": "a = 0.1 + 0.2\nprint(a)\nprint(a == 0.3)\nimport math\nprint(math.isclose(a, 0.3))\nprint(round(a, 2))",
+ "steps": [
+  {
+   "line": 0,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 0,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": "",
+   "note": "둘 다 2진수로 정확히 표현 안 되는 수 — 저장된 근사값끼리 더한다"
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 2,
+     "locals": {
+      "a": {
+       "ref": "0x142f4e37690"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x142f4e37690": {
+     "id": "0x142f4e37690",
+     "type": "float",
+     "repr": "0.30000000000000004"
+    }
+   },
+   "stdout": "",
+   "note": "0.30000000000000004 — 오차가 눈에 보인다"
+  },
+  {
+   "line": 3,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 3,
+     "locals": {
+      "a": {
+       "ref": "0x142f4e37690"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x142f4e37690": {
+     "id": "0x142f4e37690",
+     "type": "float",
+     "repr": "0.30000000000000004"
+    }
+   },
+   "stdout": "0.30000000000000004\n",
+   "note": "정확히 같지 않으므로 False"
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "a": {
+       "ref": "0x142f4e37690"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x142f4e37690": {
+     "id": "0x142f4e37690",
+     "type": "float",
+     "repr": "0.30000000000000004"
+    }
+   },
+   "stdout": "0.30000000000000004\nFalse\n"
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "a": {
+       "ref": "0x142f4e37690"
+      },
+      "math": {
+       "ref": "0x142f5136ed0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x142f4e37690": {
+     "id": "0x142f4e37690",
+     "type": "float",
+     "repr": "0.30000000000000004"
+    },
+    "0x142f5136ed0": {
+     "id": "0x142f5136ed0",
+     "type": "module",
+     "repr": "math"
+    }
+   },
+   "stdout": "0.30000000000000004\nFalse\n",
+   "note": "'충분히 가깝나' 로 비교하면 True"
+  },
+  {
+   "line": 6,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "a": {
+       "ref": "0x142f4e37690"
+      },
+      "math": {
+       "ref": "0x142f5136ed0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x142f4e37690": {
+     "id": "0x142f4e37690",
+     "type": "float",
+     "repr": "0.30000000000000004"
+    },
+    "0x142f5136ed0": {
+     "id": "0x142f5136ed0",
+     "type": "module",
+     "repr": "math"
+    }
+   },
+   "stdout": "0.30000000000000004\nFalse\nTrue\n",
+   "note": "표시할 자릿수를 정하면 0.3"
+  },
+  {
+   "line": 6,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "a": {
+       "ref": "0x142f4e37690"
+      },
+      "math": {
+       "ref": "0x142f5136ed0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x142f4e37690": {
+     "id": "0x142f4e37690",
+     "type": "float",
+     "repr": "0.30000000000000004"
+    },
+    "0x142f5136ed0": {
+     "id": "0x142f5136ed0",
+     "type": "module",
+     "repr": "math"
+    }
+   },
+   "stdout": "0.30000000000000004\nFalse\nTrue\n0.3\n"
+  }
+ ],
+ "v": 1
+}

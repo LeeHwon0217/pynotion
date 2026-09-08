@@ -1,0 +1,279 @@
+{
+ "id": "p1-convert",
+ "code": "text = \"42\"\nn = int(text)\nprint(n + 1)\nprint(str(3.0), float(\"2.5\"))\nprint(int(3.99), int(-3.99))\nprint(int(\"3.5\"))",
+ "steps": [
+  {
+   "line": 0,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 0,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 2,
+     "locals": {
+      "text": {
+       "ref": "0x2134a72cf90"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2134a72cf90": {
+     "id": "0x2134a72cf90",
+     "type": "str",
+     "repr": "'42'"
+    }
+   },
+   "stdout": "",
+   "note": "문자열 \"42\" 로부터 새 정수 객체 42 를 만든다 — 원래 문자열은 그대로"
+  },
+  {
+   "line": 3,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 3,
+     "locals": {
+      "text": {
+       "ref": "0x2134a72cf90"
+      },
+      "n": {
+       "ref": "0x7ffd7f2b4ed8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2134a72cf90": {
+     "id": "0x2134a72cf90",
+     "type": "str",
+     "repr": "'42'"
+    },
+    "0x7ffd7f2b4ed8": {
+     "id": "0x7ffd7f2b4ed8",
+     "type": "int",
+     "repr": "42"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "text": {
+       "ref": "0x2134a72cf90"
+      },
+      "n": {
+       "ref": "0x7ffd7f2b4ed8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2134a72cf90": {
+     "id": "0x2134a72cf90",
+     "type": "str",
+     "repr": "'42'"
+    },
+    "0x7ffd7f2b4ed8": {
+     "id": "0x7ffd7f2b4ed8",
+     "type": "int",
+     "repr": "42"
+    }
+   },
+   "stdout": "43\n",
+   "note": "str() 과 float() 도 각각 새 객체를 만든다"
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "text": {
+       "ref": "0x2134a72cf90"
+      },
+      "n": {
+       "ref": "0x7ffd7f2b4ed8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2134a72cf90": {
+     "id": "0x2134a72cf90",
+     "type": "str",
+     "repr": "'42'"
+    },
+    "0x7ffd7f2b4ed8": {
+     "id": "0x7ffd7f2b4ed8",
+     "type": "int",
+     "repr": "42"
+    }
+   },
+   "stdout": "43\n3.0 2.5\n",
+   "note": "int() 는 소수점을 '버린다' — 반올림이 아니다"
+  },
+  {
+   "line": 6,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "text": {
+       "ref": "0x2134a72cf90"
+      },
+      "n": {
+       "ref": "0x7ffd7f2b4ed8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2134a72cf90": {
+     "id": "0x2134a72cf90",
+     "type": "str",
+     "repr": "'42'"
+    },
+    "0x7ffd7f2b4ed8": {
+     "id": "0x7ffd7f2b4ed8",
+     "type": "int",
+     "repr": "42"
+    }
+   },
+   "stdout": "43\n3.0 2.5\n3 -3\n",
+   "note": "\"3.5\" 는 정수 모양이 아니다 → ValueError"
+  },
+  {
+   "line": 6,
+   "event": "exception",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "text": {
+       "ref": "0x2134a72cf90"
+      },
+      "n": {
+       "ref": "0x7ffd7f2b4ed8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2134a72cf90": {
+     "id": "0x2134a72cf90",
+     "type": "str",
+     "repr": "'42'"
+    },
+    "0x7ffd7f2b4ed8": {
+     "id": "0x7ffd7f2b4ed8",
+     "type": "int",
+     "repr": "42"
+    }
+   },
+   "stdout": "43\n3.0 2.5\n3 -3\n",
+   "exc": "ValueError: invalid literal for int() with base 10: '3.5'"
+  },
+  {
+   "line": 6,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "text": {
+       "ref": "0x2134a72cf90"
+      },
+      "n": {
+       "ref": "0x7ffd7f2b4ed8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2134a72cf90": {
+     "id": "0x2134a72cf90",
+     "type": "str",
+     "repr": "'42'"
+    },
+    "0x7ffd7f2b4ed8": {
+     "id": "0x7ffd7f2b4ed8",
+     "type": "int",
+     "repr": "42"
+    }
+   },
+   "stdout": "43\n3.0 2.5\n3 -3\n"
+  },
+  {
+   "line": 6,
+   "event": "exception",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "text": {
+       "ref": "0x2134a72cf90"
+      },
+      "n": {
+       "ref": "0x7ffd7f2b4ed8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2134a72cf90": {
+     "id": "0x2134a72cf90",
+     "type": "str",
+     "repr": "'42'"
+    },
+    "0x7ffd7f2b4ed8": {
+     "id": "0x7ffd7f2b4ed8",
+     "type": "int",
+     "repr": "42"
+    }
+   },
+   "stdout": "43\n3.0 2.5\n3 -3\n",
+   "exc": "ValueError: invalid literal for int() with base 10: '3.5'"
+  }
+ ],
+ "v": 1
+}

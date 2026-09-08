@@ -1,14 +1,30 @@
 import type { Lesson } from "@/lib/types";
-import { lessonKey } from "./curriculum";
+import { PARTS, lessonKey } from "./curriculum";
+import { whatIsPython } from "./part-00/what-is-python";
+import { setup } from "./part-00/setup";
+import { howCodeRuns } from "./part-00/how-code-runs";
+import { firstProgram } from "./part-00/first-program";
+import { readingErrors } from "./part-00/reading-errors";
 import { variables } from "./part-01/variables";
+import { intLesson } from "./part-01/int";
+import { floatLesson } from "./part-01/float";
+import { boolNone } from "./part-01/bool-none";
+import { stringBasics } from "./part-01/string-basics";
+import { arithmetic } from "./part-01/arithmetic";
+import { comparisonLogic } from "./part-01/comparison-logic";
+import { typeConversion } from "./part-01/type-conversion";
+import { isVsEq } from "./part-01/is-vs-eq";
+import { inputFormat } from "./part-01/input-format";
 
-const ALL: Lesson[] = [variables];
+const ALL: Lesson[] = [
+  whatIsPython, setup, howCodeRuns, firstProgram, readingErrors,
+  variables, intLesson, floatLesson, boolNone, stringBasics, arithmetic, comparisonLogic, typeConversion, isVsEq, inputFormat,
+];
 
-const BY_KEY: Record<string, Lesson> = Object.fromEntries(
-  ALL.map((l) => [lessonKey(["start", "data", "flow", "collections", "functions", "modules", "errors-files", "oop", "iterators", "advanced", "concurrency", "internals", "tools", "algorithms", "projects"][l.part], l.slug), l]),
-);
+const partSlug = (id: number) => PARTS.find((p) => p.id === id)!.slug;
+const BY_KEY: Record<string, Lesson> = Object.fromEntries(ALL.map((l) => [lessonKey(partSlug(l.part), l.slug), l]));
 
-export function getLesson(partSlug: string, lessonSlug: string): Lesson | null {
-  return BY_KEY[lessonKey(partSlug, lessonSlug)] ?? null;
+export function getLesson(partSlug_: string, lessonSlug: string): Lesson | null {
+  return BY_KEY[lessonKey(partSlug_, lessonSlug)] ?? null;
 }
 export const AUTHORED = new Set(Object.keys(BY_KEY));

@@ -65,3 +65,25 @@ export class ScriptBuilder {
 
 export const reducedMotion = () =>
   typeof window !== "undefined" && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+/** SVG 텍스트 폭 추정 (px). 한글/CJK 는 1em, 라틴은 평균 0.58em, 모노스페이스는 0.6em. */
+export function textW(str: string, size: number, mono = false) {
+  let w = 0;
+  for (const ch of str) {
+    const c = ch.codePointAt(0)!;
+    if (c > 0x2e80) w += 1.0;                      // 한글·한자·전각
+    else if (mono) w += 0.6;
+    else if (ch === " ") w += 0.3;
+    else if (/[A-Z@#%&]/.test(ch)) w += 0.7;
+    else if (/[0-9]/.test(ch)) w += 0.58;
+    else if (/[ijl.,:;'!|\[\]()]/.test(ch)) w += 0.32;
+    else if (/[mw]/.test(ch)) w += 0.85;
+    else w += 0.56;
+  }
+  return w * size;
+}
+/** 주어진 폭에 맞는 최대 글꼴 크기 */
+export function fitFont(str: string, maxW: number, size: number, min = 11, mono = false) {
+  const w = textW(str, size, mono);
+  return w <= maxW ? size : Math.max(min, (size * maxW) / w);
+}

@@ -1,7 +1,7 @@
 /* ---------- Stage 위 SVG 기본 도형 ----------
    전부 "진행값 p(0..1)" 을 받아 그 상태를 그린다. 상태를 갖지 않는다.  */
 import type { ReactNode } from "react";
-import { lerp } from "@/lib/anim";
+import { fitFont, lerp, textW } from "@/lib/anim";
 
 export const C = {
   text: "var(--stage-text)", muted: "var(--stage-muted)",
@@ -35,10 +35,10 @@ export function ObjBox({
         <rect x={-6} y={-6} width={w + 12} height={h + 12} rx={20} fill="none" stroke={tone === "fresh" ? C.fresh : C.hi} strokeWidth={3} opacity={glow * 0.9} style={{ filter: "blur(4px)" }} />
       )}
       <rect width={w} height={h} rx={16} fill={C.node} stroke={stroke} strokeWidth={tone === "normal" ? 1.5 : 2.5} />
-      <rect x={12} y={10} width={type.length * 8 + 18} height={22} rx={6} fill={C.node2} />
+      <rect x={12} y={10} width={textW(type, 11.5, true) + 18} height={22} rx={6} fill={C.node2} />
       <text x={21} y={25.5} className="st-type st-mono">{type}</text>
       {value !== undefined && (
-        <text x={w / 2} y={h / 2 + 18} textAnchor="middle" className="st-val st-mono" style={{ fontSize: value.length > 10 ? 20 : 30 }}>{value}</text>
+        <text x={w / 2} y={h / 2 + 18} textAnchor="middle" className="st-val st-mono" style={{ fontSize: fitFont(value, w - 28, 30, 12, true) }}>{value}</text>
       )}
       {id && <text x={w - 12} y={h - 12} textAnchor="end" className="st-id st-mono">id {id}</text>}
       {children}
@@ -48,7 +48,7 @@ export function ObjBox({
 
 /** 이름표 (노란 태그) */
 export function NameTag({ x, y, name, p = 1, w, h = 48, glow = 0 }: { x: number; y: number; name: string; p?: number; w?: number; h?: number; glow?: number }) {
-  const width = w ?? Math.max(72, name.length * 13 + 34);
+  const width = w ?? Math.max(72, textW(name, 18, true) + 36);
   return (
     <Pop x={x} y={y} w={width} h={h} p={p} scaleFrom={0.7}>
       {glow > 0 && <rect x={-5} y={-5} width={width + 10} height={h + 10} rx={14} fill="none" stroke={C.name} strokeWidth={3} opacity={glow} style={{ filter: "blur(4px)" }} />}
@@ -114,7 +114,7 @@ export function CrossOut({ x, y, w, h, p }: { x: number; y: number; w: number; h
 /** 라벨 (배지) */
 export function Badge({ x, y, text, p = 1, color = C.hi, anchor = "middle" }: { x: number; y: number; text: string; p?: number; color?: string; anchor?: "start" | "middle" | "end" }) {
   if (p <= 0) return null;
-  const w = text.length * 8.6 + 24;
+  const w = textW(text, 14, false) + 26;
   const left = anchor === "middle" ? x - w / 2 : anchor === "end" ? x - w : x;
   return (
     <g opacity={p} transform={`translate(0 ${lerp(8, 0, p)})`}>
@@ -126,10 +126,11 @@ export function Badge({ x, y, text, p = 1, color = C.hi, anchor = "middle" }: { 
 }
 
 /** 코드 패널 — 실행된 줄이 누적 표시되고 현재 줄이 빛난다 */
-export function CodePanel({ x, y, w, lines, shown, current, lineH = 44, title = "코드" }: {
-  x: number; y: number; w: number; lines: string[]; shown: number; current: number; lineH?: number; title?: string;
+export function CodePanel({ x, y, w, lines, shown, current, lineH = 44, title = "코드", fontSize = 22 }: {
+  x: number; y: number; w: number; lines: string[]; shown: number; current: number; lineH?: number; title?: string; fontSize?: number;
 }) {
   const h = lines.length * lineH + 52;
+  const fs = Math.min(fontSize, ...lines.map((l) => fitFont(l, w - 40, fontSize, 11, true)));
   return (
     <g transform={`translate(${x} ${y})`}>
       <rect width={w} height={h} rx={16} fill="var(--stage-code-bg)" stroke={C.stroke} strokeWidth={1.2} />
@@ -141,7 +142,7 @@ export function CodePanel({ x, y, w, lines, shown, current, lineH = 44, title = 
           <g key={i} transform={`translate(0 ${44 + i * lineH})`} opacity={vis ? 1 : 0.18}>
             {cur && <rect x={6} y={0} width={w - 12} height={lineH} rx={8} fill="var(--stage-code-line)" />}
             {cur && <rect x={6} y={6} width={3} height={lineH - 12} rx={2} fill={C.hi} />}
-            <text x={22} y={lineH / 2 + 6} className="st-mono" style={{ fill: cur ? C.text : vis ? "#b6c0dc" : C.muted, fontSize: 22, fontWeight: cur ? 650 : 450 }}>{ln}</text>
+            <text x={22} y={lineH / 2 + 6} className="st-mono" style={{ fill: cur ? C.text : vis ? "#b6c0dc" : C.muted, fontSize: fs, fontWeight: cur ? 650 : 450 }}>{ln}</text>
           </g>
         );
       })}

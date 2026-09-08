@@ -1,0 +1,89 @@
+{
+ "id": "p0-runtime-error",
+ "code": "print(\"시작\")\nprint(messag)\nprint(\"여기는 안 옴\")",
+ "steps": [
+  {
+   "line": 0,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 0,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": "",
+   "note": "문법은 완벽하다 — 1번 줄이 실행되어 출력이 나온다"
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 2,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": "시작\n",
+   "note": "실행 중에 'messag' 라는 이름을 찾는다 — 없다 → NameError"
+  },
+  {
+   "line": 2,
+   "event": "exception",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 2,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": "시작\n",
+   "exc": "NameError: name 'messag' is not defined"
+  },
+  {
+   "line": 2,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 2,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": "시작\n"
+  },
+  {
+   "line": 2,
+   "event": "exception",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 2,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": "시작\n",
+   "exc": "NameError: name 'messag' is not defined"
+  }
+ ],
+ "v": 1
+}

@@ -1,0 +1,153 @@
+{
+ "id": "p0-indent",
+ "code": "score = 85\nif score >= 80:\n    print(\"합격\")\n    print(\"축하해요\")\nprint(\"검사 끝\")",
+ "steps": [
+  {
+   "line": 0,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 0,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": "",
+   "note": "정수 객체 85 에 score 라는 이름을 붙인다"
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 2,
+     "locals": {
+      "score": {
+       "ref": "0x7ffd7f2b5438"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x7ffd7f2b5438": {
+     "id": "0x7ffd7f2b5438",
+     "type": "int",
+     "repr": "85"
+    }
+   },
+   "stdout": "",
+   "note": "조건이 참이므로 들여쓴 블록으로 들어간다"
+  },
+  {
+   "line": 3,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 3,
+     "locals": {
+      "score": {
+       "ref": "0x7ffd7f2b5438"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x7ffd7f2b5438": {
+     "id": "0x7ffd7f2b5438",
+     "type": "int",
+     "repr": "85"
+    }
+   },
+   "stdout": "",
+   "note": "4칸 들여쓰기 — if 에 속한 줄"
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "score": {
+       "ref": "0x7ffd7f2b5438"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x7ffd7f2b5438": {
+     "id": "0x7ffd7f2b5438",
+     "type": "int",
+     "repr": "85"
+    }
+   },
+   "stdout": "합격\n",
+   "note": "같은 깊이 — 역시 if 에 속한 줄"
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "score": {
+       "ref": "0x7ffd7f2b5438"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x7ffd7f2b5438": {
+     "id": "0x7ffd7f2b5438",
+     "type": "int",
+     "repr": "85"
+    }
+   },
+   "stdout": "합격\n축하해요\n",
+   "note": "들여쓰기를 되돌렸다 — if 와 무관하게 항상 실행"
+  },
+  {
+   "line": 5,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "score": {
+       "ref": "0x7ffd7f2b5438"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x7ffd7f2b5438": {
+     "id": "0x7ffd7f2b5438",
+     "type": "int",
+     "repr": "85"
+    }
+   },
+   "stdout": "합격\n축하해요\n검사 끝\n"
+  }
+ ],
+ "v": 1
+}

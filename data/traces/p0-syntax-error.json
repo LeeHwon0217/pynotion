@@ -1,0 +1,35 @@
+{
+ "id": "p0-syntax-error",
+ "code": "print(\"시작\")\nprint(\"중간\"\nprint(\"끝\")",
+ "v": 1,
+ "steps": [
+  {
+   "line": 0,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 0,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 2,
+   "event": "exception",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 2,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": "",
+   "exc": "SyntaxError: '(' was never closed",
+   "note": "실행되기 전, 문법 검사 단계에서 멈췄다 — 한 줄도 실행되지 않았다"
+  }
+ ]
+}

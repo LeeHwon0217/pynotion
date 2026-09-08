@@ -2,6 +2,9 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { reducedMotion } from "@/lib/anim";
 
+/** 기본 재생 배율 — 대본 1ms 를 실제 2ms 로 (1x 가 느긋하게 보이도록) */
+export const BASE_RATE = 0.5;
+
 /**
  * 재생 가능한 타임라인. 현재 시각 t(ms)를 rAF로 진행시킨다.
  * - play/pause/seek/speed
@@ -30,7 +33,7 @@ export function useTimeline(total: number, opts: { autoplay?: boolean; speed?: n
     if (!playingRef.current) return;
     const dt = last.current ? now - last.current : 0;
     last.current = now;
-    let next = tRef.current + dt * speedRef.current;
+    let next = tRef.current + dt * speedRef.current * BASE_RATE;
     if (next >= total) {
       if (loop) next = 0;
       else { next = total; tRef.current = next; setT(next); stop(); return; }

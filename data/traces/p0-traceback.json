@@ -1,0 +1,217 @@
+{
+ "id": "p0-traceback",
+ "code": "price = 1200\nqty = 3\nprint(\"계산 시작\")\ntotal = price * qty + fee\nprint(\"총액:\", total)",
+ "steps": [
+  {
+   "line": 0,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 0,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": "",
+   "note": "정상"
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 2,
+     "locals": {
+      "price": {
+       "ref": "0x2a9a8dd7690"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2a9a8dd7690": {
+     "id": "0x2a9a8dd7690",
+     "type": "int",
+     "repr": "1200"
+    }
+   },
+   "stdout": "",
+   "note": "정상"
+  },
+  {
+   "line": 3,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 3,
+     "locals": {
+      "price": {
+       "ref": "0x2a9a8dd7690"
+      },
+      "qty": {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2a9a8dd7690": {
+     "id": "0x2a9a8dd7690",
+     "type": "int",
+     "repr": "1200"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    }
+   },
+   "stdout": "",
+   "note": "정상 — 출력이 나온다"
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "price": {
+       "ref": "0x2a9a8dd7690"
+      },
+      "qty": {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2a9a8dd7690": {
+     "id": "0x2a9a8dd7690",
+     "type": "int",
+     "repr": "1200"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    }
+   },
+   "stdout": "계산 시작\n",
+   "note": "fee 라는 이름은 만든 적이 없다 → NameError. 여기서 멈춘다"
+  },
+  {
+   "line": 4,
+   "event": "exception",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "price": {
+       "ref": "0x2a9a8dd7690"
+      },
+      "qty": {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2a9a8dd7690": {
+     "id": "0x2a9a8dd7690",
+     "type": "int",
+     "repr": "1200"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    }
+   },
+   "stdout": "계산 시작\n",
+   "exc": "NameError: name 'fee' is not defined"
+  },
+  {
+   "line": 4,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "price": {
+       "ref": "0x2a9a8dd7690"
+      },
+      "qty": {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2a9a8dd7690": {
+     "id": "0x2a9a8dd7690",
+     "type": "int",
+     "repr": "1200"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    }
+   },
+   "stdout": "계산 시작\n"
+  },
+  {
+   "line": 4,
+   "event": "exception",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "price": {
+       "ref": "0x2a9a8dd7690"
+      },
+      "qty": {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2a9a8dd7690": {
+     "id": "0x2a9a8dd7690",
+     "type": "int",
+     "repr": "1200"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    }
+   },
+   "stdout": "계산 시작\n",
+   "exc": "NameError: name 'fee' is not defined"
+  }
+ ],
+ "v": 1
+}

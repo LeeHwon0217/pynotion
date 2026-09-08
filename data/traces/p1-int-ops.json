@@ -1,0 +1,176 @@
+{
+ "id": "p1-int-ops",
+ "code": "big = 2 ** 100\nprint(big)\nprint(17 // 5, 17 % 5)\nprint(-17 // 5, -17 % 5)\nprint(0b1010, 0o17, 0xff)\nprint(1_000_000 + 1)",
+ "steps": [
+  {
+   "line": 0,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 0,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": "",
+   "note": "파이썬 정수는 크기 제한이 없다 — 31자리 숫자도 그냥 정수"
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 2,
+     "locals": {
+      "big": {
+       "ref": "0x1ba6ddecf90"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ba6ddecf90": {
+     "id": "0x1ba6ddecf90",
+     "type": "int",
+     "repr": "1267650600228229401496703205376"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 3,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 3,
+     "locals": {
+      "big": {
+       "ref": "0x1ba6ddecf90"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ba6ddecf90": {
+     "id": "0x1ba6ddecf90",
+     "type": "int",
+     "repr": "1267650600228229401496703205376"
+    }
+   },
+   "stdout": "1267650600228229401496703205376\n",
+   "note": "// 는 몫(내림), % 는 나머지"
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "big": {
+       "ref": "0x1ba6ddecf90"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ba6ddecf90": {
+     "id": "0x1ba6ddecf90",
+     "type": "int",
+     "repr": "1267650600228229401496703205376"
+    }
+   },
+   "stdout": "1267650600228229401496703205376\n3 2\n",
+   "note": "음수에서 // 는 아래로 내린다 → -4, 나머지는 항상 양수 쪽 → 3"
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "big": {
+       "ref": "0x1ba6ddecf90"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ba6ddecf90": {
+     "id": "0x1ba6ddecf90",
+     "type": "int",
+     "repr": "1267650600228229401496703205376"
+    }
+   },
+   "stdout": "1267650600228229401496703205376\n3 2\n-4 3\n",
+   "note": "2진·8진·16진 표기 — 전부 같은 int 타입"
+  },
+  {
+   "line": 6,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "big": {
+       "ref": "0x1ba6ddecf90"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ba6ddecf90": {
+     "id": "0x1ba6ddecf90",
+     "type": "int",
+     "repr": "1267650600228229401496703205376"
+    }
+   },
+   "stdout": "1267650600228229401496703205376\n3 2\n-4 3\n10 15 255\n",
+   "note": "밑줄은 자릿수 구분용, 값에 영향 없음"
+  },
+  {
+   "line": 6,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "big": {
+       "ref": "0x1ba6ddecf90"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1ba6ddecf90": {
+     "id": "0x1ba6ddecf90",
+     "type": "int",
+     "repr": "1267650600228229401496703205376"
+    }
+   },
+   "stdout": "1267650600228229401496703205376\n3 2\n-4 3\n10 15 255\n1000001\n"
+  }
+ ],
+ "v": 1
+}
