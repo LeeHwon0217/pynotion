@@ -1,0 +1,175 @@
+{
+ "id": "p1-variables-basic",
+ "code": "a = 10\nb = a\nprint(a is b)\na = 20\nprint(a, b)",
+ "steps": [
+  {
+   "line": 0,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 0,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": "",
+   "note": "오른쪽 먼저 — 정수 객체 10 이 생기고, 이름 a 가 붙는다"
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 2,
+     "locals": {
+      "a": {
+       "ref": "0x7ffd7f2b4ad8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x7ffd7f2b4ad8": {
+     "id": "0x7ffd7f2b4ad8",
+     "type": "int",
+     "repr": "10"
+    }
+   },
+   "stdout": "",
+   "note": "복사가 아니다 — 이름 b 가 같은 객체에 붙는다"
+  },
+  {
+   "line": 3,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 3,
+     "locals": {
+      "a": {
+       "ref": "0x7ffd7f2b4ad8"
+      },
+      "b": {
+       "ref": "0x7ffd7f2b4ad8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x7ffd7f2b4ad8": {
+     "id": "0x7ffd7f2b4ad8",
+     "type": "int",
+     "repr": "10"
+    }
+   },
+   "stdout": "",
+   "note": "같은 객체이므로 True"
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "a": {
+       "ref": "0x7ffd7f2b4ad8"
+      },
+      "b": {
+       "ref": "0x7ffd7f2b4ad8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x7ffd7f2b4ad8": {
+     "id": "0x7ffd7f2b4ad8",
+     "type": "int",
+     "repr": "10"
+    }
+   },
+   "stdout": "True\n",
+   "note": "새 객체 20 이 생기고 a 만 옮겨 붙는다 (재바인딩)"
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "a": {
+       "ref": "0x7ffd7f2b4c18"
+      },
+      "b": {
+       "ref": "0x7ffd7f2b4ad8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x7ffd7f2b4c18": {
+     "id": "0x7ffd7f2b4c18",
+     "type": "int",
+     "repr": "20"
+    },
+    "0x7ffd7f2b4ad8": {
+     "id": "0x7ffd7f2b4ad8",
+     "type": "int",
+     "repr": "10"
+    }
+   },
+   "stdout": "True\n",
+   "note": "b 는 여전히 10 을 가리킨다"
+  },
+  {
+   "line": 5,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "a": {
+       "ref": "0x7ffd7f2b4c18"
+      },
+      "b": {
+       "ref": "0x7ffd7f2b4ad8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x7ffd7f2b4c18": {
+     "id": "0x7ffd7f2b4c18",
+     "type": "int",
+     "repr": "20"
+    },
+    "0x7ffd7f2b4ad8": {
+     "id": "0x7ffd7f2b4ad8",
+     "type": "int",
+     "repr": "10"
+    }
+   },
+   "stdout": "True\n20 10\n"
+  }
+ ],
+ "v": 1
+}

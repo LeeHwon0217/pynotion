@@ -1,0 +1,457 @@
+{
+ "id": "p1-variables-alias",
+ "code": "nums = [1, 2]\nother = nums\nother.append(3)\nprint(nums)\ncopy = list(nums)\ncopy.append(4)\nprint(nums, copy)",
+ "steps": [
+  {
+   "line": 0,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 0,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": "",
+   "note": "리스트 객체 하나가 생기고 nums 가 붙는다"
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 2,
+     "locals": {
+      "nums": {
+       "ref": "0x2a14a891280"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2a14a891280": {
+     "id": "0x2a14a891280",
+     "type": "list",
+     "repr": "[1, 2]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     ]
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    }
+   },
+   "stdout": "",
+   "note": "복사가 아니다 — other 도 같은 객체를 가리킨다"
+  },
+  {
+   "line": 3,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 3,
+     "locals": {
+      "nums": {
+       "ref": "0x2a14a891280"
+      },
+      "other": {
+       "ref": "0x2a14a891280"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2a14a891280": {
+     "id": "0x2a14a891280",
+     "type": "list",
+     "repr": "[1, 2]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     ]
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    }
+   },
+   "stdout": "",
+   "note": "재바인딩이 아니라 객체 자체를 바꾸는 연산"
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "nums": {
+       "ref": "0x2a14a891280"
+      },
+      "other": {
+       "ref": "0x2a14a891280"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2a14a891280": {
+     "id": "0x2a14a891280",
+     "type": "list",
+     "repr": "[1, 2, 3]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     ]
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    }
+   },
+   "stdout": "",
+   "note": "nums 로 봐도 3 이 들어 있다 — 같은 객체니까"
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "nums": {
+       "ref": "0x2a14a891280"
+      },
+      "other": {
+       "ref": "0x2a14a891280"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2a14a891280": {
+     "id": "0x2a14a891280",
+     "type": "list",
+     "repr": "[1, 2, 3]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     ]
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    }
+   },
+   "stdout": "[1, 2, 3]\n",
+   "note": "진짜 복사 — list() 가 새 객체를 만든다"
+  },
+  {
+   "line": 6,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "nums": {
+       "ref": "0x2a14a891280"
+      },
+      "other": {
+       "ref": "0x2a14a891280"
+      },
+      "copy": {
+       "ref": "0x2a14aaeb0c0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2a14a891280": {
+     "id": "0x2a14a891280",
+     "type": "list",
+     "repr": "[1, 2, 3]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     ]
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x2a14aaeb0c0": {
+     "id": "0x2a14aaeb0c0",
+     "type": "list",
+     "repr": "[1, 2, 3]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     ]
+    }
+   },
+   "stdout": "[1, 2, 3]\n",
+   "note": "새 객체를 바꾸는 것이므로 nums 는 무관"
+  },
+  {
+   "line": 7,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 7,
+     "locals": {
+      "nums": {
+       "ref": "0x2a14a891280"
+      },
+      "other": {
+       "ref": "0x2a14a891280"
+      },
+      "copy": {
+       "ref": "0x2a14aaeb0c0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2a14a891280": {
+     "id": "0x2a14a891280",
+     "type": "list",
+     "repr": "[1, 2, 3]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     ]
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x2a14aaeb0c0": {
+     "id": "0x2a14aaeb0c0",
+     "type": "list",
+     "repr": "[1, 2, 3, 4]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     ]
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    }
+   },
+   "stdout": "[1, 2, 3]\n"
+  },
+  {
+   "line": 7,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 7,
+     "locals": {
+      "nums": {
+       "ref": "0x2a14a891280"
+      },
+      "other": {
+       "ref": "0x2a14a891280"
+      },
+      "copy": {
+       "ref": "0x2a14aaeb0c0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x2a14a891280": {
+     "id": "0x2a14a891280",
+     "type": "list",
+     "repr": "[1, 2, 3]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     ]
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x2a14aaeb0c0": {
+     "id": "0x2a14aaeb0c0",
+     "type": "list",
+     "repr": "[1, 2, 3, 4]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     ]
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    }
+   },
+   "stdout": "[1, 2, 3]\n[1, 2, 3] [1, 2, 3, 4]\n"
+  }
+ ],
+ "v": 1
+}

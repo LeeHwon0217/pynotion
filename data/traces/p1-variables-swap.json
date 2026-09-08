@@ -1,0 +1,151 @@
+{
+ "id": "p1-variables-swap",
+ "code": "x = \"왼쪽\"\ny = \"오른쪽\"\nx, y = y, x\nprint(x, y)",
+ "steps": [
+  {
+   "line": 0,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 0,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 2,
+     "locals": {
+      "x": {
+       "ref": "0x21983922100"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x21983922100": {
+     "id": "0x21983922100",
+     "type": "str",
+     "repr": "'왼쪽'"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 3,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 3,
+     "locals": {
+      "x": {
+       "ref": "0x21983922100"
+      },
+      "y": {
+       "ref": "0x21983922150"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x21983922100": {
+     "id": "0x21983922100",
+     "type": "str",
+     "repr": "'왼쪽'"
+    },
+    "0x21983922150": {
+     "id": "0x21983922150",
+     "type": "str",
+     "repr": "'오른쪽'"
+    }
+   },
+   "stdout": "",
+   "note": "오른쪽 튜플 (y, x) 가 먼저 만들어지고, 그 다음 이름이 다시 붙는다"
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "x": {
+       "ref": "0x21983922150"
+      },
+      "y": {
+       "ref": "0x21983922100"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x21983922150": {
+     "id": "0x21983922150",
+     "type": "str",
+     "repr": "'오른쪽'"
+    },
+    "0x21983922100": {
+     "id": "0x21983922100",
+     "type": "str",
+     "repr": "'왼쪽'"
+    }
+   },
+   "stdout": "",
+   "note": "값이 이동한 게 아니라 이름표가 서로 바뀐 것"
+  },
+  {
+   "line": 4,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "x": {
+       "ref": "0x21983922150"
+      },
+      "y": {
+       "ref": "0x21983922100"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x21983922150": {
+     "id": "0x21983922150",
+     "type": "str",
+     "repr": "'오른쪽'"
+    },
+    "0x21983922100": {
+     "id": "0x21983922100",
+     "type": "str",
+     "repr": "'왼쪽'"
+    }
+   },
+   "stdout": "오른쪽 왼쪽\n"
+  }
+ ],
+ "v": 1
+}
