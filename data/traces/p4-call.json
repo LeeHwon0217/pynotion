@@ -38,14 +38,14 @@
      "line": 5,
      "locals": {
       "area": {
-       "ref": "0x1c71159ca40"
+       "ref": "0x2621815ca40"
       }
      }
     }
    ],
    "heap": {
-    "0x1c71159ca40": {
-     "id": "0x1c71159ca40",
+    "0x2621815ca40": {
+     "id": "0x2621815ca40",
      "type": "function",
      "repr": "area"
     }
@@ -62,7 +62,7 @@
      "line": 5,
      "locals": {
       "area": {
-       "ref": "0x1c71159ca40"
+       "ref": "0x2621815ca40"
       }
      }
     },
@@ -80,8 +80,8 @@
     }
    ],
    "heap": {
-    "0x1c71159ca40": {
-     "id": "0x1c71159ca40",
+    "0x2621815ca40": {
+     "id": "0x2621815ca40",
      "type": "function",
      "repr": "area"
     },
@@ -108,7 +108,7 @@
      "line": 5,
      "locals": {
       "area": {
-       "ref": "0x1c71159ca40"
+       "ref": "0x2621815ca40"
       }
      }
     },
@@ -126,8 +126,8 @@
     }
    ],
    "heap": {
-    "0x1c71159ca40": {
-     "id": "0x1c71159ca40",
+    "0x2621815ca40": {
+     "id": "0x2621815ca40",
      "type": "function",
      "repr": "area"
     },
@@ -154,7 +154,7 @@
      "line": 5,
      "locals": {
       "area": {
-       "ref": "0x1c71159ca40"
+       "ref": "0x2621815ca40"
       }
      }
     },
@@ -175,8 +175,8 @@
     }
    ],
    "heap": {
-    "0x1c71159ca40": {
-     "id": "0x1c71159ca40",
+    "0x2621815ca40": {
+     "id": "0x2621815ca40",
      "type": "function",
      "repr": "area"
     },
@@ -208,7 +208,7 @@
      "line": 5,
      "locals": {
       "area": {
-       "ref": "0x1c71159ca40"
+       "ref": "0x2621815ca40"
       }
      }
     },
@@ -229,8 +229,8 @@
     }
    ],
    "heap": {
-    "0x1c71159ca40": {
-     "id": "0x1c71159ca40",
+    "0x2621815ca40": {
+     "id": "0x2621815ca40",
      "type": "function",
      "repr": "area"
     },
@@ -262,7 +262,7 @@
      "line": 6,
      "locals": {
       "area": {
-       "ref": "0x1c71159ca40"
+       "ref": "0x2621815ca40"
       },
       "a": {
        "ref": "0x7ffd7f2b4b18"
@@ -271,8 +271,8 @@
     }
    ],
    "heap": {
-    "0x1c71159ca40": {
-     "id": "0x1c71159ca40",
+    "0x2621815ca40": {
+     "id": "0x2621815ca40",
      "type": "function",
      "repr": "area"
     },
@@ -294,7 +294,7 @@
      "line": 6,
      "locals": {
       "area": {
-       "ref": "0x1c71159ca40"
+       "ref": "0x2621815ca40"
       },
       "a": {
        "ref": "0x7ffd7f2b4b18"
@@ -315,8 +315,8 @@
     }
    ],
    "heap": {
-    "0x1c71159ca40": {
-     "id": "0x1c71159ca40",
+    "0x2621815ca40": {
+     "id": "0x2621815ca40",
      "type": "function",
      "repr": "area"
     },
@@ -343,7 +343,7 @@
      "line": 6,
      "locals": {
       "area": {
-       "ref": "0x1c71159ca40"
+       "ref": "0x2621815ca40"
       },
       "a": {
        "ref": "0x7ffd7f2b4b18"
@@ -364,8 +364,8 @@
     }
    ],
    "heap": {
-    "0x1c71159ca40": {
-     "id": "0x1c71159ca40",
+    "0x2621815ca40": {
+     "id": "0x2621815ca40",
      "type": "function",
      "repr": "area"
     },
@@ -392,7 +392,7 @@
      "line": 6,
      "locals": {
       "area": {
-       "ref": "0x1c71159ca40"
+       "ref": "0x2621815ca40"
       },
       "a": {
        "ref": "0x7ffd7f2b4b18"
@@ -416,8 +416,8 @@
     }
    ],
    "heap": {
-    "0x1c71159ca40": {
-     "id": "0x1c71159ca40",
+    "0x2621815ca40": {
+     "id": "0x2621815ca40",
      "type": "function",
      "repr": "area"
     },
@@ -449,7 +449,7 @@
      "line": 6,
      "locals": {
       "area": {
-       "ref": "0x1c71159ca40"
+       "ref": "0x2621815ca40"
       },
       "a": {
        "ref": "0x7ffd7f2b4b18"
@@ -473,8 +473,8 @@
     }
    ],
    "heap": {
-    "0x1c71159ca40": {
-     "id": "0x1c71159ca40",
+    "0x2621815ca40": {
+     "id": "0x2621815ca40",
      "type": "function",
      "repr": "area"
     },
@@ -506,7 +506,7 @@
      "line": 7,
      "locals": {
       "area": {
-       "ref": "0x1c71159ca40"
+       "ref": "0x2621815ca40"
       },
       "a": {
        "ref": "0x7ffd7f2b4b18"
@@ -518,8 +518,8 @@
     }
    ],
    "heap": {
-    "0x1c71159ca40": {
-     "id": "0x1c71159ca40",
+    "0x2621815ca40": {
+     "id": "0x2621815ca40",
      "type": "function",
      "repr": "area"
     },
@@ -545,7 +545,7 @@
      "line": 7,
      "locals": {
       "area": {
-       "ref": "0x1c71159ca40"
+       "ref": "0x2621815ca40"
       },
       "a": {
        "ref": "0x7ffd7f2b4b18"
@@ -557,8 +557,8 @@
     }
    ],
    "heap": {
-    "0x1c71159ca40": {
-     "id": "0x1c71159ca40",
+    "0x2621815ca40": {
+     "id": "0x2621815ca40",
      "type": "function",
      "repr": "area"
     },

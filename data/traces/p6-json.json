@@ -1,0 +1,1077 @@
+{
+ "id": "p6-json",
+ "code": "import json\ndata = {\"name\": \"지기\", \"tags\": [\"a\", \"b\"], \"ok\": True, \"none\": None}\ntext = json.dumps(data, ensure_ascii=False)\nprint(text)\nback = json.loads(text)\nprint(back == data, type(back[\"tags\"]))\nprint(json.dumps({\"n\": (1, 2)}))",
+ "steps": [
+  {
+   "line": 0,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 0,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 2,
+     "locals": {
+      "json": {
+       "ref": "0x1dbbfdc2200"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1dbbfdc2200": {
+     "id": "0x1dbbfdc2200",
+     "type": "module",
+     "repr": "json"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 3,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 3,
+     "locals": {
+      "json": {
+       "ref": "0x1dbbfdc2200"
+      },
+      "data": {
+       "ref": "0x1dbc00c31c0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1dbbfdc2200": {
+     "id": "0x1dbbfdc2200",
+     "type": "module",
+     "repr": "json"
+    },
+    "0x1dbc00c31c0": {
+     "id": "0x1dbc00c31c0",
+     "type": "dict",
+     "repr": "{'name': '지기', 'tags': ['a', 'b'], 'ok': True, …",
+     "entries": [
+      [
+       {
+        "ref": "0x7ffd7f2c04d8"
+       },
+       {
+        "ref": "0x1dbc00b6100"
+       }
+      ],
+      [
+       {
+        "ref": "0x1dbc00bd290"
+       },
+       {
+        "ref": "0x1dbbfe7f100"
+       }
+      ],
+      [
+       {
+        "ref": "0x7ffd7f1b73f0"
+       },
+       {
+        "ref": "0x7ffd7f1c1810"
+       }
+      ],
+      [
+       {
+        "ref": "0x1dbc00bd3e0"
+       },
+       {
+        "ref": "0x7ffd7f1c1850"
+       }
+      ]
+     ]
+    },
+    "0x7ffd7f2c04d8": {
+     "id": "0x7ffd7f2c04d8",
+     "type": "str",
+     "repr": "'name'"
+    },
+    "0x1dbc00b6100": {
+     "id": "0x1dbc00b6100",
+     "type": "str",
+     "repr": "'지기'"
+    },
+    "0x1dbc00bd290": {
+     "id": "0x1dbc00bd290",
+     "type": "str",
+     "repr": "'tags'"
+    },
+    "0x1dbbfe7f100": {
+     "id": "0x1dbbfe7f100",
+     "type": "list",
+     "repr": "['a', 'b']",
+     "items": [
+      {
+       "ref": "0x7ffd7f2c3e40"
+      },
+      {
+       "ref": "0x7ffd7f2c3e70"
+      }
+     ]
+    },
+    "0x7ffd7f2c3e40": {
+     "id": "0x7ffd7f2c3e40",
+     "type": "str",
+     "repr": "'a'"
+    },
+    "0x7ffd7f2c3e70": {
+     "id": "0x7ffd7f2c3e70",
+     "type": "str",
+     "repr": "'b'"
+    },
+    "0x7ffd7f1b73f0": {
+     "id": "0x7ffd7f1b73f0",
+     "type": "str",
+     "repr": "'ok'"
+    },
+    "0x7ffd7f1c1810": {
+     "id": "0x7ffd7f1c1810",
+     "type": "bool",
+     "repr": "True"
+    },
+    "0x1dbc00bd3e0": {
+     "id": "0x1dbc00bd3e0",
+     "type": "str",
+     "repr": "'none'"
+    },
+    "0x7ffd7f1c1850": {
+     "id": "0x7ffd7f1c1850",
+     "type": "NoneType",
+     "repr": "None"
+    }
+   },
+   "stdout": "",
+   "note": "파이썬 객체 → JSON 문자열. True → true, None → null"
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "json": {
+       "ref": "0x1dbbfdc2200"
+      },
+      "data": {
+       "ref": "0x1dbc00c31c0"
+      },
+      "text": {
+       "ref": "0x1dbbfe0e950"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1dbbfdc2200": {
+     "id": "0x1dbbfdc2200",
+     "type": "module",
+     "repr": "json"
+    },
+    "0x1dbc00c31c0": {
+     "id": "0x1dbc00c31c0",
+     "type": "dict",
+     "repr": "{'name': '지기', 'tags': ['a', 'b'], 'ok': True, …",
+     "entries": [
+      [
+       {
+        "ref": "0x7ffd7f2c04d8"
+       },
+       {
+        "ref": "0x1dbc00b6100"
+       }
+      ],
+      [
+       {
+        "ref": "0x1dbc00bd290"
+       },
+       {
+        "ref": "0x1dbbfe7f100"
+       }
+      ],
+      [
+       {
+        "ref": "0x7ffd7f1b73f0"
+       },
+       {
+        "ref": "0x7ffd7f1c1810"
+       }
+      ],
+      [
+       {
+        "ref": "0x1dbc00bd3e0"
+       },
+       {
+        "ref": "0x7ffd7f1c1850"
+       }
+      ]
+     ]
+    },
+    "0x7ffd7f2c04d8": {
+     "id": "0x7ffd7f2c04d8",
+     "type": "str",
+     "repr": "'name'"
+    },
+    "0x1dbc00b6100": {
+     "id": "0x1dbc00b6100",
+     "type": "str",
+     "repr": "'지기'"
+    },
+    "0x1dbc00bd290": {
+     "id": "0x1dbc00bd290",
+     "type": "str",
+     "repr": "'tags'"
+    },
+    "0x1dbbfe7f100": {
+     "id": "0x1dbbfe7f100",
+     "type": "list",
+     "repr": "['a', 'b']",
+     "items": [
+      {
+       "ref": "0x7ffd7f2c3e40"
+      },
+      {
+       "ref": "0x7ffd7f2c3e70"
+      }
+     ]
+    },
+    "0x7ffd7f2c3e40": {
+     "id": "0x7ffd7f2c3e40",
+     "type": "str",
+     "repr": "'a'"
+    },
+    "0x7ffd7f2c3e70": {
+     "id": "0x7ffd7f2c3e70",
+     "type": "str",
+     "repr": "'b'"
+    },
+    "0x7ffd7f1b73f0": {
+     "id": "0x7ffd7f1b73f0",
+     "type": "str",
+     "repr": "'ok'"
+    },
+    "0x7ffd7f1c1810": {
+     "id": "0x7ffd7f1c1810",
+     "type": "bool",
+     "repr": "True"
+    },
+    "0x1dbc00bd3e0": {
+     "id": "0x1dbc00bd3e0",
+     "type": "str",
+     "repr": "'none'"
+    },
+    "0x7ffd7f1c1850": {
+     "id": "0x7ffd7f1c1850",
+     "type": "NoneType",
+     "repr": "None"
+    },
+    "0x1dbbfe0e950": {
+     "id": "0x1dbbfe0e950",
+     "type": "str",
+     "repr": "'{\"name\": \"지기\", \"tags\": [\"a\", \"b\"], \"ok\": true,…"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "json": {
+       "ref": "0x1dbbfdc2200"
+      },
+      "data": {
+       "ref": "0x1dbc00c31c0"
+      },
+      "text": {
+       "ref": "0x1dbbfe0e950"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1dbbfdc2200": {
+     "id": "0x1dbbfdc2200",
+     "type": "module",
+     "repr": "json"
+    },
+    "0x1dbc00c31c0": {
+     "id": "0x1dbc00c31c0",
+     "type": "dict",
+     "repr": "{'name': '지기', 'tags': ['a', 'b'], 'ok': True, …",
+     "entries": [
+      [
+       {
+        "ref": "0x7ffd7f2c04d8"
+       },
+       {
+        "ref": "0x1dbc00b6100"
+       }
+      ],
+      [
+       {
+        "ref": "0x1dbc00bd290"
+       },
+       {
+        "ref": "0x1dbbfe7f100"
+       }
+      ],
+      [
+       {
+        "ref": "0x7ffd7f1b73f0"
+       },
+       {
+        "ref": "0x7ffd7f1c1810"
+       }
+      ],
+      [
+       {
+        "ref": "0x1dbc00bd3e0"
+       },
+       {
+        "ref": "0x7ffd7f1c1850"
+       }
+      ]
+     ]
+    },
+    "0x7ffd7f2c04d8": {
+     "id": "0x7ffd7f2c04d8",
+     "type": "str",
+     "repr": "'name'"
+    },
+    "0x1dbc00b6100": {
+     "id": "0x1dbc00b6100",
+     "type": "str",
+     "repr": "'지기'"
+    },
+    "0x1dbc00bd290": {
+     "id": "0x1dbc00bd290",
+     "type": "str",
+     "repr": "'tags'"
+    },
+    "0x1dbbfe7f100": {
+     "id": "0x1dbbfe7f100",
+     "type": "list",
+     "repr": "['a', 'b']",
+     "items": [
+      {
+       "ref": "0x7ffd7f2c3e40"
+      },
+      {
+       "ref": "0x7ffd7f2c3e70"
+      }
+     ]
+    },
+    "0x7ffd7f2c3e40": {
+     "id": "0x7ffd7f2c3e40",
+     "type": "str",
+     "repr": "'a'"
+    },
+    "0x7ffd7f2c3e70": {
+     "id": "0x7ffd7f2c3e70",
+     "type": "str",
+     "repr": "'b'"
+    },
+    "0x7ffd7f1b73f0": {
+     "id": "0x7ffd7f1b73f0",
+     "type": "str",
+     "repr": "'ok'"
+    },
+    "0x7ffd7f1c1810": {
+     "id": "0x7ffd7f1c1810",
+     "type": "bool",
+     "repr": "True"
+    },
+    "0x1dbc00bd3e0": {
+     "id": "0x1dbc00bd3e0",
+     "type": "str",
+     "repr": "'none'"
+    },
+    "0x7ffd7f1c1850": {
+     "id": "0x7ffd7f1c1850",
+     "type": "NoneType",
+     "repr": "None"
+    },
+    "0x1dbbfe0e950": {
+     "id": "0x1dbbfe0e950",
+     "type": "str",
+     "repr": "'{\"name\": \"지기\", \"tags\": [\"a\", \"b\"], \"ok\": true,…"
+    }
+   },
+   "stdout": "{\"name\": \"지기\", \"tags\": [\"a\", \"b\"], \"ok\": true, \"none\": null}\n",
+   "note": "JSON 문자열 → 파이썬 객체"
+  },
+  {
+   "line": 6,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "json": {
+       "ref": "0x1dbbfdc2200"
+      },
+      "data": {
+       "ref": "0x1dbc00c31c0"
+      },
+      "text": {
+       "ref": "0x1dbbfe0e950"
+      },
+      "back": {
+       "ref": "0x1dbc00c4580"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1dbbfdc2200": {
+     "id": "0x1dbbfdc2200",
+     "type": "module",
+     "repr": "json"
+    },
+    "0x1dbc00c31c0": {
+     "id": "0x1dbc00c31c0",
+     "type": "dict",
+     "repr": "{'name': '지기', 'tags': ['a', 'b'], 'ok': True, …",
+     "entries": [
+      [
+       {
+        "ref": "0x7ffd7f2c04d8"
+       },
+       {
+        "ref": "0x1dbc00b6100"
+       }
+      ],
+      [
+       {
+        "ref": "0x1dbc00bd290"
+       },
+       {
+        "ref": "0x1dbbfe7f100"
+       }
+      ],
+      [
+       {
+        "ref": "0x7ffd7f1b73f0"
+       },
+       {
+        "ref": "0x7ffd7f1c1810"
+       }
+      ],
+      [
+       {
+        "ref": "0x1dbc00bd3e0"
+       },
+       {
+        "ref": "0x7ffd7f1c1850"
+       }
+      ]
+     ]
+    },
+    "0x7ffd7f2c04d8": {
+     "id": "0x7ffd7f2c04d8",
+     "type": "str",
+     "repr": "'name'"
+    },
+    "0x1dbc00b6100": {
+     "id": "0x1dbc00b6100",
+     "type": "str",
+     "repr": "'지기'"
+    },
+    "0x1dbc00bd290": {
+     "id": "0x1dbc00bd290",
+     "type": "str",
+     "repr": "'tags'"
+    },
+    "0x1dbbfe7f100": {
+     "id": "0x1dbbfe7f100",
+     "type": "list",
+     "repr": "['a', 'b']",
+     "items": [
+      {
+       "ref": "0x7ffd7f2c3e40"
+      },
+      {
+       "ref": "0x7ffd7f2c3e70"
+      }
+     ]
+    },
+    "0x7ffd7f2c3e40": {
+     "id": "0x7ffd7f2c3e40",
+     "type": "str",
+     "repr": "'a'"
+    },
+    "0x7ffd7f2c3e70": {
+     "id": "0x7ffd7f2c3e70",
+     "type": "str",
+     "repr": "'b'"
+    },
+    "0x7ffd7f1b73f0": {
+     "id": "0x7ffd7f1b73f0",
+     "type": "str",
+     "repr": "'ok'"
+    },
+    "0x7ffd7f1c1810": {
+     "id": "0x7ffd7f1c1810",
+     "type": "bool",
+     "repr": "True"
+    },
+    "0x1dbc00bd3e0": {
+     "id": "0x1dbc00bd3e0",
+     "type": "str",
+     "repr": "'none'"
+    },
+    "0x7ffd7f1c1850": {
+     "id": "0x7ffd7f1c1850",
+     "type": "NoneType",
+     "repr": "None"
+    },
+    "0x1dbbfe0e950": {
+     "id": "0x1dbbfe0e950",
+     "type": "str",
+     "repr": "'{\"name\": \"지기\", \"tags\": [\"a\", \"b\"], \"ok\": true,…"
+    },
+    "0x1dbc00c4580": {
+     "id": "0x1dbc00c4580",
+     "type": "dict",
+     "repr": "{'name': '지기', 'tags': ['a', 'b'], 'ok': True, …",
+     "entries": [
+      [
+       {
+        "ref": "0x1dbc00bd170"
+       },
+       {
+        "ref": "0x1dbc00c45b0"
+       }
+      ],
+      [
+       {
+        "ref": "0x1dbc00bd2c0"
+       },
+       {
+        "ref": "0x1dbbfe7f940"
+       }
+      ],
+      [
+       {
+        "ref": "0x1dbc00bdda0"
+       },
+       {
+        "ref": "0x7ffd7f1c1810"
+       }
+      ],
+      [
+       {
+        "ref": "0x1dbc00bddd0"
+       },
+       {
+        "ref": "0x7ffd7f1c1850"
+       }
+      ]
+     ]
+    },
+    "0x1dbc00bd170": {
+     "id": "0x1dbc00bd170",
+     "type": "str",
+     "repr": "'name'"
+    },
+    "0x1dbc00c45b0": {
+     "id": "0x1dbc00c45b0",
+     "type": "str",
+     "repr": "'지기'"
+    },
+    "0x1dbc00bd2c0": {
+     "id": "0x1dbc00bd2c0",
+     "type": "str",
+     "repr": "'tags'"
+    },
+    "0x1dbbfe7f940": {
+     "id": "0x1dbbfe7f940",
+     "type": "list",
+     "repr": "['a', 'b']",
+     "items": [
+      {
+       "ref": "0x7ffd7f2c3e40"
+      },
+      {
+       "ref": "0x7ffd7f2c3e70"
+      }
+     ]
+    },
+    "0x1dbc00bdda0": {
+     "id": "0x1dbc00bdda0",
+     "type": "str",
+     "repr": "'ok'"
+    },
+    "0x1dbc00bddd0": {
+     "id": "0x1dbc00bddd0",
+     "type": "str",
+     "repr": "'none'"
+    }
+   },
+   "stdout": "{\"name\": \"지기\", \"tags\": [\"a\", \"b\"], \"ok\": true, \"none\": null}\n",
+   "note": "리스트·딕셔너리·문자열·숫자·불·None 만 오간다 — 튜플은 리스트가 된다"
+  },
+  {
+   "line": 7,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 7,
+     "locals": {
+      "json": {
+       "ref": "0x1dbbfdc2200"
+      },
+      "data": {
+       "ref": "0x1dbc00c31c0"
+      },
+      "text": {
+       "ref": "0x1dbbfe0e950"
+      },
+      "back": {
+       "ref": "0x1dbc00c4580"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1dbbfdc2200": {
+     "id": "0x1dbbfdc2200",
+     "type": "module",
+     "repr": "json"
+    },
+    "0x1dbc00c31c0": {
+     "id": "0x1dbc00c31c0",
+     "type": "dict",
+     "repr": "{'name': '지기', 'tags': ['a', 'b'], 'ok': True, …",
+     "entries": [
+      [
+       {
+        "ref": "0x7ffd7f2c04d8"
+       },
+       {
+        "ref": "0x1dbc00b6100"
+       }
+      ],
+      [
+       {
+        "ref": "0x1dbc00bd290"
+       },
+       {
+        "ref": "0x1dbbfe7f100"
+       }
+      ],
+      [
+       {
+        "ref": "0x7ffd7f1b73f0"
+       },
+       {
+        "ref": "0x7ffd7f1c1810"
+       }
+      ],
+      [
+       {
+        "ref": "0x1dbc00bd3e0"
+       },
+       {
+        "ref": "0x7ffd7f1c1850"
+       }
+      ]
+     ]
+    },
+    "0x7ffd7f2c04d8": {
+     "id": "0x7ffd7f2c04d8",
+     "type": "str",
+     "repr": "'name'"
+    },
+    "0x1dbc00b6100": {
+     "id": "0x1dbc00b6100",
+     "type": "str",
+     "repr": "'지기'"
+    },
+    "0x1dbc00bd290": {
+     "id": "0x1dbc00bd290",
+     "type": "str",
+     "repr": "'tags'"
+    },
+    "0x1dbbfe7f100": {
+     "id": "0x1dbbfe7f100",
+     "type": "list",
+     "repr": "['a', 'b']",
+     "items": [
+      {
+       "ref": "0x7ffd7f2c3e40"
+      },
+      {
+       "ref": "0x7ffd7f2c3e70"
+      }
+     ]
+    },
+    "0x7ffd7f2c3e40": {
+     "id": "0x7ffd7f2c3e40",
+     "type": "str",
+     "repr": "'a'"
+    },
+    "0x7ffd7f2c3e70": {
+     "id": "0x7ffd7f2c3e70",
+     "type": "str",
+     "repr": "'b'"
+    },
+    "0x7ffd7f1b73f0": {
+     "id": "0x7ffd7f1b73f0",
+     "type": "str",
+     "repr": "'ok'"
+    },
+    "0x7ffd7f1c1810": {
+     "id": "0x7ffd7f1c1810",
+     "type": "bool",
+     "repr": "True"
+    },
+    "0x1dbc00bd3e0": {
+     "id": "0x1dbc00bd3e0",
+     "type": "str",
+     "repr": "'none'"
+    },
+    "0x7ffd7f1c1850": {
+     "id": "0x7ffd7f1c1850",
+     "type": "NoneType",
+     "repr": "None"
+    },
+    "0x1dbbfe0e950": {
+     "id": "0x1dbbfe0e950",
+     "type": "str",
+     "repr": "'{\"name\": \"지기\", \"tags\": [\"a\", \"b\"], \"ok\": true,…"
+    },
+    "0x1dbc00c4580": {
+     "id": "0x1dbc00c4580",
+     "type": "dict",
+     "repr": "{'name': '지기', 'tags': ['a', 'b'], 'ok': True, …",
+     "entries": [
+      [
+       {
+        "ref": "0x1dbc00bd170"
+       },
+       {
+        "ref": "0x1dbc00c45b0"
+       }
+      ],
+      [
+       {
+        "ref": "0x1dbc00bd2c0"
+       },
+       {
+        "ref": "0x1dbbfe7f940"
+       }
+      ],
+      [
+       {
+        "ref": "0x1dbc00bdda0"
+       },
+       {
+        "ref": "0x7ffd7f1c1810"
+       }
+      ],
+      [
+       {
+        "ref": "0x1dbc00bddd0"
+       },
+       {
+        "ref": "0x7ffd7f1c1850"
+       }
+      ]
+     ]
+    },
+    "0x1dbc00bd170": {
+     "id": "0x1dbc00bd170",
+     "type": "str",
+     "repr": "'name'"
+    },
+    "0x1dbc00c45b0": {
+     "id": "0x1dbc00c45b0",
+     "type": "str",
+     "repr": "'지기'"
+    },
+    "0x1dbc00bd2c0": {
+     "id": "0x1dbc00bd2c0",
+     "type": "str",
+     "repr": "'tags'"
+    },
+    "0x1dbbfe7f940": {
+     "id": "0x1dbbfe7f940",
+     "type": "list",
+     "repr": "['a', 'b']",
+     "items": [
+      {
+       "ref": "0x7ffd7f2c3e40"
+      },
+      {
+       "ref": "0x7ffd7f2c3e70"
+      }
+     ]
+    },
+    "0x1dbc00bdda0": {
+     "id": "0x1dbc00bdda0",
+     "type": "str",
+     "repr": "'ok'"
+    },
+    "0x1dbc00bddd0": {
+     "id": "0x1dbc00bddd0",
+     "type": "str",
+     "repr": "'none'"
+    }
+   },
+   "stdout": "{\"name\": \"지기\", \"tags\": [\"a\", \"b\"], \"ok\": true, \"none\": null}\nTrue <class 'list'>\n"
+  },
+  {
+   "line": 7,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 7,
+     "locals": {
+      "json": {
+       "ref": "0x1dbbfdc2200"
+      },
+      "data": {
+       "ref": "0x1dbc00c31c0"
+      },
+      "text": {
+       "ref": "0x1dbbfe0e950"
+      },
+      "back": {
+       "ref": "0x1dbc00c4580"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1dbbfdc2200": {
+     "id": "0x1dbbfdc2200",
+     "type": "module",
+     "repr": "json"
+    },
+    "0x1dbc00c31c0": {
+     "id": "0x1dbc00c31c0",
+     "type": "dict",
+     "repr": "{'name': '지기', 'tags': ['a', 'b'], 'ok': True, …",
+     "entries": [
+      [
+       {
+        "ref": "0x7ffd7f2c04d8"
+       },
+       {
+        "ref": "0x1dbc00b6100"
+       }
+      ],
+      [
+       {
+        "ref": "0x1dbc00bd290"
+       },
+       {
+        "ref": "0x1dbbfe7f100"
+       }
+      ],
+      [
+       {
+        "ref": "0x7ffd7f1b73f0"
+       },
+       {
+        "ref": "0x7ffd7f1c1810"
+       }
+      ],
+      [
+       {
+        "ref": "0x1dbc00bd3e0"
+       },
+       {
+        "ref": "0x7ffd7f1c1850"
+       }
+      ]
+     ]
+    },
+    "0x7ffd7f2c04d8": {
+     "id": "0x7ffd7f2c04d8",
+     "type": "str",
+     "repr": "'name'"
+    },
+    "0x1dbc00b6100": {
+     "id": "0x1dbc00b6100",
+     "type": "str",
+     "repr": "'지기'"
+    },
+    "0x1dbc00bd290": {
+     "id": "0x1dbc00bd290",
+     "type": "str",
+     "repr": "'tags'"
+    },
+    "0x1dbbfe7f100": {
+     "id": "0x1dbbfe7f100",
+     "type": "list",
+     "repr": "['a', 'b']",
+     "items": [
+      {
+       "ref": "0x7ffd7f2c3e40"
+      },
+      {
+       "ref": "0x7ffd7f2c3e70"
+      }
+     ]
+    },
+    "0x7ffd7f2c3e40": {
+     "id": "0x7ffd7f2c3e40",
+     "type": "str",
+     "repr": "'a'"
+    },
+    "0x7ffd7f2c3e70": {
+     "id": "0x7ffd7f2c3e70",
+     "type": "str",
+     "repr": "'b'"
+    },
+    "0x7ffd7f1b73f0": {
+     "id": "0x7ffd7f1b73f0",
+     "type": "str",
+     "repr": "'ok'"
+    },
+    "0x7ffd7f1c1810": {
+     "id": "0x7ffd7f1c1810",
+     "type": "bool",
+     "repr": "True"
+    },
+    "0x1dbc00bd3e0": {
+     "id": "0x1dbc00bd3e0",
+     "type": "str",
+     "repr": "'none'"
+    },
+    "0x7ffd7f1c1850": {
+     "id": "0x7ffd7f1c1850",
+     "type": "NoneType",
+     "repr": "None"
+    },
+    "0x1dbbfe0e950": {
+     "id": "0x1dbbfe0e950",
+     "type": "str",
+     "repr": "'{\"name\": \"지기\", \"tags\": [\"a\", \"b\"], \"ok\": true,…"
+    },
+    "0x1dbc00c4580": {
+     "id": "0x1dbc00c4580",
+     "type": "dict",
+     "repr": "{'name': '지기', 'tags': ['a', 'b'], 'ok': True, …",
+     "entries": [
+      [
+       {
+        "ref": "0x1dbc00bd170"
+       },
+       {
+        "ref": "0x1dbc00c45b0"
+       }
+      ],
+      [
+       {
+        "ref": "0x1dbc00bd2c0"
+       },
+       {
+        "ref": "0x1dbbfe7f940"
+       }
+      ],
+      [
+       {
+        "ref": "0x1dbc00bdda0"
+       },
+       {
+        "ref": "0x7ffd7f1c1810"
+       }
+      ],
+      [
+       {
+        "ref": "0x1dbc00bddd0"
+       },
+       {
+        "ref": "0x7ffd7f1c1850"
+       }
+      ]
+     ]
+    },
+    "0x1dbc00bd170": {
+     "id": "0x1dbc00bd170",
+     "type": "str",
+     "repr": "'name'"
+    },
+    "0x1dbc00c45b0": {
+     "id": "0x1dbc00c45b0",
+     "type": "str",
+     "repr": "'지기'"
+    },
+    "0x1dbc00bd2c0": {
+     "id": "0x1dbc00bd2c0",
+     "type": "str",
+     "repr": "'tags'"
+    },
+    "0x1dbbfe7f940": {
+     "id": "0x1dbbfe7f940",
+     "type": "list",
+     "repr": "['a', 'b']",
+     "items": [
+      {
+       "ref": "0x7ffd7f2c3e40"
+      },
+      {
+       "ref": "0x7ffd7f2c3e70"
+      }
+     ]
+    },
+    "0x1dbc00bdda0": {
+     "id": "0x1dbc00bdda0",
+     "type": "str",
+     "repr": "'ok'"
+    },
+    "0x1dbc00bddd0": {
+     "id": "0x1dbc00bddd0",
+     "type": "str",
+     "repr": "'none'"
+    }
+   },
+   "stdout": "{\"name\": \"지기\", \"tags\": [\"a\", \"b\"], \"ok\": true, \"none\": null}\nTrue <class 'list'>\n{\"n\": [1, 2]}\n"
+  }
+ ],
+ "v": 1
+}

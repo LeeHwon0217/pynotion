@@ -11,12 +11,15 @@ export type StackOp =
   | { pop: true; ret?: string }                              // 맨 위 프레임 제거 (+ 반환값)
   | { output: string }
   | { line: number }
-  | { note: string };                                        // 맨 위 프레임에 배지
+  | { note: string }                                         // 맨 위 프레임에 배지
+  | { raise: string }                                        // 예외 발생 (맨 위 프레임에서)
+  | { catch: string }                                        // 예외 처리됨 (맨 위 프레임에서)
+  | { uncaught: true };                                      // 끝까지 안 잡힘 — 프로그램 종료
 export type StackStep = { chapter?: string; say: string; dur?: number; ops?: StackOp[] };
 export type StackStory = { code?: string[]; steps: StackStep[]; tree?: boolean };
 
 type Frame = { id: number; label: string; locals: Record<string, string>; parent: number | null; ret?: string; done: boolean; children: number[] };
-type St = { stack: number[]; frames: Record<number, Frame>; output: string; line: number; note?: string; lastPop?: { id: number; ret?: string }; lastPush?: number };
+type St = { stack: number[]; frames: Record<number, Frame>; output: string; line: number; note?: string; lastPop?: { id: number; ret?: string }; lastPush?: number; exc?: string; caught?: string; uncaught?: boolean };
 
 export function buildStack(story: StackStory): { script: Script; render: (t: number) => ReactNode } {
   const sb = new ScriptBuilder();
@@ -35,7 +38,7 @@ export function buildStack(story: StackStory): { script: Script; render: (t: num
   let cur: St = { stack: [], frames: {}, output: "", line: -1 };
   let nextId = 1;
   for (const step of story.steps) {
-    cur = { ...cur, frames: Object.fromEntries(Object.entries(cur.frames).map(([k, f]) => [k, { ...f, locals: { ...f.locals }, children: [...f.children] }])), stack: [...cur.stack], note: undefined, lastPop: undefined, lastPush: undefined };
+    cur = { ...cur, frames: Object.fromEntries(Object.entries(cur.frames).map(([k, f]) => [k, { ...f, locals: { ...f.locals }, children: [...f.children] }])), stack: [...cur.stack], note: undefined, lastPop: undefined, lastPush: undefined, caught: undefined, uncaught: undefined };
     for (const op of step.ops ?? []) {
       if ("push" in op) {
         const parent = cur.stack.length ? cur.stack[cur.stack.length - 1] : null;
@@ -52,6 +55,9 @@ export function buildStack(story: StackStory): { script: Script; render: (t: num
       } else if ("output" in op) cur.output += op.output;
       else if ("line" in op) cur.line = op.line;
       else if ("note" in op) cur.note = op.note;
+      else if ("raise" in op) cur.exc = op.raise;
+      else if ("catch" in op) { cur.caught = op.catch; cur.exc = undefined; }
+      else if ("uncaught" in op) { cur.uncaught = true; }
     }
     states.push(cur);
   }
@@ -142,6 +148,23 @@ export function buildStack(story: StackStory): { script: Script; render: (t: num
       y -= 10;
     });
 
+    // 예외 풍선 위치: 스택 맨 위 프레임 위 (프레임이 없으면 바닥 위)
+    const excY = y - 8;
+    const excEl = (st.exc || st.caught || st.uncaught) ? (() => {
+      const label = st.caught ? `${st.caught} — 잡힘` : st.uncaught ? `${prev.exc ?? ""} — 아무도 안 잡음 → 종료` : st.exc!;
+      const isNew = !prev.exc && !!st.exc;
+      const p = st.caught ? 1 - seg(local, 1200, 700) : isNew ? seg(local, 200, 500, ease.outBack) : 1;
+      const col = st.caught ? C.fresh : C.dead;
+      const w = textW(label, 15, false) + 36;
+      const yy = st.lastPop && popP < 1 ? lerp(excY - 60, excY, popP) : excY;
+      return (
+        <g transform={`translate(${stackX + frameW / 2} ${yy - 22}) scale(${lerp(0.6, 1, p)})`} opacity={p}>
+          <rect x={-w / 2} y={-18} width={w} height={36} rx={12} fill={col} />
+          <text y={6} textAnchor="middle" style={{ fill: st.caught ? "#062" : "#fff", fontSize: 15, fontWeight: 750 }}>{label}</text>
+          {!st.caught && !st.uncaught && <text y={-26} textAnchor="middle" className="st-m" style={{ fontSize: 12 }}>except 를 찾는 중 ↑</text>}
+        </g>
+      );
+    })() : null;
     return (
       <g>
         {hasCode && <CodePanel x={36} y={40} w={codeW} lines={codeLines} shown={shown} current={st.line} lineH={lineH} fontSize={codeFont} />}
@@ -151,7 +174,8 @@ export function buildStack(story: StackStory): { script: Script; render: (t: num
         <line x1={stackX - 12} y1={stackBottom} x2={stackX + frameW + 12} y2={stackBottom} stroke={C.stroke} strokeWidth={2} />
         {st.stack.length === 0 && !st.lastPop && <text x={stackX} y={stackBottom - 20} className="st-m">비어 있음 — 전역 코드 실행 중</text>}
         {cards}
-        {st.note && st.stack.length > 0 && <Badge x={stackX + frameW / 2} y={y + 2} text={st.note} p={seg(local, 500, 400)} color={C.warn} />}
+        {st.note && st.stack.length > 0 && !st.exc && <Badge x={stackX + frameW / 2} y={y + 2} text={st.note} p={seg(local, 500, 400)} color={C.warn} />}
+        {excEl}
 
         {/* 재귀 트리 */}
         {story.tree && (

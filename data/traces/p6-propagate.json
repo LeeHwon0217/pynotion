@@ -1,0 +1,531 @@
+{
+ "id": "p6-propagate",
+ "code": "def load(path):\n    return open(path).read()\n\ndef run():\n    data = load(\"없는파일.txt\")\n    print(len(data))\n\nrun()\nprint(\"여기는 실행되지 않는다\")",
+ "steps": [
+  {
+   "line": 0,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 0,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "load": {
+       "ref": "0x24005c6cd60"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x24005c6cd60": {
+     "id": "0x24005c6cd60",
+     "type": "function",
+     "repr": "load"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 8,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 8,
+     "locals": {
+      "load": {
+       "ref": "0x24005c6cd60"
+      },
+      "run": {
+       "ref": "0x24005c6cea0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x24005c6cd60": {
+     "id": "0x24005c6cd60",
+     "type": "function",
+     "repr": "load"
+    },
+    "0x24005c6cea0": {
+     "id": "0x24005c6cea0",
+     "type": "function",
+     "repr": "run"
+    }
+   },
+   "stdout": "",
+   "note": "다시 모듈 수준으로 올라온다. 여기도 없다 → 프로그램 종료, 트레이스백 출력"
+  },
+  {
+   "line": 4,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 8,
+     "locals": {
+      "load": {
+       "ref": "0x24005c6cd60"
+      },
+      "run": {
+       "ref": "0x24005c6cea0"
+      }
+     }
+    },
+    {
+     "fn": "run",
+     "line": 4,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x24005c6cd60": {
+     "id": "0x24005c6cd60",
+     "type": "function",
+     "repr": "load"
+    },
+    "0x24005c6cea0": {
+     "id": "0x24005c6cea0",
+     "type": "function",
+     "repr": "run"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 8,
+     "locals": {
+      "load": {
+       "ref": "0x24005c6cd60"
+      },
+      "run": {
+       "ref": "0x24005c6cea0"
+      }
+     }
+    },
+    {
+     "fn": "run",
+     "line": 5,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x24005c6cd60": {
+     "id": "0x24005c6cd60",
+     "type": "function",
+     "repr": "load"
+    },
+    "0x24005c6cea0": {
+     "id": "0x24005c6cea0",
+     "type": "function",
+     "repr": "run"
+    }
+   },
+   "stdout": "",
+   "note": "load() 안에서 난 예외가 이 줄로 '올라온다' — run 에도 except 가 없다"
+  },
+  {
+   "line": 1,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 8,
+     "locals": {
+      "load": {
+       "ref": "0x24005c6cd60"
+      },
+      "run": {
+       "ref": "0x24005c6cea0"
+      }
+     }
+    },
+    {
+     "fn": "run",
+     "line": 5,
+     "locals": {}
+    },
+    {
+     "fn": "load",
+     "line": 1,
+     "locals": {
+      "path": {
+       "ref": "0x24005c58e70"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x24005c6cd60": {
+     "id": "0x24005c6cd60",
+     "type": "function",
+     "repr": "load"
+    },
+    "0x24005c6cea0": {
+     "id": "0x24005c6cea0",
+     "type": "function",
+     "repr": "run"
+    },
+    "0x24005c58e70": {
+     "id": "0x24005c58e70",
+     "type": "str",
+     "repr": "'없는파일.txt'"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 8,
+     "locals": {
+      "load": {
+       "ref": "0x24005c6cd60"
+      },
+      "run": {
+       "ref": "0x24005c6cea0"
+      }
+     }
+    },
+    {
+     "fn": "run",
+     "line": 5,
+     "locals": {}
+    },
+    {
+     "fn": "load",
+     "line": 2,
+     "locals": {
+      "path": {
+       "ref": "0x24005c58e70"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x24005c6cd60": {
+     "id": "0x24005c6cd60",
+     "type": "function",
+     "repr": "load"
+    },
+    "0x24005c6cea0": {
+     "id": "0x24005c6cea0",
+     "type": "function",
+     "repr": "run"
+    },
+    "0x24005c58e70": {
+     "id": "0x24005c58e70",
+     "type": "str",
+     "repr": "'없는파일.txt'"
+    }
+   },
+   "stdout": "",
+   "note": "파일이 없다 → 여기서 FileNotFoundError 가 '발생' 한다"
+  },
+  {
+   "line": 2,
+   "event": "exception",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 8,
+     "locals": {
+      "load": {
+       "ref": "0x24005c6cd60"
+      },
+      "run": {
+       "ref": "0x24005c6cea0"
+      }
+     }
+    },
+    {
+     "fn": "run",
+     "line": 5,
+     "locals": {}
+    },
+    {
+     "fn": "load",
+     "line": 2,
+     "locals": {
+      "path": {
+       "ref": "0x24005c58e70"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x24005c6cd60": {
+     "id": "0x24005c6cd60",
+     "type": "function",
+     "repr": "load"
+    },
+    "0x24005c6cea0": {
+     "id": "0x24005c6cea0",
+     "type": "function",
+     "repr": "run"
+    },
+    "0x24005c58e70": {
+     "id": "0x24005c58e70",
+     "type": "str",
+     "repr": "'없는파일.txt'"
+    }
+   },
+   "stdout": "",
+   "exc": "FileNotFoundError: [Errno 2] No such file or directory: '없는파일.txt'"
+  },
+  {
+   "line": 2,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 8,
+     "locals": {
+      "load": {
+       "ref": "0x24005c6cd60"
+      },
+      "run": {
+       "ref": "0x24005c6cea0"
+      }
+     }
+    },
+    {
+     "fn": "run",
+     "line": 5,
+     "locals": {}
+    },
+    {
+     "fn": "load",
+     "line": 2,
+     "locals": {
+      "path": {
+       "ref": "0x24005c58e70"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x24005c6cd60": {
+     "id": "0x24005c6cd60",
+     "type": "function",
+     "repr": "load"
+    },
+    "0x24005c6cea0": {
+     "id": "0x24005c6cea0",
+     "type": "function",
+     "repr": "run"
+    },
+    "0x24005c58e70": {
+     "id": "0x24005c58e70",
+     "type": "str",
+     "repr": "'없는파일.txt'"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 5,
+   "event": "exception",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 8,
+     "locals": {
+      "load": {
+       "ref": "0x24005c6cd60"
+      },
+      "run": {
+       "ref": "0x24005c6cea0"
+      }
+     }
+    },
+    {
+     "fn": "run",
+     "line": 5,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x24005c6cd60": {
+     "id": "0x24005c6cd60",
+     "type": "function",
+     "repr": "load"
+    },
+    "0x24005c6cea0": {
+     "id": "0x24005c6cea0",
+     "type": "function",
+     "repr": "run"
+    }
+   },
+   "stdout": "",
+   "exc": "FileNotFoundError: [Errno 2] No such file or directory: '없는파일.txt'"
+  },
+  {
+   "line": 5,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 8,
+     "locals": {
+      "load": {
+       "ref": "0x24005c6cd60"
+      },
+      "run": {
+       "ref": "0x24005c6cea0"
+      }
+     }
+    },
+    {
+     "fn": "run",
+     "line": 5,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x24005c6cd60": {
+     "id": "0x24005c6cd60",
+     "type": "function",
+     "repr": "load"
+    },
+    "0x24005c6cea0": {
+     "id": "0x24005c6cea0",
+     "type": "function",
+     "repr": "run"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 8,
+   "event": "exception",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 8,
+     "locals": {
+      "load": {
+       "ref": "0x24005c6cd60"
+      },
+      "run": {
+       "ref": "0x24005c6cea0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x24005c6cd60": {
+     "id": "0x24005c6cd60",
+     "type": "function",
+     "repr": "load"
+    },
+    "0x24005c6cea0": {
+     "id": "0x24005c6cea0",
+     "type": "function",
+     "repr": "run"
+    }
+   },
+   "stdout": "",
+   "exc": "FileNotFoundError: [Errno 2] No such file or directory: '없는파일.txt'"
+  },
+  {
+   "line": 8,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 8,
+     "locals": {
+      "load": {
+       "ref": "0x24005c6cd60"
+      },
+      "run": {
+       "ref": "0x24005c6cea0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x24005c6cd60": {
+     "id": "0x24005c6cd60",
+     "type": "function",
+     "repr": "load"
+    },
+    "0x24005c6cea0": {
+     "id": "0x24005c6cea0",
+     "type": "function",
+     "repr": "run"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 8,
+   "event": "exception",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 8,
+     "locals": {
+      "load": {
+       "ref": "0x24005c6cd60"
+      },
+      "run": {
+       "ref": "0x24005c6cea0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x24005c6cd60": {
+     "id": "0x24005c6cd60",
+     "type": "function",
+     "repr": "load"
+    },
+    "0x24005c6cea0": {
+     "id": "0x24005c6cea0",
+     "type": "function",
+     "repr": "run"
+    }
+   },
+   "stdout": "",
+   "exc": "FileNotFoundError: [Errno 2] No such file or directory: '없는파일.txt'"
+  }
+ ],
+ "v": 1
+}

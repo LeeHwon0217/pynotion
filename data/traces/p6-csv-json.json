@@ -1,0 +1,818 @@
+{
+ "id": "p6-csv-json",
+ "code": "import csv, json, io\ntext = \"name,age\\n지기,29\\n영희,25\\n\"\nrows = list(csv.DictReader(io.StringIO(text)))\nprint(rows)\nprint(rows[0][\"age\"] + 1)",
+ "steps": [
+  {
+   "line": 0,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 0,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 2,
+     "locals": {
+      "csv": {
+       "ref": "0x1b34c20b1a0"
+      },
+      "json": {
+       "ref": "0x1b34bf12200"
+      },
+      "io": {
+       "ref": "0x1b34bee0630"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1b34c20b1a0": {
+     "id": "0x1b34c20b1a0",
+     "type": "module",
+     "repr": "csv"
+    },
+    "0x1b34bf12200": {
+     "id": "0x1b34bf12200",
+     "type": "module",
+     "repr": "json"
+    },
+    "0x1b34bee0630": {
+     "id": "0x1b34bee0630",
+     "type": "module",
+     "repr": "io"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 3,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 3,
+     "locals": {
+      "csv": {
+       "ref": "0x1b34c20b1a0"
+      },
+      "json": {
+       "ref": "0x1b34bf12200"
+      },
+      "io": {
+       "ref": "0x1b34bee0630"
+      },
+      "text": {
+       "ref": "0x1b34bf53f30"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1b34c20b1a0": {
+     "id": "0x1b34c20b1a0",
+     "type": "module",
+     "repr": "csv"
+    },
+    "0x1b34bf12200": {
+     "id": "0x1b34bf12200",
+     "type": "module",
+     "repr": "json"
+    },
+    "0x1b34bee0630": {
+     "id": "0x1b34bee0630",
+     "type": "module",
+     "repr": "io"
+    },
+    "0x1b34bf53f30": {
+     "id": "0x1b34bf53f30",
+     "type": "str",
+     "repr": "'name,age\\n지기,29\\n영희,25\\n'"
+    }
+   },
+   "stdout": "",
+   "note": "첫 줄을 헤더로 써서 각 줄을 딕셔너리로"
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "csv": {
+       "ref": "0x1b34c20b1a0"
+      },
+      "json": {
+       "ref": "0x1b34bf12200"
+      },
+      "io": {
+       "ref": "0x1b34bee0630"
+      },
+      "text": {
+       "ref": "0x1b34bf53f30"
+      },
+      "rows": {
+       "ref": "0x1b34c221000"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1b34c20b1a0": {
+     "id": "0x1b34c20b1a0",
+     "type": "module",
+     "repr": "csv"
+    },
+    "0x1b34bf12200": {
+     "id": "0x1b34bf12200",
+     "type": "module",
+     "repr": "json"
+    },
+    "0x1b34bee0630": {
+     "id": "0x1b34bee0630",
+     "type": "module",
+     "repr": "io"
+    },
+    "0x1b34bf53f30": {
+     "id": "0x1b34bf53f30",
+     "type": "str",
+     "repr": "'name,age\\n지기,29\\n영희,25\\n'"
+    },
+    "0x1b34c221000": {
+     "id": "0x1b34c221000",
+     "type": "list",
+     "repr": "[{'name': '지기', 'age': '29'}, {'name': '영희', 'a…",
+     "items": [
+      {
+       "ref": "0x1b34c221180"
+      },
+      {
+       "ref": "0x1b34c221200"
+      }
+     ]
+    },
+    "0x1b34c221180": {
+     "id": "0x1b34c221180",
+     "type": "dict",
+     "repr": "{'name': '지기', 'age': '29'}",
+     "entries": [
+      [
+       {
+        "ref": "0x1b34c210ff0"
+       },
+       {
+        "ref": "0x1b34c221070"
+       }
+      ],
+      [
+       {
+        "ref": "0x1b34c2124f0"
+       },
+       {
+        "ref": "0x1b34c212520"
+       }
+      ]
+     ]
+    },
+    "0x1b34c210ff0": {
+     "id": "0x1b34c210ff0",
+     "type": "str",
+     "repr": "'name'"
+    },
+    "0x1b34c221070": {
+     "id": "0x1b34c221070",
+     "type": "str",
+     "repr": "'지기'"
+    },
+    "0x1b34c2124f0": {
+     "id": "0x1b34c2124f0",
+     "type": "str",
+     "repr": "'age'"
+    },
+    "0x1b34c212520": {
+     "id": "0x1b34c212520",
+     "type": "str",
+     "repr": "'29'"
+    },
+    "0x1b34c221200": {
+     "id": "0x1b34c221200",
+     "type": "dict",
+     "repr": "{'name': '영희', 'age': '25'}",
+     "entries": [
+      [
+       {
+        "ref": "0x1b34c210ff0"
+       },
+       {
+        "ref": "0x1b34c221130"
+       }
+      ],
+      [
+       {
+        "ref": "0x1b34c2124f0"
+       },
+       {
+        "ref": "0x1b34c212550"
+       }
+      ]
+     ]
+    },
+    "0x1b34c221130": {
+     "id": "0x1b34c221130",
+     "type": "str",
+     "repr": "'영희'"
+    },
+    "0x1b34c212550": {
+     "id": "0x1b34c212550",
+     "type": "str",
+     "repr": "'25'"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "csv": {
+       "ref": "0x1b34c20b1a0"
+      },
+      "json": {
+       "ref": "0x1b34bf12200"
+      },
+      "io": {
+       "ref": "0x1b34bee0630"
+      },
+      "text": {
+       "ref": "0x1b34bf53f30"
+      },
+      "rows": {
+       "ref": "0x1b34c221000"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1b34c20b1a0": {
+     "id": "0x1b34c20b1a0",
+     "type": "module",
+     "repr": "csv"
+    },
+    "0x1b34bf12200": {
+     "id": "0x1b34bf12200",
+     "type": "module",
+     "repr": "json"
+    },
+    "0x1b34bee0630": {
+     "id": "0x1b34bee0630",
+     "type": "module",
+     "repr": "io"
+    },
+    "0x1b34bf53f30": {
+     "id": "0x1b34bf53f30",
+     "type": "str",
+     "repr": "'name,age\\n지기,29\\n영희,25\\n'"
+    },
+    "0x1b34c221000": {
+     "id": "0x1b34c221000",
+     "type": "list",
+     "repr": "[{'name': '지기', 'age': '29'}, {'name': '영희', 'a…",
+     "items": [
+      {
+       "ref": "0x1b34c221180"
+      },
+      {
+       "ref": "0x1b34c221200"
+      }
+     ]
+    },
+    "0x1b34c221180": {
+     "id": "0x1b34c221180",
+     "type": "dict",
+     "repr": "{'name': '지기', 'age': '29'}",
+     "entries": [
+      [
+       {
+        "ref": "0x1b34c210ff0"
+       },
+       {
+        "ref": "0x1b34c221070"
+       }
+      ],
+      [
+       {
+        "ref": "0x1b34c2124f0"
+       },
+       {
+        "ref": "0x1b34c212520"
+       }
+      ]
+     ]
+    },
+    "0x1b34c210ff0": {
+     "id": "0x1b34c210ff0",
+     "type": "str",
+     "repr": "'name'"
+    },
+    "0x1b34c221070": {
+     "id": "0x1b34c221070",
+     "type": "str",
+     "repr": "'지기'"
+    },
+    "0x1b34c2124f0": {
+     "id": "0x1b34c2124f0",
+     "type": "str",
+     "repr": "'age'"
+    },
+    "0x1b34c212520": {
+     "id": "0x1b34c212520",
+     "type": "str",
+     "repr": "'29'"
+    },
+    "0x1b34c221200": {
+     "id": "0x1b34c221200",
+     "type": "dict",
+     "repr": "{'name': '영희', 'age': '25'}",
+     "entries": [
+      [
+       {
+        "ref": "0x1b34c210ff0"
+       },
+       {
+        "ref": "0x1b34c221130"
+       }
+      ],
+      [
+       {
+        "ref": "0x1b34c2124f0"
+       },
+       {
+        "ref": "0x1b34c212550"
+       }
+      ]
+     ]
+    },
+    "0x1b34c221130": {
+     "id": "0x1b34c221130",
+     "type": "str",
+     "repr": "'영희'"
+    },
+    "0x1b34c212550": {
+     "id": "0x1b34c212550",
+     "type": "str",
+     "repr": "'25'"
+    }
+   },
+   "stdout": "[{'name': '지기', 'age': '29'}, {'name': '영희', 'age': '25'}]\n",
+   "note": "CSV 의 값은 전부 문자열이다 → TypeError"
+  },
+  {
+   "line": 5,
+   "event": "exception",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "csv": {
+       "ref": "0x1b34c20b1a0"
+      },
+      "json": {
+       "ref": "0x1b34bf12200"
+      },
+      "io": {
+       "ref": "0x1b34bee0630"
+      },
+      "text": {
+       "ref": "0x1b34bf53f30"
+      },
+      "rows": {
+       "ref": "0x1b34c221000"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1b34c20b1a0": {
+     "id": "0x1b34c20b1a0",
+     "type": "module",
+     "repr": "csv"
+    },
+    "0x1b34bf12200": {
+     "id": "0x1b34bf12200",
+     "type": "module",
+     "repr": "json"
+    },
+    "0x1b34bee0630": {
+     "id": "0x1b34bee0630",
+     "type": "module",
+     "repr": "io"
+    },
+    "0x1b34bf53f30": {
+     "id": "0x1b34bf53f30",
+     "type": "str",
+     "repr": "'name,age\\n지기,29\\n영희,25\\n'"
+    },
+    "0x1b34c221000": {
+     "id": "0x1b34c221000",
+     "type": "list",
+     "repr": "[{'name': '지기', 'age': '29'}, {'name': '영희', 'a…",
+     "items": [
+      {
+       "ref": "0x1b34c221180"
+      },
+      {
+       "ref": "0x1b34c221200"
+      }
+     ]
+    },
+    "0x1b34c221180": {
+     "id": "0x1b34c221180",
+     "type": "dict",
+     "repr": "{'name': '지기', 'age': '29'}",
+     "entries": [
+      [
+       {
+        "ref": "0x1b34c210ff0"
+       },
+       {
+        "ref": "0x1b34c221070"
+       }
+      ],
+      [
+       {
+        "ref": "0x1b34c2124f0"
+       },
+       {
+        "ref": "0x1b34c212520"
+       }
+      ]
+     ]
+    },
+    "0x1b34c210ff0": {
+     "id": "0x1b34c210ff0",
+     "type": "str",
+     "repr": "'name'"
+    },
+    "0x1b34c221070": {
+     "id": "0x1b34c221070",
+     "type": "str",
+     "repr": "'지기'"
+    },
+    "0x1b34c2124f0": {
+     "id": "0x1b34c2124f0",
+     "type": "str",
+     "repr": "'age'"
+    },
+    "0x1b34c212520": {
+     "id": "0x1b34c212520",
+     "type": "str",
+     "repr": "'29'"
+    },
+    "0x1b34c221200": {
+     "id": "0x1b34c221200",
+     "type": "dict",
+     "repr": "{'name': '영희', 'age': '25'}",
+     "entries": [
+      [
+       {
+        "ref": "0x1b34c210ff0"
+       },
+       {
+        "ref": "0x1b34c221130"
+       }
+      ],
+      [
+       {
+        "ref": "0x1b34c2124f0"
+       },
+       {
+        "ref": "0x1b34c212550"
+       }
+      ]
+     ]
+    },
+    "0x1b34c221130": {
+     "id": "0x1b34c221130",
+     "type": "str",
+     "repr": "'영희'"
+    },
+    "0x1b34c212550": {
+     "id": "0x1b34c212550",
+     "type": "str",
+     "repr": "'25'"
+    }
+   },
+   "stdout": "[{'name': '지기', 'age': '29'}, {'name': '영희', 'age': '25'}]\n",
+   "exc": "TypeError: can only concatenate str (not \"int\") to str"
+  },
+  {
+   "line": 5,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "csv": {
+       "ref": "0x1b34c20b1a0"
+      },
+      "json": {
+       "ref": "0x1b34bf12200"
+      },
+      "io": {
+       "ref": "0x1b34bee0630"
+      },
+      "text": {
+       "ref": "0x1b34bf53f30"
+      },
+      "rows": {
+       "ref": "0x1b34c221000"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1b34c20b1a0": {
+     "id": "0x1b34c20b1a0",
+     "type": "module",
+     "repr": "csv"
+    },
+    "0x1b34bf12200": {
+     "id": "0x1b34bf12200",
+     "type": "module",
+     "repr": "json"
+    },
+    "0x1b34bee0630": {
+     "id": "0x1b34bee0630",
+     "type": "module",
+     "repr": "io"
+    },
+    "0x1b34bf53f30": {
+     "id": "0x1b34bf53f30",
+     "type": "str",
+     "repr": "'name,age\\n지기,29\\n영희,25\\n'"
+    },
+    "0x1b34c221000": {
+     "id": "0x1b34c221000",
+     "type": "list",
+     "repr": "[{'name': '지기', 'age': '29'}, {'name': '영희', 'a…",
+     "items": [
+      {
+       "ref": "0x1b34c221180"
+      },
+      {
+       "ref": "0x1b34c221200"
+      }
+     ]
+    },
+    "0x1b34c221180": {
+     "id": "0x1b34c221180",
+     "type": "dict",
+     "repr": "{'name': '지기', 'age': '29'}",
+     "entries": [
+      [
+       {
+        "ref": "0x1b34c210ff0"
+       },
+       {
+        "ref": "0x1b34c221070"
+       }
+      ],
+      [
+       {
+        "ref": "0x1b34c2124f0"
+       },
+       {
+        "ref": "0x1b34c212520"
+       }
+      ]
+     ]
+    },
+    "0x1b34c210ff0": {
+     "id": "0x1b34c210ff0",
+     "type": "str",
+     "repr": "'name'"
+    },
+    "0x1b34c221070": {
+     "id": "0x1b34c221070",
+     "type": "str",
+     "repr": "'지기'"
+    },
+    "0x1b34c2124f0": {
+     "id": "0x1b34c2124f0",
+     "type": "str",
+     "repr": "'age'"
+    },
+    "0x1b34c212520": {
+     "id": "0x1b34c212520",
+     "type": "str",
+     "repr": "'29'"
+    },
+    "0x1b34c221200": {
+     "id": "0x1b34c221200",
+     "type": "dict",
+     "repr": "{'name': '영희', 'age': '25'}",
+     "entries": [
+      [
+       {
+        "ref": "0x1b34c210ff0"
+       },
+       {
+        "ref": "0x1b34c221130"
+       }
+      ],
+      [
+       {
+        "ref": "0x1b34c2124f0"
+       },
+       {
+        "ref": "0x1b34c212550"
+       }
+      ]
+     ]
+    },
+    "0x1b34c221130": {
+     "id": "0x1b34c221130",
+     "type": "str",
+     "repr": "'영희'"
+    },
+    "0x1b34c212550": {
+     "id": "0x1b34c212550",
+     "type": "str",
+     "repr": "'25'"
+    }
+   },
+   "stdout": "[{'name': '지기', 'age': '29'}, {'name': '영희', 'age': '25'}]\n"
+  },
+  {
+   "line": 5,
+   "event": "exception",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "csv": {
+       "ref": "0x1b34c20b1a0"
+      },
+      "json": {
+       "ref": "0x1b34bf12200"
+      },
+      "io": {
+       "ref": "0x1b34bee0630"
+      },
+      "text": {
+       "ref": "0x1b34bf53f30"
+      },
+      "rows": {
+       "ref": "0x1b34c221000"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1b34c20b1a0": {
+     "id": "0x1b34c20b1a0",
+     "type": "module",
+     "repr": "csv"
+    },
+    "0x1b34bf12200": {
+     "id": "0x1b34bf12200",
+     "type": "module",
+     "repr": "json"
+    },
+    "0x1b34bee0630": {
+     "id": "0x1b34bee0630",
+     "type": "module",
+     "repr": "io"
+    },
+    "0x1b34bf53f30": {
+     "id": "0x1b34bf53f30",
+     "type": "str",
+     "repr": "'name,age\\n지기,29\\n영희,25\\n'"
+    },
+    "0x1b34c221000": {
+     "id": "0x1b34c221000",
+     "type": "list",
+     "repr": "[{'name': '지기', 'age': '29'}, {'name': '영희', 'a…",
+     "items": [
+      {
+       "ref": "0x1b34c221180"
+      },
+      {
+       "ref": "0x1b34c221200"
+      }
+     ]
+    },
+    "0x1b34c221180": {
+     "id": "0x1b34c221180",
+     "type": "dict",
+     "repr": "{'name': '지기', 'age': '29'}",
+     "entries": [
+      [
+       {
+        "ref": "0x1b34c210ff0"
+       },
+       {
+        "ref": "0x1b34c221070"
+       }
+      ],
+      [
+       {
+        "ref": "0x1b34c2124f0"
+       },
+       {
+        "ref": "0x1b34c212520"
+       }
+      ]
+     ]
+    },
+    "0x1b34c210ff0": {
+     "id": "0x1b34c210ff0",
+     "type": "str",
+     "repr": "'name'"
+    },
+    "0x1b34c221070": {
+     "id": "0x1b34c221070",
+     "type": "str",
+     "repr": "'지기'"
+    },
+    "0x1b34c2124f0": {
+     "id": "0x1b34c2124f0",
+     "type": "str",
+     "repr": "'age'"
+    },
+    "0x1b34c212520": {
+     "id": "0x1b34c212520",
+     "type": "str",
+     "repr": "'29'"
+    },
+    "0x1b34c221200": {
+     "id": "0x1b34c221200",
+     "type": "dict",
+     "repr": "{'name': '영희', 'age': '25'}",
+     "entries": [
+      [
+       {
+        "ref": "0x1b34c210ff0"
+       },
+       {
+        "ref": "0x1b34c221130"
+       }
+      ],
+      [
+       {
+        "ref": "0x1b34c2124f0"
+       },
+       {
+        "ref": "0x1b34c212550"
+       }
+      ]
+     ]
+    },
+    "0x1b34c221130": {
+     "id": "0x1b34c221130",
+     "type": "str",
+     "repr": "'영희'"
+    },
+    "0x1b34c212550": {
+     "id": "0x1b34c212550",
+     "type": "str",
+     "repr": "'25'"
+    }
+   },
+   "stdout": "[{'name': '지기', 'age': '29'}, {'name': '영희', 'age': '25'}]\n",
+   "exc": "TypeError: can only concatenate str (not \"int\") to str"
+  }
+ ],
+ "v": 1
+}

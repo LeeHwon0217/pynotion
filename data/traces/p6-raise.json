@@ -1,0 +1,904 @@
+{
+ "id": "p6-raise",
+ "code": "class InsufficientFunds(Exception):\n    pass\n\ndef withdraw(balance, amount):\n    if amount > balance:\n        raise InsufficientFunds(f\"잔액 {balance}, 요청 {amount}\")\n    return balance - amount\n\ntry:\n    withdraw(100, 150)\nexcept InsufficientFunds as e:\n    print(\"실패:\", e)\n\ntry:\n    try:\n        int(\"x\")\n    except ValueError as e:\n        raise RuntimeError(\"설정 파싱 실패\") from e\nexcept RuntimeError as e:\n    print(e, \"| 원인:\", repr(e.__cause__))",
+ "steps": [
+  {
+   "line": 0,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 0,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": "",
+   "note": "Exception 을 상속하면 내 예외 클래스가 된다"
+  },
+  {
+   "line": 1,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "InsufficientFunds",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": "",
+   "note": "Exception 을 상속하면 내 예외 클래스가 된다"
+  },
+  {
+   "line": 1,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "InsufficientFunds",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": "",
+   "note": "Exception 을 상속하면 내 예외 클래스가 된다"
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "InsufficientFunds",
+     "line": 2,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 2,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    },
+    {
+     "fn": "InsufficientFunds",
+     "line": 2,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "InsufficientFunds": {
+       "ref": "0x1c8bc881800"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1c8bc881800": {
+     "id": "0x1c8bc881800",
+     "type": "type",
+     "repr": "InsufficientFunds"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 9,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 9,
+     "locals": {
+      "InsufficientFunds": {
+       "ref": "0x1c8bc881800"
+      },
+      "withdraw": {
+       "ref": "0x1c8bc9fcae0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1c8bc881800": {
+     "id": "0x1c8bc881800",
+     "type": "type",
+     "repr": "InsufficientFunds"
+    },
+    "0x1c8bc9fcae0": {
+     "id": "0x1c8bc9fcae0",
+     "type": "function",
+     "repr": "withdraw"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 10,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 10,
+     "locals": {
+      "InsufficientFunds": {
+       "ref": "0x1c8bc881800"
+      },
+      "withdraw": {
+       "ref": "0x1c8bc9fcae0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1c8bc881800": {
+     "id": "0x1c8bc881800",
+     "type": "type",
+     "repr": "InsufficientFunds"
+    },
+    "0x1c8bc9fcae0": {
+     "id": "0x1c8bc9fcae0",
+     "type": "function",
+     "repr": "withdraw"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 4,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 10,
+     "locals": {
+      "InsufficientFunds": {
+       "ref": "0x1c8bc881800"
+      },
+      "withdraw": {
+       "ref": "0x1c8bc9fcae0"
+      }
+     }
+    },
+    {
+     "fn": "withdraw",
+     "line": 4,
+     "locals": {
+      "balance": {
+       "ref": "0x7ffd7f2b5618"
+      },
+      "amount": {
+       "ref": "0x7ffd7f2b5c58"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1c8bc881800": {
+     "id": "0x1c8bc881800",
+     "type": "type",
+     "repr": "InsufficientFunds"
+    },
+    "0x1c8bc9fcae0": {
+     "id": "0x1c8bc9fcae0",
+     "type": "function",
+     "repr": "withdraw"
+    },
+    "0x7ffd7f2b5618": {
+     "id": "0x7ffd7f2b5618",
+     "type": "int",
+     "repr": "100"
+    },
+    "0x7ffd7f2b5c58": {
+     "id": "0x7ffd7f2b5c58",
+     "type": "int",
+     "repr": "150"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 10,
+     "locals": {
+      "InsufficientFunds": {
+       "ref": "0x1c8bc881800"
+      },
+      "withdraw": {
+       "ref": "0x1c8bc9fcae0"
+      }
+     }
+    },
+    {
+     "fn": "withdraw",
+     "line": 5,
+     "locals": {
+      "balance": {
+       "ref": "0x7ffd7f2b5618"
+      },
+      "amount": {
+       "ref": "0x7ffd7f2b5c58"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1c8bc881800": {
+     "id": "0x1c8bc881800",
+     "type": "type",
+     "repr": "InsufficientFunds"
+    },
+    "0x1c8bc9fcae0": {
+     "id": "0x1c8bc9fcae0",
+     "type": "function",
+     "repr": "withdraw"
+    },
+    "0x7ffd7f2b5618": {
+     "id": "0x7ffd7f2b5618",
+     "type": "int",
+     "repr": "100"
+    },
+    "0x7ffd7f2b5c58": {
+     "id": "0x7ffd7f2b5c58",
+     "type": "int",
+     "repr": "150"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 6,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 10,
+     "locals": {
+      "InsufficientFunds": {
+       "ref": "0x1c8bc881800"
+      },
+      "withdraw": {
+       "ref": "0x1c8bc9fcae0"
+      }
+     }
+    },
+    {
+     "fn": "withdraw",
+     "line": 6,
+     "locals": {
+      "balance": {
+       "ref": "0x7ffd7f2b5618"
+      },
+      "amount": {
+       "ref": "0x7ffd7f2b5c58"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1c8bc881800": {
+     "id": "0x1c8bc881800",
+     "type": "type",
+     "repr": "InsufficientFunds"
+    },
+    "0x1c8bc9fcae0": {
+     "id": "0x1c8bc9fcae0",
+     "type": "function",
+     "repr": "withdraw"
+    },
+    "0x7ffd7f2b5618": {
+     "id": "0x7ffd7f2b5618",
+     "type": "int",
+     "repr": "100"
+    },
+    "0x7ffd7f2b5c58": {
+     "id": "0x7ffd7f2b5c58",
+     "type": "int",
+     "repr": "150"
+    }
+   },
+   "stdout": "",
+   "note": "raise 로 직접 발생시킨다"
+  },
+  {
+   "line": 6,
+   "event": "exception",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 10,
+     "locals": {
+      "InsufficientFunds": {
+       "ref": "0x1c8bc881800"
+      },
+      "withdraw": {
+       "ref": "0x1c8bc9fcae0"
+      }
+     }
+    },
+    {
+     "fn": "withdraw",
+     "line": 6,
+     "locals": {
+      "balance": {
+       "ref": "0x7ffd7f2b5618"
+      },
+      "amount": {
+       "ref": "0x7ffd7f2b5c58"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1c8bc881800": {
+     "id": "0x1c8bc881800",
+     "type": "type",
+     "repr": "InsufficientFunds"
+    },
+    "0x1c8bc9fcae0": {
+     "id": "0x1c8bc9fcae0",
+     "type": "function",
+     "repr": "withdraw"
+    },
+    "0x7ffd7f2b5618": {
+     "id": "0x7ffd7f2b5618",
+     "type": "int",
+     "repr": "100"
+    },
+    "0x7ffd7f2b5c58": {
+     "id": "0x7ffd7f2b5c58",
+     "type": "int",
+     "repr": "150"
+    }
+   },
+   "stdout": "",
+   "exc": "InsufficientFunds: 잔액 100, 요청 150"
+  },
+  {
+   "line": 6,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 10,
+     "locals": {
+      "InsufficientFunds": {
+       "ref": "0x1c8bc881800"
+      },
+      "withdraw": {
+       "ref": "0x1c8bc9fcae0"
+      }
+     }
+    },
+    {
+     "fn": "withdraw",
+     "line": 6,
+     "locals": {
+      "balance": {
+       "ref": "0x7ffd7f2b5618"
+      },
+      "amount": {
+       "ref": "0x7ffd7f2b5c58"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1c8bc881800": {
+     "id": "0x1c8bc881800",
+     "type": "type",
+     "repr": "InsufficientFunds"
+    },
+    "0x1c8bc9fcae0": {
+     "id": "0x1c8bc9fcae0",
+     "type": "function",
+     "repr": "withdraw"
+    },
+    "0x7ffd7f2b5618": {
+     "id": "0x7ffd7f2b5618",
+     "type": "int",
+     "repr": "100"
+    },
+    "0x7ffd7f2b5c58": {
+     "id": "0x7ffd7f2b5c58",
+     "type": "int",
+     "repr": "150"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 10,
+   "event": "exception",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 10,
+     "locals": {
+      "InsufficientFunds": {
+       "ref": "0x1c8bc881800"
+      },
+      "withdraw": {
+       "ref": "0x1c8bc9fcae0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1c8bc881800": {
+     "id": "0x1c8bc881800",
+     "type": "type",
+     "repr": "InsufficientFunds"
+    },
+    "0x1c8bc9fcae0": {
+     "id": "0x1c8bc9fcae0",
+     "type": "function",
+     "repr": "withdraw"
+    }
+   },
+   "stdout": "",
+   "exc": "InsufficientFunds: 잔액 100, 요청 150"
+  },
+  {
+   "line": 11,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 11,
+     "locals": {
+      "InsufficientFunds": {
+       "ref": "0x1c8bc881800"
+      },
+      "withdraw": {
+       "ref": "0x1c8bc9fcae0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1c8bc881800": {
+     "id": "0x1c8bc881800",
+     "type": "type",
+     "repr": "InsufficientFunds"
+    },
+    "0x1c8bc9fcae0": {
+     "id": "0x1c8bc9fcae0",
+     "type": "function",
+     "repr": "withdraw"
+    }
+   },
+   "stdout": "",
+   "note": "이름으로 정확히 잡는다"
+  },
+  {
+   "line": 12,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 12,
+     "locals": {
+      "InsufficientFunds": {
+       "ref": "0x1c8bc881800"
+      },
+      "withdraw": {
+       "ref": "0x1c8bc9fcae0"
+      },
+      "e": {
+       "ref": "0x1c8bc753ee0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1c8bc881800": {
+     "id": "0x1c8bc881800",
+     "type": "type",
+     "repr": "InsufficientFunds"
+    },
+    "0x1c8bc9fcae0": {
+     "id": "0x1c8bc9fcae0",
+     "type": "function",
+     "repr": "withdraw"
+    },
+    "0x1c8bc753ee0": {
+     "id": "0x1c8bc753ee0",
+     "type": "InsufficientFunds",
+     "repr": "InsufficientFunds('잔액 100, 요청 150')",
+     "fields": {}
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 14,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 14,
+     "locals": {
+      "InsufficientFunds": {
+       "ref": "0x1c8bc881800"
+      },
+      "withdraw": {
+       "ref": "0x1c8bc9fcae0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1c8bc881800": {
+     "id": "0x1c8bc881800",
+     "type": "type",
+     "repr": "InsufficientFunds"
+    },
+    "0x1c8bc9fcae0": {
+     "id": "0x1c8bc9fcae0",
+     "type": "function",
+     "repr": "withdraw"
+    }
+   },
+   "stdout": "실패: 잔액 100, 요청 150\n"
+  },
+  {
+   "line": 15,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 15,
+     "locals": {
+      "InsufficientFunds": {
+       "ref": "0x1c8bc881800"
+      },
+      "withdraw": {
+       "ref": "0x1c8bc9fcae0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1c8bc881800": {
+     "id": "0x1c8bc881800",
+     "type": "type",
+     "repr": "InsufficientFunds"
+    },
+    "0x1c8bc9fcae0": {
+     "id": "0x1c8bc9fcae0",
+     "type": "function",
+     "repr": "withdraw"
+    }
+   },
+   "stdout": "실패: 잔액 100, 요청 150\n"
+  },
+  {
+   "line": 16,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 16,
+     "locals": {
+      "InsufficientFunds": {
+       "ref": "0x1c8bc881800"
+      },
+      "withdraw": {
+       "ref": "0x1c8bc9fcae0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1c8bc881800": {
+     "id": "0x1c8bc881800",
+     "type": "type",
+     "repr": "InsufficientFunds"
+    },
+    "0x1c8bc9fcae0": {
+     "id": "0x1c8bc9fcae0",
+     "type": "function",
+     "repr": "withdraw"
+    }
+   },
+   "stdout": "실패: 잔액 100, 요청 150\n"
+  },
+  {
+   "line": 16,
+   "event": "exception",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 16,
+     "locals": {
+      "InsufficientFunds": {
+       "ref": "0x1c8bc881800"
+      },
+      "withdraw": {
+       "ref": "0x1c8bc9fcae0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1c8bc881800": {
+     "id": "0x1c8bc881800",
+     "type": "type",
+     "repr": "InsufficientFunds"
+    },
+    "0x1c8bc9fcae0": {
+     "id": "0x1c8bc9fcae0",
+     "type": "function",
+     "repr": "withdraw"
+    }
+   },
+   "stdout": "실패: 잔액 100, 요청 150\n",
+   "exc": "ValueError: invalid literal for int() with base 10: 'x'"
+  },
+  {
+   "line": 17,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 17,
+     "locals": {
+      "InsufficientFunds": {
+       "ref": "0x1c8bc881800"
+      },
+      "withdraw": {
+       "ref": "0x1c8bc9fcae0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1c8bc881800": {
+     "id": "0x1c8bc881800",
+     "type": "type",
+     "repr": "InsufficientFunds"
+    },
+    "0x1c8bc9fcae0": {
+     "id": "0x1c8bc9fcae0",
+     "type": "function",
+     "repr": "withdraw"
+    }
+   },
+   "stdout": "실패: 잔액 100, 요청 150\n"
+  },
+  {
+   "line": 18,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 18,
+     "locals": {
+      "InsufficientFunds": {
+       "ref": "0x1c8bc881800"
+      },
+      "withdraw": {
+       "ref": "0x1c8bc9fcae0"
+      },
+      "e": {
+       "ref": "0x1c8bc9e9000"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1c8bc881800": {
+     "id": "0x1c8bc881800",
+     "type": "type",
+     "repr": "InsufficientFunds"
+    },
+    "0x1c8bc9fcae0": {
+     "id": "0x1c8bc9fcae0",
+     "type": "function",
+     "repr": "withdraw"
+    },
+    "0x1c8bc9e9000": {
+     "id": "0x1c8bc9e9000",
+     "type": "ValueError",
+     "repr": "ValueError(\"invalid literal for int() with base…",
+     "fields": {}
+    }
+   },
+   "stdout": "실패: 잔액 100, 요청 150\n",
+   "note": "from 으로 원인을 연결 — 트레이스백에 둘 다 남는다"
+  },
+  {
+   "line": 18,
+   "event": "exception",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 18,
+     "locals": {
+      "InsufficientFunds": {
+       "ref": "0x1c8bc881800"
+      },
+      "withdraw": {
+       "ref": "0x1c8bc9fcae0"
+      },
+      "e": {
+       "ref": "0x1c8bc9e9000"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1c8bc881800": {
+     "id": "0x1c8bc881800",
+     "type": "type",
+     "repr": "InsufficientFunds"
+    },
+    "0x1c8bc9fcae0": {
+     "id": "0x1c8bc9fcae0",
+     "type": "function",
+     "repr": "withdraw"
+    },
+    "0x1c8bc9e9000": {
+     "id": "0x1c8bc9e9000",
+     "type": "ValueError",
+     "repr": "ValueError(\"invalid literal for int() with base…",
+     "fields": {}
+    }
+   },
+   "stdout": "실패: 잔액 100, 요청 150\n",
+   "exc": "RuntimeError: 설정 파싱 실패"
+  },
+  {
+   "line": 19,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 19,
+     "locals": {
+      "InsufficientFunds": {
+       "ref": "0x1c8bc881800"
+      },
+      "withdraw": {
+       "ref": "0x1c8bc9fcae0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1c8bc881800": {
+     "id": "0x1c8bc881800",
+     "type": "type",
+     "repr": "InsufficientFunds"
+    },
+    "0x1c8bc9fcae0": {
+     "id": "0x1c8bc9fcae0",
+     "type": "function",
+     "repr": "withdraw"
+    }
+   },
+   "stdout": "실패: 잔액 100, 요청 150\n"
+  },
+  {
+   "line": 20,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 20,
+     "locals": {
+      "InsufficientFunds": {
+       "ref": "0x1c8bc881800"
+      },
+      "withdraw": {
+       "ref": "0x1c8bc9fcae0"
+      },
+      "e": {
+       "ref": "0x1c8bc9e9300"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1c8bc881800": {
+     "id": "0x1c8bc881800",
+     "type": "type",
+     "repr": "InsufficientFunds"
+    },
+    "0x1c8bc9fcae0": {
+     "id": "0x1c8bc9fcae0",
+     "type": "function",
+     "repr": "withdraw"
+    },
+    "0x1c8bc9e9300": {
+     "id": "0x1c8bc9e9300",
+     "type": "RuntimeError",
+     "repr": "RuntimeError('설정 파싱 실패')",
+     "fields": {}
+    }
+   },
+   "stdout": "실패: 잔액 100, 요청 150\n"
+  },
+  {
+   "line": 20,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 20,
+     "locals": {
+      "InsufficientFunds": {
+       "ref": "0x1c8bc881800"
+      },
+      "withdraw": {
+       "ref": "0x1c8bc9fcae0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1c8bc881800": {
+     "id": "0x1c8bc881800",
+     "type": "type",
+     "repr": "InsufficientFunds"
+    },
+    "0x1c8bc9fcae0": {
+     "id": "0x1c8bc9fcae0",
+     "type": "function",
+     "repr": "withdraw"
+    }
+   },
+   "stdout": "실패: 잔액 100, 요청 150\n설정 파싱 실패 | 원인: ValueError(\"invalid literal for int() with base 10: 'x'\")\n"
+  }
+ ],
+ "v": 1
+}

@@ -51,14 +51,14 @@
      "line": 6,
      "locals": {
       "main": {
-       "ref": "0x240f37eca40"
+       "ref": "0x17ff7dfca40"
       }
      }
     }
    ],
    "heap": {
-    "0x240f37eca40": {
-     "id": "0x240f37eca40",
+    "0x17ff7dfca40": {
+     "id": "0x17ff7dfca40",
      "type": "function",
      "repr": "main"
     }
@@ -75,14 +75,14 @@
      "line": 7,
      "locals": {
       "main": {
-       "ref": "0x240f37eca40"
+       "ref": "0x17ff7dfca40"
       }
      }
     }
    ],
    "heap": {
-    "0x240f37eca40": {
-     "id": "0x240f37eca40",
+    "0x17ff7dfca40": {
+     "id": "0x17ff7dfca40",
      "type": "function",
      "repr": "main"
     }
@@ -98,7 +98,7 @@
      "line": 7,
      "locals": {
       "main": {
-       "ref": "0x240f37eca40"
+       "ref": "0x17ff7dfca40"
       }
      }
     },
@@ -109,8 +109,8 @@
     }
    ],
    "heap": {
-    "0x240f37eca40": {
-     "id": "0x240f37eca40",
+    "0x17ff7dfca40": {
+     "id": "0x17ff7dfca40",
      "type": "function",
      "repr": "main"
     }
@@ -126,7 +126,7 @@
      "line": 7,
      "locals": {
       "main": {
-       "ref": "0x240f37eca40"
+       "ref": "0x17ff7dfca40"
       }
      }
     },
@@ -137,8 +137,8 @@
     }
    ],
    "heap": {
-    "0x240f37eca40": {
-     "id": "0x240f37eca40",
+    "0x17ff7dfca40": {
+     "id": "0x17ff7dfca40",
      "type": "function",
      "repr": "main"
     }
@@ -154,7 +154,7 @@
      "line": 7,
      "locals": {
       "main": {
-       "ref": "0x240f37eca40"
+       "ref": "0x17ff7dfca40"
       }
      }
     },
@@ -165,8 +165,8 @@
     }
    ],
    "heap": {
-    "0x240f37eca40": {
-     "id": "0x240f37eca40",
+    "0x17ff7dfca40": {
+     "id": "0x17ff7dfca40",
      "type": "function",
      "repr": "main"
     }
@@ -182,14 +182,14 @@
      "line": 7,
      "locals": {
       "main": {
-       "ref": "0x240f37eca40"
+       "ref": "0x17ff7dfca40"
       }
      }
     }
    ],
    "heap": {
-    "0x240f37eca40": {
-     "id": "0x240f37eca40",
+    "0x17ff7dfca40": {
+     "id": "0x17ff7dfca40",
      "type": "function",
      "repr": "main"
     }

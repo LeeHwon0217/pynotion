@@ -37,14 +37,14 @@
      "line": 2,
      "locals": {
       "nums": {
-       "ref": "0x253fb4af4c0"
+       "ref": "0x1f5ea8af4c0"
       }
      }
     }
    ],
    "heap": {
-    "0x253fb4af4c0": {
-     "id": "0x253fb4af4c0",
+    "0x1f5ea8af4c0": {
+     "id": "0x1f5ea8af4c0",
      "type": "list",
      "repr": "[1, 2, 3, 4, 5]",
      "items": [
@@ -103,7 +103,7 @@
      "line": 2,
      "locals": {
       "nums": {
-       "ref": "0x253fb4af4c0"
+       "ref": "0x1f5ea8af4c0"
       },
       "n": {
        "ref": "0x7ffd7f2b49b8"
@@ -112,8 +112,8 @@
     }
    ],
    "heap": {
-    "0x253fb4af4c0": {
-     "id": "0x253fb4af4c0",
+    "0x1f5ea8af4c0": {
+     "id": "0x1f5ea8af4c0",
      "type": "list",
      "repr": "[1, 2, 3, 4, 5]",
      "items": [
@@ -172,7 +172,7 @@
      "line": 2,
      "locals": {
       "nums": {
-       "ref": "0x253fb4af4c0"
+       "ref": "0x1f5ea8af4c0"
       },
       "n": {
        "ref": "0x7ffd7f2b49d8"
@@ -181,8 +181,8 @@
     }
    ],
    "heap": {
-    "0x253fb4af4c0": {
-     "id": "0x253fb4af4c0",
+    "0x1f5ea8af4c0": {
+     "id": "0x1f5ea8af4c0",
      "type": "list",
      "repr": "[1, 2, 3, 4, 5]",
      "items": [
@@ -241,7 +241,7 @@
      "line": 2,
      "locals": {
       "nums": {
-       "ref": "0x253fb4af4c0"
+       "ref": "0x1f5ea8af4c0"
       },
       "n": {
        "ref": "0x7ffd7f2b49f8"
@@ -250,8 +250,8 @@
     }
    ],
    "heap": {
-    "0x253fb4af4c0": {
-     "id": "0x253fb4af4c0",
+    "0x1f5ea8af4c0": {
+     "id": "0x1f5ea8af4c0",
      "type": "list",
      "repr": "[1, 2, 3, 4, 5]",
      "items": [
@@ -310,7 +310,7 @@
      "line": 2,
      "locals": {
       "nums": {
-       "ref": "0x253fb4af4c0"
+       "ref": "0x1f5ea8af4c0"
       },
       "n": {
        "ref": "0x7ffd7f2b4a18"
@@ -319,8 +319,8 @@
     }
    ],
    "heap": {
-    "0x253fb4af4c0": {
-     "id": "0x253fb4af4c0",
+    "0x1f5ea8af4c0": {
+     "id": "0x1f5ea8af4c0",
      "type": "list",
      "repr": "[1, 2, 3, 4, 5]",
      "items": [
@@ -379,7 +379,7 @@
      "line": 2,
      "locals": {
       "nums": {
-       "ref": "0x253fb4af4c0"
+       "ref": "0x1f5ea8af4c0"
       },
       "n": {
        "ref": "0x7ffd7f2b4a38"
@@ -388,8 +388,8 @@
     }
    ],
    "heap": {
-    "0x253fb4af4c0": {
-     "id": "0x253fb4af4c0",
+    "0x1f5ea8af4c0": {
+     "id": "0x1f5ea8af4c0",
      "type": "list",
      "repr": "[1, 2, 3, 4, 5]",
      "items": [
@@ -448,17 +448,17 @@
      "line": 3,
      "locals": {
       "nums": {
-       "ref": "0x253fb4af4c0"
+       "ref": "0x1f5ea8af4c0"
       },
       "squares": {
-       "ref": "0x253fb4bc7c0"
+       "ref": "0x1f5ea8bc7c0"
       }
      }
     }
    ],
    "heap": {
-    "0x253fb4af4c0": {
-     "id": "0x253fb4af4c0",
+    "0x1f5ea8af4c0": {
+     "id": "0x1f5ea8af4c0",
      "type": "list",
      "repr": "[1, 2, 3, 4, 5]",
      "items": [
@@ -504,8 +504,8 @@
      "type": "int",
      "repr": "5"
     },
-    "0x253fb4bc7c0": {
-     "id": "0x253fb4bc7c0",
+    "0x1f5ea8bc7c0": {
+     "id": "0x1f5ea8bc7c0",
      "type": "list",
      "repr": "[1, 4, 9, 16, 25]",
      "items": [
@@ -553,17 +553,17 @@
      "line": 4,
      "locals": {
       "nums": {
-       "ref": "0x253fb4af4c0"
+       "ref": "0x1f5ea8af4c0"
       },
       "squares": {
-       "ref": "0x253fb4bc7c0"
+       "ref": "0x1f5ea8bc7c0"
       }
      }
     }
    ],
    "heap": {
-    "0x253fb4af4c0": {
-     "id": "0x253fb4af4c0",
+    "0x1f5ea8af4c0": {
+     "id": "0x1f5ea8af4c0",
      "type": "list",
      "repr": "[1, 2, 3, 4, 5]",
      "items": [
@@ -609,8 +609,8 @@
      "type": "int",
      "repr": "5"
     },
-    "0x253fb4bc7c0": {
-     "id": "0x253fb4bc7c0",
+    "0x1f5ea8bc7c0": {
+     "id": "0x1f5ea8bc7c0",
      "type": "list",
      "repr": "[1, 4, 9, 16, 25]",
      "items": [
@@ -659,10 +659,10 @@
      "line": 4,
      "locals": {
       "nums": {
-       "ref": "0x253fb4af4c0"
+       "ref": "0x1f5ea8af4c0"
       },
       "squares": {
-       "ref": "0x253fb4bc7c0"
+       "ref": "0x1f5ea8bc7c0"
       },
       "n": {
        "ref": "0x7ffd7f2b49b8"
@@ -671,8 +671,8 @@
     }
    ],
    "heap": {
-    "0x253fb4af4c0": {
-     "id": "0x253fb4af4c0",
+    "0x1f5ea8af4c0": {
+     "id": "0x1f5ea8af4c0",
      "type": "list",
      "repr": "[1, 2, 3, 4, 5]",
      "items": [
@@ -718,8 +718,8 @@
      "type": "int",
      "repr": "5"
     },
-    "0x253fb4bc7c0": {
-     "id": "0x253fb4bc7c0",
+    "0x1f5ea8bc7c0": {
+     "id": "0x1f5ea8bc7c0",
      "type": "list",
      "repr": "[1, 4, 9, 16, 25]",
      "items": [
@@ -768,10 +768,10 @@
      "line": 4,
      "locals": {
       "nums": {
-       "ref": "0x253fb4af4c0"
+       "ref": "0x1f5ea8af4c0"
       },
       "squares": {
-       "ref": "0x253fb4bc7c0"
+       "ref": "0x1f5ea8bc7c0"
       },
       "n": {
        "ref": "0x7ffd7f2b49d8"
@@ -780,8 +780,8 @@
     }
    ],
    "heap": {
-    "0x253fb4af4c0": {
-     "id": "0x253fb4af4c0",
+    "0x1f5ea8af4c0": {
+     "id": "0x1f5ea8af4c0",
      "type": "list",
      "repr": "[1, 2, 3, 4, 5]",
      "items": [
@@ -827,8 +827,8 @@
      "type": "int",
      "repr": "5"
     },
-    "0x253fb4bc7c0": {
-     "id": "0x253fb4bc7c0",
+    "0x1f5ea8bc7c0": {
+     "id": "0x1f5ea8bc7c0",
      "type": "list",
      "repr": "[1, 4, 9, 16, 25]",
      "items": [
@@ -877,10 +877,10 @@
      "line": 4,
      "locals": {
       "nums": {
-       "ref": "0x253fb4af4c0"
+       "ref": "0x1f5ea8af4c0"
       },
       "squares": {
-       "ref": "0x253fb4bc7c0"
+       "ref": "0x1f5ea8bc7c0"
       },
       "n": {
        "ref": "0x7ffd7f2b49f8"
@@ -889,8 +889,8 @@
     }
    ],
    "heap": {
-    "0x253fb4af4c0": {
-     "id": "0x253fb4af4c0",
+    "0x1f5ea8af4c0": {
+     "id": "0x1f5ea8af4c0",
      "type": "list",
      "repr": "[1, 2, 3, 4, 5]",
      "items": [
@@ -936,8 +936,8 @@
      "type": "int",
      "repr": "5"
     },
-    "0x253fb4bc7c0": {
-     "id": "0x253fb4bc7c0",
+    "0x1f5ea8bc7c0": {
+     "id": "0x1f5ea8bc7c0",
      "type": "list",
      "repr": "[1, 4, 9, 16, 25]",
      "items": [
@@ -986,10 +986,10 @@
      "line": 4,
      "locals": {
       "nums": {
-       "ref": "0x253fb4af4c0"
+       "ref": "0x1f5ea8af4c0"
       },
       "squares": {
-       "ref": "0x253fb4bc7c0"
+       "ref": "0x1f5ea8bc7c0"
       },
       "n": {
        "ref": "0x7ffd7f2b4a18"
@@ -998,8 +998,8 @@
     }
    ],
    "heap": {
-    "0x253fb4af4c0": {
-     "id": "0x253fb4af4c0",
+    "0x1f5ea8af4c0": {
+     "id": "0x1f5ea8af4c0",
      "type": "list",
      "repr": "[1, 2, 3, 4, 5]",
      "items": [
@@ -1045,8 +1045,8 @@
      "type": "int",
      "repr": "5"
     },
-    "0x253fb4bc7c0": {
-     "id": "0x253fb4bc7c0",
+    "0x1f5ea8bc7c0": {
+     "id": "0x1f5ea8bc7c0",
      "type": "list",
      "repr": "[1, 4, 9, 16, 25]",
      "items": [
@@ -1095,10 +1095,10 @@
      "line": 4,
      "locals": {
       "nums": {
-       "ref": "0x253fb4af4c0"
+       "ref": "0x1f5ea8af4c0"
       },
       "squares": {
-       "ref": "0x253fb4bc7c0"
+       "ref": "0x1f5ea8bc7c0"
       },
       "n": {
        "ref": "0x7ffd7f2b4a38"
@@ -1107,8 +1107,8 @@
     }
    ],
    "heap": {
-    "0x253fb4af4c0": {
-     "id": "0x253fb4af4c0",
+    "0x1f5ea8af4c0": {
+     "id": "0x1f5ea8af4c0",
      "type": "list",
      "repr": "[1, 2, 3, 4, 5]",
      "items": [
@@ -1154,8 +1154,8 @@
      "type": "int",
      "repr": "5"
     },
-    "0x253fb4bc7c0": {
-     "id": "0x253fb4bc7c0",
+    "0x1f5ea8bc7c0": {
+     "id": "0x1f5ea8bc7c0",
      "type": "list",
      "repr": "[1, 4, 9, 16, 25]",
      "items": [
@@ -1204,20 +1204,20 @@
      "line": 5,
      "locals": {
       "nums": {
-       "ref": "0x253fb4af4c0"
+       "ref": "0x1f5ea8af4c0"
       },
       "squares": {
-       "ref": "0x253fb4bc7c0"
+       "ref": "0x1f5ea8bc7c0"
       },
       "evens": {
-       "ref": "0x253fb4af580"
+       "ref": "0x1f5ea8af580"
       }
      }
     }
    ],
    "heap": {
-    "0x253fb4af4c0": {
-     "id": "0x253fb4af4c0",
+    "0x1f5ea8af4c0": {
+     "id": "0x1f5ea8af4c0",
      "type": "list",
      "repr": "[1, 2, 3, 4, 5]",
      "items": [
@@ -1263,8 +1263,8 @@
      "type": "int",
      "repr": "5"
     },
-    "0x253fb4bc7c0": {
-     "id": "0x253fb4bc7c0",
+    "0x1f5ea8bc7c0": {
+     "id": "0x1f5ea8bc7c0",
      "type": "list",
      "repr": "[1, 4, 9, 16, 25]",
      "items": [
@@ -1300,8 +1300,8 @@
      "type": "int",
      "repr": "25"
     },
-    "0x253fb4af580": {
-     "id": "0x253fb4af580",
+    "0x1f5ea8af580": {
+     "id": "0x1f5ea8af580",
      "type": "list",
      "repr": "[2, 4]",
      "items": [
@@ -1325,20 +1325,20 @@
      "line": 6,
      "locals": {
       "nums": {
-       "ref": "0x253fb4af4c0"
+       "ref": "0x1f5ea8af4c0"
       },
       "squares": {
-       "ref": "0x253fb4bc7c0"
+       "ref": "0x1f5ea8bc7c0"
       },
       "evens": {
-       "ref": "0x253fb4af580"
+       "ref": "0x1f5ea8af580"
       }
      }
     }
    ],
    "heap": {
-    "0x253fb4af4c0": {
-     "id": "0x253fb4af4c0",
+    "0x1f5ea8af4c0": {
+     "id": "0x1f5ea8af4c0",
      "type": "list",
      "repr": "[1, 2, 3, 4, 5]",
      "items": [
@@ -1384,8 +1384,8 @@
      "type": "int",
      "repr": "5"
     },
-    "0x253fb4bc7c0": {
-     "id": "0x253fb4bc7c0",
+    "0x1f5ea8bc7c0": {
+     "id": "0x1f5ea8bc7c0",
      "type": "list",
      "repr": "[1, 4, 9, 16, 25]",
      "items": [
@@ -1421,8 +1421,8 @@
      "type": "int",
      "repr": "25"
     },
-    "0x253fb4af580": {
-     "id": "0x253fb4af580",
+    "0x1f5ea8af580": {
+     "id": "0x1f5ea8af580",
      "type": "list",
      "repr": "[2, 4]",
      "items": [
@@ -1447,13 +1447,13 @@
      "line": 6,
      "locals": {
       "nums": {
-       "ref": "0x253fb4af4c0"
+       "ref": "0x1f5ea8af4c0"
       },
       "squares": {
-       "ref": "0x253fb4bc7c0"
+       "ref": "0x1f5ea8bc7c0"
       },
       "evens": {
-       "ref": "0x253fb4af580"
+       "ref": "0x1f5ea8af580"
       },
       "n": {
        "ref": "0x7ffd7f2b49b8"
@@ -1462,8 +1462,8 @@
     }
    ],
    "heap": {
-    "0x253fb4af4c0": {
-     "id": "0x253fb4af4c0",
+    "0x1f5ea8af4c0": {
+     "id": "0x1f5ea8af4c0",
      "type": "list",
      "repr": "[1, 2, 3, 4, 5]",
      "items": [
@@ -1509,8 +1509,8 @@
      "type": "int",
      "repr": "5"
     },
-    "0x253fb4bc7c0": {
-     "id": "0x253fb4bc7c0",
+    "0x1f5ea8bc7c0": {
+     "id": "0x1f5ea8bc7c0",
      "type": "list",
      "repr": "[1, 4, 9, 16, 25]",
      "items": [
@@ -1546,8 +1546,8 @@
      "type": "int",
      "repr": "25"
     },
-    "0x253fb4af580": {
-     "id": "0x253fb4af580",
+    "0x1f5ea8af580": {
+     "id": "0x1f5ea8af580",
      "type": "list",
      "repr": "[2, 4]",
      "items": [
@@ -1572,13 +1572,13 @@
      "line": 6,
      "locals": {
       "nums": {
-       "ref": "0x253fb4af4c0"
+       "ref": "0x1f5ea8af4c0"
       },
       "squares": {
-       "ref": "0x253fb4bc7c0"
+       "ref": "0x1f5ea8bc7c0"
       },
       "evens": {
-       "ref": "0x253fb4af580"
+       "ref": "0x1f5ea8af580"
       },
       "n": {
        "ref": "0x7ffd7f2b49d8"
@@ -1587,8 +1587,8 @@
     }
    ],
    "heap": {
-    "0x253fb4af4c0": {
-     "id": "0x253fb4af4c0",
+    "0x1f5ea8af4c0": {
+     "id": "0x1f5ea8af4c0",
      "type": "list",
      "repr": "[1, 2, 3, 4, 5]",
      "items": [
@@ -1634,8 +1634,8 @@
      "type": "int",
      "repr": "5"
     },
-    "0x253fb4bc7c0": {
-     "id": "0x253fb4bc7c0",
+    "0x1f5ea8bc7c0": {
+     "id": "0x1f5ea8bc7c0",
      "type": "list",
      "repr": "[1, 4, 9, 16, 25]",
      "items": [
@@ -1671,8 +1671,8 @@
      "type": "int",
      "repr": "25"
     },
-    "0x253fb4af580": {
-     "id": "0x253fb4af580",
+    "0x1f5ea8af580": {
+     "id": "0x1f5ea8af580",
      "type": "list",
      "repr": "[2, 4]",
      "items": [
@@ -1697,13 +1697,13 @@
      "line": 6,
      "locals": {
       "nums": {
-       "ref": "0x253fb4af4c0"
+       "ref": "0x1f5ea8af4c0"
       },
       "squares": {
-       "ref": "0x253fb4bc7c0"
+       "ref": "0x1f5ea8bc7c0"
       },
       "evens": {
-       "ref": "0x253fb4af580"
+       "ref": "0x1f5ea8af580"
       },
       "n": {
        "ref": "0x7ffd7f2b49f8"
@@ -1712,8 +1712,8 @@
     }
    ],
    "heap": {
-    "0x253fb4af4c0": {
-     "id": "0x253fb4af4c0",
+    "0x1f5ea8af4c0": {
+     "id": "0x1f5ea8af4c0",
      "type": "list",
      "repr": "[1, 2, 3, 4, 5]",
      "items": [
@@ -1759,8 +1759,8 @@
      "type": "int",
      "repr": "5"
     },
-    "0x253fb4bc7c0": {
-     "id": "0x253fb4bc7c0",
+    "0x1f5ea8bc7c0": {
+     "id": "0x1f5ea8bc7c0",
      "type": "list",
      "repr": "[1, 4, 9, 16, 25]",
      "items": [
@@ -1796,8 +1796,8 @@
      "type": "int",
      "repr": "25"
     },
-    "0x253fb4af580": {
-     "id": "0x253fb4af580",
+    "0x1f5ea8af580": {
+     "id": "0x1f5ea8af580",
      "type": "list",
      "repr": "[2, 4]",
      "items": [
@@ -1822,13 +1822,13 @@
      "line": 6,
      "locals": {
       "nums": {
-       "ref": "0x253fb4af4c0"
+       "ref": "0x1f5ea8af4c0"
       },
       "squares": {
-       "ref": "0x253fb4bc7c0"
+       "ref": "0x1f5ea8bc7c0"
       },
       "evens": {
-       "ref": "0x253fb4af580"
+       "ref": "0x1f5ea8af580"
       },
       "n": {
        "ref": "0x7ffd7f2b4a18"
@@ -1837,8 +1837,8 @@
     }
    ],
    "heap": {
-    "0x253fb4af4c0": {
-     "id": "0x253fb4af4c0",
+    "0x1f5ea8af4c0": {
+     "id": "0x1f5ea8af4c0",
      "type": "list",
      "repr": "[1, 2, 3, 4, 5]",
      "items": [
@@ -1884,8 +1884,8 @@
      "type": "int",
      "repr": "5"
     },
-    "0x253fb4bc7c0": {
-     "id": "0x253fb4bc7c0",
+    "0x1f5ea8bc7c0": {
+     "id": "0x1f5ea8bc7c0",
      "type": "list",
      "repr": "[1, 4, 9, 16, 25]",
      "items": [
@@ -1921,8 +1921,8 @@
      "type": "int",
      "repr": "25"
     },
-    "0x253fb4af580": {
-     "id": "0x253fb4af580",
+    "0x1f5ea8af580": {
+     "id": "0x1f5ea8af580",
      "type": "list",
      "repr": "[2, 4]",
      "items": [
@@ -1947,13 +1947,13 @@
      "line": 6,
      "locals": {
       "nums": {
-       "ref": "0x253fb4af4c0"
+       "ref": "0x1f5ea8af4c0"
       },
       "squares": {
-       "ref": "0x253fb4bc7c0"
+       "ref": "0x1f5ea8bc7c0"
       },
       "evens": {
-       "ref": "0x253fb4af580"
+       "ref": "0x1f5ea8af580"
       },
       "n": {
        "ref": "0x7ffd7f2b4a38"
@@ -1962,8 +1962,8 @@
     }
    ],
    "heap": {
-    "0x253fb4af4c0": {
-     "id": "0x253fb4af4c0",
+    "0x1f5ea8af4c0": {
+     "id": "0x1f5ea8af4c0",
      "type": "list",
      "repr": "[1, 2, 3, 4, 5]",
      "items": [
@@ -2009,8 +2009,8 @@
      "type": "int",
      "repr": "5"
     },
-    "0x253fb4bc7c0": {
-     "id": "0x253fb4bc7c0",
+    "0x1f5ea8bc7c0": {
+     "id": "0x1f5ea8bc7c0",
      "type": "list",
      "repr": "[1, 4, 9, 16, 25]",
      "items": [
@@ -2046,8 +2046,8 @@
      "type": "int",
      "repr": "25"
     },
-    "0x253fb4af580": {
-     "id": "0x253fb4af580",
+    "0x1f5ea8af580": {
+     "id": "0x1f5ea8af580",
      "type": "list",
      "repr": "[2, 4]",
      "items": [
@@ -2072,23 +2072,23 @@
      "line": 7,
      "locals": {
       "nums": {
-       "ref": "0x253fb4af4c0"
+       "ref": "0x1f5ea8af4c0"
       },
       "squares": {
-       "ref": "0x253fb4bc7c0"
+       "ref": "0x1f5ea8bc7c0"
       },
       "evens": {
-       "ref": "0x253fb4af580"
+       "ref": "0x1f5ea8af580"
       },
       "labels": {
-       "ref": "0x253fb703300"
+       "ref": "0x1f5eab03300"
       }
      }
     }
    ],
    "heap": {
-    "0x253fb4af4c0": {
-     "id": "0x253fb4af4c0",
+    "0x1f5ea8af4c0": {
+     "id": "0x1f5ea8af4c0",
      "type": "list",
      "repr": "[1, 2, 3, 4, 5]",
      "items": [
@@ -2134,8 +2134,8 @@
      "type": "int",
      "repr": "5"
     },
-    "0x253fb4bc7c0": {
-     "id": "0x253fb4bc7c0",
+    "0x1f5ea8bc7c0": {
+     "id": "0x1f5ea8bc7c0",
      "type": "list",
      "repr": "[1, 4, 9, 16, 25]",
      "items": [
@@ -2171,8 +2171,8 @@
      "type": "int",
      "repr": "25"
     },
-    "0x253fb4af580": {
-     "id": "0x253fb4af580",
+    "0x1f5ea8af580": {
+     "id": "0x1f5ea8af580",
      "type": "list",
      "repr": "[2, 4]",
      "items": [
@@ -2184,8 +2184,8 @@
       }
      ]
     },
-    "0x253fb703300": {
-     "id": "0x253fb703300",
+    "0x1f5eab03300": {
+     "id": "0x1f5eab03300",
      "type": "dict",
      "repr": "{1: '홀', 2: '짝', 3: '홀', 4: '짝', 5: '홀'}",
      "entries": [
@@ -2194,7 +2194,7 @@
         "ref": "0x7ffd7f2b49b8"
        },
        {
-        "ref": "0x253fb6f3a30"
+        "ref": "0x1f5eaaf3a30"
        }
       ],
       [
@@ -2202,7 +2202,7 @@
         "ref": "0x7ffd7f2b49d8"
        },
        {
-        "ref": "0x253fb6f29f0"
+        "ref": "0x1f5eaaf29f0"
        }
       ],
       [
@@ -2210,7 +2210,7 @@
         "ref": "0x7ffd7f2b49f8"
        },
        {
-        "ref": "0x253fb6f3a30"
+        "ref": "0x1f5eaaf3a30"
        }
       ],
       [
@@ -2218,7 +2218,7 @@
         "ref": "0x7ffd7f2b4a18"
        },
        {
-        "ref": "0x253fb6f29f0"
+        "ref": "0x1f5eaaf29f0"
        }
       ],
       [
@@ -2226,18 +2226,18 @@
         "ref": "0x7ffd7f2b4a38"
        },
        {
-        "ref": "0x253fb6f3a30"
+        "ref": "0x1f5eaaf3a30"
        }
       ]
      ]
     },
-    "0x253fb6f3a30": {
-     "id": "0x253fb6f3a30",
+    "0x1f5eaaf3a30": {
+     "id": "0x1f5eaaf3a30",
      "type": "str",
      "repr": "'홀'"
     },
-    "0x253fb6f29f0": {
-     "id": "0x253fb6f29f0",
+    "0x1f5eaaf29f0": {
+     "id": "0x1f5eaaf29f0",
      "type": "str",
      "repr": "'짝'"
     }
@@ -2253,23 +2253,23 @@
      "line": 8,
      "locals": {
       "nums": {
-       "ref": "0x253fb4af4c0"
+       "ref": "0x1f5ea8af4c0"
       },
       "squares": {
-       "ref": "0x253fb4bc7c0"
+       "ref": "0x1f5ea8bc7c0"
       },
       "evens": {
-       "ref": "0x253fb4af580"
+       "ref": "0x1f5ea8af580"
       },
       "labels": {
-       "ref": "0x253fb703300"
+       "ref": "0x1f5eab03300"
       }
      }
     }
    ],
    "heap": {
-    "0x253fb4af4c0": {
-     "id": "0x253fb4af4c0",
+    "0x1f5ea8af4c0": {
+     "id": "0x1f5ea8af4c0",
      "type": "list",
      "repr": "[1, 2, 3, 4, 5]",
      "items": [
@@ -2315,8 +2315,8 @@
      "type": "int",
      "repr": "5"
     },
-    "0x253fb4bc7c0": {
-     "id": "0x253fb4bc7c0",
+    "0x1f5ea8bc7c0": {
+     "id": "0x1f5ea8bc7c0",
      "type": "list",
      "repr": "[1, 4, 9, 16, 25]",
      "items": [
@@ -2352,8 +2352,8 @@
      "type": "int",
      "repr": "25"
     },
-    "0x253fb4af580": {
-     "id": "0x253fb4af580",
+    "0x1f5ea8af580": {
+     "id": "0x1f5ea8af580",
      "type": "list",
      "repr": "[2, 4]",
      "items": [
@@ -2365,8 +2365,8 @@
       }
      ]
     },
-    "0x253fb703300": {
-     "id": "0x253fb703300",
+    "0x1f5eab03300": {
+     "id": "0x1f5eab03300",
      "type": "dict",
      "repr": "{1: '홀', 2: '짝', 3: '홀', 4: '짝', 5: '홀'}",
      "entries": [
@@ -2375,7 +2375,7 @@
         "ref": "0x7ffd7f2b49b8"
        },
        {
-        "ref": "0x253fb6f3a30"
+        "ref": "0x1f5eaaf3a30"
        }
       ],
       [
@@ -2383,7 +2383,7 @@
         "ref": "0x7ffd7f2b49d8"
        },
        {
-        "ref": "0x253fb6f29f0"
+        "ref": "0x1f5eaaf29f0"
        }
       ],
       [
@@ -2391,7 +2391,7 @@
         "ref": "0x7ffd7f2b49f8"
        },
        {
-        "ref": "0x253fb6f3a30"
+        "ref": "0x1f5eaaf3a30"
        }
       ],
       [
@@ -2399,7 +2399,7 @@
         "ref": "0x7ffd7f2b4a18"
        },
        {
-        "ref": "0x253fb6f29f0"
+        "ref": "0x1f5eaaf29f0"
        }
       ],
       [
@@ -2407,18 +2407,18 @@
         "ref": "0x7ffd7f2b4a38"
        },
        {
-        "ref": "0x253fb6f3a30"
+        "ref": "0x1f5eaaf3a30"
        }
       ]
      ]
     },
-    "0x253fb6f3a30": {
-     "id": "0x253fb6f3a30",
+    "0x1f5eaaf3a30": {
+     "id": "0x1f5eaaf3a30",
      "type": "str",
      "repr": "'홀'"
     },
-    "0x253fb6f29f0": {
-     "id": "0x253fb6f29f0",
+    "0x1f5eaaf29f0": {
+     "id": "0x1f5eaaf29f0",
      "type": "str",
      "repr": "'짝'"
     }
@@ -2435,16 +2435,16 @@
      "line": 8,
      "locals": {
       "nums": {
-       "ref": "0x253fb4af4c0"
+       "ref": "0x1f5ea8af4c0"
       },
       "squares": {
-       "ref": "0x253fb4bc7c0"
+       "ref": "0x1f5ea8bc7c0"
       },
       "evens": {
-       "ref": "0x253fb4af580"
+       "ref": "0x1f5ea8af580"
       },
       "labels": {
-       "ref": "0x253fb703300"
+       "ref": "0x1f5eab03300"
       },
       "w": {
        "ref": "0x7ffd7f2c3e40"
@@ -2453,8 +2453,8 @@
     }
    ],
    "heap": {
-    "0x253fb4af4c0": {
-     "id": "0x253fb4af4c0",
+    "0x1f5ea8af4c0": {
+     "id": "0x1f5ea8af4c0",
      "type": "list",
      "repr": "[1, 2, 3, 4, 5]",
      "items": [
@@ -2500,8 +2500,8 @@
      "type": "int",
      "repr": "5"
     },
-    "0x253fb4bc7c0": {
-     "id": "0x253fb4bc7c0",
+    "0x1f5ea8bc7c0": {
+     "id": "0x1f5ea8bc7c0",
      "type": "list",
      "repr": "[1, 4, 9, 16, 25]",
      "items": [
@@ -2537,8 +2537,8 @@
      "type": "int",
      "repr": "25"
     },
-    "0x253fb4af580": {
-     "id": "0x253fb4af580",
+    "0x1f5ea8af580": {
+     "id": "0x1f5ea8af580",
      "type": "list",
      "repr": "[2, 4]",
      "items": [
@@ -2550,8 +2550,8 @@
       }
      ]
     },
-    "0x253fb703300": {
-     "id": "0x253fb703300",
+    "0x1f5eab03300": {
+     "id": "0x1f5eab03300",
      "type": "dict",
      "repr": "{1: '홀', 2: '짝', 3: '홀', 4: '짝', 5: '홀'}",
      "entries": [
@@ -2560,7 +2560,7 @@
         "ref": "0x7ffd7f2b49b8"
        },
        {
-        "ref": "0x253fb6f3a30"
+        "ref": "0x1f5eaaf3a30"
        }
       ],
       [
@@ -2568,7 +2568,7 @@
         "ref": "0x7ffd7f2b49d8"
        },
        {
-        "ref": "0x253fb6f29f0"
+        "ref": "0x1f5eaaf29f0"
        }
       ],
       [
@@ -2576,7 +2576,7 @@
         "ref": "0x7ffd7f2b49f8"
        },
        {
-        "ref": "0x253fb6f3a30"
+        "ref": "0x1f5eaaf3a30"
        }
       ],
       [
@@ -2584,7 +2584,7 @@
         "ref": "0x7ffd7f2b4a18"
        },
        {
-        "ref": "0x253fb6f29f0"
+        "ref": "0x1f5eaaf29f0"
        }
       ],
       [
@@ -2592,18 +2592,18 @@
         "ref": "0x7ffd7f2b4a38"
        },
        {
-        "ref": "0x253fb6f3a30"
+        "ref": "0x1f5eaaf3a30"
        }
       ]
      ]
     },
-    "0x253fb6f3a30": {
-     "id": "0x253fb6f3a30",
+    "0x1f5eaaf3a30": {
+     "id": "0x1f5eaaf3a30",
      "type": "str",
      "repr": "'홀'"
     },
-    "0x253fb6f29f0": {
-     "id": "0x253fb6f29f0",
+    "0x1f5eaaf29f0": {
+     "id": "0x1f5eaaf29f0",
      "type": "str",
      "repr": "'짝'"
     },
@@ -2625,26 +2625,26 @@
      "line": 8,
      "locals": {
       "nums": {
-       "ref": "0x253fb4af4c0"
+       "ref": "0x1f5ea8af4c0"
       },
       "squares": {
-       "ref": "0x253fb4bc7c0"
+       "ref": "0x1f5ea8bc7c0"
       },
       "evens": {
-       "ref": "0x253fb4af580"
+       "ref": "0x1f5ea8af580"
       },
       "labels": {
-       "ref": "0x253fb703300"
+       "ref": "0x1f5eab03300"
       },
       "w": {
-       "ref": "0x253fb6ed800"
+       "ref": "0x1f5eaaed800"
       }
      }
     }
    ],
    "heap": {
-    "0x253fb4af4c0": {
-     "id": "0x253fb4af4c0",
+    "0x1f5ea8af4c0": {
+     "id": "0x1f5ea8af4c0",
      "type": "list",
      "repr": "[1, 2, 3, 4, 5]",
      "items": [
@@ -2690,8 +2690,8 @@
      "type": "int",
      "repr": "5"
     },
-    "0x253fb4bc7c0": {
-     "id": "0x253fb4bc7c0",
+    "0x1f5ea8bc7c0": {
+     "id": "0x1f5ea8bc7c0",
      "type": "list",
      "repr": "[1, 4, 9, 16, 25]",
      "items": [
@@ -2727,8 +2727,8 @@
      "type": "int",
      "repr": "25"
     },
-    "0x253fb4af580": {
-     "id": "0x253fb4af580",
+    "0x1f5ea8af580": {
+     "id": "0x1f5ea8af580",
      "type": "list",
      "repr": "[2, 4]",
      "items": [
@@ -2740,8 +2740,8 @@
       }
      ]
     },
-    "0x253fb703300": {
-     "id": "0x253fb703300",
+    "0x1f5eab03300": {
+     "id": "0x1f5eab03300",
      "type": "dict",
      "repr": "{1: '홀', 2: '짝', 3: '홀', 4: '짝', 5: '홀'}",
      "entries": [
@@ -2750,7 +2750,7 @@
         "ref": "0x7ffd7f2b49b8"
        },
        {
-        "ref": "0x253fb6f3a30"
+        "ref": "0x1f5eaaf3a30"
        }
       ],
       [
@@ -2758,7 +2758,7 @@
         "ref": "0x7ffd7f2b49d8"
        },
        {
-        "ref": "0x253fb6f29f0"
+        "ref": "0x1f5eaaf29f0"
        }
       ],
       [
@@ -2766,7 +2766,7 @@
         "ref": "0x7ffd7f2b49f8"
        },
        {
-        "ref": "0x253fb6f3a30"
+        "ref": "0x1f5eaaf3a30"
        }
       ],
       [
@@ -2774,7 +2774,7 @@
         "ref": "0x7ffd7f2b4a18"
        },
        {
-        "ref": "0x253fb6f29f0"
+        "ref": "0x1f5eaaf29f0"
        }
       ],
       [
@@ -2782,23 +2782,23 @@
         "ref": "0x7ffd7f2b4a38"
        },
        {
-        "ref": "0x253fb6f3a30"
+        "ref": "0x1f5eaaf3a30"
        }
       ]
      ]
     },
-    "0x253fb6f3a30": {
-     "id": "0x253fb6f3a30",
+    "0x1f5eaaf3a30": {
+     "id": "0x1f5eaaf3a30",
      "type": "str",
      "repr": "'홀'"
     },
-    "0x253fb6f29f0": {
-     "id": "0x253fb6f29f0",
+    "0x1f5eaaf29f0": {
+     "id": "0x1f5eaaf29f0",
      "type": "str",
      "repr": "'짝'"
     },
-    "0x253fb6ed800": {
-     "id": "0x253fb6ed800",
+    "0x1f5eaaed800": {
+     "id": "0x1f5eaaed800",
      "type": "str",
      "repr": "'bb'"
     }
@@ -2815,26 +2815,26 @@
      "line": 8,
      "locals": {
       "nums": {
-       "ref": "0x253fb4af4c0"
+       "ref": "0x1f5ea8af4c0"
       },
       "squares": {
-       "ref": "0x253fb4bc7c0"
+       "ref": "0x1f5ea8bc7c0"
       },
       "evens": {
-       "ref": "0x253fb4af580"
+       "ref": "0x1f5ea8af580"
       },
       "labels": {
-       "ref": "0x253fb703300"
+       "ref": "0x1f5eab03300"
       },
       "w": {
-       "ref": "0x253fb6ed860"
+       "ref": "0x1f5eaaed860"
       }
      }
     }
    ],
    "heap": {
-    "0x253fb4af4c0": {
-     "id": "0x253fb4af4c0",
+    "0x1f5ea8af4c0": {
+     "id": "0x1f5ea8af4c0",
      "type": "list",
      "repr": "[1, 2, 3, 4, 5]",
      "items": [
@@ -2880,8 +2880,8 @@
      "type": "int",
      "repr": "5"
     },
-    "0x253fb4bc7c0": {
-     "id": "0x253fb4bc7c0",
+    "0x1f5ea8bc7c0": {
+     "id": "0x1f5ea8bc7c0",
      "type": "list",
      "repr": "[1, 4, 9, 16, 25]",
      "items": [
@@ -2917,8 +2917,8 @@
      "type": "int",
      "repr": "25"
     },
-    "0x253fb4af580": {
-     "id": "0x253fb4af580",
+    "0x1f5ea8af580": {
+     "id": "0x1f5ea8af580",
      "type": "list",
      "repr": "[2, 4]",
      "items": [
@@ -2930,8 +2930,8 @@
       }
      ]
     },
-    "0x253fb703300": {
-     "id": "0x253fb703300",
+    "0x1f5eab03300": {
+     "id": "0x1f5eab03300",
      "type": "dict",
      "repr": "{1: '홀', 2: '짝', 3: '홀', 4: '짝', 5: '홀'}",
      "entries": [
@@ -2940,7 +2940,7 @@
         "ref": "0x7ffd7f2b49b8"
        },
        {
-        "ref": "0x253fb6f3a30"
+        "ref": "0x1f5eaaf3a30"
        }
       ],
       [
@@ -2948,7 +2948,7 @@
         "ref": "0x7ffd7f2b49d8"
        },
        {
-        "ref": "0x253fb6f29f0"
+        "ref": "0x1f5eaaf29f0"
        }
       ],
       [
@@ -2956,7 +2956,7 @@
         "ref": "0x7ffd7f2b49f8"
        },
        {
-        "ref": "0x253fb6f3a30"
+        "ref": "0x1f5eaaf3a30"
        }
       ],
       [
@@ -2964,7 +2964,7 @@
         "ref": "0x7ffd7f2b4a18"
        },
        {
-        "ref": "0x253fb6f29f0"
+        "ref": "0x1f5eaaf29f0"
        }
       ],
       [
@@ -2972,23 +2972,23 @@
         "ref": "0x7ffd7f2b4a38"
        },
        {
-        "ref": "0x253fb6f3a30"
+        "ref": "0x1f5eaaf3a30"
        }
       ]
      ]
     },
-    "0x253fb6f3a30": {
-     "id": "0x253fb6f3a30",
+    "0x1f5eaaf3a30": {
+     "id": "0x1f5eaaf3a30",
      "type": "str",
      "repr": "'홀'"
     },
-    "0x253fb6f29f0": {
-     "id": "0x253fb6f29f0",
+    "0x1f5eaaf29f0": {
+     "id": "0x1f5eaaf29f0",
      "type": "str",
      "repr": "'짝'"
     },
-    "0x253fb6ed860": {
-     "id": "0x253fb6ed860",
+    "0x1f5eaaed860": {
+     "id": "0x1f5eaaed860",
      "type": "str",
      "repr": "'cc'"
     }
@@ -3005,26 +3005,26 @@
      "line": 8,
      "locals": {
       "nums": {
-       "ref": "0x253fb4af4c0"
+       "ref": "0x1f5ea8af4c0"
       },
       "squares": {
-       "ref": "0x253fb4bc7c0"
+       "ref": "0x1f5ea8bc7c0"
       },
       "evens": {
-       "ref": "0x253fb4af580"
+       "ref": "0x1f5ea8af580"
       },
       "labels": {
-       "ref": "0x253fb703300"
+       "ref": "0x1f5eab03300"
       },
       "w": {
-       "ref": "0x253fb6ed8c0"
+       "ref": "0x1f5eaaed8c0"
       }
      }
     }
    ],
    "heap": {
-    "0x253fb4af4c0": {
-     "id": "0x253fb4af4c0",
+    "0x1f5ea8af4c0": {
+     "id": "0x1f5ea8af4c0",
      "type": "list",
      "repr": "[1, 2, 3, 4, 5]",
      "items": [
@@ -3070,8 +3070,8 @@
      "type": "int",
      "repr": "5"
     },
-    "0x253fb4bc7c0": {
-     "id": "0x253fb4bc7c0",
+    "0x1f5ea8bc7c0": {
+     "id": "0x1f5ea8bc7c0",
      "type": "list",
      "repr": "[1, 4, 9, 16, 25]",
      "items": [
@@ -3107,8 +3107,8 @@
      "type": "int",
      "repr": "25"
     },
-    "0x253fb4af580": {
-     "id": "0x253fb4af580",
+    "0x1f5ea8af580": {
+     "id": "0x1f5ea8af580",
      "type": "list",
      "repr": "[2, 4]",
      "items": [
@@ -3120,8 +3120,8 @@
       }
      ]
     },
-    "0x253fb703300": {
-     "id": "0x253fb703300",
+    "0x1f5eab03300": {
+     "id": "0x1f5eab03300",
      "type": "dict",
      "repr": "{1: '홀', 2: '짝', 3: '홀', 4: '짝', 5: '홀'}",
      "entries": [
@@ -3130,7 +3130,7 @@
         "ref": "0x7ffd7f2b49b8"
        },
        {
-        "ref": "0x253fb6f3a30"
+        "ref": "0x1f5eaaf3a30"
        }
       ],
       [
@@ -3138,7 +3138,7 @@
         "ref": "0x7ffd7f2b49d8"
        },
        {
-        "ref": "0x253fb6f29f0"
+        "ref": "0x1f5eaaf29f0"
        }
       ],
       [
@@ -3146,7 +3146,7 @@
         "ref": "0x7ffd7f2b49f8"
        },
        {
-        "ref": "0x253fb6f3a30"
+        "ref": "0x1f5eaaf3a30"
        }
       ],
       [
@@ -3154,7 +3154,7 @@
         "ref": "0x7ffd7f2b4a18"
        },
        {
-        "ref": "0x253fb6f29f0"
+        "ref": "0x1f5eaaf29f0"
        }
       ],
       [
@@ -3162,23 +3162,23 @@
         "ref": "0x7ffd7f2b4a38"
        },
        {
-        "ref": "0x253fb6f3a30"
+        "ref": "0x1f5eaaf3a30"
        }
       ]
      ]
     },
-    "0x253fb6f3a30": {
-     "id": "0x253fb6f3a30",
+    "0x1f5eaaf3a30": {
+     "id": "0x1f5eaaf3a30",
      "type": "str",
      "repr": "'홀'"
     },
-    "0x253fb6f29f0": {
-     "id": "0x253fb6f29f0",
+    "0x1f5eaaf29f0": {
+     "id": "0x1f5eaaf29f0",
      "type": "str",
      "repr": "'짝'"
     },
-    "0x253fb6ed8c0": {
-     "id": "0x253fb6ed8c0",
+    "0x1f5eaaed8c0": {
+     "id": "0x1f5eaaed8c0",
      "type": "str",
      "repr": "'ddd'"
     }
@@ -3195,26 +3195,26 @@
      "line": 9,
      "locals": {
       "nums": {
-       "ref": "0x253fb4af4c0"
+       "ref": "0x1f5ea8af4c0"
       },
       "squares": {
-       "ref": "0x253fb4bc7c0"
+       "ref": "0x1f5ea8bc7c0"
       },
       "evens": {
-       "ref": "0x253fb4af580"
+       "ref": "0x1f5ea8af580"
       },
       "labels": {
-       "ref": "0x253fb703300"
+       "ref": "0x1f5eab03300"
       },
       "lengths": {
-       "ref": "0x253fb3d2ea0"
+       "ref": "0x1f5ea7d2ea0"
       }
      }
     }
    ],
    "heap": {
-    "0x253fb4af4c0": {
-     "id": "0x253fb4af4c0",
+    "0x1f5ea8af4c0": {
+     "id": "0x1f5ea8af4c0",
      "type": "list",
      "repr": "[1, 2, 3, 4, 5]",
      "items": [
@@ -3260,8 +3260,8 @@
      "type": "int",
      "repr": "5"
     },
-    "0x253fb4bc7c0": {
-     "id": "0x253fb4bc7c0",
+    "0x1f5ea8bc7c0": {
+     "id": "0x1f5ea8bc7c0",
      "type": "list",
      "repr": "[1, 4, 9, 16, 25]",
      "items": [
@@ -3297,8 +3297,8 @@
      "type": "int",
      "repr": "25"
     },
-    "0x253fb4af580": {
-     "id": "0x253fb4af580",
+    "0x1f5ea8af580": {
+     "id": "0x1f5ea8af580",
      "type": "list",
      "repr": "[2, 4]",
      "items": [
@@ -3310,8 +3310,8 @@
       }
      ]
     },
-    "0x253fb703300": {
-     "id": "0x253fb703300",
+    "0x1f5eab03300": {
+     "id": "0x1f5eab03300",
      "type": "dict",
      "repr": "{1: '홀', 2: '짝', 3: '홀', 4: '짝', 5: '홀'}",
      "entries": [
@@ -3320,7 +3320,7 @@
         "ref": "0x7ffd7f2b49b8"
        },
        {
-        "ref": "0x253fb6f3a30"
+        "ref": "0x1f5eaaf3a30"
        }
       ],
       [
@@ -3328,7 +3328,7 @@
         "ref": "0x7ffd7f2b49d8"
        },
        {
-        "ref": "0x253fb6f29f0"
+        "ref": "0x1f5eaaf29f0"
        }
       ],
       [
@@ -3336,7 +3336,7 @@
         "ref": "0x7ffd7f2b49f8"
        },
        {
-        "ref": "0x253fb6f3a30"
+        "ref": "0x1f5eaaf3a30"
        }
       ],
       [
@@ -3344,7 +3344,7 @@
         "ref": "0x7ffd7f2b4a18"
        },
        {
-        "ref": "0x253fb6f29f0"
+        "ref": "0x1f5eaaf29f0"
        }
       ],
       [
@@ -3352,23 +3352,23 @@
         "ref": "0x7ffd7f2b4a38"
        },
        {
-        "ref": "0x253fb6f3a30"
+        "ref": "0x1f5eaaf3a30"
        }
       ]
      ]
     },
-    "0x253fb6f3a30": {
-     "id": "0x253fb6f3a30",
+    "0x1f5eaaf3a30": {
+     "id": "0x1f5eaaf3a30",
      "type": "str",
      "repr": "'홀'"
     },
-    "0x253fb6f29f0": {
-     "id": "0x253fb6f29f0",
+    "0x1f5eaaf29f0": {
+     "id": "0x1f5eaaf29f0",
      "type": "str",
      "repr": "'짝'"
     },
-    "0x253fb3d2ea0": {
-     "id": "0x253fb3d2ea0",
+    "0x1f5ea7d2ea0": {
+     "id": "0x1f5ea7d2ea0",
      "type": "set",
      "repr": "{1, 2, 3}",
      "items": [
@@ -3395,26 +3395,26 @@
      "line": 9,
      "locals": {
       "nums": {
-       "ref": "0x253fb4af4c0"
+       "ref": "0x1f5ea8af4c0"
       },
       "squares": {
-       "ref": "0x253fb4bc7c0"
+       "ref": "0x1f5ea8bc7c0"
       },
       "evens": {
-       "ref": "0x253fb4af580"
+       "ref": "0x1f5ea8af580"
       },
       "labels": {
-       "ref": "0x253fb703300"
+       "ref": "0x1f5eab03300"
       },
       "lengths": {
-       "ref": "0x253fb3d2ea0"
+       "ref": "0x1f5ea7d2ea0"
       }
      }
     }
    ],
    "heap": {
-    "0x253fb4af4c0": {
-     "id": "0x253fb4af4c0",
+    "0x1f5ea8af4c0": {
+     "id": "0x1f5ea8af4c0",
      "type": "list",
      "repr": "[1, 2, 3, 4, 5]",
      "items": [
@@ -3460,8 +3460,8 @@
      "type": "int",
      "repr": "5"
     },
-    "0x253fb4bc7c0": {
-     "id": "0x253fb4bc7c0",
+    "0x1f5ea8bc7c0": {
+     "id": "0x1f5ea8bc7c0",
      "type": "list",
      "repr": "[1, 4, 9, 16, 25]",
      "items": [
@@ -3497,8 +3497,8 @@
      "type": "int",
      "repr": "25"
     },
-    "0x253fb4af580": {
-     "id": "0x253fb4af580",
+    "0x1f5ea8af580": {
+     "id": "0x1f5ea8af580",
      "type": "list",
      "repr": "[2, 4]",
      "items": [
@@ -3510,8 +3510,8 @@
       }
      ]
     },
-    "0x253fb703300": {
-     "id": "0x253fb703300",
+    "0x1f5eab03300": {
+     "id": "0x1f5eab03300",
      "type": "dict",
      "repr": "{1: '홀', 2: '짝', 3: '홀', 4: '짝', 5: '홀'}",
      "entries": [
@@ -3520,7 +3520,7 @@
         "ref": "0x7ffd7f2b49b8"
        },
        {
-        "ref": "0x253fb6f3a30"
+        "ref": "0x1f5eaaf3a30"
        }
       ],
       [
@@ -3528,7 +3528,7 @@
         "ref": "0x7ffd7f2b49d8"
        },
        {
-        "ref": "0x253fb6f29f0"
+        "ref": "0x1f5eaaf29f0"
        }
       ],
       [
@@ -3536,7 +3536,7 @@
         "ref": "0x7ffd7f2b49f8"
        },
        {
-        "ref": "0x253fb6f3a30"
+        "ref": "0x1f5eaaf3a30"
        }
       ],
       [
@@ -3544,7 +3544,7 @@
         "ref": "0x7ffd7f2b4a18"
        },
        {
-        "ref": "0x253fb6f29f0"
+        "ref": "0x1f5eaaf29f0"
        }
       ],
       [
@@ -3552,23 +3552,23 @@
         "ref": "0x7ffd7f2b4a38"
        },
        {
-        "ref": "0x253fb6f3a30"
+        "ref": "0x1f5eaaf3a30"
        }
       ]
      ]
     },
-    "0x253fb6f3a30": {
-     "id": "0x253fb6f3a30",
+    "0x1f5eaaf3a30": {
+     "id": "0x1f5eaaf3a30",
      "type": "str",
      "repr": "'홀'"
     },
-    "0x253fb6f29f0": {
-     "id": "0x253fb6f29f0",
+    "0x1f5eaaf29f0": {
+     "id": "0x1f5eaaf29f0",
      "type": "str",
      "repr": "'짝'"
     },
-    "0x253fb3d2ea0": {
-     "id": "0x253fb3d2ea0",
+    "0x1f5ea7d2ea0": {
+     "id": "0x1f5ea7d2ea0",
      "type": "set",
      "repr": "{1, 2, 3}",
      "items": [

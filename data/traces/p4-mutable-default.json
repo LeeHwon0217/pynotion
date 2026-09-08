@@ -38,14 +38,14 @@
      "line": 5,
      "locals": {
       "add": {
-       "ref": "0x18b51fdca40"
+       "ref": "0x231f325ca40"
       }
      }
     }
    ],
    "heap": {
-    "0x18b51fdca40": {
-     "id": "0x18b51fdca40",
+    "0x231f325ca40": {
+     "id": "0x231f325ca40",
      "type": "function",
      "repr": "add"
     }
@@ -62,7 +62,7 @@
      "line": 5,
      "locals": {
       "add": {
-       "ref": "0x18b51fdca40"
+       "ref": "0x231f325ca40"
       }
      }
     },
@@ -71,27 +71,27 @@
      "line": 1,
      "locals": {
       "item": {
-       "ref": "0x18b51fe6060"
+       "ref": "0x231f3266060"
       },
       "bag": {
-       "ref": "0x18b51dbd700"
+       "ref": "0x231f303d700"
       }
      }
     }
    ],
    "heap": {
-    "0x18b51fdca40": {
-     "id": "0x18b51fdca40",
+    "0x231f325ca40": {
+     "id": "0x231f325ca40",
      "type": "function",
      "repr": "add"
     },
-    "0x18b51fe6060": {
-     "id": "0x18b51fe6060",
+    "0x231f3266060": {
+     "id": "0x231f3266060",
      "type": "str",
      "repr": "'사과'"
     },
-    "0x18b51dbd700": {
-     "id": "0x18b51dbd700",
+    "0x231f303d700": {
+     "id": "0x231f303d700",
      "type": "list",
      "repr": "[]",
      "items": []
@@ -109,7 +109,7 @@
      "line": 5,
      "locals": {
       "add": {
-       "ref": "0x18b51fdca40"
+       "ref": "0x231f325ca40"
       }
      }
     },
@@ -118,27 +118,27 @@
      "line": 2,
      "locals": {
       "item": {
-       "ref": "0x18b51fe6060"
+       "ref": "0x231f3266060"
       },
       "bag": {
-       "ref": "0x18b51dbd700"
+       "ref": "0x231f303d700"
       }
      }
     }
    ],
    "heap": {
-    "0x18b51fdca40": {
-     "id": "0x18b51fdca40",
+    "0x231f325ca40": {
+     "id": "0x231f325ca40",
      "type": "function",
      "repr": "add"
     },
-    "0x18b51fe6060": {
-     "id": "0x18b51fe6060",
+    "0x231f3266060": {
+     "id": "0x231f3266060",
      "type": "str",
      "repr": "'사과'"
     },
-    "0x18b51dbd700": {
-     "id": "0x18b51dbd700",
+    "0x231f303d700": {
+     "id": "0x231f303d700",
      "type": "list",
      "repr": "[]",
      "items": []
@@ -155,7 +155,7 @@
      "line": 5,
      "locals": {
       "add": {
-       "ref": "0x18b51fdca40"
+       "ref": "0x231f325ca40"
       }
      }
     },
@@ -164,32 +164,32 @@
      "line": 3,
      "locals": {
       "item": {
-       "ref": "0x18b51fe6060"
+       "ref": "0x231f3266060"
       },
       "bag": {
-       "ref": "0x18b51dbd700"
+       "ref": "0x231f303d700"
       }
      }
     }
    ],
    "heap": {
-    "0x18b51fdca40": {
-     "id": "0x18b51fdca40",
+    "0x231f325ca40": {
+     "id": "0x231f325ca40",
      "type": "function",
      "repr": "add"
     },
-    "0x18b51fe6060": {
-     "id": "0x18b51fe6060",
+    "0x231f3266060": {
+     "id": "0x231f3266060",
      "type": "str",
      "repr": "'사과'"
     },
-    "0x18b51dbd700": {
-     "id": "0x18b51dbd700",
+    "0x231f303d700": {
+     "id": "0x231f303d700",
      "type": "list",
      "repr": "['사과']",
      "items": [
       {
-       "ref": "0x18b51fe6060"
+       "ref": "0x231f3266060"
       }
      ]
     }
@@ -205,7 +205,7 @@
      "line": 5,
      "locals": {
       "add": {
-       "ref": "0x18b51fdca40"
+       "ref": "0x231f325ca40"
       }
      }
     },
@@ -214,32 +214,32 @@
      "line": 3,
      "locals": {
       "item": {
-       "ref": "0x18b51fe6060"
+       "ref": "0x231f3266060"
       },
       "bag": {
-       "ref": "0x18b51dbd700"
+       "ref": "0x231f303d700"
       }
      }
     }
    ],
    "heap": {
-    "0x18b51fdca40": {
-     "id": "0x18b51fdca40",
+    "0x231f325ca40": {
+     "id": "0x231f325ca40",
      "type": "function",
      "repr": "add"
     },
-    "0x18b51fe6060": {
-     "id": "0x18b51fe6060",
+    "0x231f3266060": {
+     "id": "0x231f3266060",
      "type": "str",
      "repr": "'사과'"
     },
-    "0x18b51dbd700": {
-     "id": "0x18b51dbd700",
+    "0x231f303d700": {
+     "id": "0x231f303d700",
      "type": "list",
      "repr": "['사과']",
      "items": [
       {
-       "ref": "0x18b51fe6060"
+       "ref": "0x231f3266060"
       }
      ]
     }
@@ -256,32 +256,32 @@
      "line": 6,
      "locals": {
       "add": {
-       "ref": "0x18b51fdca40"
+       "ref": "0x231f325ca40"
       },
       "a": {
-       "ref": "0x18b51dbd700"
+       "ref": "0x231f303d700"
       }
      }
     }
    ],
    "heap": {
-    "0x18b51fdca40": {
-     "id": "0x18b51fdca40",
+    "0x231f325ca40": {
+     "id": "0x231f325ca40",
      "type": "function",
      "repr": "add"
     },
-    "0x18b51dbd700": {
-     "id": "0x18b51dbd700",
+    "0x231f303d700": {
+     "id": "0x231f303d700",
      "type": "list",
      "repr": "['사과']",
      "items": [
       {
-       "ref": "0x18b51fe6060"
+       "ref": "0x231f3266060"
       }
      ]
     },
-    "0x18b51fe6060": {
-     "id": "0x18b51fe6060",
+    "0x231f3266060": {
+     "id": "0x231f3266060",
      "type": "str",
      "repr": "'사과'"
     }
@@ -298,10 +298,10 @@
      "line": 6,
      "locals": {
       "add": {
-       "ref": "0x18b51fdca40"
+       "ref": "0x231f325ca40"
       },
       "a": {
-       "ref": "0x18b51dbd700"
+       "ref": "0x231f303d700"
       }
      }
     },
@@ -310,37 +310,37 @@
      "line": 1,
      "locals": {
       "item": {
-       "ref": "0x18b51ff2b70"
+       "ref": "0x231f3272b70"
       },
       "bag": {
-       "ref": "0x18b51dbd700"
+       "ref": "0x231f303d700"
       }
      }
     }
    ],
    "heap": {
-    "0x18b51fdca40": {
-     "id": "0x18b51fdca40",
+    "0x231f325ca40": {
+     "id": "0x231f325ca40",
      "type": "function",
      "repr": "add"
     },
-    "0x18b51dbd700": {
-     "id": "0x18b51dbd700",
+    "0x231f303d700": {
+     "id": "0x231f303d700",
      "type": "list",
      "repr": "['사과']",
      "items": [
       {
-       "ref": "0x18b51fe6060"
+       "ref": "0x231f3266060"
       }
      ]
     },
-    "0x18b51fe6060": {
-     "id": "0x18b51fe6060",
+    "0x231f3266060": {
+     "id": "0x231f3266060",
      "type": "str",
      "repr": "'사과'"
     },
-    "0x18b51ff2b70": {
-     "id": "0x18b51ff2b70",
+    "0x231f3272b70": {
+     "id": "0x231f3272b70",
      "type": "str",
      "repr": "'배'"
     }
@@ -357,10 +357,10 @@
      "line": 6,
      "locals": {
       "add": {
-       "ref": "0x18b51fdca40"
+       "ref": "0x231f325ca40"
       },
       "a": {
-       "ref": "0x18b51dbd700"
+       "ref": "0x231f303d700"
       }
      }
     },
@@ -369,37 +369,37 @@
      "line": 2,
      "locals": {
       "item": {
-       "ref": "0x18b51ff2b70"
+       "ref": "0x231f3272b70"
       },
       "bag": {
-       "ref": "0x18b51dbd700"
+       "ref": "0x231f303d700"
       }
      }
     }
    ],
    "heap": {
-    "0x18b51fdca40": {
-     "id": "0x18b51fdca40",
+    "0x231f325ca40": {
+     "id": "0x231f325ca40",
      "type": "function",
      "repr": "add"
     },
-    "0x18b51dbd700": {
-     "id": "0x18b51dbd700",
+    "0x231f303d700": {
+     "id": "0x231f303d700",
      "type": "list",
      "repr": "['사과']",
      "items": [
       {
-       "ref": "0x18b51fe6060"
+       "ref": "0x231f3266060"
       }
      ]
     },
-    "0x18b51fe6060": {
-     "id": "0x18b51fe6060",
+    "0x231f3266060": {
+     "id": "0x231f3266060",
      "type": "str",
      "repr": "'사과'"
     },
-    "0x18b51ff2b70": {
-     "id": "0x18b51ff2b70",
+    "0x231f3272b70": {
+     "id": "0x231f3272b70",
      "type": "str",
      "repr": "'배'"
     }
@@ -415,10 +415,10 @@
      "line": 6,
      "locals": {
       "add": {
-       "ref": "0x18b51fdca40"
+       "ref": "0x231f325ca40"
       },
       "a": {
-       "ref": "0x18b51dbd700"
+       "ref": "0x231f303d700"
       }
      }
     },
@@ -427,40 +427,40 @@
      "line": 3,
      "locals": {
       "item": {
-       "ref": "0x18b51ff2b70"
+       "ref": "0x231f3272b70"
       },
       "bag": {
-       "ref": "0x18b51dbd700"
+       "ref": "0x231f303d700"
       }
      }
     }
    ],
    "heap": {
-    "0x18b51fdca40": {
-     "id": "0x18b51fdca40",
+    "0x231f325ca40": {
+     "id": "0x231f325ca40",
      "type": "function",
      "repr": "add"
     },
-    "0x18b51dbd700": {
-     "id": "0x18b51dbd700",
+    "0x231f303d700": {
+     "id": "0x231f303d700",
      "type": "list",
      "repr": "['사과', '배']",
      "items": [
       {
-       "ref": "0x18b51fe6060"
+       "ref": "0x231f3266060"
       },
       {
-       "ref": "0x18b51ff2b70"
+       "ref": "0x231f3272b70"
       }
      ]
     },
-    "0x18b51fe6060": {
-     "id": "0x18b51fe6060",
+    "0x231f3266060": {
+     "id": "0x231f3266060",
      "type": "str",
      "repr": "'사과'"
     },
-    "0x18b51ff2b70": {
-     "id": "0x18b51ff2b70",
+    "0x231f3272b70": {
+     "id": "0x231f3272b70",
      "type": "str",
      "repr": "'배'"
     }
@@ -476,10 +476,10 @@
      "line": 6,
      "locals": {
       "add": {
-       "ref": "0x18b51fdca40"
+       "ref": "0x231f325ca40"
       },
       "a": {
-       "ref": "0x18b51dbd700"
+       "ref": "0x231f303d700"
       }
      }
     },
@@ -488,40 +488,40 @@
      "line": 3,
      "locals": {
       "item": {
-       "ref": "0x18b51ff2b70"
+       "ref": "0x231f3272b70"
       },
       "bag": {
-       "ref": "0x18b51dbd700"
+       "ref": "0x231f303d700"
       }
      }
     }
    ],
    "heap": {
-    "0x18b51fdca40": {
-     "id": "0x18b51fdca40",
+    "0x231f325ca40": {
+     "id": "0x231f325ca40",
      "type": "function",
      "repr": "add"
     },
-    "0x18b51dbd700": {
-     "id": "0x18b51dbd700",
+    "0x231f303d700": {
+     "id": "0x231f303d700",
      "type": "list",
      "repr": "['사과', '배']",
      "items": [
       {
-       "ref": "0x18b51fe6060"
+       "ref": "0x231f3266060"
       },
       {
-       "ref": "0x18b51ff2b70"
+       "ref": "0x231f3272b70"
       }
      ]
     },
-    "0x18b51fe6060": {
-     "id": "0x18b51fe6060",
+    "0x231f3266060": {
+     "id": "0x231f3266060",
      "type": "str",
      "repr": "'사과'"
     },
-    "0x18b51ff2b70": {
-     "id": "0x18b51ff2b70",
+    "0x231f3272b70": {
+     "id": "0x231f3272b70",
      "type": "str",
      "repr": "'배'"
     }
@@ -538,43 +538,43 @@
      "line": 7,
      "locals": {
       "add": {
-       "ref": "0x18b51fdca40"
+       "ref": "0x231f325ca40"
       },
       "a": {
-       "ref": "0x18b51dbd700"
+       "ref": "0x231f303d700"
       },
       "b": {
-       "ref": "0x18b51dbd700"
+       "ref": "0x231f303d700"
       }
      }
     }
    ],
    "heap": {
-    "0x18b51fdca40": {
-     "id": "0x18b51fdca40",
+    "0x231f325ca40": {
+     "id": "0x231f325ca40",
      "type": "function",
      "repr": "add"
     },
-    "0x18b51dbd700": {
-     "id": "0x18b51dbd700",
+    "0x231f303d700": {
+     "id": "0x231f303d700",
      "type": "list",
      "repr": "['사과', '배']",
      "items": [
       {
-       "ref": "0x18b51fe6060"
+       "ref": "0x231f3266060"
       },
       {
-       "ref": "0x18b51ff2b70"
+       "ref": "0x231f3272b70"
       }
      ]
     },
-    "0x18b51fe6060": {
-     "id": "0x18b51fe6060",
+    "0x231f3266060": {
+     "id": "0x231f3266060",
      "type": "str",
      "repr": "'사과'"
     },
-    "0x18b51ff2b70": {
-     "id": "0x18b51ff2b70",
+    "0x231f3272b70": {
+     "id": "0x231f3272b70",
      "type": "str",
      "repr": "'배'"
     }
@@ -591,43 +591,43 @@
      "line": 9,
      "locals": {
       "add": {
-       "ref": "0x18b51fdca40"
+       "ref": "0x231f325ca40"
       },
       "a": {
-       "ref": "0x18b51dbd700"
+       "ref": "0x231f303d700"
       },
       "b": {
-       "ref": "0x18b51dbd700"
+       "ref": "0x231f303d700"
       }
      }
     }
    ],
    "heap": {
-    "0x18b51fdca40": {
-     "id": "0x18b51fdca40",
+    "0x231f325ca40": {
+     "id": "0x231f325ca40",
      "type": "function",
      "repr": "add"
     },
-    "0x18b51dbd700": {
-     "id": "0x18b51dbd700",
+    "0x231f303d700": {
+     "id": "0x231f303d700",
      "type": "list",
      "repr": "['사과', '배']",
      "items": [
       {
-       "ref": "0x18b51fe6060"
+       "ref": "0x231f3266060"
       },
       {
-       "ref": "0x18b51ff2b70"
+       "ref": "0x231f3272b70"
       }
      ]
     },
-    "0x18b51fe6060": {
-     "id": "0x18b51fe6060",
+    "0x231f3266060": {
+     "id": "0x231f3266060",
      "type": "str",
      "repr": "'사과'"
     },
-    "0x18b51ff2b70": {
-     "id": "0x18b51ff2b70",
+    "0x231f3272b70": {
+     "id": "0x231f3272b70",
      "type": "str",
      "repr": "'배'"
     }
@@ -644,51 +644,51 @@
      "line": 15,
      "locals": {
       "add": {
-       "ref": "0x18b51fdca40"
+       "ref": "0x231f325ca40"
       },
       "a": {
-       "ref": "0x18b51dbd700"
+       "ref": "0x231f303d700"
       },
       "b": {
-       "ref": "0x18b51dbd700"
+       "ref": "0x231f303d700"
       },
       "add_ok": {
-       "ref": "0x18b51fdcb80"
+       "ref": "0x231f325cb80"
       }
      }
     }
    ],
    "heap": {
-    "0x18b51fdca40": {
-     "id": "0x18b51fdca40",
+    "0x231f325ca40": {
+     "id": "0x231f325ca40",
      "type": "function",
      "repr": "add"
     },
-    "0x18b51dbd700": {
-     "id": "0x18b51dbd700",
+    "0x231f303d700": {
+     "id": "0x231f303d700",
      "type": "list",
      "repr": "['사과', '배']",
      "items": [
       {
-       "ref": "0x18b51fe6060"
+       "ref": "0x231f3266060"
       },
       {
-       "ref": "0x18b51ff2b70"
+       "ref": "0x231f3272b70"
       }
      ]
     },
-    "0x18b51fe6060": {
-     "id": "0x18b51fe6060",
+    "0x231f3266060": {
+     "id": "0x231f3266060",
      "type": "str",
      "repr": "'사과'"
     },
-    "0x18b51ff2b70": {
-     "id": "0x18b51ff2b70",
+    "0x231f3272b70": {
+     "id": "0x231f3272b70",
      "type": "str",
      "repr": "'배'"
     },
-    "0x18b51fdcb80": {
-     "id": "0x18b51fdcb80",
+    "0x231f325cb80": {
+     "id": "0x231f325cb80",
      "type": "function",
      "repr": "add_ok"
     }
@@ -704,16 +704,16 @@
      "line": 15,
      "locals": {
       "add": {
-       "ref": "0x18b51fdca40"
+       "ref": "0x231f325ca40"
       },
       "a": {
-       "ref": "0x18b51dbd700"
+       "ref": "0x231f303d700"
       },
       "b": {
-       "ref": "0x18b51dbd700"
+       "ref": "0x231f303d700"
       },
       "add_ok": {
-       "ref": "0x18b51fdcb80"
+       "ref": "0x231f325cb80"
       }
      }
     },
@@ -722,7 +722,7 @@
      "line": 9,
      "locals": {
       "item": {
-       "ref": "0x18b51fe6060"
+       "ref": "0x231f3266060"
       },
       "bag": {
        "ref": "0x7ffd7f1c1850"
@@ -731,36 +731,36 @@
     }
    ],
    "heap": {
-    "0x18b51fdca40": {
-     "id": "0x18b51fdca40",
+    "0x231f325ca40": {
+     "id": "0x231f325ca40",
      "type": "function",
      "repr": "add"
     },
-    "0x18b51dbd700": {
-     "id": "0x18b51dbd700",
+    "0x231f303d700": {
+     "id": "0x231f303d700",
      "type": "list",
      "repr": "['사과', '배']",
      "items": [
       {
-       "ref": "0x18b51fe6060"
+       "ref": "0x231f3266060"
       },
       {
-       "ref": "0x18b51ff2b70"
+       "ref": "0x231f3272b70"
       }
      ]
     },
-    "0x18b51fe6060": {
-     "id": "0x18b51fe6060",
+    "0x231f3266060": {
+     "id": "0x231f3266060",
      "type": "str",
      "repr": "'사과'"
     },
-    "0x18b51ff2b70": {
-     "id": "0x18b51ff2b70",
+    "0x231f3272b70": {
+     "id": "0x231f3272b70",
      "type": "str",
      "repr": "'배'"
     },
-    "0x18b51fdcb80": {
-     "id": "0x18b51fdcb80",
+    "0x231f325cb80": {
+     "id": "0x231f325cb80",
      "type": "function",
      "repr": "add_ok"
     },
@@ -782,16 +782,16 @@
      "line": 15,
      "locals": {
       "add": {
-       "ref": "0x18b51fdca40"
+       "ref": "0x231f325ca40"
       },
       "a": {
-       "ref": "0x18b51dbd700"
+       "ref": "0x231f303d700"
       },
       "b": {
-       "ref": "0x18b51dbd700"
+       "ref": "0x231f303d700"
       },
       "add_ok": {
-       "ref": "0x18b51fdcb80"
+       "ref": "0x231f325cb80"
       }
      }
     },
@@ -800,7 +800,7 @@
      "line": 10,
      "locals": {
       "item": {
-       "ref": "0x18b51fe6060"
+       "ref": "0x231f3266060"
       },
       "bag": {
        "ref": "0x7ffd7f1c1850"
@@ -809,36 +809,36 @@
     }
    ],
    "heap": {
-    "0x18b51fdca40": {
-     "id": "0x18b51fdca40",
+    "0x231f325ca40": {
+     "id": "0x231f325ca40",
      "type": "function",
      "repr": "add"
     },
-    "0x18b51dbd700": {
-     "id": "0x18b51dbd700",
+    "0x231f303d700": {
+     "id": "0x231f303d700",
      "type": "list",
      "repr": "['사과', '배']",
      "items": [
       {
-       "ref": "0x18b51fe6060"
+       "ref": "0x231f3266060"
       },
       {
-       "ref": "0x18b51ff2b70"
+       "ref": "0x231f3272b70"
       }
      ]
     },
-    "0x18b51fe6060": {
-     "id": "0x18b51fe6060",
+    "0x231f3266060": {
+     "id": "0x231f3266060",
      "type": "str",
      "repr": "'사과'"
     },
-    "0x18b51ff2b70": {
-     "id": "0x18b51ff2b70",
+    "0x231f3272b70": {
+     "id": "0x231f3272b70",
      "type": "str",
      "repr": "'배'"
     },
-    "0x18b51fdcb80": {
-     "id": "0x18b51fdcb80",
+    "0x231f325cb80": {
+     "id": "0x231f325cb80",
      "type": "function",
      "repr": "add_ok"
     },
@@ -859,16 +859,16 @@
      "line": 15,
      "locals": {
       "add": {
-       "ref": "0x18b51fdca40"
+       "ref": "0x231f325ca40"
       },
       "a": {
-       "ref": "0x18b51dbd700"
+       "ref": "0x231f303d700"
       },
       "b": {
-       "ref": "0x18b51dbd700"
+       "ref": "0x231f303d700"
       },
       "add_ok": {
-       "ref": "0x18b51fdcb80"
+       "ref": "0x231f325cb80"
       }
      }
     },
@@ -877,7 +877,7 @@
      "line": 11,
      "locals": {
       "item": {
-       "ref": "0x18b51fe6060"
+       "ref": "0x231f3266060"
       },
       "bag": {
        "ref": "0x7ffd7f1c1850"
@@ -886,36 +886,36 @@
     }
    ],
    "heap": {
-    "0x18b51fdca40": {
-     "id": "0x18b51fdca40",
+    "0x231f325ca40": {
+     "id": "0x231f325ca40",
      "type": "function",
      "repr": "add"
     },
-    "0x18b51dbd700": {
-     "id": "0x18b51dbd700",
+    "0x231f303d700": {
+     "id": "0x231f303d700",
      "type": "list",
      "repr": "['사과', '배']",
      "items": [
       {
-       "ref": "0x18b51fe6060"
+       "ref": "0x231f3266060"
       },
       {
-       "ref": "0x18b51ff2b70"
+       "ref": "0x231f3272b70"
       }
      ]
     },
-    "0x18b51fe6060": {
-     "id": "0x18b51fe6060",
+    "0x231f3266060": {
+     "id": "0x231f3266060",
      "type": "str",
      "repr": "'사과'"
     },
-    "0x18b51ff2b70": {
-     "id": "0x18b51ff2b70",
+    "0x231f3272b70": {
+     "id": "0x231f3272b70",
      "type": "str",
      "repr": "'배'"
     },
-    "0x18b51fdcb80": {
-     "id": "0x18b51fdcb80",
+    "0x231f325cb80": {
+     "id": "0x231f325cb80",
      "type": "function",
      "repr": "add_ok"
     },
@@ -937,16 +937,16 @@
      "line": 15,
      "locals": {
       "add": {
-       "ref": "0x18b51fdca40"
+       "ref": "0x231f325ca40"
       },
       "a": {
-       "ref": "0x18b51dbd700"
+       "ref": "0x231f303d700"
       },
       "b": {
-       "ref": "0x18b51dbd700"
+       "ref": "0x231f303d700"
       },
       "add_ok": {
-       "ref": "0x18b51fdcb80"
+       "ref": "0x231f325cb80"
       }
      }
     },
@@ -955,50 +955,50 @@
      "line": 12,
      "locals": {
       "item": {
-       "ref": "0x18b51fe6060"
+       "ref": "0x231f3266060"
       },
       "bag": {
-       "ref": "0x18b51dafd00"
+       "ref": "0x231f302fd00"
       }
      }
     }
    ],
    "heap": {
-    "0x18b51fdca40": {
-     "id": "0x18b51fdca40",
+    "0x231f325ca40": {
+     "id": "0x231f325ca40",
      "type": "function",
      "repr": "add"
     },
-    "0x18b51dbd700": {
-     "id": "0x18b51dbd700",
+    "0x231f303d700": {
+     "id": "0x231f303d700",
      "type": "list",
      "repr": "['사과', '배']",
      "items": [
       {
-       "ref": "0x18b51fe6060"
+       "ref": "0x231f3266060"
       },
       {
-       "ref": "0x18b51ff2b70"
+       "ref": "0x231f3272b70"
       }
      ]
     },
-    "0x18b51fe6060": {
-     "id": "0x18b51fe6060",
+    "0x231f3266060": {
+     "id": "0x231f3266060",
      "type": "str",
      "repr": "'사과'"
     },
-    "0x18b51ff2b70": {
-     "id": "0x18b51ff2b70",
+    "0x231f3272b70": {
+     "id": "0x231f3272b70",
      "type": "str",
      "repr": "'배'"
     },
-    "0x18b51fdcb80": {
-     "id": "0x18b51fdcb80",
+    "0x231f325cb80": {
+     "id": "0x231f325cb80",
      "type": "function",
      "repr": "add_ok"
     },
-    "0x18b51dafd00": {
-     "id": "0x18b51dafd00",
+    "0x231f302fd00": {
+     "id": "0x231f302fd00",
      "type": "list",
      "repr": "[]",
      "items": []
@@ -1015,16 +1015,16 @@
      "line": 15,
      "locals": {
       "add": {
-       "ref": "0x18b51fdca40"
+       "ref": "0x231f325ca40"
       },
       "a": {
-       "ref": "0x18b51dbd700"
+       "ref": "0x231f303d700"
       },
       "b": {
-       "ref": "0x18b51dbd700"
+       "ref": "0x231f303d700"
       },
       "add_ok": {
-       "ref": "0x18b51fdcb80"
+       "ref": "0x231f325cb80"
       }
      }
     },
@@ -1033,55 +1033,55 @@
      "line": 13,
      "locals": {
       "item": {
-       "ref": "0x18b51fe6060"
+       "ref": "0x231f3266060"
       },
       "bag": {
-       "ref": "0x18b51dafd00"
+       "ref": "0x231f302fd00"
       }
      }
     }
    ],
    "heap": {
-    "0x18b51fdca40": {
-     "id": "0x18b51fdca40",
+    "0x231f325ca40": {
+     "id": "0x231f325ca40",
      "type": "function",
      "repr": "add"
     },
-    "0x18b51dbd700": {
-     "id": "0x18b51dbd700",
+    "0x231f303d700": {
+     "id": "0x231f303d700",
      "type": "list",
      "repr": "['사과', '배']",
      "items": [
       {
-       "ref": "0x18b51fe6060"
+       "ref": "0x231f3266060"
       },
       {
-       "ref": "0x18b51ff2b70"
+       "ref": "0x231f3272b70"
       }
      ]
     },
-    "0x18b51fe6060": {
-     "id": "0x18b51fe6060",
+    "0x231f3266060": {
+     "id": "0x231f3266060",
      "type": "str",
      "repr": "'사과'"
     },
-    "0x18b51ff2b70": {
-     "id": "0x18b51ff2b70",
+    "0x231f3272b70": {
+     "id": "0x231f3272b70",
      "type": "str",
      "repr": "'배'"
     },
-    "0x18b51fdcb80": {
-     "id": "0x18b51fdcb80",
+    "0x231f325cb80": {
+     "id": "0x231f325cb80",
      "type": "function",
      "repr": "add_ok"
     },
-    "0x18b51dafd00": {
-     "id": "0x18b51dafd00",
+    "0x231f302fd00": {
+     "id": "0x231f302fd00",
      "type": "list",
      "repr": "['사과']",
      "items": [
       {
-       "ref": "0x18b51fe6060"
+       "ref": "0x231f3266060"
       }
      ]
     }
@@ -1097,16 +1097,16 @@
      "line": 15,
      "locals": {
       "add": {
-       "ref": "0x18b51fdca40"
+       "ref": "0x231f325ca40"
       },
       "a": {
-       "ref": "0x18b51dbd700"
+       "ref": "0x231f303d700"
       },
       "b": {
-       "ref": "0x18b51dbd700"
+       "ref": "0x231f303d700"
       },
       "add_ok": {
-       "ref": "0x18b51fdcb80"
+       "ref": "0x231f325cb80"
       }
      }
     },
@@ -1115,55 +1115,55 @@
      "line": 13,
      "locals": {
       "item": {
-       "ref": "0x18b51fe6060"
+       "ref": "0x231f3266060"
       },
       "bag": {
-       "ref": "0x18b51dafd00"
+       "ref": "0x231f302fd00"
       }
      }
     }
    ],
    "heap": {
-    "0x18b51fdca40": {
-     "id": "0x18b51fdca40",
+    "0x231f325ca40": {
+     "id": "0x231f325ca40",
      "type": "function",
      "repr": "add"
     },
-    "0x18b51dbd700": {
-     "id": "0x18b51dbd700",
+    "0x231f303d700": {
+     "id": "0x231f303d700",
      "type": "list",
      "repr": "['사과', '배']",
      "items": [
       {
-       "ref": "0x18b51fe6060"
+       "ref": "0x231f3266060"
       },
       {
-       "ref": "0x18b51ff2b70"
+       "ref": "0x231f3272b70"
       }
      ]
     },
-    "0x18b51fe6060": {
-     "id": "0x18b51fe6060",
+    "0x231f3266060": {
+     "id": "0x231f3266060",
      "type": "str",
      "repr": "'사과'"
     },
-    "0x18b51ff2b70": {
-     "id": "0x18b51ff2b70",
+    "0x231f3272b70": {
+     "id": "0x231f3272b70",
      "type": "str",
      "repr": "'배'"
     },
-    "0x18b51fdcb80": {
-     "id": "0x18b51fdcb80",
+    "0x231f325cb80": {
+     "id": "0x231f325cb80",
      "type": "function",
      "repr": "add_ok"
     },
-    "0x18b51dafd00": {
-     "id": "0x18b51dafd00",
+    "0x231f302fd00": {
+     "id": "0x231f302fd00",
      "type": "list",
      "repr": "['사과']",
      "items": [
       {
-       "ref": "0x18b51fe6060"
+       "ref": "0x231f3266060"
       }
      ]
     }
@@ -1180,16 +1180,16 @@
      "line": 15,
      "locals": {
       "add": {
-       "ref": "0x18b51fdca40"
+       "ref": "0x231f325ca40"
       },
       "a": {
-       "ref": "0x18b51dbd700"
+       "ref": "0x231f303d700"
       },
       "b": {
-       "ref": "0x18b51dbd700"
+       "ref": "0x231f303d700"
       },
       "add_ok": {
-       "ref": "0x18b51fdcb80"
+       "ref": "0x231f325cb80"
       }
      }
     },
@@ -1198,7 +1198,7 @@
      "line": 9,
      "locals": {
       "item": {
-       "ref": "0x18b51ff2b70"
+       "ref": "0x231f3272b70"
       },
       "bag": {
        "ref": "0x7ffd7f1c1850"
@@ -1207,36 +1207,36 @@
     }
    ],
    "heap": {
-    "0x18b51fdca40": {
-     "id": "0x18b51fdca40",
+    "0x231f325ca40": {
+     "id": "0x231f325ca40",
      "type": "function",
      "repr": "add"
     },
-    "0x18b51dbd700": {
-     "id": "0x18b51dbd700",
+    "0x231f303d700": {
+     "id": "0x231f303d700",
      "type": "list",
      "repr": "['사과', '배']",
      "items": [
       {
-       "ref": "0x18b51fe6060"
+       "ref": "0x231f3266060"
       },
       {
-       "ref": "0x18b51ff2b70"
+       "ref": "0x231f3272b70"
       }
      ]
     },
-    "0x18b51fe6060": {
-     "id": "0x18b51fe6060",
+    "0x231f3266060": {
+     "id": "0x231f3266060",
      "type": "str",
      "repr": "'사과'"
     },
-    "0x18b51ff2b70": {
-     "id": "0x18b51ff2b70",
+    "0x231f3272b70": {
+     "id": "0x231f3272b70",
      "type": "str",
      "repr": "'배'"
     },
-    "0x18b51fdcb80": {
-     "id": "0x18b51fdcb80",
+    "0x231f325cb80": {
+     "id": "0x231f325cb80",
      "type": "function",
      "repr": "add_ok"
     },
@@ -1258,16 +1258,16 @@
      "line": 15,
      "locals": {
       "add": {
-       "ref": "0x18b51fdca40"
+       "ref": "0x231f325ca40"
       },
       "a": {
-       "ref": "0x18b51dbd700"
+       "ref": "0x231f303d700"
       },
       "b": {
-       "ref": "0x18b51dbd700"
+       "ref": "0x231f303d700"
       },
       "add_ok": {
-       "ref": "0x18b51fdcb80"
+       "ref": "0x231f325cb80"
       }
      }
     },
@@ -1276,7 +1276,7 @@
      "line": 10,
      "locals": {
       "item": {
-       "ref": "0x18b51ff2b70"
+       "ref": "0x231f3272b70"
       },
       "bag": {
        "ref": "0x7ffd7f1c1850"
@@ -1285,36 +1285,36 @@
     }
    ],
    "heap": {
-    "0x18b51fdca40": {
-     "id": "0x18b51fdca40",
+    "0x231f325ca40": {
+     "id": "0x231f325ca40",
      "type": "function",
      "repr": "add"
     },
-    "0x18b51dbd700": {
-     "id": "0x18b51dbd700",
+    "0x231f303d700": {
+     "id": "0x231f303d700",
      "type": "list",
      "repr": "['사과', '배']",
      "items": [
       {
-       "ref": "0x18b51fe6060"
+       "ref": "0x231f3266060"
       },
       {
-       "ref": "0x18b51ff2b70"
+       "ref": "0x231f3272b70"
       }
      ]
     },
-    "0x18b51fe6060": {
-     "id": "0x18b51fe6060",
+    "0x231f3266060": {
+     "id": "0x231f3266060",
      "type": "str",
      "repr": "'사과'"
     },
-    "0x18b51ff2b70": {
-     "id": "0x18b51ff2b70",
+    "0x231f3272b70": {
+     "id": "0x231f3272b70",
      "type": "str",
      "repr": "'배'"
     },
-    "0x18b51fdcb80": {
-     "id": "0x18b51fdcb80",
+    "0x231f325cb80": {
+     "id": "0x231f325cb80",
      "type": "function",
      "repr": "add_ok"
     },
@@ -1335,16 +1335,16 @@
      "line": 15,
      "locals": {
       "add": {
-       "ref": "0x18b51fdca40"
+       "ref": "0x231f325ca40"
       },
       "a": {
-       "ref": "0x18b51dbd700"
+       "ref": "0x231f303d700"
       },
       "b": {
-       "ref": "0x18b51dbd700"
+       "ref": "0x231f303d700"
       },
       "add_ok": {
-       "ref": "0x18b51fdcb80"
+       "ref": "0x231f325cb80"
       }
      }
     },
@@ -1353,7 +1353,7 @@
      "line": 11,
      "locals": {
       "item": {
-       "ref": "0x18b51ff2b70"
+       "ref": "0x231f3272b70"
       },
       "bag": {
        "ref": "0x7ffd7f1c1850"
@@ -1362,36 +1362,36 @@
     }
    ],
    "heap": {
-    "0x18b51fdca40": {
-     "id": "0x18b51fdca40",
+    "0x231f325ca40": {
+     "id": "0x231f325ca40",
      "type": "function",
      "repr": "add"
     },
-    "0x18b51dbd700": {
-     "id": "0x18b51dbd700",
+    "0x231f303d700": {
+     "id": "0x231f303d700",
      "type": "list",
      "repr": "['사과', '배']",
      "items": [
       {
-       "ref": "0x18b51fe6060"
+       "ref": "0x231f3266060"
       },
       {
-       "ref": "0x18b51ff2b70"
+       "ref": "0x231f3272b70"
       }
      ]
     },
-    "0x18b51fe6060": {
-     "id": "0x18b51fe6060",
+    "0x231f3266060": {
+     "id": "0x231f3266060",
      "type": "str",
      "repr": "'사과'"
     },
-    "0x18b51ff2b70": {
-     "id": "0x18b51ff2b70",
+    "0x231f3272b70": {
+     "id": "0x231f3272b70",
      "type": "str",
      "repr": "'배'"
     },
-    "0x18b51fdcb80": {
-     "id": "0x18b51fdcb80",
+    "0x231f325cb80": {
+     "id": "0x231f325cb80",
      "type": "function",
      "repr": "add_ok"
     },
@@ -1413,16 +1413,16 @@
      "line": 15,
      "locals": {
       "add": {
-       "ref": "0x18b51fdca40"
+       "ref": "0x231f325ca40"
       },
       "a": {
-       "ref": "0x18b51dbd700"
+       "ref": "0x231f303d700"
       },
       "b": {
-       "ref": "0x18b51dbd700"
+       "ref": "0x231f303d700"
       },
       "add_ok": {
-       "ref": "0x18b51fdcb80"
+       "ref": "0x231f325cb80"
       }
      }
     },
@@ -1431,50 +1431,50 @@
      "line": 12,
      "locals": {
       "item": {
-       "ref": "0x18b51ff2b70"
+       "ref": "0x231f3272b70"
       },
       "bag": {
-       "ref": "0x18b51dbc480"
+       "ref": "0x231f303c480"
       }
      }
     }
    ],
    "heap": {
-    "0x18b51fdca40": {
-     "id": "0x18b51fdca40",
+    "0x231f325ca40": {
+     "id": "0x231f325ca40",
      "type": "function",
      "repr": "add"
     },
-    "0x18b51dbd700": {
-     "id": "0x18b51dbd700",
+    "0x231f303d700": {
+     "id": "0x231f303d700",
      "type": "list",
      "repr": "['사과', '배']",
      "items": [
       {
-       "ref": "0x18b51fe6060"
+       "ref": "0x231f3266060"
       },
       {
-       "ref": "0x18b51ff2b70"
+       "ref": "0x231f3272b70"
       }
      ]
     },
-    "0x18b51fe6060": {
-     "id": "0x18b51fe6060",
+    "0x231f3266060": {
+     "id": "0x231f3266060",
      "type": "str",
      "repr": "'사과'"
     },
-    "0x18b51ff2b70": {
-     "id": "0x18b51ff2b70",
+    "0x231f3272b70": {
+     "id": "0x231f3272b70",
      "type": "str",
      "repr": "'배'"
     },
-    "0x18b51fdcb80": {
-     "id": "0x18b51fdcb80",
+    "0x231f325cb80": {
+     "id": "0x231f325cb80",
      "type": "function",
      "repr": "add_ok"
     },
-    "0x18b51dbc480": {
-     "id": "0x18b51dbc480",
+    "0x231f303c480": {
+     "id": "0x231f303c480",
      "type": "list",
      "repr": "[]",
      "items": []
@@ -1491,16 +1491,16 @@
      "line": 15,
      "locals": {
       "add": {
-       "ref": "0x18b51fdca40"
+       "ref": "0x231f325ca40"
       },
       "a": {
-       "ref": "0x18b51dbd700"
+       "ref": "0x231f303d700"
       },
       "b": {
-       "ref": "0x18b51dbd700"
+       "ref": "0x231f303d700"
       },
       "add_ok": {
-       "ref": "0x18b51fdcb80"
+       "ref": "0x231f325cb80"
       }
      }
     },
@@ -1509,55 +1509,55 @@
      "line": 13,
      "locals": {
       "item": {
-       "ref": "0x18b51ff2b70"
+       "ref": "0x231f3272b70"
       },
       "bag": {
-       "ref": "0x18b51dbc480"
+       "ref": "0x231f303c480"
       }
      }
     }
    ],
    "heap": {
-    "0x18b51fdca40": {
-     "id": "0x18b51fdca40",
+    "0x231f325ca40": {
+     "id": "0x231f325ca40",
      "type": "function",
      "repr": "add"
     },
-    "0x18b51dbd700": {
-     "id": "0x18b51dbd700",
+    "0x231f303d700": {
+     "id": "0x231f303d700",
      "type": "list",
      "repr": "['사과', '배']",
      "items": [
       {
-       "ref": "0x18b51fe6060"
+       "ref": "0x231f3266060"
       },
       {
-       "ref": "0x18b51ff2b70"
+       "ref": "0x231f3272b70"
       }
      ]
     },
-    "0x18b51fe6060": {
-     "id": "0x18b51fe6060",
+    "0x231f3266060": {
+     "id": "0x231f3266060",
      "type": "str",
      "repr": "'사과'"
     },
-    "0x18b51ff2b70": {
-     "id": "0x18b51ff2b70",
+    "0x231f3272b70": {
+     "id": "0x231f3272b70",
      "type": "str",
      "repr": "'배'"
     },
-    "0x18b51fdcb80": {
-     "id": "0x18b51fdcb80",
+    "0x231f325cb80": {
+     "id": "0x231f325cb80",
      "type": "function",
      "repr": "add_ok"
     },
-    "0x18b51dbc480": {
-     "id": "0x18b51dbc480",
+    "0x231f303c480": {
+     "id": "0x231f303c480",
      "type": "list",
      "repr": "['배']",
      "items": [
       {
-       "ref": "0x18b51ff2b70"
+       "ref": "0x231f3272b70"
       }
      ]
     }
@@ -1573,16 +1573,16 @@
      "line": 15,
      "locals": {
       "add": {
-       "ref": "0x18b51fdca40"
+       "ref": "0x231f325ca40"
       },
       "a": {
-       "ref": "0x18b51dbd700"
+       "ref": "0x231f303d700"
       },
       "b": {
-       "ref": "0x18b51dbd700"
+       "ref": "0x231f303d700"
       },
       "add_ok": {
-       "ref": "0x18b51fdcb80"
+       "ref": "0x231f325cb80"
       }
      }
     },
@@ -1591,55 +1591,55 @@
      "line": 13,
      "locals": {
       "item": {
-       "ref": "0x18b51ff2b70"
+       "ref": "0x231f3272b70"
       },
       "bag": {
-       "ref": "0x18b51dbc480"
+       "ref": "0x231f303c480"
       }
      }
     }
    ],
    "heap": {
-    "0x18b51fdca40": {
-     "id": "0x18b51fdca40",
+    "0x231f325ca40": {
+     "id": "0x231f325ca40",
      "type": "function",
      "repr": "add"
     },
-    "0x18b51dbd700": {
-     "id": "0x18b51dbd700",
+    "0x231f303d700": {
+     "id": "0x231f303d700",
      "type": "list",
      "repr": "['사과', '배']",
      "items": [
       {
-       "ref": "0x18b51fe6060"
+       "ref": "0x231f3266060"
       },
       {
-       "ref": "0x18b51ff2b70"
+       "ref": "0x231f3272b70"
       }
      ]
     },
-    "0x18b51fe6060": {
-     "id": "0x18b51fe6060",
+    "0x231f3266060": {
+     "id": "0x231f3266060",
      "type": "str",
      "repr": "'사과'"
     },
-    "0x18b51ff2b70": {
-     "id": "0x18b51ff2b70",
+    "0x231f3272b70": {
+     "id": "0x231f3272b70",
      "type": "str",
      "repr": "'배'"
     },
-    "0x18b51fdcb80": {
-     "id": "0x18b51fdcb80",
+    "0x231f325cb80": {
+     "id": "0x231f325cb80",
      "type": "function",
      "repr": "add_ok"
     },
-    "0x18b51dbc480": {
-     "id": "0x18b51dbc480",
+    "0x231f303c480": {
+     "id": "0x231f303c480",
      "type": "list",
      "repr": "['배']",
      "items": [
       {
-       "ref": "0x18b51ff2b70"
+       "ref": "0x231f3272b70"
       }
      ]
     }
@@ -1656,51 +1656,51 @@
      "line": 15,
      "locals": {
       "add": {
-       "ref": "0x18b51fdca40"
+       "ref": "0x231f325ca40"
       },
       "a": {
-       "ref": "0x18b51dbd700"
+       "ref": "0x231f303d700"
       },
       "b": {
-       "ref": "0x18b51dbd700"
+       "ref": "0x231f303d700"
       },
       "add_ok": {
-       "ref": "0x18b51fdcb80"
+       "ref": "0x231f325cb80"
       }
      }
     }
    ],
    "heap": {
-    "0x18b51fdca40": {
-     "id": "0x18b51fdca40",
+    "0x231f325ca40": {
+     "id": "0x231f325ca40",
      "type": "function",
      "repr": "add"
     },
-    "0x18b51dbd700": {
-     "id": "0x18b51dbd700",
+    "0x231f303d700": {
+     "id": "0x231f303d700",
      "type": "list",
      "repr": "['사과', '배']",
      "items": [
       {
-       "ref": "0x18b51fe6060"
+       "ref": "0x231f3266060"
       },
       {
-       "ref": "0x18b51ff2b70"
+       "ref": "0x231f3272b70"
       }
      ]
     },
-    "0x18b51fe6060": {
-     "id": "0x18b51fe6060",
+    "0x231f3266060": {
+     "id": "0x231f3266060",
      "type": "str",
      "repr": "'사과'"
     },
-    "0x18b51ff2b70": {
-     "id": "0x18b51ff2b70",
+    "0x231f3272b70": {
+     "id": "0x231f3272b70",
      "type": "str",
      "repr": "'배'"
     },
-    "0x18b51fdcb80": {
-     "id": "0x18b51fdcb80",
+    "0x231f325cb80": {
+     "id": "0x231f325cb80",
      "type": "function",
      "repr": "add_ok"
     }

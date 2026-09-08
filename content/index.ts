@@ -58,6 +58,16 @@ import { packages } from "./part-05/packages";
 import { stdlib } from "./part-05/stdlib";
 import { venvLesson } from "./part-05/venv";
 import { pipLesson } from "./part-05/pip";
+import { exceptionFlow } from "./part-06/exception-flow";
+import { tryExcept } from "./part-06/try-except";
+import { elseFinally } from "./part-06/else-finally";
+import { exceptionHierarchy } from "./part-06/exception-hierarchy";
+import { raiseLesson } from "./part-06/raise";
+import { fileModes } from "./part-06/file-modes";
+import { withLesson } from "./part-06/with";
+import { encoding } from "./part-06/encoding";
+import { csvJson } from "./part-06/csv-json";
+import { pathlibLesson } from "./part-06/pathlib";
 
 const ALL: Lesson[] = [
   whatIsPython, setup, howCodeRuns, firstProgram, readingErrors,
@@ -66,6 +76,7 @@ const ALL: Lesson[] = [
   listBasics, indexing, slicing, listMethods, dynamicArray, tupleLesson, stringMethods, stringImmutable, dictBasics, hashTable, dictMethods, setLesson, comprehension, nestedComprehension, copyLesson, sorting,
   callStack, returnLesson, argsLesson, mutableDefault, starArgs, positionalOnly, scopeLesson, globalNonlocal, recursion, lambdaLesson, docstringHints, passBy,
   importLesson, fromAs, mainLesson, packages, stdlib, venvLesson, pipLesson,
+  exceptionFlow, tryExcept, elseFinally, exceptionHierarchy, raiseLesson, fileModes, withLesson, encoding, csvJson, pathlibLesson,
 ];
 
 const partSlug = (id: number) => PARTS.find((p) => p.id === id)!.slug;

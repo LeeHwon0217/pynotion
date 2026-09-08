@@ -1,0 +1,862 @@
+{
+ "id": "p6-else-finally",
+ "code": "def divide(a, b):\n    try:\n        r = a / b\n    except ZeroDivisionError:\n        print(\"0으로 나눔\")\n        return None\n    else:\n        print(\"성공\")\n        return r\n    finally:\n        print(\"정리\")\n\nprint(divide(6, 3))\nprint(divide(6, 0))",
+ "steps": [
+  {
+   "line": 0,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 0,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 13,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 13,
+     "locals": {
+      "divide": {
+       "ref": "0x15b9d6ecc20"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x15b9d6ecc20": {
+     "id": "0x15b9d6ecc20",
+     "type": "function",
+     "repr": "divide"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 13,
+     "locals": {
+      "divide": {
+       "ref": "0x15b9d6ecc20"
+      }
+     }
+    },
+    {
+     "fn": "divide",
+     "line": 1,
+     "locals": {
+      "a": {
+       "ref": "0x7ffd7f2b4a58"
+      },
+      "b": {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x15b9d6ecc20": {
+     "id": "0x15b9d6ecc20",
+     "type": "function",
+     "repr": "divide"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 13,
+     "locals": {
+      "divide": {
+       "ref": "0x15b9d6ecc20"
+      }
+     }
+    },
+    {
+     "fn": "divide",
+     "line": 2,
+     "locals": {
+      "a": {
+       "ref": "0x7ffd7f2b4a58"
+      },
+      "b": {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x15b9d6ecc20": {
+     "id": "0x15b9d6ecc20",
+     "type": "function",
+     "repr": "divide"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 3,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 13,
+     "locals": {
+      "divide": {
+       "ref": "0x15b9d6ecc20"
+      }
+     }
+    },
+    {
+     "fn": "divide",
+     "line": 3,
+     "locals": {
+      "a": {
+       "ref": "0x7ffd7f2b4a58"
+      },
+      "b": {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x15b9d6ecc20": {
+     "id": "0x15b9d6ecc20",
+     "type": "function",
+     "repr": "divide"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    }
+   },
+   "stdout": "",
+   "note": "시도"
+  },
+  {
+   "line": 8,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 13,
+     "locals": {
+      "divide": {
+       "ref": "0x15b9d6ecc20"
+      }
+     }
+    },
+    {
+     "fn": "divide",
+     "line": 8,
+     "locals": {
+      "a": {
+       "ref": "0x7ffd7f2b4a58"
+      },
+      "b": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "r": {
+       "ref": "0x15b9d3f61d0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x15b9d6ecc20": {
+     "id": "0x15b9d6ecc20",
+     "type": "function",
+     "repr": "divide"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x15b9d3f61d0": {
+     "id": "0x15b9d3f61d0",
+     "type": "float",
+     "repr": "2.0"
+    }
+   },
+   "stdout": "",
+   "note": "예외가 '안 났을 때만' — try 에 넣지 않는 이유는 else 안의 오류를 except 가 잡지 않게 하려고"
+  },
+  {
+   "line": 9,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 13,
+     "locals": {
+      "divide": {
+       "ref": "0x15b9d6ecc20"
+      }
+     }
+    },
+    {
+     "fn": "divide",
+     "line": 9,
+     "locals": {
+      "a": {
+       "ref": "0x7ffd7f2b4a58"
+      },
+      "b": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "r": {
+       "ref": "0x15b9d3f61d0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x15b9d6ecc20": {
+     "id": "0x15b9d6ecc20",
+     "type": "function",
+     "repr": "divide"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x15b9d3f61d0": {
+     "id": "0x15b9d3f61d0",
+     "type": "float",
+     "repr": "2.0"
+    }
+   },
+   "stdout": "성공\n"
+  },
+  {
+   "line": 11,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 13,
+     "locals": {
+      "divide": {
+       "ref": "0x15b9d6ecc20"
+      }
+     }
+    },
+    {
+     "fn": "divide",
+     "line": 11,
+     "locals": {
+      "a": {
+       "ref": "0x7ffd7f2b4a58"
+      },
+      "b": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "r": {
+       "ref": "0x15b9d3f61d0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x15b9d6ecc20": {
+     "id": "0x15b9d6ecc20",
+     "type": "function",
+     "repr": "divide"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x15b9d3f61d0": {
+     "id": "0x15b9d3f61d0",
+     "type": "float",
+     "repr": "2.0"
+    }
+   },
+   "stdout": "성공\n",
+   "note": "예외 여부와 무관하게 '항상' — return 이 있어도 그 전에 실행된다"
+  },
+  {
+   "line": 11,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 13,
+     "locals": {
+      "divide": {
+       "ref": "0x15b9d6ecc20"
+      }
+     }
+    },
+    {
+     "fn": "divide",
+     "line": 11,
+     "locals": {
+      "a": {
+       "ref": "0x7ffd7f2b4a58"
+      },
+      "b": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "r": {
+       "ref": "0x15b9d3f61d0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x15b9d6ecc20": {
+     "id": "0x15b9d6ecc20",
+     "type": "function",
+     "repr": "divide"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x15b9d3f61d0": {
+     "id": "0x15b9d3f61d0",
+     "type": "float",
+     "repr": "2.0"
+    }
+   },
+   "stdout": "성공\n정리\n",
+   "retval": "2.0"
+  },
+  {
+   "line": 14,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 14,
+     "locals": {
+      "divide": {
+       "ref": "0x15b9d6ecc20"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x15b9d6ecc20": {
+     "id": "0x15b9d6ecc20",
+     "type": "function",
+     "repr": "divide"
+    }
+   },
+   "stdout": "성공\n정리\n2.0\n"
+  },
+  {
+   "line": 1,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 14,
+     "locals": {
+      "divide": {
+       "ref": "0x15b9d6ecc20"
+      }
+     }
+    },
+    {
+     "fn": "divide",
+     "line": 1,
+     "locals": {
+      "a": {
+       "ref": "0x7ffd7f2b4a58"
+      },
+      "b": {
+       "ref": "0x7ffd7f2b4998"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x15b9d6ecc20": {
+     "id": "0x15b9d6ecc20",
+     "type": "function",
+     "repr": "divide"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    },
+    "0x7ffd7f2b4998": {
+     "id": "0x7ffd7f2b4998",
+     "type": "int",
+     "repr": "0"
+    }
+   },
+   "stdout": "성공\n정리\n2.0\n"
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 14,
+     "locals": {
+      "divide": {
+       "ref": "0x15b9d6ecc20"
+      }
+     }
+    },
+    {
+     "fn": "divide",
+     "line": 2,
+     "locals": {
+      "a": {
+       "ref": "0x7ffd7f2b4a58"
+      },
+      "b": {
+       "ref": "0x7ffd7f2b4998"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x15b9d6ecc20": {
+     "id": "0x15b9d6ecc20",
+     "type": "function",
+     "repr": "divide"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    },
+    "0x7ffd7f2b4998": {
+     "id": "0x7ffd7f2b4998",
+     "type": "int",
+     "repr": "0"
+    }
+   },
+   "stdout": "성공\n정리\n2.0\n"
+  },
+  {
+   "line": 3,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 14,
+     "locals": {
+      "divide": {
+       "ref": "0x15b9d6ecc20"
+      }
+     }
+    },
+    {
+     "fn": "divide",
+     "line": 3,
+     "locals": {
+      "a": {
+       "ref": "0x7ffd7f2b4a58"
+      },
+      "b": {
+       "ref": "0x7ffd7f2b4998"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x15b9d6ecc20": {
+     "id": "0x15b9d6ecc20",
+     "type": "function",
+     "repr": "divide"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    },
+    "0x7ffd7f2b4998": {
+     "id": "0x7ffd7f2b4998",
+     "type": "int",
+     "repr": "0"
+    }
+   },
+   "stdout": "성공\n정리\n2.0\n",
+   "note": "시도"
+  },
+  {
+   "line": 3,
+   "event": "exception",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 14,
+     "locals": {
+      "divide": {
+       "ref": "0x15b9d6ecc20"
+      }
+     }
+    },
+    {
+     "fn": "divide",
+     "line": 3,
+     "locals": {
+      "a": {
+       "ref": "0x7ffd7f2b4a58"
+      },
+      "b": {
+       "ref": "0x7ffd7f2b4998"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x15b9d6ecc20": {
+     "id": "0x15b9d6ecc20",
+     "type": "function",
+     "repr": "divide"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    },
+    "0x7ffd7f2b4998": {
+     "id": "0x7ffd7f2b4998",
+     "type": "int",
+     "repr": "0"
+    }
+   },
+   "stdout": "성공\n정리\n2.0\n",
+   "exc": "ZeroDivisionError: division by zero"
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 14,
+     "locals": {
+      "divide": {
+       "ref": "0x15b9d6ecc20"
+      }
+     }
+    },
+    {
+     "fn": "divide",
+     "line": 4,
+     "locals": {
+      "a": {
+       "ref": "0x7ffd7f2b4a58"
+      },
+      "b": {
+       "ref": "0x7ffd7f2b4998"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x15b9d6ecc20": {
+     "id": "0x15b9d6ecc20",
+     "type": "function",
+     "repr": "divide"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    },
+    "0x7ffd7f2b4998": {
+     "id": "0x7ffd7f2b4998",
+     "type": "int",
+     "repr": "0"
+    }
+   },
+   "stdout": "성공\n정리\n2.0\n"
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 14,
+     "locals": {
+      "divide": {
+       "ref": "0x15b9d6ecc20"
+      }
+     }
+    },
+    {
+     "fn": "divide",
+     "line": 5,
+     "locals": {
+      "a": {
+       "ref": "0x7ffd7f2b4a58"
+      },
+      "b": {
+       "ref": "0x7ffd7f2b4998"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x15b9d6ecc20": {
+     "id": "0x15b9d6ecc20",
+     "type": "function",
+     "repr": "divide"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    },
+    "0x7ffd7f2b4998": {
+     "id": "0x7ffd7f2b4998",
+     "type": "int",
+     "repr": "0"
+    }
+   },
+   "stdout": "성공\n정리\n2.0\n",
+   "note": "예외가 났을 때만"
+  },
+  {
+   "line": 6,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 14,
+     "locals": {
+      "divide": {
+       "ref": "0x15b9d6ecc20"
+      }
+     }
+    },
+    {
+     "fn": "divide",
+     "line": 6,
+     "locals": {
+      "a": {
+       "ref": "0x7ffd7f2b4a58"
+      },
+      "b": {
+       "ref": "0x7ffd7f2b4998"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x15b9d6ecc20": {
+     "id": "0x15b9d6ecc20",
+     "type": "function",
+     "repr": "divide"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    },
+    "0x7ffd7f2b4998": {
+     "id": "0x7ffd7f2b4998",
+     "type": "int",
+     "repr": "0"
+    }
+   },
+   "stdout": "성공\n정리\n2.0\n0으로 나눔\n"
+  },
+  {
+   "line": 11,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 14,
+     "locals": {
+      "divide": {
+       "ref": "0x15b9d6ecc20"
+      }
+     }
+    },
+    {
+     "fn": "divide",
+     "line": 11,
+     "locals": {
+      "a": {
+       "ref": "0x7ffd7f2b4a58"
+      },
+      "b": {
+       "ref": "0x7ffd7f2b4998"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x15b9d6ecc20": {
+     "id": "0x15b9d6ecc20",
+     "type": "function",
+     "repr": "divide"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    },
+    "0x7ffd7f2b4998": {
+     "id": "0x7ffd7f2b4998",
+     "type": "int",
+     "repr": "0"
+    }
+   },
+   "stdout": "성공\n정리\n2.0\n0으로 나눔\n",
+   "note": "예외 여부와 무관하게 '항상' — return 이 있어도 그 전에 실행된다"
+  },
+  {
+   "line": 11,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 14,
+     "locals": {
+      "divide": {
+       "ref": "0x15b9d6ecc20"
+      }
+     }
+    },
+    {
+     "fn": "divide",
+     "line": 11,
+     "locals": {
+      "a": {
+       "ref": "0x7ffd7f2b4a58"
+      },
+      "b": {
+       "ref": "0x7ffd7f2b4998"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x15b9d6ecc20": {
+     "id": "0x15b9d6ecc20",
+     "type": "function",
+     "repr": "divide"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    },
+    "0x7ffd7f2b4998": {
+     "id": "0x7ffd7f2b4998",
+     "type": "int",
+     "repr": "0"
+    }
+   },
+   "stdout": "성공\n정리\n2.0\n0으로 나눔\n정리\n"
+  },
+  {
+   "line": 14,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 14,
+     "locals": {
+      "divide": {
+       "ref": "0x15b9d6ecc20"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x15b9d6ecc20": {
+     "id": "0x15b9d6ecc20",
+     "type": "function",
+     "repr": "divide"
+    }
+   },
+   "stdout": "성공\n정리\n2.0\n0으로 나눔\n정리\nNone\n"
+  }
+ ],
+ "v": 1
+}

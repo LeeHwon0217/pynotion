@@ -62,6 +62,17 @@ import t58 from "./p5-from-as.json";
 import t59 from "./p5-import.json";
 import t60 from "./p5-main.json";
 import t61 from "./p5-stdlib.json";
+import t62 from "./p6-csv-json.json";
+import t63 from "./p6-else-finally.json";
+import t64 from "./p6-encoding.json";
+import t65 from "./p6-file.json";
+import t66 from "./p6-hierarchy.json";
+import t67 from "./p6-json.json";
+import t68 from "./p6-pathlib.json";
+import t69 from "./p6-propagate.json";
+import t70 from "./p6-raise.json";
+import t71 from "./p6-try-except.json";
+import t72 from "./p6-with.json";
 
 export const TRACES: Record<string, Trace> = {
   "p0-indent-error": t0 as unknown as Trace,
@@ -126,4 +137,15 @@ export const TRACES: Record<string, Trace> = {
   "p5-import": t59 as unknown as Trace,
   "p5-main": t60 as unknown as Trace,
   "p5-stdlib": t61 as unknown as Trace,
+  "p6-csv-json": t62 as unknown as Trace,
+  "p6-else-finally": t63 as unknown as Trace,
+  "p6-encoding": t64 as unknown as Trace,
+  "p6-file": t65 as unknown as Trace,
+  "p6-hierarchy": t66 as unknown as Trace,
+  "p6-json": t67 as unknown as Trace,
+  "p6-pathlib": t68 as unknown as Trace,
+  "p6-propagate": t69 as unknown as Trace,
+  "p6-raise": t70 as unknown as Trace,
+  "p6-try-except": t71 as unknown as Trace,
+  "p6-with": t72 as unknown as Trace,
 };

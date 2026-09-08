@@ -37,48 +37,48 @@
      "line": 2,
      "locals": {
       "parts": {
-       "ref": "0x20f3ffb4a00"
+       "ref": "0x27e7c934a00"
       }
      }
     }
    ],
    "heap": {
-    "0x20f3ffb4a00": {
-     "id": "0x20f3ffb4a00",
+    "0x27e7c934a00": {
+     "id": "0x27e7c934a00",
      "type": "list",
      "repr": "['가', '나', '다', '라']",
      "items": [
       {
-       "ref": "0x20f40281b30"
+       "ref": "0x27e7cc01b30"
       },
       {
-       "ref": "0x20f40281a70"
+       "ref": "0x27e7cc01a70"
       },
       {
-       "ref": "0x20f40281cb0"
+       "ref": "0x27e7cc01cb0"
       },
       {
-       "ref": "0x20f40281eb0"
+       "ref": "0x27e7cc01eb0"
       }
      ]
     },
-    "0x20f40281b30": {
-     "id": "0x20f40281b30",
+    "0x27e7cc01b30": {
+     "id": "0x27e7cc01b30",
      "type": "str",
      "repr": "'가'"
     },
-    "0x20f40281a70": {
-     "id": "0x20f40281a70",
+    "0x27e7cc01a70": {
+     "id": "0x27e7cc01a70",
      "type": "str",
      "repr": "'나'"
     },
-    "0x20f40281cb0": {
-     "id": "0x20f40281cb0",
+    "0x27e7cc01cb0": {
+     "id": "0x27e7cc01cb0",
      "type": "str",
      "repr": "'다'"
     },
-    "0x20f40281eb0": {
-     "id": "0x20f40281eb0",
+    "0x27e7cc01eb0": {
+     "id": "0x27e7cc01eb0",
      "type": "str",
      "repr": "'라'"
     }
@@ -94,7 +94,7 @@
      "line": 3,
      "locals": {
       "parts": {
-       "ref": "0x20f3ffb4a00"
+       "ref": "0x27e7c934a00"
       },
       "s": {
        "ref": "0x7ffd7f2b9ca0"
@@ -103,42 +103,42 @@
     }
    ],
    "heap": {
-    "0x20f3ffb4a00": {
-     "id": "0x20f3ffb4a00",
+    "0x27e7c934a00": {
+     "id": "0x27e7c934a00",
      "type": "list",
      "repr": "['가', '나', '다', '라']",
      "items": [
       {
-       "ref": "0x20f40281b30"
+       "ref": "0x27e7cc01b30"
       },
       {
-       "ref": "0x20f40281a70"
+       "ref": "0x27e7cc01a70"
       },
       {
-       "ref": "0x20f40281cb0"
+       "ref": "0x27e7cc01cb0"
       },
       {
-       "ref": "0x20f40281eb0"
+       "ref": "0x27e7cc01eb0"
       }
      ]
     },
-    "0x20f40281b30": {
-     "id": "0x20f40281b30",
+    "0x27e7cc01b30": {
+     "id": "0x27e7cc01b30",
      "type": "str",
      "repr": "'가'"
     },
-    "0x20f40281a70": {
-     "id": "0x20f40281a70",
+    "0x27e7cc01a70": {
+     "id": "0x27e7cc01a70",
      "type": "str",
      "repr": "'나'"
     },
-    "0x20f40281cb0": {
-     "id": "0x20f40281cb0",
+    "0x27e7cc01cb0": {
+     "id": "0x27e7cc01cb0",
      "type": "str",
      "repr": "'다'"
     },
-    "0x20f40281eb0": {
-     "id": "0x20f40281eb0",
+    "0x27e7cc01eb0": {
+     "id": "0x27e7cc01eb0",
      "type": "str",
      "repr": "'라'"
     },
@@ -159,54 +159,54 @@
      "line": 4,
      "locals": {
       "parts": {
-       "ref": "0x20f3ffb4a00"
+       "ref": "0x27e7c934a00"
       },
       "s": {
        "ref": "0x7ffd7f2b9ca0"
       },
       "p": {
-       "ref": "0x20f40281b30"
+       "ref": "0x27e7cc01b30"
       }
      }
     }
    ],
    "heap": {
-    "0x20f3ffb4a00": {
-     "id": "0x20f3ffb4a00",
+    "0x27e7c934a00": {
+     "id": "0x27e7c934a00",
      "type": "list",
      "repr": "['가', '나', '다', '라']",
      "items": [
       {
-       "ref": "0x20f40281b30"
+       "ref": "0x27e7cc01b30"
       },
       {
-       "ref": "0x20f40281a70"
+       "ref": "0x27e7cc01a70"
       },
       {
-       "ref": "0x20f40281cb0"
+       "ref": "0x27e7cc01cb0"
       },
       {
-       "ref": "0x20f40281eb0"
+       "ref": "0x27e7cc01eb0"
       }
      ]
     },
-    "0x20f40281b30": {
-     "id": "0x20f40281b30",
+    "0x27e7cc01b30": {
+     "id": "0x27e7cc01b30",
      "type": "str",
      "repr": "'가'"
     },
-    "0x20f40281a70": {
-     "id": "0x20f40281a70",
+    "0x27e7cc01a70": {
+     "id": "0x27e7cc01a70",
      "type": "str",
      "repr": "'나'"
     },
-    "0x20f40281cb0": {
-     "id": "0x20f40281cb0",
+    "0x27e7cc01cb0": {
+     "id": "0x27e7cc01cb0",
      "type": "str",
      "repr": "'다'"
     },
-    "0x20f40281eb0": {
-     "id": "0x20f40281eb0",
+    "0x27e7cc01eb0": {
+     "id": "0x27e7cc01eb0",
      "type": "str",
      "repr": "'라'"
     },
@@ -228,54 +228,54 @@
      "line": 3,
      "locals": {
       "parts": {
-       "ref": "0x20f3ffb4a00"
+       "ref": "0x27e7c934a00"
       },
       "s": {
-       "ref": "0x20f40281b30"
+       "ref": "0x27e7cc01b30"
       },
       "p": {
-       "ref": "0x20f40281b30"
+       "ref": "0x27e7cc01b30"
       }
      }
     }
    ],
    "heap": {
-    "0x20f3ffb4a00": {
-     "id": "0x20f3ffb4a00",
+    "0x27e7c934a00": {
+     "id": "0x27e7c934a00",
      "type": "list",
      "repr": "['가', '나', '다', '라']",
      "items": [
       {
-       "ref": "0x20f40281b30"
+       "ref": "0x27e7cc01b30"
       },
       {
-       "ref": "0x20f40281a70"
+       "ref": "0x27e7cc01a70"
       },
       {
-       "ref": "0x20f40281cb0"
+       "ref": "0x27e7cc01cb0"
       },
       {
-       "ref": "0x20f40281eb0"
+       "ref": "0x27e7cc01eb0"
       }
      ]
     },
-    "0x20f40281b30": {
-     "id": "0x20f40281b30",
+    "0x27e7cc01b30": {
+     "id": "0x27e7cc01b30",
      "type": "str",
      "repr": "'가'"
     },
-    "0x20f40281a70": {
-     "id": "0x20f40281a70",
+    "0x27e7cc01a70": {
+     "id": "0x27e7cc01a70",
      "type": "str",
      "repr": "'나'"
     },
-    "0x20f40281cb0": {
-     "id": "0x20f40281cb0",
+    "0x27e7cc01cb0": {
+     "id": "0x27e7cc01cb0",
      "type": "str",
      "repr": "'다'"
     },
-    "0x20f40281eb0": {
-     "id": "0x20f40281eb0",
+    "0x27e7cc01eb0": {
+     "id": "0x27e7cc01eb0",
      "type": "str",
      "repr": "'라'"
     }
@@ -291,54 +291,54 @@
      "line": 4,
      "locals": {
       "parts": {
-       "ref": "0x20f3ffb4a00"
+       "ref": "0x27e7c934a00"
       },
       "s": {
-       "ref": "0x20f40281b30"
+       "ref": "0x27e7cc01b30"
       },
       "p": {
-       "ref": "0x20f40281a70"
+       "ref": "0x27e7cc01a70"
       }
      }
     }
    ],
    "heap": {
-    "0x20f3ffb4a00": {
-     "id": "0x20f3ffb4a00",
+    "0x27e7c934a00": {
+     "id": "0x27e7c934a00",
      "type": "list",
      "repr": "['가', '나', '다', '라']",
      "items": [
       {
-       "ref": "0x20f40281b30"
+       "ref": "0x27e7cc01b30"
       },
       {
-       "ref": "0x20f40281a70"
+       "ref": "0x27e7cc01a70"
       },
       {
-       "ref": "0x20f40281cb0"
+       "ref": "0x27e7cc01cb0"
       },
       {
-       "ref": "0x20f40281eb0"
+       "ref": "0x27e7cc01eb0"
       }
      ]
     },
-    "0x20f40281b30": {
-     "id": "0x20f40281b30",
+    "0x27e7cc01b30": {
+     "id": "0x27e7cc01b30",
      "type": "str",
      "repr": "'가'"
     },
-    "0x20f40281a70": {
-     "id": "0x20f40281a70",
+    "0x27e7cc01a70": {
+     "id": "0x27e7cc01a70",
      "type": "str",
      "repr": "'나'"
     },
-    "0x20f40281cb0": {
-     "id": "0x20f40281cb0",
+    "0x27e7cc01cb0": {
+     "id": "0x27e7cc01cb0",
      "type": "str",
      "repr": "'다'"
     },
-    "0x20f40281eb0": {
-     "id": "0x20f40281eb0",
+    "0x27e7cc01eb0": {
+     "id": "0x27e7cc01eb0",
      "type": "str",
      "repr": "'라'"
     }
@@ -355,59 +355,59 @@
      "line": 3,
      "locals": {
       "parts": {
-       "ref": "0x20f3ffb4a00"
+       "ref": "0x27e7c934a00"
       },
       "s": {
-       "ref": "0x20f40288130"
+       "ref": "0x27e7cc08130"
       },
       "p": {
-       "ref": "0x20f40281a70"
+       "ref": "0x27e7cc01a70"
       }
      }
     }
    ],
    "heap": {
-    "0x20f3ffb4a00": {
-     "id": "0x20f3ffb4a00",
+    "0x27e7c934a00": {
+     "id": "0x27e7c934a00",
      "type": "list",
      "repr": "['가', '나', '다', '라']",
      "items": [
       {
-       "ref": "0x20f40281b30"
+       "ref": "0x27e7cc01b30"
       },
       {
-       "ref": "0x20f40281a70"
+       "ref": "0x27e7cc01a70"
       },
       {
-       "ref": "0x20f40281cb0"
+       "ref": "0x27e7cc01cb0"
       },
       {
-       "ref": "0x20f40281eb0"
+       "ref": "0x27e7cc01eb0"
       }
      ]
     },
-    "0x20f40281b30": {
-     "id": "0x20f40281b30",
+    "0x27e7cc01b30": {
+     "id": "0x27e7cc01b30",
      "type": "str",
      "repr": "'가'"
     },
-    "0x20f40281a70": {
-     "id": "0x20f40281a70",
+    "0x27e7cc01a70": {
+     "id": "0x27e7cc01a70",
      "type": "str",
      "repr": "'나'"
     },
-    "0x20f40281cb0": {
-     "id": "0x20f40281cb0",
+    "0x27e7cc01cb0": {
+     "id": "0x27e7cc01cb0",
      "type": "str",
      "repr": "'다'"
     },
-    "0x20f40281eb0": {
-     "id": "0x20f40281eb0",
+    "0x27e7cc01eb0": {
+     "id": "0x27e7cc01eb0",
      "type": "str",
      "repr": "'라'"
     },
-    "0x20f40288130": {
-     "id": "0x20f40288130",
+    "0x27e7cc08130": {
+     "id": "0x27e7cc08130",
      "type": "str",
      "repr": "'가나'"
     }
@@ -423,59 +423,59 @@
      "line": 4,
      "locals": {
       "parts": {
-       "ref": "0x20f3ffb4a00"
+       "ref": "0x27e7c934a00"
       },
       "s": {
-       "ref": "0x20f40288130"
+       "ref": "0x27e7cc08130"
       },
       "p": {
-       "ref": "0x20f40281cb0"
+       "ref": "0x27e7cc01cb0"
       }
      }
     }
    ],
    "heap": {
-    "0x20f3ffb4a00": {
-     "id": "0x20f3ffb4a00",
+    "0x27e7c934a00": {
+     "id": "0x27e7c934a00",
      "type": "list",
      "repr": "['가', '나', '다', '라']",
      "items": [
       {
-       "ref": "0x20f40281b30"
+       "ref": "0x27e7cc01b30"
       },
       {
-       "ref": "0x20f40281a70"
+       "ref": "0x27e7cc01a70"
       },
       {
-       "ref": "0x20f40281cb0"
+       "ref": "0x27e7cc01cb0"
       },
       {
-       "ref": "0x20f40281eb0"
+       "ref": "0x27e7cc01eb0"
       }
      ]
     },
-    "0x20f40281b30": {
-     "id": "0x20f40281b30",
+    "0x27e7cc01b30": {
+     "id": "0x27e7cc01b30",
      "type": "str",
      "repr": "'가'"
     },
-    "0x20f40281a70": {
-     "id": "0x20f40281a70",
+    "0x27e7cc01a70": {
+     "id": "0x27e7cc01a70",
      "type": "str",
      "repr": "'나'"
     },
-    "0x20f40281cb0": {
-     "id": "0x20f40281cb0",
+    "0x27e7cc01cb0": {
+     "id": "0x27e7cc01cb0",
      "type": "str",
      "repr": "'다'"
     },
-    "0x20f40281eb0": {
-     "id": "0x20f40281eb0",
+    "0x27e7cc01eb0": {
+     "id": "0x27e7cc01eb0",
      "type": "str",
      "repr": "'라'"
     },
-    "0x20f40288130": {
-     "id": "0x20f40288130",
+    "0x27e7cc08130": {
+     "id": "0x27e7cc08130",
      "type": "str",
      "repr": "'가나'"
     }
@@ -492,59 +492,59 @@
      "line": 3,
      "locals": {
       "parts": {
-       "ref": "0x20f3ffb4a00"
+       "ref": "0x27e7c934a00"
       },
       "s": {
-       "ref": "0x20f402832b0"
+       "ref": "0x27e7cc032b0"
       },
       "p": {
-       "ref": "0x20f40281cb0"
+       "ref": "0x27e7cc01cb0"
       }
      }
     }
    ],
    "heap": {
-    "0x20f3ffb4a00": {
-     "id": "0x20f3ffb4a00",
+    "0x27e7c934a00": {
+     "id": "0x27e7c934a00",
      "type": "list",
      "repr": "['가', '나', '다', '라']",
      "items": [
       {
-       "ref": "0x20f40281b30"
+       "ref": "0x27e7cc01b30"
       },
       {
-       "ref": "0x20f40281a70"
+       "ref": "0x27e7cc01a70"
       },
       {
-       "ref": "0x20f40281cb0"
+       "ref": "0x27e7cc01cb0"
       },
       {
-       "ref": "0x20f40281eb0"
+       "ref": "0x27e7cc01eb0"
       }
      ]
     },
-    "0x20f40281b30": {
-     "id": "0x20f40281b30",
+    "0x27e7cc01b30": {
+     "id": "0x27e7cc01b30",
      "type": "str",
      "repr": "'가'"
     },
-    "0x20f40281a70": {
-     "id": "0x20f40281a70",
+    "0x27e7cc01a70": {
+     "id": "0x27e7cc01a70",
      "type": "str",
      "repr": "'나'"
     },
-    "0x20f40281cb0": {
-     "id": "0x20f40281cb0",
+    "0x27e7cc01cb0": {
+     "id": "0x27e7cc01cb0",
      "type": "str",
      "repr": "'다'"
     },
-    "0x20f40281eb0": {
-     "id": "0x20f40281eb0",
+    "0x27e7cc01eb0": {
+     "id": "0x27e7cc01eb0",
      "type": "str",
      "repr": "'라'"
     },
-    "0x20f402832b0": {
-     "id": "0x20f402832b0",
+    "0x27e7cc032b0": {
+     "id": "0x27e7cc032b0",
      "type": "str",
      "repr": "'가나다'"
     }
@@ -560,59 +560,59 @@
      "line": 4,
      "locals": {
       "parts": {
-       "ref": "0x20f3ffb4a00"
+       "ref": "0x27e7c934a00"
       },
       "s": {
-       "ref": "0x20f402832b0"
+       "ref": "0x27e7cc032b0"
       },
       "p": {
-       "ref": "0x20f40281eb0"
+       "ref": "0x27e7cc01eb0"
       }
      }
     }
    ],
    "heap": {
-    "0x20f3ffb4a00": {
-     "id": "0x20f3ffb4a00",
+    "0x27e7c934a00": {
+     "id": "0x27e7c934a00",
      "type": "list",
      "repr": "['가', '나', '다', '라']",
      "items": [
       {
-       "ref": "0x20f40281b30"
+       "ref": "0x27e7cc01b30"
       },
       {
-       "ref": "0x20f40281a70"
+       "ref": "0x27e7cc01a70"
       },
       {
-       "ref": "0x20f40281cb0"
+       "ref": "0x27e7cc01cb0"
       },
       {
-       "ref": "0x20f40281eb0"
+       "ref": "0x27e7cc01eb0"
       }
      ]
     },
-    "0x20f40281b30": {
-     "id": "0x20f40281b30",
+    "0x27e7cc01b30": {
+     "id": "0x27e7cc01b30",
      "type": "str",
      "repr": "'가'"
     },
-    "0x20f40281a70": {
-     "id": "0x20f40281a70",
+    "0x27e7cc01a70": {
+     "id": "0x27e7cc01a70",
      "type": "str",
      "repr": "'나'"
     },
-    "0x20f40281cb0": {
-     "id": "0x20f40281cb0",
+    "0x27e7cc01cb0": {
+     "id": "0x27e7cc01cb0",
      "type": "str",
      "repr": "'다'"
     },
-    "0x20f40281eb0": {
-     "id": "0x20f40281eb0",
+    "0x27e7cc01eb0": {
+     "id": "0x27e7cc01eb0",
      "type": "str",
      "repr": "'라'"
     },
-    "0x20f402832b0": {
-     "id": "0x20f402832b0",
+    "0x27e7cc032b0": {
+     "id": "0x27e7cc032b0",
      "type": "str",
      "repr": "'가나다'"
     }
@@ -629,59 +629,59 @@
      "line": 3,
      "locals": {
       "parts": {
-       "ref": "0x20f3ffb4a00"
+       "ref": "0x27e7c934a00"
       },
       "s": {
-       "ref": "0x20f40276420"
+       "ref": "0x27e7cbf6420"
       },
       "p": {
-       "ref": "0x20f40281eb0"
+       "ref": "0x27e7cc01eb0"
       }
      }
     }
    ],
    "heap": {
-    "0x20f3ffb4a00": {
-     "id": "0x20f3ffb4a00",
+    "0x27e7c934a00": {
+     "id": "0x27e7c934a00",
      "type": "list",
      "repr": "['가', '나', '다', '라']",
      "items": [
       {
-       "ref": "0x20f40281b30"
+       "ref": "0x27e7cc01b30"
       },
       {
-       "ref": "0x20f40281a70"
+       "ref": "0x27e7cc01a70"
       },
       {
-       "ref": "0x20f40281cb0"
+       "ref": "0x27e7cc01cb0"
       },
       {
-       "ref": "0x20f40281eb0"
+       "ref": "0x27e7cc01eb0"
       }
      ]
     },
-    "0x20f40281b30": {
-     "id": "0x20f40281b30",
+    "0x27e7cc01b30": {
+     "id": "0x27e7cc01b30",
      "type": "str",
      "repr": "'가'"
     },
-    "0x20f40281a70": {
-     "id": "0x20f40281a70",
+    "0x27e7cc01a70": {
+     "id": "0x27e7cc01a70",
      "type": "str",
      "repr": "'나'"
     },
-    "0x20f40281cb0": {
-     "id": "0x20f40281cb0",
+    "0x27e7cc01cb0": {
+     "id": "0x27e7cc01cb0",
      "type": "str",
      "repr": "'다'"
     },
-    "0x20f40281eb0": {
-     "id": "0x20f40281eb0",
+    "0x27e7cc01eb0": {
+     "id": "0x27e7cc01eb0",
      "type": "str",
      "repr": "'라'"
     },
-    "0x20f40276420": {
-     "id": "0x20f40276420",
+    "0x27e7cbf6420": {
+     "id": "0x27e7cbf6420",
      "type": "str",
      "repr": "'가나다라'"
     }
@@ -697,59 +697,59 @@
      "line": 5,
      "locals": {
       "parts": {
-       "ref": "0x20f3ffb4a00"
+       "ref": "0x27e7c934a00"
       },
       "s": {
-       "ref": "0x20f40276420"
+       "ref": "0x27e7cbf6420"
       },
       "p": {
-       "ref": "0x20f40281eb0"
+       "ref": "0x27e7cc01eb0"
       }
      }
     }
    ],
    "heap": {
-    "0x20f3ffb4a00": {
-     "id": "0x20f3ffb4a00",
+    "0x27e7c934a00": {
+     "id": "0x27e7c934a00",
      "type": "list",
      "repr": "['가', '나', '다', '라']",
      "items": [
       {
-       "ref": "0x20f40281b30"
+       "ref": "0x27e7cc01b30"
       },
       {
-       "ref": "0x20f40281a70"
+       "ref": "0x27e7cc01a70"
       },
       {
-       "ref": "0x20f40281cb0"
+       "ref": "0x27e7cc01cb0"
       },
       {
-       "ref": "0x20f40281eb0"
+       "ref": "0x27e7cc01eb0"
       }
      ]
     },
-    "0x20f40281b30": {
-     "id": "0x20f40281b30",
+    "0x27e7cc01b30": {
+     "id": "0x27e7cc01b30",
      "type": "str",
      "repr": "'가'"
     },
-    "0x20f40281a70": {
-     "id": "0x20f40281a70",
+    "0x27e7cc01a70": {
+     "id": "0x27e7cc01a70",
      "type": "str",
      "repr": "'나'"
     },
-    "0x20f40281cb0": {
-     "id": "0x20f40281cb0",
+    "0x27e7cc01cb0": {
+     "id": "0x27e7cc01cb0",
      "type": "str",
      "repr": "'다'"
     },
-    "0x20f40281eb0": {
-     "id": "0x20f40281eb0",
+    "0x27e7cc01eb0": {
+     "id": "0x27e7cc01eb0",
      "type": "str",
      "repr": "'라'"
     },
-    "0x20f40276420": {
-     "id": "0x20f40276420",
+    "0x27e7cbf6420": {
+     "id": "0x27e7cbf6420",
      "type": "str",
      "repr": "'가나다라'"
     }
@@ -765,59 +765,59 @@
      "line": 6,
      "locals": {
       "parts": {
-       "ref": "0x20f3ffb4a00"
+       "ref": "0x27e7c934a00"
       },
       "s": {
-       "ref": "0x20f40276420"
+       "ref": "0x27e7cbf6420"
       },
       "p": {
-       "ref": "0x20f40281eb0"
+       "ref": "0x27e7cc01eb0"
       }
      }
     }
    ],
    "heap": {
-    "0x20f3ffb4a00": {
-     "id": "0x20f3ffb4a00",
+    "0x27e7c934a00": {
+     "id": "0x27e7c934a00",
      "type": "list",
      "repr": "['가', '나', '다', '라']",
      "items": [
       {
-       "ref": "0x20f40281b30"
+       "ref": "0x27e7cc01b30"
       },
       {
-       "ref": "0x20f40281a70"
+       "ref": "0x27e7cc01a70"
       },
       {
-       "ref": "0x20f40281cb0"
+       "ref": "0x27e7cc01cb0"
       },
       {
-       "ref": "0x20f40281eb0"
+       "ref": "0x27e7cc01eb0"
       }
      ]
     },
-    "0x20f40281b30": {
-     "id": "0x20f40281b30",
+    "0x27e7cc01b30": {
+     "id": "0x27e7cc01b30",
      "type": "str",
      "repr": "'가'"
     },
-    "0x20f40281a70": {
-     "id": "0x20f40281a70",
+    "0x27e7cc01a70": {
+     "id": "0x27e7cc01a70",
      "type": "str",
      "repr": "'나'"
     },
-    "0x20f40281cb0": {
-     "id": "0x20f40281cb0",
+    "0x27e7cc01cb0": {
+     "id": "0x27e7cc01cb0",
      "type": "str",
      "repr": "'다'"
     },
-    "0x20f40281eb0": {
-     "id": "0x20f40281eb0",
+    "0x27e7cc01eb0": {
+     "id": "0x27e7cc01eb0",
      "type": "str",
      "repr": "'라'"
     },
-    "0x20f40276420": {
-     "id": "0x20f40276420",
+    "0x27e7cbf6420": {
+     "id": "0x27e7cbf6420",
      "type": "str",
      "repr": "'가나다라'"
     }
@@ -834,67 +834,67 @@
      "line": 7,
      "locals": {
       "parts": {
-       "ref": "0x20f3ffb4a00"
+       "ref": "0x27e7c934a00"
       },
       "s": {
-       "ref": "0x20f40276420"
+       "ref": "0x27e7cbf6420"
       },
       "p": {
-       "ref": "0x20f40281eb0"
+       "ref": "0x27e7cc01eb0"
       },
       "s2": {
-       "ref": "0x20f402767e0"
+       "ref": "0x27e7cbf67e0"
       }
      }
     }
    ],
    "heap": {
-    "0x20f3ffb4a00": {
-     "id": "0x20f3ffb4a00",
+    "0x27e7c934a00": {
+     "id": "0x27e7c934a00",
      "type": "list",
      "repr": "['가', '나', '다', '라']",
      "items": [
       {
-       "ref": "0x20f40281b30"
+       "ref": "0x27e7cc01b30"
       },
       {
-       "ref": "0x20f40281a70"
+       "ref": "0x27e7cc01a70"
       },
       {
-       "ref": "0x20f40281cb0"
+       "ref": "0x27e7cc01cb0"
       },
       {
-       "ref": "0x20f40281eb0"
+       "ref": "0x27e7cc01eb0"
       }
      ]
     },
-    "0x20f40281b30": {
-     "id": "0x20f40281b30",
+    "0x27e7cc01b30": {
+     "id": "0x27e7cc01b30",
      "type": "str",
      "repr": "'가'"
     },
-    "0x20f40281a70": {
-     "id": "0x20f40281a70",
+    "0x27e7cc01a70": {
+     "id": "0x27e7cc01a70",
      "type": "str",
      "repr": "'나'"
     },
-    "0x20f40281cb0": {
-     "id": "0x20f40281cb0",
+    "0x27e7cc01cb0": {
+     "id": "0x27e7cc01cb0",
      "type": "str",
      "repr": "'다'"
     },
-    "0x20f40281eb0": {
-     "id": "0x20f40281eb0",
+    "0x27e7cc01eb0": {
+     "id": "0x27e7cc01eb0",
      "type": "str",
      "repr": "'라'"
     },
-    "0x20f40276420": {
-     "id": "0x20f40276420",
+    "0x27e7cbf6420": {
+     "id": "0x27e7cbf6420",
      "type": "str",
      "repr": "'가나다라'"
     },
-    "0x20f402767e0": {
-     "id": "0x20f402767e0",
+    "0x27e7cbf67e0": {
+     "id": "0x27e7cbf67e0",
      "type": "str",
      "repr": "'가나다라'"
     }
@@ -910,67 +910,67 @@
      "line": 7,
      "locals": {
       "parts": {
-       "ref": "0x20f3ffb4a00"
+       "ref": "0x27e7c934a00"
       },
       "s": {
-       "ref": "0x20f40276420"
+       "ref": "0x27e7cbf6420"
       },
       "p": {
-       "ref": "0x20f40281eb0"
+       "ref": "0x27e7cc01eb0"
       },
       "s2": {
-       "ref": "0x20f402767e0"
+       "ref": "0x27e7cbf67e0"
       }
      }
     }
    ],
    "heap": {
-    "0x20f3ffb4a00": {
-     "id": "0x20f3ffb4a00",
+    "0x27e7c934a00": {
+     "id": "0x27e7c934a00",
      "type": "list",
      "repr": "['가', '나', '다', '라']",
      "items": [
       {
-       "ref": "0x20f40281b30"
+       "ref": "0x27e7cc01b30"
       },
       {
-       "ref": "0x20f40281a70"
+       "ref": "0x27e7cc01a70"
       },
       {
-       "ref": "0x20f40281cb0"
+       "ref": "0x27e7cc01cb0"
       },
       {
-       "ref": "0x20f40281eb0"
+       "ref": "0x27e7cc01eb0"
       }
      ]
     },
-    "0x20f40281b30": {
-     "id": "0x20f40281b30",
+    "0x27e7cc01b30": {
+     "id": "0x27e7cc01b30",
      "type": "str",
      "repr": "'가'"
     },
-    "0x20f40281a70": {
-     "id": "0x20f40281a70",
+    "0x27e7cc01a70": {
+     "id": "0x27e7cc01a70",
      "type": "str",
      "repr": "'나'"
     },
-    "0x20f40281cb0": {
-     "id": "0x20f40281cb0",
+    "0x27e7cc01cb0": {
+     "id": "0x27e7cc01cb0",
      "type": "str",
      "repr": "'다'"
     },
-    "0x20f40281eb0": {
-     "id": "0x20f40281eb0",
+    "0x27e7cc01eb0": {
+     "id": "0x27e7cc01eb0",
      "type": "str",
      "repr": "'라'"
     },
-    "0x20f40276420": {
-     "id": "0x20f40276420",
+    "0x27e7cbf6420": {
+     "id": "0x27e7cbf6420",
      "type": "str",
      "repr": "'가나다라'"
     },
-    "0x20f402767e0": {
-     "id": "0x20f402767e0",
+    "0x27e7cbf67e0": {
+     "id": "0x27e7cbf67e0",
      "type": "str",
      "repr": "'가나다라'"
     }

@@ -6,6 +6,7 @@ import { buildStory, type Story } from "./StoryScene";
 import { buildFlow, type Flow } from "./FlowScene";
 import { buildStack, type StackStory } from "./StackScene";
 import { buildScope, type ScopeStory } from "./ScopeScene";
+import { buildTree, type TreeStory } from "./TreeScene";
 import { SCENES as EXTRA } from "./scenes";
 
 type Built = { script: import("@/lib/anim").Script; render: (t: number) => React.ReactNode; viewBox?: string };
@@ -16,6 +17,7 @@ const SCENES: Record<string, (props: Record<string, unknown>) => Built> = {
   Flow: (props) => buildFlow(props.flow as Flow),
   Stack: (props) => buildStack(props.stack as StackStory),
   Scope: (props) => buildScope(props.scope as ScopeStory),
+  Tree: (props) => buildTree(props.tree as TreeStory),
   ...EXTRA,
 };
 
