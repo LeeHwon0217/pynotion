@@ -51,6 +51,13 @@ import { recursion } from "./part-04/recursion";
 import { lambdaLesson } from "./part-04/lambda";
 import { docstringHints } from "./part-04/docstring-hints";
 import { passBy } from "./part-04/pass-by";
+import { importLesson } from "./part-05/import";
+import { fromAs } from "./part-05/from-as";
+import { mainLesson } from "./part-05/main";
+import { packages } from "./part-05/packages";
+import { stdlib } from "./part-05/stdlib";
+import { venvLesson } from "./part-05/venv";
+import { pipLesson } from "./part-05/pip";
 
 const ALL: Lesson[] = [
   whatIsPython, setup, howCodeRuns, firstProgram, readingErrors,
@@ -58,6 +65,7 @@ const ALL: Lesson[] = [
   ifLesson, truthiness, whileLesson, forLesson, rangeLesson, breakContinue, nestedLoops, matchLesson,
   listBasics, indexing, slicing, listMethods, dynamicArray, tupleLesson, stringMethods, stringImmutable, dictBasics, hashTable, dictMethods, setLesson, comprehension, nestedComprehension, copyLesson, sorting,
   callStack, returnLesson, argsLesson, mutableDefault, starArgs, positionalOnly, scopeLesson, globalNonlocal, recursion, lambdaLesson, docstringHints, passBy,
+  importLesson, fromAs, mainLesson, packages, stdlib, venvLesson, pipLesson,
 ];
 
 const partSlug = (id: number) => PARTS.find((p) => p.id === id)!.slug;

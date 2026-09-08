@@ -38,14 +38,14 @@
      "line": 2,
      "locals": {
       "nums": {
-       "ref": "0x1765a7f1340"
+       "ref": "0x1ef3e4b1340"
       }
      }
     }
    ],
    "heap": {
-    "0x1765a7f1340": {
-     "id": "0x1765a7f1340",
+    "0x1ef3e4b1340": {
+     "id": "0x1ef3e4b1340",
      "type": "list",
      "repr": "[10, 20, 30]",
      "items": [
@@ -88,14 +88,14 @@
      "line": 3,
      "locals": {
       "nums": {
-       "ref": "0x1765a7f1340"
+       "ref": "0x1ef3e4b1340"
       }
      }
     }
    ],
    "heap": {
-    "0x1765a7f1340": {
-     "id": "0x1765a7f1340",
+    "0x1ef3e4b1340": {
+     "id": "0x1ef3e4b1340",
      "type": "list",
      "repr": "[10, 20, 30]",
      "items": [
@@ -138,14 +138,14 @@
      "line": 4,
      "locals": {
       "nums": {
-       "ref": "0x1765a7f1340"
+       "ref": "0x1ef3e4b1340"
       }
      }
     }
    ],
    "heap": {
-    "0x1765a7f1340": {
-     "id": "0x1765a7f1340",
+    "0x1ef3e4b1340": {
+     "id": "0x1ef3e4b1340",
      "type": "list",
      "repr": "[10, 25, 30]",
      "items": [
@@ -187,14 +187,14 @@
      "line": 5,
      "locals": {
       "nums": {
-       "ref": "0x1765a7f1340"
+       "ref": "0x1ef3e4b1340"
       }
      }
     }
    ],
    "heap": {
-    "0x1765a7f1340": {
-     "id": "0x1765a7f1340",
+    "0x1ef3e4b1340": {
+     "id": "0x1ef3e4b1340",
      "type": "list",
      "repr": "[10, 25, 30]",
      "items": [
@@ -237,17 +237,17 @@
      "line": 6,
      "locals": {
       "nums": {
-       "ref": "0x1765a7f1340"
+       "ref": "0x1ef3e4b1340"
       },
       "mixed": {
-       "ref": "0x1765a80f4c0"
+       "ref": "0x1ef3e4cf4c0"
       }
      }
     }
    ],
    "heap": {
-    "0x1765a7f1340": {
-     "id": "0x1765a7f1340",
+    "0x1ef3e4b1340": {
+     "id": "0x1ef3e4b1340",
      "type": "list",
      "repr": "[10, 25, 30]",
      "items": [
@@ -277,8 +277,8 @@
      "type": "int",
      "repr": "30"
     },
-    "0x1765a80f4c0": {
-     "id": "0x1765a80f4c0",
+    "0x1ef3e4cf4c0": {
+     "id": "0x1ef3e4cf4c0",
      "type": "list",
      "repr": "[1, '둘', 3.0, [4]]",
      "items": [
@@ -286,13 +286,13 @@
        "ref": "0x7ffd7f2b49b8"
       },
       {
-       "ref": "0x1765aa52af0"
+       "ref": "0x1ef3e712af0"
       },
       {
-       "ref": "0x1765a7461d0"
+       "ref": "0x1ef3e4061d0"
       },
       {
-       "ref": "0x1765a81d700"
+       "ref": "0x1ef3e4dd700"
       }
      ]
     },
@@ -301,18 +301,18 @@
      "type": "int",
      "repr": "1"
     },
-    "0x1765aa52af0": {
-     "id": "0x1765aa52af0",
+    "0x1ef3e712af0": {
+     "id": "0x1ef3e712af0",
      "type": "str",
      "repr": "'둘'"
     },
-    "0x1765a7461d0": {
-     "id": "0x1765a7461d0",
+    "0x1ef3e4061d0": {
+     "id": "0x1ef3e4061d0",
      "type": "float",
      "repr": "3.0"
     },
-    "0x1765a81d700": {
-     "id": "0x1765a81d700",
+    "0x1ef3e4dd700": {
+     "id": "0x1ef3e4dd700",
      "type": "list",
      "repr": "[4]",
      "items": [
@@ -339,17 +339,17 @@
      "line": 6,
      "locals": {
       "nums": {
-       "ref": "0x1765a7f1340"
+       "ref": "0x1ef3e4b1340"
       },
       "mixed": {
-       "ref": "0x1765a80f4c0"
+       "ref": "0x1ef3e4cf4c0"
       }
      }
     }
    ],
    "heap": {
-    "0x1765a7f1340": {
-     "id": "0x1765a7f1340",
+    "0x1ef3e4b1340": {
+     "id": "0x1ef3e4b1340",
      "type": "list",
      "repr": "[10, 25, 30]",
      "items": [
@@ -379,8 +379,8 @@
      "type": "int",
      "repr": "30"
     },
-    "0x1765a80f4c0": {
-     "id": "0x1765a80f4c0",
+    "0x1ef3e4cf4c0": {
+     "id": "0x1ef3e4cf4c0",
      "type": "list",
      "repr": "[1, '둘', 3.0, [4]]",
      "items": [
@@ -388,13 +388,13 @@
        "ref": "0x7ffd7f2b49b8"
       },
       {
-       "ref": "0x1765aa52af0"
+       "ref": "0x1ef3e712af0"
       },
       {
-       "ref": "0x1765a7461d0"
+       "ref": "0x1ef3e4061d0"
       },
       {
-       "ref": "0x1765a81d700"
+       "ref": "0x1ef3e4dd700"
       }
      ]
     },
@@ -403,18 +403,18 @@
      "type": "int",
      "repr": "1"
     },
-    "0x1765aa52af0": {
-     "id": "0x1765aa52af0",
+    "0x1ef3e712af0": {
+     "id": "0x1ef3e712af0",
      "type": "str",
      "repr": "'둘'"
     },
-    "0x1765a7461d0": {
-     "id": "0x1765a7461d0",
+    "0x1ef3e4061d0": {
+     "id": "0x1ef3e4061d0",
      "type": "float",
      "repr": "3.0"
     },
-    "0x1765a81d700": {
-     "id": "0x1765a81d700",
+    "0x1ef3e4dd700": {
+     "id": "0x1ef3e4dd700",
      "type": "list",
      "repr": "[4]",
      "items": [

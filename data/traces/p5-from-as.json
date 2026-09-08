@@ -1,0 +1,414 @@
+{
+ "id": "p5-from-as",
+ "code": "from math import sqrt, pi\nprint(sqrt(2) * pi)\nfrom math import floor as fl\nprint(fl(3.7))\nimport collections as co\nprint(co.Counter(\"aab\"))\nprint(math)",
+ "steps": [
+  {
+   "line": 0,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 0,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": "",
+   "note": "모듈 안의 이름 둘만 현재 이름공간으로 가져온다 — math 라는 이름은 생기지 않는다"
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 2,
+     "locals": {
+      "sqrt": {
+       "ref": "0x28a03837ce0"
+      },
+      "pi": {
+       "ref": "0x28a03534730"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x28a03837ce0": {
+     "id": "0x28a03837ce0",
+     "type": "builtin_function_or_method",
+     "repr": "sqrt"
+    },
+    "0x28a03534730": {
+     "id": "0x28a03534730",
+     "type": "float",
+     "repr": "3.141592653589793"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 3,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 3,
+     "locals": {
+      "sqrt": {
+       "ref": "0x28a03837ce0"
+      },
+      "pi": {
+       "ref": "0x28a03534730"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x28a03837ce0": {
+     "id": "0x28a03837ce0",
+     "type": "builtin_function_or_method",
+     "repr": "sqrt"
+    },
+    "0x28a03534730": {
+     "id": "0x28a03534730",
+     "type": "float",
+     "repr": "3.141592653589793"
+    }
+   },
+   "stdout": "4.442882938158366\n",
+   "note": "as 로 이름을 바꿔 붙인다 — 충돌 피하기, 줄여 쓰기"
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "sqrt": {
+       "ref": "0x28a03837ce0"
+      },
+      "pi": {
+       "ref": "0x28a03534730"
+      },
+      "fl": {
+       "ref": "0x28a03837510"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x28a03837ce0": {
+     "id": "0x28a03837ce0",
+     "type": "builtin_function_or_method",
+     "repr": "sqrt"
+    },
+    "0x28a03534730": {
+     "id": "0x28a03534730",
+     "type": "float",
+     "repr": "3.141592653589793"
+    },
+    "0x28a03837510": {
+     "id": "0x28a03837510",
+     "type": "builtin_function_or_method",
+     "repr": "floor"
+    }
+   },
+   "stdout": "4.442882938158366\n"
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "sqrt": {
+       "ref": "0x28a03837ce0"
+      },
+      "pi": {
+       "ref": "0x28a03534730"
+      },
+      "fl": {
+       "ref": "0x28a03837510"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x28a03837ce0": {
+     "id": "0x28a03837ce0",
+     "type": "builtin_function_or_method",
+     "repr": "sqrt"
+    },
+    "0x28a03534730": {
+     "id": "0x28a03534730",
+     "type": "float",
+     "repr": "3.141592653589793"
+    },
+    "0x28a03837510": {
+     "id": "0x28a03837510",
+     "type": "builtin_function_or_method",
+     "repr": "floor"
+    }
+   },
+   "stdout": "4.442882938158366\n3\n",
+   "note": "긴 모듈 이름을 줄여서"
+  },
+  {
+   "line": 6,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "sqrt": {
+       "ref": "0x28a03837ce0"
+      },
+      "pi": {
+       "ref": "0x28a03534730"
+      },
+      "fl": {
+       "ref": "0x28a03837510"
+      },
+      "co": {
+       "ref": "0x28a03543ec0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x28a03837ce0": {
+     "id": "0x28a03837ce0",
+     "type": "builtin_function_or_method",
+     "repr": "sqrt"
+    },
+    "0x28a03534730": {
+     "id": "0x28a03534730",
+     "type": "float",
+     "repr": "3.141592653589793"
+    },
+    "0x28a03837510": {
+     "id": "0x28a03837510",
+     "type": "builtin_function_or_method",
+     "repr": "floor"
+    },
+    "0x28a03543ec0": {
+     "id": "0x28a03543ec0",
+     "type": "module",
+     "repr": "collections"
+    }
+   },
+   "stdout": "4.442882938158366\n3\n"
+  },
+  {
+   "line": 7,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 7,
+     "locals": {
+      "sqrt": {
+       "ref": "0x28a03837ce0"
+      },
+      "pi": {
+       "ref": "0x28a03534730"
+      },
+      "fl": {
+       "ref": "0x28a03837510"
+      },
+      "co": {
+       "ref": "0x28a03543ec0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x28a03837ce0": {
+     "id": "0x28a03837ce0",
+     "type": "builtin_function_or_method",
+     "repr": "sqrt"
+    },
+    "0x28a03534730": {
+     "id": "0x28a03534730",
+     "type": "float",
+     "repr": "3.141592653589793"
+    },
+    "0x28a03837510": {
+     "id": "0x28a03837510",
+     "type": "builtin_function_or_method",
+     "repr": "floor"
+    },
+    "0x28a03543ec0": {
+     "id": "0x28a03543ec0",
+     "type": "module",
+     "repr": "collections"
+    }
+   },
+   "stdout": "4.442882938158366\n3\nCounter({'a': 2, 'b': 1})\n",
+   "note": "from math import ... 는 math 자체를 만들지 않는다 → NameError"
+  },
+  {
+   "line": 7,
+   "event": "exception",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 7,
+     "locals": {
+      "sqrt": {
+       "ref": "0x28a03837ce0"
+      },
+      "pi": {
+       "ref": "0x28a03534730"
+      },
+      "fl": {
+       "ref": "0x28a03837510"
+      },
+      "co": {
+       "ref": "0x28a03543ec0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x28a03837ce0": {
+     "id": "0x28a03837ce0",
+     "type": "builtin_function_or_method",
+     "repr": "sqrt"
+    },
+    "0x28a03534730": {
+     "id": "0x28a03534730",
+     "type": "float",
+     "repr": "3.141592653589793"
+    },
+    "0x28a03837510": {
+     "id": "0x28a03837510",
+     "type": "builtin_function_or_method",
+     "repr": "floor"
+    },
+    "0x28a03543ec0": {
+     "id": "0x28a03543ec0",
+     "type": "module",
+     "repr": "collections"
+    }
+   },
+   "stdout": "4.442882938158366\n3\nCounter({'a': 2, 'b': 1})\n",
+   "exc": "NameError: name 'math' is not defined"
+  },
+  {
+   "line": 7,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 7,
+     "locals": {
+      "sqrt": {
+       "ref": "0x28a03837ce0"
+      },
+      "pi": {
+       "ref": "0x28a03534730"
+      },
+      "fl": {
+       "ref": "0x28a03837510"
+      },
+      "co": {
+       "ref": "0x28a03543ec0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x28a03837ce0": {
+     "id": "0x28a03837ce0",
+     "type": "builtin_function_or_method",
+     "repr": "sqrt"
+    },
+    "0x28a03534730": {
+     "id": "0x28a03534730",
+     "type": "float",
+     "repr": "3.141592653589793"
+    },
+    "0x28a03837510": {
+     "id": "0x28a03837510",
+     "type": "builtin_function_or_method",
+     "repr": "floor"
+    },
+    "0x28a03543ec0": {
+     "id": "0x28a03543ec0",
+     "type": "module",
+     "repr": "collections"
+    }
+   },
+   "stdout": "4.442882938158366\n3\nCounter({'a': 2, 'b': 1})\n"
+  },
+  {
+   "line": 7,
+   "event": "exception",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 7,
+     "locals": {
+      "sqrt": {
+       "ref": "0x28a03837ce0"
+      },
+      "pi": {
+       "ref": "0x28a03534730"
+      },
+      "fl": {
+       "ref": "0x28a03837510"
+      },
+      "co": {
+       "ref": "0x28a03543ec0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x28a03837ce0": {
+     "id": "0x28a03837ce0",
+     "type": "builtin_function_or_method",
+     "repr": "sqrt"
+    },
+    "0x28a03534730": {
+     "id": "0x28a03534730",
+     "type": "float",
+     "repr": "3.141592653589793"
+    },
+    "0x28a03837510": {
+     "id": "0x28a03837510",
+     "type": "builtin_function_or_method",
+     "repr": "floor"
+    },
+    "0x28a03543ec0": {
+     "id": "0x28a03543ec0",
+     "type": "module",
+     "repr": "collections"
+    }
+   },
+   "stdout": "4.442882938158366\n3\nCounter({'a': 2, 'b': 1})\n",
+   "exc": "NameError: name 'math' is not defined"
+  }
+ ],
+ "v": 1
+}

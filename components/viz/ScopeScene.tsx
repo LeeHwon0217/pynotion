@@ -49,7 +49,7 @@ export function buildScope(story: ScopeStory): { script: Script; render: (t: num
   const x0 = hasCode ? codeW + 70 : 80;
   const W = 1180 - x0;
   // 겹상자: B 가 가장 바깥
-  const box = (lv: ScopeLevel) => { const i = ORDER.indexOf(lv); const pad = (3 - i) * 46; return { x: x0 + pad, y: 40 + pad * 0.62, w: W - pad * 2, h: 470 - pad * 1.24 }; };
+  const box = (lv: ScopeLevel) => { const d = 3 - ORDER.indexOf(lv); return { x: x0 + d * 22, y: 40 + d * 72, w: W - d * 44, h: 470 - d * 72 - d * 10 }; };
 
   const render = (t: number) => {
     let k = 0;
@@ -80,17 +80,17 @@ export function buildScope(story: ScopeStory): { script: Script; render: (t: num
           return (
             <g key={lv} opacity={exists ? 1 : 0.22}>
               <rect x={b.x} y={b.y} width={b.w} height={b.h} rx={18} fill={isFound ? "rgba(61,220,151,.10)" : isActive ? "rgba(91,140,255,.08)" : "rgba(255,255,255,.02)"} stroke={isFound ? C.fresh : reached && onPath ? C.hi : isActive ? C.hi : C.stroke} strokeWidth={isFound || (reached && onPath) ? 2.5 : 1.3} strokeDasharray={exists ? undefined : "6 5"} />
-              <text x={b.x + 16} y={b.y + 24} className="st-type" style={{ fill: isFound ? C.fresh : reached && onPath ? C.text : undefined }}>{lv} · {story.labels?.[lv] ?? NAMES[lv]}</text>
+              <text x={b.x + 16} y={b.y + 22} className="st-type" style={{ fill: isFound ? C.fresh : reached && onPath ? C.text : undefined }}>{lv} · {story.labels?.[lv] ?? NAMES[lv]}</text>
               {names && Object.entries(names).map(([n, v], i) => {
                 const hit = isFound && lk!.name === n;
                 return (
-                  <g key={n} transform={`translate(${b.x + 16 + i * 150} ${b.y + 40})`}>
+                  <g key={n} transform={`translate(${b.x + 16 + i * 160} ${b.y + 32})`}>
                     <rect width={Math.max(120, textW(`${n} = ${v}`, 14, true) + 22)} height={30} rx={8} fill={hit ? C.fresh : C.node2} stroke={hit ? C.fresh : C.stroke} />
                     <text x={11} y={20} className="st-mono" style={{ fill: hit ? "#062" : C.text, fontSize: 14, fontWeight: 650 }}>{n} = {v}</text>
                   </g>
                 );
               })}
-              {!names && lv !== "B" && <text x={b.x + 16} y={b.y + 58} className="st-m" style={{ fontSize: 12 }}>(지금은 없음)</text>}
+              {!names && lv !== "B" && <text x={b.x + 16} y={b.y + 52} className="st-m" style={{ fontSize: 12 }}>(지금은 없음)</text>}
             </g>
           );
         })}
@@ -98,10 +98,10 @@ export function buildScope(story: ScopeStory): { script: Script; render: (t: num
         {lk && hop >= 0 && (() => {
           const lv = path[hop];
           const b = box(lv);
-          const px = b.x + b.w - 60, py = b.y + 34;
+          const px = b.x + b.w - 50, py = b.y + 36;
           const prevLv = hop > 0 ? path[hop - 1] : null;
           const pb = prevLv ? box(prevLv) : null;
-          const fx = pb ? pb.x + pb.w - 60 : px, fy = pb ? pb.y + 34 : py + 30;
+          const fx = pb ? pb.x + pb.w - 50 : px, fy = pb ? pb.y + 36 : py + 40;
           const cx = lerp(fx, px, hopP), cy = lerp(fy, py, hopP);
           return (
             <g transform={`translate(${cx} ${cy})`}>

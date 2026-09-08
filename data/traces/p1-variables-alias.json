@@ -38,14 +38,14 @@
      "line": 2,
      "locals": {
       "nums": {
-       "ref": "0x1a348751340"
+       "ref": "0x1cccc6a1340"
       }
      }
     }
    ],
    "heap": {
-    "0x1a348751340": {
-     "id": "0x1a348751340",
+    "0x1cccc6a1340": {
+     "id": "0x1cccc6a1340",
      "type": "list",
      "repr": "[1, 2]",
      "items": [
@@ -80,17 +80,17 @@
      "line": 3,
      "locals": {
       "nums": {
-       "ref": "0x1a348751340"
+       "ref": "0x1cccc6a1340"
       },
       "other": {
-       "ref": "0x1a348751340"
+       "ref": "0x1cccc6a1340"
       }
      }
     }
    ],
    "heap": {
-    "0x1a348751340": {
-     "id": "0x1a348751340",
+    "0x1cccc6a1340": {
+     "id": "0x1cccc6a1340",
      "type": "list",
      "repr": "[1, 2]",
      "items": [
@@ -125,17 +125,17 @@
      "line": 4,
      "locals": {
       "nums": {
-       "ref": "0x1a348751340"
+       "ref": "0x1cccc6a1340"
       },
       "other": {
-       "ref": "0x1a348751340"
+       "ref": "0x1cccc6a1340"
       }
      }
     }
    ],
    "heap": {
-    "0x1a348751340": {
-     "id": "0x1a348751340",
+    "0x1cccc6a1340": {
+     "id": "0x1cccc6a1340",
      "type": "list",
      "repr": "[1, 2, 3]",
      "items": [
@@ -178,17 +178,17 @@
      "line": 5,
      "locals": {
       "nums": {
-       "ref": "0x1a348751340"
+       "ref": "0x1cccc6a1340"
       },
       "other": {
-       "ref": "0x1a348751340"
+       "ref": "0x1cccc6a1340"
       }
      }
     }
    ],
    "heap": {
-    "0x1a348751340": {
-     "id": "0x1a348751340",
+    "0x1cccc6a1340": {
+     "id": "0x1cccc6a1340",
      "type": "list",
      "repr": "[1, 2, 3]",
      "items": [
@@ -231,20 +231,20 @@
      "line": 6,
      "locals": {
       "nums": {
-       "ref": "0x1a348751340"
+       "ref": "0x1cccc6a1340"
       },
       "other": {
-       "ref": "0x1a348751340"
+       "ref": "0x1cccc6a1340"
       },
       "copy": {
-       "ref": "0x1a3489b3100"
+       "ref": "0x1cccc903100"
       }
      }
     }
    ],
    "heap": {
-    "0x1a348751340": {
-     "id": "0x1a348751340",
+    "0x1cccc6a1340": {
+     "id": "0x1cccc6a1340",
      "type": "list",
      "repr": "[1, 2, 3]",
      "items": [
@@ -274,8 +274,8 @@
      "type": "int",
      "repr": "3"
     },
-    "0x1a3489b3100": {
-     "id": "0x1a3489b3100",
+    "0x1cccc903100": {
+     "id": "0x1cccc903100",
      "type": "list",
      "repr": "[1, 2, 3]",
      "items": [
@@ -303,20 +303,20 @@
      "line": 7,
      "locals": {
       "nums": {
-       "ref": "0x1a348751340"
+       "ref": "0x1cccc6a1340"
       },
       "other": {
-       "ref": "0x1a348751340"
+       "ref": "0x1cccc6a1340"
       },
       "copy": {
-       "ref": "0x1a3489b3100"
+       "ref": "0x1cccc903100"
       }
      }
     }
    ],
    "heap": {
-    "0x1a348751340": {
-     "id": "0x1a348751340",
+    "0x1cccc6a1340": {
+     "id": "0x1cccc6a1340",
      "type": "list",
      "repr": "[1, 2, 3]",
      "items": [
@@ -346,8 +346,8 @@
      "type": "int",
      "repr": "3"
     },
-    "0x1a3489b3100": {
-     "id": "0x1a3489b3100",
+    "0x1cccc903100": {
+     "id": "0x1cccc903100",
      "type": "list",
      "repr": "[1, 2, 3, 4]",
      "items": [
@@ -382,20 +382,20 @@
      "line": 7,
      "locals": {
       "nums": {
-       "ref": "0x1a348751340"
+       "ref": "0x1cccc6a1340"
       },
       "other": {
-       "ref": "0x1a348751340"
+       "ref": "0x1cccc6a1340"
       },
       "copy": {
-       "ref": "0x1a3489b3100"
+       "ref": "0x1cccc903100"
       }
      }
     }
    ],
    "heap": {
-    "0x1a348751340": {
-     "id": "0x1a348751340",
+    "0x1cccc6a1340": {
+     "id": "0x1cccc6a1340",
      "type": "list",
      "repr": "[1, 2, 3]",
      "items": [
@@ -425,8 +425,8 @@
      "type": "int",
      "repr": "3"
     },
-    "0x1a3489b3100": {
-     "id": "0x1a3489b3100",
+    "0x1cccc903100": {
+     "id": "0x1cccc903100",
      "type": "list",
      "repr": "[1, 2, 3, 4]",
      "items": [

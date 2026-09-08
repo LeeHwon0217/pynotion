@@ -38,14 +38,14 @@
      "line": 4,
      "locals": {
       "order": {
-       "ref": "0x294a5940ae0"
+       "ref": "0x23e348b0ae0"
       }
      }
     }
    ],
    "heap": {
-    "0x294a5940ae0": {
-     "id": "0x294a5940ae0",
+    "0x23e348b0ae0": {
+     "id": "0x23e348b0ae0",
      "type": "function",
      "repr": "order"
     }
@@ -62,7 +62,7 @@
      "line": 4,
      "locals": {
       "order": {
-       "ref": "0x294a5940ae0"
+       "ref": "0x23e348b0ae0"
       }
      }
     },
@@ -71,7 +71,7 @@
      "line": 1,
      "locals": {
       "item": {
-       "ref": "0x294a594a150"
+       "ref": "0x23e348ba150"
       },
       "qty": {
        "ref": "0x7ffd7f2b49b8"
@@ -83,13 +83,13 @@
     }
    ],
    "heap": {
-    "0x294a5940ae0": {
-     "id": "0x294a5940ae0",
+    "0x23e348b0ae0": {
+     "id": "0x23e348b0ae0",
      "type": "function",
      "repr": "order"
     },
-    "0x294a594a150": {
-     "id": "0x294a594a150",
+    "0x23e348ba150": {
+     "id": "0x23e348ba150",
      "type": "str",
      "repr": "'커피'"
     },
@@ -116,7 +116,7 @@
      "line": 4,
      "locals": {
       "order": {
-       "ref": "0x294a5940ae0"
+       "ref": "0x23e348b0ae0"
       }
      }
     },
@@ -125,7 +125,7 @@
      "line": 2,
      "locals": {
       "item": {
-       "ref": "0x294a594a150"
+       "ref": "0x23e348ba150"
       },
       "qty": {
        "ref": "0x7ffd7f2b49b8"
@@ -137,13 +137,13 @@
     }
    ],
    "heap": {
-    "0x294a5940ae0": {
-     "id": "0x294a5940ae0",
+    "0x23e348b0ae0": {
+     "id": "0x23e348b0ae0",
      "type": "function",
      "repr": "order"
     },
-    "0x294a594a150": {
-     "id": "0x294a594a150",
+    "0x23e348ba150": {
+     "id": "0x23e348ba150",
      "type": "str",
      "repr": "'커피'"
     },
@@ -169,7 +169,7 @@
      "line": 4,
      "locals": {
       "order": {
-       "ref": "0x294a5940ae0"
+       "ref": "0x23e348b0ae0"
       }
      }
     },
@@ -178,7 +178,7 @@
      "line": 2,
      "locals": {
       "item": {
-       "ref": "0x294a594a150"
+       "ref": "0x23e348ba150"
       },
       "qty": {
        "ref": "0x7ffd7f2b49b8"
@@ -190,13 +190,13 @@
     }
    ],
    "heap": {
-    "0x294a5940ae0": {
-     "id": "0x294a5940ae0",
+    "0x23e348b0ae0": {
+     "id": "0x23e348b0ae0",
      "type": "function",
      "repr": "order"
     },
-    "0x294a594a150": {
-     "id": "0x294a594a150",
+    "0x23e348ba150": {
+     "id": "0x23e348ba150",
      "type": "str",
      "repr": "'커피'"
     },
@@ -222,14 +222,14 @@
      "line": 5,
      "locals": {
       "order": {
-       "ref": "0x294a5940ae0"
+       "ref": "0x23e348b0ae0"
       }
      }
     }
    ],
    "heap": {
-    "0x294a5940ae0": {
-     "id": "0x294a5940ae0",
+    "0x23e348b0ae0": {
+     "id": "0x23e348b0ae0",
      "type": "function",
      "repr": "order"
     }
@@ -246,7 +246,7 @@
      "line": 5,
      "locals": {
       "order": {
-       "ref": "0x294a5940ae0"
+       "ref": "0x23e348b0ae0"
       }
      }
     },
@@ -255,7 +255,7 @@
      "line": 1,
      "locals": {
       "item": {
-       "ref": "0x294a594a150"
+       "ref": "0x23e348ba150"
       },
       "qty": {
        "ref": "0x7ffd7f2b49d8"
@@ -267,13 +267,13 @@
     }
    ],
    "heap": {
-    "0x294a5940ae0": {
-     "id": "0x294a5940ae0",
+    "0x23e348b0ae0": {
+     "id": "0x23e348b0ae0",
      "type": "function",
      "repr": "order"
     },
-    "0x294a594a150": {
-     "id": "0x294a594a150",
+    "0x23e348ba150": {
+     "id": "0x23e348ba150",
      "type": "str",
      "repr": "'커피'"
     },
@@ -300,7 +300,7 @@
      "line": 5,
      "locals": {
       "order": {
-       "ref": "0x294a5940ae0"
+       "ref": "0x23e348b0ae0"
       }
      }
     },
@@ -309,7 +309,7 @@
      "line": 2,
      "locals": {
       "item": {
-       "ref": "0x294a594a150"
+       "ref": "0x23e348ba150"
       },
       "qty": {
        "ref": "0x7ffd7f2b49d8"
@@ -321,13 +321,13 @@
     }
    ],
    "heap": {
-    "0x294a5940ae0": {
-     "id": "0x294a5940ae0",
+    "0x23e348b0ae0": {
+     "id": "0x23e348b0ae0",
      "type": "function",
      "repr": "order"
     },
-    "0x294a594a150": {
-     "id": "0x294a594a150",
+    "0x23e348ba150": {
+     "id": "0x23e348ba150",
      "type": "str",
      "repr": "'커피'"
     },
@@ -353,7 +353,7 @@
      "line": 5,
      "locals": {
       "order": {
-       "ref": "0x294a5940ae0"
+       "ref": "0x23e348b0ae0"
       }
      }
     },
@@ -362,7 +362,7 @@
      "line": 2,
      "locals": {
       "item": {
-       "ref": "0x294a594a150"
+       "ref": "0x23e348ba150"
       },
       "qty": {
        "ref": "0x7ffd7f2b49d8"
@@ -374,13 +374,13 @@
     }
    ],
    "heap": {
-    "0x294a5940ae0": {
-     "id": "0x294a5940ae0",
+    "0x23e348b0ae0": {
+     "id": "0x23e348b0ae0",
      "type": "function",
      "repr": "order"
     },
-    "0x294a594a150": {
-     "id": "0x294a594a150",
+    "0x23e348ba150": {
+     "id": "0x23e348ba150",
      "type": "str",
      "repr": "'커피'"
     },
@@ -406,14 +406,14 @@
      "line": 6,
      "locals": {
       "order": {
-       "ref": "0x294a5940ae0"
+       "ref": "0x23e348b0ae0"
       }
      }
     }
    ],
    "heap": {
-    "0x294a5940ae0": {
-     "id": "0x294a5940ae0",
+    "0x23e348b0ae0": {
+     "id": "0x23e348b0ae0",
      "type": "function",
      "repr": "order"
     }
@@ -430,7 +430,7 @@
      "line": 6,
      "locals": {
       "order": {
-       "ref": "0x294a5940ae0"
+       "ref": "0x23e348b0ae0"
       }
      }
     },
@@ -439,25 +439,25 @@
      "line": 1,
      "locals": {
       "item": {
-       "ref": "0x294a594a150"
+       "ref": "0x23e348ba150"
       },
       "qty": {
        "ref": "0x7ffd7f2b49b8"
       },
       "note": {
-       "ref": "0x294a594a240"
+       "ref": "0x23e348ba240"
       }
      }
     }
    ],
    "heap": {
-    "0x294a5940ae0": {
-     "id": "0x294a5940ae0",
+    "0x23e348b0ae0": {
+     "id": "0x23e348b0ae0",
      "type": "function",
      "repr": "order"
     },
-    "0x294a594a150": {
-     "id": "0x294a594a150",
+    "0x23e348ba150": {
+     "id": "0x23e348ba150",
      "type": "str",
      "repr": "'커피'"
     },
@@ -466,8 +466,8 @@
      "type": "int",
      "repr": "1"
     },
-    "0x294a594a240": {
-     "id": "0x294a594a240",
+    "0x23e348ba240": {
+     "id": "0x23e348ba240",
      "type": "str",
      "repr": "'샷 추가'"
     }
@@ -484,7 +484,7 @@
      "line": 6,
      "locals": {
       "order": {
-       "ref": "0x294a5940ae0"
+       "ref": "0x23e348b0ae0"
       }
      }
     },
@@ -493,25 +493,25 @@
      "line": 2,
      "locals": {
       "item": {
-       "ref": "0x294a594a150"
+       "ref": "0x23e348ba150"
       },
       "qty": {
        "ref": "0x7ffd7f2b49b8"
       },
       "note": {
-       "ref": "0x294a594a240"
+       "ref": "0x23e348ba240"
       }
      }
     }
    ],
    "heap": {
-    "0x294a5940ae0": {
-     "id": "0x294a5940ae0",
+    "0x23e348b0ae0": {
+     "id": "0x23e348b0ae0",
      "type": "function",
      "repr": "order"
     },
-    "0x294a594a150": {
-     "id": "0x294a594a150",
+    "0x23e348ba150": {
+     "id": "0x23e348ba150",
      "type": "str",
      "repr": "'커피'"
     },
@@ -520,8 +520,8 @@
      "type": "int",
      "repr": "1"
     },
-    "0x294a594a240": {
-     "id": "0x294a594a240",
+    "0x23e348ba240": {
+     "id": "0x23e348ba240",
      "type": "str",
      "repr": "'샷 추가'"
     }
@@ -537,7 +537,7 @@
      "line": 6,
      "locals": {
       "order": {
-       "ref": "0x294a5940ae0"
+       "ref": "0x23e348b0ae0"
       }
      }
     },
@@ -546,25 +546,25 @@
      "line": 2,
      "locals": {
       "item": {
-       "ref": "0x294a594a150"
+       "ref": "0x23e348ba150"
       },
       "qty": {
        "ref": "0x7ffd7f2b49b8"
       },
       "note": {
-       "ref": "0x294a594a240"
+       "ref": "0x23e348ba240"
       }
      }
     }
    ],
    "heap": {
-    "0x294a5940ae0": {
-     "id": "0x294a5940ae0",
+    "0x23e348b0ae0": {
+     "id": "0x23e348b0ae0",
      "type": "function",
      "repr": "order"
     },
-    "0x294a594a150": {
-     "id": "0x294a594a150",
+    "0x23e348ba150": {
+     "id": "0x23e348ba150",
      "type": "str",
      "repr": "'커피'"
     },
@@ -573,8 +573,8 @@
      "type": "int",
      "repr": "1"
     },
-    "0x294a594a240": {
-     "id": "0x294a594a240",
+    "0x23e348ba240": {
+     "id": "0x23e348ba240",
      "type": "str",
      "repr": "'샷 추가'"
     }
@@ -590,14 +590,14 @@
      "line": 7,
      "locals": {
       "order": {
-       "ref": "0x294a5940ae0"
+       "ref": "0x23e348b0ae0"
       }
      }
     }
    ],
    "heap": {
-    "0x294a5940ae0": {
-     "id": "0x294a5940ae0",
+    "0x23e348b0ae0": {
+     "id": "0x23e348b0ae0",
      "type": "function",
      "repr": "order"
     }
@@ -614,7 +614,7 @@
      "line": 7,
      "locals": {
       "order": {
-       "ref": "0x294a5940ae0"
+       "ref": "0x23e348b0ae0"
       }
      }
     },
@@ -623,7 +623,7 @@
      "line": 1,
      "locals": {
       "item": {
-       "ref": "0x294a594a290"
+       "ref": "0x23e348ba290"
       },
       "qty": {
        "ref": "0x7ffd7f2b49f8"
@@ -635,13 +635,13 @@
     }
    ],
    "heap": {
-    "0x294a5940ae0": {
-     "id": "0x294a5940ae0",
+    "0x23e348b0ae0": {
+     "id": "0x23e348b0ae0",
      "type": "function",
      "repr": "order"
     },
-    "0x294a594a290": {
-     "id": "0x294a594a290",
+    "0x23e348ba290": {
+     "id": "0x23e348ba290",
      "type": "str",
      "repr": "'라떼'"
     },
@@ -668,7 +668,7 @@
      "line": 7,
      "locals": {
       "order": {
-       "ref": "0x294a5940ae0"
+       "ref": "0x23e348b0ae0"
       }
      }
     },
@@ -677,7 +677,7 @@
      "line": 2,
      "locals": {
       "item": {
-       "ref": "0x294a594a290"
+       "ref": "0x23e348ba290"
       },
       "qty": {
        "ref": "0x7ffd7f2b49f8"
@@ -689,13 +689,13 @@
     }
    ],
    "heap": {
-    "0x294a5940ae0": {
-     "id": "0x294a5940ae0",
+    "0x23e348b0ae0": {
+     "id": "0x23e348b0ae0",
      "type": "function",
      "repr": "order"
     },
-    "0x294a594a290": {
-     "id": "0x294a594a290",
+    "0x23e348ba290": {
+     "id": "0x23e348ba290",
      "type": "str",
      "repr": "'라떼'"
     },
@@ -721,7 +721,7 @@
      "line": 7,
      "locals": {
       "order": {
-       "ref": "0x294a5940ae0"
+       "ref": "0x23e348b0ae0"
       }
      }
     },
@@ -730,7 +730,7 @@
      "line": 2,
      "locals": {
       "item": {
-       "ref": "0x294a594a290"
+       "ref": "0x23e348ba290"
       },
       "qty": {
        "ref": "0x7ffd7f2b49f8"
@@ -742,13 +742,13 @@
     }
    ],
    "heap": {
-    "0x294a5940ae0": {
-     "id": "0x294a5940ae0",
+    "0x23e348b0ae0": {
+     "id": "0x23e348b0ae0",
      "type": "function",
      "repr": "order"
     },
-    "0x294a594a290": {
-     "id": "0x294a594a290",
+    "0x23e348ba290": {
+     "id": "0x23e348ba290",
      "type": "str",
      "repr": "'라떼'"
     },
@@ -774,14 +774,14 @@
      "line": 7,
      "locals": {
       "order": {
-       "ref": "0x294a5940ae0"
+       "ref": "0x23e348b0ae0"
       }
      }
     }
    ],
    "heap": {
-    "0x294a5940ae0": {
-     "id": "0x294a5940ae0",
+    "0x23e348b0ae0": {
+     "id": "0x23e348b0ae0",
      "type": "function",
      "repr": "order"
     }

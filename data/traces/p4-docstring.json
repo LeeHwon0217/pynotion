@@ -37,14 +37,14 @@
      "line": 8,
      "locals": {
       "area": {
-       "ref": "0x225d12bcc20"
+       "ref": "0x2a670b8cc20"
       }
      }
     }
    ],
    "heap": {
-    "0x225d12bcc20": {
-     "id": "0x225d12bcc20",
+    "0x2a670b8cc20": {
+     "id": "0x2a670b8cc20",
      "type": "function",
      "repr": "area"
     }
@@ -61,14 +61,14 @@
      "line": 9,
      "locals": {
       "area": {
-       "ref": "0x225d12bcc20"
+       "ref": "0x2a670b8cc20"
       }
      }
     }
    ],
    "heap": {
-    "0x225d12bcc20": {
-     "id": "0x225d12bcc20",
+    "0x2a670b8cc20": {
+     "id": "0x2a670b8cc20",
      "type": "function",
      "repr": "area"
     }
@@ -85,14 +85,14 @@
      "line": 10,
      "locals": {
       "area": {
-       "ref": "0x225d12bcc20"
+       "ref": "0x2a670b8cc20"
       }
      }
     }
    ],
    "heap": {
-    "0x225d12bcc20": {
-     "id": "0x225d12bcc20",
+    "0x2a670b8cc20": {
+     "id": "0x2a670b8cc20",
      "type": "function",
      "repr": "area"
     }
@@ -109,7 +109,7 @@
      "line": 10,
      "locals": {
       "area": {
-       "ref": "0x225d12bcc20"
+       "ref": "0x2a670b8cc20"
       }
      }
     },
@@ -127,8 +127,8 @@
     }
    ],
    "heap": {
-    "0x225d12bcc20": {
-     "id": "0x225d12bcc20",
+    "0x2a670b8cc20": {
+     "id": "0x2a670b8cc20",
      "type": "function",
      "repr": "area"
     },
@@ -154,7 +154,7 @@
      "line": 10,
      "locals": {
       "area": {
-       "ref": "0x225d12bcc20"
+       "ref": "0x2a670b8cc20"
       }
      }
     },
@@ -172,8 +172,8 @@
     }
    ],
    "heap": {
-    "0x225d12bcc20": {
-     "id": "0x225d12bcc20",
+    "0x2a670b8cc20": {
+     "id": "0x2a670b8cc20",
      "type": "function",
      "repr": "area"
     },
@@ -199,7 +199,7 @@
      "line": 10,
      "locals": {
       "area": {
-       "ref": "0x225d12bcc20"
+       "ref": "0x2a670b8cc20"
       }
      }
     },
@@ -217,8 +217,8 @@
     }
    ],
    "heap": {
-    "0x225d12bcc20": {
-     "id": "0x225d12bcc20",
+    "0x2a670b8cc20": {
+     "id": "0x2a670b8cc20",
      "type": "function",
      "repr": "area"
     },
@@ -245,14 +245,14 @@
      "line": 10,
      "locals": {
       "area": {
-       "ref": "0x225d12bcc20"
+       "ref": "0x2a670b8cc20"
       }
      }
     }
    ],
    "heap": {
-    "0x225d12bcc20": {
-     "id": "0x225d12bcc20",
+    "0x2a670b8cc20": {
+     "id": "0x2a670b8cc20",
      "type": "function",
      "repr": "area"
     }

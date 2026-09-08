@@ -58,6 +58,10 @@ import t54 from "./p4-recursion.json";
 import t55 from "./p4-return.json";
 import t56 from "./p4-scope.json";
 import t57 from "./p4-star-args.json";
+import t58 from "./p5-from-as.json";
+import t59 from "./p5-import.json";
+import t60 from "./p5-main.json";
+import t61 from "./p5-stdlib.json";
 
 export const TRACES: Record<string, Trace> = {
   "p0-indent-error": t0 as unknown as Trace,
@@ -118,4 +122,8 @@ export const TRACES: Record<string, Trace> = {
   "p4-return": t55 as unknown as Trace,
   "p4-scope": t56 as unknown as Trace,
   "p4-star-args": t57 as unknown as Trace,
+  "p5-from-as": t58 as unknown as Trace,
+  "p5-import": t59 as unknown as Trace,
+  "p5-main": t60 as unknown as Trace,
+  "p5-stdlib": t61 as unknown as Trace,
 };

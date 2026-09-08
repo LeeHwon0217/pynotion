@@ -142,7 +142,7 @@ export function CodePanel({ x, y, w, lines, shown, current, lineH = 44, title = 
           <g key={i} transform={`translate(0 ${44 + i * lineH})`} opacity={vis ? 1 : 0.18}>
             {cur && <rect x={6} y={0} width={w - 12} height={lineH} rx={8} fill="var(--stage-code-line)" />}
             {cur && <rect x={6} y={6} width={3} height={lineH - 12} rx={2} fill={C.hi} />}
-            <text x={22} y={lineH / 2 + 6} className="st-mono" style={{ fill: cur ? C.text : vis ? "#b6c0dc" : C.muted, fontSize: fs, fontWeight: cur ? 650 : 450 }}>{ln}</text>
+            <text x={22} y={lineH / 2 + 6} className="st-mono" xmlSpace="preserve" style={{ fill: cur ? C.text : vis ? "#b6c0dc" : C.muted, fontSize: fs, fontWeight: cur ? 650 : 450, whiteSpace: "pre" }}>{ln}</text>
           </g>
         );
       })}

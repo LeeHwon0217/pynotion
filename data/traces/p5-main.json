@@ -1,0 +1,201 @@
+{
+ "id": "p5-main",
+ "code": "print(__name__)\n\ndef main():\n    print(\"프로그램 시작\")\n\nif __name__ == \"__main__\":\n    main()",
+ "steps": [
+  {
+   "line": 0,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 0,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": "",
+   "note": "직접 실행하면 \"__main__\". 다른 파일이 import 하면 모듈 이름(\"mymod\")이 된다"
+  },
+  {
+   "line": 3,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 3,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": "__main__\n"
+  },
+  {
+   "line": 6,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "main": {
+       "ref": "0x240f37eca40"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x240f37eca40": {
+     "id": "0x240f37eca40",
+     "type": "function",
+     "repr": "main"
+    }
+   },
+   "stdout": "__main__\n",
+   "note": "'직접 실행될 때만' 실행 — import 될 때는 이 블록을 건너뛴다"
+  },
+  {
+   "line": 7,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 7,
+     "locals": {
+      "main": {
+       "ref": "0x240f37eca40"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x240f37eca40": {
+     "id": "0x240f37eca40",
+     "type": "function",
+     "repr": "main"
+    }
+   },
+   "stdout": "__main__\n"
+  },
+  {
+   "line": 3,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 7,
+     "locals": {
+      "main": {
+       "ref": "0x240f37eca40"
+      }
+     }
+    },
+    {
+     "fn": "main",
+     "line": 3,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x240f37eca40": {
+     "id": "0x240f37eca40",
+     "type": "function",
+     "repr": "main"
+    }
+   },
+   "stdout": "__main__\n"
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 7,
+     "locals": {
+      "main": {
+       "ref": "0x240f37eca40"
+      }
+     }
+    },
+    {
+     "fn": "main",
+     "line": 4,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x240f37eca40": {
+     "id": "0x240f37eca40",
+     "type": "function",
+     "repr": "main"
+    }
+   },
+   "stdout": "__main__\n"
+  },
+  {
+   "line": 4,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 7,
+     "locals": {
+      "main": {
+       "ref": "0x240f37eca40"
+      }
+     }
+    },
+    {
+     "fn": "main",
+     "line": 4,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x240f37eca40": {
+     "id": "0x240f37eca40",
+     "type": "function",
+     "repr": "main"
+    }
+   },
+   "stdout": "__main__\n프로그램 시작\n"
+  },
+  {
+   "line": 7,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 7,
+     "locals": {
+      "main": {
+       "ref": "0x240f37eca40"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x240f37eca40": {
+     "id": "0x240f37eca40",
+     "type": "function",
+     "repr": "main"
+    }
+   },
+   "stdout": "__main__\n프로그램 시작\n"
+  }
+ ],
+ "v": 1
+}

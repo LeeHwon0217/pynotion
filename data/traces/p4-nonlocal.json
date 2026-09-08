@@ -37,14 +37,14 @@
      "line": 9,
      "locals": {
       "counter": {
-       "ref": "0x1fea189cd60"
+       "ref": "0x27c8704cd60"
       }
      }
     }
    ],
    "heap": {
-    "0x1fea189cd60": {
-     "id": "0x1fea189cd60",
+    "0x27c8704cd60": {
+     "id": "0x27c8704cd60",
      "type": "function",
      "repr": "counter"
     }
@@ -61,7 +61,7 @@
      "line": 9,
      "locals": {
       "counter": {
-       "ref": "0x1fea189cd60"
+       "ref": "0x27c8704cd60"
       }
      }
     },
@@ -72,8 +72,8 @@
     }
    ],
    "heap": {
-    "0x1fea189cd60": {
-     "id": "0x1fea189cd60",
+    "0x27c8704cd60": {
+     "id": "0x27c8704cd60",
      "type": "function",
      "repr": "counter"
     }
@@ -89,7 +89,7 @@
      "line": 9,
      "locals": {
       "counter": {
-       "ref": "0x1fea189cd60"
+       "ref": "0x27c8704cd60"
       }
      }
     },
@@ -100,8 +100,8 @@
     }
    ],
    "heap": {
-    "0x1fea189cd60": {
-     "id": "0x1fea189cd60",
+    "0x27c8704cd60": {
+     "id": "0x27c8704cd60",
      "type": "function",
      "repr": "counter"
     }
@@ -117,7 +117,7 @@
      "line": 9,
      "locals": {
       "counter": {
-       "ref": "0x1fea189cd60"
+       "ref": "0x27c8704cd60"
       }
      }
     },
@@ -132,8 +132,8 @@
     }
    ],
    "heap": {
-    "0x1fea189cd60": {
-     "id": "0x1fea189cd60",
+    "0x27c8704cd60": {
+     "id": "0x27c8704cd60",
      "type": "function",
      "repr": "counter"
     },
@@ -154,7 +154,7 @@
      "line": 9,
      "locals": {
       "counter": {
-       "ref": "0x1fea189cd60"
+       "ref": "0x27c8704cd60"
       }
      }
     },
@@ -166,14 +166,14 @@
        "ref": "0x7ffd7f2b4998"
       },
       "inc": {
-       "ref": "0x1fea189ce00"
+       "ref": "0x27c8704ce00"
       }
      }
     }
    ],
    "heap": {
-    "0x1fea189cd60": {
-     "id": "0x1fea189cd60",
+    "0x27c8704cd60": {
+     "id": "0x27c8704cd60",
      "type": "function",
      "repr": "counter"
     },
@@ -182,8 +182,8 @@
      "type": "int",
      "repr": "0"
     },
-    "0x1fea189ce00": {
-     "id": "0x1fea189ce00",
+    "0x27c8704ce00": {
+     "id": "0x27c8704ce00",
      "type": "function",
      "repr": "inc"
     }
@@ -199,7 +199,7 @@
      "line": 9,
      "locals": {
       "counter": {
-       "ref": "0x1fea189cd60"
+       "ref": "0x27c8704cd60"
       }
      }
     },
@@ -211,14 +211,14 @@
        "ref": "0x7ffd7f2b4998"
       },
       "inc": {
-       "ref": "0x1fea189ce00"
+       "ref": "0x27c8704ce00"
       }
      }
     }
    ],
    "heap": {
-    "0x1fea189cd60": {
-     "id": "0x1fea189cd60",
+    "0x27c8704cd60": {
+     "id": "0x27c8704cd60",
      "type": "function",
      "repr": "counter"
     },
@@ -227,14 +227,14 @@
      "type": "int",
      "repr": "0"
     },
-    "0x1fea189ce00": {
-     "id": "0x1fea189ce00",
+    "0x27c8704ce00": {
+     "id": "0x27c8704ce00",
      "type": "function",
      "repr": "inc"
     }
    },
    "stdout": "",
-   "retval": "<function counter.<locals>.inc at 0x000001FEA18…"
+   "retval": "<function counter.<locals>.inc at 0x0000027C870…"
   },
   {
    "line": 10,
@@ -245,22 +245,22 @@
      "line": 10,
      "locals": {
       "counter": {
-       "ref": "0x1fea189cd60"
+       "ref": "0x27c8704cd60"
       },
       "c": {
-       "ref": "0x1fea189ce00"
+       "ref": "0x27c8704ce00"
       }
      }
     }
    ],
    "heap": {
-    "0x1fea189cd60": {
-     "id": "0x1fea189cd60",
+    "0x27c8704cd60": {
+     "id": "0x27c8704cd60",
      "type": "function",
      "repr": "counter"
     },
-    "0x1fea189ce00": {
-     "id": "0x1fea189ce00",
+    "0x27c8704ce00": {
+     "id": "0x27c8704ce00",
      "type": "function",
      "repr": "inc"
     }
@@ -276,10 +276,10 @@
      "line": 10,
      "locals": {
       "counter": {
-       "ref": "0x1fea189cd60"
+       "ref": "0x27c8704cd60"
       },
       "c": {
-       "ref": "0x1fea189ce00"
+       "ref": "0x27c8704ce00"
       }
      }
     },
@@ -294,13 +294,13 @@
     }
    ],
    "heap": {
-    "0x1fea189cd60": {
-     "id": "0x1fea189cd60",
+    "0x27c8704cd60": {
+     "id": "0x27c8704cd60",
      "type": "function",
      "repr": "counter"
     },
-    "0x1fea189ce00": {
-     "id": "0x1fea189ce00",
+    "0x27c8704ce00": {
+     "id": "0x27c8704ce00",
      "type": "function",
      "repr": "inc"
     },
@@ -321,10 +321,10 @@
      "line": 10,
      "locals": {
       "counter": {
-       "ref": "0x1fea189cd60"
+       "ref": "0x27c8704cd60"
       },
       "c": {
-       "ref": "0x1fea189ce00"
+       "ref": "0x27c8704ce00"
       }
      }
     },
@@ -339,13 +339,13 @@
     }
    ],
    "heap": {
-    "0x1fea189cd60": {
-     "id": "0x1fea189cd60",
+    "0x27c8704cd60": {
+     "id": "0x27c8704cd60",
      "type": "function",
      "repr": "counter"
     },
-    "0x1fea189ce00": {
-     "id": "0x1fea189ce00",
+    "0x27c8704ce00": {
+     "id": "0x27c8704ce00",
      "type": "function",
      "repr": "inc"
     },
@@ -366,10 +366,10 @@
      "line": 10,
      "locals": {
       "counter": {
-       "ref": "0x1fea189cd60"
+       "ref": "0x27c8704cd60"
       },
       "c": {
-       "ref": "0x1fea189ce00"
+       "ref": "0x27c8704ce00"
       }
      }
     },
@@ -384,13 +384,13 @@
     }
    ],
    "heap": {
-    "0x1fea189cd60": {
-     "id": "0x1fea189cd60",
+    "0x27c8704cd60": {
+     "id": "0x27c8704cd60",
      "type": "function",
      "repr": "counter"
     },
-    "0x1fea189ce00": {
-     "id": "0x1fea189ce00",
+    "0x27c8704ce00": {
+     "id": "0x27c8704ce00",
      "type": "function",
      "repr": "inc"
     },
@@ -411,10 +411,10 @@
      "line": 10,
      "locals": {
       "counter": {
-       "ref": "0x1fea189cd60"
+       "ref": "0x27c8704cd60"
       },
       "c": {
-       "ref": "0x1fea189ce00"
+       "ref": "0x27c8704ce00"
       }
      }
     },
@@ -429,13 +429,13 @@
     }
    ],
    "heap": {
-    "0x1fea189cd60": {
-     "id": "0x1fea189cd60",
+    "0x27c8704cd60": {
+     "id": "0x27c8704cd60",
      "type": "function",
      "repr": "counter"
     },
-    "0x1fea189ce00": {
-     "id": "0x1fea189ce00",
+    "0x27c8704ce00": {
+     "id": "0x27c8704ce00",
      "type": "function",
      "repr": "inc"
     },
@@ -457,10 +457,10 @@
      "line": 10,
      "locals": {
       "counter": {
-       "ref": "0x1fea189cd60"
+       "ref": "0x27c8704cd60"
       },
       "c": {
-       "ref": "0x1fea189ce00"
+       "ref": "0x27c8704ce00"
       }
      }
     },
@@ -475,13 +475,13 @@
     }
    ],
    "heap": {
-    "0x1fea189cd60": {
-     "id": "0x1fea189cd60",
+    "0x27c8704cd60": {
+     "id": "0x27c8704cd60",
      "type": "function",
      "repr": "counter"
     },
-    "0x1fea189ce00": {
-     "id": "0x1fea189ce00",
+    "0x27c8704ce00": {
+     "id": "0x27c8704ce00",
      "type": "function",
      "repr": "inc"
     },
@@ -502,10 +502,10 @@
      "line": 10,
      "locals": {
       "counter": {
-       "ref": "0x1fea189cd60"
+       "ref": "0x27c8704cd60"
       },
       "c": {
-       "ref": "0x1fea189ce00"
+       "ref": "0x27c8704ce00"
       }
      }
     },
@@ -520,13 +520,13 @@
     }
    ],
    "heap": {
-    "0x1fea189cd60": {
-     "id": "0x1fea189cd60",
+    "0x27c8704cd60": {
+     "id": "0x27c8704cd60",
      "type": "function",
      "repr": "counter"
     },
-    "0x1fea189ce00": {
-     "id": "0x1fea189ce00",
+    "0x27c8704ce00": {
+     "id": "0x27c8704ce00",
      "type": "function",
      "repr": "inc"
     },
@@ -547,10 +547,10 @@
      "line": 10,
      "locals": {
       "counter": {
-       "ref": "0x1fea189cd60"
+       "ref": "0x27c8704cd60"
       },
       "c": {
-       "ref": "0x1fea189ce00"
+       "ref": "0x27c8704ce00"
       }
      }
     },
@@ -565,13 +565,13 @@
     }
    ],
    "heap": {
-    "0x1fea189cd60": {
-     "id": "0x1fea189cd60",
+    "0x27c8704cd60": {
+     "id": "0x27c8704cd60",
      "type": "function",
      "repr": "counter"
     },
-    "0x1fea189ce00": {
-     "id": "0x1fea189ce00",
+    "0x27c8704ce00": {
+     "id": "0x27c8704ce00",
      "type": "function",
      "repr": "inc"
     },
@@ -592,10 +592,10 @@
      "line": 10,
      "locals": {
       "counter": {
-       "ref": "0x1fea189cd60"
+       "ref": "0x27c8704cd60"
       },
       "c": {
-       "ref": "0x1fea189ce00"
+       "ref": "0x27c8704ce00"
       }
      }
     },
@@ -610,13 +610,13 @@
     }
    ],
    "heap": {
-    "0x1fea189cd60": {
-     "id": "0x1fea189cd60",
+    "0x27c8704cd60": {
+     "id": "0x27c8704cd60",
      "type": "function",
      "repr": "counter"
     },
-    "0x1fea189ce00": {
-     "id": "0x1fea189ce00",
+    "0x27c8704ce00": {
+     "id": "0x27c8704ce00",
      "type": "function",
      "repr": "inc"
     },
@@ -638,10 +638,10 @@
      "line": 10,
      "locals": {
       "counter": {
-       "ref": "0x1fea189cd60"
+       "ref": "0x27c8704cd60"
       },
       "c": {
-       "ref": "0x1fea189ce00"
+       "ref": "0x27c8704ce00"
       }
      }
     },
@@ -656,13 +656,13 @@
     }
    ],
    "heap": {
-    "0x1fea189cd60": {
-     "id": "0x1fea189cd60",
+    "0x27c8704cd60": {
+     "id": "0x27c8704cd60",
      "type": "function",
      "repr": "counter"
     },
-    "0x1fea189ce00": {
-     "id": "0x1fea189ce00",
+    "0x27c8704ce00": {
+     "id": "0x27c8704ce00",
      "type": "function",
      "repr": "inc"
     },
@@ -683,10 +683,10 @@
      "line": 10,
      "locals": {
       "counter": {
-       "ref": "0x1fea189cd60"
+       "ref": "0x27c8704cd60"
       },
       "c": {
-       "ref": "0x1fea189ce00"
+       "ref": "0x27c8704ce00"
       }
      }
     },
@@ -701,13 +701,13 @@
     }
    ],
    "heap": {
-    "0x1fea189cd60": {
-     "id": "0x1fea189cd60",
+    "0x27c8704cd60": {
+     "id": "0x27c8704cd60",
      "type": "function",
      "repr": "counter"
     },
-    "0x1fea189ce00": {
-     "id": "0x1fea189ce00",
+    "0x27c8704ce00": {
+     "id": "0x27c8704ce00",
      "type": "function",
      "repr": "inc"
     },
@@ -728,10 +728,10 @@
      "line": 10,
      "locals": {
       "counter": {
-       "ref": "0x1fea189cd60"
+       "ref": "0x27c8704cd60"
       },
       "c": {
-       "ref": "0x1fea189ce00"
+       "ref": "0x27c8704ce00"
       }
      }
     },
@@ -746,13 +746,13 @@
     }
    ],
    "heap": {
-    "0x1fea189cd60": {
-     "id": "0x1fea189cd60",
+    "0x27c8704cd60": {
+     "id": "0x27c8704cd60",
      "type": "function",
      "repr": "counter"
     },
-    "0x1fea189ce00": {
-     "id": "0x1fea189ce00",
+    "0x27c8704ce00": {
+     "id": "0x27c8704ce00",
      "type": "function",
      "repr": "inc"
     },
@@ -773,10 +773,10 @@
      "line": 10,
      "locals": {
       "counter": {
-       "ref": "0x1fea189cd60"
+       "ref": "0x27c8704cd60"
       },
       "c": {
-       "ref": "0x1fea189ce00"
+       "ref": "0x27c8704ce00"
       }
      }
     },
@@ -791,13 +791,13 @@
     }
    ],
    "heap": {
-    "0x1fea189cd60": {
-     "id": "0x1fea189cd60",
+    "0x27c8704cd60": {
+     "id": "0x27c8704cd60",
      "type": "function",
      "repr": "counter"
     },
-    "0x1fea189ce00": {
-     "id": "0x1fea189ce00",
+    "0x27c8704ce00": {
+     "id": "0x27c8704ce00",
      "type": "function",
      "repr": "inc"
     },
@@ -819,22 +819,22 @@
      "line": 10,
      "locals": {
       "counter": {
-       "ref": "0x1fea189cd60"
+       "ref": "0x27c8704cd60"
       },
       "c": {
-       "ref": "0x1fea189ce00"
+       "ref": "0x27c8704ce00"
       }
      }
     }
    ],
    "heap": {
-    "0x1fea189cd60": {
-     "id": "0x1fea189cd60",
+    "0x27c8704cd60": {
+     "id": "0x27c8704cd60",
      "type": "function",
      "repr": "counter"
     },
-    "0x1fea189ce00": {
-     "id": "0x1fea189ce00",
+    "0x27c8704ce00": {
+     "id": "0x27c8704ce00",
      "type": "function",
      "repr": "inc"
     }

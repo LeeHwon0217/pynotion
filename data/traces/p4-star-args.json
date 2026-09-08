@@ -38,14 +38,14 @@
      "line": 4,
      "locals": {
       "total": {
-       "ref": "0x252be01ccc0"
+       "ref": "0x209c1c9ccc0"
       }
      }
     }
    ],
    "heap": {
-    "0x252be01ccc0": {
-     "id": "0x252be01ccc0",
+    "0x209c1c9ccc0": {
+     "id": "0x209c1c9ccc0",
      "type": "function",
      "repr": "total"
     }
@@ -62,22 +62,22 @@
      "line": 8,
      "locals": {
       "total": {
-       "ref": "0x252be01ccc0"
+       "ref": "0x209c1c9ccc0"
       },
       "show": {
-       "ref": "0x252be01ce00"
+       "ref": "0x209c1c9ce00"
       }
      }
     }
    ],
    "heap": {
-    "0x252be01ccc0": {
-     "id": "0x252be01ccc0",
+    "0x209c1c9ccc0": {
+     "id": "0x209c1c9ccc0",
      "type": "function",
      "repr": "total"
     },
-    "0x252be01ce00": {
-     "id": "0x252be01ce00",
+    "0x209c1c9ce00": {
+     "id": "0x209c1c9ce00",
      "type": "function",
      "repr": "show"
     }
@@ -93,10 +93,10 @@
      "line": 8,
      "locals": {
       "total": {
-       "ref": "0x252be01ccc0"
+       "ref": "0x209c1c9ccc0"
       },
       "show": {
-       "ref": "0x252be01ce00"
+       "ref": "0x209c1c9ce00"
       }
      }
     },
@@ -105,24 +105,24 @@
      "line": 1,
      "locals": {
       "nums": {
-       "ref": "0x252be033040"
+       "ref": "0x209c1cb3040"
       }
      }
     }
    ],
    "heap": {
-    "0x252be01ccc0": {
-     "id": "0x252be01ccc0",
+    "0x209c1c9ccc0": {
+     "id": "0x209c1c9ccc0",
      "type": "function",
      "repr": "total"
     },
-    "0x252be01ce00": {
-     "id": "0x252be01ce00",
+    "0x209c1c9ce00": {
+     "id": "0x209c1c9ce00",
      "type": "function",
      "repr": "show"
     },
-    "0x252be033040": {
-     "id": "0x252be033040",
+    "0x209c1cb3040": {
+     "id": "0x209c1cb3040",
      "type": "tuple",
      "repr": "(1, 2, 3)",
      "items": [
@@ -165,10 +165,10 @@
      "line": 8,
      "locals": {
       "total": {
-       "ref": "0x252be01ccc0"
+       "ref": "0x209c1c9ccc0"
       },
       "show": {
-       "ref": "0x252be01ce00"
+       "ref": "0x209c1c9ce00"
       }
      }
     },
@@ -177,24 +177,24 @@
      "line": 2,
      "locals": {
       "nums": {
-       "ref": "0x252be033040"
+       "ref": "0x209c1cb3040"
       }
      }
     }
    ],
    "heap": {
-    "0x252be01ccc0": {
-     "id": "0x252be01ccc0",
+    "0x209c1c9ccc0": {
+     "id": "0x209c1c9ccc0",
      "type": "function",
      "repr": "total"
     },
-    "0x252be01ce00": {
-     "id": "0x252be01ce00",
+    "0x209c1c9ce00": {
+     "id": "0x209c1c9ce00",
      "type": "function",
      "repr": "show"
     },
-    "0x252be033040": {
-     "id": "0x252be033040",
+    "0x209c1cb3040": {
+     "id": "0x209c1cb3040",
      "type": "tuple",
      "repr": "(1, 2, 3)",
      "items": [
@@ -236,10 +236,10 @@
      "line": 8,
      "locals": {
       "total": {
-       "ref": "0x252be01ccc0"
+       "ref": "0x209c1c9ccc0"
       },
       "show": {
-       "ref": "0x252be01ce00"
+       "ref": "0x209c1c9ce00"
       }
      }
     },
@@ -248,24 +248,24 @@
      "line": 2,
      "locals": {
       "nums": {
-       "ref": "0x252be033040"
+       "ref": "0x209c1cb3040"
       }
      }
     }
    ],
    "heap": {
-    "0x252be01ccc0": {
-     "id": "0x252be01ccc0",
+    "0x209c1c9ccc0": {
+     "id": "0x209c1c9ccc0",
      "type": "function",
      "repr": "total"
     },
-    "0x252be01ce00": {
-     "id": "0x252be01ce00",
+    "0x209c1c9ce00": {
+     "id": "0x209c1c9ce00",
      "type": "function",
      "repr": "show"
     },
-    "0x252be033040": {
-     "id": "0x252be033040",
+    "0x209c1cb3040": {
+     "id": "0x209c1cb3040",
      "type": "tuple",
      "repr": "(1, 2, 3)",
      "items": [
@@ -308,22 +308,22 @@
      "line": 9,
      "locals": {
       "total": {
-       "ref": "0x252be01ccc0"
+       "ref": "0x209c1c9ccc0"
       },
       "show": {
-       "ref": "0x252be01ce00"
+       "ref": "0x209c1c9ce00"
       }
      }
     }
    ],
    "heap": {
-    "0x252be01ccc0": {
-     "id": "0x252be01ccc0",
+    "0x209c1c9ccc0": {
+     "id": "0x209c1c9ccc0",
      "type": "function",
      "repr": "total"
     },
-    "0x252be01ce00": {
-     "id": "0x252be01ce00",
+    "0x209c1c9ce00": {
+     "id": "0x209c1c9ce00",
      "type": "function",
      "repr": "show"
     }
@@ -339,10 +339,10 @@
      "line": 9,
      "locals": {
       "total": {
-       "ref": "0x252be01ccc0"
+       "ref": "0x209c1c9ccc0"
       },
       "show": {
-       "ref": "0x252be01ce00"
+       "ref": "0x209c1c9ce00"
       }
      }
     },
@@ -357,13 +357,13 @@
     }
    ],
    "heap": {
-    "0x252be01ccc0": {
-     "id": "0x252be01ccc0",
+    "0x209c1c9ccc0": {
+     "id": "0x209c1c9ccc0",
      "type": "function",
      "repr": "total"
     },
-    "0x252be01ce00": {
-     "id": "0x252be01ce00",
+    "0x209c1c9ce00": {
+     "id": "0x209c1c9ce00",
      "type": "function",
      "repr": "show"
     },
@@ -386,10 +386,10 @@
      "line": 9,
      "locals": {
       "total": {
-       "ref": "0x252be01ccc0"
+       "ref": "0x209c1c9ccc0"
       },
       "show": {
-       "ref": "0x252be01ce00"
+       "ref": "0x209c1c9ce00"
       }
      }
     },
@@ -404,13 +404,13 @@
     }
    ],
    "heap": {
-    "0x252be01ccc0": {
-     "id": "0x252be01ccc0",
+    "0x209c1c9ccc0": {
+     "id": "0x209c1c9ccc0",
      "type": "function",
      "repr": "total"
     },
-    "0x252be01ce00": {
-     "id": "0x252be01ce00",
+    "0x209c1c9ce00": {
+     "id": "0x209c1c9ce00",
      "type": "function",
      "repr": "show"
     },
@@ -432,10 +432,10 @@
      "line": 9,
      "locals": {
       "total": {
-       "ref": "0x252be01ccc0"
+       "ref": "0x209c1c9ccc0"
       },
       "show": {
-       "ref": "0x252be01ce00"
+       "ref": "0x209c1c9ce00"
       }
      }
     },
@@ -450,13 +450,13 @@
     }
    ],
    "heap": {
-    "0x252be01ccc0": {
-     "id": "0x252be01ccc0",
+    "0x209c1c9ccc0": {
+     "id": "0x209c1c9ccc0",
      "type": "function",
      "repr": "total"
     },
-    "0x252be01ce00": {
-     "id": "0x252be01ce00",
+    "0x209c1c9ce00": {
+     "id": "0x209c1c9ce00",
      "type": "function",
      "repr": "show"
     },
@@ -479,22 +479,22 @@
      "line": 10,
      "locals": {
       "total": {
-       "ref": "0x252be01ccc0"
+       "ref": "0x209c1c9ccc0"
       },
       "show": {
-       "ref": "0x252be01ce00"
+       "ref": "0x209c1c9ce00"
       }
      }
     }
    ],
    "heap": {
-    "0x252be01ccc0": {
-     "id": "0x252be01ccc0",
+    "0x209c1c9ccc0": {
+     "id": "0x209c1c9ccc0",
      "type": "function",
      "repr": "total"
     },
-    "0x252be01ce00": {
-     "id": "0x252be01ce00",
+    "0x209c1c9ce00": {
+     "id": "0x209c1c9ce00",
      "type": "function",
      "repr": "show"
     }
@@ -510,10 +510,10 @@
      "line": 10,
      "locals": {
       "total": {
-       "ref": "0x252be01ccc0"
+       "ref": "0x209c1c9ccc0"
       },
       "show": {
-       "ref": "0x252be01ce00"
+       "ref": "0x209c1c9ce00"
       }
      }
     },
@@ -522,33 +522,33 @@
      "line": 4,
      "locals": {
       "opts": {
-       "ref": "0x252be035300"
+       "ref": "0x209c1cb5300"
       }
      }
     }
    ],
    "heap": {
-    "0x252be01ccc0": {
-     "id": "0x252be01ccc0",
+    "0x209c1c9ccc0": {
+     "id": "0x209c1c9ccc0",
      "type": "function",
      "repr": "total"
     },
-    "0x252be01ce00": {
-     "id": "0x252be01ce00",
+    "0x209c1c9ce00": {
+     "id": "0x209c1c9ce00",
      "type": "function",
      "repr": "show"
     },
-    "0x252be035300": {
-     "id": "0x252be035300",
+    "0x209c1cb5300": {
+     "id": "0x209c1cb5300",
      "type": "dict",
      "repr": "{'color': 'red', 'size': 3}",
      "entries": [
       [
        {
-        "ref": "0x252be02d3e0"
+        "ref": "0x209c1cad3e0"
        },
        {
-        "ref": "0x252be02d440"
+        "ref": "0x209c1cad440"
        }
       ],
       [
@@ -561,13 +561,13 @@
       ]
      ]
     },
-    "0x252be02d3e0": {
-     "id": "0x252be02d3e0",
+    "0x209c1cad3e0": {
+     "id": "0x209c1cad3e0",
      "type": "str",
      "repr": "'color'"
     },
-    "0x252be02d440": {
-     "id": "0x252be02d440",
+    "0x209c1cad440": {
+     "id": "0x209c1cad440",
      "type": "str",
      "repr": "'red'"
     },
@@ -594,10 +594,10 @@
      "line": 10,
      "locals": {
       "total": {
-       "ref": "0x252be01ccc0"
+       "ref": "0x209c1c9ccc0"
       },
       "show": {
-       "ref": "0x252be01ce00"
+       "ref": "0x209c1c9ce00"
       }
      }
     },
@@ -606,33 +606,33 @@
      "line": 5,
      "locals": {
       "opts": {
-       "ref": "0x252be035300"
+       "ref": "0x209c1cb5300"
       }
      }
     }
    ],
    "heap": {
-    "0x252be01ccc0": {
-     "id": "0x252be01ccc0",
+    "0x209c1c9ccc0": {
+     "id": "0x209c1c9ccc0",
      "type": "function",
      "repr": "total"
     },
-    "0x252be01ce00": {
-     "id": "0x252be01ce00",
+    "0x209c1c9ce00": {
+     "id": "0x209c1c9ce00",
      "type": "function",
      "repr": "show"
     },
-    "0x252be035300": {
-     "id": "0x252be035300",
+    "0x209c1cb5300": {
+     "id": "0x209c1cb5300",
      "type": "dict",
      "repr": "{'color': 'red', 'size': 3}",
      "entries": [
       [
        {
-        "ref": "0x252be02d3e0"
+        "ref": "0x209c1cad3e0"
        },
        {
-        "ref": "0x252be02d440"
+        "ref": "0x209c1cad440"
        }
       ],
       [
@@ -645,13 +645,13 @@
       ]
      ]
     },
-    "0x252be02d3e0": {
-     "id": "0x252be02d3e0",
+    "0x209c1cad3e0": {
+     "id": "0x209c1cad3e0",
      "type": "str",
      "repr": "'color'"
     },
-    "0x252be02d440": {
-     "id": "0x252be02d440",
+    "0x209c1cad440": {
+     "id": "0x209c1cad440",
      "type": "str",
      "repr": "'red'"
     },
@@ -677,10 +677,10 @@
      "line": 10,
      "locals": {
       "total": {
-       "ref": "0x252be01ccc0"
+       "ref": "0x209c1c9ccc0"
       },
       "show": {
-       "ref": "0x252be01ce00"
+       "ref": "0x209c1c9ce00"
       }
      }
     },
@@ -689,39 +689,39 @@
      "line": 6,
      "locals": {
       "opts": {
-       "ref": "0x252be035300"
+       "ref": "0x209c1cb5300"
       },
       "k": {
-       "ref": "0x252be02d3e0"
+       "ref": "0x209c1cad3e0"
       },
       "v": {
-       "ref": "0x252be02d440"
+       "ref": "0x209c1cad440"
       }
      }
     }
    ],
    "heap": {
-    "0x252be01ccc0": {
-     "id": "0x252be01ccc0",
+    "0x209c1c9ccc0": {
+     "id": "0x209c1c9ccc0",
      "type": "function",
      "repr": "total"
     },
-    "0x252be01ce00": {
-     "id": "0x252be01ce00",
+    "0x209c1c9ce00": {
+     "id": "0x209c1c9ce00",
      "type": "function",
      "repr": "show"
     },
-    "0x252be035300": {
-     "id": "0x252be035300",
+    "0x209c1cb5300": {
+     "id": "0x209c1cb5300",
      "type": "dict",
      "repr": "{'color': 'red', 'size': 3}",
      "entries": [
       [
        {
-        "ref": "0x252be02d3e0"
+        "ref": "0x209c1cad3e0"
        },
        {
-        "ref": "0x252be02d440"
+        "ref": "0x209c1cad440"
        }
       ],
       [
@@ -734,13 +734,13 @@
       ]
      ]
     },
-    "0x252be02d3e0": {
-     "id": "0x252be02d3e0",
+    "0x209c1cad3e0": {
+     "id": "0x209c1cad3e0",
      "type": "str",
      "repr": "'color'"
     },
-    "0x252be02d440": {
-     "id": "0x252be02d440",
+    "0x209c1cad440": {
+     "id": "0x209c1cad440",
      "type": "str",
      "repr": "'red'"
     },
@@ -766,10 +766,10 @@
      "line": 10,
      "locals": {
       "total": {
-       "ref": "0x252be01ccc0"
+       "ref": "0x209c1c9ccc0"
       },
       "show": {
-       "ref": "0x252be01ce00"
+       "ref": "0x209c1c9ce00"
       }
      }
     },
@@ -778,39 +778,39 @@
      "line": 5,
      "locals": {
       "opts": {
-       "ref": "0x252be035300"
+       "ref": "0x209c1cb5300"
       },
       "k": {
-       "ref": "0x252be02d3e0"
+       "ref": "0x209c1cad3e0"
       },
       "v": {
-       "ref": "0x252be02d440"
+       "ref": "0x209c1cad440"
       }
      }
     }
    ],
    "heap": {
-    "0x252be01ccc0": {
-     "id": "0x252be01ccc0",
+    "0x209c1c9ccc0": {
+     "id": "0x209c1c9ccc0",
      "type": "function",
      "repr": "total"
     },
-    "0x252be01ce00": {
-     "id": "0x252be01ce00",
+    "0x209c1c9ce00": {
+     "id": "0x209c1c9ce00",
      "type": "function",
      "repr": "show"
     },
-    "0x252be035300": {
-     "id": "0x252be035300",
+    "0x209c1cb5300": {
+     "id": "0x209c1cb5300",
      "type": "dict",
      "repr": "{'color': 'red', 'size': 3}",
      "entries": [
       [
        {
-        "ref": "0x252be02d3e0"
+        "ref": "0x209c1cad3e0"
        },
        {
-        "ref": "0x252be02d440"
+        "ref": "0x209c1cad440"
        }
       ],
       [
@@ -823,13 +823,13 @@
       ]
      ]
     },
-    "0x252be02d3e0": {
-     "id": "0x252be02d3e0",
+    "0x209c1cad3e0": {
+     "id": "0x209c1cad3e0",
      "type": "str",
      "repr": "'color'"
     },
-    "0x252be02d440": {
-     "id": "0x252be02d440",
+    "0x209c1cad440": {
+     "id": "0x209c1cad440",
      "type": "str",
      "repr": "'red'"
     },
@@ -855,10 +855,10 @@
      "line": 10,
      "locals": {
       "total": {
-       "ref": "0x252be01ccc0"
+       "ref": "0x209c1c9ccc0"
       },
       "show": {
-       "ref": "0x252be01ce00"
+       "ref": "0x209c1c9ce00"
       }
      }
     },
@@ -867,7 +867,7 @@
      "line": 6,
      "locals": {
       "opts": {
-       "ref": "0x252be035300"
+       "ref": "0x209c1cb5300"
       },
       "k": {
        "ref": "0x7ffd7f2c1b90"
@@ -879,27 +879,27 @@
     }
    ],
    "heap": {
-    "0x252be01ccc0": {
-     "id": "0x252be01ccc0",
+    "0x209c1c9ccc0": {
+     "id": "0x209c1c9ccc0",
      "type": "function",
      "repr": "total"
     },
-    "0x252be01ce00": {
-     "id": "0x252be01ce00",
+    "0x209c1c9ce00": {
+     "id": "0x209c1c9ce00",
      "type": "function",
      "repr": "show"
     },
-    "0x252be035300": {
-     "id": "0x252be035300",
+    "0x209c1cb5300": {
+     "id": "0x209c1cb5300",
      "type": "dict",
      "repr": "{'color': 'red', 'size': 3}",
      "entries": [
       [
        {
-        "ref": "0x252be02d3e0"
+        "ref": "0x209c1cad3e0"
        },
        {
-        "ref": "0x252be02d440"
+        "ref": "0x209c1cad440"
        }
       ],
       [
@@ -912,13 +912,13 @@
       ]
      ]
     },
-    "0x252be02d3e0": {
-     "id": "0x252be02d3e0",
+    "0x209c1cad3e0": {
+     "id": "0x209c1cad3e0",
      "type": "str",
      "repr": "'color'"
     },
-    "0x252be02d440": {
-     "id": "0x252be02d440",
+    "0x209c1cad440": {
+     "id": "0x209c1cad440",
      "type": "str",
      "repr": "'red'"
     },
@@ -944,10 +944,10 @@
      "line": 10,
      "locals": {
       "total": {
-       "ref": "0x252be01ccc0"
+       "ref": "0x209c1c9ccc0"
       },
       "show": {
-       "ref": "0x252be01ce00"
+       "ref": "0x209c1c9ce00"
       }
      }
     },
@@ -956,7 +956,7 @@
      "line": 5,
      "locals": {
       "opts": {
-       "ref": "0x252be035300"
+       "ref": "0x209c1cb5300"
       },
       "k": {
        "ref": "0x7ffd7f2c1b90"
@@ -968,27 +968,27 @@
     }
    ],
    "heap": {
-    "0x252be01ccc0": {
-     "id": "0x252be01ccc0",
+    "0x209c1c9ccc0": {
+     "id": "0x209c1c9ccc0",
      "type": "function",
      "repr": "total"
     },
-    "0x252be01ce00": {
-     "id": "0x252be01ce00",
+    "0x209c1c9ce00": {
+     "id": "0x209c1c9ce00",
      "type": "function",
      "repr": "show"
     },
-    "0x252be035300": {
-     "id": "0x252be035300",
+    "0x209c1cb5300": {
+     "id": "0x209c1cb5300",
      "type": "dict",
      "repr": "{'color': 'red', 'size': 3}",
      "entries": [
       [
        {
-        "ref": "0x252be02d3e0"
+        "ref": "0x209c1cad3e0"
        },
        {
-        "ref": "0x252be02d440"
+        "ref": "0x209c1cad440"
        }
       ],
       [
@@ -1001,13 +1001,13 @@
       ]
      ]
     },
-    "0x252be02d3e0": {
-     "id": "0x252be02d3e0",
+    "0x209c1cad3e0": {
+     "id": "0x209c1cad3e0",
      "type": "str",
      "repr": "'color'"
     },
-    "0x252be02d440": {
-     "id": "0x252be02d440",
+    "0x209c1cad440": {
+     "id": "0x209c1cad440",
      "type": "str",
      "repr": "'red'"
     },
@@ -1033,10 +1033,10 @@
      "line": 10,
      "locals": {
       "total": {
-       "ref": "0x252be01ccc0"
+       "ref": "0x209c1c9ccc0"
       },
       "show": {
-       "ref": "0x252be01ce00"
+       "ref": "0x209c1c9ce00"
       }
      }
     },
@@ -1045,7 +1045,7 @@
      "line": 5,
      "locals": {
       "opts": {
-       "ref": "0x252be035300"
+       "ref": "0x209c1cb5300"
       },
       "k": {
        "ref": "0x7ffd7f2c1b90"
@@ -1057,27 +1057,27 @@
     }
    ],
    "heap": {
-    "0x252be01ccc0": {
-     "id": "0x252be01ccc0",
+    "0x209c1c9ccc0": {
+     "id": "0x209c1c9ccc0",
      "type": "function",
      "repr": "total"
     },
-    "0x252be01ce00": {
-     "id": "0x252be01ce00",
+    "0x209c1c9ce00": {
+     "id": "0x209c1c9ce00",
      "type": "function",
      "repr": "show"
     },
-    "0x252be035300": {
-     "id": "0x252be035300",
+    "0x209c1cb5300": {
+     "id": "0x209c1cb5300",
      "type": "dict",
      "repr": "{'color': 'red', 'size': 3}",
      "entries": [
       [
        {
-        "ref": "0x252be02d3e0"
+        "ref": "0x209c1cad3e0"
        },
        {
-        "ref": "0x252be02d440"
+        "ref": "0x209c1cad440"
        }
       ],
       [
@@ -1090,13 +1090,13 @@
       ]
      ]
     },
-    "0x252be02d3e0": {
-     "id": "0x252be02d3e0",
+    "0x209c1cad3e0": {
+     "id": "0x209c1cad3e0",
      "type": "str",
      "repr": "'color'"
     },
-    "0x252be02d440": {
-     "id": "0x252be02d440",
+    "0x209c1cad440": {
+     "id": "0x209c1cad440",
      "type": "str",
      "repr": "'red'"
     },
@@ -1122,22 +1122,22 @@
      "line": 11,
      "locals": {
       "total": {
-       "ref": "0x252be01ccc0"
+       "ref": "0x209c1c9ccc0"
       },
       "show": {
-       "ref": "0x252be01ce00"
+       "ref": "0x209c1c9ce00"
       }
      }
     }
    ],
    "heap": {
-    "0x252be01ccc0": {
-     "id": "0x252be01ccc0",
+    "0x209c1c9ccc0": {
+     "id": "0x209c1c9ccc0",
      "type": "function",
      "repr": "total"
     },
-    "0x252be01ce00": {
-     "id": "0x252be01ce00",
+    "0x209c1c9ce00": {
+     "id": "0x209c1c9ce00",
      "type": "function",
      "repr": "show"
     }
@@ -1153,30 +1153,30 @@
      "line": 12,
      "locals": {
       "total": {
-       "ref": "0x252be01ccc0"
+       "ref": "0x209c1c9ccc0"
       },
       "show": {
-       "ref": "0x252be01ce00"
+       "ref": "0x209c1c9ce00"
       },
       "values": {
-       "ref": "0x252be041140"
+       "ref": "0x209c1cc1140"
       }
      }
     }
    ],
    "heap": {
-    "0x252be01ccc0": {
-     "id": "0x252be01ccc0",
+    "0x209c1c9ccc0": {
+     "id": "0x209c1c9ccc0",
      "type": "function",
      "repr": "total"
     },
-    "0x252be01ce00": {
-     "id": "0x252be01ce00",
+    "0x209c1c9ce00": {
+     "id": "0x209c1c9ce00",
      "type": "function",
      "repr": "show"
     },
-    "0x252be041140": {
-     "id": "0x252be041140",
+    "0x209c1cc1140": {
+     "id": "0x209c1cc1140",
      "type": "list",
      "repr": "[4, 5, 6]",
      "items": [
@@ -1219,13 +1219,13 @@
      "line": 12,
      "locals": {
       "total": {
-       "ref": "0x252be01ccc0"
+       "ref": "0x209c1c9ccc0"
       },
       "show": {
-       "ref": "0x252be01ce00"
+       "ref": "0x209c1c9ce00"
       },
       "values": {
-       "ref": "0x252be041140"
+       "ref": "0x209c1cc1140"
       }
      }
     },
@@ -1234,24 +1234,24 @@
      "line": 1,
      "locals": {
       "nums": {
-       "ref": "0x252be033240"
+       "ref": "0x209c1cb3240"
       }
      }
     }
    ],
    "heap": {
-    "0x252be01ccc0": {
-     "id": "0x252be01ccc0",
+    "0x209c1c9ccc0": {
+     "id": "0x209c1c9ccc0",
      "type": "function",
      "repr": "total"
     },
-    "0x252be01ce00": {
-     "id": "0x252be01ce00",
+    "0x209c1c9ce00": {
+     "id": "0x209c1c9ce00",
      "type": "function",
      "repr": "show"
     },
-    "0x252be041140": {
-     "id": "0x252be041140",
+    "0x209c1cc1140": {
+     "id": "0x209c1cc1140",
      "type": "list",
      "repr": "[4, 5, 6]",
      "items": [
@@ -1281,8 +1281,8 @@
      "type": "int",
      "repr": "6"
     },
-    "0x252be033240": {
-     "id": "0x252be033240",
+    "0x209c1cb3240": {
+     "id": "0x209c1cb3240",
      "type": "tuple",
      "repr": "(4, 5, 6)",
      "items": [
@@ -1310,13 +1310,13 @@
      "line": 12,
      "locals": {
       "total": {
-       "ref": "0x252be01ccc0"
+       "ref": "0x209c1c9ccc0"
       },
       "show": {
-       "ref": "0x252be01ce00"
+       "ref": "0x209c1c9ce00"
       },
       "values": {
-       "ref": "0x252be041140"
+       "ref": "0x209c1cc1140"
       }
      }
     },
@@ -1325,24 +1325,24 @@
      "line": 2,
      "locals": {
       "nums": {
-       "ref": "0x252be033240"
+       "ref": "0x209c1cb3240"
       }
      }
     }
    ],
    "heap": {
-    "0x252be01ccc0": {
-     "id": "0x252be01ccc0",
+    "0x209c1c9ccc0": {
+     "id": "0x209c1c9ccc0",
      "type": "function",
      "repr": "total"
     },
-    "0x252be01ce00": {
-     "id": "0x252be01ce00",
+    "0x209c1c9ce00": {
+     "id": "0x209c1c9ce00",
      "type": "function",
      "repr": "show"
     },
-    "0x252be041140": {
-     "id": "0x252be041140",
+    "0x209c1cc1140": {
+     "id": "0x209c1cc1140",
      "type": "list",
      "repr": "[4, 5, 6]",
      "items": [
@@ -1372,8 +1372,8 @@
      "type": "int",
      "repr": "6"
     },
-    "0x252be033240": {
-     "id": "0x252be033240",
+    "0x209c1cb3240": {
+     "id": "0x209c1cb3240",
      "type": "tuple",
      "repr": "(4, 5, 6)",
      "items": [
@@ -1400,13 +1400,13 @@
      "line": 12,
      "locals": {
       "total": {
-       "ref": "0x252be01ccc0"
+       "ref": "0x209c1c9ccc0"
       },
       "show": {
-       "ref": "0x252be01ce00"
+       "ref": "0x209c1c9ce00"
       },
       "values": {
-       "ref": "0x252be041140"
+       "ref": "0x209c1cc1140"
       }
      }
     },
@@ -1415,24 +1415,24 @@
      "line": 2,
      "locals": {
       "nums": {
-       "ref": "0x252be033240"
+       "ref": "0x209c1cb3240"
       }
      }
     }
    ],
    "heap": {
-    "0x252be01ccc0": {
-     "id": "0x252be01ccc0",
+    "0x209c1c9ccc0": {
+     "id": "0x209c1c9ccc0",
      "type": "function",
      "repr": "total"
     },
-    "0x252be01ce00": {
-     "id": "0x252be01ce00",
+    "0x209c1c9ce00": {
+     "id": "0x209c1c9ce00",
      "type": "function",
      "repr": "show"
     },
-    "0x252be041140": {
-     "id": "0x252be041140",
+    "0x209c1cc1140": {
+     "id": "0x209c1cc1140",
      "type": "list",
      "repr": "[4, 5, 6]",
      "items": [
@@ -1462,8 +1462,8 @@
      "type": "int",
      "repr": "6"
     },
-    "0x252be033240": {
-     "id": "0x252be033240",
+    "0x209c1cb3240": {
+     "id": "0x209c1cb3240",
      "type": "tuple",
      "repr": "(4, 5, 6)",
      "items": [
@@ -1491,30 +1491,30 @@
      "line": 13,
      "locals": {
       "total": {
-       "ref": "0x252be01ccc0"
+       "ref": "0x209c1c9ccc0"
       },
       "show": {
-       "ref": "0x252be01ce00"
+       "ref": "0x209c1c9ce00"
       },
       "values": {
-       "ref": "0x252be041140"
+       "ref": "0x209c1cc1140"
       }
      }
     }
    ],
    "heap": {
-    "0x252be01ccc0": {
-     "id": "0x252be01ccc0",
+    "0x209c1c9ccc0": {
+     "id": "0x209c1c9ccc0",
      "type": "function",
      "repr": "total"
     },
-    "0x252be01ce00": {
-     "id": "0x252be01ce00",
+    "0x209c1c9ce00": {
+     "id": "0x209c1c9ce00",
      "type": "function",
      "repr": "show"
     },
-    "0x252be041140": {
-     "id": "0x252be041140",
+    "0x209c1cc1140": {
+     "id": "0x209c1cc1140",
      "type": "list",
      "repr": "[4, 5, 6]",
      "items": [
@@ -1556,33 +1556,33 @@
      "line": 14,
      "locals": {
       "total": {
-       "ref": "0x252be01ccc0"
+       "ref": "0x209c1c9ccc0"
       },
       "show": {
-       "ref": "0x252be01ce00"
+       "ref": "0x209c1c9ce00"
       },
       "values": {
-       "ref": "0x252be041140"
+       "ref": "0x209c1cc1140"
       },
       "config": {
-       "ref": "0x252be043d40"
+       "ref": "0x209c1cc3d40"
       }
      }
     }
    ],
    "heap": {
-    "0x252be01ccc0": {
-     "id": "0x252be01ccc0",
+    "0x209c1c9ccc0": {
+     "id": "0x209c1c9ccc0",
      "type": "function",
      "repr": "total"
     },
-    "0x252be01ce00": {
-     "id": "0x252be01ce00",
+    "0x209c1c9ce00": {
+     "id": "0x209c1c9ce00",
      "type": "function",
      "repr": "show"
     },
-    "0x252be041140": {
-     "id": "0x252be041140",
+    "0x209c1cc1140": {
+     "id": "0x209c1cc1140",
      "type": "list",
      "repr": "[4, 5, 6]",
      "items": [
@@ -1612,28 +1612,28 @@
      "type": "int",
      "repr": "6"
     },
-    "0x252be043d40": {
-     "id": "0x252be043d40",
+    "0x209c1cc3d40": {
+     "id": "0x209c1cc3d40",
      "type": "dict",
      "repr": "{'color': 'blue'}",
      "entries": [
       [
        {
-        "ref": "0x252be02d3e0"
+        "ref": "0x209c1cad3e0"
        },
        {
-        "ref": "0x252be02d620"
+        "ref": "0x209c1cad620"
        }
       ]
      ]
     },
-    "0x252be02d3e0": {
-     "id": "0x252be02d3e0",
+    "0x209c1cad3e0": {
+     "id": "0x209c1cad3e0",
      "type": "str",
      "repr": "'color'"
     },
-    "0x252be02d620": {
-     "id": "0x252be02d620",
+    "0x209c1cad620": {
+     "id": "0x209c1cad620",
      "type": "str",
      "repr": "'blue'"
     }
@@ -1650,16 +1650,16 @@
      "line": 14,
      "locals": {
       "total": {
-       "ref": "0x252be01ccc0"
+       "ref": "0x209c1c9ccc0"
       },
       "show": {
-       "ref": "0x252be01ce00"
+       "ref": "0x209c1c9ce00"
       },
       "values": {
-       "ref": "0x252be041140"
+       "ref": "0x209c1cc1140"
       },
       "config": {
-       "ref": "0x252be043d40"
+       "ref": "0x209c1cc3d40"
       }
      }
     },
@@ -1668,24 +1668,24 @@
      "line": 4,
      "locals": {
       "opts": {
-       "ref": "0x252be0487c0"
+       "ref": "0x209c1cc87c0"
       }
      }
     }
    ],
    "heap": {
-    "0x252be01ccc0": {
-     "id": "0x252be01ccc0",
+    "0x209c1c9ccc0": {
+     "id": "0x209c1c9ccc0",
      "type": "function",
      "repr": "total"
     },
-    "0x252be01ce00": {
-     "id": "0x252be01ce00",
+    "0x209c1c9ce00": {
+     "id": "0x209c1c9ce00",
      "type": "function",
      "repr": "show"
     },
-    "0x252be041140": {
-     "id": "0x252be041140",
+    "0x209c1cc1140": {
+     "id": "0x209c1cc1140",
      "type": "list",
      "repr": "[4, 5, 6]",
      "items": [
@@ -1715,42 +1715,42 @@
      "type": "int",
      "repr": "6"
     },
-    "0x252be043d40": {
-     "id": "0x252be043d40",
+    "0x209c1cc3d40": {
+     "id": "0x209c1cc3d40",
      "type": "dict",
      "repr": "{'color': 'blue'}",
      "entries": [
       [
        {
-        "ref": "0x252be02d3e0"
+        "ref": "0x209c1cad3e0"
        },
        {
-        "ref": "0x252be02d620"
+        "ref": "0x209c1cad620"
        }
       ]
      ]
     },
-    "0x252be02d3e0": {
-     "id": "0x252be02d3e0",
+    "0x209c1cad3e0": {
+     "id": "0x209c1cad3e0",
      "type": "str",
      "repr": "'color'"
     },
-    "0x252be02d620": {
-     "id": "0x252be02d620",
+    "0x209c1cad620": {
+     "id": "0x209c1cad620",
      "type": "str",
      "repr": "'blue'"
     },
-    "0x252be0487c0": {
-     "id": "0x252be0487c0",
+    "0x209c1cc87c0": {
+     "id": "0x209c1cc87c0",
      "type": "dict",
      "repr": "{'color': 'blue'}",
      "entries": [
       [
        {
-        "ref": "0x252be02d3e0"
+        "ref": "0x209c1cad3e0"
        },
        {
-        "ref": "0x252be02d620"
+        "ref": "0x209c1cad620"
        }
       ]
      ]
@@ -1768,16 +1768,16 @@
      "line": 14,
      "locals": {
       "total": {
-       "ref": "0x252be01ccc0"
+       "ref": "0x209c1c9ccc0"
       },
       "show": {
-       "ref": "0x252be01ce00"
+       "ref": "0x209c1c9ce00"
       },
       "values": {
-       "ref": "0x252be041140"
+       "ref": "0x209c1cc1140"
       },
       "config": {
-       "ref": "0x252be043d40"
+       "ref": "0x209c1cc3d40"
       }
      }
     },
@@ -1786,24 +1786,24 @@
      "line": 5,
      "locals": {
       "opts": {
-       "ref": "0x252be0487c0"
+       "ref": "0x209c1cc87c0"
       }
      }
     }
    ],
    "heap": {
-    "0x252be01ccc0": {
-     "id": "0x252be01ccc0",
+    "0x209c1c9ccc0": {
+     "id": "0x209c1c9ccc0",
      "type": "function",
      "repr": "total"
     },
-    "0x252be01ce00": {
-     "id": "0x252be01ce00",
+    "0x209c1c9ce00": {
+     "id": "0x209c1c9ce00",
      "type": "function",
      "repr": "show"
     },
-    "0x252be041140": {
-     "id": "0x252be041140",
+    "0x209c1cc1140": {
+     "id": "0x209c1cc1140",
      "type": "list",
      "repr": "[4, 5, 6]",
      "items": [
@@ -1833,42 +1833,42 @@
      "type": "int",
      "repr": "6"
     },
-    "0x252be043d40": {
-     "id": "0x252be043d40",
+    "0x209c1cc3d40": {
+     "id": "0x209c1cc3d40",
      "type": "dict",
      "repr": "{'color': 'blue'}",
      "entries": [
       [
        {
-        "ref": "0x252be02d3e0"
+        "ref": "0x209c1cad3e0"
        },
        {
-        "ref": "0x252be02d620"
+        "ref": "0x209c1cad620"
        }
       ]
      ]
     },
-    "0x252be02d3e0": {
-     "id": "0x252be02d3e0",
+    "0x209c1cad3e0": {
+     "id": "0x209c1cad3e0",
      "type": "str",
      "repr": "'color'"
     },
-    "0x252be02d620": {
-     "id": "0x252be02d620",
+    "0x209c1cad620": {
+     "id": "0x209c1cad620",
      "type": "str",
      "repr": "'blue'"
     },
-    "0x252be0487c0": {
-     "id": "0x252be0487c0",
+    "0x209c1cc87c0": {
+     "id": "0x209c1cc87c0",
      "type": "dict",
      "repr": "{'color': 'blue'}",
      "entries": [
       [
        {
-        "ref": "0x252be02d3e0"
+        "ref": "0x209c1cad3e0"
        },
        {
-        "ref": "0x252be02d620"
+        "ref": "0x209c1cad620"
        }
       ]
      ]
@@ -1885,16 +1885,16 @@
      "line": 14,
      "locals": {
       "total": {
-       "ref": "0x252be01ccc0"
+       "ref": "0x209c1c9ccc0"
       },
       "show": {
-       "ref": "0x252be01ce00"
+       "ref": "0x209c1c9ce00"
       },
       "values": {
-       "ref": "0x252be041140"
+       "ref": "0x209c1cc1140"
       },
       "config": {
-       "ref": "0x252be043d40"
+       "ref": "0x209c1cc3d40"
       }
      }
     },
@@ -1903,30 +1903,30 @@
      "line": 6,
      "locals": {
       "opts": {
-       "ref": "0x252be0487c0"
+       "ref": "0x209c1cc87c0"
       },
       "k": {
-       "ref": "0x252be02d3e0"
+       "ref": "0x209c1cad3e0"
       },
       "v": {
-       "ref": "0x252be02d620"
+       "ref": "0x209c1cad620"
       }
      }
     }
    ],
    "heap": {
-    "0x252be01ccc0": {
-     "id": "0x252be01ccc0",
+    "0x209c1c9ccc0": {
+     "id": "0x209c1c9ccc0",
      "type": "function",
      "repr": "total"
     },
-    "0x252be01ce00": {
-     "id": "0x252be01ce00",
+    "0x209c1c9ce00": {
+     "id": "0x209c1c9ce00",
      "type": "function",
      "repr": "show"
     },
-    "0x252be041140": {
-     "id": "0x252be041140",
+    "0x209c1cc1140": {
+     "id": "0x209c1cc1140",
      "type": "list",
      "repr": "[4, 5, 6]",
      "items": [
@@ -1956,42 +1956,42 @@
      "type": "int",
      "repr": "6"
     },
-    "0x252be043d40": {
-     "id": "0x252be043d40",
+    "0x209c1cc3d40": {
+     "id": "0x209c1cc3d40",
      "type": "dict",
      "repr": "{'color': 'blue'}",
      "entries": [
       [
        {
-        "ref": "0x252be02d3e0"
+        "ref": "0x209c1cad3e0"
        },
        {
-        "ref": "0x252be02d620"
+        "ref": "0x209c1cad620"
        }
       ]
      ]
     },
-    "0x252be02d3e0": {
-     "id": "0x252be02d3e0",
+    "0x209c1cad3e0": {
+     "id": "0x209c1cad3e0",
      "type": "str",
      "repr": "'color'"
     },
-    "0x252be02d620": {
-     "id": "0x252be02d620",
+    "0x209c1cad620": {
+     "id": "0x209c1cad620",
      "type": "str",
      "repr": "'blue'"
     },
-    "0x252be0487c0": {
-     "id": "0x252be0487c0",
+    "0x209c1cc87c0": {
+     "id": "0x209c1cc87c0",
      "type": "dict",
      "repr": "{'color': 'blue'}",
      "entries": [
       [
        {
-        "ref": "0x252be02d3e0"
+        "ref": "0x209c1cad3e0"
        },
        {
-        "ref": "0x252be02d620"
+        "ref": "0x209c1cad620"
        }
       ]
      ]
@@ -2008,16 +2008,16 @@
      "line": 14,
      "locals": {
       "total": {
-       "ref": "0x252be01ccc0"
+       "ref": "0x209c1c9ccc0"
       },
       "show": {
-       "ref": "0x252be01ce00"
+       "ref": "0x209c1c9ce00"
       },
       "values": {
-       "ref": "0x252be041140"
+       "ref": "0x209c1cc1140"
       },
       "config": {
-       "ref": "0x252be043d40"
+       "ref": "0x209c1cc3d40"
       }
      }
     },
@@ -2026,30 +2026,30 @@
      "line": 5,
      "locals": {
       "opts": {
-       "ref": "0x252be0487c0"
+       "ref": "0x209c1cc87c0"
       },
       "k": {
-       "ref": "0x252be02d3e0"
+       "ref": "0x209c1cad3e0"
       },
       "v": {
-       "ref": "0x252be02d620"
+       "ref": "0x209c1cad620"
       }
      }
     }
    ],
    "heap": {
-    "0x252be01ccc0": {
-     "id": "0x252be01ccc0",
+    "0x209c1c9ccc0": {
+     "id": "0x209c1c9ccc0",
      "type": "function",
      "repr": "total"
     },
-    "0x252be01ce00": {
-     "id": "0x252be01ce00",
+    "0x209c1c9ce00": {
+     "id": "0x209c1c9ce00",
      "type": "function",
      "repr": "show"
     },
-    "0x252be041140": {
-     "id": "0x252be041140",
+    "0x209c1cc1140": {
+     "id": "0x209c1cc1140",
      "type": "list",
      "repr": "[4, 5, 6]",
      "items": [
@@ -2079,42 +2079,42 @@
      "type": "int",
      "repr": "6"
     },
-    "0x252be043d40": {
-     "id": "0x252be043d40",
+    "0x209c1cc3d40": {
+     "id": "0x209c1cc3d40",
      "type": "dict",
      "repr": "{'color': 'blue'}",
      "entries": [
       [
        {
-        "ref": "0x252be02d3e0"
+        "ref": "0x209c1cad3e0"
        },
        {
-        "ref": "0x252be02d620"
+        "ref": "0x209c1cad620"
        }
       ]
      ]
     },
-    "0x252be02d3e0": {
-     "id": "0x252be02d3e0",
+    "0x209c1cad3e0": {
+     "id": "0x209c1cad3e0",
      "type": "str",
      "repr": "'color'"
     },
-    "0x252be02d620": {
-     "id": "0x252be02d620",
+    "0x209c1cad620": {
+     "id": "0x209c1cad620",
      "type": "str",
      "repr": "'blue'"
     },
-    "0x252be0487c0": {
-     "id": "0x252be0487c0",
+    "0x209c1cc87c0": {
+     "id": "0x209c1cc87c0",
      "type": "dict",
      "repr": "{'color': 'blue'}",
      "entries": [
       [
        {
-        "ref": "0x252be02d3e0"
+        "ref": "0x209c1cad3e0"
        },
        {
-        "ref": "0x252be02d620"
+        "ref": "0x209c1cad620"
        }
       ]
      ]
@@ -2131,16 +2131,16 @@
      "line": 14,
      "locals": {
       "total": {
-       "ref": "0x252be01ccc0"
+       "ref": "0x209c1c9ccc0"
       },
       "show": {
-       "ref": "0x252be01ce00"
+       "ref": "0x209c1c9ce00"
       },
       "values": {
-       "ref": "0x252be041140"
+       "ref": "0x209c1cc1140"
       },
       "config": {
-       "ref": "0x252be043d40"
+       "ref": "0x209c1cc3d40"
       }
      }
     },
@@ -2149,30 +2149,30 @@
      "line": 5,
      "locals": {
       "opts": {
-       "ref": "0x252be0487c0"
+       "ref": "0x209c1cc87c0"
       },
       "k": {
-       "ref": "0x252be02d3e0"
+       "ref": "0x209c1cad3e0"
       },
       "v": {
-       "ref": "0x252be02d620"
+       "ref": "0x209c1cad620"
       }
      }
     }
    ],
    "heap": {
-    "0x252be01ccc0": {
-     "id": "0x252be01ccc0",
+    "0x209c1c9ccc0": {
+     "id": "0x209c1c9ccc0",
      "type": "function",
      "repr": "total"
     },
-    "0x252be01ce00": {
-     "id": "0x252be01ce00",
+    "0x209c1c9ce00": {
+     "id": "0x209c1c9ce00",
      "type": "function",
      "repr": "show"
     },
-    "0x252be041140": {
-     "id": "0x252be041140",
+    "0x209c1cc1140": {
+     "id": "0x209c1cc1140",
      "type": "list",
      "repr": "[4, 5, 6]",
      "items": [
@@ -2202,42 +2202,42 @@
      "type": "int",
      "repr": "6"
     },
-    "0x252be043d40": {
-     "id": "0x252be043d40",
+    "0x209c1cc3d40": {
+     "id": "0x209c1cc3d40",
      "type": "dict",
      "repr": "{'color': 'blue'}",
      "entries": [
       [
        {
-        "ref": "0x252be02d3e0"
+        "ref": "0x209c1cad3e0"
        },
        {
-        "ref": "0x252be02d620"
+        "ref": "0x209c1cad620"
        }
       ]
      ]
     },
-    "0x252be02d3e0": {
-     "id": "0x252be02d3e0",
+    "0x209c1cad3e0": {
+     "id": "0x209c1cad3e0",
      "type": "str",
      "repr": "'color'"
     },
-    "0x252be02d620": {
-     "id": "0x252be02d620",
+    "0x209c1cad620": {
+     "id": "0x209c1cad620",
      "type": "str",
      "repr": "'blue'"
     },
-    "0x252be0487c0": {
-     "id": "0x252be0487c0",
+    "0x209c1cc87c0": {
+     "id": "0x209c1cc87c0",
      "type": "dict",
      "repr": "{'color': 'blue'}",
      "entries": [
       [
        {
-        "ref": "0x252be02d3e0"
+        "ref": "0x209c1cad3e0"
        },
        {
-        "ref": "0x252be02d620"
+        "ref": "0x209c1cad620"
        }
       ]
      ]
@@ -2254,33 +2254,33 @@
      "line": 14,
      "locals": {
       "total": {
-       "ref": "0x252be01ccc0"
+       "ref": "0x209c1c9ccc0"
       },
       "show": {
-       "ref": "0x252be01ce00"
+       "ref": "0x209c1c9ce00"
       },
       "values": {
-       "ref": "0x252be041140"
+       "ref": "0x209c1cc1140"
       },
       "config": {
-       "ref": "0x252be043d40"
+       "ref": "0x209c1cc3d40"
       }
      }
     }
    ],
    "heap": {
-    "0x252be01ccc0": {
-     "id": "0x252be01ccc0",
+    "0x209c1c9ccc0": {
+     "id": "0x209c1c9ccc0",
      "type": "function",
      "repr": "total"
     },
-    "0x252be01ce00": {
-     "id": "0x252be01ce00",
+    "0x209c1c9ce00": {
+     "id": "0x209c1c9ce00",
      "type": "function",
      "repr": "show"
     },
-    "0x252be041140": {
-     "id": "0x252be041140",
+    "0x209c1cc1140": {
+     "id": "0x209c1cc1140",
      "type": "list",
      "repr": "[4, 5, 6]",
      "items": [
@@ -2310,28 +2310,28 @@
      "type": "int",
      "repr": "6"
     },
-    "0x252be043d40": {
-     "id": "0x252be043d40",
+    "0x209c1cc3d40": {
+     "id": "0x209c1cc3d40",
      "type": "dict",
      "repr": "{'color': 'blue'}",
      "entries": [
       [
        {
-        "ref": "0x252be02d3e0"
+        "ref": "0x209c1cad3e0"
        },
        {
-        "ref": "0x252be02d620"
+        "ref": "0x209c1cad620"
        }
       ]
      ]
     },
-    "0x252be02d3e0": {
-     "id": "0x252be02d3e0",
+    "0x209c1cad3e0": {
+     "id": "0x209c1cad3e0",
      "type": "str",
      "repr": "'color'"
     },
-    "0x252be02d620": {
-     "id": "0x252be02d620",
+    "0x209c1cad620": {
+     "id": "0x209c1cad620",
      "type": "str",
      "repr": "'blue'"
     }

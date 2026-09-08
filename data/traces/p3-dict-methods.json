@@ -37,20 +37,20 @@
      "line": 2,
      "locals": {
       "stock": {
-       "ref": "0x20e5db97940"
+       "ref": "0x1b7f06f7940"
       }
      }
     }
    ],
    "heap": {
-    "0x20e5db97940": {
-     "id": "0x20e5db97940",
+    "0x1b7f06f7940": {
+     "id": "0x1b7f06f7940",
      "type": "dict",
      "repr": "{'사과': 3, '배': 0}",
      "entries": [
       [
        {
-        "ref": "0x20e5db8a100"
+        "ref": "0x1b7f06ea100"
        },
        {
         "ref": "0x7ffd7f2b49f8"
@@ -58,7 +58,7 @@
       ],
       [
        {
-        "ref": "0x20e5db95a30"
+        "ref": "0x1b7f06f5a30"
        },
        {
         "ref": "0x7ffd7f2b4998"
@@ -66,8 +66,8 @@
       ]
      ]
     },
-    "0x20e5db8a100": {
-     "id": "0x20e5db8a100",
+    "0x1b7f06ea100": {
+     "id": "0x1b7f06ea100",
      "type": "str",
      "repr": "'사과'"
     },
@@ -76,8 +76,8 @@
      "type": "int",
      "repr": "3"
     },
-    "0x20e5db95a30": {
-     "id": "0x20e5db95a30",
+    "0x1b7f06f5a30": {
+     "id": "0x1b7f06f5a30",
      "type": "str",
      "repr": "'배'"
     },
@@ -99,20 +99,20 @@
      "line": 3,
      "locals": {
       "stock": {
-       "ref": "0x20e5db97940"
+       "ref": "0x1b7f06f7940"
       }
      }
     }
    ],
    "heap": {
-    "0x20e5db97940": {
-     "id": "0x20e5db97940",
+    "0x1b7f06f7940": {
+     "id": "0x1b7f06f7940",
      "type": "dict",
      "repr": "{'사과': 3, '배': 0}",
      "entries": [
       [
        {
-        "ref": "0x20e5db8a100"
+        "ref": "0x1b7f06ea100"
        },
        {
         "ref": "0x7ffd7f2b49f8"
@@ -120,7 +120,7 @@
       ],
       [
        {
-        "ref": "0x20e5db95a30"
+        "ref": "0x1b7f06f5a30"
        },
        {
         "ref": "0x7ffd7f2b4998"
@@ -128,8 +128,8 @@
       ]
      ]
     },
-    "0x20e5db8a100": {
-     "id": "0x20e5db8a100",
+    "0x1b7f06ea100": {
+     "id": "0x1b7f06ea100",
      "type": "str",
      "repr": "'사과'"
     },
@@ -138,8 +138,8 @@
      "type": "int",
      "repr": "3"
     },
-    "0x20e5db95a30": {
-     "id": "0x20e5db95a30",
+    "0x1b7f06f5a30": {
+     "id": "0x1b7f06f5a30",
      "type": "str",
      "repr": "'배'"
     },
@@ -161,20 +161,20 @@
      "line": 4,
      "locals": {
       "stock": {
-       "ref": "0x20e5db97940"
+       "ref": "0x1b7f06f7940"
       }
      }
     }
    ],
    "heap": {
-    "0x20e5db97940": {
-     "id": "0x20e5db97940",
+    "0x1b7f06f7940": {
+     "id": "0x1b7f06f7940",
      "type": "dict",
      "repr": "{'사과': 3, '배': 0}",
      "entries": [
       [
        {
-        "ref": "0x20e5db8a100"
+        "ref": "0x1b7f06ea100"
        },
        {
         "ref": "0x7ffd7f2b49f8"
@@ -182,7 +182,7 @@
       ],
       [
        {
-        "ref": "0x20e5db95a30"
+        "ref": "0x1b7f06f5a30"
        },
        {
         "ref": "0x7ffd7f2b4998"
@@ -190,8 +190,8 @@
       ]
      ]
     },
-    "0x20e5db8a100": {
-     "id": "0x20e5db8a100",
+    "0x1b7f06ea100": {
+     "id": "0x1b7f06ea100",
      "type": "str",
      "repr": "'사과'"
     },
@@ -200,8 +200,8 @@
      "type": "int",
      "repr": "3"
     },
-    "0x20e5db95a30": {
-     "id": "0x20e5db95a30",
+    "0x1b7f06f5a30": {
+     "id": "0x1b7f06f5a30",
      "type": "str",
      "repr": "'배'"
     },
@@ -223,20 +223,20 @@
      "line": 5,
      "locals": {
       "stock": {
-       "ref": "0x20e5db97940"
+       "ref": "0x1b7f06f7940"
       }
      }
     }
    ],
    "heap": {
-    "0x20e5db97940": {
-     "id": "0x20e5db97940",
+    "0x1b7f06f7940": {
+     "id": "0x1b7f06f7940",
      "type": "dict",
      "repr": "{'사과': 3, '배': 0, '귤': 10}",
      "entries": [
       [
        {
-        "ref": "0x20e5db8a100"
+        "ref": "0x1b7f06ea100"
        },
        {
         "ref": "0x7ffd7f2b49f8"
@@ -244,7 +244,7 @@
       ],
       [
        {
-        "ref": "0x20e5db95a30"
+        "ref": "0x1b7f06f5a30"
        },
        {
         "ref": "0x7ffd7f2b4998"
@@ -252,7 +252,7 @@
       ],
       [
        {
-        "ref": "0x20e5db961f0"
+        "ref": "0x1b7f06f61f0"
        },
        {
         "ref": "0x7ffd7f2b4ad8"
@@ -260,8 +260,8 @@
       ]
      ]
     },
-    "0x20e5db8a100": {
-     "id": "0x20e5db8a100",
+    "0x1b7f06ea100": {
+     "id": "0x1b7f06ea100",
      "type": "str",
      "repr": "'사과'"
     },
@@ -270,8 +270,8 @@
      "type": "int",
      "repr": "3"
     },
-    "0x20e5db95a30": {
-     "id": "0x20e5db95a30",
+    "0x1b7f06f5a30": {
+     "id": "0x1b7f06f5a30",
      "type": "str",
      "repr": "'배'"
     },
@@ -280,8 +280,8 @@
      "type": "int",
      "repr": "0"
     },
-    "0x20e5db961f0": {
-     "id": "0x20e5db961f0",
+    "0x1b7f06f61f0": {
+     "id": "0x1b7f06f61f0",
      "type": "str",
      "repr": "'귤'"
     },
@@ -303,10 +303,10 @@
      "line": 6,
      "locals": {
       "stock": {
-       "ref": "0x20e5db97940"
+       "ref": "0x1b7f06f7940"
       },
       "name": {
-       "ref": "0x20e5db8a100"
+       "ref": "0x1b7f06ea100"
       },
       "qty": {
        "ref": "0x7ffd7f2b49f8"
@@ -315,14 +315,14 @@
     }
    ],
    "heap": {
-    "0x20e5db97940": {
-     "id": "0x20e5db97940",
+    "0x1b7f06f7940": {
+     "id": "0x1b7f06f7940",
      "type": "dict",
      "repr": "{'사과': 3, '배': 0, '귤': 10}",
      "entries": [
       [
        {
-        "ref": "0x20e5db8a100"
+        "ref": "0x1b7f06ea100"
        },
        {
         "ref": "0x7ffd7f2b49f8"
@@ -330,7 +330,7 @@
       ],
       [
        {
-        "ref": "0x20e5db95a30"
+        "ref": "0x1b7f06f5a30"
        },
        {
         "ref": "0x7ffd7f2b4998"
@@ -338,7 +338,7 @@
       ],
       [
        {
-        "ref": "0x20e5db961f0"
+        "ref": "0x1b7f06f61f0"
        },
        {
         "ref": "0x7ffd7f2b4ad8"
@@ -346,8 +346,8 @@
       ]
      ]
     },
-    "0x20e5db8a100": {
-     "id": "0x20e5db8a100",
+    "0x1b7f06ea100": {
+     "id": "0x1b7f06ea100",
      "type": "str",
      "repr": "'사과'"
     },
@@ -356,8 +356,8 @@
      "type": "int",
      "repr": "3"
     },
-    "0x20e5db95a30": {
-     "id": "0x20e5db95a30",
+    "0x1b7f06f5a30": {
+     "id": "0x1b7f06f5a30",
      "type": "str",
      "repr": "'배'"
     },
@@ -366,8 +366,8 @@
      "type": "int",
      "repr": "0"
     },
-    "0x20e5db961f0": {
-     "id": "0x20e5db961f0",
+    "0x1b7f06f61f0": {
+     "id": "0x1b7f06f61f0",
      "type": "str",
      "repr": "'귤'"
     },
@@ -388,10 +388,10 @@
      "line": 5,
      "locals": {
       "stock": {
-       "ref": "0x20e5db97940"
+       "ref": "0x1b7f06f7940"
       },
       "name": {
-       "ref": "0x20e5db8a100"
+       "ref": "0x1b7f06ea100"
       },
       "qty": {
        "ref": "0x7ffd7f2b49f8"
@@ -400,14 +400,14 @@
     }
    ],
    "heap": {
-    "0x20e5db97940": {
-     "id": "0x20e5db97940",
+    "0x1b7f06f7940": {
+     "id": "0x1b7f06f7940",
      "type": "dict",
      "repr": "{'사과': 3, '배': 0, '귤': 10}",
      "entries": [
       [
        {
-        "ref": "0x20e5db8a100"
+        "ref": "0x1b7f06ea100"
        },
        {
         "ref": "0x7ffd7f2b49f8"
@@ -415,7 +415,7 @@
       ],
       [
        {
-        "ref": "0x20e5db95a30"
+        "ref": "0x1b7f06f5a30"
        },
        {
         "ref": "0x7ffd7f2b4998"
@@ -423,7 +423,7 @@
       ],
       [
        {
-        "ref": "0x20e5db961f0"
+        "ref": "0x1b7f06f61f0"
        },
        {
         "ref": "0x7ffd7f2b4ad8"
@@ -431,8 +431,8 @@
       ]
      ]
     },
-    "0x20e5db8a100": {
-     "id": "0x20e5db8a100",
+    "0x1b7f06ea100": {
+     "id": "0x1b7f06ea100",
      "type": "str",
      "repr": "'사과'"
     },
@@ -441,8 +441,8 @@
      "type": "int",
      "repr": "3"
     },
-    "0x20e5db95a30": {
-     "id": "0x20e5db95a30",
+    "0x1b7f06f5a30": {
+     "id": "0x1b7f06f5a30",
      "type": "str",
      "repr": "'배'"
     },
@@ -451,8 +451,8 @@
      "type": "int",
      "repr": "0"
     },
-    "0x20e5db961f0": {
-     "id": "0x20e5db961f0",
+    "0x1b7f06f61f0": {
+     "id": "0x1b7f06f61f0",
      "type": "str",
      "repr": "'귤'"
     },
@@ -474,10 +474,10 @@
      "line": 6,
      "locals": {
       "stock": {
-       "ref": "0x20e5db97940"
+       "ref": "0x1b7f06f7940"
       },
       "name": {
-       "ref": "0x20e5db95a30"
+       "ref": "0x1b7f06f5a30"
       },
       "qty": {
        "ref": "0x7ffd7f2b4998"
@@ -486,14 +486,14 @@
     }
    ],
    "heap": {
-    "0x20e5db97940": {
-     "id": "0x20e5db97940",
+    "0x1b7f06f7940": {
+     "id": "0x1b7f06f7940",
      "type": "dict",
      "repr": "{'사과': 3, '배': 0, '귤': 10}",
      "entries": [
       [
        {
-        "ref": "0x20e5db8a100"
+        "ref": "0x1b7f06ea100"
        },
        {
         "ref": "0x7ffd7f2b49f8"
@@ -501,7 +501,7 @@
       ],
       [
        {
-        "ref": "0x20e5db95a30"
+        "ref": "0x1b7f06f5a30"
        },
        {
         "ref": "0x7ffd7f2b4998"
@@ -509,7 +509,7 @@
       ],
       [
        {
-        "ref": "0x20e5db961f0"
+        "ref": "0x1b7f06f61f0"
        },
        {
         "ref": "0x7ffd7f2b4ad8"
@@ -517,8 +517,8 @@
       ]
      ]
     },
-    "0x20e5db8a100": {
-     "id": "0x20e5db8a100",
+    "0x1b7f06ea100": {
+     "id": "0x1b7f06ea100",
      "type": "str",
      "repr": "'사과'"
     },
@@ -527,8 +527,8 @@
      "type": "int",
      "repr": "3"
     },
-    "0x20e5db95a30": {
-     "id": "0x20e5db95a30",
+    "0x1b7f06f5a30": {
+     "id": "0x1b7f06f5a30",
      "type": "str",
      "repr": "'배'"
     },
@@ -537,8 +537,8 @@
      "type": "int",
      "repr": "0"
     },
-    "0x20e5db961f0": {
-     "id": "0x20e5db961f0",
+    "0x1b7f06f61f0": {
+     "id": "0x1b7f06f61f0",
      "type": "str",
      "repr": "'귤'"
     },
@@ -559,10 +559,10 @@
      "line": 5,
      "locals": {
       "stock": {
-       "ref": "0x20e5db97940"
+       "ref": "0x1b7f06f7940"
       },
       "name": {
-       "ref": "0x20e5db95a30"
+       "ref": "0x1b7f06f5a30"
       },
       "qty": {
        "ref": "0x7ffd7f2b4998"
@@ -571,14 +571,14 @@
     }
    ],
    "heap": {
-    "0x20e5db97940": {
-     "id": "0x20e5db97940",
+    "0x1b7f06f7940": {
+     "id": "0x1b7f06f7940",
      "type": "dict",
      "repr": "{'사과': 3, '배': 0, '귤': 10}",
      "entries": [
       [
        {
-        "ref": "0x20e5db8a100"
+        "ref": "0x1b7f06ea100"
        },
        {
         "ref": "0x7ffd7f2b49f8"
@@ -586,7 +586,7 @@
       ],
       [
        {
-        "ref": "0x20e5db95a30"
+        "ref": "0x1b7f06f5a30"
        },
        {
         "ref": "0x7ffd7f2b4998"
@@ -594,7 +594,7 @@
       ],
       [
        {
-        "ref": "0x20e5db961f0"
+        "ref": "0x1b7f06f61f0"
        },
        {
         "ref": "0x7ffd7f2b4ad8"
@@ -602,8 +602,8 @@
       ]
      ]
     },
-    "0x20e5db8a100": {
-     "id": "0x20e5db8a100",
+    "0x1b7f06ea100": {
+     "id": "0x1b7f06ea100",
      "type": "str",
      "repr": "'사과'"
     },
@@ -612,8 +612,8 @@
      "type": "int",
      "repr": "3"
     },
-    "0x20e5db95a30": {
-     "id": "0x20e5db95a30",
+    "0x1b7f06f5a30": {
+     "id": "0x1b7f06f5a30",
      "type": "str",
      "repr": "'배'"
     },
@@ -622,8 +622,8 @@
      "type": "int",
      "repr": "0"
     },
-    "0x20e5db961f0": {
-     "id": "0x20e5db961f0",
+    "0x1b7f06f61f0": {
+     "id": "0x1b7f06f61f0",
      "type": "str",
      "repr": "'귤'"
     },
@@ -645,10 +645,10 @@
      "line": 6,
      "locals": {
       "stock": {
-       "ref": "0x20e5db97940"
+       "ref": "0x1b7f06f7940"
       },
       "name": {
-       "ref": "0x20e5db961f0"
+       "ref": "0x1b7f06f61f0"
       },
       "qty": {
        "ref": "0x7ffd7f2b4ad8"
@@ -657,14 +657,14 @@
     }
    ],
    "heap": {
-    "0x20e5db97940": {
-     "id": "0x20e5db97940",
+    "0x1b7f06f7940": {
+     "id": "0x1b7f06f7940",
      "type": "dict",
      "repr": "{'사과': 3, '배': 0, '귤': 10}",
      "entries": [
       [
        {
-        "ref": "0x20e5db8a100"
+        "ref": "0x1b7f06ea100"
        },
        {
         "ref": "0x7ffd7f2b49f8"
@@ -672,7 +672,7 @@
       ],
       [
        {
-        "ref": "0x20e5db95a30"
+        "ref": "0x1b7f06f5a30"
        },
        {
         "ref": "0x7ffd7f2b4998"
@@ -680,7 +680,7 @@
       ],
       [
        {
-        "ref": "0x20e5db961f0"
+        "ref": "0x1b7f06f61f0"
        },
        {
         "ref": "0x7ffd7f2b4ad8"
@@ -688,8 +688,8 @@
       ]
      ]
     },
-    "0x20e5db8a100": {
-     "id": "0x20e5db8a100",
+    "0x1b7f06ea100": {
+     "id": "0x1b7f06ea100",
      "type": "str",
      "repr": "'사과'"
     },
@@ -698,8 +698,8 @@
      "type": "int",
      "repr": "3"
     },
-    "0x20e5db95a30": {
-     "id": "0x20e5db95a30",
+    "0x1b7f06f5a30": {
+     "id": "0x1b7f06f5a30",
      "type": "str",
      "repr": "'배'"
     },
@@ -708,8 +708,8 @@
      "type": "int",
      "repr": "0"
     },
-    "0x20e5db961f0": {
-     "id": "0x20e5db961f0",
+    "0x1b7f06f61f0": {
+     "id": "0x1b7f06f61f0",
      "type": "str",
      "repr": "'귤'"
     },
@@ -730,10 +730,10 @@
      "line": 5,
      "locals": {
       "stock": {
-       "ref": "0x20e5db97940"
+       "ref": "0x1b7f06f7940"
       },
       "name": {
-       "ref": "0x20e5db961f0"
+       "ref": "0x1b7f06f61f0"
       },
       "qty": {
        "ref": "0x7ffd7f2b4ad8"
@@ -742,14 +742,14 @@
     }
    ],
    "heap": {
-    "0x20e5db97940": {
-     "id": "0x20e5db97940",
+    "0x1b7f06f7940": {
+     "id": "0x1b7f06f7940",
      "type": "dict",
      "repr": "{'사과': 3, '배': 0, '귤': 10}",
      "entries": [
       [
        {
-        "ref": "0x20e5db8a100"
+        "ref": "0x1b7f06ea100"
        },
        {
         "ref": "0x7ffd7f2b49f8"
@@ -757,7 +757,7 @@
       ],
       [
        {
-        "ref": "0x20e5db95a30"
+        "ref": "0x1b7f06f5a30"
        },
        {
         "ref": "0x7ffd7f2b4998"
@@ -765,7 +765,7 @@
       ],
       [
        {
-        "ref": "0x20e5db961f0"
+        "ref": "0x1b7f06f61f0"
        },
        {
         "ref": "0x7ffd7f2b4ad8"
@@ -773,8 +773,8 @@
       ]
      ]
     },
-    "0x20e5db8a100": {
-     "id": "0x20e5db8a100",
+    "0x1b7f06ea100": {
+     "id": "0x1b7f06ea100",
      "type": "str",
      "repr": "'사과'"
     },
@@ -783,8 +783,8 @@
      "type": "int",
      "repr": "3"
     },
-    "0x20e5db95a30": {
-     "id": "0x20e5db95a30",
+    "0x1b7f06f5a30": {
+     "id": "0x1b7f06f5a30",
      "type": "str",
      "repr": "'배'"
     },
@@ -793,8 +793,8 @@
      "type": "int",
      "repr": "0"
     },
-    "0x20e5db961f0": {
-     "id": "0x20e5db961f0",
+    "0x1b7f06f61f0": {
+     "id": "0x1b7f06f61f0",
      "type": "str",
      "repr": "'귤'"
     },
@@ -816,10 +816,10 @@
      "line": 7,
      "locals": {
       "stock": {
-       "ref": "0x20e5db97940"
+       "ref": "0x1b7f06f7940"
       },
       "name": {
-       "ref": "0x20e5db961f0"
+       "ref": "0x1b7f06f61f0"
       },
       "qty": {
        "ref": "0x7ffd7f2b4ad8"
@@ -828,14 +828,14 @@
     }
    ],
    "heap": {
-    "0x20e5db97940": {
-     "id": "0x20e5db97940",
+    "0x1b7f06f7940": {
+     "id": "0x1b7f06f7940",
      "type": "dict",
      "repr": "{'사과': 3, '배': 0, '귤': 10}",
      "entries": [
       [
        {
-        "ref": "0x20e5db8a100"
+        "ref": "0x1b7f06ea100"
        },
        {
         "ref": "0x7ffd7f2b49f8"
@@ -843,7 +843,7 @@
       ],
       [
        {
-        "ref": "0x20e5db95a30"
+        "ref": "0x1b7f06f5a30"
        },
        {
         "ref": "0x7ffd7f2b4998"
@@ -851,7 +851,7 @@
       ],
       [
        {
-        "ref": "0x20e5db961f0"
+        "ref": "0x1b7f06f61f0"
        },
        {
         "ref": "0x7ffd7f2b4ad8"
@@ -859,8 +859,8 @@
       ]
      ]
     },
-    "0x20e5db8a100": {
-     "id": "0x20e5db8a100",
+    "0x1b7f06ea100": {
+     "id": "0x1b7f06ea100",
      "type": "str",
      "repr": "'사과'"
     },
@@ -869,8 +869,8 @@
      "type": "int",
      "repr": "3"
     },
-    "0x20e5db95a30": {
-     "id": "0x20e5db95a30",
+    "0x1b7f06f5a30": {
+     "id": "0x1b7f06f5a30",
      "type": "str",
      "repr": "'배'"
     },
@@ -879,8 +879,8 @@
      "type": "int",
      "repr": "0"
     },
-    "0x20e5db961f0": {
-     "id": "0x20e5db961f0",
+    "0x1b7f06f61f0": {
+     "id": "0x1b7f06f61f0",
      "type": "str",
      "repr": "'귤'"
     },
@@ -902,10 +902,10 @@
      "line": 8,
      "locals": {
       "stock": {
-       "ref": "0x20e5db97940"
+       "ref": "0x1b7f06f7940"
       },
       "name": {
-       "ref": "0x20e5db961f0"
+       "ref": "0x1b7f06f61f0"
       },
       "qty": {
        "ref": "0x7ffd7f2b4ad8"
@@ -914,14 +914,14 @@
     }
    ],
    "heap": {
-    "0x20e5db97940": {
-     "id": "0x20e5db97940",
+    "0x1b7f06f7940": {
+     "id": "0x1b7f06f7940",
      "type": "dict",
      "repr": "{'사과': 3, '배': 5, '귤': 10, '감': 2}",
      "entries": [
       [
        {
-        "ref": "0x20e5db8a100"
+        "ref": "0x1b7f06ea100"
        },
        {
         "ref": "0x7ffd7f2b49f8"
@@ -929,7 +929,7 @@
       ],
       [
        {
-        "ref": "0x20e5db95a30"
+        "ref": "0x1b7f06f5a30"
        },
        {
         "ref": "0x7ffd7f2b4a38"
@@ -937,7 +937,7 @@
       ],
       [
        {
-        "ref": "0x20e5db961f0"
+        "ref": "0x1b7f06f61f0"
        },
        {
         "ref": "0x7ffd7f2b4ad8"
@@ -945,7 +945,7 @@
       ],
       [
        {
-        "ref": "0x20e5db97b30"
+        "ref": "0x1b7f06f7b30"
        },
        {
         "ref": "0x7ffd7f2b49d8"
@@ -953,8 +953,8 @@
       ]
      ]
     },
-    "0x20e5db8a100": {
-     "id": "0x20e5db8a100",
+    "0x1b7f06ea100": {
+     "id": "0x1b7f06ea100",
      "type": "str",
      "repr": "'사과'"
     },
@@ -963,8 +963,8 @@
      "type": "int",
      "repr": "3"
     },
-    "0x20e5db95a30": {
-     "id": "0x20e5db95a30",
+    "0x1b7f06f5a30": {
+     "id": "0x1b7f06f5a30",
      "type": "str",
      "repr": "'배'"
     },
@@ -973,8 +973,8 @@
      "type": "int",
      "repr": "5"
     },
-    "0x20e5db961f0": {
-     "id": "0x20e5db961f0",
+    "0x1b7f06f61f0": {
+     "id": "0x1b7f06f61f0",
      "type": "str",
      "repr": "'귤'"
     },
@@ -983,8 +983,8 @@
      "type": "int",
      "repr": "10"
     },
-    "0x20e5db97b30": {
-     "id": "0x20e5db97b30",
+    "0x1b7f06f7b30": {
+     "id": "0x1b7f06f7b30",
      "type": "str",
      "repr": "'감'"
     },
@@ -1006,10 +1006,10 @@
      "line": 9,
      "locals": {
       "stock": {
-       "ref": "0x20e5db97940"
+       "ref": "0x1b7f06f7940"
       },
       "name": {
-       "ref": "0x20e5db961f0"
+       "ref": "0x1b7f06f61f0"
       },
       "qty": {
        "ref": "0x7ffd7f2b4ad8"
@@ -1021,14 +1021,14 @@
     }
    ],
    "heap": {
-    "0x20e5db97940": {
-     "id": "0x20e5db97940",
+    "0x1b7f06f7940": {
+     "id": "0x1b7f06f7940",
      "type": "dict",
      "repr": "{'배': 5, '귤': 10, '감': 2}",
      "entries": [
       [
        {
-        "ref": "0x20e5db95a30"
+        "ref": "0x1b7f06f5a30"
        },
        {
         "ref": "0x7ffd7f2b4a38"
@@ -1036,7 +1036,7 @@
       ],
       [
        {
-        "ref": "0x20e5db961f0"
+        "ref": "0x1b7f06f61f0"
        },
        {
         "ref": "0x7ffd7f2b4ad8"
@@ -1044,7 +1044,7 @@
       ],
       [
        {
-        "ref": "0x20e5db97b30"
+        "ref": "0x1b7f06f7b30"
        },
        {
         "ref": "0x7ffd7f2b49d8"
@@ -1052,8 +1052,8 @@
       ]
      ]
     },
-    "0x20e5db95a30": {
-     "id": "0x20e5db95a30",
+    "0x1b7f06f5a30": {
+     "id": "0x1b7f06f5a30",
      "type": "str",
      "repr": "'배'"
     },
@@ -1062,8 +1062,8 @@
      "type": "int",
      "repr": "5"
     },
-    "0x20e5db961f0": {
-     "id": "0x20e5db961f0",
+    "0x1b7f06f61f0": {
+     "id": "0x1b7f06f61f0",
      "type": "str",
      "repr": "'귤'"
     },
@@ -1072,8 +1072,8 @@
      "type": "int",
      "repr": "10"
     },
-    "0x20e5db97b30": {
-     "id": "0x20e5db97b30",
+    "0x1b7f06f7b30": {
+     "id": "0x1b7f06f7b30",
      "type": "str",
      "repr": "'감'"
     },
@@ -1099,10 +1099,10 @@
      "line": 9,
      "locals": {
       "stock": {
-       "ref": "0x20e5db97940"
+       "ref": "0x1b7f06f7940"
       },
       "name": {
-       "ref": "0x20e5db961f0"
+       "ref": "0x1b7f06f61f0"
       },
       "qty": {
        "ref": "0x7ffd7f2b4ad8"
@@ -1114,14 +1114,14 @@
     }
    ],
    "heap": {
-    "0x20e5db97940": {
-     "id": "0x20e5db97940",
+    "0x1b7f06f7940": {
+     "id": "0x1b7f06f7940",
      "type": "dict",
      "repr": "{'배': 5, '귤': 10, '감': 2}",
      "entries": [
       [
        {
-        "ref": "0x20e5db95a30"
+        "ref": "0x1b7f06f5a30"
        },
        {
         "ref": "0x7ffd7f2b4a38"
@@ -1129,7 +1129,7 @@
       ],
       [
        {
-        "ref": "0x20e5db961f0"
+        "ref": "0x1b7f06f61f0"
        },
        {
         "ref": "0x7ffd7f2b4ad8"
@@ -1137,7 +1137,7 @@
       ],
       [
        {
-        "ref": "0x20e5db97b30"
+        "ref": "0x1b7f06f7b30"
        },
        {
         "ref": "0x7ffd7f2b49d8"
@@ -1145,8 +1145,8 @@
       ]
      ]
     },
-    "0x20e5db95a30": {
-     "id": "0x20e5db95a30",
+    "0x1b7f06f5a30": {
+     "id": "0x1b7f06f5a30",
      "type": "str",
      "repr": "'배'"
     },
@@ -1155,8 +1155,8 @@
      "type": "int",
      "repr": "5"
     },
-    "0x20e5db961f0": {
-     "id": "0x20e5db961f0",
+    "0x1b7f06f61f0": {
+     "id": "0x1b7f06f61f0",
      "type": "str",
      "repr": "'귤'"
     },
@@ -1165,8 +1165,8 @@
      "type": "int",
      "repr": "10"
     },
-    "0x20e5db97b30": {
-     "id": "0x20e5db97b30",
+    "0x1b7f06f7b30": {
+     "id": "0x1b7f06f7b30",
      "type": "str",
      "repr": "'감'"
     },

@@ -1,0 +1,249 @@
+{
+ "id": "p5-import",
+ "code": "import math\nprint(math.sqrt(16))\nimport sys\nprint(\"math\" in sys.modules)\nimport math as m\nprint(m is math)\nprint(sys.path[0] == \"\")",
+ "steps": [
+  {
+   "line": 0,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 0,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": "",
+   "note": "sys.path 를 뒤져 math 를 찾아 모듈 객체를 만들고, sys.modules 에 저장한 뒤 이름 math 에 붙인다"
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 2,
+     "locals": {
+      "math": {
+       "ref": "0x143d0796de0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x143d0796de0": {
+     "id": "0x143d0796de0",
+     "type": "module",
+     "repr": "math"
+    }
+   },
+   "stdout": "",
+   "note": "모듈 객체의 속성(함수)을 점으로 꺼내 쓴다"
+  },
+  {
+   "line": 3,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 3,
+     "locals": {
+      "math": {
+       "ref": "0x143d0796de0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x143d0796de0": {
+     "id": "0x143d0796de0",
+     "type": "module",
+     "repr": "math"
+    }
+   },
+   "stdout": "4.0\n"
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "math": {
+       "ref": "0x143d0796de0"
+      },
+      "sys": {
+       "ref": "0x143d019e7a0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x143d0796de0": {
+     "id": "0x143d0796de0",
+     "type": "module",
+     "repr": "math"
+    },
+    "0x143d019e7a0": {
+     "id": "0x143d019e7a0",
+     "type": "module",
+     "repr": "sys"
+    }
+   },
+   "stdout": "4.0\n",
+   "note": "한 번 import 한 모듈은 sys.modules 딕셔너리에 캐시된다"
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "math": {
+       "ref": "0x143d0796de0"
+      },
+      "sys": {
+       "ref": "0x143d019e7a0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x143d0796de0": {
+     "id": "0x143d0796de0",
+     "type": "module",
+     "repr": "math"
+    },
+    "0x143d019e7a0": {
+     "id": "0x143d019e7a0",
+     "type": "module",
+     "repr": "sys"
+    }
+   },
+   "stdout": "4.0\nTrue\n",
+   "note": "다시 import — 파일을 다시 읽지 않고 캐시된 같은 객체를 돌려준다"
+  },
+  {
+   "line": 6,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "math": {
+       "ref": "0x143d0796de0"
+      },
+      "sys": {
+       "ref": "0x143d019e7a0"
+      },
+      "m": {
+       "ref": "0x143d0796de0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x143d0796de0": {
+     "id": "0x143d0796de0",
+     "type": "module",
+     "repr": "math"
+    },
+    "0x143d019e7a0": {
+     "id": "0x143d019e7a0",
+     "type": "module",
+     "repr": "sys"
+    }
+   },
+   "stdout": "4.0\nTrue\n",
+   "note": "같은 객체"
+  },
+  {
+   "line": 7,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 7,
+     "locals": {
+      "math": {
+       "ref": "0x143d0796de0"
+      },
+      "sys": {
+       "ref": "0x143d019e7a0"
+      },
+      "m": {
+       "ref": "0x143d0796de0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x143d0796de0": {
+     "id": "0x143d0796de0",
+     "type": "module",
+     "repr": "math"
+    },
+    "0x143d019e7a0": {
+     "id": "0x143d019e7a0",
+     "type": "module",
+     "repr": "sys"
+    }
+   },
+   "stdout": "4.0\nTrue\nTrue\n",
+   "note": "sys.path 의 첫 항목 — 스크립트가 있는 폴더 (여기선 실행 환경 특성상 빈 문자열)"
+  },
+  {
+   "line": 7,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 7,
+     "locals": {
+      "math": {
+       "ref": "0x143d0796de0"
+      },
+      "sys": {
+       "ref": "0x143d019e7a0"
+      },
+      "m": {
+       "ref": "0x143d0796de0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x143d0796de0": {
+     "id": "0x143d0796de0",
+     "type": "module",
+     "repr": "math"
+    },
+    "0x143d019e7a0": {
+     "id": "0x143d019e7a0",
+     "type": "module",
+     "repr": "sys"
+    }
+   },
+   "stdout": "4.0\nTrue\nTrue\nFalse\n"
+  }
+ ],
+ "v": 1
+}

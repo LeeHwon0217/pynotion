@@ -131,7 +131,7 @@ function HeapPanel({ trace, stepIdx, prevIdx, local, order }: { trace: Trace; st
   const names = order.nameOrder.filter((k) => cur.some((b) => `${b.frame}:${b.name}` === k) || before.some((b) => `${b.frame}:${b.name}` === k));
   // 프레임별로 묶어 배치 (모듈 → 안쪽 함수 순)
   const namePos: Record<string, number> = {};
-  const frameHeads: { y: number; label: string; top: boolean }[] = [];
+  const frameHeads: { y: number; label: string; top: boolean; gone: boolean }[] = [];
   {
     const byFrame: Record<number, string[]> = {};
     for (const k of names) { const fi = Number(k.split(":")[0]); (byFrame[fi] ??= []).push(k); }
@@ -139,7 +139,7 @@ function HeapPanel({ trace, stepIdx, prevIdx, local, order }: { trace: Trace; st
     const multi = st.frames.length > 1 || prev.frames.length > 1;
     let y = 40;
     for (const fi of frameIdxs) {
-      if (multi) { const fr = st.frames[fi] ?? prev.frames[fi]; frameHeads.push({ y, label: fr?.fn === "<module>" ? "전역 (모듈)" : `${fr?.fn ?? "?"}()`, top: fi === st.frames.length - 1 }); y += 30; }
+      if (multi) { const fr = st.frames[fi] ?? prev.frames[fi]; frameHeads.push({ y, label: fr?.fn === "<module>" ? "전역 (모듈)" : `${fr?.fn ?? "?"}()`, top: fi === st.frames.length - 1, gone: fi >= st.frames.length }); y += 30; }
       for (const k of byFrame[fi]) { namePos[k] = y; y += 72; }
       y += 6;
     }
@@ -171,7 +171,7 @@ function HeapPanel({ trace, stepIdx, prevIdx, local, order }: { trace: Trace; st
 
       {/* 프레임 헤더 */}
       {frameHeads.map((h, i) => (
-        <g key={i} transform={`translate(${tagX - 8} ${h.y})`}>
+        <g key={i} transform={`translate(${tagX - 8} ${h.y})`} opacity={h.gone ? vanish : 1}>
           <rect width={220} height={22} rx={6} fill={h.top ? "rgba(91,140,255,.22)" : C.node2} stroke={h.top ? C.hi : "none"} />
           <text x={10} y={16} className="st-type st-mono" style={{ fill: h.top ? C.text : undefined }}>{h.label}</text>
         </g>
