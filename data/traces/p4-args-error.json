@@ -1,0 +1,35 @@
+{
+ "id": "p4-args-error",
+ "code": "def order(item, qty=1):\n    print(item, qty)\n\norder(qty=2, \"커피\")",
+ "v": 1,
+ "steps": [
+  {
+   "line": 0,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 0,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 4,
+   "event": "exception",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": "",
+   "exc": "SyntaxError: positional argument follows keyword argument",
+   "note": "실행되기 전, 문법 검사 단계에서 멈췄다 — 한 줄도 실행되지 않았다"
+  }
+ ]
+}

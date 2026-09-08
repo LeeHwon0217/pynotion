@@ -1,0 +1,1019 @@
+{
+ "id": "p4-recursion",
+ "code": "def fact(n):\n    if n <= 1:\n        return 1\n    return n * fact(n - 1)\n\nprint(fact(4))",
+ "steps": [
+  {
+   "line": 0,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 0,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 6,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "fact": {
+       "ref": "0x24b501ccc20"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x24b501ccc20": {
+     "id": "0x24b501ccc20",
+     "type": "function",
+     "repr": "fact"
+    }
+   },
+   "stdout": "",
+   "note": "fact(4) → fact(3) → fact(2) → fact(1) 까지 쌓였다가 하나씩 풀린다"
+  },
+  {
+   "line": 1,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "fact": {
+       "ref": "0x24b501ccc20"
+      }
+     }
+    },
+    {
+     "fn": "fact",
+     "line": 1,
+     "locals": {
+      "n": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x24b501ccc20": {
+     "id": "0x24b501ccc20",
+     "type": "function",
+     "repr": "fact"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "fact": {
+       "ref": "0x24b501ccc20"
+      }
+     }
+    },
+    {
+     "fn": "fact",
+     "line": 2,
+     "locals": {
+      "n": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x24b501ccc20": {
+     "id": "0x24b501ccc20",
+     "type": "function",
+     "repr": "fact"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    }
+   },
+   "stdout": "",
+   "note": "기저 조건 — 더 이상 자신을 부르지 않는 경우"
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "fact": {
+       "ref": "0x24b501ccc20"
+      }
+     }
+    },
+    {
+     "fn": "fact",
+     "line": 4,
+     "locals": {
+      "n": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x24b501ccc20": {
+     "id": "0x24b501ccc20",
+     "type": "function",
+     "repr": "fact"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    }
+   },
+   "stdout": "",
+   "note": "자신을 부른다. 곱셈은 안쪽 호출이 돌아온 뒤에야 계산된다"
+  },
+  {
+   "line": 1,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "fact": {
+       "ref": "0x24b501ccc20"
+      }
+     }
+    },
+    {
+     "fn": "fact",
+     "line": 4,
+     "locals": {
+      "n": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    },
+    {
+     "fn": "fact",
+     "line": 1,
+     "locals": {
+      "n": {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x24b501ccc20": {
+     "id": "0x24b501ccc20",
+     "type": "function",
+     "repr": "fact"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "fact": {
+       "ref": "0x24b501ccc20"
+      }
+     }
+    },
+    {
+     "fn": "fact",
+     "line": 4,
+     "locals": {
+      "n": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    },
+    {
+     "fn": "fact",
+     "line": 2,
+     "locals": {
+      "n": {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x24b501ccc20": {
+     "id": "0x24b501ccc20",
+     "type": "function",
+     "repr": "fact"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    }
+   },
+   "stdout": "",
+   "note": "기저 조건 — 더 이상 자신을 부르지 않는 경우"
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "fact": {
+       "ref": "0x24b501ccc20"
+      }
+     }
+    },
+    {
+     "fn": "fact",
+     "line": 4,
+     "locals": {
+      "n": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    },
+    {
+     "fn": "fact",
+     "line": 4,
+     "locals": {
+      "n": {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x24b501ccc20": {
+     "id": "0x24b501ccc20",
+     "type": "function",
+     "repr": "fact"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    }
+   },
+   "stdout": "",
+   "note": "자신을 부른다. 곱셈은 안쪽 호출이 돌아온 뒤에야 계산된다"
+  },
+  {
+   "line": 1,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "fact": {
+       "ref": "0x24b501ccc20"
+      }
+     }
+    },
+    {
+     "fn": "fact",
+     "line": 4,
+     "locals": {
+      "n": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    },
+    {
+     "fn": "fact",
+     "line": 4,
+     "locals": {
+      "n": {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     }
+    },
+    {
+     "fn": "fact",
+     "line": 1,
+     "locals": {
+      "n": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x24b501ccc20": {
+     "id": "0x24b501ccc20",
+     "type": "function",
+     "repr": "fact"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "fact": {
+       "ref": "0x24b501ccc20"
+      }
+     }
+    },
+    {
+     "fn": "fact",
+     "line": 4,
+     "locals": {
+      "n": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    },
+    {
+     "fn": "fact",
+     "line": 4,
+     "locals": {
+      "n": {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     }
+    },
+    {
+     "fn": "fact",
+     "line": 2,
+     "locals": {
+      "n": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x24b501ccc20": {
+     "id": "0x24b501ccc20",
+     "type": "function",
+     "repr": "fact"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    }
+   },
+   "stdout": "",
+   "note": "기저 조건 — 더 이상 자신을 부르지 않는 경우"
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "fact": {
+       "ref": "0x24b501ccc20"
+      }
+     }
+    },
+    {
+     "fn": "fact",
+     "line": 4,
+     "locals": {
+      "n": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    },
+    {
+     "fn": "fact",
+     "line": 4,
+     "locals": {
+      "n": {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     }
+    },
+    {
+     "fn": "fact",
+     "line": 4,
+     "locals": {
+      "n": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x24b501ccc20": {
+     "id": "0x24b501ccc20",
+     "type": "function",
+     "repr": "fact"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    }
+   },
+   "stdout": "",
+   "note": "자신을 부른다. 곱셈은 안쪽 호출이 돌아온 뒤에야 계산된다"
+  },
+  {
+   "line": 1,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "fact": {
+       "ref": "0x24b501ccc20"
+      }
+     }
+    },
+    {
+     "fn": "fact",
+     "line": 4,
+     "locals": {
+      "n": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    },
+    {
+     "fn": "fact",
+     "line": 4,
+     "locals": {
+      "n": {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     }
+    },
+    {
+     "fn": "fact",
+     "line": 4,
+     "locals": {
+      "n": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    {
+     "fn": "fact",
+     "line": 1,
+     "locals": {
+      "n": {
+       "ref": "0x7ffd7f2b49b8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x24b501ccc20": {
+     "id": "0x24b501ccc20",
+     "type": "function",
+     "repr": "fact"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "fact": {
+       "ref": "0x24b501ccc20"
+      }
+     }
+    },
+    {
+     "fn": "fact",
+     "line": 4,
+     "locals": {
+      "n": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    },
+    {
+     "fn": "fact",
+     "line": 4,
+     "locals": {
+      "n": {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     }
+    },
+    {
+     "fn": "fact",
+     "line": 4,
+     "locals": {
+      "n": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    {
+     "fn": "fact",
+     "line": 2,
+     "locals": {
+      "n": {
+       "ref": "0x7ffd7f2b49b8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x24b501ccc20": {
+     "id": "0x24b501ccc20",
+     "type": "function",
+     "repr": "fact"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    }
+   },
+   "stdout": "",
+   "note": "기저 조건 — 더 이상 자신을 부르지 않는 경우"
+  },
+  {
+   "line": 3,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "fact": {
+       "ref": "0x24b501ccc20"
+      }
+     }
+    },
+    {
+     "fn": "fact",
+     "line": 4,
+     "locals": {
+      "n": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    },
+    {
+     "fn": "fact",
+     "line": 4,
+     "locals": {
+      "n": {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     }
+    },
+    {
+     "fn": "fact",
+     "line": 4,
+     "locals": {
+      "n": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    {
+     "fn": "fact",
+     "line": 3,
+     "locals": {
+      "n": {
+       "ref": "0x7ffd7f2b49b8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x24b501ccc20": {
+     "id": "0x24b501ccc20",
+     "type": "function",
+     "repr": "fact"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 3,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "fact": {
+       "ref": "0x24b501ccc20"
+      }
+     }
+    },
+    {
+     "fn": "fact",
+     "line": 4,
+     "locals": {
+      "n": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    },
+    {
+     "fn": "fact",
+     "line": 4,
+     "locals": {
+      "n": {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     }
+    },
+    {
+     "fn": "fact",
+     "line": 4,
+     "locals": {
+      "n": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    },
+    {
+     "fn": "fact",
+     "line": 3,
+     "locals": {
+      "n": {
+       "ref": "0x7ffd7f2b49b8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x24b501ccc20": {
+     "id": "0x24b501ccc20",
+     "type": "function",
+     "repr": "fact"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    }
+   },
+   "stdout": "",
+   "retval": "1"
+  },
+  {
+   "line": 4,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "fact": {
+       "ref": "0x24b501ccc20"
+      }
+     }
+    },
+    {
+     "fn": "fact",
+     "line": 4,
+     "locals": {
+      "n": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    },
+    {
+     "fn": "fact",
+     "line": 4,
+     "locals": {
+      "n": {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     }
+    },
+    {
+     "fn": "fact",
+     "line": 4,
+     "locals": {
+      "n": {
+       "ref": "0x7ffd7f2b49d8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x24b501ccc20": {
+     "id": "0x24b501ccc20",
+     "type": "function",
+     "repr": "fact"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    }
+   },
+   "stdout": "",
+   "retval": "2"
+  },
+  {
+   "line": 4,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "fact": {
+       "ref": "0x24b501ccc20"
+      }
+     }
+    },
+    {
+     "fn": "fact",
+     "line": 4,
+     "locals": {
+      "n": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    },
+    {
+     "fn": "fact",
+     "line": 4,
+     "locals": {
+      "n": {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x24b501ccc20": {
+     "id": "0x24b501ccc20",
+     "type": "function",
+     "repr": "fact"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    }
+   },
+   "stdout": "",
+   "retval": "6"
+  },
+  {
+   "line": 4,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "fact": {
+       "ref": "0x24b501ccc20"
+      }
+     }
+    },
+    {
+     "fn": "fact",
+     "line": 4,
+     "locals": {
+      "n": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x24b501ccc20": {
+     "id": "0x24b501ccc20",
+     "type": "function",
+     "repr": "fact"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    }
+   },
+   "stdout": "",
+   "retval": "24"
+  },
+  {
+   "line": 6,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "fact": {
+       "ref": "0x24b501ccc20"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x24b501ccc20": {
+     "id": "0x24b501ccc20",
+     "type": "function",
+     "repr": "fact"
+    }
+   },
+   "stdout": "24\n"
+  }
+ ],
+ "v": 1
+}

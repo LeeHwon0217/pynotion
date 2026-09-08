@@ -1,0 +1,852 @@
+{
+ "id": "p4-scope",
+ "code": "x = \"전역\"\n\ndef outer():\n    x = \"감싸는 함수\"\n    def inner():\n        print(x)\n    inner()\n\ndef solo():\n    print(x)\n\nouter()\nsolo()\nprint(len)",
+ "steps": [
+  {
+   "line": 0,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 0,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 3,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 3,
+     "locals": {
+      "x": {
+       "ref": "0x212a280a060"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x212a280a060": {
+     "id": "0x212a280a060",
+     "type": "str",
+     "repr": "'전역'"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 9,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 9,
+     "locals": {
+      "x": {
+       "ref": "0x212a280a060"
+      },
+      "outer": {
+       "ref": "0x212a2800b80"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x212a280a060": {
+     "id": "0x212a280a060",
+     "type": "str",
+     "repr": "'전역'"
+    },
+    "0x212a2800b80": {
+     "id": "0x212a2800b80",
+     "type": "function",
+     "repr": "outer"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 12,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 12,
+     "locals": {
+      "x": {
+       "ref": "0x212a280a060"
+      },
+      "outer": {
+       "ref": "0x212a2800b80"
+      },
+      "solo": {
+       "ref": "0x212a2800c20"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x212a280a060": {
+     "id": "0x212a280a060",
+     "type": "str",
+     "repr": "'전역'"
+    },
+    "0x212a2800b80": {
+     "id": "0x212a2800b80",
+     "type": "function",
+     "repr": "outer"
+    },
+    "0x212a2800c20": {
+     "id": "0x212a2800c20",
+     "type": "function",
+     "repr": "solo"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 3,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 12,
+     "locals": {
+      "x": {
+       "ref": "0x212a280a060"
+      },
+      "outer": {
+       "ref": "0x212a2800b80"
+      },
+      "solo": {
+       "ref": "0x212a2800c20"
+      }
+     }
+    },
+    {
+     "fn": "outer",
+     "line": 3,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x212a280a060": {
+     "id": "0x212a280a060",
+     "type": "str",
+     "repr": "'전역'"
+    },
+    "0x212a2800b80": {
+     "id": "0x212a2800b80",
+     "type": "function",
+     "repr": "outer"
+    },
+    "0x212a2800c20": {
+     "id": "0x212a2800c20",
+     "type": "function",
+     "repr": "solo"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 12,
+     "locals": {
+      "x": {
+       "ref": "0x212a280a060"
+      },
+      "outer": {
+       "ref": "0x212a2800b80"
+      },
+      "solo": {
+       "ref": "0x212a2800c20"
+      }
+     }
+    },
+    {
+     "fn": "outer",
+     "line": 4,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x212a280a060": {
+     "id": "0x212a280a060",
+     "type": "str",
+     "repr": "'전역'"
+    },
+    "0x212a2800b80": {
+     "id": "0x212a2800b80",
+     "type": "function",
+     "repr": "outer"
+    },
+    "0x212a2800c20": {
+     "id": "0x212a2800c20",
+     "type": "function",
+     "repr": "solo"
+    }
+   },
+   "stdout": "",
+   "note": "outer 의 지역 x — 전역 x 와 다른 이름표"
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 12,
+     "locals": {
+      "x": {
+       "ref": "0x212a280a060"
+      },
+      "outer": {
+       "ref": "0x212a2800b80"
+      },
+      "solo": {
+       "ref": "0x212a2800c20"
+      }
+     }
+    },
+    {
+     "fn": "outer",
+     "line": 5,
+     "locals": {
+      "x": {
+       "ref": "0x212a280a0b0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x212a280a060": {
+     "id": "0x212a280a060",
+     "type": "str",
+     "repr": "'전역'"
+    },
+    "0x212a2800b80": {
+     "id": "0x212a2800b80",
+     "type": "function",
+     "repr": "outer"
+    },
+    "0x212a2800c20": {
+     "id": "0x212a2800c20",
+     "type": "function",
+     "repr": "solo"
+    },
+    "0x212a280a0b0": {
+     "id": "0x212a280a0b0",
+     "type": "str",
+     "repr": "'감싸는 함수'"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 7,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 12,
+     "locals": {
+      "x": {
+       "ref": "0x212a280a060"
+      },
+      "outer": {
+       "ref": "0x212a2800b80"
+      },
+      "solo": {
+       "ref": "0x212a2800c20"
+      }
+     }
+    },
+    {
+     "fn": "outer",
+     "line": 7,
+     "locals": {
+      "x": {
+       "ref": "0x212a280a0b0"
+      },
+      "inner": {
+       "ref": "0x212a2800cc0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x212a280a060": {
+     "id": "0x212a280a060",
+     "type": "str",
+     "repr": "'전역'"
+    },
+    "0x212a2800b80": {
+     "id": "0x212a2800b80",
+     "type": "function",
+     "repr": "outer"
+    },
+    "0x212a2800c20": {
+     "id": "0x212a2800c20",
+     "type": "function",
+     "repr": "solo"
+    },
+    "0x212a280a0b0": {
+     "id": "0x212a280a0b0",
+     "type": "str",
+     "repr": "'감싸는 함수'"
+    },
+    "0x212a2800cc0": {
+     "id": "0x212a2800cc0",
+     "type": "function",
+     "repr": "inner"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 5,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 12,
+     "locals": {
+      "x": {
+       "ref": "0x212a280a060"
+      },
+      "outer": {
+       "ref": "0x212a2800b80"
+      },
+      "solo": {
+       "ref": "0x212a2800c20"
+      }
+     }
+    },
+    {
+     "fn": "outer",
+     "line": 7,
+     "locals": {
+      "x": {
+       "ref": "0x212a280a0b0"
+      },
+      "inner": {
+       "ref": "0x212a2800cc0"
+      }
+     }
+    },
+    {
+     "fn": "inner",
+     "line": 5,
+     "locals": {
+      "x": {
+       "ref": "0x212a280a0b0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x212a280a060": {
+     "id": "0x212a280a060",
+     "type": "str",
+     "repr": "'전역'"
+    },
+    "0x212a2800b80": {
+     "id": "0x212a2800b80",
+     "type": "function",
+     "repr": "outer"
+    },
+    "0x212a2800c20": {
+     "id": "0x212a2800c20",
+     "type": "function",
+     "repr": "solo"
+    },
+    "0x212a280a0b0": {
+     "id": "0x212a280a0b0",
+     "type": "str",
+     "repr": "'감싸는 함수'"
+    },
+    "0x212a2800cc0": {
+     "id": "0x212a2800cc0",
+     "type": "function",
+     "repr": "inner"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 6,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 12,
+     "locals": {
+      "x": {
+       "ref": "0x212a280a060"
+      },
+      "outer": {
+       "ref": "0x212a2800b80"
+      },
+      "solo": {
+       "ref": "0x212a2800c20"
+      }
+     }
+    },
+    {
+     "fn": "outer",
+     "line": 7,
+     "locals": {
+      "x": {
+       "ref": "0x212a280a0b0"
+      },
+      "inner": {
+       "ref": "0x212a2800cc0"
+      }
+     }
+    },
+    {
+     "fn": "inner",
+     "line": 6,
+     "locals": {
+      "x": {
+       "ref": "0x212a280a0b0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x212a280a060": {
+     "id": "0x212a280a060",
+     "type": "str",
+     "repr": "'전역'"
+    },
+    "0x212a2800b80": {
+     "id": "0x212a2800b80",
+     "type": "function",
+     "repr": "outer"
+    },
+    "0x212a2800c20": {
+     "id": "0x212a2800c20",
+     "type": "function",
+     "repr": "solo"
+    },
+    "0x212a280a0b0": {
+     "id": "0x212a280a0b0",
+     "type": "str",
+     "repr": "'감싸는 함수'"
+    },
+    "0x212a2800cc0": {
+     "id": "0x212a2800cc0",
+     "type": "function",
+     "repr": "inner"
+    }
+   },
+   "stdout": "",
+   "note": "inner 에 x 가 없다 → 감싸는 함수(outer) 에서 찾는다"
+  },
+  {
+   "line": 6,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 12,
+     "locals": {
+      "x": {
+       "ref": "0x212a280a060"
+      },
+      "outer": {
+       "ref": "0x212a2800b80"
+      },
+      "solo": {
+       "ref": "0x212a2800c20"
+      }
+     }
+    },
+    {
+     "fn": "outer",
+     "line": 7,
+     "locals": {
+      "x": {
+       "ref": "0x212a280a0b0"
+      },
+      "inner": {
+       "ref": "0x212a2800cc0"
+      }
+     }
+    },
+    {
+     "fn": "inner",
+     "line": 6,
+     "locals": {
+      "x": {
+       "ref": "0x212a280a0b0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x212a280a060": {
+     "id": "0x212a280a060",
+     "type": "str",
+     "repr": "'전역'"
+    },
+    "0x212a2800b80": {
+     "id": "0x212a2800b80",
+     "type": "function",
+     "repr": "outer"
+    },
+    "0x212a2800c20": {
+     "id": "0x212a2800c20",
+     "type": "function",
+     "repr": "solo"
+    },
+    "0x212a280a0b0": {
+     "id": "0x212a280a0b0",
+     "type": "str",
+     "repr": "'감싸는 함수'"
+    },
+    "0x212a2800cc0": {
+     "id": "0x212a2800cc0",
+     "type": "function",
+     "repr": "inner"
+    }
+   },
+   "stdout": "감싸는 함수\n"
+  },
+  {
+   "line": 7,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 12,
+     "locals": {
+      "x": {
+       "ref": "0x212a280a060"
+      },
+      "outer": {
+       "ref": "0x212a2800b80"
+      },
+      "solo": {
+       "ref": "0x212a2800c20"
+      }
+     }
+    },
+    {
+     "fn": "outer",
+     "line": 7,
+     "locals": {
+      "x": {
+       "ref": "0x212a280a0b0"
+      },
+      "inner": {
+       "ref": "0x212a2800cc0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x212a280a060": {
+     "id": "0x212a280a060",
+     "type": "str",
+     "repr": "'전역'"
+    },
+    "0x212a2800b80": {
+     "id": "0x212a2800b80",
+     "type": "function",
+     "repr": "outer"
+    },
+    "0x212a2800c20": {
+     "id": "0x212a2800c20",
+     "type": "function",
+     "repr": "solo"
+    },
+    "0x212a280a0b0": {
+     "id": "0x212a280a0b0",
+     "type": "str",
+     "repr": "'감싸는 함수'"
+    },
+    "0x212a2800cc0": {
+     "id": "0x212a2800cc0",
+     "type": "function",
+     "repr": "inner"
+    }
+   },
+   "stdout": "감싸는 함수\n"
+  },
+  {
+   "line": 13,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 13,
+     "locals": {
+      "x": {
+       "ref": "0x212a280a060"
+      },
+      "outer": {
+       "ref": "0x212a2800b80"
+      },
+      "solo": {
+       "ref": "0x212a2800c20"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x212a280a060": {
+     "id": "0x212a280a060",
+     "type": "str",
+     "repr": "'전역'"
+    },
+    "0x212a2800b80": {
+     "id": "0x212a2800b80",
+     "type": "function",
+     "repr": "outer"
+    },
+    "0x212a2800c20": {
+     "id": "0x212a2800c20",
+     "type": "function",
+     "repr": "solo"
+    }
+   },
+   "stdout": "감싸는 함수\n"
+  },
+  {
+   "line": 9,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 13,
+     "locals": {
+      "x": {
+       "ref": "0x212a280a060"
+      },
+      "outer": {
+       "ref": "0x212a2800b80"
+      },
+      "solo": {
+       "ref": "0x212a2800c20"
+      }
+     }
+    },
+    {
+     "fn": "solo",
+     "line": 9,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x212a280a060": {
+     "id": "0x212a280a060",
+     "type": "str",
+     "repr": "'전역'"
+    },
+    "0x212a2800b80": {
+     "id": "0x212a2800b80",
+     "type": "function",
+     "repr": "outer"
+    },
+    "0x212a2800c20": {
+     "id": "0x212a2800c20",
+     "type": "function",
+     "repr": "solo"
+    }
+   },
+   "stdout": "감싸는 함수\n"
+  },
+  {
+   "line": 10,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 13,
+     "locals": {
+      "x": {
+       "ref": "0x212a280a060"
+      },
+      "outer": {
+       "ref": "0x212a2800b80"
+      },
+      "solo": {
+       "ref": "0x212a2800c20"
+      }
+     }
+    },
+    {
+     "fn": "solo",
+     "line": 10,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x212a280a060": {
+     "id": "0x212a280a060",
+     "type": "str",
+     "repr": "'전역'"
+    },
+    "0x212a2800b80": {
+     "id": "0x212a2800b80",
+     "type": "function",
+     "repr": "outer"
+    },
+    "0x212a2800c20": {
+     "id": "0x212a2800c20",
+     "type": "function",
+     "repr": "solo"
+    }
+   },
+   "stdout": "감싸는 함수\n",
+   "note": "solo 안에도, 감싸는 함수도 없다 → 전역에서 찾는다"
+  },
+  {
+   "line": 10,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 13,
+     "locals": {
+      "x": {
+       "ref": "0x212a280a060"
+      },
+      "outer": {
+       "ref": "0x212a2800b80"
+      },
+      "solo": {
+       "ref": "0x212a2800c20"
+      }
+     }
+    },
+    {
+     "fn": "solo",
+     "line": 10,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x212a280a060": {
+     "id": "0x212a280a060",
+     "type": "str",
+     "repr": "'전역'"
+    },
+    "0x212a2800b80": {
+     "id": "0x212a2800b80",
+     "type": "function",
+     "repr": "outer"
+    },
+    "0x212a2800c20": {
+     "id": "0x212a2800c20",
+     "type": "function",
+     "repr": "solo"
+    }
+   },
+   "stdout": "감싸는 함수\n전역\n"
+  },
+  {
+   "line": 14,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 14,
+     "locals": {
+      "x": {
+       "ref": "0x212a280a060"
+      },
+      "outer": {
+       "ref": "0x212a2800b80"
+      },
+      "solo": {
+       "ref": "0x212a2800c20"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x212a280a060": {
+     "id": "0x212a280a060",
+     "type": "str",
+     "repr": "'전역'"
+    },
+    "0x212a2800b80": {
+     "id": "0x212a2800b80",
+     "type": "function",
+     "repr": "outer"
+    },
+    "0x212a2800c20": {
+     "id": "0x212a2800c20",
+     "type": "function",
+     "repr": "solo"
+    }
+   },
+   "stdout": "감싸는 함수\n전역\n",
+   "note": "어디에도 없으면 마지막으로 내장(builtins) 에서 찾는다"
+  },
+  {
+   "line": 14,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 14,
+     "locals": {
+      "x": {
+       "ref": "0x212a280a060"
+      },
+      "outer": {
+       "ref": "0x212a2800b80"
+      },
+      "solo": {
+       "ref": "0x212a2800c20"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x212a280a060": {
+     "id": "0x212a280a060",
+     "type": "str",
+     "repr": "'전역'"
+    },
+    "0x212a2800b80": {
+     "id": "0x212a2800b80",
+     "type": "function",
+     "repr": "outer"
+    },
+    "0x212a2800c20": {
+     "id": "0x212a2800c20",
+     "type": "function",
+     "repr": "solo"
+    }
+   },
+   "stdout": "감싸는 함수\n전역\n<built-in function len>\n"
+  }
+ ],
+ "v": 1
+}

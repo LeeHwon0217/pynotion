@@ -1,0 +1,804 @@
+{
+ "id": "p4-global-nonlocal",
+ "code": "count = 0\n\ndef bump():\n    global count\n    count = count + 1\n\ndef bump_wrong():\n    count = count + 1\n\nbump()\nbump()\nprint(count)\nbump_wrong()",
+ "steps": [
+  {
+   "line": 0,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 0,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 3,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 3,
+     "locals": {
+      "count": {
+       "ref": "0x7ffd7f2b4998"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x7ffd7f2b4998": {
+     "id": "0x7ffd7f2b4998",
+     "type": "int",
+     "repr": "0"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 7,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 7,
+     "locals": {
+      "count": {
+       "ref": "0x7ffd7f2b4998"
+      },
+      "bump": {
+       "ref": "0x1fac7d2cae0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x7ffd7f2b4998": {
+     "id": "0x7ffd7f2b4998",
+     "type": "int",
+     "repr": "0"
+    },
+    "0x1fac7d2cae0": {
+     "id": "0x1fac7d2cae0",
+     "type": "function",
+     "repr": "bump"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 10,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 10,
+     "locals": {
+      "count": {
+       "ref": "0x7ffd7f2b4998"
+      },
+      "bump": {
+       "ref": "0x1fac7d2cae0"
+      },
+      "bump_wrong": {
+       "ref": "0x1fac7d2ccc0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x7ffd7f2b4998": {
+     "id": "0x7ffd7f2b4998",
+     "type": "int",
+     "repr": "0"
+    },
+    "0x1fac7d2cae0": {
+     "id": "0x1fac7d2cae0",
+     "type": "function",
+     "repr": "bump"
+    },
+    "0x1fac7d2ccc0": {
+     "id": "0x1fac7d2ccc0",
+     "type": "function",
+     "repr": "bump_wrong"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 3,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 10,
+     "locals": {
+      "count": {
+       "ref": "0x7ffd7f2b4998"
+      },
+      "bump": {
+       "ref": "0x1fac7d2cae0"
+      },
+      "bump_wrong": {
+       "ref": "0x1fac7d2ccc0"
+      }
+     }
+    },
+    {
+     "fn": "bump",
+     "line": 3,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x7ffd7f2b4998": {
+     "id": "0x7ffd7f2b4998",
+     "type": "int",
+     "repr": "0"
+    },
+    "0x1fac7d2cae0": {
+     "id": "0x1fac7d2cae0",
+     "type": "function",
+     "repr": "bump"
+    },
+    "0x1fac7d2ccc0": {
+     "id": "0x1fac7d2ccc0",
+     "type": "function",
+     "repr": "bump_wrong"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 10,
+     "locals": {
+      "count": {
+       "ref": "0x7ffd7f2b4998"
+      },
+      "bump": {
+       "ref": "0x1fac7d2cae0"
+      },
+      "bump_wrong": {
+       "ref": "0x1fac7d2ccc0"
+      }
+     }
+    },
+    {
+     "fn": "bump",
+     "line": 5,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x7ffd7f2b4998": {
+     "id": "0x7ffd7f2b4998",
+     "type": "int",
+     "repr": "0"
+    },
+    "0x1fac7d2cae0": {
+     "id": "0x1fac7d2cae0",
+     "type": "function",
+     "repr": "bump"
+    },
+    "0x1fac7d2ccc0": {
+     "id": "0x1fac7d2ccc0",
+     "type": "function",
+     "repr": "bump_wrong"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 5,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 10,
+     "locals": {
+      "count": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "bump": {
+       "ref": "0x1fac7d2cae0"
+      },
+      "bump_wrong": {
+       "ref": "0x1fac7d2ccc0"
+      }
+     }
+    },
+    {
+     "fn": "bump",
+     "line": 5,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x1fac7d2cae0": {
+     "id": "0x1fac7d2cae0",
+     "type": "function",
+     "repr": "bump"
+    },
+    "0x1fac7d2ccc0": {
+     "id": "0x1fac7d2ccc0",
+     "type": "function",
+     "repr": "bump_wrong"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 11,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 11,
+     "locals": {
+      "count": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "bump": {
+       "ref": "0x1fac7d2cae0"
+      },
+      "bump_wrong": {
+       "ref": "0x1fac7d2ccc0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x1fac7d2cae0": {
+     "id": "0x1fac7d2cae0",
+     "type": "function",
+     "repr": "bump"
+    },
+    "0x1fac7d2ccc0": {
+     "id": "0x1fac7d2ccc0",
+     "type": "function",
+     "repr": "bump_wrong"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 3,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 11,
+     "locals": {
+      "count": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "bump": {
+       "ref": "0x1fac7d2cae0"
+      },
+      "bump_wrong": {
+       "ref": "0x1fac7d2ccc0"
+      }
+     }
+    },
+    {
+     "fn": "bump",
+     "line": 3,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x1fac7d2cae0": {
+     "id": "0x1fac7d2cae0",
+     "type": "function",
+     "repr": "bump"
+    },
+    "0x1fac7d2ccc0": {
+     "id": "0x1fac7d2ccc0",
+     "type": "function",
+     "repr": "bump_wrong"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 11,
+     "locals": {
+      "count": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "bump": {
+       "ref": "0x1fac7d2cae0"
+      },
+      "bump_wrong": {
+       "ref": "0x1fac7d2ccc0"
+      }
+     }
+    },
+    {
+     "fn": "bump",
+     "line": 5,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x1fac7d2cae0": {
+     "id": "0x1fac7d2cae0",
+     "type": "function",
+     "repr": "bump"
+    },
+    "0x1fac7d2ccc0": {
+     "id": "0x1fac7d2ccc0",
+     "type": "function",
+     "repr": "bump_wrong"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 5,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 11,
+     "locals": {
+      "count": {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      "bump": {
+       "ref": "0x1fac7d2cae0"
+      },
+      "bump_wrong": {
+       "ref": "0x1fac7d2ccc0"
+      }
+     }
+    },
+    {
+     "fn": "bump",
+     "line": 5,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x1fac7d2cae0": {
+     "id": "0x1fac7d2cae0",
+     "type": "function",
+     "repr": "bump"
+    },
+    "0x1fac7d2ccc0": {
+     "id": "0x1fac7d2ccc0",
+     "type": "function",
+     "repr": "bump_wrong"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 12,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 12,
+     "locals": {
+      "count": {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      "bump": {
+       "ref": "0x1fac7d2cae0"
+      },
+      "bump_wrong": {
+       "ref": "0x1fac7d2ccc0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x1fac7d2cae0": {
+     "id": "0x1fac7d2cae0",
+     "type": "function",
+     "repr": "bump"
+    },
+    "0x1fac7d2ccc0": {
+     "id": "0x1fac7d2ccc0",
+     "type": "function",
+     "repr": "bump_wrong"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 13,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 13,
+     "locals": {
+      "count": {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      "bump": {
+       "ref": "0x1fac7d2cae0"
+      },
+      "bump_wrong": {
+       "ref": "0x1fac7d2ccc0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x1fac7d2cae0": {
+     "id": "0x1fac7d2cae0",
+     "type": "function",
+     "repr": "bump"
+    },
+    "0x1fac7d2ccc0": {
+     "id": "0x1fac7d2ccc0",
+     "type": "function",
+     "repr": "bump_wrong"
+    }
+   },
+   "stdout": "2\n"
+  },
+  {
+   "line": 7,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 13,
+     "locals": {
+      "count": {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      "bump": {
+       "ref": "0x1fac7d2cae0"
+      },
+      "bump_wrong": {
+       "ref": "0x1fac7d2ccc0"
+      }
+     }
+    },
+    {
+     "fn": "bump_wrong",
+     "line": 7,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x1fac7d2cae0": {
+     "id": "0x1fac7d2cae0",
+     "type": "function",
+     "repr": "bump"
+    },
+    "0x1fac7d2ccc0": {
+     "id": "0x1fac7d2ccc0",
+     "type": "function",
+     "repr": "bump_wrong"
+    }
+   },
+   "stdout": "2\n"
+  },
+  {
+   "line": 8,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 13,
+     "locals": {
+      "count": {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      "bump": {
+       "ref": "0x1fac7d2cae0"
+      },
+      "bump_wrong": {
+       "ref": "0x1fac7d2ccc0"
+      }
+     }
+    },
+    {
+     "fn": "bump_wrong",
+     "line": 8,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x1fac7d2cae0": {
+     "id": "0x1fac7d2cae0",
+     "type": "function",
+     "repr": "bump"
+    },
+    "0x1fac7d2ccc0": {
+     "id": "0x1fac7d2ccc0",
+     "type": "function",
+     "repr": "bump_wrong"
+    }
+   },
+   "stdout": "2\n",
+   "note": "함수 안에서 대입하면 count 는 '지역' 이 된다 — 그런데 읽을 때 아직 값이 없다 → UnboundLocalError"
+  },
+  {
+   "line": 8,
+   "event": "exception",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 13,
+     "locals": {
+      "count": {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      "bump": {
+       "ref": "0x1fac7d2cae0"
+      },
+      "bump_wrong": {
+       "ref": "0x1fac7d2ccc0"
+      }
+     }
+    },
+    {
+     "fn": "bump_wrong",
+     "line": 8,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x1fac7d2cae0": {
+     "id": "0x1fac7d2cae0",
+     "type": "function",
+     "repr": "bump"
+    },
+    "0x1fac7d2ccc0": {
+     "id": "0x1fac7d2ccc0",
+     "type": "function",
+     "repr": "bump_wrong"
+    }
+   },
+   "stdout": "2\n",
+   "exc": "UnboundLocalError: cannot access local variable 'count' where it is not associated with a value"
+  },
+  {
+   "line": 8,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 13,
+     "locals": {
+      "count": {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      "bump": {
+       "ref": "0x1fac7d2cae0"
+      },
+      "bump_wrong": {
+       "ref": "0x1fac7d2ccc0"
+      }
+     }
+    },
+    {
+     "fn": "bump_wrong",
+     "line": 8,
+     "locals": {}
+    }
+   ],
+   "heap": {
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x1fac7d2cae0": {
+     "id": "0x1fac7d2cae0",
+     "type": "function",
+     "repr": "bump"
+    },
+    "0x1fac7d2ccc0": {
+     "id": "0x1fac7d2ccc0",
+     "type": "function",
+     "repr": "bump_wrong"
+    }
+   },
+   "stdout": "2\n"
+  },
+  {
+   "line": 13,
+   "event": "exception",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 13,
+     "locals": {
+      "count": {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      "bump": {
+       "ref": "0x1fac7d2cae0"
+      },
+      "bump_wrong": {
+       "ref": "0x1fac7d2ccc0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x1fac7d2cae0": {
+     "id": "0x1fac7d2cae0",
+     "type": "function",
+     "repr": "bump"
+    },
+    "0x1fac7d2ccc0": {
+     "id": "0x1fac7d2ccc0",
+     "type": "function",
+     "repr": "bump_wrong"
+    }
+   },
+   "stdout": "2\n",
+   "exc": "UnboundLocalError: cannot access local variable 'count' where it is not associated with a value"
+  },
+  {
+   "line": 13,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 13,
+     "locals": {
+      "count": {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      "bump": {
+       "ref": "0x1fac7d2cae0"
+      },
+      "bump_wrong": {
+       "ref": "0x1fac7d2ccc0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x1fac7d2cae0": {
+     "id": "0x1fac7d2cae0",
+     "type": "function",
+     "repr": "bump"
+    },
+    "0x1fac7d2ccc0": {
+     "id": "0x1fac7d2ccc0",
+     "type": "function",
+     "repr": "bump_wrong"
+    }
+   },
+   "stdout": "2\n"
+  },
+  {
+   "line": 13,
+   "event": "exception",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 13,
+     "locals": {
+      "count": {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      "bump": {
+       "ref": "0x1fac7d2cae0"
+      },
+      "bump_wrong": {
+       "ref": "0x1fac7d2ccc0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x1fac7d2cae0": {
+     "id": "0x1fac7d2cae0",
+     "type": "function",
+     "repr": "bump"
+    },
+    "0x1fac7d2ccc0": {
+     "id": "0x1fac7d2ccc0",
+     "type": "function",
+     "repr": "bump_wrong"
+    }
+   },
+   "stdout": "2\n",
+   "exc": "UnboundLocalError: cannot access local variable 'count' where it is not associated with a value"
+  }
+ ],
+ "v": 1
+}

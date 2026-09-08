@@ -44,6 +44,20 @@ import t40 from "./p3-slice.json";
 import t41 from "./p3-sort.json";
 import t42 from "./p3-str-methods.json";
 import t43 from "./p3-tuple.json";
+import t44 from "./p4-args-error.json";
+import t45 from "./p4-args.json";
+import t46 from "./p4-call.json";
+import t47 from "./p4-docstring.json";
+import t48 from "./p4-global-nonlocal.json";
+import t49 from "./p4-lambda.json";
+import t50 from "./p4-mutable-default.json";
+import t51 from "./p4-nonlocal.json";
+import t52 from "./p4-pass-by.json";
+import t53 from "./p4-positional-only.json";
+import t54 from "./p4-recursion.json";
+import t55 from "./p4-return.json";
+import t56 from "./p4-scope.json";
+import t57 from "./p4-star-args.json";
 
 export const TRACES: Record<string, Trace> = {
   "p0-indent-error": t0 as unknown as Trace,
@@ -90,4 +104,18 @@ export const TRACES: Record<string, Trace> = {
   "p3-sort": t41 as unknown as Trace,
   "p3-str-methods": t42 as unknown as Trace,
   "p3-tuple": t43 as unknown as Trace,
+  "p4-args-error": t44 as unknown as Trace,
+  "p4-args": t45 as unknown as Trace,
+  "p4-call": t46 as unknown as Trace,
+  "p4-docstring": t47 as unknown as Trace,
+  "p4-global-nonlocal": t48 as unknown as Trace,
+  "p4-lambda": t49 as unknown as Trace,
+  "p4-mutable-default": t50 as unknown as Trace,
+  "p4-nonlocal": t51 as unknown as Trace,
+  "p4-pass-by": t52 as unknown as Trace,
+  "p4-positional-only": t53 as unknown as Trace,
+  "p4-recursion": t54 as unknown as Trace,
+  "p4-return": t55 as unknown as Trace,
+  "p4-scope": t56 as unknown as Trace,
+  "p4-star-args": t57 as unknown as Trace,
 };

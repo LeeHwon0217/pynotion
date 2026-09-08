@@ -4,6 +4,8 @@ import { ScriptedStage } from "@/components/anim/ScriptedStage";
 import { buildVariablesScene } from "./scenes/variables";
 import { buildStory, type Story } from "./StoryScene";
 import { buildFlow, type Flow } from "./FlowScene";
+import { buildStack, type StackStory } from "./StackScene";
+import { buildScope, type ScopeStory } from "./ScopeScene";
 import { SCENES as EXTRA } from "./scenes";
 
 type Built = { script: import("@/lib/anim").Script; render: (t: number) => React.ReactNode; viewBox?: string };
@@ -12,6 +14,8 @@ const SCENES: Record<string, (props: Record<string, unknown>) => Built> = {
   VariablesScene: () => buildVariablesScene(),
   Story: (props) => buildStory(props.story as Story),
   Flow: (props) => buildFlow(props.flow as Flow),
+  Stack: (props) => buildStack(props.stack as StackStory),
+  Scope: (props) => buildScope(props.scope as ScopeStory),
   ...EXTRA,
 };
 

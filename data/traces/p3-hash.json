@@ -40,7 +40,7 @@
     }
    ],
    "heap": {},
-   "stdout": "2 3\n",
+   "stdout": "4 5\n",
    "note": "값이 같은 정수·실수·불은 해시도 같다"
   },
   {
@@ -54,7 +54,7 @@
     }
    ],
    "heap": {},
-   "stdout": "2 3\n42 42 1\n"
+   "stdout": "4 5\n42 42 1\n"
   },
   {
    "line": 4,
@@ -65,20 +65,20 @@
      "line": 4,
      "locals": {
       "d": {
-       "ref": "0x14543273100"
+       "ref": "0x1e3bbef3100"
       }
      }
     }
    ],
    "heap": {
-    "0x14543273100": {
-     "id": "0x14543273100",
+    "0x1e3bbef3100": {
+     "id": "0x1e3bbef3100",
      "type": "dict",
      "repr": "{}",
      "entries": []
     }
    },
-   "stdout": "2 3\n42 42 1\n",
+   "stdout": "4 5\n42 42 1\n",
    "note": "튜플은 바뀌지 않으니 해시할 수 있다"
   },
   {
@@ -90,29 +90,29 @@
      "line": 5,
      "locals": {
       "d": {
-       "ref": "0x14543273100"
+       "ref": "0x1e3bbef3100"
       }
      }
     }
    ],
    "heap": {
-    "0x14543273100": {
-     "id": "0x14543273100",
+    "0x1e3bbef3100": {
+     "id": "0x1e3bbef3100",
      "type": "dict",
      "repr": "{(1, 2): '튜플 키 OK'}",
      "entries": [
       [
        {
-        "ref": "0x14543273900"
+        "ref": "0x1e3bbef3900"
        },
        {
-        "ref": "0x145432660b0"
+        "ref": "0x1e3bbee60b0"
        }
       ]
      ]
     },
-    "0x14543273900": {
-     "id": "0x14543273900",
+    "0x1e3bbef3900": {
+     "id": "0x1e3bbef3900",
      "type": "tuple",
      "repr": "(1, 2)",
      "items": [
@@ -134,13 +134,13 @@
      "type": "int",
      "repr": "2"
     },
-    "0x145432660b0": {
-     "id": "0x145432660b0",
+    "0x1e3bbee60b0": {
+     "id": "0x1e3bbee60b0",
      "type": "str",
      "repr": "'튜플 키 OK'"
     }
    },
-   "stdout": "2 3\n42 42 1\n"
+   "stdout": "4 5\n42 42 1\n"
   },
   {
    "line": 6,
@@ -151,29 +151,29 @@
      "line": 6,
      "locals": {
       "d": {
-       "ref": "0x14543273100"
+       "ref": "0x1e3bbef3100"
       }
      }
     }
    ],
    "heap": {
-    "0x14543273100": {
-     "id": "0x14543273100",
+    "0x1e3bbef3100": {
+     "id": "0x1e3bbef3100",
      "type": "dict",
      "repr": "{(1, 2): '튜플 키 OK'}",
      "entries": [
       [
        {
-        "ref": "0x14543273900"
+        "ref": "0x1e3bbef3900"
        },
        {
-        "ref": "0x145432660b0"
+        "ref": "0x1e3bbee60b0"
        }
       ]
      ]
     },
-    "0x14543273900": {
-     "id": "0x14543273900",
+    "0x1e3bbef3900": {
+     "id": "0x1e3bbef3900",
      "type": "tuple",
      "repr": "(1, 2)",
      "items": [
@@ -195,13 +195,13 @@
      "type": "int",
      "repr": "2"
     },
-    "0x145432660b0": {
-     "id": "0x145432660b0",
+    "0x1e3bbee60b0": {
+     "id": "0x1e3bbee60b0",
      "type": "str",
      "repr": "'튜플 키 OK'"
     }
    },
-   "stdout": "2 3\n42 42 1\n{(1, 2): '튜플 키 OK'}\n",
+   "stdout": "4 5\n42 42 1\n{(1, 2): '튜플 키 OK'}\n",
    "note": "리스트는 바뀔 수 있어 해시 불가 → TypeError: unhashable"
   },
   {
@@ -213,29 +213,29 @@
      "line": 6,
      "locals": {
       "d": {
-       "ref": "0x14543273100"
+       "ref": "0x1e3bbef3100"
       }
      }
     }
    ],
    "heap": {
-    "0x14543273100": {
-     "id": "0x14543273100",
+    "0x1e3bbef3100": {
+     "id": "0x1e3bbef3100",
      "type": "dict",
      "repr": "{(1, 2): '튜플 키 OK'}",
      "entries": [
       [
        {
-        "ref": "0x14543273900"
+        "ref": "0x1e3bbef3900"
        },
        {
-        "ref": "0x145432660b0"
+        "ref": "0x1e3bbee60b0"
        }
       ]
      ]
     },
-    "0x14543273900": {
-     "id": "0x14543273900",
+    "0x1e3bbef3900": {
+     "id": "0x1e3bbef3900",
      "type": "tuple",
      "repr": "(1, 2)",
      "items": [
@@ -257,13 +257,13 @@
      "type": "int",
      "repr": "2"
     },
-    "0x145432660b0": {
-     "id": "0x145432660b0",
+    "0x1e3bbee60b0": {
+     "id": "0x1e3bbee60b0",
      "type": "str",
      "repr": "'튜플 키 OK'"
     }
    },
-   "stdout": "2 3\n42 42 1\n{(1, 2): '튜플 키 OK'}\n",
+   "stdout": "4 5\n42 42 1\n{(1, 2): '튜플 키 OK'}\n",
    "exc": "TypeError: unhashable type: 'list'"
   },
   {
@@ -275,29 +275,29 @@
      "line": 6,
      "locals": {
       "d": {
-       "ref": "0x14543273100"
+       "ref": "0x1e3bbef3100"
       }
      }
     }
    ],
    "heap": {
-    "0x14543273100": {
-     "id": "0x14543273100",
+    "0x1e3bbef3100": {
+     "id": "0x1e3bbef3100",
      "type": "dict",
      "repr": "{(1, 2): '튜플 키 OK'}",
      "entries": [
       [
        {
-        "ref": "0x14543273900"
+        "ref": "0x1e3bbef3900"
        },
        {
-        "ref": "0x145432660b0"
+        "ref": "0x1e3bbee60b0"
        }
       ]
      ]
     },
-    "0x14543273900": {
-     "id": "0x14543273900",
+    "0x1e3bbef3900": {
+     "id": "0x1e3bbef3900",
      "type": "tuple",
      "repr": "(1, 2)",
      "items": [
@@ -319,13 +319,13 @@
      "type": "int",
      "repr": "2"
     },
-    "0x145432660b0": {
-     "id": "0x145432660b0",
+    "0x1e3bbee60b0": {
+     "id": "0x1e3bbee60b0",
      "type": "str",
      "repr": "'튜플 키 OK'"
     }
    },
-   "stdout": "2 3\n42 42 1\n{(1, 2): '튜플 키 OK'}\n"
+   "stdout": "4 5\n42 42 1\n{(1, 2): '튜플 키 OK'}\n"
   },
   {
    "line": 6,
@@ -336,29 +336,29 @@
      "line": 6,
      "locals": {
       "d": {
-       "ref": "0x14543273100"
+       "ref": "0x1e3bbef3100"
       }
      }
     }
    ],
    "heap": {
-    "0x14543273100": {
-     "id": "0x14543273100",
+    "0x1e3bbef3100": {
+     "id": "0x1e3bbef3100",
      "type": "dict",
      "repr": "{(1, 2): '튜플 키 OK'}",
      "entries": [
       [
        {
-        "ref": "0x14543273900"
+        "ref": "0x1e3bbef3900"
        },
        {
-        "ref": "0x145432660b0"
+        "ref": "0x1e3bbee60b0"
        }
       ]
      ]
     },
-    "0x14543273900": {
-     "id": "0x14543273900",
+    "0x1e3bbef3900": {
+     "id": "0x1e3bbef3900",
      "type": "tuple",
      "repr": "(1, 2)",
      "items": [
@@ -380,13 +380,13 @@
      "type": "int",
      "repr": "2"
     },
-    "0x145432660b0": {
-     "id": "0x145432660b0",
+    "0x1e3bbee60b0": {
+     "id": "0x1e3bbee60b0",
      "type": "str",
      "repr": "'튜플 키 OK'"
     }
    },
-   "stdout": "2 3\n42 42 1\n{(1, 2): '튜플 키 OK'}\n",
+   "stdout": "4 5\n42 42 1\n{(1, 2): '튜플 키 OK'}\n",
    "exc": "TypeError: unhashable type: 'list'"
   }
  ],

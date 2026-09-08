@@ -122,16 +122,30 @@ function HeapPanel({ trace, stepIdx, prevIdx, local, order }: { trace: Trace; st
     pos[id] = { x: objX, y };
     y += objH(o) + 22;
   }
-  const H = Math.max(500, y + 10);
+  const H0 = Math.max(500, y + 10);
 
   // 이름 바인딩 (현재 & 이전)
   const bind = (s: TraceStep): Binding[] =>
     s.frames.flatMap((f, fi) => Object.entries(f.locals).map(([name, v]) => ({ name, frame: fi, target: "ref" in v ? v.ref : null, prim: "prim" in v ? v.prim : undefined })));
   const cur = bind(st), before = bind(prev);
   const names = order.nameOrder.filter((k) => cur.some((b) => `${b.frame}:${b.name}` === k) || before.some((b) => `${b.frame}:${b.name}` === k));
+  // 프레임별로 묶어 배치 (모듈 → 안쪽 함수 순)
   const namePos: Record<string, number> = {};
-  names.forEach((k, i) => { namePos[k] = 40 + i * 74; });
+  const frameHeads: { y: number; label: string; top: boolean }[] = [];
+  {
+    const byFrame: Record<number, string[]> = {};
+    for (const k of names) { const fi = Number(k.split(":")[0]); (byFrame[fi] ??= []).push(k); }
+    const frameIdxs = Object.keys(byFrame).map(Number).sort((a, b) => a - b);
+    const multi = st.frames.length > 1 || prev.frames.length > 1;
+    let y = 40;
+    for (const fi of frameIdxs) {
+      if (multi) { const fr = st.frames[fi] ?? prev.frames[fi]; frameHeads.push({ y, label: fr?.fn === "<module>" ? "전역 (모듈)" : `${fr?.fn ?? "?"}()`, top: fi === st.frames.length - 1 }); y += 30; }
+      for (const k of byFrame[fi]) { namePos[k] = y; y += 72; }
+      y += 6;
+    }
+  }
 
+  const H = Math.max(H0, Object.values(namePos).reduce((m, v) => Math.max(m, v), 0) + 80);
   const appear = seg(local, 150, 650, ease.outBack);
   const move = seg(local, 250, 900, ease.outBack);
   const vanish = 1 - seg(local, 0, 500);
@@ -155,6 +169,13 @@ function HeapPanel({ trace, stepIdx, prevIdx, local, order }: { trace: Trace; st
         return <HeapObject key={id} o={o} x={pos[id].x} y={pos[id].y} p={p} glow={Math.min(1, glow)} heap={inCur ? st.heap : prev.heap} prevItems={inPrev ? prevItems : 99} />;
       })}
 
+      {/* 프레임 헤더 */}
+      {frameHeads.map((h, i) => (
+        <g key={i} transform={`translate(${tagX - 8} ${h.y})`}>
+          <rect width={220} height={22} rx={6} fill={h.top ? "rgba(91,140,255,.22)" : C.node2} stroke={h.top ? C.hi : "none"} />
+          <text x={10} y={16} className="st-type st-mono" style={{ fill: h.top ? C.text : undefined }}>{h.label}</text>
+        </g>
+      ))}
       {/* 이름표 + 화살표 */}
       {names.map((k) => {
         const b = cur.find((x) => `${x.frame}:${x.name}` === k);
@@ -223,7 +244,13 @@ export function TracePlayer({ trace, title, autoplay = false, initialT }: { trac
   const doneLines = new Set<number>();
   for (let i = 1; i <= k; i++) doneLines.add(trace.steps[i].line);
 
-  const note = lineStep.note ? richSub(lineStep.note) : finished ? "실행 끝" : errored ? <span style={{ color: C.dead }}>{after.exc ?? lineStep.exc}</span> : null;
+  const topFn = lineStep.frames[lineStep.frames.length - 1]?.fn;
+  const note = lineStep.note ? richSub(lineStep.note)
+    : finished ? "실행 끝"
+    : errored ? <span style={{ color: C.dead }}>{after.exc ?? lineStep.exc}</span>
+    : lineStep.event === "return" && lineStep.retval !== undefined ? richSub("**" + topFn + "()** 가 `" + lineStep.retval + "` 를 돌려주고 프레임이 사라진다")
+    : lineStep.event === "call" ? richSub("**" + topFn + "()** 호출 — 새 프레임이 쌓이고 인자가 이름에 붙는다")
+    : null;
   const headLabel = finished ? "실행 끝" : lineStep.event === "call" ? `${lineStep.line}번째 줄 · 함수 진입` : lineStep.event === "return" ? `${lineStep.line}번째 줄 · 함수 반환` : `${lineStep.line}번째 줄 실행`;
 
   return (

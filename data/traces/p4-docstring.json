@@ -1,0 +1,264 @@
+{
+ "id": "p4-docstring",
+ "code": "def area(w: float, h: float) -> float:\n    \"\"\"직사각형 넓이를 구한다.\n\n    w, h 는 양수여야 한다.\n    \"\"\"\n    return w * h\n\nprint(area.__doc__)\nprint(area.__annotations__)\nprint(area(\"a\", 3))",
+ "steps": [
+  {
+   "line": 0,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 0,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 8,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 8,
+     "locals": {
+      "area": {
+       "ref": "0x225d12bcc20"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x225d12bcc20": {
+     "id": "0x225d12bcc20",
+     "type": "function",
+     "repr": "area"
+    }
+   },
+   "stdout": "",
+   "note": "독스트링은 함수 객체에 저장된다 — help(area) 가 보여주는 것"
+  },
+  {
+   "line": 9,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 9,
+     "locals": {
+      "area": {
+       "ref": "0x225d12bcc20"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x225d12bcc20": {
+     "id": "0x225d12bcc20",
+     "type": "function",
+     "repr": "area"
+    }
+   },
+   "stdout": "직사각형 넓이를 구한다.\n\n    w, h 는 양수여야 한다.\n    \n",
+   "note": "타입 힌트도 저장될 뿐, 검사하지 않는다"
+  },
+  {
+   "line": 10,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 10,
+     "locals": {
+      "area": {
+       "ref": "0x225d12bcc20"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x225d12bcc20": {
+     "id": "0x225d12bcc20",
+     "type": "function",
+     "repr": "area"
+    }
+   },
+   "stdout": "직사각형 넓이를 구한다.\n\n    w, h 는 양수여야 한다.\n    \n{'w': <class 'float'>, 'h': <class 'float'>, 'return': <class 'float'>}\n",
+   "note": "힌트와 다르게 넘겨도 파이썬은 막지 않는다 — \"aaa\""
+  },
+  {
+   "line": 1,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 10,
+     "locals": {
+      "area": {
+       "ref": "0x225d12bcc20"
+      }
+     }
+    },
+    {
+     "fn": "area",
+     "line": 1,
+     "locals": {
+      "w": {
+       "ref": "0x7ffd7f2c3e40"
+      },
+      "h": {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x225d12bcc20": {
+     "id": "0x225d12bcc20",
+     "type": "function",
+     "repr": "area"
+    },
+    "0x7ffd7f2c3e40": {
+     "id": "0x7ffd7f2c3e40",
+     "type": "str",
+     "repr": "'a'"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    }
+   },
+   "stdout": "직사각형 넓이를 구한다.\n\n    w, h 는 양수여야 한다.\n    \n{'w': <class 'float'>, 'h': <class 'float'>, 'return': <class 'float'>}\n"
+  },
+  {
+   "line": 6,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 10,
+     "locals": {
+      "area": {
+       "ref": "0x225d12bcc20"
+      }
+     }
+    },
+    {
+     "fn": "area",
+     "line": 6,
+     "locals": {
+      "w": {
+       "ref": "0x7ffd7f2c3e40"
+      },
+      "h": {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x225d12bcc20": {
+     "id": "0x225d12bcc20",
+     "type": "function",
+     "repr": "area"
+    },
+    "0x7ffd7f2c3e40": {
+     "id": "0x7ffd7f2c3e40",
+     "type": "str",
+     "repr": "'a'"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    }
+   },
+   "stdout": "직사각형 넓이를 구한다.\n\n    w, h 는 양수여야 한다.\n    \n{'w': <class 'float'>, 'h': <class 'float'>, 'return': <class 'float'>}\n"
+  },
+  {
+   "line": 6,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 10,
+     "locals": {
+      "area": {
+       "ref": "0x225d12bcc20"
+      }
+     }
+    },
+    {
+     "fn": "area",
+     "line": 6,
+     "locals": {
+      "w": {
+       "ref": "0x7ffd7f2c3e40"
+      },
+      "h": {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x225d12bcc20": {
+     "id": "0x225d12bcc20",
+     "type": "function",
+     "repr": "area"
+    },
+    "0x7ffd7f2c3e40": {
+     "id": "0x7ffd7f2c3e40",
+     "type": "str",
+     "repr": "'a'"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    }
+   },
+   "stdout": "직사각형 넓이를 구한다.\n\n    w, h 는 양수여야 한다.\n    \n{'w': <class 'float'>, 'h': <class 'float'>, 'return': <class 'float'>}\n",
+   "retval": "'aaa'"
+  },
+  {
+   "line": 10,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 10,
+     "locals": {
+      "area": {
+       "ref": "0x225d12bcc20"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x225d12bcc20": {
+     "id": "0x225d12bcc20",
+     "type": "function",
+     "repr": "area"
+    }
+   },
+   "stdout": "직사각형 넓이를 구한다.\n\n    w, h 는 양수여야 한다.\n    \n{'w': <class 'float'>, 'h': <class 'float'>, 'return': <class 'float'>}\naaa\n"
+  }
+ ],
+ "v": 1
+}

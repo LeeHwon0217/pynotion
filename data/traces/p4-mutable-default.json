@@ -1,0 +1,1712 @@
+{
+ "id": "p4-mutable-default",
+ "code": "def add(item, bag=[]):\n    bag.append(item)\n    return bag\n\na = add(\"사과\")\nb = add(\"배\")\nprint(a, b, a is b)\n\ndef add_ok(item, bag=None):\n    if bag is None:\n        bag = []\n    bag.append(item)\n    return bag\n\nprint(add_ok(\"사과\"), add_ok(\"배\"))",
+ "steps": [
+  {
+   "line": 0,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 0,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": "",
+   "note": "기본값 [] 는 def 가 실행되는 '지금' 딱 한 번 만들어진다"
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "add": {
+       "ref": "0x12f4fd9ca40"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x12f4fd9ca40": {
+     "id": "0x12f4fd9ca40",
+     "type": "function",
+     "repr": "add"
+    }
+   },
+   "stdout": "",
+   "note": "bag 은 그 하나뿐인 기본 리스트 — 여기에 사과가 들어간다"
+  },
+  {
+   "line": 1,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "add": {
+       "ref": "0x12f4fd9ca40"
+      }
+     }
+    },
+    {
+     "fn": "add",
+     "line": 1,
+     "locals": {
+      "item": {
+       "ref": "0x12f4fda6060"
+      },
+      "bag": {
+       "ref": "0x12f4fb7d700"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x12f4fd9ca40": {
+     "id": "0x12f4fd9ca40",
+     "type": "function",
+     "repr": "add"
+    },
+    "0x12f4fda6060": {
+     "id": "0x12f4fda6060",
+     "type": "str",
+     "repr": "'사과'"
+    },
+    "0x12f4fb7d700": {
+     "id": "0x12f4fb7d700",
+     "type": "list",
+     "repr": "[]",
+     "items": []
+    }
+   },
+   "stdout": "",
+   "note": "기본값 [] 는 def 가 실행되는 '지금' 딱 한 번 만들어진다"
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "add": {
+       "ref": "0x12f4fd9ca40"
+      }
+     }
+    },
+    {
+     "fn": "add",
+     "line": 2,
+     "locals": {
+      "item": {
+       "ref": "0x12f4fda6060"
+      },
+      "bag": {
+       "ref": "0x12f4fb7d700"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x12f4fd9ca40": {
+     "id": "0x12f4fd9ca40",
+     "type": "function",
+     "repr": "add"
+    },
+    "0x12f4fda6060": {
+     "id": "0x12f4fda6060",
+     "type": "str",
+     "repr": "'사과'"
+    },
+    "0x12f4fb7d700": {
+     "id": "0x12f4fb7d700",
+     "type": "list",
+     "repr": "[]",
+     "items": []
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 3,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "add": {
+       "ref": "0x12f4fd9ca40"
+      }
+     }
+    },
+    {
+     "fn": "add",
+     "line": 3,
+     "locals": {
+      "item": {
+       "ref": "0x12f4fda6060"
+      },
+      "bag": {
+       "ref": "0x12f4fb7d700"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x12f4fd9ca40": {
+     "id": "0x12f4fd9ca40",
+     "type": "function",
+     "repr": "add"
+    },
+    "0x12f4fda6060": {
+     "id": "0x12f4fda6060",
+     "type": "str",
+     "repr": "'사과'"
+    },
+    "0x12f4fb7d700": {
+     "id": "0x12f4fb7d700",
+     "type": "list",
+     "repr": "['사과']",
+     "items": [
+      {
+       "ref": "0x12f4fda6060"
+      }
+     ]
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 3,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "add": {
+       "ref": "0x12f4fd9ca40"
+      }
+     }
+    },
+    {
+     "fn": "add",
+     "line": 3,
+     "locals": {
+      "item": {
+       "ref": "0x12f4fda6060"
+      },
+      "bag": {
+       "ref": "0x12f4fb7d700"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x12f4fd9ca40": {
+     "id": "0x12f4fd9ca40",
+     "type": "function",
+     "repr": "add"
+    },
+    "0x12f4fda6060": {
+     "id": "0x12f4fda6060",
+     "type": "str",
+     "repr": "'사과'"
+    },
+    "0x12f4fb7d700": {
+     "id": "0x12f4fb7d700",
+     "type": "list",
+     "repr": "['사과']",
+     "items": [
+      {
+       "ref": "0x12f4fda6060"
+      }
+     ]
+    }
+   },
+   "stdout": "",
+   "retval": "['사과']"
+  },
+  {
+   "line": 6,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "add": {
+       "ref": "0x12f4fd9ca40"
+      },
+      "a": {
+       "ref": "0x12f4fb7d700"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x12f4fd9ca40": {
+     "id": "0x12f4fd9ca40",
+     "type": "function",
+     "repr": "add"
+    },
+    "0x12f4fb7d700": {
+     "id": "0x12f4fb7d700",
+     "type": "list",
+     "repr": "['사과']",
+     "items": [
+      {
+       "ref": "0x12f4fda6060"
+      }
+     ]
+    },
+    "0x12f4fda6060": {
+     "id": "0x12f4fda6060",
+     "type": "str",
+     "repr": "'사과'"
+    }
+   },
+   "stdout": "",
+   "note": "새 리스트가 아니다! 같은 기본 리스트에 배가 추가된다"
+  },
+  {
+   "line": 1,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "add": {
+       "ref": "0x12f4fd9ca40"
+      },
+      "a": {
+       "ref": "0x12f4fb7d700"
+      }
+     }
+    },
+    {
+     "fn": "add",
+     "line": 1,
+     "locals": {
+      "item": {
+       "ref": "0x12f4fdb2b70"
+      },
+      "bag": {
+       "ref": "0x12f4fb7d700"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x12f4fd9ca40": {
+     "id": "0x12f4fd9ca40",
+     "type": "function",
+     "repr": "add"
+    },
+    "0x12f4fb7d700": {
+     "id": "0x12f4fb7d700",
+     "type": "list",
+     "repr": "['사과']",
+     "items": [
+      {
+       "ref": "0x12f4fda6060"
+      }
+     ]
+    },
+    "0x12f4fda6060": {
+     "id": "0x12f4fda6060",
+     "type": "str",
+     "repr": "'사과'"
+    },
+    "0x12f4fdb2b70": {
+     "id": "0x12f4fdb2b70",
+     "type": "str",
+     "repr": "'배'"
+    }
+   },
+   "stdout": "",
+   "note": "기본값 [] 는 def 가 실행되는 '지금' 딱 한 번 만들어진다"
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "add": {
+       "ref": "0x12f4fd9ca40"
+      },
+      "a": {
+       "ref": "0x12f4fb7d700"
+      }
+     }
+    },
+    {
+     "fn": "add",
+     "line": 2,
+     "locals": {
+      "item": {
+       "ref": "0x12f4fdb2b70"
+      },
+      "bag": {
+       "ref": "0x12f4fb7d700"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x12f4fd9ca40": {
+     "id": "0x12f4fd9ca40",
+     "type": "function",
+     "repr": "add"
+    },
+    "0x12f4fb7d700": {
+     "id": "0x12f4fb7d700",
+     "type": "list",
+     "repr": "['사과']",
+     "items": [
+      {
+       "ref": "0x12f4fda6060"
+      }
+     ]
+    },
+    "0x12f4fda6060": {
+     "id": "0x12f4fda6060",
+     "type": "str",
+     "repr": "'사과'"
+    },
+    "0x12f4fdb2b70": {
+     "id": "0x12f4fdb2b70",
+     "type": "str",
+     "repr": "'배'"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 3,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "add": {
+       "ref": "0x12f4fd9ca40"
+      },
+      "a": {
+       "ref": "0x12f4fb7d700"
+      }
+     }
+    },
+    {
+     "fn": "add",
+     "line": 3,
+     "locals": {
+      "item": {
+       "ref": "0x12f4fdb2b70"
+      },
+      "bag": {
+       "ref": "0x12f4fb7d700"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x12f4fd9ca40": {
+     "id": "0x12f4fd9ca40",
+     "type": "function",
+     "repr": "add"
+    },
+    "0x12f4fb7d700": {
+     "id": "0x12f4fb7d700",
+     "type": "list",
+     "repr": "['사과', '배']",
+     "items": [
+      {
+       "ref": "0x12f4fda6060"
+      },
+      {
+       "ref": "0x12f4fdb2b70"
+      }
+     ]
+    },
+    "0x12f4fda6060": {
+     "id": "0x12f4fda6060",
+     "type": "str",
+     "repr": "'사과'"
+    },
+    "0x12f4fdb2b70": {
+     "id": "0x12f4fdb2b70",
+     "type": "str",
+     "repr": "'배'"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 3,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "add": {
+       "ref": "0x12f4fd9ca40"
+      },
+      "a": {
+       "ref": "0x12f4fb7d700"
+      }
+     }
+    },
+    {
+     "fn": "add",
+     "line": 3,
+     "locals": {
+      "item": {
+       "ref": "0x12f4fdb2b70"
+      },
+      "bag": {
+       "ref": "0x12f4fb7d700"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x12f4fd9ca40": {
+     "id": "0x12f4fd9ca40",
+     "type": "function",
+     "repr": "add"
+    },
+    "0x12f4fb7d700": {
+     "id": "0x12f4fb7d700",
+     "type": "list",
+     "repr": "['사과', '배']",
+     "items": [
+      {
+       "ref": "0x12f4fda6060"
+      },
+      {
+       "ref": "0x12f4fdb2b70"
+      }
+     ]
+    },
+    "0x12f4fda6060": {
+     "id": "0x12f4fda6060",
+     "type": "str",
+     "repr": "'사과'"
+    },
+    "0x12f4fdb2b70": {
+     "id": "0x12f4fdb2b70",
+     "type": "str",
+     "repr": "'배'"
+    }
+   },
+   "stdout": "",
+   "retval": "['사과', '배']"
+  },
+  {
+   "line": 7,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 7,
+     "locals": {
+      "add": {
+       "ref": "0x12f4fd9ca40"
+      },
+      "a": {
+       "ref": "0x12f4fb7d700"
+      },
+      "b": {
+       "ref": "0x12f4fb7d700"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x12f4fd9ca40": {
+     "id": "0x12f4fd9ca40",
+     "type": "function",
+     "repr": "add"
+    },
+    "0x12f4fb7d700": {
+     "id": "0x12f4fb7d700",
+     "type": "list",
+     "repr": "['사과', '배']",
+     "items": [
+      {
+       "ref": "0x12f4fda6060"
+      },
+      {
+       "ref": "0x12f4fdb2b70"
+      }
+     ]
+    },
+    "0x12f4fda6060": {
+     "id": "0x12f4fda6060",
+     "type": "str",
+     "repr": "'사과'"
+    },
+    "0x12f4fdb2b70": {
+     "id": "0x12f4fdb2b70",
+     "type": "str",
+     "repr": "'배'"
+    }
+   },
+   "stdout": "",
+   "note": "a 와 b 는 같은 객체"
+  },
+  {
+   "line": 9,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 9,
+     "locals": {
+      "add": {
+       "ref": "0x12f4fd9ca40"
+      },
+      "a": {
+       "ref": "0x12f4fb7d700"
+      },
+      "b": {
+       "ref": "0x12f4fb7d700"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x12f4fd9ca40": {
+     "id": "0x12f4fd9ca40",
+     "type": "function",
+     "repr": "add"
+    },
+    "0x12f4fb7d700": {
+     "id": "0x12f4fb7d700",
+     "type": "list",
+     "repr": "['사과', '배']",
+     "items": [
+      {
+       "ref": "0x12f4fda6060"
+      },
+      {
+       "ref": "0x12f4fdb2b70"
+      }
+     ]
+    },
+    "0x12f4fda6060": {
+     "id": "0x12f4fda6060",
+     "type": "str",
+     "repr": "'사과'"
+    },
+    "0x12f4fdb2b70": {
+     "id": "0x12f4fdb2b70",
+     "type": "str",
+     "repr": "'배'"
+    }
+   },
+   "stdout": "['사과', '배'] ['사과', '배'] True\n",
+   "note": "올바른 방법 — None 을 기본값으로"
+  },
+  {
+   "line": 15,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 15,
+     "locals": {
+      "add": {
+       "ref": "0x12f4fd9ca40"
+      },
+      "a": {
+       "ref": "0x12f4fb7d700"
+      },
+      "b": {
+       "ref": "0x12f4fb7d700"
+      },
+      "add_ok": {
+       "ref": "0x12f4fd9cb80"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x12f4fd9ca40": {
+     "id": "0x12f4fd9ca40",
+     "type": "function",
+     "repr": "add"
+    },
+    "0x12f4fb7d700": {
+     "id": "0x12f4fb7d700",
+     "type": "list",
+     "repr": "['사과', '배']",
+     "items": [
+      {
+       "ref": "0x12f4fda6060"
+      },
+      {
+       "ref": "0x12f4fdb2b70"
+      }
+     ]
+    },
+    "0x12f4fda6060": {
+     "id": "0x12f4fda6060",
+     "type": "str",
+     "repr": "'사과'"
+    },
+    "0x12f4fdb2b70": {
+     "id": "0x12f4fdb2b70",
+     "type": "str",
+     "repr": "'배'"
+    },
+    "0x12f4fd9cb80": {
+     "id": "0x12f4fd9cb80",
+     "type": "function",
+     "repr": "add_ok"
+    }
+   },
+   "stdout": "['사과', '배'] ['사과', '배'] True\n"
+  },
+  {
+   "line": 9,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 15,
+     "locals": {
+      "add": {
+       "ref": "0x12f4fd9ca40"
+      },
+      "a": {
+       "ref": "0x12f4fb7d700"
+      },
+      "b": {
+       "ref": "0x12f4fb7d700"
+      },
+      "add_ok": {
+       "ref": "0x12f4fd9cb80"
+      }
+     }
+    },
+    {
+     "fn": "add_ok",
+     "line": 9,
+     "locals": {
+      "item": {
+       "ref": "0x12f4fda6060"
+      },
+      "bag": {
+       "ref": "0x7ffd7f1c1850"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x12f4fd9ca40": {
+     "id": "0x12f4fd9ca40",
+     "type": "function",
+     "repr": "add"
+    },
+    "0x12f4fb7d700": {
+     "id": "0x12f4fb7d700",
+     "type": "list",
+     "repr": "['사과', '배']",
+     "items": [
+      {
+       "ref": "0x12f4fda6060"
+      },
+      {
+       "ref": "0x12f4fdb2b70"
+      }
+     ]
+    },
+    "0x12f4fda6060": {
+     "id": "0x12f4fda6060",
+     "type": "str",
+     "repr": "'사과'"
+    },
+    "0x12f4fdb2b70": {
+     "id": "0x12f4fdb2b70",
+     "type": "str",
+     "repr": "'배'"
+    },
+    "0x12f4fd9cb80": {
+     "id": "0x12f4fd9cb80",
+     "type": "function",
+     "repr": "add_ok"
+    },
+    "0x7ffd7f1c1850": {
+     "id": "0x7ffd7f1c1850",
+     "type": "NoneType",
+     "repr": "None"
+    }
+   },
+   "stdout": "['사과', '배'] ['사과', '배'] True\n",
+   "note": "올바른 방법 — None 을 기본값으로"
+  },
+  {
+   "line": 10,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 15,
+     "locals": {
+      "add": {
+       "ref": "0x12f4fd9ca40"
+      },
+      "a": {
+       "ref": "0x12f4fb7d700"
+      },
+      "b": {
+       "ref": "0x12f4fb7d700"
+      },
+      "add_ok": {
+       "ref": "0x12f4fd9cb80"
+      }
+     }
+    },
+    {
+     "fn": "add_ok",
+     "line": 10,
+     "locals": {
+      "item": {
+       "ref": "0x12f4fda6060"
+      },
+      "bag": {
+       "ref": "0x7ffd7f1c1850"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x12f4fd9ca40": {
+     "id": "0x12f4fd9ca40",
+     "type": "function",
+     "repr": "add"
+    },
+    "0x12f4fb7d700": {
+     "id": "0x12f4fb7d700",
+     "type": "list",
+     "repr": "['사과', '배']",
+     "items": [
+      {
+       "ref": "0x12f4fda6060"
+      },
+      {
+       "ref": "0x12f4fdb2b70"
+      }
+     ]
+    },
+    "0x12f4fda6060": {
+     "id": "0x12f4fda6060",
+     "type": "str",
+     "repr": "'사과'"
+    },
+    "0x12f4fdb2b70": {
+     "id": "0x12f4fdb2b70",
+     "type": "str",
+     "repr": "'배'"
+    },
+    "0x12f4fd9cb80": {
+     "id": "0x12f4fd9cb80",
+     "type": "function",
+     "repr": "add_ok"
+    },
+    "0x7ffd7f1c1850": {
+     "id": "0x7ffd7f1c1850",
+     "type": "NoneType",
+     "repr": "None"
+    }
+   },
+   "stdout": "['사과', '배'] ['사과', '배'] True\n"
+  },
+  {
+   "line": 11,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 15,
+     "locals": {
+      "add": {
+       "ref": "0x12f4fd9ca40"
+      },
+      "a": {
+       "ref": "0x12f4fb7d700"
+      },
+      "b": {
+       "ref": "0x12f4fb7d700"
+      },
+      "add_ok": {
+       "ref": "0x12f4fd9cb80"
+      }
+     }
+    },
+    {
+     "fn": "add_ok",
+     "line": 11,
+     "locals": {
+      "item": {
+       "ref": "0x12f4fda6060"
+      },
+      "bag": {
+       "ref": "0x7ffd7f1c1850"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x12f4fd9ca40": {
+     "id": "0x12f4fd9ca40",
+     "type": "function",
+     "repr": "add"
+    },
+    "0x12f4fb7d700": {
+     "id": "0x12f4fb7d700",
+     "type": "list",
+     "repr": "['사과', '배']",
+     "items": [
+      {
+       "ref": "0x12f4fda6060"
+      },
+      {
+       "ref": "0x12f4fdb2b70"
+      }
+     ]
+    },
+    "0x12f4fda6060": {
+     "id": "0x12f4fda6060",
+     "type": "str",
+     "repr": "'사과'"
+    },
+    "0x12f4fdb2b70": {
+     "id": "0x12f4fdb2b70",
+     "type": "str",
+     "repr": "'배'"
+    },
+    "0x12f4fd9cb80": {
+     "id": "0x12f4fd9cb80",
+     "type": "function",
+     "repr": "add_ok"
+    },
+    "0x7ffd7f1c1850": {
+     "id": "0x7ffd7f1c1850",
+     "type": "NoneType",
+     "repr": "None"
+    }
+   },
+   "stdout": "['사과', '배'] ['사과', '배'] True\n",
+   "note": "호출할 때마다 새 리스트"
+  },
+  {
+   "line": 12,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 15,
+     "locals": {
+      "add": {
+       "ref": "0x12f4fd9ca40"
+      },
+      "a": {
+       "ref": "0x12f4fb7d700"
+      },
+      "b": {
+       "ref": "0x12f4fb7d700"
+      },
+      "add_ok": {
+       "ref": "0x12f4fd9cb80"
+      }
+     }
+    },
+    {
+     "fn": "add_ok",
+     "line": 12,
+     "locals": {
+      "item": {
+       "ref": "0x12f4fda6060"
+      },
+      "bag": {
+       "ref": "0x12f4fb6fd00"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x12f4fd9ca40": {
+     "id": "0x12f4fd9ca40",
+     "type": "function",
+     "repr": "add"
+    },
+    "0x12f4fb7d700": {
+     "id": "0x12f4fb7d700",
+     "type": "list",
+     "repr": "['사과', '배']",
+     "items": [
+      {
+       "ref": "0x12f4fda6060"
+      },
+      {
+       "ref": "0x12f4fdb2b70"
+      }
+     ]
+    },
+    "0x12f4fda6060": {
+     "id": "0x12f4fda6060",
+     "type": "str",
+     "repr": "'사과'"
+    },
+    "0x12f4fdb2b70": {
+     "id": "0x12f4fdb2b70",
+     "type": "str",
+     "repr": "'배'"
+    },
+    "0x12f4fd9cb80": {
+     "id": "0x12f4fd9cb80",
+     "type": "function",
+     "repr": "add_ok"
+    },
+    "0x12f4fb6fd00": {
+     "id": "0x12f4fb6fd00",
+     "type": "list",
+     "repr": "[]",
+     "items": []
+    }
+   },
+   "stdout": "['사과', '배'] ['사과', '배'] True\n"
+  },
+  {
+   "line": 13,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 15,
+     "locals": {
+      "add": {
+       "ref": "0x12f4fd9ca40"
+      },
+      "a": {
+       "ref": "0x12f4fb7d700"
+      },
+      "b": {
+       "ref": "0x12f4fb7d700"
+      },
+      "add_ok": {
+       "ref": "0x12f4fd9cb80"
+      }
+     }
+    },
+    {
+     "fn": "add_ok",
+     "line": 13,
+     "locals": {
+      "item": {
+       "ref": "0x12f4fda6060"
+      },
+      "bag": {
+       "ref": "0x12f4fb6fd00"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x12f4fd9ca40": {
+     "id": "0x12f4fd9ca40",
+     "type": "function",
+     "repr": "add"
+    },
+    "0x12f4fb7d700": {
+     "id": "0x12f4fb7d700",
+     "type": "list",
+     "repr": "['사과', '배']",
+     "items": [
+      {
+       "ref": "0x12f4fda6060"
+      },
+      {
+       "ref": "0x12f4fdb2b70"
+      }
+     ]
+    },
+    "0x12f4fda6060": {
+     "id": "0x12f4fda6060",
+     "type": "str",
+     "repr": "'사과'"
+    },
+    "0x12f4fdb2b70": {
+     "id": "0x12f4fdb2b70",
+     "type": "str",
+     "repr": "'배'"
+    },
+    "0x12f4fd9cb80": {
+     "id": "0x12f4fd9cb80",
+     "type": "function",
+     "repr": "add_ok"
+    },
+    "0x12f4fb6fd00": {
+     "id": "0x12f4fb6fd00",
+     "type": "list",
+     "repr": "['사과']",
+     "items": [
+      {
+       "ref": "0x12f4fda6060"
+      }
+     ]
+    }
+   },
+   "stdout": "['사과', '배'] ['사과', '배'] True\n"
+  },
+  {
+   "line": 13,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 15,
+     "locals": {
+      "add": {
+       "ref": "0x12f4fd9ca40"
+      },
+      "a": {
+       "ref": "0x12f4fb7d700"
+      },
+      "b": {
+       "ref": "0x12f4fb7d700"
+      },
+      "add_ok": {
+       "ref": "0x12f4fd9cb80"
+      }
+     }
+    },
+    {
+     "fn": "add_ok",
+     "line": 13,
+     "locals": {
+      "item": {
+       "ref": "0x12f4fda6060"
+      },
+      "bag": {
+       "ref": "0x12f4fb6fd00"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x12f4fd9ca40": {
+     "id": "0x12f4fd9ca40",
+     "type": "function",
+     "repr": "add"
+    },
+    "0x12f4fb7d700": {
+     "id": "0x12f4fb7d700",
+     "type": "list",
+     "repr": "['사과', '배']",
+     "items": [
+      {
+       "ref": "0x12f4fda6060"
+      },
+      {
+       "ref": "0x12f4fdb2b70"
+      }
+     ]
+    },
+    "0x12f4fda6060": {
+     "id": "0x12f4fda6060",
+     "type": "str",
+     "repr": "'사과'"
+    },
+    "0x12f4fdb2b70": {
+     "id": "0x12f4fdb2b70",
+     "type": "str",
+     "repr": "'배'"
+    },
+    "0x12f4fd9cb80": {
+     "id": "0x12f4fd9cb80",
+     "type": "function",
+     "repr": "add_ok"
+    },
+    "0x12f4fb6fd00": {
+     "id": "0x12f4fb6fd00",
+     "type": "list",
+     "repr": "['사과']",
+     "items": [
+      {
+       "ref": "0x12f4fda6060"
+      }
+     ]
+    }
+   },
+   "stdout": "['사과', '배'] ['사과', '배'] True\n",
+   "retval": "['사과']"
+  },
+  {
+   "line": 9,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 15,
+     "locals": {
+      "add": {
+       "ref": "0x12f4fd9ca40"
+      },
+      "a": {
+       "ref": "0x12f4fb7d700"
+      },
+      "b": {
+       "ref": "0x12f4fb7d700"
+      },
+      "add_ok": {
+       "ref": "0x12f4fd9cb80"
+      }
+     }
+    },
+    {
+     "fn": "add_ok",
+     "line": 9,
+     "locals": {
+      "item": {
+       "ref": "0x12f4fdb2b70"
+      },
+      "bag": {
+       "ref": "0x7ffd7f1c1850"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x12f4fd9ca40": {
+     "id": "0x12f4fd9ca40",
+     "type": "function",
+     "repr": "add"
+    },
+    "0x12f4fb7d700": {
+     "id": "0x12f4fb7d700",
+     "type": "list",
+     "repr": "['사과', '배']",
+     "items": [
+      {
+       "ref": "0x12f4fda6060"
+      },
+      {
+       "ref": "0x12f4fdb2b70"
+      }
+     ]
+    },
+    "0x12f4fda6060": {
+     "id": "0x12f4fda6060",
+     "type": "str",
+     "repr": "'사과'"
+    },
+    "0x12f4fdb2b70": {
+     "id": "0x12f4fdb2b70",
+     "type": "str",
+     "repr": "'배'"
+    },
+    "0x12f4fd9cb80": {
+     "id": "0x12f4fd9cb80",
+     "type": "function",
+     "repr": "add_ok"
+    },
+    "0x7ffd7f1c1850": {
+     "id": "0x7ffd7f1c1850",
+     "type": "NoneType",
+     "repr": "None"
+    }
+   },
+   "stdout": "['사과', '배'] ['사과', '배'] True\n",
+   "note": "올바른 방법 — None 을 기본값으로"
+  },
+  {
+   "line": 10,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 15,
+     "locals": {
+      "add": {
+       "ref": "0x12f4fd9ca40"
+      },
+      "a": {
+       "ref": "0x12f4fb7d700"
+      },
+      "b": {
+       "ref": "0x12f4fb7d700"
+      },
+      "add_ok": {
+       "ref": "0x12f4fd9cb80"
+      }
+     }
+    },
+    {
+     "fn": "add_ok",
+     "line": 10,
+     "locals": {
+      "item": {
+       "ref": "0x12f4fdb2b70"
+      },
+      "bag": {
+       "ref": "0x7ffd7f1c1850"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x12f4fd9ca40": {
+     "id": "0x12f4fd9ca40",
+     "type": "function",
+     "repr": "add"
+    },
+    "0x12f4fb7d700": {
+     "id": "0x12f4fb7d700",
+     "type": "list",
+     "repr": "['사과', '배']",
+     "items": [
+      {
+       "ref": "0x12f4fda6060"
+      },
+      {
+       "ref": "0x12f4fdb2b70"
+      }
+     ]
+    },
+    "0x12f4fda6060": {
+     "id": "0x12f4fda6060",
+     "type": "str",
+     "repr": "'사과'"
+    },
+    "0x12f4fdb2b70": {
+     "id": "0x12f4fdb2b70",
+     "type": "str",
+     "repr": "'배'"
+    },
+    "0x12f4fd9cb80": {
+     "id": "0x12f4fd9cb80",
+     "type": "function",
+     "repr": "add_ok"
+    },
+    "0x7ffd7f1c1850": {
+     "id": "0x7ffd7f1c1850",
+     "type": "NoneType",
+     "repr": "None"
+    }
+   },
+   "stdout": "['사과', '배'] ['사과', '배'] True\n"
+  },
+  {
+   "line": 11,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 15,
+     "locals": {
+      "add": {
+       "ref": "0x12f4fd9ca40"
+      },
+      "a": {
+       "ref": "0x12f4fb7d700"
+      },
+      "b": {
+       "ref": "0x12f4fb7d700"
+      },
+      "add_ok": {
+       "ref": "0x12f4fd9cb80"
+      }
+     }
+    },
+    {
+     "fn": "add_ok",
+     "line": 11,
+     "locals": {
+      "item": {
+       "ref": "0x12f4fdb2b70"
+      },
+      "bag": {
+       "ref": "0x7ffd7f1c1850"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x12f4fd9ca40": {
+     "id": "0x12f4fd9ca40",
+     "type": "function",
+     "repr": "add"
+    },
+    "0x12f4fb7d700": {
+     "id": "0x12f4fb7d700",
+     "type": "list",
+     "repr": "['사과', '배']",
+     "items": [
+      {
+       "ref": "0x12f4fda6060"
+      },
+      {
+       "ref": "0x12f4fdb2b70"
+      }
+     ]
+    },
+    "0x12f4fda6060": {
+     "id": "0x12f4fda6060",
+     "type": "str",
+     "repr": "'사과'"
+    },
+    "0x12f4fdb2b70": {
+     "id": "0x12f4fdb2b70",
+     "type": "str",
+     "repr": "'배'"
+    },
+    "0x12f4fd9cb80": {
+     "id": "0x12f4fd9cb80",
+     "type": "function",
+     "repr": "add_ok"
+    },
+    "0x7ffd7f1c1850": {
+     "id": "0x7ffd7f1c1850",
+     "type": "NoneType",
+     "repr": "None"
+    }
+   },
+   "stdout": "['사과', '배'] ['사과', '배'] True\n",
+   "note": "호출할 때마다 새 리스트"
+  },
+  {
+   "line": 12,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 15,
+     "locals": {
+      "add": {
+       "ref": "0x12f4fd9ca40"
+      },
+      "a": {
+       "ref": "0x12f4fb7d700"
+      },
+      "b": {
+       "ref": "0x12f4fb7d700"
+      },
+      "add_ok": {
+       "ref": "0x12f4fd9cb80"
+      }
+     }
+    },
+    {
+     "fn": "add_ok",
+     "line": 12,
+     "locals": {
+      "item": {
+       "ref": "0x12f4fdb2b70"
+      },
+      "bag": {
+       "ref": "0x12f4fb7c480"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x12f4fd9ca40": {
+     "id": "0x12f4fd9ca40",
+     "type": "function",
+     "repr": "add"
+    },
+    "0x12f4fb7d700": {
+     "id": "0x12f4fb7d700",
+     "type": "list",
+     "repr": "['사과', '배']",
+     "items": [
+      {
+       "ref": "0x12f4fda6060"
+      },
+      {
+       "ref": "0x12f4fdb2b70"
+      }
+     ]
+    },
+    "0x12f4fda6060": {
+     "id": "0x12f4fda6060",
+     "type": "str",
+     "repr": "'사과'"
+    },
+    "0x12f4fdb2b70": {
+     "id": "0x12f4fdb2b70",
+     "type": "str",
+     "repr": "'배'"
+    },
+    "0x12f4fd9cb80": {
+     "id": "0x12f4fd9cb80",
+     "type": "function",
+     "repr": "add_ok"
+    },
+    "0x12f4fb7c480": {
+     "id": "0x12f4fb7c480",
+     "type": "list",
+     "repr": "[]",
+     "items": []
+    }
+   },
+   "stdout": "['사과', '배'] ['사과', '배'] True\n"
+  },
+  {
+   "line": 13,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 15,
+     "locals": {
+      "add": {
+       "ref": "0x12f4fd9ca40"
+      },
+      "a": {
+       "ref": "0x12f4fb7d700"
+      },
+      "b": {
+       "ref": "0x12f4fb7d700"
+      },
+      "add_ok": {
+       "ref": "0x12f4fd9cb80"
+      }
+     }
+    },
+    {
+     "fn": "add_ok",
+     "line": 13,
+     "locals": {
+      "item": {
+       "ref": "0x12f4fdb2b70"
+      },
+      "bag": {
+       "ref": "0x12f4fb7c480"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x12f4fd9ca40": {
+     "id": "0x12f4fd9ca40",
+     "type": "function",
+     "repr": "add"
+    },
+    "0x12f4fb7d700": {
+     "id": "0x12f4fb7d700",
+     "type": "list",
+     "repr": "['사과', '배']",
+     "items": [
+      {
+       "ref": "0x12f4fda6060"
+      },
+      {
+       "ref": "0x12f4fdb2b70"
+      }
+     ]
+    },
+    "0x12f4fda6060": {
+     "id": "0x12f4fda6060",
+     "type": "str",
+     "repr": "'사과'"
+    },
+    "0x12f4fdb2b70": {
+     "id": "0x12f4fdb2b70",
+     "type": "str",
+     "repr": "'배'"
+    },
+    "0x12f4fd9cb80": {
+     "id": "0x12f4fd9cb80",
+     "type": "function",
+     "repr": "add_ok"
+    },
+    "0x12f4fb7c480": {
+     "id": "0x12f4fb7c480",
+     "type": "list",
+     "repr": "['배']",
+     "items": [
+      {
+       "ref": "0x12f4fdb2b70"
+      }
+     ]
+    }
+   },
+   "stdout": "['사과', '배'] ['사과', '배'] True\n"
+  },
+  {
+   "line": 13,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 15,
+     "locals": {
+      "add": {
+       "ref": "0x12f4fd9ca40"
+      },
+      "a": {
+       "ref": "0x12f4fb7d700"
+      },
+      "b": {
+       "ref": "0x12f4fb7d700"
+      },
+      "add_ok": {
+       "ref": "0x12f4fd9cb80"
+      }
+     }
+    },
+    {
+     "fn": "add_ok",
+     "line": 13,
+     "locals": {
+      "item": {
+       "ref": "0x12f4fdb2b70"
+      },
+      "bag": {
+       "ref": "0x12f4fb7c480"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x12f4fd9ca40": {
+     "id": "0x12f4fd9ca40",
+     "type": "function",
+     "repr": "add"
+    },
+    "0x12f4fb7d700": {
+     "id": "0x12f4fb7d700",
+     "type": "list",
+     "repr": "['사과', '배']",
+     "items": [
+      {
+       "ref": "0x12f4fda6060"
+      },
+      {
+       "ref": "0x12f4fdb2b70"
+      }
+     ]
+    },
+    "0x12f4fda6060": {
+     "id": "0x12f4fda6060",
+     "type": "str",
+     "repr": "'사과'"
+    },
+    "0x12f4fdb2b70": {
+     "id": "0x12f4fdb2b70",
+     "type": "str",
+     "repr": "'배'"
+    },
+    "0x12f4fd9cb80": {
+     "id": "0x12f4fd9cb80",
+     "type": "function",
+     "repr": "add_ok"
+    },
+    "0x12f4fb7c480": {
+     "id": "0x12f4fb7c480",
+     "type": "list",
+     "repr": "['배']",
+     "items": [
+      {
+       "ref": "0x12f4fdb2b70"
+      }
+     ]
+    }
+   },
+   "stdout": "['사과', '배'] ['사과', '배'] True\n",
+   "retval": "['배']"
+  },
+  {
+   "line": 15,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 15,
+     "locals": {
+      "add": {
+       "ref": "0x12f4fd9ca40"
+      },
+      "a": {
+       "ref": "0x12f4fb7d700"
+      },
+      "b": {
+       "ref": "0x12f4fb7d700"
+      },
+      "add_ok": {
+       "ref": "0x12f4fd9cb80"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x12f4fd9ca40": {
+     "id": "0x12f4fd9ca40",
+     "type": "function",
+     "repr": "add"
+    },
+    "0x12f4fb7d700": {
+     "id": "0x12f4fb7d700",
+     "type": "list",
+     "repr": "['사과', '배']",
+     "items": [
+      {
+       "ref": "0x12f4fda6060"
+      },
+      {
+       "ref": "0x12f4fdb2b70"
+      }
+     ]
+    },
+    "0x12f4fda6060": {
+     "id": "0x12f4fda6060",
+     "type": "str",
+     "repr": "'사과'"
+    },
+    "0x12f4fdb2b70": {
+     "id": "0x12f4fdb2b70",
+     "type": "str",
+     "repr": "'배'"
+    },
+    "0x12f4fd9cb80": {
+     "id": "0x12f4fd9cb80",
+     "type": "function",
+     "repr": "add_ok"
+    }
+   },
+   "stdout": "['사과', '배'] ['사과', '배'] True\n['사과'] ['배']\n"
+  }
+ ],
+ "v": 1
+}

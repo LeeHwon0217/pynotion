@@ -1,0 +1,793 @@
+{
+ "id": "p4-args",
+ "code": "def order(item, qty=1, note=\"\"):\n    print(item, qty, note)\n\norder(\"커피\")\norder(\"커피\", 2)\norder(\"커피\", note=\"샷 추가\")\norder(qty=3, item=\"라떼\")",
+ "steps": [
+  {
+   "line": 0,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 0,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": "",
+   "note": "qty 와 note 는 기본값이 있다 — 생략 가능"
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "order": {
+       "ref": "0x294a5940ae0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x294a5940ae0": {
+     "id": "0x294a5940ae0",
+     "type": "function",
+     "repr": "order"
+    }
+   },
+   "stdout": "",
+   "note": "위치 인자 하나, 나머지는 기본값"
+  },
+  {
+   "line": 1,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "order": {
+       "ref": "0x294a5940ae0"
+      }
+     }
+    },
+    {
+     "fn": "order",
+     "line": 1,
+     "locals": {
+      "item": {
+       "ref": "0x294a594a150"
+      },
+      "qty": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "note": {
+       "ref": "0x7ffd7f2b9ca0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x294a5940ae0": {
+     "id": "0x294a5940ae0",
+     "type": "function",
+     "repr": "order"
+    },
+    "0x294a594a150": {
+     "id": "0x294a594a150",
+     "type": "str",
+     "repr": "'커피'"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b9ca0": {
+     "id": "0x7ffd7f2b9ca0",
+     "type": "str",
+     "repr": "''"
+    }
+   },
+   "stdout": "",
+   "note": "qty 와 note 는 기본값이 있다 — 생략 가능"
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "order": {
+       "ref": "0x294a5940ae0"
+      }
+     }
+    },
+    {
+     "fn": "order",
+     "line": 2,
+     "locals": {
+      "item": {
+       "ref": "0x294a594a150"
+      },
+      "qty": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "note": {
+       "ref": "0x7ffd7f2b9ca0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x294a5940ae0": {
+     "id": "0x294a5940ae0",
+     "type": "function",
+     "repr": "order"
+    },
+    "0x294a594a150": {
+     "id": "0x294a594a150",
+     "type": "str",
+     "repr": "'커피'"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b9ca0": {
+     "id": "0x7ffd7f2b9ca0",
+     "type": "str",
+     "repr": "''"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 2,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "order": {
+       "ref": "0x294a5940ae0"
+      }
+     }
+    },
+    {
+     "fn": "order",
+     "line": 2,
+     "locals": {
+      "item": {
+       "ref": "0x294a594a150"
+      },
+      "qty": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "note": {
+       "ref": "0x7ffd7f2b9ca0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x294a5940ae0": {
+     "id": "0x294a5940ae0",
+     "type": "function",
+     "repr": "order"
+    },
+    "0x294a594a150": {
+     "id": "0x294a594a150",
+     "type": "str",
+     "repr": "'커피'"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b9ca0": {
+     "id": "0x7ffd7f2b9ca0",
+     "type": "str",
+     "repr": "''"
+    }
+   },
+   "stdout": "커피 1 \n"
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "order": {
+       "ref": "0x294a5940ae0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x294a5940ae0": {
+     "id": "0x294a5940ae0",
+     "type": "function",
+     "repr": "order"
+    }
+   },
+   "stdout": "커피 1 \n",
+   "note": "순서대로 item, qty"
+  },
+  {
+   "line": 1,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "order": {
+       "ref": "0x294a5940ae0"
+      }
+     }
+    },
+    {
+     "fn": "order",
+     "line": 1,
+     "locals": {
+      "item": {
+       "ref": "0x294a594a150"
+      },
+      "qty": {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      "note": {
+       "ref": "0x7ffd7f2b9ca0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x294a5940ae0": {
+     "id": "0x294a5940ae0",
+     "type": "function",
+     "repr": "order"
+    },
+    "0x294a594a150": {
+     "id": "0x294a594a150",
+     "type": "str",
+     "repr": "'커피'"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b9ca0": {
+     "id": "0x7ffd7f2b9ca0",
+     "type": "str",
+     "repr": "''"
+    }
+   },
+   "stdout": "커피 1 \n",
+   "note": "qty 와 note 는 기본값이 있다 — 생략 가능"
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "order": {
+       "ref": "0x294a5940ae0"
+      }
+     }
+    },
+    {
+     "fn": "order",
+     "line": 2,
+     "locals": {
+      "item": {
+       "ref": "0x294a594a150"
+      },
+      "qty": {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      "note": {
+       "ref": "0x7ffd7f2b9ca0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x294a5940ae0": {
+     "id": "0x294a5940ae0",
+     "type": "function",
+     "repr": "order"
+    },
+    "0x294a594a150": {
+     "id": "0x294a594a150",
+     "type": "str",
+     "repr": "'커피'"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b9ca0": {
+     "id": "0x7ffd7f2b9ca0",
+     "type": "str",
+     "repr": "''"
+    }
+   },
+   "stdout": "커피 1 \n"
+  },
+  {
+   "line": 2,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "order": {
+       "ref": "0x294a5940ae0"
+      }
+     }
+    },
+    {
+     "fn": "order",
+     "line": 2,
+     "locals": {
+      "item": {
+       "ref": "0x294a594a150"
+      },
+      "qty": {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      "note": {
+       "ref": "0x7ffd7f2b9ca0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x294a5940ae0": {
+     "id": "0x294a5940ae0",
+     "type": "function",
+     "repr": "order"
+    },
+    "0x294a594a150": {
+     "id": "0x294a594a150",
+     "type": "str",
+     "repr": "'커피'"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b9ca0": {
+     "id": "0x7ffd7f2b9ca0",
+     "type": "str",
+     "repr": "''"
+    }
+   },
+   "stdout": "커피 1 \n커피 2 \n"
+  },
+  {
+   "line": 6,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "order": {
+       "ref": "0x294a5940ae0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x294a5940ae0": {
+     "id": "0x294a5940ae0",
+     "type": "function",
+     "repr": "order"
+    }
+   },
+   "stdout": "커피 1 \n커피 2 \n",
+   "note": "키워드 인자 — 순서와 무관하게 이름으로"
+  },
+  {
+   "line": 1,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "order": {
+       "ref": "0x294a5940ae0"
+      }
+     }
+    },
+    {
+     "fn": "order",
+     "line": 1,
+     "locals": {
+      "item": {
+       "ref": "0x294a594a150"
+      },
+      "qty": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "note": {
+       "ref": "0x294a594a240"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x294a5940ae0": {
+     "id": "0x294a5940ae0",
+     "type": "function",
+     "repr": "order"
+    },
+    "0x294a594a150": {
+     "id": "0x294a594a150",
+     "type": "str",
+     "repr": "'커피'"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x294a594a240": {
+     "id": "0x294a594a240",
+     "type": "str",
+     "repr": "'샷 추가'"
+    }
+   },
+   "stdout": "커피 1 \n커피 2 \n",
+   "note": "qty 와 note 는 기본값이 있다 — 생략 가능"
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "order": {
+       "ref": "0x294a5940ae0"
+      }
+     }
+    },
+    {
+     "fn": "order",
+     "line": 2,
+     "locals": {
+      "item": {
+       "ref": "0x294a594a150"
+      },
+      "qty": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "note": {
+       "ref": "0x294a594a240"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x294a5940ae0": {
+     "id": "0x294a5940ae0",
+     "type": "function",
+     "repr": "order"
+    },
+    "0x294a594a150": {
+     "id": "0x294a594a150",
+     "type": "str",
+     "repr": "'커피'"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x294a594a240": {
+     "id": "0x294a594a240",
+     "type": "str",
+     "repr": "'샷 추가'"
+    }
+   },
+   "stdout": "커피 1 \n커피 2 \n"
+  },
+  {
+   "line": 2,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "order": {
+       "ref": "0x294a5940ae0"
+      }
+     }
+    },
+    {
+     "fn": "order",
+     "line": 2,
+     "locals": {
+      "item": {
+       "ref": "0x294a594a150"
+      },
+      "qty": {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      "note": {
+       "ref": "0x294a594a240"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x294a5940ae0": {
+     "id": "0x294a5940ae0",
+     "type": "function",
+     "repr": "order"
+    },
+    "0x294a594a150": {
+     "id": "0x294a594a150",
+     "type": "str",
+     "repr": "'커피'"
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x294a594a240": {
+     "id": "0x294a594a240",
+     "type": "str",
+     "repr": "'샷 추가'"
+    }
+   },
+   "stdout": "커피 1 \n커피 2 \n커피 1 샷 추가\n"
+  },
+  {
+   "line": 7,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 7,
+     "locals": {
+      "order": {
+       "ref": "0x294a5940ae0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x294a5940ae0": {
+     "id": "0x294a5940ae0",
+     "type": "function",
+     "repr": "order"
+    }
+   },
+   "stdout": "커피 1 \n커피 2 \n커피 1 샷 추가\n",
+   "note": "키워드로 넘기면 순서를 바꿔도 된다"
+  },
+  {
+   "line": 1,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 7,
+     "locals": {
+      "order": {
+       "ref": "0x294a5940ae0"
+      }
+     }
+    },
+    {
+     "fn": "order",
+     "line": 1,
+     "locals": {
+      "item": {
+       "ref": "0x294a594a290"
+      },
+      "qty": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "note": {
+       "ref": "0x7ffd7f2b9ca0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x294a5940ae0": {
+     "id": "0x294a5940ae0",
+     "type": "function",
+     "repr": "order"
+    },
+    "0x294a594a290": {
+     "id": "0x294a594a290",
+     "type": "str",
+     "repr": "'라떼'"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b9ca0": {
+     "id": "0x7ffd7f2b9ca0",
+     "type": "str",
+     "repr": "''"
+    }
+   },
+   "stdout": "커피 1 \n커피 2 \n커피 1 샷 추가\n",
+   "note": "qty 와 note 는 기본값이 있다 — 생략 가능"
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 7,
+     "locals": {
+      "order": {
+       "ref": "0x294a5940ae0"
+      }
+     }
+    },
+    {
+     "fn": "order",
+     "line": 2,
+     "locals": {
+      "item": {
+       "ref": "0x294a594a290"
+      },
+      "qty": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "note": {
+       "ref": "0x7ffd7f2b9ca0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x294a5940ae0": {
+     "id": "0x294a5940ae0",
+     "type": "function",
+     "repr": "order"
+    },
+    "0x294a594a290": {
+     "id": "0x294a594a290",
+     "type": "str",
+     "repr": "'라떼'"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b9ca0": {
+     "id": "0x7ffd7f2b9ca0",
+     "type": "str",
+     "repr": "''"
+    }
+   },
+   "stdout": "커피 1 \n커피 2 \n커피 1 샷 추가\n"
+  },
+  {
+   "line": 2,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 7,
+     "locals": {
+      "order": {
+       "ref": "0x294a5940ae0"
+      }
+     }
+    },
+    {
+     "fn": "order",
+     "line": 2,
+     "locals": {
+      "item": {
+       "ref": "0x294a594a290"
+      },
+      "qty": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "note": {
+       "ref": "0x7ffd7f2b9ca0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x294a5940ae0": {
+     "id": "0x294a5940ae0",
+     "type": "function",
+     "repr": "order"
+    },
+    "0x294a594a290": {
+     "id": "0x294a594a290",
+     "type": "str",
+     "repr": "'라떼'"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b9ca0": {
+     "id": "0x7ffd7f2b9ca0",
+     "type": "str",
+     "repr": "''"
+    }
+   },
+   "stdout": "커피 1 \n커피 2 \n커피 1 샷 추가\n라떼 3 \n"
+  },
+  {
+   "line": 7,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 7,
+     "locals": {
+      "order": {
+       "ref": "0x294a5940ae0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x294a5940ae0": {
+     "id": "0x294a5940ae0",
+     "type": "function",
+     "repr": "order"
+    }
+   },
+   "stdout": "커피 1 \n커피 2 \n커피 1 샷 추가\n라떼 3 \n"
+  }
+ ],
+ "v": 1
+}

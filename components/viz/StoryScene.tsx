@@ -68,7 +68,7 @@ function fold(story: Story) {
   return states;
 }
 
-const objH = (o: StoryObj) => o.items || o.refs ? 140 : o.entries ? 62 + Math.min(6, o.entries.length) * 34 + 12 : o.fields ? 62 + Math.min(6, o.fields.length) * 34 + 12 : PRIM.has(o.type) ? 100 : 100;
+const objH = (o: StoryObj) => o.items || o.refs ? 132 : o.entries ? 62 + Math.min(6, o.entries.length) * 34 + 12 : o.fields ? 62 + Math.min(6, o.fields.length) * 34 + 12 : PRIM.has(o.type) ? 100 : 100;
 const objW = (o: StoryObj) => {
   if (o.items) return Math.max(200, Math.min(400, 32 + o.items.length * 66));
   if (o.refs) return Math.max(200, Math.min(400, 32 + o.refs.length * 66));
@@ -106,20 +106,46 @@ export function buildStory(story: Story): { script: Script; render: (t: number) 
   const objMeta: Record<string, StoryObj> = {};
   for (const st of states) for (const id of st.order) objMeta[id] = st.objs[id]; // 최종 형태 기준 크기
   const slot: Record<string, { x: number; y: number }> = {};
+  const GAP = 18;
   {
     // clear 이후에는 배치를 처음부터 다시 (id 는 스토리 안에서 유일해야 한다)
-    let col = 0, y = 64;
+    let cursor: number[] = Array(cols).fill(64);
+    const place = (id: string, col: number, minY: number) => {
+      if (slot[id]) return slot[id];
+      const c = Math.min(col, cols - 1);
+      const y = Math.max(cursor[c], minY);
+      slot[id] = { x: objX0 + c * colW, y };
+      cursor[c] = y + objH(objMeta[id]) + GAP;
+      return slot[id];
+    };
     for (const st of states) {
-      if (st.cleared) { col = 0; y = 64; }
+      if (st.cleared) cursor = Array(cols).fill(64);
       for (const id of st.order) {
-        if (slot[id]) continue;
-        const h = objH(objMeta[id]);
-        if (y + h > 505 && col < cols - 1) { col++; y = 64; }
-        slot[id] = { x: objX0 + col * colW, y };
-        y += h + 26;
+        if (id in slot) continue;
+        // 이 객체를 refs 로 가리키는 부모가 이미 배치되어 있으면 부모 옆 열에
+        const parent = Object.entries(objMeta).find(([pid, o]) => o.refs?.includes(id) && pid in slot);
+        let mine: { x: number; y: number };
+        if (parent) {
+          const ps = slot[parent[0]];
+          mine = place(id, Math.round((ps.x - objX0) / colW) + 1, ps.y);
+        } else {
+          // 첫 열이 넘치면 다음 열
+          let best = 0;
+          for (let c = 1; c < cols; c++) if (cursor[c] + objH(objMeta[id]) <= 505 && cursor[best] + objH(objMeta[id]) > 505) best = c;
+          mine = place(id, best, 0);
+        }
+        // 자식들 즉시 배치 (부모 옆 열)
+        const o = objMeta[id];
+        if (o.refs) {
+          const pcol = Math.round((mine.x - objX0) / colW);
+          for (const rid of o.refs) if (objMeta[rid]) place(rid, pcol + 1, mine.y);
+        }
       }
     }
   }
+  // 넘치면 객체 영역 전체를 축소
+  const maxBottom = Math.max(505, ...Object.entries(slot).map(([id, p]) => p.y + objH(objMeta[id])));
+  const zoom = Math.min(1, (505 - 64) / (maxBottom - 64));
   const allNames: string[] = [];
   for (const st of states) for (const b of st.binds) { const k = b.frame + ":" + b.name; if (!allNames.includes(k)) allNames.push(k); }
 
@@ -147,9 +173,11 @@ export function buildStory(story: Story): { script: Script; render: (t: number) 
       yy += 8;
     }
 
+    const sx = (x: number) => objX0 + (x - objX0) * zoom;
+    const sy = (y: number) => 64 + (y - 64) * zoom;
     const anchor = (id: string) => {
       const o = st.objs[id] ?? prev.objs[id];
-      if (o && slot[id]) return { x: slot[id].x, y: slot[id].y, w: objW(o), h: objH(o) };
+      if (o && slot[id]) return { x: sx(slot[id].x), y: sy(slot[id].y), w: objW(o) * zoom, h: objH(o) * zoom };
       const nk = liveNames.find((kk) => kk.split(":")[1] === id);
       if (nk) return { x: tagX, y: nameY[nk], w: Math.max(72, id.length * 13 + 34), h: 48 };
       return null;
@@ -197,7 +225,8 @@ export function buildStory(story: Story): { script: Script; render: (t: number) 
           </g>
         ))}
 
-        {/* 객체 */}
+        {/* 객체 (넘치면 축소) */}
+        <g transform={`translate(${objX0} 64) scale(${zoom}) translate(${-objX0} -64)`}>
         {allIds.map((id) => {
           const cur = st.objs[id], was = prev.objs[id];
           if (!cur && !was) return null;
@@ -272,19 +301,22 @@ export function buildStory(story: Story): { script: Script; render: (t: number) 
             </ObjBox>
           );
         })}
+        </g>
 
         {/* refs 셀 → 객체 화살표 */}
         {allIds.map((id) => {
           const o = st.objs[id];
           if (!o?.refs) return null;
           const a = anchor(id)!;
-          const cellW = Math.max(46, Math.min(72, (a.w - 32) / o.refs.length - 8));
+          const cellW = Math.max(46, Math.min(72, (objW(o) - 32) / o.refs.length - 8)) * zoom;
           return o.refs.map((rid, i) => {
             const b = anchor(rid);
             if (!b) return null;
             const wasRef = prev.objs[id]?.refs?.[i];
             const isNew = wasRef !== rid;
-            return <Arrow key={id + i} x1={a.x + 16 + i * (cellW + 8) + cellW / 2} y1={a.y + 76} x2={b.x + (b.x > a.x ? -4 : b.w + 4)} y2={b.y + 20} p={isNew ? seg(local, 500, 700, ease.out) : 1} width={2.5} />;
+            const x1 = a.x + (16 + i * (cellW / zoom + 8)) * zoom + cellW / 2, y1 = a.y + 76 * zoom;
+            const toRight = b.x > a.x + a.w - 10;
+            return <Arrow key={id + i} x1={x1} y1={y1} x2={toRight ? b.x - 4 : b.x + b.w / 2} y2={toRight ? b.y + Math.min(40, b.h / 2) : (b.y > a.y ? b.y - 4 : b.y + b.h + 4)} p={isNew ? seg(local, 500, 700, ease.out) : 1} width={2.5} />;
           });
         })}
 

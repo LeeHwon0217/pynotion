@@ -39,12 +39,25 @@ import { comprehension } from "./part-03/comprehension";
 import { nestedComprehension } from "./part-03/nested-comprehension";
 import { copyLesson } from "./part-03/copy";
 import { sorting } from "./part-03/sorting";
+import { callStack } from "./part-04/call-stack";
+import { returnLesson } from "./part-04/return";
+import { argsLesson } from "./part-04/args";
+import { mutableDefault } from "./part-04/mutable-default";
+import { starArgs } from "./part-04/star-args";
+import { positionalOnly } from "./part-04/positional-only";
+import { scopeLesson } from "./part-04/scope";
+import { globalNonlocal } from "./part-04/global-nonlocal";
+import { recursion } from "./part-04/recursion";
+import { lambdaLesson } from "./part-04/lambda";
+import { docstringHints } from "./part-04/docstring-hints";
+import { passBy } from "./part-04/pass-by";
 
 const ALL: Lesson[] = [
   whatIsPython, setup, howCodeRuns, firstProgram, readingErrors,
   variables, intLesson, floatLesson, boolNone, stringBasics, arithmetic, comparisonLogic, typeConversion, isVsEq, inputFormat,
   ifLesson, truthiness, whileLesson, forLesson, rangeLesson, breakContinue, nestedLoops, matchLesson,
   listBasics, indexing, slicing, listMethods, dynamicArray, tupleLesson, stringMethods, stringImmutable, dictBasics, hashTable, dictMethods, setLesson, comprehension, nestedComprehension, copyLesson, sorting,
+  callStack, returnLesson, argsLesson, mutableDefault, starArgs, positionalOnly, scopeLesson, globalNonlocal, recursion, lambdaLesson, docstringHints, passBy,
 ];
 
 const partSlug = (id: number) => PARTS.find((p) => p.id === id)!.slug;

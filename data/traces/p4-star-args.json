@@ -1,0 +1,2343 @@
+{
+ "id": "p4-star-args",
+ "code": "def total(*nums):\n    return sum(nums)\n\ndef show(**opts):\n    for k, v in opts.items():\n        print(k, \"=\", v)\n\nprint(total(1, 2, 3))\nprint(total())\nshow(color=\"red\", size=3)\nvalues = [4, 5, 6]\nprint(total(*values))\nconfig = {\"color\": \"blue\"}\nshow(**config)",
+ "steps": [
+  {
+   "line": 0,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 0,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": "",
+   "note": "위치 인자를 몇 개든 튜플 nums 로 받는다"
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "total": {
+       "ref": "0x252be01ccc0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x252be01ccc0": {
+     "id": "0x252be01ccc0",
+     "type": "function",
+     "repr": "total"
+    }
+   },
+   "stdout": "",
+   "note": "키워드 인자를 몇 개든 딕셔너리 opts 로 받는다"
+  },
+  {
+   "line": 8,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 8,
+     "locals": {
+      "total": {
+       "ref": "0x252be01ccc0"
+      },
+      "show": {
+       "ref": "0x252be01ce00"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x252be01ccc0": {
+     "id": "0x252be01ccc0",
+     "type": "function",
+     "repr": "total"
+    },
+    "0x252be01ce00": {
+     "id": "0x252be01ce00",
+     "type": "function",
+     "repr": "show"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 8,
+     "locals": {
+      "total": {
+       "ref": "0x252be01ccc0"
+      },
+      "show": {
+       "ref": "0x252be01ce00"
+      }
+     }
+    },
+    {
+     "fn": "total",
+     "line": 1,
+     "locals": {
+      "nums": {
+       "ref": "0x252be033040"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x252be01ccc0": {
+     "id": "0x252be01ccc0",
+     "type": "function",
+     "repr": "total"
+    },
+    "0x252be01ce00": {
+     "id": "0x252be01ce00",
+     "type": "function",
+     "repr": "show"
+    },
+    "0x252be033040": {
+     "id": "0x252be033040",
+     "type": "tuple",
+     "repr": "(1, 2, 3)",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     ]
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    }
+   },
+   "stdout": "",
+   "note": "위치 인자를 몇 개든 튜플 nums 로 받는다"
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 8,
+     "locals": {
+      "total": {
+       "ref": "0x252be01ccc0"
+      },
+      "show": {
+       "ref": "0x252be01ce00"
+      }
+     }
+    },
+    {
+     "fn": "total",
+     "line": 2,
+     "locals": {
+      "nums": {
+       "ref": "0x252be033040"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x252be01ccc0": {
+     "id": "0x252be01ccc0",
+     "type": "function",
+     "repr": "total"
+    },
+    "0x252be01ce00": {
+     "id": "0x252be01ce00",
+     "type": "function",
+     "repr": "show"
+    },
+    "0x252be033040": {
+     "id": "0x252be033040",
+     "type": "tuple",
+     "repr": "(1, 2, 3)",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     ]
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 2,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 8,
+     "locals": {
+      "total": {
+       "ref": "0x252be01ccc0"
+      },
+      "show": {
+       "ref": "0x252be01ce00"
+      }
+     }
+    },
+    {
+     "fn": "total",
+     "line": 2,
+     "locals": {
+      "nums": {
+       "ref": "0x252be033040"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x252be01ccc0": {
+     "id": "0x252be01ccc0",
+     "type": "function",
+     "repr": "total"
+    },
+    "0x252be01ce00": {
+     "id": "0x252be01ce00",
+     "type": "function",
+     "repr": "show"
+    },
+    "0x252be033040": {
+     "id": "0x252be033040",
+     "type": "tuple",
+     "repr": "(1, 2, 3)",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b49b8"
+      },
+      {
+       "ref": "0x7ffd7f2b49d8"
+      },
+      {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     ]
+    },
+    "0x7ffd7f2b49b8": {
+     "id": "0x7ffd7f2b49b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd7f2b49d8": {
+     "id": "0x7ffd7f2b49d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    }
+   },
+   "stdout": "",
+   "retval": "6"
+  },
+  {
+   "line": 9,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 9,
+     "locals": {
+      "total": {
+       "ref": "0x252be01ccc0"
+      },
+      "show": {
+       "ref": "0x252be01ce00"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x252be01ccc0": {
+     "id": "0x252be01ccc0",
+     "type": "function",
+     "repr": "total"
+    },
+    "0x252be01ce00": {
+     "id": "0x252be01ce00",
+     "type": "function",
+     "repr": "show"
+    }
+   },
+   "stdout": "6\n"
+  },
+  {
+   "line": 1,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 9,
+     "locals": {
+      "total": {
+       "ref": "0x252be01ccc0"
+      },
+      "show": {
+       "ref": "0x252be01ce00"
+      }
+     }
+    },
+    {
+     "fn": "total",
+     "line": 1,
+     "locals": {
+      "nums": {
+       "ref": "0x7ffd7f2c6420"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x252be01ccc0": {
+     "id": "0x252be01ccc0",
+     "type": "function",
+     "repr": "total"
+    },
+    "0x252be01ce00": {
+     "id": "0x252be01ce00",
+     "type": "function",
+     "repr": "show"
+    },
+    "0x7ffd7f2c6420": {
+     "id": "0x7ffd7f2c6420",
+     "type": "tuple",
+     "repr": "()",
+     "items": []
+    }
+   },
+   "stdout": "6\n",
+   "note": "위치 인자를 몇 개든 튜플 nums 로 받는다"
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 9,
+     "locals": {
+      "total": {
+       "ref": "0x252be01ccc0"
+      },
+      "show": {
+       "ref": "0x252be01ce00"
+      }
+     }
+    },
+    {
+     "fn": "total",
+     "line": 2,
+     "locals": {
+      "nums": {
+       "ref": "0x7ffd7f2c6420"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x252be01ccc0": {
+     "id": "0x252be01ccc0",
+     "type": "function",
+     "repr": "total"
+    },
+    "0x252be01ce00": {
+     "id": "0x252be01ce00",
+     "type": "function",
+     "repr": "show"
+    },
+    "0x7ffd7f2c6420": {
+     "id": "0x7ffd7f2c6420",
+     "type": "tuple",
+     "repr": "()",
+     "items": []
+    }
+   },
+   "stdout": "6\n"
+  },
+  {
+   "line": 2,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 9,
+     "locals": {
+      "total": {
+       "ref": "0x252be01ccc0"
+      },
+      "show": {
+       "ref": "0x252be01ce00"
+      }
+     }
+    },
+    {
+     "fn": "total",
+     "line": 2,
+     "locals": {
+      "nums": {
+       "ref": "0x7ffd7f2c6420"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x252be01ccc0": {
+     "id": "0x252be01ccc0",
+     "type": "function",
+     "repr": "total"
+    },
+    "0x252be01ce00": {
+     "id": "0x252be01ce00",
+     "type": "function",
+     "repr": "show"
+    },
+    "0x7ffd7f2c6420": {
+     "id": "0x7ffd7f2c6420",
+     "type": "tuple",
+     "repr": "()",
+     "items": []
+    }
+   },
+   "stdout": "6\n",
+   "retval": "0"
+  },
+  {
+   "line": 10,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 10,
+     "locals": {
+      "total": {
+       "ref": "0x252be01ccc0"
+      },
+      "show": {
+       "ref": "0x252be01ce00"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x252be01ccc0": {
+     "id": "0x252be01ccc0",
+     "type": "function",
+     "repr": "total"
+    },
+    "0x252be01ce00": {
+     "id": "0x252be01ce00",
+     "type": "function",
+     "repr": "show"
+    }
+   },
+   "stdout": "6\n0\n"
+  },
+  {
+   "line": 4,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 10,
+     "locals": {
+      "total": {
+       "ref": "0x252be01ccc0"
+      },
+      "show": {
+       "ref": "0x252be01ce00"
+      }
+     }
+    },
+    {
+     "fn": "show",
+     "line": 4,
+     "locals": {
+      "opts": {
+       "ref": "0x252be035300"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x252be01ccc0": {
+     "id": "0x252be01ccc0",
+     "type": "function",
+     "repr": "total"
+    },
+    "0x252be01ce00": {
+     "id": "0x252be01ce00",
+     "type": "function",
+     "repr": "show"
+    },
+    "0x252be035300": {
+     "id": "0x252be035300",
+     "type": "dict",
+     "repr": "{'color': 'red', 'size': 3}",
+     "entries": [
+      [
+       {
+        "ref": "0x252be02d3e0"
+       },
+       {
+        "ref": "0x252be02d440"
+       }
+      ],
+      [
+       {
+        "ref": "0x7ffd7f2c1b90"
+       },
+       {
+        "ref": "0x7ffd7f2b49f8"
+       }
+      ]
+     ]
+    },
+    "0x252be02d3e0": {
+     "id": "0x252be02d3e0",
+     "type": "str",
+     "repr": "'color'"
+    },
+    "0x252be02d440": {
+     "id": "0x252be02d440",
+     "type": "str",
+     "repr": "'red'"
+    },
+    "0x7ffd7f2c1b90": {
+     "id": "0x7ffd7f2c1b90",
+     "type": "str",
+     "repr": "'size'"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    }
+   },
+   "stdout": "6\n0\n",
+   "note": "키워드 인자를 몇 개든 딕셔너리 opts 로 받는다"
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 10,
+     "locals": {
+      "total": {
+       "ref": "0x252be01ccc0"
+      },
+      "show": {
+       "ref": "0x252be01ce00"
+      }
+     }
+    },
+    {
+     "fn": "show",
+     "line": 5,
+     "locals": {
+      "opts": {
+       "ref": "0x252be035300"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x252be01ccc0": {
+     "id": "0x252be01ccc0",
+     "type": "function",
+     "repr": "total"
+    },
+    "0x252be01ce00": {
+     "id": "0x252be01ce00",
+     "type": "function",
+     "repr": "show"
+    },
+    "0x252be035300": {
+     "id": "0x252be035300",
+     "type": "dict",
+     "repr": "{'color': 'red', 'size': 3}",
+     "entries": [
+      [
+       {
+        "ref": "0x252be02d3e0"
+       },
+       {
+        "ref": "0x252be02d440"
+       }
+      ],
+      [
+       {
+        "ref": "0x7ffd7f2c1b90"
+       },
+       {
+        "ref": "0x7ffd7f2b49f8"
+       }
+      ]
+     ]
+    },
+    "0x252be02d3e0": {
+     "id": "0x252be02d3e0",
+     "type": "str",
+     "repr": "'color'"
+    },
+    "0x252be02d440": {
+     "id": "0x252be02d440",
+     "type": "str",
+     "repr": "'red'"
+    },
+    "0x7ffd7f2c1b90": {
+     "id": "0x7ffd7f2c1b90",
+     "type": "str",
+     "repr": "'size'"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    }
+   },
+   "stdout": "6\n0\n"
+  },
+  {
+   "line": 6,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 10,
+     "locals": {
+      "total": {
+       "ref": "0x252be01ccc0"
+      },
+      "show": {
+       "ref": "0x252be01ce00"
+      }
+     }
+    },
+    {
+     "fn": "show",
+     "line": 6,
+     "locals": {
+      "opts": {
+       "ref": "0x252be035300"
+      },
+      "k": {
+       "ref": "0x252be02d3e0"
+      },
+      "v": {
+       "ref": "0x252be02d440"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x252be01ccc0": {
+     "id": "0x252be01ccc0",
+     "type": "function",
+     "repr": "total"
+    },
+    "0x252be01ce00": {
+     "id": "0x252be01ce00",
+     "type": "function",
+     "repr": "show"
+    },
+    "0x252be035300": {
+     "id": "0x252be035300",
+     "type": "dict",
+     "repr": "{'color': 'red', 'size': 3}",
+     "entries": [
+      [
+       {
+        "ref": "0x252be02d3e0"
+       },
+       {
+        "ref": "0x252be02d440"
+       }
+      ],
+      [
+       {
+        "ref": "0x7ffd7f2c1b90"
+       },
+       {
+        "ref": "0x7ffd7f2b49f8"
+       }
+      ]
+     ]
+    },
+    "0x252be02d3e0": {
+     "id": "0x252be02d3e0",
+     "type": "str",
+     "repr": "'color'"
+    },
+    "0x252be02d440": {
+     "id": "0x252be02d440",
+     "type": "str",
+     "repr": "'red'"
+    },
+    "0x7ffd7f2c1b90": {
+     "id": "0x7ffd7f2c1b90",
+     "type": "str",
+     "repr": "'size'"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    }
+   },
+   "stdout": "6\n0\n"
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 10,
+     "locals": {
+      "total": {
+       "ref": "0x252be01ccc0"
+      },
+      "show": {
+       "ref": "0x252be01ce00"
+      }
+     }
+    },
+    {
+     "fn": "show",
+     "line": 5,
+     "locals": {
+      "opts": {
+       "ref": "0x252be035300"
+      },
+      "k": {
+       "ref": "0x252be02d3e0"
+      },
+      "v": {
+       "ref": "0x252be02d440"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x252be01ccc0": {
+     "id": "0x252be01ccc0",
+     "type": "function",
+     "repr": "total"
+    },
+    "0x252be01ce00": {
+     "id": "0x252be01ce00",
+     "type": "function",
+     "repr": "show"
+    },
+    "0x252be035300": {
+     "id": "0x252be035300",
+     "type": "dict",
+     "repr": "{'color': 'red', 'size': 3}",
+     "entries": [
+      [
+       {
+        "ref": "0x252be02d3e0"
+       },
+       {
+        "ref": "0x252be02d440"
+       }
+      ],
+      [
+       {
+        "ref": "0x7ffd7f2c1b90"
+       },
+       {
+        "ref": "0x7ffd7f2b49f8"
+       }
+      ]
+     ]
+    },
+    "0x252be02d3e0": {
+     "id": "0x252be02d3e0",
+     "type": "str",
+     "repr": "'color'"
+    },
+    "0x252be02d440": {
+     "id": "0x252be02d440",
+     "type": "str",
+     "repr": "'red'"
+    },
+    "0x7ffd7f2c1b90": {
+     "id": "0x7ffd7f2c1b90",
+     "type": "str",
+     "repr": "'size'"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    }
+   },
+   "stdout": "6\n0\ncolor = red\n"
+  },
+  {
+   "line": 6,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 10,
+     "locals": {
+      "total": {
+       "ref": "0x252be01ccc0"
+      },
+      "show": {
+       "ref": "0x252be01ce00"
+      }
+     }
+    },
+    {
+     "fn": "show",
+     "line": 6,
+     "locals": {
+      "opts": {
+       "ref": "0x252be035300"
+      },
+      "k": {
+       "ref": "0x7ffd7f2c1b90"
+      },
+      "v": {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x252be01ccc0": {
+     "id": "0x252be01ccc0",
+     "type": "function",
+     "repr": "total"
+    },
+    "0x252be01ce00": {
+     "id": "0x252be01ce00",
+     "type": "function",
+     "repr": "show"
+    },
+    "0x252be035300": {
+     "id": "0x252be035300",
+     "type": "dict",
+     "repr": "{'color': 'red', 'size': 3}",
+     "entries": [
+      [
+       {
+        "ref": "0x252be02d3e0"
+       },
+       {
+        "ref": "0x252be02d440"
+       }
+      ],
+      [
+       {
+        "ref": "0x7ffd7f2c1b90"
+       },
+       {
+        "ref": "0x7ffd7f2b49f8"
+       }
+      ]
+     ]
+    },
+    "0x252be02d3e0": {
+     "id": "0x252be02d3e0",
+     "type": "str",
+     "repr": "'color'"
+    },
+    "0x252be02d440": {
+     "id": "0x252be02d440",
+     "type": "str",
+     "repr": "'red'"
+    },
+    "0x7ffd7f2c1b90": {
+     "id": "0x7ffd7f2c1b90",
+     "type": "str",
+     "repr": "'size'"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    }
+   },
+   "stdout": "6\n0\ncolor = red\n"
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 10,
+     "locals": {
+      "total": {
+       "ref": "0x252be01ccc0"
+      },
+      "show": {
+       "ref": "0x252be01ce00"
+      }
+     }
+    },
+    {
+     "fn": "show",
+     "line": 5,
+     "locals": {
+      "opts": {
+       "ref": "0x252be035300"
+      },
+      "k": {
+       "ref": "0x7ffd7f2c1b90"
+      },
+      "v": {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x252be01ccc0": {
+     "id": "0x252be01ccc0",
+     "type": "function",
+     "repr": "total"
+    },
+    "0x252be01ce00": {
+     "id": "0x252be01ce00",
+     "type": "function",
+     "repr": "show"
+    },
+    "0x252be035300": {
+     "id": "0x252be035300",
+     "type": "dict",
+     "repr": "{'color': 'red', 'size': 3}",
+     "entries": [
+      [
+       {
+        "ref": "0x252be02d3e0"
+       },
+       {
+        "ref": "0x252be02d440"
+       }
+      ],
+      [
+       {
+        "ref": "0x7ffd7f2c1b90"
+       },
+       {
+        "ref": "0x7ffd7f2b49f8"
+       }
+      ]
+     ]
+    },
+    "0x252be02d3e0": {
+     "id": "0x252be02d3e0",
+     "type": "str",
+     "repr": "'color'"
+    },
+    "0x252be02d440": {
+     "id": "0x252be02d440",
+     "type": "str",
+     "repr": "'red'"
+    },
+    "0x7ffd7f2c1b90": {
+     "id": "0x7ffd7f2c1b90",
+     "type": "str",
+     "repr": "'size'"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    }
+   },
+   "stdout": "6\n0\ncolor = red\nsize = 3\n"
+  },
+  {
+   "line": 5,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 10,
+     "locals": {
+      "total": {
+       "ref": "0x252be01ccc0"
+      },
+      "show": {
+       "ref": "0x252be01ce00"
+      }
+     }
+    },
+    {
+     "fn": "show",
+     "line": 5,
+     "locals": {
+      "opts": {
+       "ref": "0x252be035300"
+      },
+      "k": {
+       "ref": "0x7ffd7f2c1b90"
+      },
+      "v": {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x252be01ccc0": {
+     "id": "0x252be01ccc0",
+     "type": "function",
+     "repr": "total"
+    },
+    "0x252be01ce00": {
+     "id": "0x252be01ce00",
+     "type": "function",
+     "repr": "show"
+    },
+    "0x252be035300": {
+     "id": "0x252be035300",
+     "type": "dict",
+     "repr": "{'color': 'red', 'size': 3}",
+     "entries": [
+      [
+       {
+        "ref": "0x252be02d3e0"
+       },
+       {
+        "ref": "0x252be02d440"
+       }
+      ],
+      [
+       {
+        "ref": "0x7ffd7f2c1b90"
+       },
+       {
+        "ref": "0x7ffd7f2b49f8"
+       }
+      ]
+     ]
+    },
+    "0x252be02d3e0": {
+     "id": "0x252be02d3e0",
+     "type": "str",
+     "repr": "'color'"
+    },
+    "0x252be02d440": {
+     "id": "0x252be02d440",
+     "type": "str",
+     "repr": "'red'"
+    },
+    "0x7ffd7f2c1b90": {
+     "id": "0x7ffd7f2c1b90",
+     "type": "str",
+     "repr": "'size'"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    }
+   },
+   "stdout": "6\n0\ncolor = red\nsize = 3\n"
+  },
+  {
+   "line": 11,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 11,
+     "locals": {
+      "total": {
+       "ref": "0x252be01ccc0"
+      },
+      "show": {
+       "ref": "0x252be01ce00"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x252be01ccc0": {
+     "id": "0x252be01ccc0",
+     "type": "function",
+     "repr": "total"
+    },
+    "0x252be01ce00": {
+     "id": "0x252be01ce00",
+     "type": "function",
+     "repr": "show"
+    }
+   },
+   "stdout": "6\n0\ncolor = red\nsize = 3\n"
+  },
+  {
+   "line": 12,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 12,
+     "locals": {
+      "total": {
+       "ref": "0x252be01ccc0"
+      },
+      "show": {
+       "ref": "0x252be01ce00"
+      },
+      "values": {
+       "ref": "0x252be041140"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x252be01ccc0": {
+     "id": "0x252be01ccc0",
+     "type": "function",
+     "repr": "total"
+    },
+    "0x252be01ce00": {
+     "id": "0x252be01ce00",
+     "type": "function",
+     "repr": "show"
+    },
+    "0x252be041140": {
+     "id": "0x252be041140",
+     "type": "list",
+     "repr": "[4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    }
+   },
+   "stdout": "6\n0\ncolor = red\nsize = 3\n",
+   "note": "호출할 때 * 는 반대 — 리스트를 풀어서 따로따로 넘긴다"
+  },
+  {
+   "line": 1,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 12,
+     "locals": {
+      "total": {
+       "ref": "0x252be01ccc0"
+      },
+      "show": {
+       "ref": "0x252be01ce00"
+      },
+      "values": {
+       "ref": "0x252be041140"
+      }
+     }
+    },
+    {
+     "fn": "total",
+     "line": 1,
+     "locals": {
+      "nums": {
+       "ref": "0x252be033240"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x252be01ccc0": {
+     "id": "0x252be01ccc0",
+     "type": "function",
+     "repr": "total"
+    },
+    "0x252be01ce00": {
+     "id": "0x252be01ce00",
+     "type": "function",
+     "repr": "show"
+    },
+    "0x252be041140": {
+     "id": "0x252be041140",
+     "type": "list",
+     "repr": "[4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    },
+    "0x252be033240": {
+     "id": "0x252be033240",
+     "type": "tuple",
+     "repr": "(4, 5, 6)",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    }
+   },
+   "stdout": "6\n0\ncolor = red\nsize = 3\n",
+   "note": "위치 인자를 몇 개든 튜플 nums 로 받는다"
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 12,
+     "locals": {
+      "total": {
+       "ref": "0x252be01ccc0"
+      },
+      "show": {
+       "ref": "0x252be01ce00"
+      },
+      "values": {
+       "ref": "0x252be041140"
+      }
+     }
+    },
+    {
+     "fn": "total",
+     "line": 2,
+     "locals": {
+      "nums": {
+       "ref": "0x252be033240"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x252be01ccc0": {
+     "id": "0x252be01ccc0",
+     "type": "function",
+     "repr": "total"
+    },
+    "0x252be01ce00": {
+     "id": "0x252be01ce00",
+     "type": "function",
+     "repr": "show"
+    },
+    "0x252be041140": {
+     "id": "0x252be041140",
+     "type": "list",
+     "repr": "[4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    },
+    "0x252be033240": {
+     "id": "0x252be033240",
+     "type": "tuple",
+     "repr": "(4, 5, 6)",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    }
+   },
+   "stdout": "6\n0\ncolor = red\nsize = 3\n"
+  },
+  {
+   "line": 2,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 12,
+     "locals": {
+      "total": {
+       "ref": "0x252be01ccc0"
+      },
+      "show": {
+       "ref": "0x252be01ce00"
+      },
+      "values": {
+       "ref": "0x252be041140"
+      }
+     }
+    },
+    {
+     "fn": "total",
+     "line": 2,
+     "locals": {
+      "nums": {
+       "ref": "0x252be033240"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x252be01ccc0": {
+     "id": "0x252be01ccc0",
+     "type": "function",
+     "repr": "total"
+    },
+    "0x252be01ce00": {
+     "id": "0x252be01ce00",
+     "type": "function",
+     "repr": "show"
+    },
+    "0x252be041140": {
+     "id": "0x252be041140",
+     "type": "list",
+     "repr": "[4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    },
+    "0x252be033240": {
+     "id": "0x252be033240",
+     "type": "tuple",
+     "repr": "(4, 5, 6)",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    }
+   },
+   "stdout": "6\n0\ncolor = red\nsize = 3\n",
+   "retval": "15"
+  },
+  {
+   "line": 13,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 13,
+     "locals": {
+      "total": {
+       "ref": "0x252be01ccc0"
+      },
+      "show": {
+       "ref": "0x252be01ce00"
+      },
+      "values": {
+       "ref": "0x252be041140"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x252be01ccc0": {
+     "id": "0x252be01ccc0",
+     "type": "function",
+     "repr": "total"
+    },
+    "0x252be01ce00": {
+     "id": "0x252be01ce00",
+     "type": "function",
+     "repr": "show"
+    },
+    "0x252be041140": {
+     "id": "0x252be041140",
+     "type": "list",
+     "repr": "[4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    }
+   },
+   "stdout": "6\n0\ncolor = red\nsize = 3\n15\n"
+  },
+  {
+   "line": 14,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 14,
+     "locals": {
+      "total": {
+       "ref": "0x252be01ccc0"
+      },
+      "show": {
+       "ref": "0x252be01ce00"
+      },
+      "values": {
+       "ref": "0x252be041140"
+      },
+      "config": {
+       "ref": "0x252be043d40"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x252be01ccc0": {
+     "id": "0x252be01ccc0",
+     "type": "function",
+     "repr": "total"
+    },
+    "0x252be01ce00": {
+     "id": "0x252be01ce00",
+     "type": "function",
+     "repr": "show"
+    },
+    "0x252be041140": {
+     "id": "0x252be041140",
+     "type": "list",
+     "repr": "[4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    },
+    "0x252be043d40": {
+     "id": "0x252be043d40",
+     "type": "dict",
+     "repr": "{'color': 'blue'}",
+     "entries": [
+      [
+       {
+        "ref": "0x252be02d3e0"
+       },
+       {
+        "ref": "0x252be02d620"
+       }
+      ]
+     ]
+    },
+    "0x252be02d3e0": {
+     "id": "0x252be02d3e0",
+     "type": "str",
+     "repr": "'color'"
+    },
+    "0x252be02d620": {
+     "id": "0x252be02d620",
+     "type": "str",
+     "repr": "'blue'"
+    }
+   },
+   "stdout": "6\n0\ncolor = red\nsize = 3\n15\n",
+   "note": "** 는 딕셔너리를 키워드 인자로 풀어 넘긴다"
+  },
+  {
+   "line": 4,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 14,
+     "locals": {
+      "total": {
+       "ref": "0x252be01ccc0"
+      },
+      "show": {
+       "ref": "0x252be01ce00"
+      },
+      "values": {
+       "ref": "0x252be041140"
+      },
+      "config": {
+       "ref": "0x252be043d40"
+      }
+     }
+    },
+    {
+     "fn": "show",
+     "line": 4,
+     "locals": {
+      "opts": {
+       "ref": "0x252be0487c0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x252be01ccc0": {
+     "id": "0x252be01ccc0",
+     "type": "function",
+     "repr": "total"
+    },
+    "0x252be01ce00": {
+     "id": "0x252be01ce00",
+     "type": "function",
+     "repr": "show"
+    },
+    "0x252be041140": {
+     "id": "0x252be041140",
+     "type": "list",
+     "repr": "[4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    },
+    "0x252be043d40": {
+     "id": "0x252be043d40",
+     "type": "dict",
+     "repr": "{'color': 'blue'}",
+     "entries": [
+      [
+       {
+        "ref": "0x252be02d3e0"
+       },
+       {
+        "ref": "0x252be02d620"
+       }
+      ]
+     ]
+    },
+    "0x252be02d3e0": {
+     "id": "0x252be02d3e0",
+     "type": "str",
+     "repr": "'color'"
+    },
+    "0x252be02d620": {
+     "id": "0x252be02d620",
+     "type": "str",
+     "repr": "'blue'"
+    },
+    "0x252be0487c0": {
+     "id": "0x252be0487c0",
+     "type": "dict",
+     "repr": "{'color': 'blue'}",
+     "entries": [
+      [
+       {
+        "ref": "0x252be02d3e0"
+       },
+       {
+        "ref": "0x252be02d620"
+       }
+      ]
+     ]
+    }
+   },
+   "stdout": "6\n0\ncolor = red\nsize = 3\n15\n",
+   "note": "키워드 인자를 몇 개든 딕셔너리 opts 로 받는다"
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 14,
+     "locals": {
+      "total": {
+       "ref": "0x252be01ccc0"
+      },
+      "show": {
+       "ref": "0x252be01ce00"
+      },
+      "values": {
+       "ref": "0x252be041140"
+      },
+      "config": {
+       "ref": "0x252be043d40"
+      }
+     }
+    },
+    {
+     "fn": "show",
+     "line": 5,
+     "locals": {
+      "opts": {
+       "ref": "0x252be0487c0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x252be01ccc0": {
+     "id": "0x252be01ccc0",
+     "type": "function",
+     "repr": "total"
+    },
+    "0x252be01ce00": {
+     "id": "0x252be01ce00",
+     "type": "function",
+     "repr": "show"
+    },
+    "0x252be041140": {
+     "id": "0x252be041140",
+     "type": "list",
+     "repr": "[4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    },
+    "0x252be043d40": {
+     "id": "0x252be043d40",
+     "type": "dict",
+     "repr": "{'color': 'blue'}",
+     "entries": [
+      [
+       {
+        "ref": "0x252be02d3e0"
+       },
+       {
+        "ref": "0x252be02d620"
+       }
+      ]
+     ]
+    },
+    "0x252be02d3e0": {
+     "id": "0x252be02d3e0",
+     "type": "str",
+     "repr": "'color'"
+    },
+    "0x252be02d620": {
+     "id": "0x252be02d620",
+     "type": "str",
+     "repr": "'blue'"
+    },
+    "0x252be0487c0": {
+     "id": "0x252be0487c0",
+     "type": "dict",
+     "repr": "{'color': 'blue'}",
+     "entries": [
+      [
+       {
+        "ref": "0x252be02d3e0"
+       },
+       {
+        "ref": "0x252be02d620"
+       }
+      ]
+     ]
+    }
+   },
+   "stdout": "6\n0\ncolor = red\nsize = 3\n15\n"
+  },
+  {
+   "line": 6,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 14,
+     "locals": {
+      "total": {
+       "ref": "0x252be01ccc0"
+      },
+      "show": {
+       "ref": "0x252be01ce00"
+      },
+      "values": {
+       "ref": "0x252be041140"
+      },
+      "config": {
+       "ref": "0x252be043d40"
+      }
+     }
+    },
+    {
+     "fn": "show",
+     "line": 6,
+     "locals": {
+      "opts": {
+       "ref": "0x252be0487c0"
+      },
+      "k": {
+       "ref": "0x252be02d3e0"
+      },
+      "v": {
+       "ref": "0x252be02d620"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x252be01ccc0": {
+     "id": "0x252be01ccc0",
+     "type": "function",
+     "repr": "total"
+    },
+    "0x252be01ce00": {
+     "id": "0x252be01ce00",
+     "type": "function",
+     "repr": "show"
+    },
+    "0x252be041140": {
+     "id": "0x252be041140",
+     "type": "list",
+     "repr": "[4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    },
+    "0x252be043d40": {
+     "id": "0x252be043d40",
+     "type": "dict",
+     "repr": "{'color': 'blue'}",
+     "entries": [
+      [
+       {
+        "ref": "0x252be02d3e0"
+       },
+       {
+        "ref": "0x252be02d620"
+       }
+      ]
+     ]
+    },
+    "0x252be02d3e0": {
+     "id": "0x252be02d3e0",
+     "type": "str",
+     "repr": "'color'"
+    },
+    "0x252be02d620": {
+     "id": "0x252be02d620",
+     "type": "str",
+     "repr": "'blue'"
+    },
+    "0x252be0487c0": {
+     "id": "0x252be0487c0",
+     "type": "dict",
+     "repr": "{'color': 'blue'}",
+     "entries": [
+      [
+       {
+        "ref": "0x252be02d3e0"
+       },
+       {
+        "ref": "0x252be02d620"
+       }
+      ]
+     ]
+    }
+   },
+   "stdout": "6\n0\ncolor = red\nsize = 3\n15\n"
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 14,
+     "locals": {
+      "total": {
+       "ref": "0x252be01ccc0"
+      },
+      "show": {
+       "ref": "0x252be01ce00"
+      },
+      "values": {
+       "ref": "0x252be041140"
+      },
+      "config": {
+       "ref": "0x252be043d40"
+      }
+     }
+    },
+    {
+     "fn": "show",
+     "line": 5,
+     "locals": {
+      "opts": {
+       "ref": "0x252be0487c0"
+      },
+      "k": {
+       "ref": "0x252be02d3e0"
+      },
+      "v": {
+       "ref": "0x252be02d620"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x252be01ccc0": {
+     "id": "0x252be01ccc0",
+     "type": "function",
+     "repr": "total"
+    },
+    "0x252be01ce00": {
+     "id": "0x252be01ce00",
+     "type": "function",
+     "repr": "show"
+    },
+    "0x252be041140": {
+     "id": "0x252be041140",
+     "type": "list",
+     "repr": "[4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    },
+    "0x252be043d40": {
+     "id": "0x252be043d40",
+     "type": "dict",
+     "repr": "{'color': 'blue'}",
+     "entries": [
+      [
+       {
+        "ref": "0x252be02d3e0"
+       },
+       {
+        "ref": "0x252be02d620"
+       }
+      ]
+     ]
+    },
+    "0x252be02d3e0": {
+     "id": "0x252be02d3e0",
+     "type": "str",
+     "repr": "'color'"
+    },
+    "0x252be02d620": {
+     "id": "0x252be02d620",
+     "type": "str",
+     "repr": "'blue'"
+    },
+    "0x252be0487c0": {
+     "id": "0x252be0487c0",
+     "type": "dict",
+     "repr": "{'color': 'blue'}",
+     "entries": [
+      [
+       {
+        "ref": "0x252be02d3e0"
+       },
+       {
+        "ref": "0x252be02d620"
+       }
+      ]
+     ]
+    }
+   },
+   "stdout": "6\n0\ncolor = red\nsize = 3\n15\ncolor = blue\n"
+  },
+  {
+   "line": 5,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 14,
+     "locals": {
+      "total": {
+       "ref": "0x252be01ccc0"
+      },
+      "show": {
+       "ref": "0x252be01ce00"
+      },
+      "values": {
+       "ref": "0x252be041140"
+      },
+      "config": {
+       "ref": "0x252be043d40"
+      }
+     }
+    },
+    {
+     "fn": "show",
+     "line": 5,
+     "locals": {
+      "opts": {
+       "ref": "0x252be0487c0"
+      },
+      "k": {
+       "ref": "0x252be02d3e0"
+      },
+      "v": {
+       "ref": "0x252be02d620"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x252be01ccc0": {
+     "id": "0x252be01ccc0",
+     "type": "function",
+     "repr": "total"
+    },
+    "0x252be01ce00": {
+     "id": "0x252be01ce00",
+     "type": "function",
+     "repr": "show"
+    },
+    "0x252be041140": {
+     "id": "0x252be041140",
+     "type": "list",
+     "repr": "[4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    },
+    "0x252be043d40": {
+     "id": "0x252be043d40",
+     "type": "dict",
+     "repr": "{'color': 'blue'}",
+     "entries": [
+      [
+       {
+        "ref": "0x252be02d3e0"
+       },
+       {
+        "ref": "0x252be02d620"
+       }
+      ]
+     ]
+    },
+    "0x252be02d3e0": {
+     "id": "0x252be02d3e0",
+     "type": "str",
+     "repr": "'color'"
+    },
+    "0x252be02d620": {
+     "id": "0x252be02d620",
+     "type": "str",
+     "repr": "'blue'"
+    },
+    "0x252be0487c0": {
+     "id": "0x252be0487c0",
+     "type": "dict",
+     "repr": "{'color': 'blue'}",
+     "entries": [
+      [
+       {
+        "ref": "0x252be02d3e0"
+       },
+       {
+        "ref": "0x252be02d620"
+       }
+      ]
+     ]
+    }
+   },
+   "stdout": "6\n0\ncolor = red\nsize = 3\n15\ncolor = blue\n"
+  },
+  {
+   "line": 14,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 14,
+     "locals": {
+      "total": {
+       "ref": "0x252be01ccc0"
+      },
+      "show": {
+       "ref": "0x252be01ce00"
+      },
+      "values": {
+       "ref": "0x252be041140"
+      },
+      "config": {
+       "ref": "0x252be043d40"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x252be01ccc0": {
+     "id": "0x252be01ccc0",
+     "type": "function",
+     "repr": "total"
+    },
+    "0x252be01ce00": {
+     "id": "0x252be01ce00",
+     "type": "function",
+     "repr": "show"
+    },
+    "0x252be041140": {
+     "id": "0x252be041140",
+     "type": "list",
+     "repr": "[4, 5, 6]",
+     "items": [
+      {
+       "ref": "0x7ffd7f2b4a18"
+      },
+      {
+       "ref": "0x7ffd7f2b4a38"
+      },
+      {
+       "ref": "0x7ffd7f2b4a58"
+      }
+     ]
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    },
+    "0x7ffd7f2b4a38": {
+     "id": "0x7ffd7f2b4a38",
+     "type": "int",
+     "repr": "5"
+    },
+    "0x7ffd7f2b4a58": {
+     "id": "0x7ffd7f2b4a58",
+     "type": "int",
+     "repr": "6"
+    },
+    "0x252be043d40": {
+     "id": "0x252be043d40",
+     "type": "dict",
+     "repr": "{'color': 'blue'}",
+     "entries": [
+      [
+       {
+        "ref": "0x252be02d3e0"
+       },
+       {
+        "ref": "0x252be02d620"
+       }
+      ]
+     ]
+    },
+    "0x252be02d3e0": {
+     "id": "0x252be02d3e0",
+     "type": "str",
+     "repr": "'color'"
+    },
+    "0x252be02d620": {
+     "id": "0x252be02d620",
+     "type": "str",
+     "repr": "'blue'"
+    }
+   },
+   "stdout": "6\n0\ncolor = red\nsize = 3\n15\ncolor = blue\n"
+  }
+ ],
+ "v": 1
+}

@@ -42,17 +42,17 @@ export function buildDynArrayScene() {
   const script = s.build();
   const M = s.marks;
 
-  const cellW = 54, cellH = 54, gap = 6;
+  const cellW = 62, cellH = 62, gap = 7;
   const render = (t: number) => {
     let cap = 0, len = 0, moving = 0, copyP = 0, oldCap = 0, lastAppendT = -1, reallocAt = -1, copies = 0;
     for (const e of events) {
       if (t < e.t) break;
-      if (e.kind === "realloc") { oldCap = cap; cap = e.cap!; reallocAt = e.t; copies += len; moving = len; copyP = seg(t, e.t + 200, 1100, ease.inOut); }
+      if (e.kind === "realloc") { oldCap = cap; cap = e.cap!; reallocAt = e.t; copies += len; moving = len; copyP = seg(t, e.t + 500, 1800, ease.inOut); }
       else { len = e.i + 1; lastAppendT = e.t; }
     }
-    const inRealloc = reallocAt >= 0 && t - reallocAt < 1500 && moving > 0;
+    const inRealloc = reallocAt >= 0 && t - reallocAt < 3200 && moving > 0;
     const newP = seg(t, reallocAt, 400, ease.outBack);
-    const x0 = 120, yOld = 150, yNew = 300;
+    const x0 = 100, yOld = 130, yNew = 290;
     const yMain = inRealloc ? yNew : 200;
     const costP = seg(t, M.cost, 500);
 
@@ -61,7 +61,7 @@ export function buildDynArrayScene() {
         <text x={x0} y={70} className="st-type">len(nums) = {len}   ·   할당된 칸 = {cap}</text>
         {/* 이사 중이면 옛 묶음 */}
         {inRealloc && oldCap > 0 && (
-          <g opacity={1 - seg(t, reallocAt + 1300, 300)}>
+          <g opacity={1 - seg(t, reallocAt + 2800, 350)}>
             <text x={x0} y={yOld - 14} className="st-m">옛 묶음 ({oldCap}칸) — 꽉 참</text>
             {Array.from({ length: oldCap }, (_, i) => (
               <g key={i} transform={`translate(${x0 + i * (cellW + gap)} ${yOld})`}>

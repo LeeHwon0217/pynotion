@@ -37,14 +37,14 @@
      "line": 2,
      "locals": {
       "s": {
-       "ref": "0x25d4f251bf0"
+       "ref": "0x1a8c3571bf0"
       }
      }
     }
    ],
    "heap": {
-    "0x25d4f251bf0": {
-     "id": "0x25d4f251bf0",
+    "0x1a8c3571bf0": {
+     "id": "0x1a8c3571bf0",
      "type": "str",
      "repr": "'  Hello, World  '"
     }
@@ -61,14 +61,14 @@
      "line": 3,
      "locals": {
       "s": {
-       "ref": "0x25d4f251bf0"
+       "ref": "0x1a8c3571bf0"
       }
      }
     }
    ],
    "heap": {
-    "0x25d4f251bf0": {
-     "id": "0x25d4f251bf0",
+    "0x1a8c3571bf0": {
+     "id": "0x1a8c3571bf0",
      "type": "str",
      "repr": "'  Hello, World  '"
     }
@@ -84,14 +84,14 @@
      "line": 4,
      "locals": {
       "s": {
-       "ref": "0x25d4f251bf0"
+       "ref": "0x1a8c3571bf0"
       }
      }
     }
    ],
    "heap": {
-    "0x25d4f251bf0": {
-     "id": "0x25d4f251bf0",
+    "0x1a8c3571bf0": {
+     "id": "0x1a8c3571bf0",
      "type": "str",
      "repr": "'  Hello, World  '"
     }
@@ -108,22 +108,22 @@
      "line": 5,
      "locals": {
       "s": {
-       "ref": "0x25d4f251bf0"
+       "ref": "0x1a8c3571bf0"
       },
       "words": {
-       "ref": "0x25d4f01c7c0"
+       "ref": "0x1a8c333c7c0"
       }
      }
     }
    ],
    "heap": {
-    "0x25d4f251bf0": {
-     "id": "0x25d4f251bf0",
+    "0x1a8c3571bf0": {
+     "id": "0x1a8c3571bf0",
      "type": "str",
      "repr": "'  Hello, World  '"
     },
-    "0x25d4f01c7c0": {
-     "id": "0x25d4f01c7c0",
+    "0x1a8c333c7c0": {
+     "id": "0x1a8c333c7c0",
      "type": "list",
      "repr": "['a', 'b', '', 'c']",
      "items": [
@@ -173,22 +173,22 @@
      "line": 6,
      "locals": {
       "s": {
-       "ref": "0x25d4f251bf0"
+       "ref": "0x1a8c3571bf0"
       },
       "words": {
-       "ref": "0x25d4f01c7c0"
+       "ref": "0x1a8c333c7c0"
       }
      }
     }
    ],
    "heap": {
-    "0x25d4f251bf0": {
-     "id": "0x25d4f251bf0",
+    "0x1a8c3571bf0": {
+     "id": "0x1a8c3571bf0",
      "type": "str",
      "repr": "'  Hello, World  '"
     },
-    "0x25d4f01c7c0": {
-     "id": "0x25d4f01c7c0",
+    "0x1a8c333c7c0": {
+     "id": "0x1a8c333c7c0",
      "type": "list",
      "repr": "['a', 'b', '', 'c']",
      "items": [
@@ -239,22 +239,22 @@
      "line": 7,
      "locals": {
       "s": {
-       "ref": "0x25d4f251bf0"
+       "ref": "0x1a8c3571bf0"
       },
       "words": {
-       "ref": "0x25d4f01c7c0"
+       "ref": "0x1a8c333c7c0"
       }
      }
     }
    ],
    "heap": {
-    "0x25d4f251bf0": {
-     "id": "0x25d4f251bf0",
+    "0x1a8c3571bf0": {
+     "id": "0x1a8c3571bf0",
      "type": "str",
      "repr": "'  Hello, World  '"
     },
-    "0x25d4f01c7c0": {
-     "id": "0x25d4f01c7c0",
+    "0x1a8c333c7c0": {
+     "id": "0x1a8c333c7c0",
      "type": "list",
      "repr": "['a', 'b', '', 'c']",
      "items": [
@@ -304,22 +304,22 @@
      "line": 8,
      "locals": {
       "s": {
-       "ref": "0x25d4f251bf0"
+       "ref": "0x1a8c3571bf0"
       },
       "words": {
-       "ref": "0x25d4f01c7c0"
+       "ref": "0x1a8c333c7c0"
       }
      }
     }
    ],
    "heap": {
-    "0x25d4f251bf0": {
-     "id": "0x25d4f251bf0",
+    "0x1a8c3571bf0": {
+     "id": "0x1a8c3571bf0",
      "type": "str",
      "repr": "'  Hello, World  '"
     },
-    "0x25d4f01c7c0": {
-     "id": "0x25d4f01c7c0",
+    "0x1a8c333c7c0": {
+     "id": "0x1a8c333c7c0",
      "type": "list",
      "repr": "['a', 'b', '', 'c']",
      "items": [
@@ -370,22 +370,22 @@
      "line": 9,
      "locals": {
       "s": {
-       "ref": "0x25d4f251bf0"
+       "ref": "0x1a8c3571bf0"
       },
       "words": {
-       "ref": "0x25d4f01c7c0"
+       "ref": "0x1a8c333c7c0"
       }
      }
     }
    ],
    "heap": {
-    "0x25d4f251bf0": {
-     "id": "0x25d4f251bf0",
+    "0x1a8c3571bf0": {
+     "id": "0x1a8c3571bf0",
      "type": "str",
      "repr": "'  Hello, World  '"
     },
-    "0x25d4f01c7c0": {
-     "id": "0x25d4f01c7c0",
+    "0x1a8c333c7c0": {
+     "id": "0x1a8c333c7c0",
      "type": "list",
      "repr": "['a', 'b', '', 'c']",
      "items": [
@@ -435,22 +435,22 @@
      "line": 10,
      "locals": {
       "s": {
-       "ref": "0x25d4f251bf0"
+       "ref": "0x1a8c3571bf0"
       },
       "words": {
-       "ref": "0x25d4f01c7c0"
+       "ref": "0x1a8c333c7c0"
       }
      }
     }
    ],
    "heap": {
-    "0x25d4f251bf0": {
-     "id": "0x25d4f251bf0",
+    "0x1a8c3571bf0": {
+     "id": "0x1a8c3571bf0",
      "type": "str",
      "repr": "'  Hello, World  '"
     },
-    "0x25d4f01c7c0": {
-     "id": "0x25d4f01c7c0",
+    "0x1a8c333c7c0": {
+     "id": "0x1a8c333c7c0",
      "type": "list",
      "repr": "['a', 'b', '', 'c']",
      "items": [
@@ -501,22 +501,22 @@
      "line": 10,
      "locals": {
       "s": {
-       "ref": "0x25d4f251bf0"
+       "ref": "0x1a8c3571bf0"
       },
       "words": {
-       "ref": "0x25d4f01c7c0"
+       "ref": "0x1a8c333c7c0"
       }
      }
     }
    ],
    "heap": {
-    "0x25d4f251bf0": {
-     "id": "0x25d4f251bf0",
+    "0x1a8c3571bf0": {
+     "id": "0x1a8c3571bf0",
      "type": "str",
      "repr": "'  Hello, World  '"
     },
-    "0x25d4f01c7c0": {
-     "id": "0x25d4f01c7c0",
+    "0x1a8c333c7c0": {
+     "id": "0x1a8c333c7c0",
      "type": "list",
      "repr": "['a', 'b', '', 'c']",
      "items": [

@@ -1,0 +1,2422 @@
+{
+ "id": "p4-lambda",
+ "code": "def square(x):\n    return x * x\n\nsq = lambda x: x * x\nprint(square(3), sq(3))\nf = square\nprint(f(4))\nops = {\"더하기\": lambda a, b: a + b, \"곱하기\": lambda a, b: a * b}\nprint(ops[\"곱하기\"](3, 4))\nwords = [\"bb\", \"a\", \"ccc\"]\nprint(sorted(words, key=lambda w: len(w)))",
+ "steps": [
+  {
+   "line": 0,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 0,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "square": {
+       "ref": "0x1e3da7fc9a0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1e3da7fc9a0": {
+     "id": "0x1e3da7fc9a0",
+     "type": "function",
+     "repr": "square"
+    }
+   },
+   "stdout": "",
+   "note": "이름 없는 한 줄 함수 — def 와 같은 함수 객체"
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "square": {
+       "ref": "0x1e3da7fc9a0"
+      },
+      "sq": {
+       "ref": "0x1e3da7fcae0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1e3da7fc9a0": {
+     "id": "0x1e3da7fc9a0",
+     "type": "function",
+     "repr": "square"
+    },
+    "0x1e3da7fcae0": {
+     "id": "0x1e3da7fcae0",
+     "type": "function",
+     "repr": "<lambda>"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "square": {
+       "ref": "0x1e3da7fc9a0"
+      },
+      "sq": {
+       "ref": "0x1e3da7fcae0"
+      }
+     }
+    },
+    {
+     "fn": "square",
+     "line": 1,
+     "locals": {
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1e3da7fc9a0": {
+     "id": "0x1e3da7fc9a0",
+     "type": "function",
+     "repr": "square"
+    },
+    "0x1e3da7fcae0": {
+     "id": "0x1e3da7fcae0",
+     "type": "function",
+     "repr": "<lambda>"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "square": {
+       "ref": "0x1e3da7fc9a0"
+      },
+      "sq": {
+       "ref": "0x1e3da7fcae0"
+      }
+     }
+    },
+    {
+     "fn": "square",
+     "line": 2,
+     "locals": {
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1e3da7fc9a0": {
+     "id": "0x1e3da7fc9a0",
+     "type": "function",
+     "repr": "square"
+    },
+    "0x1e3da7fcae0": {
+     "id": "0x1e3da7fcae0",
+     "type": "function",
+     "repr": "<lambda>"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 2,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "square": {
+       "ref": "0x1e3da7fc9a0"
+      },
+      "sq": {
+       "ref": "0x1e3da7fcae0"
+      }
+     }
+    },
+    {
+     "fn": "square",
+     "line": 2,
+     "locals": {
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1e3da7fc9a0": {
+     "id": "0x1e3da7fc9a0",
+     "type": "function",
+     "repr": "square"
+    },
+    "0x1e3da7fcae0": {
+     "id": "0x1e3da7fcae0",
+     "type": "function",
+     "repr": "<lambda>"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    }
+   },
+   "stdout": "",
+   "retval": "9"
+  },
+  {
+   "line": 4,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "square": {
+       "ref": "0x1e3da7fc9a0"
+      },
+      "sq": {
+       "ref": "0x1e3da7fcae0"
+      }
+     }
+    },
+    {
+     "fn": "<lambda>",
+     "line": 4,
+     "locals": {
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1e3da7fc9a0": {
+     "id": "0x1e3da7fc9a0",
+     "type": "function",
+     "repr": "square"
+    },
+    "0x1e3da7fcae0": {
+     "id": "0x1e3da7fcae0",
+     "type": "function",
+     "repr": "<lambda>"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    }
+   },
+   "stdout": "",
+   "note": "이름 없는 한 줄 함수 — def 와 같은 함수 객체"
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "square": {
+       "ref": "0x1e3da7fc9a0"
+      },
+      "sq": {
+       "ref": "0x1e3da7fcae0"
+      }
+     }
+    },
+    {
+     "fn": "<lambda>",
+     "line": 4,
+     "locals": {
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1e3da7fc9a0": {
+     "id": "0x1e3da7fc9a0",
+     "type": "function",
+     "repr": "square"
+    },
+    "0x1e3da7fcae0": {
+     "id": "0x1e3da7fcae0",
+     "type": "function",
+     "repr": "<lambda>"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    }
+   },
+   "stdout": "",
+   "note": "이름 없는 한 줄 함수 — def 와 같은 함수 객체"
+  },
+  {
+   "line": 4,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "square": {
+       "ref": "0x1e3da7fc9a0"
+      },
+      "sq": {
+       "ref": "0x1e3da7fcae0"
+      }
+     }
+    },
+    {
+     "fn": "<lambda>",
+     "line": 4,
+     "locals": {
+      "x": {
+       "ref": "0x7ffd7f2b49f8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1e3da7fc9a0": {
+     "id": "0x1e3da7fc9a0",
+     "type": "function",
+     "repr": "square"
+    },
+    "0x1e3da7fcae0": {
+     "id": "0x1e3da7fcae0",
+     "type": "function",
+     "repr": "<lambda>"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    }
+   },
+   "stdout": "",
+   "retval": "9"
+  },
+  {
+   "line": 6,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "square": {
+       "ref": "0x1e3da7fc9a0"
+      },
+      "sq": {
+       "ref": "0x1e3da7fcae0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1e3da7fc9a0": {
+     "id": "0x1e3da7fc9a0",
+     "type": "function",
+     "repr": "square"
+    },
+    "0x1e3da7fcae0": {
+     "id": "0x1e3da7fcae0",
+     "type": "function",
+     "repr": "<lambda>"
+    }
+   },
+   "stdout": "9 9\n",
+   "note": "함수도 객체 — 이름을 하나 더 붙일 수 있다"
+  },
+  {
+   "line": 7,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 7,
+     "locals": {
+      "square": {
+       "ref": "0x1e3da7fc9a0"
+      },
+      "sq": {
+       "ref": "0x1e3da7fcae0"
+      },
+      "f": {
+       "ref": "0x1e3da7fc9a0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1e3da7fc9a0": {
+     "id": "0x1e3da7fc9a0",
+     "type": "function",
+     "repr": "square"
+    },
+    "0x1e3da7fcae0": {
+     "id": "0x1e3da7fcae0",
+     "type": "function",
+     "repr": "<lambda>"
+    }
+   },
+   "stdout": "9 9\n"
+  },
+  {
+   "line": 1,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 7,
+     "locals": {
+      "square": {
+       "ref": "0x1e3da7fc9a0"
+      },
+      "sq": {
+       "ref": "0x1e3da7fcae0"
+      },
+      "f": {
+       "ref": "0x1e3da7fc9a0"
+      }
+     }
+    },
+    {
+     "fn": "square",
+     "line": 1,
+     "locals": {
+      "x": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1e3da7fc9a0": {
+     "id": "0x1e3da7fc9a0",
+     "type": "function",
+     "repr": "square"
+    },
+    "0x1e3da7fcae0": {
+     "id": "0x1e3da7fcae0",
+     "type": "function",
+     "repr": "<lambda>"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    }
+   },
+   "stdout": "9 9\n"
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 7,
+     "locals": {
+      "square": {
+       "ref": "0x1e3da7fc9a0"
+      },
+      "sq": {
+       "ref": "0x1e3da7fcae0"
+      },
+      "f": {
+       "ref": "0x1e3da7fc9a0"
+      }
+     }
+    },
+    {
+     "fn": "square",
+     "line": 2,
+     "locals": {
+      "x": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1e3da7fc9a0": {
+     "id": "0x1e3da7fc9a0",
+     "type": "function",
+     "repr": "square"
+    },
+    "0x1e3da7fcae0": {
+     "id": "0x1e3da7fcae0",
+     "type": "function",
+     "repr": "<lambda>"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    }
+   },
+   "stdout": "9 9\n"
+  },
+  {
+   "line": 2,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 7,
+     "locals": {
+      "square": {
+       "ref": "0x1e3da7fc9a0"
+      },
+      "sq": {
+       "ref": "0x1e3da7fcae0"
+      },
+      "f": {
+       "ref": "0x1e3da7fc9a0"
+      }
+     }
+    },
+    {
+     "fn": "square",
+     "line": 2,
+     "locals": {
+      "x": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1e3da7fc9a0": {
+     "id": "0x1e3da7fc9a0",
+     "type": "function",
+     "repr": "square"
+    },
+    "0x1e3da7fcae0": {
+     "id": "0x1e3da7fcae0",
+     "type": "function",
+     "repr": "<lambda>"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    }
+   },
+   "stdout": "9 9\n",
+   "retval": "16"
+  },
+  {
+   "line": 8,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 8,
+     "locals": {
+      "square": {
+       "ref": "0x1e3da7fc9a0"
+      },
+      "sq": {
+       "ref": "0x1e3da7fcae0"
+      },
+      "f": {
+       "ref": "0x1e3da7fc9a0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1e3da7fc9a0": {
+     "id": "0x1e3da7fc9a0",
+     "type": "function",
+     "repr": "square"
+    },
+    "0x1e3da7fcae0": {
+     "id": "0x1e3da7fcae0",
+     "type": "function",
+     "repr": "<lambda>"
+    }
+   },
+   "stdout": "9 9\n16\n",
+   "note": "함수를 값으로 담는다"
+  },
+  {
+   "line": 9,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 9,
+     "locals": {
+      "square": {
+       "ref": "0x1e3da7fc9a0"
+      },
+      "sq": {
+       "ref": "0x1e3da7fcae0"
+      },
+      "f": {
+       "ref": "0x1e3da7fc9a0"
+      },
+      "ops": {
+       "ref": "0x1e3da819c40"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1e3da7fc9a0": {
+     "id": "0x1e3da7fc9a0",
+     "type": "function",
+     "repr": "square"
+    },
+    "0x1e3da7fcae0": {
+     "id": "0x1e3da7fcae0",
+     "type": "function",
+     "repr": "<lambda>"
+    },
+    "0x1e3da819c40": {
+     "id": "0x1e3da819c40",
+     "type": "dict",
+     "repr": "{'더하기': <function <lambda> at 0x000001E3DA7FCB8…",
+     "entries": [
+      [
+       {
+        "ref": "0x1e3da8060b0"
+       },
+       {
+        "ref": "0x1e3da7fcb80"
+       }
+      ],
+      [
+       {
+        "ref": "0x1e3da806100"
+       },
+       {
+        "ref": "0x1e3da7fcc20"
+       }
+      ]
+     ]
+    },
+    "0x1e3da8060b0": {
+     "id": "0x1e3da8060b0",
+     "type": "str",
+     "repr": "'더하기'"
+    },
+    "0x1e3da7fcb80": {
+     "id": "0x1e3da7fcb80",
+     "type": "function",
+     "repr": "<lambda>"
+    },
+    "0x1e3da806100": {
+     "id": "0x1e3da806100",
+     "type": "str",
+     "repr": "'곱하기'"
+    },
+    "0x1e3da7fcc20": {
+     "id": "0x1e3da7fcc20",
+     "type": "function",
+     "repr": "<lambda>"
+    }
+   },
+   "stdout": "9 9\n16\n"
+  },
+  {
+   "line": 8,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 9,
+     "locals": {
+      "square": {
+       "ref": "0x1e3da7fc9a0"
+      },
+      "sq": {
+       "ref": "0x1e3da7fcae0"
+      },
+      "f": {
+       "ref": "0x1e3da7fc9a0"
+      },
+      "ops": {
+       "ref": "0x1e3da819c40"
+      }
+     }
+    },
+    {
+     "fn": "<lambda>",
+     "line": 8,
+     "locals": {
+      "a": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "b": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1e3da7fc9a0": {
+     "id": "0x1e3da7fc9a0",
+     "type": "function",
+     "repr": "square"
+    },
+    "0x1e3da7fcae0": {
+     "id": "0x1e3da7fcae0",
+     "type": "function",
+     "repr": "<lambda>"
+    },
+    "0x1e3da819c40": {
+     "id": "0x1e3da819c40",
+     "type": "dict",
+     "repr": "{'더하기': <function <lambda> at 0x000001E3DA7FCB8…",
+     "entries": [
+      [
+       {
+        "ref": "0x1e3da8060b0"
+       },
+       {
+        "ref": "0x1e3da7fcb80"
+       }
+      ],
+      [
+       {
+        "ref": "0x1e3da806100"
+       },
+       {
+        "ref": "0x1e3da7fcc20"
+       }
+      ]
+     ]
+    },
+    "0x1e3da8060b0": {
+     "id": "0x1e3da8060b0",
+     "type": "str",
+     "repr": "'더하기'"
+    },
+    "0x1e3da7fcb80": {
+     "id": "0x1e3da7fcb80",
+     "type": "function",
+     "repr": "<lambda>"
+    },
+    "0x1e3da806100": {
+     "id": "0x1e3da806100",
+     "type": "str",
+     "repr": "'곱하기'"
+    },
+    "0x1e3da7fcc20": {
+     "id": "0x1e3da7fcc20",
+     "type": "function",
+     "repr": "<lambda>"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    }
+   },
+   "stdout": "9 9\n16\n",
+   "note": "함수를 값으로 담는다"
+  },
+  {
+   "line": 8,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 9,
+     "locals": {
+      "square": {
+       "ref": "0x1e3da7fc9a0"
+      },
+      "sq": {
+       "ref": "0x1e3da7fcae0"
+      },
+      "f": {
+       "ref": "0x1e3da7fc9a0"
+      },
+      "ops": {
+       "ref": "0x1e3da819c40"
+      }
+     }
+    },
+    {
+     "fn": "<lambda>",
+     "line": 8,
+     "locals": {
+      "a": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "b": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1e3da7fc9a0": {
+     "id": "0x1e3da7fc9a0",
+     "type": "function",
+     "repr": "square"
+    },
+    "0x1e3da7fcae0": {
+     "id": "0x1e3da7fcae0",
+     "type": "function",
+     "repr": "<lambda>"
+    },
+    "0x1e3da819c40": {
+     "id": "0x1e3da819c40",
+     "type": "dict",
+     "repr": "{'더하기': <function <lambda> at 0x000001E3DA7FCB8…",
+     "entries": [
+      [
+       {
+        "ref": "0x1e3da8060b0"
+       },
+       {
+        "ref": "0x1e3da7fcb80"
+       }
+      ],
+      [
+       {
+        "ref": "0x1e3da806100"
+       },
+       {
+        "ref": "0x1e3da7fcc20"
+       }
+      ]
+     ]
+    },
+    "0x1e3da8060b0": {
+     "id": "0x1e3da8060b0",
+     "type": "str",
+     "repr": "'더하기'"
+    },
+    "0x1e3da7fcb80": {
+     "id": "0x1e3da7fcb80",
+     "type": "function",
+     "repr": "<lambda>"
+    },
+    "0x1e3da806100": {
+     "id": "0x1e3da806100",
+     "type": "str",
+     "repr": "'곱하기'"
+    },
+    "0x1e3da7fcc20": {
+     "id": "0x1e3da7fcc20",
+     "type": "function",
+     "repr": "<lambda>"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    }
+   },
+   "stdout": "9 9\n16\n",
+   "note": "함수를 값으로 담는다"
+  },
+  {
+   "line": 8,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 9,
+     "locals": {
+      "square": {
+       "ref": "0x1e3da7fc9a0"
+      },
+      "sq": {
+       "ref": "0x1e3da7fcae0"
+      },
+      "f": {
+       "ref": "0x1e3da7fc9a0"
+      },
+      "ops": {
+       "ref": "0x1e3da819c40"
+      }
+     }
+    },
+    {
+     "fn": "<lambda>",
+     "line": 8,
+     "locals": {
+      "a": {
+       "ref": "0x7ffd7f2b49f8"
+      },
+      "b": {
+       "ref": "0x7ffd7f2b4a18"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1e3da7fc9a0": {
+     "id": "0x1e3da7fc9a0",
+     "type": "function",
+     "repr": "square"
+    },
+    "0x1e3da7fcae0": {
+     "id": "0x1e3da7fcae0",
+     "type": "function",
+     "repr": "<lambda>"
+    },
+    "0x1e3da819c40": {
+     "id": "0x1e3da819c40",
+     "type": "dict",
+     "repr": "{'더하기': <function <lambda> at 0x000001E3DA7FCB8…",
+     "entries": [
+      [
+       {
+        "ref": "0x1e3da8060b0"
+       },
+       {
+        "ref": "0x1e3da7fcb80"
+       }
+      ],
+      [
+       {
+        "ref": "0x1e3da806100"
+       },
+       {
+        "ref": "0x1e3da7fcc20"
+       }
+      ]
+     ]
+    },
+    "0x1e3da8060b0": {
+     "id": "0x1e3da8060b0",
+     "type": "str",
+     "repr": "'더하기'"
+    },
+    "0x1e3da7fcb80": {
+     "id": "0x1e3da7fcb80",
+     "type": "function",
+     "repr": "<lambda>"
+    },
+    "0x1e3da806100": {
+     "id": "0x1e3da806100",
+     "type": "str",
+     "repr": "'곱하기'"
+    },
+    "0x1e3da7fcc20": {
+     "id": "0x1e3da7fcc20",
+     "type": "function",
+     "repr": "<lambda>"
+    },
+    "0x7ffd7f2b49f8": {
+     "id": "0x7ffd7f2b49f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd7f2b4a18": {
+     "id": "0x7ffd7f2b4a18",
+     "type": "int",
+     "repr": "4"
+    }
+   },
+   "stdout": "9 9\n16\n",
+   "retval": "12"
+  },
+  {
+   "line": 10,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 10,
+     "locals": {
+      "square": {
+       "ref": "0x1e3da7fc9a0"
+      },
+      "sq": {
+       "ref": "0x1e3da7fcae0"
+      },
+      "f": {
+       "ref": "0x1e3da7fc9a0"
+      },
+      "ops": {
+       "ref": "0x1e3da819c40"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1e3da7fc9a0": {
+     "id": "0x1e3da7fc9a0",
+     "type": "function",
+     "repr": "square"
+    },
+    "0x1e3da7fcae0": {
+     "id": "0x1e3da7fcae0",
+     "type": "function",
+     "repr": "<lambda>"
+    },
+    "0x1e3da819c40": {
+     "id": "0x1e3da819c40",
+     "type": "dict",
+     "repr": "{'더하기': <function <lambda> at 0x000001E3DA7FCB8…",
+     "entries": [
+      [
+       {
+        "ref": "0x1e3da8060b0"
+       },
+       {
+        "ref": "0x1e3da7fcb80"
+       }
+      ],
+      [
+       {
+        "ref": "0x1e3da806100"
+       },
+       {
+        "ref": "0x1e3da7fcc20"
+       }
+      ]
+     ]
+    },
+    "0x1e3da8060b0": {
+     "id": "0x1e3da8060b0",
+     "type": "str",
+     "repr": "'더하기'"
+    },
+    "0x1e3da7fcb80": {
+     "id": "0x1e3da7fcb80",
+     "type": "function",
+     "repr": "<lambda>"
+    },
+    "0x1e3da806100": {
+     "id": "0x1e3da806100",
+     "type": "str",
+     "repr": "'곱하기'"
+    },
+    "0x1e3da7fcc20": {
+     "id": "0x1e3da7fcc20",
+     "type": "function",
+     "repr": "<lambda>"
+    }
+   },
+   "stdout": "9 9\n16\n12\n"
+  },
+  {
+   "line": 11,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 11,
+     "locals": {
+      "square": {
+       "ref": "0x1e3da7fc9a0"
+      },
+      "sq": {
+       "ref": "0x1e3da7fcae0"
+      },
+      "f": {
+       "ref": "0x1e3da7fc9a0"
+      },
+      "ops": {
+       "ref": "0x1e3da819c40"
+      },
+      "words": {
+       "ref": "0x1e3da5dc5c0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1e3da7fc9a0": {
+     "id": "0x1e3da7fc9a0",
+     "type": "function",
+     "repr": "square"
+    },
+    "0x1e3da7fcae0": {
+     "id": "0x1e3da7fcae0",
+     "type": "function",
+     "repr": "<lambda>"
+    },
+    "0x1e3da819c40": {
+     "id": "0x1e3da819c40",
+     "type": "dict",
+     "repr": "{'더하기': <function <lambda> at 0x000001E3DA7FCB8…",
+     "entries": [
+      [
+       {
+        "ref": "0x1e3da8060b0"
+       },
+       {
+        "ref": "0x1e3da7fcb80"
+       }
+      ],
+      [
+       {
+        "ref": "0x1e3da806100"
+       },
+       {
+        "ref": "0x1e3da7fcc20"
+       }
+      ]
+     ]
+    },
+    "0x1e3da8060b0": {
+     "id": "0x1e3da8060b0",
+     "type": "str",
+     "repr": "'더하기'"
+    },
+    "0x1e3da7fcb80": {
+     "id": "0x1e3da7fcb80",
+     "type": "function",
+     "repr": "<lambda>"
+    },
+    "0x1e3da806100": {
+     "id": "0x1e3da806100",
+     "type": "str",
+     "repr": "'곱하기'"
+    },
+    "0x1e3da7fcc20": {
+     "id": "0x1e3da7fcc20",
+     "type": "function",
+     "repr": "<lambda>"
+    },
+    "0x1e3da5dc5c0": {
+     "id": "0x1e3da5dc5c0",
+     "type": "list",
+     "repr": "['bb', 'a', 'ccc']",
+     "items": [
+      {
+       "ref": "0x1e3da80d380"
+      },
+      {
+       "ref": "0x7ffd7f2c3e40"
+      },
+      {
+       "ref": "0x1e3da80d410"
+      }
+     ]
+    },
+    "0x1e3da80d380": {
+     "id": "0x1e3da80d380",
+     "type": "str",
+     "repr": "'bb'"
+    },
+    "0x7ffd7f2c3e40": {
+     "id": "0x7ffd7f2c3e40",
+     "type": "str",
+     "repr": "'a'"
+    },
+    "0x1e3da80d410": {
+     "id": "0x1e3da80d410",
+     "type": "str",
+     "repr": "'ccc'"
+    }
+   },
+   "stdout": "9 9\n16\n12\n",
+   "note": "함수를 인자로 넘긴다 — 가장 흔한 쓰임"
+  },
+  {
+   "line": 11,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 11,
+     "locals": {
+      "square": {
+       "ref": "0x1e3da7fc9a0"
+      },
+      "sq": {
+       "ref": "0x1e3da7fcae0"
+      },
+      "f": {
+       "ref": "0x1e3da7fc9a0"
+      },
+      "ops": {
+       "ref": "0x1e3da819c40"
+      },
+      "words": {
+       "ref": "0x1e3da5dc5c0"
+      }
+     }
+    },
+    {
+     "fn": "<lambda>",
+     "line": 11,
+     "locals": {
+      "w": {
+       "ref": "0x1e3da80d380"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1e3da7fc9a0": {
+     "id": "0x1e3da7fc9a0",
+     "type": "function",
+     "repr": "square"
+    },
+    "0x1e3da7fcae0": {
+     "id": "0x1e3da7fcae0",
+     "type": "function",
+     "repr": "<lambda>"
+    },
+    "0x1e3da819c40": {
+     "id": "0x1e3da819c40",
+     "type": "dict",
+     "repr": "{'더하기': <function <lambda> at 0x000001E3DA7FCB8…",
+     "entries": [
+      [
+       {
+        "ref": "0x1e3da8060b0"
+       },
+       {
+        "ref": "0x1e3da7fcb80"
+       }
+      ],
+      [
+       {
+        "ref": "0x1e3da806100"
+       },
+       {
+        "ref": "0x1e3da7fcc20"
+       }
+      ]
+     ]
+    },
+    "0x1e3da8060b0": {
+     "id": "0x1e3da8060b0",
+     "type": "str",
+     "repr": "'더하기'"
+    },
+    "0x1e3da7fcb80": {
+     "id": "0x1e3da7fcb80",
+     "type": "function",
+     "repr": "<lambda>"
+    },
+    "0x1e3da806100": {
+     "id": "0x1e3da806100",
+     "type": "str",
+     "repr": "'곱하기'"
+    },
+    "0x1e3da7fcc20": {
+     "id": "0x1e3da7fcc20",
+     "type": "function",
+     "repr": "<lambda>"
+    },
+    "0x1e3da5dc5c0": {
+     "id": "0x1e3da5dc5c0",
+     "type": "list",
+     "repr": "['bb', 'a', 'ccc']",
+     "items": [
+      {
+       "ref": "0x1e3da80d380"
+      },
+      {
+       "ref": "0x7ffd7f2c3e40"
+      },
+      {
+       "ref": "0x1e3da80d410"
+      }
+     ]
+    },
+    "0x1e3da80d380": {
+     "id": "0x1e3da80d380",
+     "type": "str",
+     "repr": "'bb'"
+    },
+    "0x7ffd7f2c3e40": {
+     "id": "0x7ffd7f2c3e40",
+     "type": "str",
+     "repr": "'a'"
+    },
+    "0x1e3da80d410": {
+     "id": "0x1e3da80d410",
+     "type": "str",
+     "repr": "'ccc'"
+    }
+   },
+   "stdout": "9 9\n16\n12\n",
+   "note": "함수를 인자로 넘긴다 — 가장 흔한 쓰임"
+  },
+  {
+   "line": 11,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 11,
+     "locals": {
+      "square": {
+       "ref": "0x1e3da7fc9a0"
+      },
+      "sq": {
+       "ref": "0x1e3da7fcae0"
+      },
+      "f": {
+       "ref": "0x1e3da7fc9a0"
+      },
+      "ops": {
+       "ref": "0x1e3da819c40"
+      },
+      "words": {
+       "ref": "0x1e3da5dc5c0"
+      }
+     }
+    },
+    {
+     "fn": "<lambda>",
+     "line": 11,
+     "locals": {
+      "w": {
+       "ref": "0x1e3da80d380"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1e3da7fc9a0": {
+     "id": "0x1e3da7fc9a0",
+     "type": "function",
+     "repr": "square"
+    },
+    "0x1e3da7fcae0": {
+     "id": "0x1e3da7fcae0",
+     "type": "function",
+     "repr": "<lambda>"
+    },
+    "0x1e3da819c40": {
+     "id": "0x1e3da819c40",
+     "type": "dict",
+     "repr": "{'더하기': <function <lambda> at 0x000001E3DA7FCB8…",
+     "entries": [
+      [
+       {
+        "ref": "0x1e3da8060b0"
+       },
+       {
+        "ref": "0x1e3da7fcb80"
+       }
+      ],
+      [
+       {
+        "ref": "0x1e3da806100"
+       },
+       {
+        "ref": "0x1e3da7fcc20"
+       }
+      ]
+     ]
+    },
+    "0x1e3da8060b0": {
+     "id": "0x1e3da8060b0",
+     "type": "str",
+     "repr": "'더하기'"
+    },
+    "0x1e3da7fcb80": {
+     "id": "0x1e3da7fcb80",
+     "type": "function",
+     "repr": "<lambda>"
+    },
+    "0x1e3da806100": {
+     "id": "0x1e3da806100",
+     "type": "str",
+     "repr": "'곱하기'"
+    },
+    "0x1e3da7fcc20": {
+     "id": "0x1e3da7fcc20",
+     "type": "function",
+     "repr": "<lambda>"
+    },
+    "0x1e3da5dc5c0": {
+     "id": "0x1e3da5dc5c0",
+     "type": "list",
+     "repr": "['bb', 'a', 'ccc']",
+     "items": [
+      {
+       "ref": "0x1e3da80d380"
+      },
+      {
+       "ref": "0x7ffd7f2c3e40"
+      },
+      {
+       "ref": "0x1e3da80d410"
+      }
+     ]
+    },
+    "0x1e3da80d380": {
+     "id": "0x1e3da80d380",
+     "type": "str",
+     "repr": "'bb'"
+    },
+    "0x7ffd7f2c3e40": {
+     "id": "0x7ffd7f2c3e40",
+     "type": "str",
+     "repr": "'a'"
+    },
+    "0x1e3da80d410": {
+     "id": "0x1e3da80d410",
+     "type": "str",
+     "repr": "'ccc'"
+    }
+   },
+   "stdout": "9 9\n16\n12\n",
+   "note": "함수를 인자로 넘긴다 — 가장 흔한 쓰임"
+  },
+  {
+   "line": 11,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 11,
+     "locals": {
+      "square": {
+       "ref": "0x1e3da7fc9a0"
+      },
+      "sq": {
+       "ref": "0x1e3da7fcae0"
+      },
+      "f": {
+       "ref": "0x1e3da7fc9a0"
+      },
+      "ops": {
+       "ref": "0x1e3da819c40"
+      },
+      "words": {
+       "ref": "0x1e3da5dc5c0"
+      }
+     }
+    },
+    {
+     "fn": "<lambda>",
+     "line": 11,
+     "locals": {
+      "w": {
+       "ref": "0x1e3da80d380"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1e3da7fc9a0": {
+     "id": "0x1e3da7fc9a0",
+     "type": "function",
+     "repr": "square"
+    },
+    "0x1e3da7fcae0": {
+     "id": "0x1e3da7fcae0",
+     "type": "function",
+     "repr": "<lambda>"
+    },
+    "0x1e3da819c40": {
+     "id": "0x1e3da819c40",
+     "type": "dict",
+     "repr": "{'더하기': <function <lambda> at 0x000001E3DA7FCB8…",
+     "entries": [
+      [
+       {
+        "ref": "0x1e3da8060b0"
+       },
+       {
+        "ref": "0x1e3da7fcb80"
+       }
+      ],
+      [
+       {
+        "ref": "0x1e3da806100"
+       },
+       {
+        "ref": "0x1e3da7fcc20"
+       }
+      ]
+     ]
+    },
+    "0x1e3da8060b0": {
+     "id": "0x1e3da8060b0",
+     "type": "str",
+     "repr": "'더하기'"
+    },
+    "0x1e3da7fcb80": {
+     "id": "0x1e3da7fcb80",
+     "type": "function",
+     "repr": "<lambda>"
+    },
+    "0x1e3da806100": {
+     "id": "0x1e3da806100",
+     "type": "str",
+     "repr": "'곱하기'"
+    },
+    "0x1e3da7fcc20": {
+     "id": "0x1e3da7fcc20",
+     "type": "function",
+     "repr": "<lambda>"
+    },
+    "0x1e3da5dc5c0": {
+     "id": "0x1e3da5dc5c0",
+     "type": "list",
+     "repr": "['bb', 'a', 'ccc']",
+     "items": [
+      {
+       "ref": "0x1e3da80d380"
+      },
+      {
+       "ref": "0x7ffd7f2c3e40"
+      },
+      {
+       "ref": "0x1e3da80d410"
+      }
+     ]
+    },
+    "0x1e3da80d380": {
+     "id": "0x1e3da80d380",
+     "type": "str",
+     "repr": "'bb'"
+    },
+    "0x7ffd7f2c3e40": {
+     "id": "0x7ffd7f2c3e40",
+     "type": "str",
+     "repr": "'a'"
+    },
+    "0x1e3da80d410": {
+     "id": "0x1e3da80d410",
+     "type": "str",
+     "repr": "'ccc'"
+    }
+   },
+   "stdout": "9 9\n16\n12\n",
+   "retval": "2"
+  },
+  {
+   "line": 11,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 11,
+     "locals": {
+      "square": {
+       "ref": "0x1e3da7fc9a0"
+      },
+      "sq": {
+       "ref": "0x1e3da7fcae0"
+      },
+      "f": {
+       "ref": "0x1e3da7fc9a0"
+      },
+      "ops": {
+       "ref": "0x1e3da819c40"
+      },
+      "words": {
+       "ref": "0x1e3da5dc5c0"
+      }
+     }
+    },
+    {
+     "fn": "<lambda>",
+     "line": 11,
+     "locals": {
+      "w": {
+       "ref": "0x7ffd7f2c3e40"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1e3da7fc9a0": {
+     "id": "0x1e3da7fc9a0",
+     "type": "function",
+     "repr": "square"
+    },
+    "0x1e3da7fcae0": {
+     "id": "0x1e3da7fcae0",
+     "type": "function",
+     "repr": "<lambda>"
+    },
+    "0x1e3da819c40": {
+     "id": "0x1e3da819c40",
+     "type": "dict",
+     "repr": "{'더하기': <function <lambda> at 0x000001E3DA7FCB8…",
+     "entries": [
+      [
+       {
+        "ref": "0x1e3da8060b0"
+       },
+       {
+        "ref": "0x1e3da7fcb80"
+       }
+      ],
+      [
+       {
+        "ref": "0x1e3da806100"
+       },
+       {
+        "ref": "0x1e3da7fcc20"
+       }
+      ]
+     ]
+    },
+    "0x1e3da8060b0": {
+     "id": "0x1e3da8060b0",
+     "type": "str",
+     "repr": "'더하기'"
+    },
+    "0x1e3da7fcb80": {
+     "id": "0x1e3da7fcb80",
+     "type": "function",
+     "repr": "<lambda>"
+    },
+    "0x1e3da806100": {
+     "id": "0x1e3da806100",
+     "type": "str",
+     "repr": "'곱하기'"
+    },
+    "0x1e3da7fcc20": {
+     "id": "0x1e3da7fcc20",
+     "type": "function",
+     "repr": "<lambda>"
+    },
+    "0x1e3da5dc5c0": {
+     "id": "0x1e3da5dc5c0",
+     "type": "list",
+     "repr": "['bb', 'a', 'ccc']",
+     "items": [
+      {
+       "ref": "0x1e3da80d380"
+      },
+      {
+       "ref": "0x7ffd7f2c3e40"
+      },
+      {
+       "ref": "0x1e3da80d410"
+      }
+     ]
+    },
+    "0x1e3da80d380": {
+     "id": "0x1e3da80d380",
+     "type": "str",
+     "repr": "'bb'"
+    },
+    "0x7ffd7f2c3e40": {
+     "id": "0x7ffd7f2c3e40",
+     "type": "str",
+     "repr": "'a'"
+    },
+    "0x1e3da80d410": {
+     "id": "0x1e3da80d410",
+     "type": "str",
+     "repr": "'ccc'"
+    }
+   },
+   "stdout": "9 9\n16\n12\n",
+   "note": "함수를 인자로 넘긴다 — 가장 흔한 쓰임"
+  },
+  {
+   "line": 11,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 11,
+     "locals": {
+      "square": {
+       "ref": "0x1e3da7fc9a0"
+      },
+      "sq": {
+       "ref": "0x1e3da7fcae0"
+      },
+      "f": {
+       "ref": "0x1e3da7fc9a0"
+      },
+      "ops": {
+       "ref": "0x1e3da819c40"
+      },
+      "words": {
+       "ref": "0x1e3da5dc5c0"
+      }
+     }
+    },
+    {
+     "fn": "<lambda>",
+     "line": 11,
+     "locals": {
+      "w": {
+       "ref": "0x7ffd7f2c3e40"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1e3da7fc9a0": {
+     "id": "0x1e3da7fc9a0",
+     "type": "function",
+     "repr": "square"
+    },
+    "0x1e3da7fcae0": {
+     "id": "0x1e3da7fcae0",
+     "type": "function",
+     "repr": "<lambda>"
+    },
+    "0x1e3da819c40": {
+     "id": "0x1e3da819c40",
+     "type": "dict",
+     "repr": "{'더하기': <function <lambda> at 0x000001E3DA7FCB8…",
+     "entries": [
+      [
+       {
+        "ref": "0x1e3da8060b0"
+       },
+       {
+        "ref": "0x1e3da7fcb80"
+       }
+      ],
+      [
+       {
+        "ref": "0x1e3da806100"
+       },
+       {
+        "ref": "0x1e3da7fcc20"
+       }
+      ]
+     ]
+    },
+    "0x1e3da8060b0": {
+     "id": "0x1e3da8060b0",
+     "type": "str",
+     "repr": "'더하기'"
+    },
+    "0x1e3da7fcb80": {
+     "id": "0x1e3da7fcb80",
+     "type": "function",
+     "repr": "<lambda>"
+    },
+    "0x1e3da806100": {
+     "id": "0x1e3da806100",
+     "type": "str",
+     "repr": "'곱하기'"
+    },
+    "0x1e3da7fcc20": {
+     "id": "0x1e3da7fcc20",
+     "type": "function",
+     "repr": "<lambda>"
+    },
+    "0x1e3da5dc5c0": {
+     "id": "0x1e3da5dc5c0",
+     "type": "list",
+     "repr": "['bb', 'a', 'ccc']",
+     "items": [
+      {
+       "ref": "0x1e3da80d380"
+      },
+      {
+       "ref": "0x7ffd7f2c3e40"
+      },
+      {
+       "ref": "0x1e3da80d410"
+      }
+     ]
+    },
+    "0x1e3da80d380": {
+     "id": "0x1e3da80d380",
+     "type": "str",
+     "repr": "'bb'"
+    },
+    "0x7ffd7f2c3e40": {
+     "id": "0x7ffd7f2c3e40",
+     "type": "str",
+     "repr": "'a'"
+    },
+    "0x1e3da80d410": {
+     "id": "0x1e3da80d410",
+     "type": "str",
+     "repr": "'ccc'"
+    }
+   },
+   "stdout": "9 9\n16\n12\n",
+   "note": "함수를 인자로 넘긴다 — 가장 흔한 쓰임"
+  },
+  {
+   "line": 11,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 11,
+     "locals": {
+      "square": {
+       "ref": "0x1e3da7fc9a0"
+      },
+      "sq": {
+       "ref": "0x1e3da7fcae0"
+      },
+      "f": {
+       "ref": "0x1e3da7fc9a0"
+      },
+      "ops": {
+       "ref": "0x1e3da819c40"
+      },
+      "words": {
+       "ref": "0x1e3da5dc5c0"
+      }
+     }
+    },
+    {
+     "fn": "<lambda>",
+     "line": 11,
+     "locals": {
+      "w": {
+       "ref": "0x7ffd7f2c3e40"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1e3da7fc9a0": {
+     "id": "0x1e3da7fc9a0",
+     "type": "function",
+     "repr": "square"
+    },
+    "0x1e3da7fcae0": {
+     "id": "0x1e3da7fcae0",
+     "type": "function",
+     "repr": "<lambda>"
+    },
+    "0x1e3da819c40": {
+     "id": "0x1e3da819c40",
+     "type": "dict",
+     "repr": "{'더하기': <function <lambda> at 0x000001E3DA7FCB8…",
+     "entries": [
+      [
+       {
+        "ref": "0x1e3da8060b0"
+       },
+       {
+        "ref": "0x1e3da7fcb80"
+       }
+      ],
+      [
+       {
+        "ref": "0x1e3da806100"
+       },
+       {
+        "ref": "0x1e3da7fcc20"
+       }
+      ]
+     ]
+    },
+    "0x1e3da8060b0": {
+     "id": "0x1e3da8060b0",
+     "type": "str",
+     "repr": "'더하기'"
+    },
+    "0x1e3da7fcb80": {
+     "id": "0x1e3da7fcb80",
+     "type": "function",
+     "repr": "<lambda>"
+    },
+    "0x1e3da806100": {
+     "id": "0x1e3da806100",
+     "type": "str",
+     "repr": "'곱하기'"
+    },
+    "0x1e3da7fcc20": {
+     "id": "0x1e3da7fcc20",
+     "type": "function",
+     "repr": "<lambda>"
+    },
+    "0x1e3da5dc5c0": {
+     "id": "0x1e3da5dc5c0",
+     "type": "list",
+     "repr": "['bb', 'a', 'ccc']",
+     "items": [
+      {
+       "ref": "0x1e3da80d380"
+      },
+      {
+       "ref": "0x7ffd7f2c3e40"
+      },
+      {
+       "ref": "0x1e3da80d410"
+      }
+     ]
+    },
+    "0x1e3da80d380": {
+     "id": "0x1e3da80d380",
+     "type": "str",
+     "repr": "'bb'"
+    },
+    "0x7ffd7f2c3e40": {
+     "id": "0x7ffd7f2c3e40",
+     "type": "str",
+     "repr": "'a'"
+    },
+    "0x1e3da80d410": {
+     "id": "0x1e3da80d410",
+     "type": "str",
+     "repr": "'ccc'"
+    }
+   },
+   "stdout": "9 9\n16\n12\n",
+   "retval": "1"
+  },
+  {
+   "line": 11,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 11,
+     "locals": {
+      "square": {
+       "ref": "0x1e3da7fc9a0"
+      },
+      "sq": {
+       "ref": "0x1e3da7fcae0"
+      },
+      "f": {
+       "ref": "0x1e3da7fc9a0"
+      },
+      "ops": {
+       "ref": "0x1e3da819c40"
+      },
+      "words": {
+       "ref": "0x1e3da5dc5c0"
+      }
+     }
+    },
+    {
+     "fn": "<lambda>",
+     "line": 11,
+     "locals": {
+      "w": {
+       "ref": "0x1e3da80d410"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1e3da7fc9a0": {
+     "id": "0x1e3da7fc9a0",
+     "type": "function",
+     "repr": "square"
+    },
+    "0x1e3da7fcae0": {
+     "id": "0x1e3da7fcae0",
+     "type": "function",
+     "repr": "<lambda>"
+    },
+    "0x1e3da819c40": {
+     "id": "0x1e3da819c40",
+     "type": "dict",
+     "repr": "{'더하기': <function <lambda> at 0x000001E3DA7FCB8…",
+     "entries": [
+      [
+       {
+        "ref": "0x1e3da8060b0"
+       },
+       {
+        "ref": "0x1e3da7fcb80"
+       }
+      ],
+      [
+       {
+        "ref": "0x1e3da806100"
+       },
+       {
+        "ref": "0x1e3da7fcc20"
+       }
+      ]
+     ]
+    },
+    "0x1e3da8060b0": {
+     "id": "0x1e3da8060b0",
+     "type": "str",
+     "repr": "'더하기'"
+    },
+    "0x1e3da7fcb80": {
+     "id": "0x1e3da7fcb80",
+     "type": "function",
+     "repr": "<lambda>"
+    },
+    "0x1e3da806100": {
+     "id": "0x1e3da806100",
+     "type": "str",
+     "repr": "'곱하기'"
+    },
+    "0x1e3da7fcc20": {
+     "id": "0x1e3da7fcc20",
+     "type": "function",
+     "repr": "<lambda>"
+    },
+    "0x1e3da5dc5c0": {
+     "id": "0x1e3da5dc5c0",
+     "type": "list",
+     "repr": "['bb', 'a', 'ccc']",
+     "items": [
+      {
+       "ref": "0x1e3da80d380"
+      },
+      {
+       "ref": "0x7ffd7f2c3e40"
+      },
+      {
+       "ref": "0x1e3da80d410"
+      }
+     ]
+    },
+    "0x1e3da80d380": {
+     "id": "0x1e3da80d380",
+     "type": "str",
+     "repr": "'bb'"
+    },
+    "0x7ffd7f2c3e40": {
+     "id": "0x7ffd7f2c3e40",
+     "type": "str",
+     "repr": "'a'"
+    },
+    "0x1e3da80d410": {
+     "id": "0x1e3da80d410",
+     "type": "str",
+     "repr": "'ccc'"
+    }
+   },
+   "stdout": "9 9\n16\n12\n",
+   "note": "함수를 인자로 넘긴다 — 가장 흔한 쓰임"
+  },
+  {
+   "line": 11,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 11,
+     "locals": {
+      "square": {
+       "ref": "0x1e3da7fc9a0"
+      },
+      "sq": {
+       "ref": "0x1e3da7fcae0"
+      },
+      "f": {
+       "ref": "0x1e3da7fc9a0"
+      },
+      "ops": {
+       "ref": "0x1e3da819c40"
+      },
+      "words": {
+       "ref": "0x1e3da5dc5c0"
+      }
+     }
+    },
+    {
+     "fn": "<lambda>",
+     "line": 11,
+     "locals": {
+      "w": {
+       "ref": "0x1e3da80d410"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1e3da7fc9a0": {
+     "id": "0x1e3da7fc9a0",
+     "type": "function",
+     "repr": "square"
+    },
+    "0x1e3da7fcae0": {
+     "id": "0x1e3da7fcae0",
+     "type": "function",
+     "repr": "<lambda>"
+    },
+    "0x1e3da819c40": {
+     "id": "0x1e3da819c40",
+     "type": "dict",
+     "repr": "{'더하기': <function <lambda> at 0x000001E3DA7FCB8…",
+     "entries": [
+      [
+       {
+        "ref": "0x1e3da8060b0"
+       },
+       {
+        "ref": "0x1e3da7fcb80"
+       }
+      ],
+      [
+       {
+        "ref": "0x1e3da806100"
+       },
+       {
+        "ref": "0x1e3da7fcc20"
+       }
+      ]
+     ]
+    },
+    "0x1e3da8060b0": {
+     "id": "0x1e3da8060b0",
+     "type": "str",
+     "repr": "'더하기'"
+    },
+    "0x1e3da7fcb80": {
+     "id": "0x1e3da7fcb80",
+     "type": "function",
+     "repr": "<lambda>"
+    },
+    "0x1e3da806100": {
+     "id": "0x1e3da806100",
+     "type": "str",
+     "repr": "'곱하기'"
+    },
+    "0x1e3da7fcc20": {
+     "id": "0x1e3da7fcc20",
+     "type": "function",
+     "repr": "<lambda>"
+    },
+    "0x1e3da5dc5c0": {
+     "id": "0x1e3da5dc5c0",
+     "type": "list",
+     "repr": "['bb', 'a', 'ccc']",
+     "items": [
+      {
+       "ref": "0x1e3da80d380"
+      },
+      {
+       "ref": "0x7ffd7f2c3e40"
+      },
+      {
+       "ref": "0x1e3da80d410"
+      }
+     ]
+    },
+    "0x1e3da80d380": {
+     "id": "0x1e3da80d380",
+     "type": "str",
+     "repr": "'bb'"
+    },
+    "0x7ffd7f2c3e40": {
+     "id": "0x7ffd7f2c3e40",
+     "type": "str",
+     "repr": "'a'"
+    },
+    "0x1e3da80d410": {
+     "id": "0x1e3da80d410",
+     "type": "str",
+     "repr": "'ccc'"
+    }
+   },
+   "stdout": "9 9\n16\n12\n",
+   "note": "함수를 인자로 넘긴다 — 가장 흔한 쓰임"
+  },
+  {
+   "line": 11,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 11,
+     "locals": {
+      "square": {
+       "ref": "0x1e3da7fc9a0"
+      },
+      "sq": {
+       "ref": "0x1e3da7fcae0"
+      },
+      "f": {
+       "ref": "0x1e3da7fc9a0"
+      },
+      "ops": {
+       "ref": "0x1e3da819c40"
+      },
+      "words": {
+       "ref": "0x1e3da5dc5c0"
+      }
+     }
+    },
+    {
+     "fn": "<lambda>",
+     "line": 11,
+     "locals": {
+      "w": {
+       "ref": "0x1e3da80d410"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1e3da7fc9a0": {
+     "id": "0x1e3da7fc9a0",
+     "type": "function",
+     "repr": "square"
+    },
+    "0x1e3da7fcae0": {
+     "id": "0x1e3da7fcae0",
+     "type": "function",
+     "repr": "<lambda>"
+    },
+    "0x1e3da819c40": {
+     "id": "0x1e3da819c40",
+     "type": "dict",
+     "repr": "{'더하기': <function <lambda> at 0x000001E3DA7FCB8…",
+     "entries": [
+      [
+       {
+        "ref": "0x1e3da8060b0"
+       },
+       {
+        "ref": "0x1e3da7fcb80"
+       }
+      ],
+      [
+       {
+        "ref": "0x1e3da806100"
+       },
+       {
+        "ref": "0x1e3da7fcc20"
+       }
+      ]
+     ]
+    },
+    "0x1e3da8060b0": {
+     "id": "0x1e3da8060b0",
+     "type": "str",
+     "repr": "'더하기'"
+    },
+    "0x1e3da7fcb80": {
+     "id": "0x1e3da7fcb80",
+     "type": "function",
+     "repr": "<lambda>"
+    },
+    "0x1e3da806100": {
+     "id": "0x1e3da806100",
+     "type": "str",
+     "repr": "'곱하기'"
+    },
+    "0x1e3da7fcc20": {
+     "id": "0x1e3da7fcc20",
+     "type": "function",
+     "repr": "<lambda>"
+    },
+    "0x1e3da5dc5c0": {
+     "id": "0x1e3da5dc5c0",
+     "type": "list",
+     "repr": "['bb', 'a', 'ccc']",
+     "items": [
+      {
+       "ref": "0x1e3da80d380"
+      },
+      {
+       "ref": "0x7ffd7f2c3e40"
+      },
+      {
+       "ref": "0x1e3da80d410"
+      }
+     ]
+    },
+    "0x1e3da80d380": {
+     "id": "0x1e3da80d380",
+     "type": "str",
+     "repr": "'bb'"
+    },
+    "0x7ffd7f2c3e40": {
+     "id": "0x7ffd7f2c3e40",
+     "type": "str",
+     "repr": "'a'"
+    },
+    "0x1e3da80d410": {
+     "id": "0x1e3da80d410",
+     "type": "str",
+     "repr": "'ccc'"
+    }
+   },
+   "stdout": "9 9\n16\n12\n",
+   "retval": "3"
+  },
+  {
+   "line": 11,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 11,
+     "locals": {
+      "square": {
+       "ref": "0x1e3da7fc9a0"
+      },
+      "sq": {
+       "ref": "0x1e3da7fcae0"
+      },
+      "f": {
+       "ref": "0x1e3da7fc9a0"
+      },
+      "ops": {
+       "ref": "0x1e3da819c40"
+      },
+      "words": {
+       "ref": "0x1e3da5dc5c0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1e3da7fc9a0": {
+     "id": "0x1e3da7fc9a0",
+     "type": "function",
+     "repr": "square"
+    },
+    "0x1e3da7fcae0": {
+     "id": "0x1e3da7fcae0",
+     "type": "function",
+     "repr": "<lambda>"
+    },
+    "0x1e3da819c40": {
+     "id": "0x1e3da819c40",
+     "type": "dict",
+     "repr": "{'더하기': <function <lambda> at 0x000001E3DA7FCB8…",
+     "entries": [
+      [
+       {
+        "ref": "0x1e3da8060b0"
+       },
+       {
+        "ref": "0x1e3da7fcb80"
+       }
+      ],
+      [
+       {
+        "ref": "0x1e3da806100"
+       },
+       {
+        "ref": "0x1e3da7fcc20"
+       }
+      ]
+     ]
+    },
+    "0x1e3da8060b0": {
+     "id": "0x1e3da8060b0",
+     "type": "str",
+     "repr": "'더하기'"
+    },
+    "0x1e3da7fcb80": {
+     "id": "0x1e3da7fcb80",
+     "type": "function",
+     "repr": "<lambda>"
+    },
+    "0x1e3da806100": {
+     "id": "0x1e3da806100",
+     "type": "str",
+     "repr": "'곱하기'"
+    },
+    "0x1e3da7fcc20": {
+     "id": "0x1e3da7fcc20",
+     "type": "function",
+     "repr": "<lambda>"
+    },
+    "0x1e3da5dc5c0": {
+     "id": "0x1e3da5dc5c0",
+     "type": "list",
+     "repr": "['bb', 'a', 'ccc']",
+     "items": [
+      {
+       "ref": "0x1e3da80d380"
+      },
+      {
+       "ref": "0x7ffd7f2c3e40"
+      },
+      {
+       "ref": "0x1e3da80d410"
+      }
+     ]
+    },
+    "0x1e3da80d380": {
+     "id": "0x1e3da80d380",
+     "type": "str",
+     "repr": "'bb'"
+    },
+    "0x7ffd7f2c3e40": {
+     "id": "0x7ffd7f2c3e40",
+     "type": "str",
+     "repr": "'a'"
+    },
+    "0x1e3da80d410": {
+     "id": "0x1e3da80d410",
+     "type": "str",
+     "repr": "'ccc'"
+    }
+   },
+   "stdout": "9 9\n16\n12\n['a', 'bb', 'ccc']\n"
+  }
+ ],
+ "v": 1
+}
