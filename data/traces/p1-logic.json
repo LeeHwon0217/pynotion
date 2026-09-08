@@ -37,14 +37,14 @@
      "line": 2,
      "locals": {
       "nickname": {
-       "ref": "0x7ffd7f2b9ca0"
+       "ref": "0x7ffd75a19ca0"
       }
      }
     }
    ],
    "heap": {
-    "0x7ffd7f2b9ca0": {
-     "id": "0x7ffd7f2b9ca0",
+    "0x7ffd75a19ca0": {
+     "id": "0x7ffd75a19ca0",
      "type": "str",
      "repr": "''"
     }
@@ -61,22 +61,22 @@
      "line": 3,
      "locals": {
       "nickname": {
-       "ref": "0x7ffd7f2b9ca0"
+       "ref": "0x7ffd75a19ca0"
       },
       "display": {
-       "ref": "0x1bea4596060"
+       "ref": "0x1ec70256060"
       }
      }
     }
    ],
    "heap": {
-    "0x7ffd7f2b9ca0": {
-     "id": "0x7ffd7f2b9ca0",
+    "0x7ffd75a19ca0": {
+     "id": "0x7ffd75a19ca0",
      "type": "str",
      "repr": "''"
     },
-    "0x1bea4596060": {
-     "id": "0x1bea4596060",
+    "0x1ec70256060": {
+     "id": "0x1ec70256060",
      "type": "str",
      "repr": "'익명'"
     }
@@ -92,22 +92,22 @@
      "line": 4,
      "locals": {
       "nickname": {
-       "ref": "0x7ffd7f2b9ca0"
+       "ref": "0x7ffd75a19ca0"
       },
       "display": {
-       "ref": "0x1bea4596060"
+       "ref": "0x1ec70256060"
       }
      }
     }
    ],
    "heap": {
-    "0x7ffd7f2b9ca0": {
-     "id": "0x7ffd7f2b9ca0",
+    "0x7ffd75a19ca0": {
+     "id": "0x7ffd75a19ca0",
      "type": "str",
      "repr": "''"
     },
-    "0x1bea4596060": {
-     "id": "0x1bea4596060",
+    "0x1ec70256060": {
+     "id": "0x1ec70256060",
      "type": "str",
      "repr": "'익명'"
     }
@@ -123,30 +123,30 @@
      "line": 5,
      "locals": {
       "nickname": {
-       "ref": "0x7ffd7f2b9ca0"
+       "ref": "0x7ffd75a19ca0"
       },
       "display": {
-       "ref": "0x1bea4596060"
+       "ref": "0x1ec70256060"
       },
       "user": {
-       "ref": "0x7ffd7f1c1850"
+       "ref": "0x7ffd75921850"
       }
      }
     }
    ],
    "heap": {
-    "0x7ffd7f2b9ca0": {
-     "id": "0x7ffd7f2b9ca0",
+    "0x7ffd75a19ca0": {
+     "id": "0x7ffd75a19ca0",
      "type": "str",
      "repr": "''"
     },
-    "0x1bea4596060": {
-     "id": "0x1bea4596060",
+    "0x1ec70256060": {
+     "id": "0x1ec70256060",
      "type": "str",
      "repr": "'익명'"
     },
-    "0x7ffd7f1c1850": {
-     "id": "0x7ffd7f1c1850",
+    "0x7ffd75921850": {
+     "id": "0x7ffd75921850",
      "type": "NoneType",
      "repr": "None"
     }
@@ -163,33 +163,33 @@
      "line": 6,
      "locals": {
       "nickname": {
-       "ref": "0x7ffd7f2b9ca0"
+       "ref": "0x7ffd75a19ca0"
       },
       "display": {
-       "ref": "0x1bea4596060"
+       "ref": "0x1ec70256060"
       },
       "user": {
-       "ref": "0x7ffd7f1c1850"
+       "ref": "0x7ffd75921850"
       },
       "name": {
-       "ref": "0x7ffd7f1c1850"
+       "ref": "0x7ffd75921850"
       }
      }
     }
    ],
    "heap": {
-    "0x7ffd7f2b9ca0": {
-     "id": "0x7ffd7f2b9ca0",
+    "0x7ffd75a19ca0": {
+     "id": "0x7ffd75a19ca0",
      "type": "str",
      "repr": "''"
     },
-    "0x1bea4596060": {
-     "id": "0x1bea4596060",
+    "0x1ec70256060": {
+     "id": "0x1ec70256060",
      "type": "str",
      "repr": "'익명'"
     },
-    "0x7ffd7f1c1850": {
-     "id": "0x7ffd7f1c1850",
+    "0x7ffd75921850": {
+     "id": "0x7ffd75921850",
      "type": "NoneType",
      "repr": "None"
     }
@@ -205,33 +205,33 @@
      "line": 7,
      "locals": {
       "nickname": {
-       "ref": "0x7ffd7f2b9ca0"
+       "ref": "0x7ffd75a19ca0"
       },
       "display": {
-       "ref": "0x1bea4596060"
+       "ref": "0x1ec70256060"
       },
       "user": {
-       "ref": "0x7ffd7f1c1850"
+       "ref": "0x7ffd75921850"
       },
       "name": {
-       "ref": "0x7ffd7f1c1850"
+       "ref": "0x7ffd75921850"
       }
      }
     }
    ],
    "heap": {
-    "0x7ffd7f2b9ca0": {
-     "id": "0x7ffd7f2b9ca0",
+    "0x7ffd75a19ca0": {
+     "id": "0x7ffd75a19ca0",
      "type": "str",
      "repr": "''"
     },
-    "0x1bea4596060": {
-     "id": "0x1bea4596060",
+    "0x1ec70256060": {
+     "id": "0x1ec70256060",
      "type": "str",
      "repr": "'익명'"
     },
-    "0x7ffd7f1c1850": {
-     "id": "0x7ffd7f1c1850",
+    "0x7ffd75921850": {
+     "id": "0x7ffd75921850",
      "type": "NoneType",
      "repr": "None"
     }
@@ -248,33 +248,33 @@
      "line": 8,
      "locals": {
       "nickname": {
-       "ref": "0x7ffd7f2b9ca0"
+       "ref": "0x7ffd75a19ca0"
       },
       "display": {
-       "ref": "0x1bea4596060"
+       "ref": "0x1ec70256060"
       },
       "user": {
-       "ref": "0x7ffd7f1c1850"
+       "ref": "0x7ffd75921850"
       },
       "name": {
-       "ref": "0x7ffd7f1c1850"
+       "ref": "0x7ffd75921850"
       }
      }
     }
    ],
    "heap": {
-    "0x7ffd7f2b9ca0": {
-     "id": "0x7ffd7f2b9ca0",
+    "0x7ffd75a19ca0": {
+     "id": "0x7ffd75a19ca0",
      "type": "str",
      "repr": "''"
     },
-    "0x1bea4596060": {
-     "id": "0x1bea4596060",
+    "0x1ec70256060": {
+     "id": "0x1ec70256060",
      "type": "str",
      "repr": "'익명'"
     },
-    "0x7ffd7f1c1850": {
-     "id": "0x7ffd7f1c1850",
+    "0x7ffd75921850": {
+     "id": "0x7ffd75921850",
      "type": "NoneType",
      "repr": "None"
     }
@@ -291,33 +291,33 @@
      "line": 8,
      "locals": {
       "nickname": {
-       "ref": "0x7ffd7f2b9ca0"
+       "ref": "0x7ffd75a19ca0"
       },
       "display": {
-       "ref": "0x1bea4596060"
+       "ref": "0x1ec70256060"
       },
       "user": {
-       "ref": "0x7ffd7f1c1850"
+       "ref": "0x7ffd75921850"
       },
       "name": {
-       "ref": "0x7ffd7f1c1850"
+       "ref": "0x7ffd75921850"
       }
      }
     }
    ],
    "heap": {
-    "0x7ffd7f2b9ca0": {
-     "id": "0x7ffd7f2b9ca0",
+    "0x7ffd75a19ca0": {
+     "id": "0x7ffd75a19ca0",
      "type": "str",
      "repr": "''"
     },
-    "0x1bea4596060": {
-     "id": "0x1bea4596060",
+    "0x1ec70256060": {
+     "id": "0x1ec70256060",
      "type": "str",
      "repr": "'익명'"
     },
-    "0x7ffd7f1c1850": {
-     "id": "0x7ffd7f1c1850",
+    "0x7ffd75921850": {
+     "id": "0x7ffd75921850",
      "type": "NoneType",
      "repr": "None"
     }

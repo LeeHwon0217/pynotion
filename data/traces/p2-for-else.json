@@ -1,0 +1,842 @@
+{
+ "id": "p2-for-else",
+ "code": "nums = [3, 8, 12]\nfor n in nums:\n    if n > 10:\n        print(\"10 초과 발견:\", n)\n        break\nelse:\n    print(\"10 초과 없음\")\nfor n in [1, 2]:\n    if n > 10:\n        break\nelse:\n    print(\"이번엔 끝까지 돌았음\")",
+ "steps": [
+  {
+   "line": 0,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 0,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 2,
+     "locals": {
+      "nums": {
+       "ref": "0x155be211340"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x155be211340": {
+     "id": "0x155be211340",
+     "type": "list",
+     "repr": "[3, 8, 12]",
+     "items": [
+      {
+       "ref": "0x7ffd75a149f8"
+      },
+      {
+       "ref": "0x7ffd75a14a98"
+      },
+      {
+       "ref": "0x7ffd75a14b18"
+      }
+     ]
+    },
+    "0x7ffd75a149f8": {
+     "id": "0x7ffd75a149f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd75a14a98": {
+     "id": "0x7ffd75a14a98",
+     "type": "int",
+     "repr": "8"
+    },
+    "0x7ffd75a14b18": {
+     "id": "0x7ffd75a14b18",
+     "type": "int",
+     "repr": "12"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 3,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 3,
+     "locals": {
+      "nums": {
+       "ref": "0x155be211340"
+      },
+      "n": {
+       "ref": "0x7ffd75a149f8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x155be211340": {
+     "id": "0x155be211340",
+     "type": "list",
+     "repr": "[3, 8, 12]",
+     "items": [
+      {
+       "ref": "0x7ffd75a149f8"
+      },
+      {
+       "ref": "0x7ffd75a14a98"
+      },
+      {
+       "ref": "0x7ffd75a14b18"
+      }
+     ]
+    },
+    "0x7ffd75a149f8": {
+     "id": "0x7ffd75a149f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd75a14a98": {
+     "id": "0x7ffd75a14a98",
+     "type": "int",
+     "repr": "8"
+    },
+    "0x7ffd75a14b18": {
+     "id": "0x7ffd75a14b18",
+     "type": "int",
+     "repr": "12"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 2,
+     "locals": {
+      "nums": {
+       "ref": "0x155be211340"
+      },
+      "n": {
+       "ref": "0x7ffd75a149f8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x155be211340": {
+     "id": "0x155be211340",
+     "type": "list",
+     "repr": "[3, 8, 12]",
+     "items": [
+      {
+       "ref": "0x7ffd75a149f8"
+      },
+      {
+       "ref": "0x7ffd75a14a98"
+      },
+      {
+       "ref": "0x7ffd75a14b18"
+      }
+     ]
+    },
+    "0x7ffd75a149f8": {
+     "id": "0x7ffd75a149f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd75a14a98": {
+     "id": "0x7ffd75a14a98",
+     "type": "int",
+     "repr": "8"
+    },
+    "0x7ffd75a14b18": {
+     "id": "0x7ffd75a14b18",
+     "type": "int",
+     "repr": "12"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 3,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 3,
+     "locals": {
+      "nums": {
+       "ref": "0x155be211340"
+      },
+      "n": {
+       "ref": "0x7ffd75a14a98"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x155be211340": {
+     "id": "0x155be211340",
+     "type": "list",
+     "repr": "[3, 8, 12]",
+     "items": [
+      {
+       "ref": "0x7ffd75a149f8"
+      },
+      {
+       "ref": "0x7ffd75a14a98"
+      },
+      {
+       "ref": "0x7ffd75a14b18"
+      }
+     ]
+    },
+    "0x7ffd75a149f8": {
+     "id": "0x7ffd75a149f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd75a14a98": {
+     "id": "0x7ffd75a14a98",
+     "type": "int",
+     "repr": "8"
+    },
+    "0x7ffd75a14b18": {
+     "id": "0x7ffd75a14b18",
+     "type": "int",
+     "repr": "12"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 2,
+     "locals": {
+      "nums": {
+       "ref": "0x155be211340"
+      },
+      "n": {
+       "ref": "0x7ffd75a14a98"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x155be211340": {
+     "id": "0x155be211340",
+     "type": "list",
+     "repr": "[3, 8, 12]",
+     "items": [
+      {
+       "ref": "0x7ffd75a149f8"
+      },
+      {
+       "ref": "0x7ffd75a14a98"
+      },
+      {
+       "ref": "0x7ffd75a14b18"
+      }
+     ]
+    },
+    "0x7ffd75a149f8": {
+     "id": "0x7ffd75a149f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd75a14a98": {
+     "id": "0x7ffd75a14a98",
+     "type": "int",
+     "repr": "8"
+    },
+    "0x7ffd75a14b18": {
+     "id": "0x7ffd75a14b18",
+     "type": "int",
+     "repr": "12"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 3,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 3,
+     "locals": {
+      "nums": {
+       "ref": "0x155be211340"
+      },
+      "n": {
+       "ref": "0x7ffd75a14b18"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x155be211340": {
+     "id": "0x155be211340",
+     "type": "list",
+     "repr": "[3, 8, 12]",
+     "items": [
+      {
+       "ref": "0x7ffd75a149f8"
+      },
+      {
+       "ref": "0x7ffd75a14a98"
+      },
+      {
+       "ref": "0x7ffd75a14b18"
+      }
+     ]
+    },
+    "0x7ffd75a149f8": {
+     "id": "0x7ffd75a149f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd75a14a98": {
+     "id": "0x7ffd75a14a98",
+     "type": "int",
+     "repr": "8"
+    },
+    "0x7ffd75a14b18": {
+     "id": "0x7ffd75a14b18",
+     "type": "int",
+     "repr": "12"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "nums": {
+       "ref": "0x155be211340"
+      },
+      "n": {
+       "ref": "0x7ffd75a14b18"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x155be211340": {
+     "id": "0x155be211340",
+     "type": "list",
+     "repr": "[3, 8, 12]",
+     "items": [
+      {
+       "ref": "0x7ffd75a149f8"
+      },
+      {
+       "ref": "0x7ffd75a14a98"
+      },
+      {
+       "ref": "0x7ffd75a14b18"
+      }
+     ]
+    },
+    "0x7ffd75a149f8": {
+     "id": "0x7ffd75a149f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd75a14a98": {
+     "id": "0x7ffd75a14a98",
+     "type": "int",
+     "repr": "8"
+    },
+    "0x7ffd75a14b18": {
+     "id": "0x7ffd75a14b18",
+     "type": "int",
+     "repr": "12"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "nums": {
+       "ref": "0x155be211340"
+      },
+      "n": {
+       "ref": "0x7ffd75a14b18"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x155be211340": {
+     "id": "0x155be211340",
+     "type": "list",
+     "repr": "[3, 8, 12]",
+     "items": [
+      {
+       "ref": "0x7ffd75a149f8"
+      },
+      {
+       "ref": "0x7ffd75a14a98"
+      },
+      {
+       "ref": "0x7ffd75a14b18"
+      }
+     ]
+    },
+    "0x7ffd75a149f8": {
+     "id": "0x7ffd75a149f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd75a14a98": {
+     "id": "0x7ffd75a14a98",
+     "type": "int",
+     "repr": "8"
+    },
+    "0x7ffd75a14b18": {
+     "id": "0x7ffd75a14b18",
+     "type": "int",
+     "repr": "12"
+    }
+   },
+   "stdout": "10 초과 발견: 12\n",
+   "note": "break 로 나가면 else 는 실행되지 않는다"
+  },
+  {
+   "line": 8,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 8,
+     "locals": {
+      "nums": {
+       "ref": "0x155be211340"
+      },
+      "n": {
+       "ref": "0x7ffd75a14b18"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x155be211340": {
+     "id": "0x155be211340",
+     "type": "list",
+     "repr": "[3, 8, 12]",
+     "items": [
+      {
+       "ref": "0x7ffd75a149f8"
+      },
+      {
+       "ref": "0x7ffd75a14a98"
+      },
+      {
+       "ref": "0x7ffd75a14b18"
+      }
+     ]
+    },
+    "0x7ffd75a149f8": {
+     "id": "0x7ffd75a149f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd75a14a98": {
+     "id": "0x7ffd75a14a98",
+     "type": "int",
+     "repr": "8"
+    },
+    "0x7ffd75a14b18": {
+     "id": "0x7ffd75a14b18",
+     "type": "int",
+     "repr": "12"
+    }
+   },
+   "stdout": "10 초과 발견: 12\n"
+  },
+  {
+   "line": 9,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 9,
+     "locals": {
+      "nums": {
+       "ref": "0x155be211340"
+      },
+      "n": {
+       "ref": "0x7ffd75a149b8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x155be211340": {
+     "id": "0x155be211340",
+     "type": "list",
+     "repr": "[3, 8, 12]",
+     "items": [
+      {
+       "ref": "0x7ffd75a149f8"
+      },
+      {
+       "ref": "0x7ffd75a14a98"
+      },
+      {
+       "ref": "0x7ffd75a14b18"
+      }
+     ]
+    },
+    "0x7ffd75a149f8": {
+     "id": "0x7ffd75a149f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd75a14a98": {
+     "id": "0x7ffd75a14a98",
+     "type": "int",
+     "repr": "8"
+    },
+    "0x7ffd75a14b18": {
+     "id": "0x7ffd75a14b18",
+     "type": "int",
+     "repr": "12"
+    },
+    "0x7ffd75a149b8": {
+     "id": "0x7ffd75a149b8",
+     "type": "int",
+     "repr": "1"
+    }
+   },
+   "stdout": "10 초과 발견: 12\n"
+  },
+  {
+   "line": 8,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 8,
+     "locals": {
+      "nums": {
+       "ref": "0x155be211340"
+      },
+      "n": {
+       "ref": "0x7ffd75a149b8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x155be211340": {
+     "id": "0x155be211340",
+     "type": "list",
+     "repr": "[3, 8, 12]",
+     "items": [
+      {
+       "ref": "0x7ffd75a149f8"
+      },
+      {
+       "ref": "0x7ffd75a14a98"
+      },
+      {
+       "ref": "0x7ffd75a14b18"
+      }
+     ]
+    },
+    "0x7ffd75a149f8": {
+     "id": "0x7ffd75a149f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd75a14a98": {
+     "id": "0x7ffd75a14a98",
+     "type": "int",
+     "repr": "8"
+    },
+    "0x7ffd75a14b18": {
+     "id": "0x7ffd75a14b18",
+     "type": "int",
+     "repr": "12"
+    },
+    "0x7ffd75a149b8": {
+     "id": "0x7ffd75a149b8",
+     "type": "int",
+     "repr": "1"
+    }
+   },
+   "stdout": "10 초과 발견: 12\n"
+  },
+  {
+   "line": 9,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 9,
+     "locals": {
+      "nums": {
+       "ref": "0x155be211340"
+      },
+      "n": {
+       "ref": "0x7ffd75a149d8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x155be211340": {
+     "id": "0x155be211340",
+     "type": "list",
+     "repr": "[3, 8, 12]",
+     "items": [
+      {
+       "ref": "0x7ffd75a149f8"
+      },
+      {
+       "ref": "0x7ffd75a14a98"
+      },
+      {
+       "ref": "0x7ffd75a14b18"
+      }
+     ]
+    },
+    "0x7ffd75a149f8": {
+     "id": "0x7ffd75a149f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd75a14a98": {
+     "id": "0x7ffd75a14a98",
+     "type": "int",
+     "repr": "8"
+    },
+    "0x7ffd75a14b18": {
+     "id": "0x7ffd75a14b18",
+     "type": "int",
+     "repr": "12"
+    },
+    "0x7ffd75a149d8": {
+     "id": "0x7ffd75a149d8",
+     "type": "int",
+     "repr": "2"
+    }
+   },
+   "stdout": "10 초과 발견: 12\n"
+  },
+  {
+   "line": 8,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 8,
+     "locals": {
+      "nums": {
+       "ref": "0x155be211340"
+      },
+      "n": {
+       "ref": "0x7ffd75a149d8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x155be211340": {
+     "id": "0x155be211340",
+     "type": "list",
+     "repr": "[3, 8, 12]",
+     "items": [
+      {
+       "ref": "0x7ffd75a149f8"
+      },
+      {
+       "ref": "0x7ffd75a14a98"
+      },
+      {
+       "ref": "0x7ffd75a14b18"
+      }
+     ]
+    },
+    "0x7ffd75a149f8": {
+     "id": "0x7ffd75a149f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd75a14a98": {
+     "id": "0x7ffd75a14a98",
+     "type": "int",
+     "repr": "8"
+    },
+    "0x7ffd75a14b18": {
+     "id": "0x7ffd75a14b18",
+     "type": "int",
+     "repr": "12"
+    },
+    "0x7ffd75a149d8": {
+     "id": "0x7ffd75a149d8",
+     "type": "int",
+     "repr": "2"
+    }
+   },
+   "stdout": "10 초과 발견: 12\n"
+  },
+  {
+   "line": 12,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 12,
+     "locals": {
+      "nums": {
+       "ref": "0x155be211340"
+      },
+      "n": {
+       "ref": "0x7ffd75a149d8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x155be211340": {
+     "id": "0x155be211340",
+     "type": "list",
+     "repr": "[3, 8, 12]",
+     "items": [
+      {
+       "ref": "0x7ffd75a149f8"
+      },
+      {
+       "ref": "0x7ffd75a14a98"
+      },
+      {
+       "ref": "0x7ffd75a14b18"
+      }
+     ]
+    },
+    "0x7ffd75a149f8": {
+     "id": "0x7ffd75a149f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd75a14a98": {
+     "id": "0x7ffd75a14a98",
+     "type": "int",
+     "repr": "8"
+    },
+    "0x7ffd75a14b18": {
+     "id": "0x7ffd75a14b18",
+     "type": "int",
+     "repr": "12"
+    },
+    "0x7ffd75a149d8": {
+     "id": "0x7ffd75a149d8",
+     "type": "int",
+     "repr": "2"
+    }
+   },
+   "stdout": "10 초과 발견: 12\n",
+   "note": "break 를 안 만났으니 else 실행"
+  },
+  {
+   "line": 12,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 12,
+     "locals": {
+      "nums": {
+       "ref": "0x155be211340"
+      },
+      "n": {
+       "ref": "0x7ffd75a149d8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x155be211340": {
+     "id": "0x155be211340",
+     "type": "list",
+     "repr": "[3, 8, 12]",
+     "items": [
+      {
+       "ref": "0x7ffd75a149f8"
+      },
+      {
+       "ref": "0x7ffd75a14a98"
+      },
+      {
+       "ref": "0x7ffd75a14b18"
+      }
+     ]
+    },
+    "0x7ffd75a149f8": {
+     "id": "0x7ffd75a149f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd75a14a98": {
+     "id": "0x7ffd75a14a98",
+     "type": "int",
+     "repr": "8"
+    },
+    "0x7ffd75a14b18": {
+     "id": "0x7ffd75a14b18",
+     "type": "int",
+     "repr": "12"
+    },
+    "0x7ffd75a149d8": {
+     "id": "0x7ffd75a149d8",
+     "type": "int",
+     "repr": "2"
+    }
+   },
+   "stdout": "10 초과 발견: 12\n이번엔 끝까지 돌았음\n"
+  }
+ ],
+ "v": 1
+}

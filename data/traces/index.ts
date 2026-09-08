@@ -19,6 +19,15 @@ import t15 from "./p1-logic.json";
 import t16 from "./p1-variables-alias.json";
 import t17 from "./p1-variables-basic.json";
 import t18 from "./p1-variables-swap.json";
+import t19 from "./p2-break-continue.json";
+import t20 from "./p2-for-else.json";
+import t21 from "./p2-for.json";
+import t22 from "./p2-if.json";
+import t23 from "./p2-match.json";
+import t24 from "./p2-nested.json";
+import t25 from "./p2-range.json";
+import t26 from "./p2-truthy.json";
+import t27 from "./p2-while.json";
 
 export const TRACES: Record<string, Trace> = {
   "p0-indent-error": t0 as unknown as Trace,
@@ -40,4 +49,13 @@ export const TRACES: Record<string, Trace> = {
   "p1-variables-alias": t16 as unknown as Trace,
   "p1-variables-basic": t17 as unknown as Trace,
   "p1-variables-swap": t18 as unknown as Trace,
+  "p2-break-continue": t19 as unknown as Trace,
+  "p2-for-else": t20 as unknown as Trace,
+  "p2-for": t21 as unknown as Trace,
+  "p2-if": t22 as unknown as Trace,
+  "p2-match": t23 as unknown as Trace,
+  "p2-nested": t24 as unknown as Trace,
+  "p2-range": t25 as unknown as Trace,
+  "p2-truthy": t26 as unknown as Trace,
+  "p2-while": t27 as unknown as Trace,
 };

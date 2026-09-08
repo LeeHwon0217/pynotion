@@ -37,14 +37,14 @@
      "line": 2,
      "locals": {
       "name": {
-       "ref": "0x1b94e336100"
+       "ref": "0x1d4eaaf6100"
       }
      }
     }
    ],
    "heap": {
-    "0x1b94e336100": {
-     "id": "0x1b94e336100",
+    "0x1d4eaaf6100": {
+     "id": "0x1d4eaaf6100",
      "type": "str",
      "repr": "'지기'"
     }
@@ -60,22 +60,22 @@
      "line": 3,
      "locals": {
       "name": {
-       "ref": "0x1b94e336100"
+       "ref": "0x1d4eaaf6100"
       },
       "age": {
-       "ref": "0x7ffd7f2b4d38"
+       "ref": "0x7ffd75a14d38"
       }
      }
     }
    ],
    "heap": {
-    "0x1b94e336100": {
-     "id": "0x1b94e336100",
+    "0x1d4eaaf6100": {
+     "id": "0x1d4eaaf6100",
      "type": "str",
      "repr": "'지기'"
     },
-    "0x7ffd7f2b4d38": {
-     "id": "0x7ffd7f2b4d38",
+    "0x7ffd75a14d38": {
+     "id": "0x7ffd75a14d38",
      "type": "int",
      "repr": "29"
     }
@@ -92,30 +92,30 @@
      "line": 4,
      "locals": {
       "name": {
-       "ref": "0x1b94e336100"
+       "ref": "0x1d4eaaf6100"
       },
       "age": {
-       "ref": "0x7ffd7f2b4d38"
+       "ref": "0x7ffd75a14d38"
       },
       "msg": {
-       "ref": "0x1b94e336510"
+       "ref": "0x1d4eaaf6510"
       }
      }
     }
    ],
    "heap": {
-    "0x1b94e336100": {
-     "id": "0x1b94e336100",
+    "0x1d4eaaf6100": {
+     "id": "0x1d4eaaf6100",
      "type": "str",
      "repr": "'지기'"
     },
-    "0x7ffd7f2b4d38": {
-     "id": "0x7ffd7f2b4d38",
+    "0x7ffd75a14d38": {
+     "id": "0x7ffd75a14d38",
      "type": "int",
      "repr": "29"
     },
-    "0x1b94e336510": {
-     "id": "0x1b94e336510",
+    "0x1d4eaaf6510": {
+     "id": "0x1d4eaaf6510",
      "type": "str",
      "repr": "'지기는 29살'"
     }
@@ -131,30 +131,30 @@
      "line": 5,
      "locals": {
       "name": {
-       "ref": "0x1b94e336100"
+       "ref": "0x1d4eaaf6100"
       },
       "age": {
-       "ref": "0x7ffd7f2b4d38"
+       "ref": "0x7ffd75a14d38"
       },
       "msg": {
-       "ref": "0x1b94e336510"
+       "ref": "0x1d4eaaf6510"
       }
      }
     }
    ],
    "heap": {
-    "0x1b94e336100": {
-     "id": "0x1b94e336100",
+    "0x1d4eaaf6100": {
+     "id": "0x1d4eaaf6100",
      "type": "str",
      "repr": "'지기'"
     },
-    "0x7ffd7f2b4d38": {
-     "id": "0x7ffd7f2b4d38",
+    "0x7ffd75a14d38": {
+     "id": "0x7ffd75a14d38",
      "type": "int",
      "repr": "29"
     },
-    "0x1b94e336510": {
-     "id": "0x1b94e336510",
+    "0x1d4eaaf6510": {
+     "id": "0x1d4eaaf6510",
      "type": "str",
      "repr": "'지기는 29살'"
     }
@@ -171,30 +171,30 @@
      "line": 6,
      "locals": {
       "name": {
-       "ref": "0x1b94e336100"
+       "ref": "0x1d4eaaf6100"
       },
       "age": {
-       "ref": "0x7ffd7f2b4d38"
+       "ref": "0x7ffd75a14d38"
       },
       "msg": {
-       "ref": "0x1b94e336510"
+       "ref": "0x1d4eaaf6510"
       }
      }
     }
    ],
    "heap": {
-    "0x1b94e336100": {
-     "id": "0x1b94e336100",
+    "0x1d4eaaf6100": {
+     "id": "0x1d4eaaf6100",
      "type": "str",
      "repr": "'지기'"
     },
-    "0x7ffd7f2b4d38": {
-     "id": "0x7ffd7f2b4d38",
+    "0x7ffd75a14d38": {
+     "id": "0x7ffd75a14d38",
      "type": "int",
      "repr": "29"
     },
-    "0x1b94e336510": {
-     "id": "0x1b94e336510",
+    "0x1d4eaaf6510": {
+     "id": "0x1d4eaaf6510",
      "type": "str",
      "repr": "'지기는 29살'"
     }
@@ -211,30 +211,30 @@
      "line": 7,
      "locals": {
       "name": {
-       "ref": "0x1b94e336100"
+       "ref": "0x1d4eaaf6100"
       },
       "age": {
-       "ref": "0x7ffd7f2b4d38"
+       "ref": "0x7ffd75a14d38"
       },
       "msg": {
-       "ref": "0x1b94e336510"
+       "ref": "0x1d4eaaf6510"
       }
      }
     }
    ],
    "heap": {
-    "0x1b94e336100": {
-     "id": "0x1b94e336100",
+    "0x1d4eaaf6100": {
+     "id": "0x1d4eaaf6100",
      "type": "str",
      "repr": "'지기'"
     },
-    "0x7ffd7f2b4d38": {
-     "id": "0x7ffd7f2b4d38",
+    "0x7ffd75a14d38": {
+     "id": "0x7ffd75a14d38",
      "type": "int",
      "repr": "29"
     },
-    "0x1b94e336510": {
-     "id": "0x1b94e336510",
+    "0x1d4eaaf6510": {
+     "id": "0x1d4eaaf6510",
      "type": "str",
      "repr": "'지기는 29살'"
     }
@@ -251,30 +251,30 @@
      "line": 8,
      "locals": {
       "name": {
-       "ref": "0x1b94e336100"
+       "ref": "0x1d4eaaf6100"
       },
       "age": {
-       "ref": "0x7ffd7f2b4d38"
+       "ref": "0x7ffd75a14d38"
       },
       "msg": {
-       "ref": "0x1b94e336510"
+       "ref": "0x1d4eaaf6510"
       }
      }
     }
    ],
    "heap": {
-    "0x1b94e336100": {
-     "id": "0x1b94e336100",
+    "0x1d4eaaf6100": {
+     "id": "0x1d4eaaf6100",
      "type": "str",
      "repr": "'지기'"
     },
-    "0x7ffd7f2b4d38": {
-     "id": "0x7ffd7f2b4d38",
+    "0x7ffd75a14d38": {
+     "id": "0x7ffd75a14d38",
      "type": "int",
      "repr": "29"
     },
-    "0x1b94e336510": {
-     "id": "0x1b94e336510",
+    "0x1d4eaaf6510": {
+     "id": "0x1d4eaaf6510",
      "type": "str",
      "repr": "'지기는 29살'"
     }
@@ -291,30 +291,30 @@
      "line": 8,
      "locals": {
       "name": {
-       "ref": "0x1b94e336100"
+       "ref": "0x1d4eaaf6100"
       },
       "age": {
-       "ref": "0x7ffd7f2b4d38"
+       "ref": "0x7ffd75a14d38"
       },
       "msg": {
-       "ref": "0x1b94e336510"
+       "ref": "0x1d4eaaf6510"
       }
      }
     }
    ],
    "heap": {
-    "0x1b94e336100": {
-     "id": "0x1b94e336100",
+    "0x1d4eaaf6100": {
+     "id": "0x1d4eaaf6100",
      "type": "str",
      "repr": "'지기'"
     },
-    "0x7ffd7f2b4d38": {
-     "id": "0x7ffd7f2b4d38",
+    "0x7ffd75a14d38": {
+     "id": "0x7ffd75a14d38",
      "type": "int",
      "repr": "29"
     },
-    "0x1b94e336510": {
-     "id": "0x1b94e336510",
+    "0x1d4eaaf6510": {
+     "id": "0x1d4eaaf6510",
      "type": "str",
      "repr": "'지기는 29살'"
     }

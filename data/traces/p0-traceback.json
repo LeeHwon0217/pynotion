@@ -38,14 +38,14 @@
      "line": 2,
      "locals": {
       "price": {
-       "ref": "0x2a9a8dd7690"
+       "ref": "0x171d0c47690"
       }
      }
     }
    ],
    "heap": {
-    "0x2a9a8dd7690": {
-     "id": "0x2a9a8dd7690",
+    "0x171d0c47690": {
+     "id": "0x171d0c47690",
      "type": "int",
      "repr": "1200"
     }
@@ -62,22 +62,22 @@
      "line": 3,
      "locals": {
       "price": {
-       "ref": "0x2a9a8dd7690"
+       "ref": "0x171d0c47690"
       },
       "qty": {
-       "ref": "0x7ffd7f2b49f8"
+       "ref": "0x7ffd75a149f8"
       }
      }
     }
    ],
    "heap": {
-    "0x2a9a8dd7690": {
-     "id": "0x2a9a8dd7690",
+    "0x171d0c47690": {
+     "id": "0x171d0c47690",
      "type": "int",
      "repr": "1200"
     },
-    "0x7ffd7f2b49f8": {
-     "id": "0x7ffd7f2b49f8",
+    "0x7ffd75a149f8": {
+     "id": "0x7ffd75a149f8",
      "type": "int",
      "repr": "3"
     }
@@ -94,22 +94,22 @@
      "line": 4,
      "locals": {
       "price": {
-       "ref": "0x2a9a8dd7690"
+       "ref": "0x171d0c47690"
       },
       "qty": {
-       "ref": "0x7ffd7f2b49f8"
+       "ref": "0x7ffd75a149f8"
       }
      }
     }
    ],
    "heap": {
-    "0x2a9a8dd7690": {
-     "id": "0x2a9a8dd7690",
+    "0x171d0c47690": {
+     "id": "0x171d0c47690",
      "type": "int",
      "repr": "1200"
     },
-    "0x7ffd7f2b49f8": {
-     "id": "0x7ffd7f2b49f8",
+    "0x7ffd75a149f8": {
+     "id": "0x7ffd75a149f8",
      "type": "int",
      "repr": "3"
     }
@@ -126,22 +126,22 @@
      "line": 4,
      "locals": {
       "price": {
-       "ref": "0x2a9a8dd7690"
+       "ref": "0x171d0c47690"
       },
       "qty": {
-       "ref": "0x7ffd7f2b49f8"
+       "ref": "0x7ffd75a149f8"
       }
      }
     }
    ],
    "heap": {
-    "0x2a9a8dd7690": {
-     "id": "0x2a9a8dd7690",
+    "0x171d0c47690": {
+     "id": "0x171d0c47690",
      "type": "int",
      "repr": "1200"
     },
-    "0x7ffd7f2b49f8": {
-     "id": "0x7ffd7f2b49f8",
+    "0x7ffd75a149f8": {
+     "id": "0x7ffd75a149f8",
      "type": "int",
      "repr": "3"
     }
@@ -158,22 +158,22 @@
      "line": 4,
      "locals": {
       "price": {
-       "ref": "0x2a9a8dd7690"
+       "ref": "0x171d0c47690"
       },
       "qty": {
-       "ref": "0x7ffd7f2b49f8"
+       "ref": "0x7ffd75a149f8"
       }
      }
     }
    ],
    "heap": {
-    "0x2a9a8dd7690": {
-     "id": "0x2a9a8dd7690",
+    "0x171d0c47690": {
+     "id": "0x171d0c47690",
      "type": "int",
      "repr": "1200"
     },
-    "0x7ffd7f2b49f8": {
-     "id": "0x7ffd7f2b49f8",
+    "0x7ffd75a149f8": {
+     "id": "0x7ffd75a149f8",
      "type": "int",
      "repr": "3"
     }
@@ -189,22 +189,22 @@
      "line": 4,
      "locals": {
       "price": {
-       "ref": "0x2a9a8dd7690"
+       "ref": "0x171d0c47690"
       },
       "qty": {
-       "ref": "0x7ffd7f2b49f8"
+       "ref": "0x7ffd75a149f8"
       }
      }
     }
    ],
    "heap": {
-    "0x2a9a8dd7690": {
-     "id": "0x2a9a8dd7690",
+    "0x171d0c47690": {
+     "id": "0x171d0c47690",
      "type": "int",
      "repr": "1200"
     },
-    "0x7ffd7f2b49f8": {
-     "id": "0x7ffd7f2b49f8",
+    "0x7ffd75a149f8": {
+     "id": "0x7ffd75a149f8",
      "type": "int",
      "repr": "3"
     }

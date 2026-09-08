@@ -511,9 +511,8 @@ table.tbl td code { font-size: .88em; background: var(--wash-2); padding: 2px 6p
 
 /* 캔버스 */
 .stage-canvas { position: relative; z-index: 1; flex: 1; min-height: 0; display: flex; flex-direction: column; }
-.stage-canvas > svg { width: 100%; flex: 1; min-height: 0; display: block; transition: opacity .4s, filter .4s; }
+.stage-canvas > svg { width: 100%; flex: 1; min-height: 0; display: block; }
 .stage.poster .stage-canvas > svg { opacity: .28; filter: blur(1.5px) saturate(.6); }
-.stage-canvas .tp { transition: opacity .4s, filter .4s; }
 .stage.poster .stage-canvas .tp { opacity: .28; filter: blur(1.5px) saturate(.6); }
 
 /* 포스터 / 종료 오버레이 */

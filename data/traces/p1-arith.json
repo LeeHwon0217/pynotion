@@ -38,14 +38,14 @@
      "line": 2,
      "locals": {
       "x": {
-       "ref": "0x7ffd7f2b4fd8"
+       "ref": "0x7ffd75a14fd8"
       }
      }
     }
    ],
    "heap": {
-    "0x7ffd7f2b4fd8": {
-     "id": "0x7ffd7f2b4fd8",
+    "0x7ffd75a14fd8": {
+     "id": "0x7ffd75a14fd8",
      "type": "int",
      "repr": "50"
     }
@@ -61,14 +61,14 @@
      "line": 3,
      "locals": {
       "x": {
-       "ref": "0x7ffd7f2b4fd8"
+       "ref": "0x7ffd75a14fd8"
       }
      }
     }
    ],
    "heap": {
-    "0x7ffd7f2b4fd8": {
-     "id": "0x7ffd7f2b4fd8",
+    "0x7ffd75a14fd8": {
+     "id": "0x7ffd75a14fd8",
      "type": "int",
      "repr": "50"
     }
@@ -85,22 +85,22 @@
      "line": 4,
      "locals": {
       "x": {
-       "ref": "0x7ffd7f2b4fd8"
+       "ref": "0x7ffd75a14fd8"
       },
       "y": {
-       "ref": "0x7ffd7f2b5398"
+       "ref": "0x7ffd75a15398"
       }
      }
     }
    ],
    "heap": {
-    "0x7ffd7f2b4fd8": {
-     "id": "0x7ffd7f2b4fd8",
+    "0x7ffd75a14fd8": {
+     "id": "0x7ffd75a14fd8",
      "type": "int",
      "repr": "50"
     },
-    "0x7ffd7f2b5398": {
-     "id": "0x7ffd7f2b5398",
+    "0x7ffd75a15398": {
+     "id": "0x7ffd75a15398",
      "type": "int",
      "repr": "80"
     }
@@ -116,22 +116,22 @@
      "line": 5,
      "locals": {
       "x": {
-       "ref": "0x7ffd7f2b4fd8"
+       "ref": "0x7ffd75a14fd8"
       },
       "y": {
-       "ref": "0x7ffd7f2b5398"
+       "ref": "0x7ffd75a15398"
       }
      }
     }
    ],
    "heap": {
-    "0x7ffd7f2b4fd8": {
-     "id": "0x7ffd7f2b4fd8",
+    "0x7ffd75a14fd8": {
+     "id": "0x7ffd75a14fd8",
      "type": "int",
      "repr": "50"
     },
-    "0x7ffd7f2b5398": {
-     "id": "0x7ffd7f2b5398",
+    "0x7ffd75a15398": {
+     "id": "0x7ffd75a15398",
      "type": "int",
      "repr": "80"
     }
@@ -148,22 +148,22 @@
      "line": 6,
      "locals": {
       "x": {
-       "ref": "0x7ffd7f2b4fd8"
+       "ref": "0x7ffd75a14fd8"
       },
       "y": {
-       "ref": "0x7ffd7f2b5398"
+       "ref": "0x7ffd75a15398"
       }
      }
     }
    ],
    "heap": {
-    "0x7ffd7f2b4fd8": {
-     "id": "0x7ffd7f2b4fd8",
+    "0x7ffd75a14fd8": {
+     "id": "0x7ffd75a14fd8",
      "type": "int",
      "repr": "50"
     },
-    "0x7ffd7f2b5398": {
-     "id": "0x7ffd7f2b5398",
+    "0x7ffd75a15398": {
+     "id": "0x7ffd75a15398",
      "type": "int",
      "repr": "80"
     }
@@ -180,22 +180,22 @@
      "line": 7,
      "locals": {
       "x": {
-       "ref": "0x7ffd7f2b4fd8"
+       "ref": "0x7ffd75a14fd8"
       },
       "y": {
-       "ref": "0x7ffd7f2b5398"
+       "ref": "0x7ffd75a15398"
       }
      }
     }
    ],
    "heap": {
-    "0x7ffd7f2b4fd8": {
-     "id": "0x7ffd7f2b4fd8",
+    "0x7ffd75a14fd8": {
+     "id": "0x7ffd75a14fd8",
      "type": "int",
      "repr": "50"
     },
-    "0x7ffd7f2b5398": {
-     "id": "0x7ffd7f2b5398",
+    "0x7ffd75a15398": {
+     "id": "0x7ffd75a15398",
      "type": "int",
      "repr": "80"
     }
@@ -212,22 +212,22 @@
      "line": 7,
      "locals": {
       "x": {
-       "ref": "0x7ffd7f2b4fd8"
+       "ref": "0x7ffd75a14fd8"
       },
       "y": {
-       "ref": "0x7ffd7f2b5398"
+       "ref": "0x7ffd75a15398"
       }
      }
     }
    ],
    "heap": {
-    "0x7ffd7f2b4fd8": {
-     "id": "0x7ffd7f2b4fd8",
+    "0x7ffd75a14fd8": {
+     "id": "0x7ffd75a14fd8",
      "type": "int",
      "repr": "50"
     },
-    "0x7ffd7f2b5398": {
-     "id": "0x7ffd7f2b5398",
+    "0x7ffd75a15398": {
+     "id": "0x7ffd75a15398",
      "type": "int",
      "repr": "80"
     }

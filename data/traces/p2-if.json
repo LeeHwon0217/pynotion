@@ -1,6 +1,6 @@
 {
- "id": "p0-indent",
- "code": "score = 85\nif score >= 80:\n    print(\"합격\")\n    print(\"축하해요\")\nprint(\"검사 끝\")",
+ "id": "p2-if",
+ "code": "score = 85\nif score >= 90:\n    grade = \"A\"\nelif score >= 80:\n    grade = \"B\"\nelse:\n    grade = \"C\"\nprint(grade)",
  "steps": [
   {
    "line": 0,
@@ -26,8 +26,7 @@
     }
    ],
    "heap": {},
-   "stdout": "",
-   "note": "정수 객체 85 에 score 라는 이름을 붙인다"
+   "stdout": ""
   },
   {
    "line": 2,
@@ -51,31 +50,7 @@
     }
    },
    "stdout": "",
-   "note": "조건이 참이므로 들여쓴 블록으로 들어간다"
-  },
-  {
-   "line": 3,
-   "event": "line",
-   "frames": [
-    {
-     "fn": "<module>",
-     "line": 3,
-     "locals": {
-      "score": {
-       "ref": "0x7ffd75a15438"
-      }
-     }
-    }
-   ],
-   "heap": {
-    "0x7ffd75a15438": {
-     "id": "0x7ffd75a15438",
-     "type": "int",
-     "repr": "85"
-    }
-   },
-   "stdout": "",
-   "note": "4칸 들여쓰기 — if 에 속한 줄"
+   "note": "85 >= 90 은 False — 이 블록은 건너뛴다"
   },
   {
    "line": 4,
@@ -98,8 +73,8 @@
      "repr": "85"
     }
    },
-   "stdout": "합격\n",
-   "note": "같은 깊이 — 역시 if 에 속한 줄"
+   "stdout": "",
+   "note": "85 >= 80 은 True — 여기로 들어간다. 아래 else 는 보지도 않는다"
   },
   {
    "line": 5,
@@ -122,19 +97,21 @@
      "repr": "85"
     }
    },
-   "stdout": "합격\n축하해요\n",
-   "note": "들여쓰기를 되돌렸다 — if 와 무관하게 항상 실행"
+   "stdout": ""
   },
   {
-   "line": 5,
-   "event": "return",
+   "line": 8,
+   "event": "line",
    "frames": [
     {
      "fn": "<module>",
-     "line": 5,
+     "line": 8,
      "locals": {
       "score": {
        "ref": "0x7ffd75a15438"
+      },
+      "grade": {
+       "ref": "0x7ffd75a23870"
       }
      }
     }
@@ -144,9 +121,46 @@
      "id": "0x7ffd75a15438",
      "type": "int",
      "repr": "85"
+    },
+    "0x7ffd75a23870": {
+     "id": "0x7ffd75a23870",
+     "type": "str",
+     "repr": "'B'"
     }
    },
-   "stdout": "합격\n축하해요\n검사 끝\n"
+   "stdout": "",
+   "note": "if/elif/else 중 정확히 하나의 블록만 실행됐다"
+  },
+  {
+   "line": 8,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 8,
+     "locals": {
+      "score": {
+       "ref": "0x7ffd75a15438"
+      },
+      "grade": {
+       "ref": "0x7ffd75a23870"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x7ffd75a15438": {
+     "id": "0x7ffd75a15438",
+     "type": "int",
+     "repr": "85"
+    },
+    "0x7ffd75a23870": {
+     "id": "0x7ffd75a23870",
+     "type": "str",
+     "repr": "'B'"
+    }
+   },
+   "stdout": "B\n"
   }
  ],
  "v": 1

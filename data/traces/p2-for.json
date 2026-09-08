@@ -1,0 +1,1544 @@
+{
+ "id": "p2-for",
+ "code": "fruits = [\"사과\", \"배\", \"귤\"]\nfor fruit in fruits:\n    print(fruit, len(fruit))\nfor i, fruit in enumerate(fruits):\n    print(i, fruit)\ntotal = 0\nfor ch in \"abc\":\n    total += 1\nprint(total)",
+ "steps": [
+  {
+   "line": 0,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 0,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 2,
+     "locals": {
+      "fruits": {
+       "ref": "0x1b1074b4a00"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1b1074b4a00": {
+     "id": "0x1b1074b4a00",
+     "type": "list",
+     "repr": "['사과', '배', '귤']",
+     "items": [
+      {
+       "ref": "0x1b107776100"
+      },
+      {
+       "ref": "0x1b107781a70"
+      },
+      {
+       "ref": "0x1b107781c70"
+      }
+     ]
+    },
+    "0x1b107776100": {
+     "id": "0x1b107776100",
+     "type": "str",
+     "repr": "'사과'"
+    },
+    "0x1b107781a70": {
+     "id": "0x1b107781a70",
+     "type": "str",
+     "repr": "'배'"
+    },
+    "0x1b107781c70": {
+     "id": "0x1b107781c70",
+     "type": "str",
+     "repr": "'귤'"
+    }
+   },
+   "stdout": "",
+   "note": "리스트에서 항목을 하나 꺼내 fruit 에 붙인다. 없으면 반복 종료"
+  },
+  {
+   "line": 3,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 3,
+     "locals": {
+      "fruits": {
+       "ref": "0x1b1074b4a00"
+      },
+      "fruit": {
+       "ref": "0x1b107776100"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1b1074b4a00": {
+     "id": "0x1b1074b4a00",
+     "type": "list",
+     "repr": "['사과', '배', '귤']",
+     "items": [
+      {
+       "ref": "0x1b107776100"
+      },
+      {
+       "ref": "0x1b107781a70"
+      },
+      {
+       "ref": "0x1b107781c70"
+      }
+     ]
+    },
+    "0x1b107776100": {
+     "id": "0x1b107776100",
+     "type": "str",
+     "repr": "'사과'"
+    },
+    "0x1b107781a70": {
+     "id": "0x1b107781a70",
+     "type": "str",
+     "repr": "'배'"
+    },
+    "0x1b107781c70": {
+     "id": "0x1b107781c70",
+     "type": "str",
+     "repr": "'귤'"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 2,
+     "locals": {
+      "fruits": {
+       "ref": "0x1b1074b4a00"
+      },
+      "fruit": {
+       "ref": "0x1b107776100"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1b1074b4a00": {
+     "id": "0x1b1074b4a00",
+     "type": "list",
+     "repr": "['사과', '배', '귤']",
+     "items": [
+      {
+       "ref": "0x1b107776100"
+      },
+      {
+       "ref": "0x1b107781a70"
+      },
+      {
+       "ref": "0x1b107781c70"
+      }
+     ]
+    },
+    "0x1b107776100": {
+     "id": "0x1b107776100",
+     "type": "str",
+     "repr": "'사과'"
+    },
+    "0x1b107781a70": {
+     "id": "0x1b107781a70",
+     "type": "str",
+     "repr": "'배'"
+    },
+    "0x1b107781c70": {
+     "id": "0x1b107781c70",
+     "type": "str",
+     "repr": "'귤'"
+    }
+   },
+   "stdout": "사과 2\n",
+   "note": "리스트에서 항목을 하나 꺼내 fruit 에 붙인다. 없으면 반복 종료"
+  },
+  {
+   "line": 3,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 3,
+     "locals": {
+      "fruits": {
+       "ref": "0x1b1074b4a00"
+      },
+      "fruit": {
+       "ref": "0x1b107781a70"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1b1074b4a00": {
+     "id": "0x1b1074b4a00",
+     "type": "list",
+     "repr": "['사과', '배', '귤']",
+     "items": [
+      {
+       "ref": "0x1b107776100"
+      },
+      {
+       "ref": "0x1b107781a70"
+      },
+      {
+       "ref": "0x1b107781c70"
+      }
+     ]
+    },
+    "0x1b107776100": {
+     "id": "0x1b107776100",
+     "type": "str",
+     "repr": "'사과'"
+    },
+    "0x1b107781a70": {
+     "id": "0x1b107781a70",
+     "type": "str",
+     "repr": "'배'"
+    },
+    "0x1b107781c70": {
+     "id": "0x1b107781c70",
+     "type": "str",
+     "repr": "'귤'"
+    }
+   },
+   "stdout": "사과 2\n"
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 2,
+     "locals": {
+      "fruits": {
+       "ref": "0x1b1074b4a00"
+      },
+      "fruit": {
+       "ref": "0x1b107781a70"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1b1074b4a00": {
+     "id": "0x1b1074b4a00",
+     "type": "list",
+     "repr": "['사과', '배', '귤']",
+     "items": [
+      {
+       "ref": "0x1b107776100"
+      },
+      {
+       "ref": "0x1b107781a70"
+      },
+      {
+       "ref": "0x1b107781c70"
+      }
+     ]
+    },
+    "0x1b107776100": {
+     "id": "0x1b107776100",
+     "type": "str",
+     "repr": "'사과'"
+    },
+    "0x1b107781a70": {
+     "id": "0x1b107781a70",
+     "type": "str",
+     "repr": "'배'"
+    },
+    "0x1b107781c70": {
+     "id": "0x1b107781c70",
+     "type": "str",
+     "repr": "'귤'"
+    }
+   },
+   "stdout": "사과 2\n배 1\n",
+   "note": "리스트에서 항목을 하나 꺼내 fruit 에 붙인다. 없으면 반복 종료"
+  },
+  {
+   "line": 3,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 3,
+     "locals": {
+      "fruits": {
+       "ref": "0x1b1074b4a00"
+      },
+      "fruit": {
+       "ref": "0x1b107781c70"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1b1074b4a00": {
+     "id": "0x1b1074b4a00",
+     "type": "list",
+     "repr": "['사과', '배', '귤']",
+     "items": [
+      {
+       "ref": "0x1b107776100"
+      },
+      {
+       "ref": "0x1b107781a70"
+      },
+      {
+       "ref": "0x1b107781c70"
+      }
+     ]
+    },
+    "0x1b107776100": {
+     "id": "0x1b107776100",
+     "type": "str",
+     "repr": "'사과'"
+    },
+    "0x1b107781a70": {
+     "id": "0x1b107781a70",
+     "type": "str",
+     "repr": "'배'"
+    },
+    "0x1b107781c70": {
+     "id": "0x1b107781c70",
+     "type": "str",
+     "repr": "'귤'"
+    }
+   },
+   "stdout": "사과 2\n배 1\n"
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 2,
+     "locals": {
+      "fruits": {
+       "ref": "0x1b1074b4a00"
+      },
+      "fruit": {
+       "ref": "0x1b107781c70"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1b1074b4a00": {
+     "id": "0x1b1074b4a00",
+     "type": "list",
+     "repr": "['사과', '배', '귤']",
+     "items": [
+      {
+       "ref": "0x1b107776100"
+      },
+      {
+       "ref": "0x1b107781a70"
+      },
+      {
+       "ref": "0x1b107781c70"
+      }
+     ]
+    },
+    "0x1b107776100": {
+     "id": "0x1b107776100",
+     "type": "str",
+     "repr": "'사과'"
+    },
+    "0x1b107781a70": {
+     "id": "0x1b107781a70",
+     "type": "str",
+     "repr": "'배'"
+    },
+    "0x1b107781c70": {
+     "id": "0x1b107781c70",
+     "type": "str",
+     "repr": "'귤'"
+    }
+   },
+   "stdout": "사과 2\n배 1\n귤 1\n",
+   "note": "리스트에서 항목을 하나 꺼내 fruit 에 붙인다. 없으면 반복 종료"
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "fruits": {
+       "ref": "0x1b1074b4a00"
+      },
+      "fruit": {
+       "ref": "0x1b107781c70"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1b1074b4a00": {
+     "id": "0x1b1074b4a00",
+     "type": "list",
+     "repr": "['사과', '배', '귤']",
+     "items": [
+      {
+       "ref": "0x1b107776100"
+      },
+      {
+       "ref": "0x1b107781a70"
+      },
+      {
+       "ref": "0x1b107781c70"
+      }
+     ]
+    },
+    "0x1b107776100": {
+     "id": "0x1b107776100",
+     "type": "str",
+     "repr": "'사과'"
+    },
+    "0x1b107781a70": {
+     "id": "0x1b107781a70",
+     "type": "str",
+     "repr": "'배'"
+    },
+    "0x1b107781c70": {
+     "id": "0x1b107781c70",
+     "type": "str",
+     "repr": "'귤'"
+    }
+   },
+   "stdout": "사과 2\n배 1\n귤 1\n",
+   "note": "enumerate 는 (번호, 항목) 쌍을 준다"
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "fruits": {
+       "ref": "0x1b1074b4a00"
+      },
+      "fruit": {
+       "ref": "0x1b107776100"
+      },
+      "i": {
+       "ref": "0x7ffd75a14998"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1b1074b4a00": {
+     "id": "0x1b1074b4a00",
+     "type": "list",
+     "repr": "['사과', '배', '귤']",
+     "items": [
+      {
+       "ref": "0x1b107776100"
+      },
+      {
+       "ref": "0x1b107781a70"
+      },
+      {
+       "ref": "0x1b107781c70"
+      }
+     ]
+    },
+    "0x1b107776100": {
+     "id": "0x1b107776100",
+     "type": "str",
+     "repr": "'사과'"
+    },
+    "0x1b107781a70": {
+     "id": "0x1b107781a70",
+     "type": "str",
+     "repr": "'배'"
+    },
+    "0x1b107781c70": {
+     "id": "0x1b107781c70",
+     "type": "str",
+     "repr": "'귤'"
+    },
+    "0x7ffd75a14998": {
+     "id": "0x7ffd75a14998",
+     "type": "int",
+     "repr": "0"
+    }
+   },
+   "stdout": "사과 2\n배 1\n귤 1\n"
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "fruits": {
+       "ref": "0x1b1074b4a00"
+      },
+      "fruit": {
+       "ref": "0x1b107776100"
+      },
+      "i": {
+       "ref": "0x7ffd75a14998"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1b1074b4a00": {
+     "id": "0x1b1074b4a00",
+     "type": "list",
+     "repr": "['사과', '배', '귤']",
+     "items": [
+      {
+       "ref": "0x1b107776100"
+      },
+      {
+       "ref": "0x1b107781a70"
+      },
+      {
+       "ref": "0x1b107781c70"
+      }
+     ]
+    },
+    "0x1b107776100": {
+     "id": "0x1b107776100",
+     "type": "str",
+     "repr": "'사과'"
+    },
+    "0x1b107781a70": {
+     "id": "0x1b107781a70",
+     "type": "str",
+     "repr": "'배'"
+    },
+    "0x1b107781c70": {
+     "id": "0x1b107781c70",
+     "type": "str",
+     "repr": "'귤'"
+    },
+    "0x7ffd75a14998": {
+     "id": "0x7ffd75a14998",
+     "type": "int",
+     "repr": "0"
+    }
+   },
+   "stdout": "사과 2\n배 1\n귤 1\n0 사과\n",
+   "note": "enumerate 는 (번호, 항목) 쌍을 준다"
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "fruits": {
+       "ref": "0x1b1074b4a00"
+      },
+      "fruit": {
+       "ref": "0x1b107781a70"
+      },
+      "i": {
+       "ref": "0x7ffd75a149b8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1b1074b4a00": {
+     "id": "0x1b1074b4a00",
+     "type": "list",
+     "repr": "['사과', '배', '귤']",
+     "items": [
+      {
+       "ref": "0x1b107776100"
+      },
+      {
+       "ref": "0x1b107781a70"
+      },
+      {
+       "ref": "0x1b107781c70"
+      }
+     ]
+    },
+    "0x1b107776100": {
+     "id": "0x1b107776100",
+     "type": "str",
+     "repr": "'사과'"
+    },
+    "0x1b107781a70": {
+     "id": "0x1b107781a70",
+     "type": "str",
+     "repr": "'배'"
+    },
+    "0x1b107781c70": {
+     "id": "0x1b107781c70",
+     "type": "str",
+     "repr": "'귤'"
+    },
+    "0x7ffd75a149b8": {
+     "id": "0x7ffd75a149b8",
+     "type": "int",
+     "repr": "1"
+    }
+   },
+   "stdout": "사과 2\n배 1\n귤 1\n0 사과\n"
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "fruits": {
+       "ref": "0x1b1074b4a00"
+      },
+      "fruit": {
+       "ref": "0x1b107781a70"
+      },
+      "i": {
+       "ref": "0x7ffd75a149b8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1b1074b4a00": {
+     "id": "0x1b1074b4a00",
+     "type": "list",
+     "repr": "['사과', '배', '귤']",
+     "items": [
+      {
+       "ref": "0x1b107776100"
+      },
+      {
+       "ref": "0x1b107781a70"
+      },
+      {
+       "ref": "0x1b107781c70"
+      }
+     ]
+    },
+    "0x1b107776100": {
+     "id": "0x1b107776100",
+     "type": "str",
+     "repr": "'사과'"
+    },
+    "0x1b107781a70": {
+     "id": "0x1b107781a70",
+     "type": "str",
+     "repr": "'배'"
+    },
+    "0x1b107781c70": {
+     "id": "0x1b107781c70",
+     "type": "str",
+     "repr": "'귤'"
+    },
+    "0x7ffd75a149b8": {
+     "id": "0x7ffd75a149b8",
+     "type": "int",
+     "repr": "1"
+    }
+   },
+   "stdout": "사과 2\n배 1\n귤 1\n0 사과\n1 배\n",
+   "note": "enumerate 는 (번호, 항목) 쌍을 준다"
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "fruits": {
+       "ref": "0x1b1074b4a00"
+      },
+      "fruit": {
+       "ref": "0x1b107781c70"
+      },
+      "i": {
+       "ref": "0x7ffd75a149d8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1b1074b4a00": {
+     "id": "0x1b1074b4a00",
+     "type": "list",
+     "repr": "['사과', '배', '귤']",
+     "items": [
+      {
+       "ref": "0x1b107776100"
+      },
+      {
+       "ref": "0x1b107781a70"
+      },
+      {
+       "ref": "0x1b107781c70"
+      }
+     ]
+    },
+    "0x1b107776100": {
+     "id": "0x1b107776100",
+     "type": "str",
+     "repr": "'사과'"
+    },
+    "0x1b107781a70": {
+     "id": "0x1b107781a70",
+     "type": "str",
+     "repr": "'배'"
+    },
+    "0x1b107781c70": {
+     "id": "0x1b107781c70",
+     "type": "str",
+     "repr": "'귤'"
+    },
+    "0x7ffd75a149d8": {
+     "id": "0x7ffd75a149d8",
+     "type": "int",
+     "repr": "2"
+    }
+   },
+   "stdout": "사과 2\n배 1\n귤 1\n0 사과\n1 배\n"
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "fruits": {
+       "ref": "0x1b1074b4a00"
+      },
+      "fruit": {
+       "ref": "0x1b107781c70"
+      },
+      "i": {
+       "ref": "0x7ffd75a149d8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1b1074b4a00": {
+     "id": "0x1b1074b4a00",
+     "type": "list",
+     "repr": "['사과', '배', '귤']",
+     "items": [
+      {
+       "ref": "0x1b107776100"
+      },
+      {
+       "ref": "0x1b107781a70"
+      },
+      {
+       "ref": "0x1b107781c70"
+      }
+     ]
+    },
+    "0x1b107776100": {
+     "id": "0x1b107776100",
+     "type": "str",
+     "repr": "'사과'"
+    },
+    "0x1b107781a70": {
+     "id": "0x1b107781a70",
+     "type": "str",
+     "repr": "'배'"
+    },
+    "0x1b107781c70": {
+     "id": "0x1b107781c70",
+     "type": "str",
+     "repr": "'귤'"
+    },
+    "0x7ffd75a149d8": {
+     "id": "0x7ffd75a149d8",
+     "type": "int",
+     "repr": "2"
+    }
+   },
+   "stdout": "사과 2\n배 1\n귤 1\n0 사과\n1 배\n2 귤\n",
+   "note": "enumerate 는 (번호, 항목) 쌍을 준다"
+  },
+  {
+   "line": 6,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "fruits": {
+       "ref": "0x1b1074b4a00"
+      },
+      "fruit": {
+       "ref": "0x1b107781c70"
+      },
+      "i": {
+       "ref": "0x7ffd75a149d8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1b1074b4a00": {
+     "id": "0x1b1074b4a00",
+     "type": "list",
+     "repr": "['사과', '배', '귤']",
+     "items": [
+      {
+       "ref": "0x1b107776100"
+      },
+      {
+       "ref": "0x1b107781a70"
+      },
+      {
+       "ref": "0x1b107781c70"
+      }
+     ]
+    },
+    "0x1b107776100": {
+     "id": "0x1b107776100",
+     "type": "str",
+     "repr": "'사과'"
+    },
+    "0x1b107781a70": {
+     "id": "0x1b107781a70",
+     "type": "str",
+     "repr": "'배'"
+    },
+    "0x1b107781c70": {
+     "id": "0x1b107781c70",
+     "type": "str",
+     "repr": "'귤'"
+    },
+    "0x7ffd75a149d8": {
+     "id": "0x7ffd75a149d8",
+     "type": "int",
+     "repr": "2"
+    }
+   },
+   "stdout": "사과 2\n배 1\n귤 1\n0 사과\n1 배\n2 귤\n"
+  },
+  {
+   "line": 7,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 7,
+     "locals": {
+      "fruits": {
+       "ref": "0x1b1074b4a00"
+      },
+      "fruit": {
+       "ref": "0x1b107781c70"
+      },
+      "i": {
+       "ref": "0x7ffd75a149d8"
+      },
+      "total": {
+       "ref": "0x7ffd75a14998"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1b1074b4a00": {
+     "id": "0x1b1074b4a00",
+     "type": "list",
+     "repr": "['사과', '배', '귤']",
+     "items": [
+      {
+       "ref": "0x1b107776100"
+      },
+      {
+       "ref": "0x1b107781a70"
+      },
+      {
+       "ref": "0x1b107781c70"
+      }
+     ]
+    },
+    "0x1b107776100": {
+     "id": "0x1b107776100",
+     "type": "str",
+     "repr": "'사과'"
+    },
+    "0x1b107781a70": {
+     "id": "0x1b107781a70",
+     "type": "str",
+     "repr": "'배'"
+    },
+    "0x1b107781c70": {
+     "id": "0x1b107781c70",
+     "type": "str",
+     "repr": "'귤'"
+    },
+    "0x7ffd75a149d8": {
+     "id": "0x7ffd75a149d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd75a14998": {
+     "id": "0x7ffd75a14998",
+     "type": "int",
+     "repr": "0"
+    }
+   },
+   "stdout": "사과 2\n배 1\n귤 1\n0 사과\n1 배\n2 귤\n",
+   "note": "문자열도 이터러블 — 글자 하나씩"
+  },
+  {
+   "line": 8,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 8,
+     "locals": {
+      "fruits": {
+       "ref": "0x1b1074b4a00"
+      },
+      "fruit": {
+       "ref": "0x1b107781c70"
+      },
+      "i": {
+       "ref": "0x7ffd75a149d8"
+      },
+      "total": {
+       "ref": "0x7ffd75a14998"
+      },
+      "ch": {
+       "ref": "0x7ffd75a23e40"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1b1074b4a00": {
+     "id": "0x1b1074b4a00",
+     "type": "list",
+     "repr": "['사과', '배', '귤']",
+     "items": [
+      {
+       "ref": "0x1b107776100"
+      },
+      {
+       "ref": "0x1b107781a70"
+      },
+      {
+       "ref": "0x1b107781c70"
+      }
+     ]
+    },
+    "0x1b107776100": {
+     "id": "0x1b107776100",
+     "type": "str",
+     "repr": "'사과'"
+    },
+    "0x1b107781a70": {
+     "id": "0x1b107781a70",
+     "type": "str",
+     "repr": "'배'"
+    },
+    "0x1b107781c70": {
+     "id": "0x1b107781c70",
+     "type": "str",
+     "repr": "'귤'"
+    },
+    "0x7ffd75a149d8": {
+     "id": "0x7ffd75a149d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd75a14998": {
+     "id": "0x7ffd75a14998",
+     "type": "int",
+     "repr": "0"
+    },
+    "0x7ffd75a23e40": {
+     "id": "0x7ffd75a23e40",
+     "type": "str",
+     "repr": "'a'"
+    }
+   },
+   "stdout": "사과 2\n배 1\n귤 1\n0 사과\n1 배\n2 귤\n"
+  },
+  {
+   "line": 7,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 7,
+     "locals": {
+      "fruits": {
+       "ref": "0x1b1074b4a00"
+      },
+      "fruit": {
+       "ref": "0x1b107781c70"
+      },
+      "i": {
+       "ref": "0x7ffd75a149d8"
+      },
+      "total": {
+       "ref": "0x7ffd75a149b8"
+      },
+      "ch": {
+       "ref": "0x7ffd75a23e40"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1b1074b4a00": {
+     "id": "0x1b1074b4a00",
+     "type": "list",
+     "repr": "['사과', '배', '귤']",
+     "items": [
+      {
+       "ref": "0x1b107776100"
+      },
+      {
+       "ref": "0x1b107781a70"
+      },
+      {
+       "ref": "0x1b107781c70"
+      }
+     ]
+    },
+    "0x1b107776100": {
+     "id": "0x1b107776100",
+     "type": "str",
+     "repr": "'사과'"
+    },
+    "0x1b107781a70": {
+     "id": "0x1b107781a70",
+     "type": "str",
+     "repr": "'배'"
+    },
+    "0x1b107781c70": {
+     "id": "0x1b107781c70",
+     "type": "str",
+     "repr": "'귤'"
+    },
+    "0x7ffd75a149d8": {
+     "id": "0x7ffd75a149d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd75a149b8": {
+     "id": "0x7ffd75a149b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd75a23e40": {
+     "id": "0x7ffd75a23e40",
+     "type": "str",
+     "repr": "'a'"
+    }
+   },
+   "stdout": "사과 2\n배 1\n귤 1\n0 사과\n1 배\n2 귤\n",
+   "note": "문자열도 이터러블 — 글자 하나씩"
+  },
+  {
+   "line": 8,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 8,
+     "locals": {
+      "fruits": {
+       "ref": "0x1b1074b4a00"
+      },
+      "fruit": {
+       "ref": "0x1b107781c70"
+      },
+      "i": {
+       "ref": "0x7ffd75a149d8"
+      },
+      "total": {
+       "ref": "0x7ffd75a149b8"
+      },
+      "ch": {
+       "ref": "0x7ffd75a23e70"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1b1074b4a00": {
+     "id": "0x1b1074b4a00",
+     "type": "list",
+     "repr": "['사과', '배', '귤']",
+     "items": [
+      {
+       "ref": "0x1b107776100"
+      },
+      {
+       "ref": "0x1b107781a70"
+      },
+      {
+       "ref": "0x1b107781c70"
+      }
+     ]
+    },
+    "0x1b107776100": {
+     "id": "0x1b107776100",
+     "type": "str",
+     "repr": "'사과'"
+    },
+    "0x1b107781a70": {
+     "id": "0x1b107781a70",
+     "type": "str",
+     "repr": "'배'"
+    },
+    "0x1b107781c70": {
+     "id": "0x1b107781c70",
+     "type": "str",
+     "repr": "'귤'"
+    },
+    "0x7ffd75a149d8": {
+     "id": "0x7ffd75a149d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd75a149b8": {
+     "id": "0x7ffd75a149b8",
+     "type": "int",
+     "repr": "1"
+    },
+    "0x7ffd75a23e70": {
+     "id": "0x7ffd75a23e70",
+     "type": "str",
+     "repr": "'b'"
+    }
+   },
+   "stdout": "사과 2\n배 1\n귤 1\n0 사과\n1 배\n2 귤\n"
+  },
+  {
+   "line": 7,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 7,
+     "locals": {
+      "fruits": {
+       "ref": "0x1b1074b4a00"
+      },
+      "fruit": {
+       "ref": "0x1b107781c70"
+      },
+      "i": {
+       "ref": "0x7ffd75a149d8"
+      },
+      "total": {
+       "ref": "0x7ffd75a149d8"
+      },
+      "ch": {
+       "ref": "0x7ffd75a23e70"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1b1074b4a00": {
+     "id": "0x1b1074b4a00",
+     "type": "list",
+     "repr": "['사과', '배', '귤']",
+     "items": [
+      {
+       "ref": "0x1b107776100"
+      },
+      {
+       "ref": "0x1b107781a70"
+      },
+      {
+       "ref": "0x1b107781c70"
+      }
+     ]
+    },
+    "0x1b107776100": {
+     "id": "0x1b107776100",
+     "type": "str",
+     "repr": "'사과'"
+    },
+    "0x1b107781a70": {
+     "id": "0x1b107781a70",
+     "type": "str",
+     "repr": "'배'"
+    },
+    "0x1b107781c70": {
+     "id": "0x1b107781c70",
+     "type": "str",
+     "repr": "'귤'"
+    },
+    "0x7ffd75a149d8": {
+     "id": "0x7ffd75a149d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd75a23e70": {
+     "id": "0x7ffd75a23e70",
+     "type": "str",
+     "repr": "'b'"
+    }
+   },
+   "stdout": "사과 2\n배 1\n귤 1\n0 사과\n1 배\n2 귤\n",
+   "note": "문자열도 이터러블 — 글자 하나씩"
+  },
+  {
+   "line": 8,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 8,
+     "locals": {
+      "fruits": {
+       "ref": "0x1b1074b4a00"
+      },
+      "fruit": {
+       "ref": "0x1b107781c70"
+      },
+      "i": {
+       "ref": "0x7ffd75a149d8"
+      },
+      "total": {
+       "ref": "0x7ffd75a149d8"
+      },
+      "ch": {
+       "ref": "0x7ffd75a23ea0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1b1074b4a00": {
+     "id": "0x1b1074b4a00",
+     "type": "list",
+     "repr": "['사과', '배', '귤']",
+     "items": [
+      {
+       "ref": "0x1b107776100"
+      },
+      {
+       "ref": "0x1b107781a70"
+      },
+      {
+       "ref": "0x1b107781c70"
+      }
+     ]
+    },
+    "0x1b107776100": {
+     "id": "0x1b107776100",
+     "type": "str",
+     "repr": "'사과'"
+    },
+    "0x1b107781a70": {
+     "id": "0x1b107781a70",
+     "type": "str",
+     "repr": "'배'"
+    },
+    "0x1b107781c70": {
+     "id": "0x1b107781c70",
+     "type": "str",
+     "repr": "'귤'"
+    },
+    "0x7ffd75a149d8": {
+     "id": "0x7ffd75a149d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd75a23ea0": {
+     "id": "0x7ffd75a23ea0",
+     "type": "str",
+     "repr": "'c'"
+    }
+   },
+   "stdout": "사과 2\n배 1\n귤 1\n0 사과\n1 배\n2 귤\n"
+  },
+  {
+   "line": 7,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 7,
+     "locals": {
+      "fruits": {
+       "ref": "0x1b1074b4a00"
+      },
+      "fruit": {
+       "ref": "0x1b107781c70"
+      },
+      "i": {
+       "ref": "0x7ffd75a149d8"
+      },
+      "total": {
+       "ref": "0x7ffd75a149f8"
+      },
+      "ch": {
+       "ref": "0x7ffd75a23ea0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1b1074b4a00": {
+     "id": "0x1b1074b4a00",
+     "type": "list",
+     "repr": "['사과', '배', '귤']",
+     "items": [
+      {
+       "ref": "0x1b107776100"
+      },
+      {
+       "ref": "0x1b107781a70"
+      },
+      {
+       "ref": "0x1b107781c70"
+      }
+     ]
+    },
+    "0x1b107776100": {
+     "id": "0x1b107776100",
+     "type": "str",
+     "repr": "'사과'"
+    },
+    "0x1b107781a70": {
+     "id": "0x1b107781a70",
+     "type": "str",
+     "repr": "'배'"
+    },
+    "0x1b107781c70": {
+     "id": "0x1b107781c70",
+     "type": "str",
+     "repr": "'귤'"
+    },
+    "0x7ffd75a149d8": {
+     "id": "0x7ffd75a149d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd75a149f8": {
+     "id": "0x7ffd75a149f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd75a23ea0": {
+     "id": "0x7ffd75a23ea0",
+     "type": "str",
+     "repr": "'c'"
+    }
+   },
+   "stdout": "사과 2\n배 1\n귤 1\n0 사과\n1 배\n2 귤\n",
+   "note": "문자열도 이터러블 — 글자 하나씩"
+  },
+  {
+   "line": 9,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 9,
+     "locals": {
+      "fruits": {
+       "ref": "0x1b1074b4a00"
+      },
+      "fruit": {
+       "ref": "0x1b107781c70"
+      },
+      "i": {
+       "ref": "0x7ffd75a149d8"
+      },
+      "total": {
+       "ref": "0x7ffd75a149f8"
+      },
+      "ch": {
+       "ref": "0x7ffd75a23ea0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1b1074b4a00": {
+     "id": "0x1b1074b4a00",
+     "type": "list",
+     "repr": "['사과', '배', '귤']",
+     "items": [
+      {
+       "ref": "0x1b107776100"
+      },
+      {
+       "ref": "0x1b107781a70"
+      },
+      {
+       "ref": "0x1b107781c70"
+      }
+     ]
+    },
+    "0x1b107776100": {
+     "id": "0x1b107776100",
+     "type": "str",
+     "repr": "'사과'"
+    },
+    "0x1b107781a70": {
+     "id": "0x1b107781a70",
+     "type": "str",
+     "repr": "'배'"
+    },
+    "0x1b107781c70": {
+     "id": "0x1b107781c70",
+     "type": "str",
+     "repr": "'귤'"
+    },
+    "0x7ffd75a149d8": {
+     "id": "0x7ffd75a149d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd75a149f8": {
+     "id": "0x7ffd75a149f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd75a23ea0": {
+     "id": "0x7ffd75a23ea0",
+     "type": "str",
+     "repr": "'c'"
+    }
+   },
+   "stdout": "사과 2\n배 1\n귤 1\n0 사과\n1 배\n2 귤\n"
+  },
+  {
+   "line": 9,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 9,
+     "locals": {
+      "fruits": {
+       "ref": "0x1b1074b4a00"
+      },
+      "fruit": {
+       "ref": "0x1b107781c70"
+      },
+      "i": {
+       "ref": "0x7ffd75a149d8"
+      },
+      "total": {
+       "ref": "0x7ffd75a149f8"
+      },
+      "ch": {
+       "ref": "0x7ffd75a23ea0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x1b1074b4a00": {
+     "id": "0x1b1074b4a00",
+     "type": "list",
+     "repr": "['사과', '배', '귤']",
+     "items": [
+      {
+       "ref": "0x1b107776100"
+      },
+      {
+       "ref": "0x1b107781a70"
+      },
+      {
+       "ref": "0x1b107781c70"
+      }
+     ]
+    },
+    "0x1b107776100": {
+     "id": "0x1b107776100",
+     "type": "str",
+     "repr": "'사과'"
+    },
+    "0x1b107781a70": {
+     "id": "0x1b107781a70",
+     "type": "str",
+     "repr": "'배'"
+    },
+    "0x1b107781c70": {
+     "id": "0x1b107781c70",
+     "type": "str",
+     "repr": "'귤'"
+    },
+    "0x7ffd75a149d8": {
+     "id": "0x7ffd75a149d8",
+     "type": "int",
+     "repr": "2"
+    },
+    "0x7ffd75a149f8": {
+     "id": "0x7ffd75a149f8",
+     "type": "int",
+     "repr": "3"
+    },
+    "0x7ffd75a23ea0": {
+     "id": "0x7ffd75a23ea0",
+     "type": "str",
+     "repr": "'c'"
+    }
+   },
+   "stdout": "사과 2\n배 1\n귤 1\n0 사과\n1 배\n2 귤\n3\n"
+  }
+ ],
+ "v": 1
+}

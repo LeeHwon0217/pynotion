@@ -1,0 +1,166 @@
+{
+ "id": "p2-match",
+ "code": "command = \"go north\"\nmatch command.split():\n    case [\"quit\"]:\n        print(\"종료\")\n    case [\"go\", direction]:\n        print(\"이동:\", direction)\n    case _:\n        print(\"모르는 명령\")",
+ "steps": [
+  {
+   "line": 0,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 0,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 2,
+     "locals": {
+      "command": {
+       "ref": "0x238bac11bf0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x238bac11bf0": {
+     "id": "0x238bac11bf0",
+     "type": "str",
+     "repr": "'go north'"
+    }
+   },
+   "stdout": "",
+   "note": "리스트 [\"go\", \"north\"] 를 각 case 패턴과 위에서부터 맞춰 본다"
+  },
+  {
+   "line": 3,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 3,
+     "locals": {
+      "command": {
+       "ref": "0x238bac11bf0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x238bac11bf0": {
+     "id": "0x238bac11bf0",
+     "type": "str",
+     "repr": "'go north'"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "command": {
+       "ref": "0x238bac11bf0"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x238bac11bf0": {
+     "id": "0x238bac11bf0",
+     "type": "str",
+     "repr": "'go north'"
+    }
+   },
+   "stdout": "",
+   "note": "길이 2, 첫 항목이 \"go\" — 맞다! direction 에 \"north\" 가 붙는다"
+  },
+  {
+   "line": 6,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "command": {
+       "ref": "0x238bac11bf0"
+      },
+      "direction": {
+       "ref": "0x238bac0d020"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x238bac11bf0": {
+     "id": "0x238bac11bf0",
+     "type": "str",
+     "repr": "'go north'"
+    },
+    "0x238bac0d020": {
+     "id": "0x238bac0d020",
+     "type": "str",
+     "repr": "'north'"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 6,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 6,
+     "locals": {
+      "command": {
+       "ref": "0x238bac11bf0"
+      },
+      "direction": {
+       "ref": "0x238bac0d020"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x238bac11bf0": {
+     "id": "0x238bac11bf0",
+     "type": "str",
+     "repr": "'go north'"
+    },
+    "0x238bac0d020": {
+     "id": "0x238bac0d020",
+     "type": "str",
+     "repr": "'north'"
+    }
+   },
+   "stdout": "이동: north\n"
+  }
+ ],
+ "v": 1
+}

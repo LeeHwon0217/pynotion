@@ -1,0 +1,317 @@
+{
+ "id": "p2-while",
+ "code": "n = 3\nwhile n > 0:\n    print(n)\n    n -= 1\nprint(\"발사!\")",
+ "steps": [
+  {
+   "line": 0,
+   "event": "call",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 0,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 1,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 1,
+     "locals": {}
+    }
+   ],
+   "heap": {},
+   "stdout": ""
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 2,
+     "locals": {
+      "n": {
+       "ref": "0x7ffd75a149f8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x7ffd75a149f8": {
+     "id": "0x7ffd75a149f8",
+     "type": "int",
+     "repr": "3"
+    }
+   },
+   "stdout": "",
+   "note": "조건을 검사한다 — 참이면 블록으로, 거짓이면 반복 끝"
+  },
+  {
+   "line": 3,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 3,
+     "locals": {
+      "n": {
+       "ref": "0x7ffd75a149f8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x7ffd75a149f8": {
+     "id": "0x7ffd75a149f8",
+     "type": "int",
+     "repr": "3"
+    }
+   },
+   "stdout": ""
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "n": {
+       "ref": "0x7ffd75a149f8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x7ffd75a149f8": {
+     "id": "0x7ffd75a149f8",
+     "type": "int",
+     "repr": "3"
+    }
+   },
+   "stdout": "3\n",
+   "note": "이 줄이 없으면 n 은 영원히 3 — 무한 루프"
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 2,
+     "locals": {
+      "n": {
+       "ref": "0x7ffd75a149d8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x7ffd75a149d8": {
+     "id": "0x7ffd75a149d8",
+     "type": "int",
+     "repr": "2"
+    }
+   },
+   "stdout": "3\n",
+   "note": "조건을 검사한다 — 참이면 블록으로, 거짓이면 반복 끝"
+  },
+  {
+   "line": 3,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 3,
+     "locals": {
+      "n": {
+       "ref": "0x7ffd75a149d8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x7ffd75a149d8": {
+     "id": "0x7ffd75a149d8",
+     "type": "int",
+     "repr": "2"
+    }
+   },
+   "stdout": "3\n"
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "n": {
+       "ref": "0x7ffd75a149d8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x7ffd75a149d8": {
+     "id": "0x7ffd75a149d8",
+     "type": "int",
+     "repr": "2"
+    }
+   },
+   "stdout": "3\n2\n",
+   "note": "이 줄이 없으면 n 은 영원히 3 — 무한 루프"
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 2,
+     "locals": {
+      "n": {
+       "ref": "0x7ffd75a149b8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x7ffd75a149b8": {
+     "id": "0x7ffd75a149b8",
+     "type": "int",
+     "repr": "1"
+    }
+   },
+   "stdout": "3\n2\n",
+   "note": "조건을 검사한다 — 참이면 블록으로, 거짓이면 반복 끝"
+  },
+  {
+   "line": 3,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 3,
+     "locals": {
+      "n": {
+       "ref": "0x7ffd75a149b8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x7ffd75a149b8": {
+     "id": "0x7ffd75a149b8",
+     "type": "int",
+     "repr": "1"
+    }
+   },
+   "stdout": "3\n2\n"
+  },
+  {
+   "line": 4,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 4,
+     "locals": {
+      "n": {
+       "ref": "0x7ffd75a149b8"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x7ffd75a149b8": {
+     "id": "0x7ffd75a149b8",
+     "type": "int",
+     "repr": "1"
+    }
+   },
+   "stdout": "3\n2\n1\n",
+   "note": "이 줄이 없으면 n 은 영원히 3 — 무한 루프"
+  },
+  {
+   "line": 2,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 2,
+     "locals": {
+      "n": {
+       "ref": "0x7ffd75a14998"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x7ffd75a14998": {
+     "id": "0x7ffd75a14998",
+     "type": "int",
+     "repr": "0"
+    }
+   },
+   "stdout": "3\n2\n1\n",
+   "note": "조건을 검사한다 — 참이면 블록으로, 거짓이면 반복 끝"
+  },
+  {
+   "line": 5,
+   "event": "line",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "n": {
+       "ref": "0x7ffd75a14998"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x7ffd75a14998": {
+     "id": "0x7ffd75a14998",
+     "type": "int",
+     "repr": "0"
+    }
+   },
+   "stdout": "3\n2\n1\n",
+   "note": "n 이 0 이 되어 조건이 거짓이 된 뒤에야 도달한다"
+  },
+  {
+   "line": 5,
+   "event": "return",
+   "frames": [
+    {
+     "fn": "<module>",
+     "line": 5,
+     "locals": {
+      "n": {
+       "ref": "0x7ffd75a14998"
+      }
+     }
+    }
+   ],
+   "heap": {
+    "0x7ffd75a14998": {
+     "id": "0x7ffd75a14998",
+     "type": "int",
+     "repr": "0"
+    }
+   },
+   "stdout": "3\n2\n1\n발사!\n"
+  }
+ ],
+ "v": 1
+}

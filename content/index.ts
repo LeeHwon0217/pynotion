@@ -15,10 +15,19 @@ import { comparisonLogic } from "./part-01/comparison-logic";
 import { typeConversion } from "./part-01/type-conversion";
 import { isVsEq } from "./part-01/is-vs-eq";
 import { inputFormat } from "./part-01/input-format";
+import { ifLesson } from "./part-02/if";
+import { truthiness } from "./part-02/truthiness";
+import { whileLesson } from "./part-02/while";
+import { forLesson } from "./part-02/for";
+import { rangeLesson } from "./part-02/range";
+import { breakContinue } from "./part-02/break-continue";
+import { nestedLoops } from "./part-02/nested-loops";
+import { matchLesson } from "./part-02/match";
 
 const ALL: Lesson[] = [
   whatIsPython, setup, howCodeRuns, firstProgram, readingErrors,
   variables, intLesson, floatLesson, boolNone, stringBasics, arithmetic, comparisonLogic, typeConversion, isVsEq, inputFormat,
+  ifLesson, truthiness, whileLesson, forLesson, rangeLesson, breakContinue, nestedLoops, matchLesson,
 ];
 
 const partSlug = (id: number) => PARTS.find((p) => p.id === id)!.slug;

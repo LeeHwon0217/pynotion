@@ -38,14 +38,14 @@
      "line": 2,
      "locals": {
       "big": {
-       "ref": "0x1ba6ddecf90"
+       "ref": "0x1dd618fcf90"
       }
      }
     }
    ],
    "heap": {
-    "0x1ba6ddecf90": {
-     "id": "0x1ba6ddecf90",
+    "0x1dd618fcf90": {
+     "id": "0x1dd618fcf90",
      "type": "int",
      "repr": "1267650600228229401496703205376"
     }
@@ -61,14 +61,14 @@
      "line": 3,
      "locals": {
       "big": {
-       "ref": "0x1ba6ddecf90"
+       "ref": "0x1dd618fcf90"
       }
      }
     }
    ],
    "heap": {
-    "0x1ba6ddecf90": {
-     "id": "0x1ba6ddecf90",
+    "0x1dd618fcf90": {
+     "id": "0x1dd618fcf90",
      "type": "int",
      "repr": "1267650600228229401496703205376"
     }
@@ -85,14 +85,14 @@
      "line": 4,
      "locals": {
       "big": {
-       "ref": "0x1ba6ddecf90"
+       "ref": "0x1dd618fcf90"
       }
      }
     }
    ],
    "heap": {
-    "0x1ba6ddecf90": {
-     "id": "0x1ba6ddecf90",
+    "0x1dd618fcf90": {
+     "id": "0x1dd618fcf90",
      "type": "int",
      "repr": "1267650600228229401496703205376"
     }
@@ -109,14 +109,14 @@
      "line": 5,
      "locals": {
       "big": {
-       "ref": "0x1ba6ddecf90"
+       "ref": "0x1dd618fcf90"
       }
      }
     }
    ],
    "heap": {
-    "0x1ba6ddecf90": {
-     "id": "0x1ba6ddecf90",
+    "0x1dd618fcf90": {
+     "id": "0x1dd618fcf90",
      "type": "int",
      "repr": "1267650600228229401496703205376"
     }
@@ -133,14 +133,14 @@
      "line": 6,
      "locals": {
       "big": {
-       "ref": "0x1ba6ddecf90"
+       "ref": "0x1dd618fcf90"
       }
      }
     }
    ],
    "heap": {
-    "0x1ba6ddecf90": {
-     "id": "0x1ba6ddecf90",
+    "0x1dd618fcf90": {
+     "id": "0x1dd618fcf90",
      "type": "int",
      "repr": "1267650600228229401496703205376"
     }
@@ -157,14 +157,14 @@
      "line": 6,
      "locals": {
       "big": {
-       "ref": "0x1ba6ddecf90"
+       "ref": "0x1dd618fcf90"
       }
      }
     }
    ],
    "heap": {
-    "0x1ba6ddecf90": {
-     "id": "0x1ba6ddecf90",
+    "0x1dd618fcf90": {
+     "id": "0x1dd618fcf90",
      "type": "int",
      "repr": "1267650600228229401496703205376"
     }

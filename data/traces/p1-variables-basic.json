@@ -38,14 +38,14 @@
      "line": 2,
      "locals": {
       "a": {
-       "ref": "0x7ffd7f2b4ad8"
+       "ref": "0x7ffd75a14ad8"
       }
      }
     }
    ],
    "heap": {
-    "0x7ffd7f2b4ad8": {
-     "id": "0x7ffd7f2b4ad8",
+    "0x7ffd75a14ad8": {
+     "id": "0x7ffd75a14ad8",
      "type": "int",
      "repr": "10"
     }
@@ -62,17 +62,17 @@
      "line": 3,
      "locals": {
       "a": {
-       "ref": "0x7ffd7f2b4ad8"
+       "ref": "0x7ffd75a14ad8"
       },
       "b": {
-       "ref": "0x7ffd7f2b4ad8"
+       "ref": "0x7ffd75a14ad8"
       }
      }
     }
    ],
    "heap": {
-    "0x7ffd7f2b4ad8": {
-     "id": "0x7ffd7f2b4ad8",
+    "0x7ffd75a14ad8": {
+     "id": "0x7ffd75a14ad8",
      "type": "int",
      "repr": "10"
     }
@@ -89,17 +89,17 @@
      "line": 4,
      "locals": {
       "a": {
-       "ref": "0x7ffd7f2b4ad8"
+       "ref": "0x7ffd75a14ad8"
       },
       "b": {
-       "ref": "0x7ffd7f2b4ad8"
+       "ref": "0x7ffd75a14ad8"
       }
      }
     }
    ],
    "heap": {
-    "0x7ffd7f2b4ad8": {
-     "id": "0x7ffd7f2b4ad8",
+    "0x7ffd75a14ad8": {
+     "id": "0x7ffd75a14ad8",
      "type": "int",
      "repr": "10"
     }
@@ -116,22 +116,22 @@
      "line": 5,
      "locals": {
       "a": {
-       "ref": "0x7ffd7f2b4c18"
+       "ref": "0x7ffd75a14c18"
       },
       "b": {
-       "ref": "0x7ffd7f2b4ad8"
+       "ref": "0x7ffd75a14ad8"
       }
      }
     }
    ],
    "heap": {
-    "0x7ffd7f2b4c18": {
-     "id": "0x7ffd7f2b4c18",
+    "0x7ffd75a14c18": {
+     "id": "0x7ffd75a14c18",
      "type": "int",
      "repr": "20"
     },
-    "0x7ffd7f2b4ad8": {
-     "id": "0x7ffd7f2b4ad8",
+    "0x7ffd75a14ad8": {
+     "id": "0x7ffd75a14ad8",
      "type": "int",
      "repr": "10"
     }
@@ -148,22 +148,22 @@
      "line": 5,
      "locals": {
       "a": {
-       "ref": "0x7ffd7f2b4c18"
+       "ref": "0x7ffd75a14c18"
       },
       "b": {
-       "ref": "0x7ffd7f2b4ad8"
+       "ref": "0x7ffd75a14ad8"
       }
      }
     }
    ],
    "heap": {
-    "0x7ffd7f2b4c18": {
-     "id": "0x7ffd7f2b4c18",
+    "0x7ffd75a14c18": {
+     "id": "0x7ffd75a14c18",
      "type": "int",
      "repr": "20"
     },
-    "0x7ffd7f2b4ad8": {
-     "id": "0x7ffd7f2b4ad8",
+    "0x7ffd75a14ad8": {
+     "id": "0x7ffd75a14ad8",
      "type": "int",
      "repr": "10"
     }
